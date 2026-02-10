@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>콘텐츠 관리자</title>
+  <meta name="color-scheme" content="light dark" />
+  <style>
+    :root{
+      --bg:#0b1220; --panel:rgba(255,255,255,.06); --panel2:rgba(255,255,255,.08);
+      --text:rgba(255,255,255,.92); --muted:rgba(255,255,255,.68); --line:rgba(255,255,255,.14);
+      --accent:#5eead4; --warn:#fbbf24; --ok:#34d399; --danger:#fb7185;
+      --shadow:0 18px 55px rgba(0,0,0,.35); --radius:18px; --radius2:14px;
+      --font:system-ui,-apple-system,Segoe UI,Roboto,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f6f7fb; --panel:rgba(255,255,255,.72); --panel2:rgba(255,255,255,.92);
+        --text:rgba(17,24,39,.92); --muted:rgba(17,24,39,.62); --line:rgba(17,24,39,.12);
+        --shadow:0 18px 55px rgba(17,24,39,.12);
+      }
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0; font-family:var(--font); color:var(--text);
+      background:
+        radial-gradient(1200px 500px at 15% 0%, rgba(94,234,212,.18), transparent 55%),
+        radial-gradient(900px 450px at 95% 10%, rgba(251,191,36,.16), transparent 50%),
+        radial-gradient(1000px 600px at 60% 120%, rgba(96,165,250,.14), transparent 55%),
+        var(--bg);
+    }
+    .wrap{max-width:1100px;margin:0 auto;padding:22px 18px 32px;}
+    header{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding:6px 2px 18px;}
+    h1{margin:0;font-size:20px;font-weight:900;letter-spacing:-0.02em;}
+    .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.4;}
+    .pill{font-size:12px;padding:4px 10px;border-radius:999px;background:rgba(94,234,212,.14);border:1px solid rgba(94,234,212,.28);font-weight:700;}
+    .panel{
+      background:var(--panel); border:1px solid var(--line);
+      border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden;
+      margin-top:14px;
+    }
+    .panel-hd{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;align-items:flex-start;}
+    .panel-title{margin:0;font-size:15px;font-weight:900;letter-spacing:-0.02em;}
+    .panel-bd{padding:14px 16px 16px;}
+    .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+    label{font-size:12px;color:var(--muted);display:block;margin-bottom:6px;}
+    input[type="text"], input[type="password"], textarea{
+      width:100%; padding:10px 12px; border-radius:12px;
+      border:1px solid var(--line); background:rgba(255,255,255,.04); color:var(--text);
+      outline:none;
+    }
+    textarea{min-height:88px;resize:vertical;white-space:pre-wrap;}
+    .field{flex:1;min-width:240px;}
+    .btn{
+      appearance:none; border:1px solid var(--line); background:var(--panel);
+      color:var(--text); padding:10px 12px; border-radius:12px;
+      cursor:pointer; font-weight:800; font-size:13px;
+    }
+    .btn:hover{background:var(--panel2);border-color:rgba(94,234,212,.35);}
+    .btn.primary{background:rgba(94,234,212,.14);border-color:rgba(94,234,212,.32);}
+    .msg{margin-top:10px;font-size:12px;color:var(--muted);}
+    .msg.err{color:rgba(251,113,133,.95);}
+    .msg.ok{color:rgba(52,211,153,.95);}
+    .card{
+      border:1px solid var(--line); background:rgba(255,255,255,.03);
+      border-radius:var(--radius2); padding:12px; margin-top:10px;
+    }
+    .card-hd{display:flex;justify-content:space-between;align-items:center;gap:10px;}
+    .card-title{font-weight:900;}
+    .small{font-size:12px;color:var(--muted);}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;}
+    @media (max-width:860px){ .grid2{grid-template-columns:1fr;} }
+    .check{display:flex;align-items:center;gap:8px;margin-top:10px;color:var(--muted);font-size:12px;}
+    .divider{height:1px;background:var(--line);margin:12px 0;}
+    .hidden{display:none !important;}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>콘텐츠 관리자</h1>
+        <div class="sub">토큰만 입력 → <b>불러오기</b>로 content.json 읽기 → 수정 → <b>저장</b>으로 커밋 반영</div>
+      </div>
+      <div class="pill" id="repoPill">repo: -</div>
+    </header>
+
+    <!-- 1) 로그인/불러오기 -->
+    <section class="panel">
+      <div class="panel-hd">
+        <div>
+          <h2 class="panel-title">1) 로그인</h2>
+          <div class="small">Fine-grained PAT 권장 (Contents: Read/Write)</div>
+        </div>
+        <span class="pill" id="tokenState">토큰 필요</span>
+      </div>
+      <div class="panel-bd">
+        <div class="row">
+          <div class="field">
+            <label for="ghToken">GitHub Token (Fine-grained PAT)</label>
+            <input id="ghToken" type="password" placeholder="github_pat_..." autocomplete="off" />
+          </div>
+          <div style="min-width:120px;">
+            <label>&nbsp;</label>
+            <button class="btn primary" id="btnLoad">불러오기</button>
+          </div>
+        </div>
+        <div id="msg" class="msg"></div>
+      </div>
+    </section>
+
+    <!-- 2) 편집 -->
+    <section class="panel hidden" id="editor">
+      <div class="panel-hd">
+        <div>
+          <h2 class="panel-title">2) 수정</h2>
+          <div class="small">services / notice를 폼에서 수정합니다. (Raw JSON 없음)</div>
+        </div>
+      </div>
+
+      <div class="panel-bd">
+        <h3 style="margin:0 0 6px;font-size:14px;">서비스 목록</h3>
+        <div class="small">카드 단위로 추가/삭제 가능</div>
+        <div id="svcList"></div>
+        <button class="btn" id="btnAddSvc" style="margin-top:10px;">+ 서비스 추가</button>
+
+        <div class="divider"></div>
+
+        <h3 style="margin:0 0 6px;font-size:14px;">공지</h3>
+        <div class="grid2">
+          <div>
+            <label for="noticeId">noticeId (기준일)</label>
+            <input id="noticeId" type="text" placeholder="예: 2026-01-30" />
+          </div>
+        </div>
+        <div id="noticeList"></div>
+        <button class="btn" id="btnAddNotice" style="margin-top:10px;">+ 공지 추가</button>
+
+        <div class="divider"></div>
+
+        <h3 style="margin:0 0 6px;font-size:14px;">저장(커밋)</h3>
+        <div class="grid2">
+          <div>
+            <label for="commitMsg">커밋 메시지</label>
+            <input id="commitMsg" type="text" value="Update content.json via admin" />
+          </div>
+        </div>
+        <button class="btn primary" id="btnSave" style="margin-top:10px;">저장</button>
+        <div id="saveMsg" class="msg"></div>
+      </div>
+    </section>
+  </div>
+
+  <script src="./admin.js" defer></script>
+</body>
+</html>
