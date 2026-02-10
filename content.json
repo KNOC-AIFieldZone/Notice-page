@@ -76,7 +76,7 @@
       "domain": "elevenlabs.io",
       "note": "TTS 음성 생성\n보이스 클로닝\n더빙·다국어 음성\n음성 스타일 제어\n오디오 제작",
       "disabled": false
-    },
+    }
   ],
   "notice": {
     "noticeId": "2026-01-30",
@@ -92,7 +92,7 @@
       {
         "title": "ElevenLabs 플랜 다운그레이드",
         "sub": "사유: 사용량 저조 (Creator -> Starter)"
-      },
+      }
     ]
   }
 }
