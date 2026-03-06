@@ -85,12 +85,5 @@
       }
     ]
   },
-  "news": [
-    {
-      "title": "[Gemini] Gemini 3.1 Pro 출시 및 생태계 통합",
-      "sub": "Chrome 통합·에이전트 검색·기업용 40% 비용 절감",
-      "date": "2026-03-01",
-      "file": "2026-03-01-gemini-gemini-31-pro-출시-및-생태계-통합.html"
-    }
-  ]
+  "news": []
 }
