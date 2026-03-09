@@ -69,19 +69,23 @@
     }
   ],
   "notice": {
-    "noticeId": "2026-01-30",
+    "noticeId": "2026-03-09",
     "items": [
       {
         "title": "Perplexity 구독 해지",
-        "sub": "사유: 사용량 저조"
+        "sub": "2026년 1월 28일부터 Perplexity를 이용하실 수 없습니다. (사유: 사용량 저조)"
       },
       {
         "title": "Google AI Pro 구독 시작",
-        "sub": "Gemini, NotebookLM 등 사용 가능"
+        "sub": "2026년 1월 28일부터 Gemini, NotebookLM 등 이용하실 수 있습니다."
       },
       {
         "title": "ElevenLabs 플랜 다운그레이드",
-        "sub": "사유: 사용량 저조 (Creator -> Starter)"
+        "sub": "2026년 1월 29일부터 Creator Plan에서 Starter Plan으로 다운그레이드됩니다. (사유: 사용량 저조)"
+      },
+      {
+        "title": "Flowith 구독 해지",
+        "sub": "2026년 3월 28일부터 Flowith를 사용하실 수 없습니다. (사유: 사용량 저조)"
       }
     ]
   },
