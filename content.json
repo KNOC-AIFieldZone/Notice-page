@@ -97,22 +97,10 @@
       "file": "2026-03-09-generate-images-with-notion-ai.html"
     },
     {
-      "service": "Perplexity",
-      "title": "Perplexity Computer 대규모 업데이트",
+      "service": "Copilot",
+      "title": "VS Code 에이전트 대규모 강화",
       "date": "2026-03-06",
-      "file": "2026-03-06-perplexity-computer-대규모-업데이트.html"
-    },
-    {
-      "service": "OpenAI",
-      "title": "Codex Security 연구 프리뷰",
-      "date": "2026-03-06",
-      "file": "2026-03-06-codex-security-연구-프리뷰.html"
-    },
-    {
-      "service": "Notion AI",
-      "title": "GPT-5.4 is now in Notion",
-      "date": "2026-03-06",
-      "file": "2026-03-06-gpt-5-4-is-now-in-notion.html"
+      "file": "2026-03-06-vs-code-에이전트-대규모-강화.html"
     },
     {
       "service": "ElevenLabs",
@@ -121,28 +109,28 @@
       "file": "2026-03-06-scribe-출시.html"
     },
     {
-      "service": "ElevenLabs",
-      "title": "11.ai 알파 출시",
+      "service": "Perplexity",
+      "title": "Perplexity Computer 대규모 업데이트",
       "date": "2026-03-06",
-      "file": "2026-03-06-11-ai-알파-출시.html"
+      "file": "2026-03-06-perplexity-computer-대규모-업데이트.html"
     },
     {
-      "service": "Copilot",
-      "title": "VS Code 에이전트 대규모 강화",
+      "service": "Notion AI",
+      "title": "GPT-5.4 is now in Notion",
       "date": "2026-03-06",
-      "file": "2026-03-06-vs-code-에이전트-대규모-강화.html"
+      "file": "2026-03-06-gpt-54-is-now-in-notion.html"
     },
     {
       "service": "OpenAI",
-      "title": "GPT-5.4 출시",
-      "date": "2026-03-05",
-      "file": "2026-03-05-gpt-5-4-출시.html"
+      "title": "Codex Security 연구 프리뷰",
+      "date": "2026-03-06",
+      "file": "2026-03-06-codex-security-연구-프리뷰.html"
     },
     {
-      "service": "Genspark",
-      "title": "AI Slides에 Guide Mode 추가",
-      "date": "2026-03-05",
-      "file": "2026-03-05-ai-slides에-guide-mode-추가.html"
+      "service": "ElevenLabs",
+      "title": "11.ai 알파 출시",
+      "date": "2026-03-06",
+      "file": "2026-03-06-11ai-알파-출시.html"
     },
     {
       "service": "Copilot",
@@ -154,13 +142,19 @@
       "service": "Copilot",
       "title": "GPT-5.4 GitHub Copilot 도입",
       "date": "2026-03-05",
-      "file": "2026-03-05-gpt-5-4-github-copilot-도입.html"
+      "file": "2026-03-05-gpt-54-github-copilot-도입.html"
     },
     {
-      "service": "NotebookLM",
-      "title": "Cinematic Video Overviews 추가",
-      "date": "2026-03-04",
-      "file": "2026-03-04-cinematic-video-overviews-추가.html"
+      "service": "OpenAI",
+      "title": "GPT-5.4 출시",
+      "date": "2026-03-05",
+      "file": "2026-03-05-gpt-54-출시.html"
+    },
+    {
+      "service": "Genspark",
+      "title": "AI Slides에 Guide Mode 추가",
+      "date": "2026-03-05",
+      "file": "2026-03-05-ai-slides에-guide-mode-추가.html"
     },
     {
       "service": "Copilot",
@@ -169,28 +163,34 @@
       "file": "2026-03-04-copilot-memory-기본-활성화.html"
     },
     {
+      "service": "NotebookLM",
+      "title": "Cinematic Video Overviews 추가",
+      "date": "2026-03-04",
+      "file": "2026-03-04-cinematic-video-overviews-추가.html"
+    },
+    {
       "service": "OpenAI",
       "title": "GPT-5.3 Instant 출시",
       "date": "2026-03-03",
-      "file": "2026-03-03-gpt-5-3-instant-출시.html"
+      "file": "2026-03-03-gpt-53-instant-출시.html"
     },
     {
       "service": "Notion AI",
       "title": "Custom Agents에 MiniMax M2.5 추가",
       "date": "2026-03-03",
-      "file": "2026-03-03-custom-agents에-minimax-m2-5-추가.html"
+      "file": "2026-03-03-custom-agents에-minimax-m25-추가.html"
     },
     {
       "service": "Gemini",
       "title": "앱 안의 멀티스텝 작업 처리 시작",
       "date": "2026-03-03",
-      "file": "2026-03-03-multi-step-tasks.html"
+      "file": "2026-03-03-앱-안의-멀티스텝-작업-처리-시작.html"
     },
     {
       "service": "Perplexity",
       "title": "Perplexity Computer·갤럭시 S26·Comet 음성 업데이트",
       "date": "2026-02-27",
-      "file": "2026-02-27-perplexity-computer-갤럭시-s26-comet-음성-업데이트.html"
+      "file": "2026-02-27-perplexity-computer갤럭시-s26comet-음성-업데이트.html"
     },
     {
       "service": "Gemini",
@@ -211,16 +211,16 @@
       "file": "2026-02-26-nano-banana-2-출시.html"
     },
     {
-      "service": "Gemini",
-      "title": "Gemini 대화 기록 및 대화 공유 확대",
-      "date": "2026-02-26",
-      "file": "2026-02-26-conversation-history-and-sharing.html"
-    },
-    {
       "service": "Copilot",
       "title": "GPT-5.3-Codex 및 Claude/Codex 확대",
       "date": "2026-02-26",
-      "file": "2026-02-26-gpt-5-3-codex-및-claudecodex-확대.html"
+      "file": "2026-02-26-gpt-53-codex-및-claudecodex-확대.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Gemini 대화 기록 및 대화 공유 확대",
+      "date": "2026-02-26",
+      "file": "2026-02-26-gemini-대화-기록-및-대화-공유-확대.html"
     },
     {
       "service": "Copilot",
@@ -232,7 +232,7 @@
       "service": "Notion AI",
       "title": "Notion 3.3: Custom Agents",
       "date": "2026-02-24",
-      "file": "2026-02-24-notion-3-3-custom-agents.html"
+      "file": "2026-02-24-notion-33-custom-agents.html"
     },
     {
       "service": "Copilot",
@@ -244,19 +244,19 @@
       "service": "Canva AI",
       "title": "MangoAI·Cavalry 인수로 AI 및 프로 크리에이티브 역량 확장",
       "date": "2026-02-23",
-      "file": "2026-02-23-mangoai·cavalry-인수로-ai-및-프로-크리에이티브-역량-확장.html"
-    },
-    {
-      "service": "Perplexity",
-      "title": "Perplexity 모델·응답 설정·엔터프라이즈 메모리 업데이트",
-      "date": "2026-02-20",
-      "file": "2026-02-20-perplexity-모델-응답-설정-엔터프라이즈-메모리-업데이트.html"
+      "file": "2026-02-23-mangoaicavalry-인수로-ai-및-프로-크리에이티브-역량-확장.html"
     },
     {
       "service": "ElevenLabs",
       "title": "Text to Speech API 글로벌 속도 개선",
       "date": "2026-02-20",
       "file": "2026-02-20-text-to-speech-api-글로벌-속도-개선.html"
+    },
+    {
+      "service": "Perplexity",
+      "title": "Perplexity 모델·응답 설정·엔터프라이즈 메모리 업데이트",
+      "date": "2026-02-20",
+      "file": "2026-02-20-perplexity-모델응답-설정엔터프라이즈-메모리-업데이트.html"
     },
     {
       "service": "ElevenLabs",
@@ -268,7 +268,7 @@
       "service": "Claude",
       "title": "Claude Sonnet 4.6 출시",
       "date": "2026-02-17",
-      "file": "2026-02-17-sonnet-4-6-출시.html"
+      "file": "2026-02-17-claude-sonnet-46-출시.html"
     },
     {
       "service": "Canva AI",
@@ -280,25 +280,19 @@
       "service": "Manus",
       "title": "Manus Agents for Chat 출시",
       "date": "2026-02-16",
-      "file": "2026-02-16-agents-for-chat-출시.html"
+      "file": "2026-02-16-manus-agents-for-chat-출시.html"
     },
     {
       "service": "Skywork",
       "title": "Skywork App 5.0.8 업데이트",
       "date": "2026-02-13",
-      "file": "2026-02-13-app-5-0-8-업데이트.html"
+      "file": "2026-02-13-skywork-app-508-업데이트.html"
     },
     {
       "service": "Perplexity",
       "title": "Perplexity Deep Research·Model Council 메모리/검색 개선",
       "date": "2026-02-13",
-      "file": "2026-02-13-perplexity-deep-research-model-council-메모리-검색-개선.html"
-    },
-    {
-      "service": "OpenAI",
-      "title": "GPT-5.3-Codex-Spark 연구 프리뷰",
-      "date": "2026-02-12",
-      "file": "2026-02-12-gpt-5-3-codex-spark-연구-프리뷰.html"
+      "file": "2026-02-13-perplexity-deep-researchmodel-council-메모.html"
     },
     {
       "service": "Manus",
@@ -307,28 +301,40 @@
       "file": "2026-02-12-project-skills-출시.html"
     },
     {
+      "service": "OpenAI",
+      "title": "GPT-5.3-Codex-Spark 연구 프리뷰",
+      "date": "2026-02-12",
+      "file": "2026-02-12-gpt-53-codex-spark-연구-프리뷰.html"
+    },
+    {
       "service": "Notion AI",
       "title": "Claude Opus 4.6, now in Notion",
       "date": "2026-02-09",
-      "file": "2026-02-09-claude-opus-4-6-now-in-notion.html"
+      "file": "2026-02-09-claude-opus-46-now-in-notion.html"
     },
     {
       "service": "Perplexity",
       "title": "Perplexity Deep Research·Model Council 업데이트",
       "date": "2026-02-06",
-      "file": "2026-02-06-perplexity-deep-research-model-council-업데이트.html"
+      "file": "2026-02-06-perplexity-deep-researchmodel-council-업데.html"
     },
     {
       "service": "Canva AI",
       "title": "ChatGPT 안에서 Canva 디자인 생성·편집 지원",
       "date": "2026-02-06",
-      "file": "2026-02-06-chatgpt-안에서-canva-디자인-생성·편집-지원.html"
+      "file": "2026-02-06-chatgpt-안에서-canva-디자인-생성편집-지원.html"
     },
     {
       "service": "OpenAI",
       "title": "GPT-5.3-Codex 출시",
       "date": "2026-02-05",
-      "file": "2026-02-05-gpt-5-3-codex-출시.html"
+      "file": "2026-02-05-gpt-53-codex-출시.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Claude Opus 4.6 출시",
+      "date": "2026-02-05",
+      "file": "2026-02-05-claude-opus-46-출시.html"
     },
     {
       "service": "NotebookLM",
@@ -337,40 +343,34 @@
       "file": "2026-02-05-더-큰-source-library와-고가치-출력-확대.html"
     },
     {
-      "service": "Claude",
-      "title": "Claude Opus 4.6 출시",
-      "date": "2026-02-05",
-      "file": "2026-02-05-opus-4-6-출시.html"
-    },
-    {
       "service": "Skywork",
       "title": "Skywork Desktop 글로벌 출시",
       "date": "2026-02-04",
-      "file": "2026-02-04-desktop-글로벌-출시.html"
+      "file": "2026-02-04-skywork-desktop-글로벌-출시.html"
     },
     {
       "service": "Notion AI",
       "title": "Asana 작업·프로젝트 검색 연동",
       "date": "2026-02-04",
-      "file": "2026-02-04-asana-작업·프로젝트-검색-연동.html"
-    },
-    {
-      "service": "OpenAI",
-      "title": "Codex 앱 출시",
-      "date": "2026-02-02",
-      "file": "2026-02-02-codex-앱-출시.html"
+      "file": "2026-02-04-asana-작업프로젝트-검색-연동.html"
     },
     {
       "service": "ElevenLabs",
       "title": "Eleven v3 정식 출시",
       "date": "2026-02-02",
       "file": "2026-02-02-eleven-v3-정식-출시.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "Codex 앱 출시",
+      "date": "2026-02-02",
+      "file": "2026-02-02-codex-앱-출시.html"
     }
   ],
   "newsServiceCatalog": [
     {
       "name": "ChatGPT",
-      "color": "#10b981"
+      "color": "#66e1b8"
     },
     {
       "name": "Gemini",
@@ -386,15 +386,15 @@
     },
     {
       "name": "Copilot",
-      "color": "#3b82f6"
+      "color": "#99b8ea"
     },
     {
       "name": "Notion AI",
-      "color": "#6b7280"
+      "color": "#c1c5cd"
     },
     {
       "name": "Cursor",
-      "color": "#06b6d4"
+      "color": "#95c7d0"
     },
     {
       "name": "Canva AI",
@@ -402,7 +402,7 @@
     },
     {
       "name": "ElevenLabs",
-      "color": "#ec4899"
+      "color": "#ea8fbd"
     },
     {
       "name": "기타",
@@ -410,11 +410,11 @@
     },
     {
       "name": "OpenAI",
-      "color": "#10b981"
+      "color": "#a6cec1"
     },
     {
       "name": "xAI",
-      "color": "#8b5cf6"
+      "color": "#b0a1d3"
     },
     {
       "name": "Flowith",
@@ -426,31 +426,31 @@
     },
     {
       "name": "Poe",
-      "color": "#f97316"
+      "color": "#e5cbb8"
     },
     {
       "name": "Character AI",
-      "color": "#f43f5e"
+      "color": "#e5aeb7"
     },
     {
       "name": "Suno",
-      "color": "#a855f7"
+      "color": "#b68edc"
     },
     {
       "name": "Runway",
-      "color": "#22c55e"
+      "color": "#92b9a1"
     },
     {
       "name": "HeyGen",
-      "color": "#0ea5e9"
+      "color": "#acbfc8"
     },
     {
       "name": "Lilys AI",
-      "color": "#14b8a6"
+      "color": "#ace2dc"
     },
     {
       "name": "Skywork",
-      "color": "#84cc16"
+      "color": "#daf5b2"
     },
     {
       "name": "Manus",
@@ -458,23 +458,23 @@
     },
     {
       "name": "NotebookLM",
-      "color": "#6366f1"
+      "color": "#b7b8f0"
     },
     {
       "name": "DeepSeek",
-      "color": "#2563eb"
+      "color": "#a4b7df"
     },
     {
       "name": "Midjourney",
-      "color": "#a855f7"
+      "color": "#a18ab7"
     },
     {
       "name": "Replit",
-      "color": "#f97316"
+      "color": "#bf997d"
     },
     {
       "name": "Gamma",
-      "color": "#d946ef"
+      "color": "#ac9daf"
     }
   ]
 }
