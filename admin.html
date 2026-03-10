@@ -112,7 +112,7 @@
 
     .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
     label{font-size:12px;color:var(--muted);display:block;margin-bottom:6px;font-weight:700;}
-    input[type="text"], input[type="password"], textarea{
+    input[type="text"], input[type="password"], select, textarea{
       width:100%;
       padding:10px 12px;
       border-radius:12px;
@@ -122,12 +122,12 @@
       outline:none;
       box-shadow:inset 0 0 0 1px rgba(255,255,255,.02);
     }
-    input[type="text"]:focus, input[type="password"]:focus, textarea:focus{
+    input[type="text"]:focus, input[type="password"]:focus, select:focus, textarea:focus{
       border-color:var(--focus);
       box-shadow:0 0 0 4px rgba(94,234,212,.10);
     }
     @media (prefers-color-scheme: light){
-      input[type="text"]:focus, input[type="password"]:focus, textarea:focus{
+      input[type="text"]:focus, input[type="password"]:focus, select:focus, textarea:focus{
         box-shadow:0 0 0 4px rgba(14,165,233,.10);
       }
     }
@@ -176,6 +176,25 @@
     .btn.danger:hover{
       background: rgba(251,113,133,.18);
       border-color: rgba(251,113,133,.75);
+    }
+
+    .news-svc-modal-backdrop{position:fixed;inset:0;background:rgba(2,6,23,.55);z-index:80;display:none;}
+    .news-svc-modal-backdrop.show{display:block;}
+    .news-svc-modal{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(860px,94vw);max-height:84vh;overflow:auto;background:rgba(15,23,42,.96);border:1px solid rgba(148,163,184,.34);border-radius:16px;box-shadow:var(--shadow);z-index:90;display:none;padding:14px;backdrop-filter:blur(10px);}
+    .news-svc-modal.show{display:block;}
+    .news-svc-list{margin-top:10px;display:flex;flex-direction:column;gap:8px;max-height:46vh;overflow:auto;padding-right:2px;}
+    .news-svc-row{display:grid;grid-template-columns:1.2fr 150px 56px auto;gap:8px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:10px;background:rgba(30,41,59,.62);}
+    .news-svc-badge{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:900;border:1px solid var(--line);}
+    .news-svc-modal .row.actions{justify-content:space-between;margin-top:10px;}
+    .news-svc-row.dup{border-color:rgba(251,113,133,.65);}
+    select{color:var(--text);background-color:var(--field);}
+    option{color:#0f172a;background-color:#ffffff;}
+    @media (prefers-color-scheme: light){
+      .news-svc-modal{background:rgba(255,255,255,.98);border:1px solid rgba(30,41,59,.16);}
+      .news-svc-row{background:rgba(248,250,252,.98);}
+      select{color:#0f172a;background:#ffffff;}
+      option{color:#0f172a;background:#ffffff;}
+
     }
 
     .msg{margin-top:10px;font-size:12px;color:var(--muted);}
@@ -429,6 +448,10 @@
       cursor:not-allowed;
       box-shadow:none;
     }
+
+    .news-toolbar{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:8px 0 10px;}
+    .news-toolbar .small{margin:0;}
+    .news-list-wrap{max-height:68vh;overflow:auto;padding-right:4px;border-radius:12px;}
   </style>
 </head>
 
@@ -529,8 +552,18 @@
         <div class="divider"></div>
 
         <h3 style="margin:0 0 6px;font-size:14px;">AI Update News</h3>
-        <div class="small">News 폴더에 있는 HTML 파일명(file)과 표시용 제목/설명을 함께 관리합니다.</div>
-        <div id="newsList"></div>
+        <div class="small">뉴스 파일명은 입력하지 않습니다. <b>date + title</b>로 자동 생성/관리됩니다.</div>
+        <div class="news-toolbar">
+          <div class="small" id="newsOrderInfo">정렬: 최신순(날짜 내림차순)</div>
+          <div class="row" style="gap:6px;">
+            <button class="btn" id="btnNewsExpandAll" type="button">뉴스 전체 펼치기</button>
+            <button class="btn" id="btnNewsCollapseAll" type="button">뉴스 전체 접기</button>
+            <button class="btn" id="btnManageNewsServices" type="button">서비스/색상 편집</button>
+          </div>
+        </div>
+        <div class="news-list-wrap">
+          <div id="newsList"></div>
+        </div>
         <button class="btn" id="btnAddNews" style="margin-top:10px;">+ 뉴스 추가</button>
 
         <div class="divider"></div>
@@ -617,7 +650,21 @@
     </section>
   </div>
 
+  <div id="newsSvcModalBackdrop" class="news-svc-modal-backdrop" aria-hidden="true"></div>
+  <section id="newsSvcModal" class="news-svc-modal" aria-hidden="true">
+    <div class="card-hd" style="margin-bottom:8px;">
+      <div class="card-title">뉴스 서비스/색상 관리</div>
+      <button class="btn" id="btnCloseNewsSvcModal" type="button">닫기</button>
+    </div>
+    <div class="small">서비스 이름과 색상을 관리합니다. 뉴스 편집의 서비스 선택 목록에 반영됩니다.</div>
+    <div id="newsSvcList" class="news-svc-list"></div>
+    <div class="row actions">
+      <button class="btn" id="btnAddNewsSvc" type="button">+ 서비스 추가</button>
+      <button class="btn primary" id="btnApplyNewsSvc" type="button">적용</button>
+    </div>
+  </section>
+
   <!-- ✅ 캐시 이슈 있으면 v= 값을 바꾸세요 -->
-  <script src="./admin.js?v=2" defer></script>
+  <script src="./admin.js?v=3" defer></script>
 </body>
 </html>
