@@ -295,6 +295,12 @@
       "file": "2026-02-16-manus-agents-for-chat-출시.html"
     },
     {
+      "service": "OpenClaw",
+      "title": "창립자 OpenAI 합류와 재단 전환 계획 공개",
+      "date": "2026-02-14",
+      "file": "2026-02-14-창립자-openai-합류와-재단-전환-계획-공개.html"
+    },
+    {
       "service": "Skywork",
       "title": "Skywork App 5.0.8 업데이트",
       "date": "2026-02-13",
@@ -323,6 +329,12 @@
       "title": "Claude Opus 4.6, now in Notion",
       "date": "2026-02-09",
       "file": "2026-02-09-claude-opus-46-now-in-notion.html"
+    },
+    {
+      "service": "OpenClaw",
+      "title": "ClawHub에 VirusTotal 기반 스킬 보안 스캔 도입",
+      "date": "2026-02-07",
+      "file": "2026-02-07-clawhub에-virustotal-기반-스킬-보안-스캔-도입.html"
     },
     {
       "service": "Perplexity",
@@ -377,6 +389,12 @@
       "title": "Codex 앱 출시",
       "date": "2026-02-02",
       "file": "2026-02-02-codex-앱-출시.html"
+    },
+    {
+      "service": "OpenClaw",
+      "title": "Clawd와 Moltbot을 거쳐 OpenClaw로 브랜드 확정",
+      "date": "2026-01-29",
+      "file": "2026-01-29-clawd와-moltbot을-거쳐-openclaw로-브랜드-확정.html"
     }
   ],
   "newsServiceCatalog": [
