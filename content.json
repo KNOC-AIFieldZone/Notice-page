@@ -91,6 +91,12 @@
   },
   "news": [
     {
+      "service": "OpenAI",
+      "title": "New ways to learn math and science in ChatGPT",
+      "date": "2026-03-10",
+      "file": "2026-03-10-new-ways-to-learn-math-and-science-in-ch.html"
+    },
+    {
       "service": "Notion AI",
       "title": "Generate images with Notion AI",
       "date": "2026-03-09",
@@ -365,6 +371,12 @@
       "title": "Codex 앱 출시",
       "date": "2026-02-02",
       "file": "2026-02-02-codex-앱-출시.html"
+    },
+    {
+      "service": "Notion AI",
+      "title": "Visualize progress with dashboard views",
+      "date": "2026-03-10",
+      "file": "2026-03-10-visualize-progress-with-dashboard-views.html"
     }
   ],
   "newsServiceCatalog": [
