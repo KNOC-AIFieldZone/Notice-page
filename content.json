@@ -91,6 +91,12 @@
   },
   "news": [
     {
+      "service": "Notion AI",
+      "title": "Visualize progress with dashboard views",
+      "date": "2026-03-10",
+      "file": "2026-03-10-visualize-progress-with-dashboard-views.html"
+    },
+    {
       "service": "OpenAI",
       "title": "New ways to learn math and science in ChatGPT",
       "date": "2026-03-10",
@@ -371,86 +377,56 @@
       "title": "Codex 앱 출시",
       "date": "2026-02-02",
       "file": "2026-02-02-codex-앱-출시.html"
-    },
-    {
-      "service": "Notion AI",
-      "title": "Visualize progress with dashboard views",
-      "date": "2026-03-10",
-      "file": "2026-03-10-visualize-progress-with-dashboard-views.html"
     }
   ],
   "newsServiceCatalog": [
     {
-      "name": "ChatGPT",
-      "color": "#66e1b8"
-    },
-    {
-      "name": "Gemini",
-      "color": "#60a5fa"
-    },
-    {
-      "name": "Claude",
-      "color": "#f59e0b"
-    },
-    {
-      "name": "Perplexity",
-      "color": "#38bdf8"
-    },
-    {
-      "name": "Copilot",
-      "color": "#99b8ea"
-    },
-    {
-      "name": "Notion AI",
-      "color": "#c1c5cd"
-    },
-    {
-      "name": "Cursor",
-      "color": "#95c7d0"
-    },
-    {
       "name": "Canva AI",
       "color": "#22d3ee"
-    },
-    {
-      "name": "ElevenLabs",
-      "color": "#ea8fbd"
-    },
-    {
-      "name": "기타",
-      "color": "#94a3b8"
-    },
-    {
-      "name": "OpenAI",
-      "color": "#a6cec1"
-    },
-    {
-      "name": "xAI",
-      "color": "#b0a1d3"
-    },
-    {
-      "name": "Flowith",
-      "color": "#2dd4bf"
-    },
-    {
-      "name": "Genspark",
-      "color": "#eab308"
-    },
-    {
-      "name": "Poe",
-      "color": "#e5cbb8"
     },
     {
       "name": "Character AI",
       "color": "#e5aeb7"
     },
     {
-      "name": "Suno",
-      "color": "#b68edc"
+      "name": "ChatGPT",
+      "color": "#66e1b8"
     },
     {
-      "name": "Runway",
-      "color": "#92b9a1"
+      "name": "Claude",
+      "color": "#f59e0b"
+    },
+    {
+      "name": "Copilot",
+      "color": "#99b8ea"
+    },
+    {
+      "name": "Cursor",
+      "color": "#95c7d0"
+    },
+    {
+      "name": "DeepSeek",
+      "color": "#a4b7df"
+    },
+    {
+      "name": "ElevenLabs",
+      "color": "#ea8fbd"
+    },
+    {
+      "name": "Flowith",
+      "color": "#2dd4bf"
+    },
+    {
+      "name": "Gamma",
+      "color": "#ac9daf"
+    },
+    {
+      "name": "Gemini",
+      "color": "#60a5fa"
+    },
+    {
+      "name": "Genspark",
+      "color": "#eab308"
     },
     {
       "name": "HeyGen",
@@ -461,32 +437,60 @@
       "color": "#ace2dc"
     },
     {
-      "name": "Skywork",
-      "color": "#daf5b2"
-    },
-    {
       "name": "Manus",
       "color": "#fb7185"
-    },
-    {
-      "name": "NotebookLM",
-      "color": "#b7b8f0"
-    },
-    {
-      "name": "DeepSeek",
-      "color": "#a4b7df"
     },
     {
       "name": "Midjourney",
       "color": "#a18ab7"
     },
     {
+      "name": "NotebookLM",
+      "color": "#b7b8f0"
+    },
+    {
+      "name": "Notion AI",
+      "color": "#c1c5cd"
+    },
+    {
+      "name": "OpenAI",
+      "color": "#a6cec1"
+    },
+    {
+      "name": "OpenClaw",
+      "color": "#f7dee3"
+    },
+    {
+      "name": "Perplexity",
+      "color": "#38bdf8"
+    },
+    {
+      "name": "Poe",
+      "color": "#e5cbb8"
+    },
+    {
       "name": "Replit",
       "color": "#bf997d"
     },
     {
-      "name": "Gamma",
-      "color": "#ac9daf"
+      "name": "Runway",
+      "color": "#92b9a1"
+    },
+    {
+      "name": "Skywork",
+      "color": "#daf5b2"
+    },
+    {
+      "name": "Suno",
+      "color": "#b68edc"
+    },
+    {
+      "name": "xAI",
+      "color": "#b0a1d3"
+    },
+    {
+      "name": "기타",
+      "color": "#94a3b8"
     }
   ]
 }
