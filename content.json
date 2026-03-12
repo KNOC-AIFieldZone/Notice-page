@@ -91,6 +91,18 @@
   },
   "news": [
     {
+      "service": "Cursor",
+      "title": "new plugins on_the cursor marketplace",
+      "date": "2026-03-11",
+      "file": "2026-03-11-new-plugins-onthe-cursor-marketplace.html"
+    },
+    {
+      "service": "ElevenLabs",
+      "title": "introducing flows in eleven creative",
+      "date": "2026-03-11",
+      "file": "2026-03-11-introducing-flows-in-eleven-creative.html"
+    },
+    {
       "service": "Notion AI",
       "title": "Visualize progress with dashboard views",
       "date": "2026-03-10",
