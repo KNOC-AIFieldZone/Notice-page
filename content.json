@@ -91,6 +91,12 @@
   },
   "news": [
     {
+      "service": "Genspark",
+      "title": "ai_workspace",
+      "date": "2026-03-12",
+      "file": "2026-03-12-aiworkspace.html"
+    },
+    {
       "service": "Cursor",
       "title": "new plugins on_the cursor marketplace",
       "date": "2026-03-11",
@@ -383,6 +389,12 @@
       "title": "Skywork Desktop 글로벌 출시",
       "date": "2026-02-04",
       "file": "2026-02-04-skywork-desktop-글로벌-출시.html"
+    },
+    {
+      "service": "HeyGen",
+      "title": "january 2026 product release",
+      "date": "2026-02-04",
+      "file": "2026-02-04-january-2026-product-release.html"
     },
     {
       "service": "Notion AI",
