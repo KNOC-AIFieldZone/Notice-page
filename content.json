@@ -91,10 +91,22 @@
   },
   "news": [
     {
+      "service": "Meta AI",
+      "title": "facebook marketplace",
+      "date": "2026-03-12",
+      "file": "2026-03-12-facebook-marketplace.html"
+    },
+    {
       "service": "Genspark",
       "title": "ai_workspace",
       "date": "2026-03-12",
       "file": "2026-03-12-aiworkspace.html"
+    },
+    {
+      "service": "HeyGen",
+      "title": "whats new at hey gen february 2026",
+      "date": "2026-03-11",
+      "file": "2026-03-11-whats-new-at-hey-gen-february-2026.html"
     },
     {
       "service": "Cursor",
@@ -107,6 +119,12 @@
       "title": "introducing flows in eleven creative",
       "date": "2026-03-11",
       "file": "2026-03-11-introducing-flows-in-eleven-creative.html"
+    },
+    {
+      "service": "Lilys AI",
+      "title": "유튜브 채널 모니터링",
+      "date": "2026-03-11",
+      "file": "2026-03-11-유튜브-채널-모니터링.html"
     },
     {
       "service": "Notion AI",
@@ -125,6 +143,12 @@
       "title": "Generate images with Notion AI",
       "date": "2026-03-09",
       "file": "2026-03-09-generate-images-with-notion-ai.html"
+    },
+    {
+      "service": "Runway",
+      "title": "characters",
+      "date": "2026-03-09",
+      "file": "2026-03-09-characters.html"
     },
     {
       "service": "Copilot",
@@ -355,6 +379,12 @@
       "file": "2026-02-07-clawhub에-virustotal-기반-스킬-보안-스캔-도입.html"
     },
     {
+      "service": "Suno",
+      "title": "studio 1.2",
+      "date": "2026-02-06",
+      "file": "2026-02-06-studio-12.html"
+    },
+    {
       "service": "Perplexity",
       "title": "Perplexity Deep Research·Model Council 업데이트",
       "date": "2026-02-06",
@@ -377,6 +407,12 @@
       "title": "Claude Opus 4.6 출시",
       "date": "2026-02-05",
       "file": "2026-02-05-claude-opus-46-출시.html"
+    },
+    {
+      "service": "Lilys AI",
+      "title": "프로젝트 검색",
+      "date": "2026-02-05",
+      "file": "2026-02-05-프로젝트-검색.html"
     },
     {
       "service": "NotebookLM",
