@@ -91,6 +91,18 @@
   },
   "news": [
     {
+      "service": "Claude",
+      "title": "Claude 장문 처리 확장과 1M 컨텍스트 정식 적용",
+      "date": "2026-03-13",
+      "file": "2026-03-13-claude-장문-처리-확장과-1m-컨텍스트-정식-적용.html"
+    },
+    {
+      "service": "ElevenLabs",
+      "title": "음성 제품군 업데이트",
+      "date": "2026-03-14",
+      "file": "2026-03-14-음성-제품군-업데이트.html"
+    },
+    {
       "service": "Meta AI",
       "title": "facebook marketplace",
       "date": "2026-03-12",
