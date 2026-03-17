@@ -86,21 +86,25 @@
       {
         "title": "Flowith 구독 해지",
         "sub": "2026년 3월 28일부터 Flowith를 사용하실 수 없습니다. (사유: 사용량 저조)"
+      },
+      {
+        "title": "Genspark 일시적 사용 불가 안내",
+        "sub": "Credit 결제 오류로 인해 Credit 충전이 불가하여 Genspark 이용이 제한되고 있습니다."
       }
     ]
   },
   "news": [
     {
-      "service": "Claude",
-      "title": "Claude 장문 처리 확장과 1M 컨텍스트 정식 적용",
-      "date": "2026-03-13",
-      "file": "2026-03-13-claude-장문-처리-확장과-1m-컨텍스트-정식-적용.html"
-    },
-    {
       "service": "ElevenLabs",
       "title": "음성 제품군 업데이트",
       "date": "2026-03-14",
       "file": "2026-03-14-음성-제품군-업데이트.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Claude 장문 처리 확장과 1M 컨텍스트 정식 적용",
+      "date": "2026-03-13",
+      "file": "2026-03-13-claude-장문-처리-확장과-1m-컨텍스트-정식-적용.html"
     },
     {
       "service": "Meta AI",
