@@ -95,6 +95,12 @@
   },
   "news": [
     {
+      "service": "OpenAI",
+      "title": "introducing gpt  5.4 mini and nano",
+      "date": "2026-03-17",
+      "file": "2026-03-17-introducing-gpt-54-mini-and-nano.html"
+    },
+    {
       "service": "ElevenLabs",
       "title": "음성 제품군 업데이트",
       "date": "2026-03-14",
