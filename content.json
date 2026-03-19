@@ -95,6 +95,12 @@
   },
   "news": [
     {
+      "service": "Notion AI",
+      "title": "custom instructions for ai meeting notes",
+      "date": "2026-03-18",
+      "file": "2026-03-18-custom-instructions-for-ai-meeting-notes.html"
+    },
+    {
       "service": "OpenAI",
       "title": "introducing gpt  5.4 mini and nano",
       "date": "2026-03-17",
