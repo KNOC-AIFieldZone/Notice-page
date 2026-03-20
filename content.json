@@ -129,6 +129,18 @@
   ],
   "news": [
     {
+      "service": "ElevenLabs",
+      "title": "Music Marketplace in ElevenCreative 출시",
+      "date": "2026-03-19",
+      "file": "2026-03-19-music-marketplace-in-elevencreative-출시.html"
+    },
+    {
+      "service": "Cursor",
+      "title": "Composer 2 공개",
+      "date": "2026-03-19",
+      "file": "2026-03-19-composer-2-공개.html"
+    },
+    {
       "service": "Notion AI",
       "title": "custom instructions for ai meeting notes",
       "date": "2026-03-18",
@@ -145,18 +157,6 @@
       "title": "introducing gpt  5.4 mini and nano",
       "date": "2026-03-17",
       "file": "2026-03-17-introducing-gpt-54-mini-and-nano.html"
-    },
-    {
-      "service": "ElevenLabs",
-      "title": "음성 제품군 업데이트",
-      "date": "2026-03-14",
-      "file": "2026-03-14-음성-제품군-업데이트.html"
-    },
-    {
-      "service": "Claude",
-      "title": "Claude 장문 처리 확장과 1M 컨텍스트 정식 적용",
-      "date": "2026-03-13",
-      "file": "2026-03-13-claude-장문-처리-확장과-1m-컨텍스트-정식-적용.html"
     }
   ],
   "newsServiceCatalog": [
