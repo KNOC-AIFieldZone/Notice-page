@@ -129,10 +129,10 @@
   ],
   "news": [
     {
-      "service": "Notion AI",
-      "title": "재사용 가능한 AI 스킬 공유 기능 추가",
+      "service": "NotebookLM",
+      "title": "콘텐츠 맞춤화와 상호작용 기능 대폭 확장",
       "date": "2026-03-20",
-      "file": "2026-03-20-재사용-가능한-ai-스킬-공유-기능-추가.html"
+      "file": "2026-03-20-콘텐츠-맞춤화와-상호작용-기능-대폭-확장.html"
     },
     {
       "service": "ElevenLabs",
