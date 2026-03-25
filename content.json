@@ -66,6 +66,13 @@
       "url": "https://elevenlabs.io/",
       "domain": "elevenlabs.io",
       "note": "TTS 음성 생성\n보이스 클로닝\n더빙·다국어 음성\n음성 스타일 제어\n오디오 제작"
+    },
+    {
+      "name": "inline AI",
+      "url": "https://www.inline-ai.com/",
+      "domain": "inline-ai.com",
+      "note": "한글/문서 편집 특화\n양식 맞춤 초안 생성\n표·셀·각주 자동 정리\n여러 형식의 자료를 업로드해 문서 작성에 활용\n반복 문서 업무 자동화",
+      "disabled": true
     }
   ],
   "notice": {
