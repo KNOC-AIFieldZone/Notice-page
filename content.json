@@ -129,6 +129,18 @@
   ],
   "news": [
     {
+      "service": "ElevenLabs",
+      "title": "ElevenAgents Guardrails 2.0 제어 레이어 추가",
+      "date": "2026-03-24",
+      "file": "2026-03-24-elevenagents-guardrails-20-제어-레이어-추가.html"
+    },
+    {
+      "service": "ChatGPT",
+      "title": "ChatGPT 내 상품 탐색 경험 강화",
+      "date": "2026-03-24",
+      "file": "2026-03-24-chatgpt-내-상품-탐색-경험-강화.html"
+    },
+    {
       "service": "Midjourney",
       "title": "V8 Alpha에 Relax mode 추가 반영",
       "date": "2026-03-21",
