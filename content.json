@@ -76,7 +76,7 @@
     }
   ],
   "notice": {
-    "noticeId": "2026-03-19",
+    "noticeId": "2026-03-25",
     "items": [
       {
         "date": "2026-03-18",
@@ -84,6 +84,13 @@
         "sub": "Credit 결제 오류로 인해 Credit 충전이 불가하여 Genspark 이용이 제한되고 있습니다.",
         "keyword": "긴급",
         "priority": 1
+      },
+      {
+        "date": "2026-03-25",
+        "title": "inline AI 구독 시작",
+        "sub": "2026년 3월 26일부터 한 달간 inline AI를 이용하실 수 있습니다.",
+        "keyword": "신규",
+        "priority": 5
       },
       {
         "date": "2026-03-19",
@@ -127,6 +134,16 @@
       "name": "긴급",
       "color": "#ef4444",
       "priority": 1
+    },
+    {
+      "name": "신규",
+      "color": "#6592fb",
+      "priority": 5
+    },
+    {
+      "name": "종료",
+      "color": "#ffa238",
+      "priority": 5
     },
     {
       "name": "안내",
