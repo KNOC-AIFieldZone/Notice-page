@@ -920,6 +920,15 @@ function snapshotFromFormWithUids() {
   };
 }
 
+function syncLoadedDataFromForm() {
+  const snap = snapshotFromFormWithUids();
+  loadedData.services = ensureServiceUids(snap.services);
+  loadedData.notice = { ...snap.notice, items: ensureNoticeItemUids(snap.notice.items || []) };
+  loadedData.noticeKeywordCatalog = ensureNoticeKeywordCatalog(snap.noticeKeywordCatalog, snap.notice.items || []);
+  loadedData.news = ensureNewsItemUids(snap.news || []);
+  loadedData.newsServiceCatalog = ensureNewsServiceCatalog(snap.newsServiceCatalog, snap.news || []);
+}
+
 function stripInternalFields(dataWithUids) {
   return {
     services: (dataWithUids.services || []).map((s) => ({
@@ -2714,11 +2723,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   $("noticeId").addEventListener("input", () => updatePendingSummary());
   $("noticePrev").addEventListener("click", () => {
+    syncLoadedDataFromForm();
     noticePageGroupStart = Math.max(1, noticePageGroupStart - NOTICE_PAGE_GROUP_SIZE);
     noticePage = noticePageGroupStart;
     renderAll();
   });
   $("noticeNext").addEventListener("click", () => {
+    syncLoadedDataFromForm();
     noticePageGroupStart += NOTICE_PAGE_GROUP_SIZE;
     noticePage = noticePageGroupStart;
     renderAll();
@@ -2726,15 +2737,18 @@ document.addEventListener("DOMContentLoaded", () => {
   $("noticePages").addEventListener("click", (e) => {
     const btn = e.target.closest("button[data-notice-page]");
     if (!btn) return;
+    syncLoadedDataFromForm();
     noticePage = Number(btn.dataset.noticePage || "1");
     renderAll();
   });
   $("newsPrev").addEventListener("click", () => {
+    syncLoadedDataFromForm();
     newsPageGroupStart = Math.max(1, newsPageGroupStart - NEWS_PAGE_GROUP_SIZE);
     newsPage = newsPageGroupStart;
     renderAll();
   });
   $("newsNext").addEventListener("click", () => {
+    syncLoadedDataFromForm();
     newsPageGroupStart += NEWS_PAGE_GROUP_SIZE;
     newsPage = newsPageGroupStart;
     renderAll();
@@ -2742,6 +2756,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $("newsPages").addEventListener("click", (e) => {
     const btn = e.target.closest("button[data-news-page]");
     if (!btn) return;
+    syncLoadedDataFromForm();
     newsPage = Number(btn.dataset.newsPage || "1");
     renderAll();
   });
