@@ -153,6 +153,30 @@
   ],
   "news": [
     {
+      "service": "Suno",
+      "title": "Suno v5.5 출시",
+      "date": "2026-03-26",
+      "file": "2026-03-26-suno-v55-출시.html"
+    },
+    {
+      "service": "Notion AI",
+      "title": "Notion Agent 시각 자료 생성 확장",
+      "date": "2026-03-26",
+      "file": "2026-03-26-notion-agent-시각-자료-생성-확장.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Gemini 3.1 Flash Live 출시",
+      "date": "2026-03-26",
+      "file": "2026-03-26-gemini-31-flash-live-출시.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "AI 메모리와 채팅 기록 가져오기",
+      "date": "2026-03-26",
+      "file": "2026-03-26-ai-메모리와-채팅-기록-가져오기.html"
+    },
+    {
       "service": "Gemini",
       "title": "Lyria 3 Pro로 더 긴 음악 생성 지원",
       "date": "2026-03-25",
