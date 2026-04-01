@@ -153,6 +153,18 @@
   ],
   "news": [
     {
+      "service": "Gemini",
+      "title": "Veo 3.1 Lite 유료 프리뷰 출시",
+      "date": "2026-03-31",
+      "file": "2026-03-31-veo-31-lite-유료-프리뷰-출시.html"
+    },
+    {
+      "service": "Flowith",
+      "title": "Canvas Cowork 기능 업데이트",
+      "date": "2026-03-31",
+      "file": "2026-03-31-canvas-cowork-기능-업데이트.html"
+    },
+    {
       "service": "ElevenLabs",
       "title": "ElevenAgents React SDK v1.0 출시",
       "date": "2026-03-27",
