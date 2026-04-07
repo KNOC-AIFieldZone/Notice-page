@@ -37,12 +37,6 @@
       "note": "템플릿 기반 디자인\nPPT/포스터 제작\n브랜드 키트·스타일 적용\n간편 편집·공유\n콘텐츠 리사이징"
     },
     {
-      "name": "Flowith",
-      "url": "https://flowith.io/",
-      "domain": "flowith.io",
-      "note": "프로젝트 지식 정리\n노트 연결·구조화\n워크플로우 설계\n문서 구성·초안화\n작업 추적"
-    },
-    {
       "name": "Skywork",
       "url": "https://skywork.ai/",
       "domain": "skywork.ai",
@@ -79,13 +73,6 @@
     "noticeId": "2026-03-25",
     "items": [
       {
-        "date": "2026-03-18",
-        "title": "Genspark 일시적 사용 불가 안내",
-        "sub": "Credit 결제 오류로 인해 Credit 충전이 불가하여 Genspark 이용이 제한되고 있습니다.",
-        "keyword": "긴급",
-        "priority": 1
-      },
-      {
         "date": "2026-03-25",
         "title": "inline AI 구독 시작",
         "sub": "2026년 3월 25일부터 한 달간 inline AI를 이용하실 수 있습니다.",
@@ -97,6 +84,20 @@
         "title": "Google AI Pro 구독 시작",
         "sub": "2026년 1월 28일부터 Gemini, NotebookLM 등 이용하실 수 있습니다.",
         "keyword": "신규",
+        "priority": 5
+      },
+      {
+        "date": "2026-04-04",
+        "title": "Genspark 정상 이용 가능 안내",
+        "sub": "Genspark 정상적으로 이용 가능합니다.",
+        "keyword": "안내",
+        "priority": 5
+      },
+      {
+        "date": "2026-01-01",
+        "title": "ElevenLabs 플랜 다운그레이드",
+        "sub": "2026년 1월 29일부터 Creator Plan에서 Starter Plan으로 다운그레이드됩니다. (사유: 사용량 저조)",
+        "keyword": "안내",
         "priority": 5
       },
       {
@@ -119,13 +120,6 @@
         "sub": "2026년 1월 28일부터 Perplexity를 이용하실 수 없습니다. (사유: 사용량 저조)",
         "keyword": "종료",
         "priority": 5
-      },
-      {
-        "date": "2026-01-01",
-        "title": "ElevenLabs 플랜 다운그레이드",
-        "sub": "2026년 1월 29일부터 Creator Plan에서 Starter Plan으로 다운그레이드됩니다. (사유: 사용량 저조)",
-        "keyword": "안내",
-        "priority": 10
       }
     ]
   },
@@ -141,14 +135,14 @@
       "priority": 5
     },
     {
-      "name": "종료",
-      "color": "#ffa238",
+      "name": "안내",
+      "color": "#34d399",
       "priority": 5
     },
     {
-      "name": "안내",
-      "color": "#34d399",
-      "priority": 10
+      "name": "종료",
+      "color": "#ffa238",
+      "priority": 5
     }
   ],
   "news": [
