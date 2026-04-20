@@ -147,6 +147,30 @@
   ],
   "news": [
     {
+      "service": "Notion AI",
+      "title": "Mail & Calendar, now in your settings",
+      "date": "2026-04-17",
+      "file": "2026-04-17-mail-calendar-now-in-your-settings.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Introducing Claude Design by Anthropic Labs",
+      "date": "2026-04-17",
+      "file": "2026-04-17-introducing-claude-design-by-anthropic-l.html"
+    },
+    {
+      "service": "xAI",
+      "title": "Grok Speech to Text and Text to Speech APIs",
+      "date": "2026-04-17",
+      "file": "2026-04-17-grok-speech-to-text-and-text-to-speech-a.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Flash TTS 공개",
+      "date": "2026-04-15",
+      "file": "2026-04-15-flash-tts-공개.html"
+    },
+    {
       "service": "Perplexity",
       "title": "Plaid 연동 추가",
       "date": "2026-04-09",
