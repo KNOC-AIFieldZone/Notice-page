@@ -147,6 +147,12 @@
   ],
   "news": [
     {
+      "service": "Moonshot AI",
+      "title": "Kimi K2.6 모델 업데이트 공개",
+      "date": "2026-04-21",
+      "file": "2026-04-21-kimi-k26-모델-업데이트-공개.html"
+    },
+    {
       "service": "Notion AI",
       "title": "Mail & Calendar, now in your settings",
       "date": "2026-04-17",
@@ -791,6 +797,10 @@
     {
       "name": "Midjourney",
       "color": "#a18ab7"
+    },
+    {
+      "name": "Moonshot AI",
+      "color": "#8596ad"
     },
     {
       "name": "NotebookLM",
