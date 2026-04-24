@@ -37,12 +37,6 @@
       "note": "템플릿 기반 디자인\nPPT/포스터 제작\n브랜드 키트·스타일 적용\n간편 편집·공유\n콘텐츠 리사이징"
     },
     {
-      "name": "Skywork",
-      "url": "https://skywork.ai/",
-      "domain": "skywork.ai",
-      "note": "업무 문서 자동 작성\n템플릿 기반 산출물\n요약·정리\n서식 맞춤 작성\n반복 문서 생산"
-    },
-    {
       "name": "CapCut",
       "url": "https://www.capcut.com/",
       "domain": "capcut.com",
@@ -84,13 +78,6 @@
         "title": "Google AI Pro 구독 시작",
         "sub": "2026년 1월 28일부터 Gemini, NotebookLM 등 이용하실 수 있습니다.",
         "keyword": "신규",
-        "priority": 5
-      },
-      {
-        "date": "2026-04-04",
-        "title": "Genspark 정상 이용 가능 안내",
-        "sub": "Genspark 정상적으로 이용 가능합니다.",
-        "keyword": "안내",
         "priority": 5
       },
       {
@@ -147,10 +134,28 @@
   ],
   "news": [
     {
+      "service": "Gemini",
+      "title": "Gemini Embedding 2 정식 출시",
+      "date": "2026-04-22",
+      "file": "2026-04-22-gemini-embedding-2-정식-출시.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "엔터프라이즈 에이전트 플랫폼 발표",
+      "date": "2026-04-22",
+      "file": "2026-04-22-엔터프라이즈-에이전트-플랫폼-발표.html"
+    },
+    {
       "service": "Moonshot AI",
       "title": "Kimi K2.6 모델 업데이트 공개",
       "date": "2026-04-21",
       "file": "2026-04-21-kimi-k26-모델-업데이트-공개.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Deep Research Max 공개",
+      "date": "2026-04-21",
+      "file": "2026-04-21-deep-research-max-공개.html"
     },
     {
       "service": "Notion AI",
@@ -171,16 +176,40 @@
       "file": "2026-04-17-grok-speech-to-text-and-text-to-speech-a.html"
     },
     {
+      "service": "Claude",
+      "title": "usage 명령 및 1M context 업데이트",
+      "date": "2026-04-15",
+      "file": "2026-04-15-usage-명령-및-1m-context-업데이트.html"
+    },
+    {
       "service": "Gemini",
       "title": "Flash TTS 공개",
       "date": "2026-04-15",
       "file": "2026-04-15-flash-tts-공개.html"
     },
     {
+      "service": "Gemini",
+      "title": "Gemini Robotics-ER 1.6 공개",
+      "date": "2026-04-14",
+      "file": "2026-04-14-gemini-robotics-er-16-공개.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Claude Code routines 프리뷰 추가",
+      "date": "2026-04-14",
+      "file": "2026-04-14-claude-code-routines-프리뷰-추가.html"
+    },
+    {
       "service": "Perplexity",
       "title": "Plaid 연동 추가",
       "date": "2026-04-09",
       "file": "2026-04-09-plaid-연동-추가.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Lyria 3 Pro 긴 음악 생성 확대",
+      "date": "2026-04-09",
+      "file": "2026-04-09-lyria-3-pro-긴-음악-생성-확대.html"
     },
     {
       "service": "Claude",
@@ -219,6 +248,12 @@
       "file": "2026-04-08-kiro-power-추가.html"
     },
     {
+      "service": "Gemini",
+      "title": "Google Colab Learn Mode 추가",
+      "date": "2026-04-08",
+      "file": "2026-04-08-google-colab-learn-mode-추가.html"
+    },
+    {
       "service": "HeyGen",
       "title": "Avatar v 공개",
       "date": "2026-04-08",
@@ -237,10 +272,28 @@
       "file": "2026-04-07-introducing-seedance-20x-hey-gen.html"
     },
     {
+      "service": "ElevenLabs",
+      "title": "Agent Skills 공개",
+      "date": "2026-04-07",
+      "file": "2026-04-07-agent-skills-공개.html"
+    },
+    {
       "service": "Lilys AI",
       "title": "책 요약 기능 출시",
       "date": "2026-04-07",
       "file": "2026-04-07-책-요약-기능-출시.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Gemma 4 공개",
+      "date": "2026-04-02",
+      "file": "2026-04-02-gemma-4-공개.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Gemini API Docs MCP와 Agent Skills 공개",
+      "date": "2026-04-01",
+      "file": "2026-04-01-gemini-api-docs-mcp와-agent-skills-공개.html"
     },
     {
       "service": "Gemini",
