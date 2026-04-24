@@ -134,16 +134,40 @@
   ],
   "news": [
     {
+      "service": "OpenAI",
+      "title": "GPT-5.5 공개",
+      "date": "2026-04-23",
+      "file": "2026-04-23-gpt-55-공개.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "gpt-image-2 API 및 Codex 사용 가능 공지",
+      "date": "2026-04-22",
+      "file": "2026-04-22-gpt-image-2-api-및-codex-사용-가능-공지.html"
+    },
+    {
       "service": "Gemini",
       "title": "Gemini Embedding 2 정식 출시",
       "date": "2026-04-22",
       "file": "2026-04-22-gemini-embedding-2-정식-출시.html"
     },
     {
+      "service": "OpenAI",
+      "title": "임상용 ChatGPT 무료 제공",
+      "date": "2026-04-22",
+      "file": "2026-04-22-임상용-chatgpt-무료-제공.html"
+    },
+    {
       "service": "Gemini",
       "title": "엔터프라이즈 에이전트 플랫폼 발표",
       "date": "2026-04-22",
       "file": "2026-04-22-엔터프라이즈-에이전트-플랫폼-발표.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "개인정보 필터 오픈웨이트 공개",
+      "date": "2026-04-22",
+      "file": "2026-04-22-개인정보-필터-오픈웨이트-공개.html"
     },
     {
       "service": "Moonshot AI",
@@ -156,6 +180,12 @@
       "title": "Deep Research Max 공개",
       "date": "2026-04-21",
       "file": "2026-04-21-deep-research-max-공개.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "ChatGPT Images 2.0 공개",
+      "date": "2026-04-21",
+      "file": "2026-04-21-chatgpt-images-20-공개.html"
     },
     {
       "service": "Notion AI",
@@ -204,6 +234,12 @@
       "title": "Notion 3.4 Part 2 업데이트",
       "date": "2026-04-14",
       "file": "2026-04-14-notion-34-part-2-업데이트.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "GPT-5.4-Cyber 및 Trusted Access 확장",
+      "date": "2026-04-14",
+      "file": "2026-04-14-gpt-54-cyber-및-trusted-access-확장.html"
     },
     {
       "service": "Gemini",
