@@ -1455,7 +1455,7 @@ async function buildFileChangesForCommit(token, dataWithUids) {
   const curNewsByUid = new Map((dataWithUids.news || []).map((it) => [String(it._uid), it]));
   const curNewsFileSet = new Set();
   (dataWithUids.news || []).forEach((it) => {
-    const fn = normalizeNewsFileName(it.file, it.date, it.title, false);
+    const fn = normalizeNewsFileName(it.file, it.date, it.title, true);
     if (fn) curNewsFileSet.add(fn);
   });
 
@@ -1481,7 +1481,7 @@ async function buildFileChangesForCommit(token, dataWithUids) {
   for (const [uid, op] of stagedNewsFileOps.entries()) {
     const it = curNewsByUid.get(String(uid));
     if (!it) continue;
-    const fileName = normalizeNewsFileName(it?.file, it?.date, it?.title, false);
+    const fileName = normalizeNewsFileName(it?.file, it?.date, it?.title, true);
     if (!fileName) continue;
     const path = `${NEWS_DIR}/${fileName}`;
 
@@ -1519,8 +1519,8 @@ async function buildFileChangesForCommit(token, dataWithUids) {
     const cur = curNewsByUid.get(String(uid));
     if (!cur) continue;
 
-    const oldFile = normalizeNewsFileName(orig?.file, orig?.date, orig?.title, false);
-    const newFile = normalizeNewsFileName(cur?.file, cur?.date, cur?.title, false);
+    const oldFile = normalizeNewsFileName(orig?.file, orig?.date, orig?.title, true);
+    const newFile = normalizeNewsFileName(cur?.file, cur?.date, cur?.title, true);
     if (!oldFile || !newFile || oldFile === newFile) continue;
 
     const oldPath = `${NEWS_DIR}/${oldFile}`;
@@ -1541,7 +1541,7 @@ async function buildFileChangesForCommit(token, dataWithUids) {
   for (const [uid, orig] of originalNewsByUid.entries()) {
     if (curNewsByUid.has(String(uid))) continue;
 
-    const oldFile = normalizeNewsFileName(orig?.file, orig?.date, orig?.title, false);
+    const oldFile = normalizeNewsFileName(orig?.file, orig?.date, orig?.title, true);
     if (!oldFile) continue;
     if (curNewsFileSet.has(oldFile)) continue;
     if (!newsFilesIndex.has(oldFile)) continue;
@@ -2232,7 +2232,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!date || !title) return setMsg("뉴스 추가 시 date/title은 필수입니다.", "err");
 
     const uid = makeUid();
-    loadedData.news.push({ _uid: uid, service, title, date, file: "" });
+    const file = suggestUniqueNewsFileName(date, title, uid);
+    loadedData.news.push({ _uid: uid, service, title, date, file });
     if (pendingNewsAddBody?.b64) stagedNewsFileOps.set(uid, { type: "upsert", b64: pendingNewsAddBody.b64, size: pendingNewsAddBody.size, origName: pendingNewsAddBody.origName });
     pendingNewsAddBody = null;
     $("newsAddBodyState").textContent = "선택된 파일 없음";
@@ -2704,7 +2705,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const date = card.querySelector('input[data-k="date"]')?.value || "";
       const title = card.querySelector('input[data-k="title"]')?.value || "";
       const fileInputText = card.querySelector('input[data-k="fileAuto"]');
-      const fileName = normalizeNewsFileName("", date, title, true);
+      const fileName = normalizeNewsFileName(fileInputText?.value || "", date, title, true);
 
       if (fileInputText) fileInputText.value = fileName;
 
