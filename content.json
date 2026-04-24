@@ -176,16 +176,34 @@
       "file": "2026-04-17-grok-speech-to-text-and-text-to-speech-a.html"
     },
     {
+      "service": "Notion AI",
+      "title": "Opus 4.7 적용",
+      "date": "2026-04-16",
+      "file": "2026-04-16-opus-47-적용.html"
+    },
+    {
       "service": "Claude",
       "title": "usage 명령 및 1M context 업데이트",
       "date": "2026-04-15",
       "file": "2026-04-15-usage-명령-및-1m-context-업데이트.html"
     },
     {
+      "service": "Notion AI",
+      "title": "Notion Agent 회의 예약 지원",
+      "date": "2026-04-15",
+      "file": "2026-04-15-notion-agent-회의-예약-지원.html"
+    },
+    {
       "service": "Gemini",
       "title": "Flash TTS 공개",
       "date": "2026-04-15",
       "file": "2026-04-15-flash-tts-공개.html"
+    },
+    {
+      "service": "Notion AI",
+      "title": "Notion 3.4 Part 2 업데이트",
+      "date": "2026-04-14",
+      "file": "2026-04-14-notion-34-part-2-업데이트.html"
     },
     {
       "service": "Gemini",
@@ -282,6 +300,12 @@
       "title": "책 요약 기능 출시",
       "date": "2026-04-07",
       "file": "2026-04-07-책-요약-기능-출시.html"
+    },
+    {
+      "service": "Notion AI",
+      "title": "데스크톱 음성 입력 추가",
+      "date": "2026-04-06",
+      "file": "2026-04-06-데스크톱-음성-입력-추가.html"
     },
     {
       "service": "Gemini",
