@@ -134,6 +134,12 @@
   ],
   "news": [
     {
+      "service": "xAI",
+      "title": "Grok Voice Think Fast 1.0 공개",
+      "date": "2026-04-23",
+      "file": "2026-04-23-grok-voice-think-fast-10-공개.html"
+    },
+    {
       "service": "OpenAI",
       "title": "GPT-5.5 공개",
       "date": "2026-04-23",
@@ -354,6 +360,12 @@
       "title": "Gemini API Docs MCP와 Agent Skills 공개",
       "date": "2026-04-01",
       "file": "2026-04-01-gemini-api-docs-mcp와-agent-skills-공개.html"
+    },
+    {
+      "service": "Perplexity",
+      "title": "Computer in Slack 공개",
+      "date": "2026-04-01",
+      "file": "2026-04-01-computer-in-slack-공개.html"
     },
     {
       "service": "Gemini",
