@@ -134,10 +134,34 @@
   ],
   "news": [
     {
+      "service": "Perplexity",
+      "title": "What We Shipped",
+      "date": "2026-04-25",
+      "file": "2026-04-25-what-we-shipped.html"
+    },
+    {
+      "service": "Cursor",
+      "title": "Multitask, Worktrees, and Multi-root Workspaces",
+      "date": "2026-04-24",
+      "file": "2026-04-24-multitask-worktrees-and-multi-root-works.html"
+    },
+    {
+      "service": "DeepSeek",
+      "title": "DeepSeek‑V4",
+      "date": "2026-04-24",
+      "file": "2026-04-24-deepseekv4.html"
+    },
+    {
       "service": "xAI",
       "title": "Grok Voice Think Fast 1.0 공개",
       "date": "2026-04-23",
       "file": "2026-04-23-grok-voice-think-fast-10-공개.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "GPT‑5.5, GPT‑5.5 Pro API availability update",
+      "date": "2026-04-23",
+      "file": "2026-04-23-gpt55-gpt55-pro-api-availability-update.html"
     },
     {
       "service": "OpenAI",
