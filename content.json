@@ -134,6 +134,12 @@
   ],
   "news": [
     {
+      "service": "Mistral AI",
+      "title": "Vibe 원격 에이전트와 Mistral Medium 3.5 공개",
+      "date": "2026-04-29",
+      "file": "2026-04-29-vibe-원격-에이전트와-mistral-medium-35-공개.html"
+    },
+    {
       "service": "Gemini",
       "title": "Gemini 파일 생성 및 내보내기 지원 확대",
       "date": "2026-04-29",
@@ -976,6 +982,10 @@
     {
       "name": "Midjourney",
       "color": "#a18ab7"
+    },
+    {
+      "name": "Mistral AI",
+      "color": "#b07b4f"
     },
     {
       "name": "Moonshot AI",
