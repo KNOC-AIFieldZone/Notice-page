@@ -134,6 +134,36 @@
   ],
   "news": [
     {
+      "service": "Gemini",
+      "title": "Gemini 파일 생성 및 내보내기 지원 확대",
+      "date": "2026-04-29",
+      "file": "2026-04-29-gemini-파일-생성-및-내보내기-지원-확대.html"
+    },
+    {
+      "service": "ElevenLabs",
+      "title": "ElevenMusic 출시",
+      "date": "2026-04-29",
+      "file": "2026-04-29-elevenmusic-출시.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Claude API skill 개발 도구 통합 확대",
+      "date": "2026-04-29",
+      "file": "2026-04-29-claude-api-skill-개발-도구-통합-확대.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Claude for Creative Work 커넥터 추가",
+      "date": "2026-04-28",
+      "file": "2026-04-28-claude-for-creative-work-커넥터-추가.html"
+    },
+    {
+      "service": "ElevenLabs",
+      "title": "ElevenAgents용 Agent Templates 출시",
+      "date": "2026-04-27",
+      "file": "2026-04-27-elevenagents용-agent-templates-출시.html"
+    },
+    {
       "service": "Perplexity",
       "title": "What We Shipped",
       "date": "2026-04-25",
