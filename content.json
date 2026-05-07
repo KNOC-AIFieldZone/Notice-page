@@ -20,7 +20,7 @@
     },
     {
       "name": "NotebookLM",
-      "url": "https://notebooklm.google/",
+      "url": "https://notebooklm.google.com/",
       "domain": "notebooklm.google",
       "note": "자료 기반 Q&A(근거 중심)\n문서/링크 요약·핵심 추출\n리서치 노트 구조화\n출처 기반 정리·비교\n오디오 오버뷰"
     },
