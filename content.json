@@ -134,6 +134,24 @@
   ],
   "news": [
     {
+      "service": "ElevenLabs",
+      "title": "Studio Agents_공개",
+      "date": "2026-05-07",
+      "file": "2026-05-07-studio-agents공개.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "GPT API 음성 모델 3종 추가",
+      "date": "2026-05-07",
+      "file": "2026-05-07-gpt-api-음성-모델-3종-추가.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "ChatGPT 사이버 보안용 GPT 5.5 Cyber 제한 공개",
+      "date": "2026-05-07",
+      "file": "2026-05-07-chatgpt-사이버-보안용-gpt-55-cyber-제한-공개.html"
+    },
+    {
       "service": "Mistral AI",
       "title": "Vibe 원격 에이전트와 Mistral Medium 3.5 공개",
       "date": "2026-04-29",
