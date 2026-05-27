@@ -66,16 +66,23 @@
       "name": "Claude",
       "url": "https://claude.ai/new",
       "domain": "claude.ai/new",
-      "note": ""
+      "note": "자연스러운 글쓰기·창작\n방대한 문서 심층 분석\n아티팩트 결과물 시각화\n프로젝트 맞춤 지식 베이스\n고급 코딩·자율 에이전트"
     }
   ],
   "notice": {
     "noticeId": "2026-03-25",
     "items": [
       {
+        "date": "2026-05-22",
+        "title": "Claude AI 구독 시작",
+        "sub": "2026년 5월 22일부터 inline AI를 이용하실 수 있습니다.",
+        "keyword": "신규",
+        "priority": 5
+      },
+      {
         "date": "2026-03-25",
         "title": "inline AI 구독 시작",
-        "sub": "2026년 3월 25일부터 한 달간 inline AI를 이용하실 수 있습니다.",
+        "sub": "2026년 3월 25일부터 inline AI를 이용하실 수 있습니다.",
         "keyword": "신규",
         "priority": 5
       },
