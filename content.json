@@ -160,6 +160,60 @@
   ],
   "news": [
     {
+      "service": "OpenAI",
+      "title": "GPT-Rosalind 연구 기능 확장",
+      "date": "2026-06-03",
+      "file": "2026-06-03-gpt-rosalind-연구-기능-확장.html"
+    },
+    {
+      "service": "Canva AI",
+      "title": "ChatGPT와 Codex에 Canva 연동 추가",
+      "date": "2026-06-03",
+      "file": "2026-06-03-chatgpt와-codex에-canva-연동-추가.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "Codex가 역할별 도구와 워크플로 전반으로 확장",
+      "date": "2026-06-02",
+      "file": "2026-06-02-codex가-역할별-도구와-워크플로-전반으로-확장.html"
+    },
+    {
+      "service": "Canva AI",
+      "title": "Canva가 Perplexity Computer와 공식 연동",
+      "date": "2026-06-02",
+      "file": "2026-06-02-canva가-perplexity-computer와-공식-연동.html"
+    },
+    {
+      "service": "xAI",
+      "title": "Composer 2.5 모델 옵션 추가",
+      "date": "2026-06-01",
+      "file": "2026-06-01-composer-25-모델-옵션-추가.html"
+    },
+    {
+      "service": "Lovable",
+      "title": "앱 자동 보안 보호 기능 공개",
+      "date": "2026-06-01",
+      "file": "2026-06-01-앱-자동-보안-보호-기능-공개.html"
+    },
+    {
+      "service": "xAI",
+      "title": "Grok Build 0.1 API 공개 베타 출시",
+      "date": "2026-05-29",
+      "file": "2026-05-29-grok-build-01-api-공개-베타-출시.html"
+    },
+    {
+      "service": "Gamma",
+      "title": "Gamma 커넥터와 API 및 내보내기 개선",
+      "date": "2026-05-29",
+      "file": "2026-05-29-gamma-커넥터와-api-및-내보내기-개선.html"
+    },
+    {
+      "service": "Skywork",
+      "title": "Claude Opus 4.8 적용",
+      "date": "2026-05-29",
+      "file": "2026-05-29-claude-opus-48-적용.html"
+    },
+    {
       "service": "Mistral AI",
       "title": "Search Toolkit 공개 프리뷰",
       "date": "2026-05-28",
@@ -310,16 +364,16 @@
       "file": "2026-05-18-grok-skills-정식-도입.html"
     },
     {
-      "service": "OpenAI",
-      "title": "개인 금융 기능 프리뷰 공개",
-      "date": "2026-05-15",
-      "file": "2026-05-15-개인-금융-기능-프리뷰-공개.html"
-    },
-    {
       "service": "xAI",
       "title": "Grok 구독을 외부 에이전트·코딩 워크플로로 확장",
       "date": "2026-05-15",
       "file": "2026-05-15-grok-구독을-외부-에이전트코딩-워크플로로-확장.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "개인 금융 기능 프리뷰 공개",
+      "date": "2026-05-15",
+      "file": "2026-05-15-개인-금융-기능-프리뷰-공개.html"
     },
     {
       "service": "Gamma",
@@ -352,12 +406,6 @@
       "file": "2026-05-13-claude-for-small-business와-canva-통합.html"
     },
     {
-      "service": "Claude",
-      "title": "법률 업계를 위한 Claude 확장",
-      "date": "2026-05-12",
-      "file": "2026-05-12-법률-업계를-위한-claude-확장.html"
-    },
-    {
       "service": "NotebookLM",
       "title": "Workspace Studio에 Ask NotebookLM 단계 추가",
       "date": "2026-05-12",
@@ -368,6 +416,12 @@
       "title": "Preferred Browser 기능 추가",
       "date": "2026-05-12",
       "file": "2026-05-12-preferred-browser-기능-추가.html"
+    },
+    {
+      "service": "Claude",
+      "title": "법률 업계를 위한 Claude 확장",
+      "date": "2026-05-12",
+      "file": "2026-05-12-법률-업계를-위한-claude-확장.html"
     },
     {
       "service": "ElevenLabs",
