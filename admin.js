@@ -1186,6 +1186,7 @@ function resetEditsToBaseline() {
   originalNewsByUid = new Map();
   (loadedData.news || []).forEach((it) => {
     originalNewsByUid.set(String(it._uid), {
+      service: it.service || "",
       title: it.title || "",
       date: it.date || "",
       file: normalizeNewsFileName("", it.date, it.title, true),
