@@ -79,6 +79,13 @@
     "noticeId": "2026-03-25",
     "items": [
       {
+        "date": "2026-06-04",
+        "title": "HIX AI 구독 시작",
+        "sub": "2026년 6월 04일부터 HIX AI를 한 달간 이용하실 수 있습니다.",
+        "keyword": "신규",
+        "priority": 5
+      },
+      {
         "date": "2026-05-22",
         "title": "Claude AI 구독 시작",
         "sub": "2026년 5월 22일부터 Claude AI를 이용하실 수 있습니다.",
