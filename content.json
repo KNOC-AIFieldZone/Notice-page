@@ -67,11 +67,24 @@
       "url": "https://claude.ai/new",
       "domain": "claude.ai/new",
       "note": "자연스러운 글쓰기·창작\n방대한 문서 심층 분석\n아티팩트 결과물 시각화\n프로젝트 맞춤 지식 베이스\n고급 코딩·자율 에이전트"
+    },
+    {
+      "name": "HIX AI",
+      "url": "https://hix.ai/home",
+      "domain": "hix.ai/home",
+      "note": "올인원 AI 에이전트 워크스페이스\n여러 AI 모델 비교·활용\n딥리서치·보고서 초안 작성\nPPT·이미지·영상·문서 생성\n브라우저 기반 글쓰기·메일 보조"
     }
   ],
   "notice": {
-    "noticeId": "2026-03-25",
+    "noticeId": "2026-06-04",
     "items": [
+      {
+        "date": "2026-06-04",
+        "title": "HIX AI 구독 시작",
+        "sub": "2026년 6월 04일부터 HIX AI를 한 달간 이용하실 수 있습니다.",
+        "keyword": "신규",
+        "priority": 5
+      },
       {
         "date": "2026-05-22",
         "title": "Claude AI 구독 시작",
@@ -358,7 +371,7 @@
     },
     {
       "service": "ElevenLabs",
-      "title": "Studio Agents_공개",
+      "title": "Studio Agents 공개",
       "date": "2026-05-07",
       "file": "2026-05-07-studio-agents공개.html"
     },
@@ -796,7 +809,7 @@
     },
     {
       "service": "Genspark",
-      "title": "ai_workspace",
+      "title": "ai workspace",
       "date": "2026-03-12",
       "file": "2026-03-12-aiworkspace.html"
     },
@@ -808,7 +821,7 @@
     },
     {
       "service": "Cursor",
-      "title": "new plugins on_the cursor marketplace",
+      "title": "new plugins on the cursor marketplace",
       "date": "2026-03-11",
       "file": "2026-03-11-new-plugins-onthe-cursor-marketplace.html"
     },
