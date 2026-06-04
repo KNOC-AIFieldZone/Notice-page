@@ -147,6 +147,216 @@
   ],
   "news": [
     {
+      "service": "Mistral AI",
+      "title": "Search Toolkit 공개 프리뷰",
+      "date": "2026-05-28",
+      "file": "2026-05-28-search-toolkit-공개-프리뷰.html"
+    },
+    {
+      "service": "xAI",
+      "title": "Grok Build 0.1 API 공개 베타",
+      "date": "2026-05-28",
+      "file": "2026-05-28-grok-build-01-api-공개-베타.html"
+    },
+    {
+      "service": "ElevenLabs",
+      "title": "Dubbing v2 출시",
+      "date": "2026-05-28",
+      "file": "2026-05-28-dubbing-v2-출시.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Claude Opus 4.8 출시",
+      "date": "2026-05-28",
+      "file": "2026-05-28-claude-opus-48-출시.html"
+    },
+    {
+      "service": "Lovable",
+      "title": "Subagents 도입",
+      "date": "2026-05-27",
+      "file": "2026-05-27-subagents-도입.html"
+    },
+    {
+      "service": "Runway",
+      "title": "Runway MCP 공개",
+      "date": "2026-05-27",
+      "file": "2026-05-27-runway-mcp-공개.html"
+    },
+    {
+      "service": "xAI",
+      "title": "Kilo Code에서 Grok 구독 직접 사용 지원",
+      "date": "2026-05-27",
+      "file": "2026-05-27-kilo-code에서-grok-구독-직접-사용-지원.html"
+    },
+    {
+      "service": "Canva AI",
+      "title": "5월 런치 묶음 업데이트",
+      "date": "2026-05-27",
+      "file": "2026-05-27-5월-런치-묶음-업데이트.html"
+    },
+    {
+      "service": "NotebookLM",
+      "title": "Schoology LMS 소스를 NotebookLM에 직접 추가",
+      "date": "2026-05-26",
+      "file": "2026-05-26-schoology-lms-소스를-notebooklm에-직접-추가.html"
+    },
+    {
+      "service": "ElevenLabs",
+      "title": "Music v2 출시",
+      "date": "2026-05-26",
+      "file": "2026-05-26-music-v2-출시.html"
+    },
+    {
+      "service": "NotebookLM",
+      "title": "Google Drive 자동 동기화 지원",
+      "date": "2026-05-26",
+      "file": "2026-05-26-google-drive-자동-동기화-지원.html"
+    },
+    {
+      "service": "xAI",
+      "title": "Grok Build 출시",
+      "date": "2026-05-25",
+      "file": "2026-05-25-grok-build-출시.html"
+    },
+    {
+      "service": "Lilys AI",
+      "title": "X.com 영상 분석 지원",
+      "date": "2026-05-21",
+      "file": "2026-05-21-xcom-영상-분석-지원.html"
+    },
+    {
+      "service": "Character AI",
+      "title": "Smarter Memory 롤아웃",
+      "date": "2026-05-21",
+      "file": "2026-05-21-smarter-memory-롤아웃.html"
+    },
+    {
+      "service": "ElevenLabs",
+      "title": "ElevenReader에 20만+ 프리미엄 오디오북·전자책 추가",
+      "date": "2026-05-21",
+      "file": "2026-05-21-elevenreader에-20만-프리미엄-오디오북전자책-추가.html"
+    },
+    {
+      "service": "Runway",
+      "title": "Aleph 2.0 및 Edit Studio 공개",
+      "date": "2026-05-21",
+      "file": "2026-05-21-aleph-20-및-edit-studio-공개.html"
+    },
+    {
+      "service": "Stability AI",
+      "title": "Stable Audio 3.0 모델군 공개",
+      "date": "2026-05-20",
+      "file": "2026-05-20-stable-audio-30-모델군-공개.html"
+    },
+    {
+      "service": "Manus",
+      "title": "Higgsfield MCP Connector 추가",
+      "date": "2026-05-19",
+      "file": "2026-05-19-higgsfield-mcp-connector-추가.html"
+    },
+    {
+      "service": "Lovable",
+      "title": "Google Workspace·Gemini Enterprise 연동",
+      "date": "2026-05-19",
+      "file": "2026-05-19-google-workspacegemini-enterprise-연동.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Gemini 앱 agentic 기능 묶음 발표",
+      "date": "2026-05-19",
+      "file": "2026-05-19-gemini-앱-agentic-기능-묶음-발표.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Gemini 3.5 Flash 출시",
+      "date": "2026-05-19",
+      "file": "2026-05-19-gemini-35-flash-출시.html"
+    },
+    {
+      "service": "Canva AI",
+      "title": "Canva 디자인 생성이 Google Gemini 안으로 확장",
+      "date": "2026-05-19",
+      "file": "2026-05-19-canva-디자인-생성이-google-gemini-안으로-확장.html"
+    },
+    {
+      "service": "Lovable",
+      "title": "Skills 출시",
+      "date": "2026-05-18",
+      "file": "2026-05-18-skills-출시.html"
+    },
+    {
+      "service": "Manus",
+      "title": "Scheduled Tasks 2.0",
+      "date": "2026-05-18",
+      "file": "2026-05-18-scheduled-tasks-20.html"
+    },
+    {
+      "service": "xAI",
+      "title": "Grok Skills 정식 도입",
+      "date": "2026-05-18",
+      "file": "2026-05-18-grok-skills-정식-도입.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "개인 금융 기능 프리뷰 공개",
+      "date": "2026-05-15",
+      "file": "2026-05-15-개인-금융-기능-프리뷰-공개.html"
+    },
+    {
+      "service": "xAI",
+      "title": "Grok 구독을 외부 에이전트·코딩 워크플로로 확장",
+      "date": "2026-05-15",
+      "file": "2026-05-15-grok-구독을-외부-에이전트코딩-워크플로로-확장.html"
+    },
+    {
+      "service": "Gamma",
+      "title": "2026-05-15 Gamma 기능 묶음 업데이트",
+      "date": "2026-05-15",
+      "file": "2026-05-15-2026-05-15-gamma-기능-묶음-업데이트.html"
+    },
+    {
+      "service": "Runway",
+      "title": "Runway Agent 출시",
+      "date": "2026-05-13",
+      "file": "2026-05-13-runway-agent-출시.html"
+    },
+    {
+      "service": "ElevenLabs",
+      "title": "ElevenCreative Templates 출시",
+      "date": "2026-05-13",
+      "file": "2026-05-13-elevencreative-templates-출시.html"
+    },
+    {
+      "service": "Notion AI",
+      "title": "Developer Platform 3 5 출시",
+      "date": "2026-05-13",
+      "file": "2026-05-13-developer-platform-3-5-출시.html"
+    },
+    {
+      "service": "Canva",
+      "title": "Claude for Small Business와 Canva 통합",
+      "date": "2026-05-13",
+      "file": "2026-05-13-claude-for-small-business와-canva-통합.html"
+    },
+    {
+      "service": "Claude",
+      "title": "법률 업계를 위한 Claude 확장",
+      "date": "2026-05-12",
+      "file": "2026-05-12-법률-업계를-위한-claude-확장.html"
+    },
+    {
+      "service": "NotebookLM",
+      "title": "Workspace Studio에 Ask NotebookLM 단계 추가",
+      "date": "2026-05-12",
+      "file": "2026-05-12-workspace-studio에-ask-notebooklm-단계-추가.html"
+    },
+    {
+      "service": "Manus",
+      "title": "Preferred Browser 기능 추가",
+      "date": "2026-05-12",
+      "file": "2026-05-12-preferred-browser-기능-추가.html"
+    },
+    {
       "service": "ElevenLabs",
       "title": "Studio Agents_공개",
       "date": "2026-05-07",
@@ -1069,6 +1279,18 @@
     {
       "name": "기타",
       "color": "#94a3b8"
+    },
+    {
+      "name": "Canva",
+      "color": "#22d3ee"
+    },
+    {
+      "name": "Lovable",
+      "color": "#f472b6"
+    },
+    {
+      "name": "Stability AI",
+      "color": "#8b5cf6"
     }
   ]
 }

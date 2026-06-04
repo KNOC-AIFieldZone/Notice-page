@@ -1115,6 +1115,51 @@ function refreshPromptPdfUI() {
   statusEl.textContent = exists ? `현재 파일: ${PROMPT_PDF_NAME}` : "현재 파일 없음";
 }
 
+function rebuildOriginalSnapshotsFromLoadedData() {
+  if (!loadedData) return;
+
+  originalSvcByUid = new Map();
+  (loadedData.services || []).forEach((s) => {
+    originalSvcByUid.set(String(s._uid), {
+      name: s.name || "",
+      url: s.url || "",
+      domain: s.domain || "",
+      note: s.note ?? "",
+      disabled: !!s.disabled,
+    });
+  });
+
+  originalNoticeId = loadedData.notice?.noticeId || "";
+  originalNoticeByUid = new Map();
+  (loadedData.notice?.items || []).forEach((it) => {
+    originalNoticeByUid.set(String(it._uid), {
+      date: it.date || "",
+      title: it.title || "",
+      sub: it.sub || "",
+      keyword: it.keyword || "",
+      priority: normalizeNoticePriority(it.priority, 999),
+    });
+  });
+  originalNoticeKeywordCatalogJson = JSON.stringify(ensureNoticeKeywordCatalog(loadedData.noticeKeywordCatalog, loadedData.notice?.items || []));
+
+  originalNewsByUid = new Map();
+  (loadedData.news || []).forEach((it) => {
+    originalNewsByUid.set(String(it._uid), {
+      service: it.service || "",
+      title: it.title || "",
+      date: it.date || "",
+      file: normalizeNewsFileName("", it.date, it.title, true),
+    });
+  });
+  originalNewsServiceCatalogJson = JSON.stringify(ensureNewsServiceCatalog(loadedData.newsServiceCatalog, loadedData.news || []));
+}
+
+function markLoadedDataAsCleanBaseline() {
+  if (!loadedData) return;
+  baselineData = deepClone(loadedData);
+  rebuildOriginalSnapshotsFromLoadedData();
+}
+
 function wirePromptPdfControls() {
   const btn = document.getElementById("btnPromptPdfReplace");
   const input = document.getElementById("promptPdfInput");
@@ -1186,6 +1231,7 @@ function resetEditsToBaseline() {
   originalNewsByUid = new Map();
   (loadedData.news || []).forEach((it) => {
     originalNewsByUid.set(String(it._uid), {
+      service: it.service || "",
       title: it.title || "",
       date: it.date || "",
       file: normalizeNewsFileName("", it.date, it.title, true),
@@ -2045,6 +2091,9 @@ document.addEventListener("DOMContentLoaded", () => {
       await loadFilesDirIndex(token);
       await loadNewsDirIndex(token);
       renderAll();
+      syncLoadedDataFromForm();
+      markLoadedDataAsCleanBaseline();
+      updatePendingSummary();
       setMsg("불러오기 완료. 수정 후 '저장'하면 한 번에 커밋됩니다.", "ok");
     } catch (e) {
       console.error(e);
