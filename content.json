@@ -310,16 +310,16 @@
       "file": "2026-05-18-grok-skills-정식-도입.html"
     },
     {
-      "service": "xAI",
-      "title": "Grok 구독을 외부 에이전트·코딩 워크플로로 확장",
-      "date": "2026-05-15",
-      "file": "2026-05-15-grok-구독을-외부-에이전트코딩-워크플로로-확장.html"
-    },
-    {
       "service": "OpenAI",
       "title": "개인 금융 기능 프리뷰 공개",
       "date": "2026-05-15",
       "file": "2026-05-15-개인-금융-기능-프리뷰-공개.html"
+    },
+    {
+      "service": "xAI",
+      "title": "Grok 구독을 외부 에이전트·코딩 워크플로로 확장",
+      "date": "2026-05-15",
+      "file": "2026-05-15-grok-구독을-외부-에이전트코딩-워크플로로-확장.html"
     },
     {
       "service": "Gamma",
@@ -352,6 +352,12 @@
       "file": "2026-05-13-claude-for-small-business와-canva-통합.html"
     },
     {
+      "service": "Claude",
+      "title": "법률 업계를 위한 Claude 확장",
+      "date": "2026-05-12",
+      "file": "2026-05-12-법률-업계를-위한-claude-확장.html"
+    },
+    {
       "service": "NotebookLM",
       "title": "Workspace Studio에 Ask NotebookLM 단계 추가",
       "date": "2026-05-12",
@@ -362,12 +368,6 @@
       "title": "Preferred Browser 기능 추가",
       "date": "2026-05-12",
       "file": "2026-05-12-preferred-browser-기능-추가.html"
-    },
-    {
-      "service": "Claude",
-      "title": "법률 업계를 위한 Claude 확장",
-      "date": "2026-05-12",
-      "file": "2026-05-12-법률-업계를-위한-claude-확장.html"
     },
     {
       "service": "ElevenLabs",
