@@ -160,6 +160,36 @@
   ],
   "news": [
     {
+      "service": "Skywork",
+      "title": "Skywork Goal Mode 공식 출시",
+      "date": "2026-06-04",
+      "file": "2026-06-04-skywork-goal-mode-공식-출시.html"
+    },
+    {
+      "service": "HeyGen",
+      "title": "HeyGen 5월 주요 제품 업데이트 정리 공개",
+      "date": "2026-06-04",
+      "file": "2026-06-04-heygen-5월-주요-제품-업데이트-정리-공개.html"
+    },
+    {
+      "service": "ElevenLabs",
+      "title": "ElevenCreative에 Flows Agent 추가",
+      "date": "2026-06-04",
+      "file": "2026-06-04-elevencreative에-flows-agent-추가.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "ChatGPT 메모리 기능 대폭 강화",
+      "date": "2026-06-04",
+      "file": "2026-06-04-chatgpt-메모리-기능-대폭-강화.html"
+    },
+    {
+      "service": "Cursor",
+      "title": "Canvas Design Mode와 Context Usage Report 추가",
+      "date": "2026-06-04",
+      "file": "2026-06-04-canvas-design-mode와-context-usage-report.html"
+    },
+    {
       "service": "OpenAI",
       "title": "GPT-Rosalind 연구 기능 확장",
       "date": "2026-06-03",
