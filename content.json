@@ -161,6 +161,36 @@
   "news": [
     {
       "service": "Skywork",
+      "title": "SkyClaw Memory Management Now Fully Supported",
+      "date": "2026-06-08",
+      "file": "2026-06-08-skyclaw-memory-management-now-fully-supp.html"
+    },
+    {
+      "service": "Google Classroom Gemini",
+      "title": "Gemini로 rubric 파일과 이미지를 변환",
+      "date": "2026-06-08",
+      "file": "2026-06-08-gemini로-rubric-파일과-이미지를-변환.html"
+    },
+    {
+      "service": "Harvey",
+      "title": "Connector Library 공개",
+      "date": "2026-06-08",
+      "file": "2026-06-08-connector-library-공개.html"
+    },
+    {
+      "service": "Apple Intelligence",
+      "title": "차세대 Apple Intelligence와 Siri AI 공개",
+      "date": "2026-06-08",
+      "file": "2026-06-08-차세대-apple-intelligence와-siri-ai-공개.html"
+    },
+    {
+      "service": "Apple 개발자 도구",
+      "title": "새 인텔리전스 프레임워크와 Xcode 27 공개",
+      "date": "2026-06-08",
+      "file": "2026-06-08-새-인텔리전스-프레임워크와-xcode-27-공개.html"
+    },
+    {
+      "service": "Skywork",
       "title": "Skywork Goal Mode 공식 출시",
       "date": "2026-06-04",
       "file": "2026-06-04-skywork-goal-mode-공식-출시.html"
@@ -1388,6 +1418,22 @@
     {
       "name": "Stability AI",
       "color": "#8b5cf6"
+    },
+    {
+      "name": "Google Classroom Gemini",
+      "color": "#94a3b8"
+    },
+    {
+      "name": "Harvey",
+      "color": "#94a3b8"
+    },
+    {
+      "name": "Apple Intelligence",
+      "color": "#94a3b8"
+    },
+    {
+      "name": "Apple 개발자 도구",
+      "color": "#94a3b8"
     }
   ]
 }
