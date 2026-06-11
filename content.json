@@ -160,6 +160,48 @@
   ],
   "news": [
     {
+      "service": "Flowith",
+      "title": "Claude Fable 5 공식 지원 추가",
+      "date": "2026-06-10",
+      "file": "2026-06-10-claude-fable-5-공식-지원-추가.html"
+    },
+    {
+      "service": "xAI",
+      "title": "Powering Gopuff’s Go agent",
+      "date": "2026-06-09",
+      "file": "2026-06-09-powering-gopuffs-go-agent.html"
+    },
+    {
+      "service": "Manus",
+      "title": "Introducing Zoom Connector: Turn Every Zoom Meeting Into Your Next Workflow",
+      "date": "2026-06-09",
+      "file": "2026-06-09-introducing-zoom-connector-turn-every-zo.html"
+    },
+    {
+      "service": "Harvey",
+      "title": "Harvey Partners with Datasite to Bring Live Deal Data into AI-Powered Deal Workflows",
+      "date": "2026-06-09",
+      "file": "2026-06-09-harvey-partners-with-datasite-to-bring-l.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Gemini 3.5 Live Translate is here",
+      "date": "2026-06-09",
+      "file": "2026-06-09-gemini-35-live-translate-is-here.html"
+    },
+    {
+      "service": "Harvey",
+      "title": "Fable 5, Now Available in Harvey",
+      "date": "2026-06-09",
+      "file": "2026-06-09-fable-5-now-available-in-harvey.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Claude Fable 5 and Claude Mythos 5",
+      "date": "2026-06-09",
+      "file": "2026-06-09-claude-fable-5-and-claude-mythos-5.html"
+    },
+    {
       "service": "Skywork",
       "title": "SkyClaw Memory Management Now Fully Supported",
       "date": "2026-06-08",
