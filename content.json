@@ -160,6 +160,48 @@
   ],
   "news": [
     {
+      "service": "xAI",
+      "title": "Warp에서 Grok 연동 사용",
+      "date": "2026-06-15",
+      "file": "2026-06-15-warp에서-grok-연동-사용.html"
+    },
+    {
+      "service": "xAI",
+      "title": "Agent Dashboard 추가",
+      "date": "2026-06-15",
+      "file": "2026-06-15-agent-dashboard-추가.html"
+    },
+    {
+      "service": "Manus",
+      "title": "Canva Connector로 디자인 작업 확장",
+      "date": "2026-06-12",
+      "file": "2026-06-12-canva-connector로-디자인-작업-확장.html"
+    },
+    {
+      "service": "Gamma",
+      "title": "모바일 웹 편집 정식 지원",
+      "date": "2026-06-12",
+      "file": "2026-06-12-모바일-웹-편집-정식-지원.html"
+    },
+    {
+      "service": "Midjourney",
+      "title": "V8.1 기본 모델 전환",
+      "date": "2026-06-11",
+      "file": "2026-06-11-v81-기본-모델-전환.html"
+    },
+    {
+      "service": "ElevenLabs",
+      "title": "ElevenCreative 아바타 영상 생성 추가",
+      "date": "2026-06-11",
+      "file": "2026-06-11-elevencreative-아바타-영상-생성-추가.html"
+    },
+    {
+      "service": "Harvey",
+      "title": "6월 제품 묶음 업데이트 공개",
+      "date": "2026-06-11",
+      "file": "2026-06-11-6월-제품-묶음-업데이트-공개.html"
+    },
+    {
       "service": "Flowith",
       "title": "Claude Fable 5 공식 지원 추가",
       "date": "2026-06-10",
