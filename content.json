@@ -160,6 +160,30 @@
   ],
   "news": [
     {
+      "service": "Midjourney",
+      "title": "V8.1 Draft Mode 확장 안내",
+      "date": "2026-06-16",
+      "file": "2026-06-16-v81-draft-mode-확장-안내.html"
+    },
+    {
+      "service": "xAI",
+      "title": "PowerPoint용 Grok add in 출시",
+      "date": "2026-06-16",
+      "file": "2026-06-16-powerpoint용-grok-add-in-출시.html"
+    },
+    {
+      "service": "Harvey",
+      "title": "Microsoft 365 내 Harvey Legal Intelligence 통합",
+      "date": "2026-06-16",
+      "file": "2026-06-16-microsoft-365-내-harvey-legal-intelligenc.html"
+    },
+    {
+      "service": "Google",
+      "title": "AI note taking 정식 도입",
+      "date": "2026-06-16",
+      "file": "2026-06-16-ai-note-taking-정식-도입.html"
+    },
+    {
       "service": "xAI",
       "title": "Warp에서 Grok 연동 사용",
       "date": "2026-06-15",
@@ -1510,6 +1534,10 @@
     {
       "name": "Apple",
       "color": "#111827"
+    },
+    {
+      "name": "Google",
+      "color": "#34a853"
     }
   ]
 }
