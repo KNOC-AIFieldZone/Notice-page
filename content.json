@@ -160,6 +160,96 @@
   ],
   "news": [
     {
+      "service": "xAI",
+      "title": "Word용 Grok add in 출시",
+      "date": "2026-06-18",
+      "file": "2026-06-18-word용-grok-add-in-출시.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Google Classroom 문맥 연동 추가",
+      "date": "2026-06-18",
+      "file": "2026-06-18-google-classroom-문맥-연동-추가.html"
+    },
+    {
+      "service": "ElevenLabs",
+      "title": "ElevenMusic Mixes 기능 추가",
+      "date": "2026-06-18",
+      "file": "2026-06-18-elevenmusic-mixes-기능-추가.html"
+    },
+    {
+      "service": "xAI",
+      "title": "Databricks Agent Bricks 진입",
+      "date": "2026-06-18",
+      "file": "2026-06-18-databricks-agent-bricks-진입.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Claude Code artifacts 지원 시작",
+      "date": "2026-06-18",
+      "file": "2026-06-18-claude-code-artifacts-지원-시작.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "시트 생성 편집 다국어 확대",
+      "date": "2026-06-18",
+      "file": "2026-06-18-시트-생성-편집-다국어-확대.html"
+    },
+    {
+      "service": "Harvey",
+      "title": "법률 데이터 시각화 기능 추가",
+      "date": "2026-06-18",
+      "file": "2026-06-18-법률-데이터-시각화-기능-추가.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "건강 관련 응답 품질 개선 확대",
+      "date": "2026-06-18",
+      "file": "2026-06-18-건강-관련-응답-품질-개선-확대.html"
+    },
+    {
+      "service": "Skywork",
+      "title": "Skywork Design 라이브 공지",
+      "date": "2026-06-17",
+      "file": "2026-06-17-skywork-design-라이브-공지.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Claude Platform에 WIF 정식 도입",
+      "date": "2026-06-17",
+      "file": "2026-06-17-claude-platform에-wif-정식-도입.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Claude Design 온브랜드 작업 흐름 확장",
+      "date": "2026-06-17",
+      "file": "2026-06-17-claude-design-온브랜드-작업-흐름-확장.html"
+    },
+    {
+      "service": "xAI",
+      "title": "Amazon Bedrock에서 Grok 4.3 GA 제공",
+      "date": "2026-06-17",
+      "file": "2026-06-17-amazon-bedrock에서-grok-43-ga-제공.html"
+    },
+    {
+      "service": "Google",
+      "title": "AI avatar 기능 강화",
+      "date": "2026-06-17",
+      "file": "2026-06-17-ai-avatar-기능-강화.html"
+    },
+    {
+      "service": "Character AI",
+      "title": "크리에이터 생성 분석 발견 기능 확장",
+      "date": "2026-06-17",
+      "file": "2026-06-17-크리에이터-생성-분석-발견-기능-확장.html"
+    },
+    {
+      "service": "Google",
+      "title": "더 긴 Veo 영상과 동시 다중 생성 지원",
+      "date": "2026-06-17",
+      "file": "2026-06-17-더-긴-veo-영상과-동시-다중-생성-지원.html"
+    },
+    {
       "service": "Midjourney",
       "title": "V8.1 Draft Mode 확장 안내",
       "date": "2026-06-16",
