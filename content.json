@@ -160,6 +160,84 @@
   ],
   "news": [
     {
+      "service": "OpenAI",
+      "title": "GPT 5.6 Sol 제한 프리뷰 공개",
+      "date": "2026-06-26",
+      "file": "2026-06-26-gpt-56-sol-제한-프리뷰-공개.html"
+    },
+    {
+      "service": "xAI",
+      "title": "Interactive Brokers 계정 연동 지원",
+      "date": "2026-06-25",
+      "file": "2026-06-25-interactive-brokers-계정-연동-지원.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Gemini 앱 study notebooks 롤아웃 시작",
+      "date": "2026-06-25",
+      "file": "2026-06-25-gemini-앱-study-notebooks-롤아웃-시작.html"
+    },
+    {
+      "service": "Runway",
+      "title": "Agent 2.0 공개",
+      "date": "2026-06-25",
+      "file": "2026-06-25-agent-20-공개.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Gemini 3.5 Flash computer use 도입",
+      "date": "2026-06-24",
+      "file": "2026-06-24-gemini-35-flash-computer-use-도입.html"
+    },
+    {
+      "service": "Canva AI",
+      "title": "Canva Grow 2.0 공개",
+      "date": "2026-06-24",
+      "file": "2026-06-24-canva-grow-20-공개.html"
+    },
+    {
+      "service": "Skywork",
+      "title": "직접 데이터 시각화용 Interactive Cards 게시",
+      "date": "2026-06-24",
+      "file": "2026-06-24-직접-데이터-시각화용-interactive-cards-게시.html"
+    },
+    {
+      "service": "Lovable",
+      "title": "Workspace Insights 출시",
+      "date": "2026-06-23",
+      "file": "2026-06-23-workspace-insights-출시.html"
+    },
+    {
+      "service": "Mistral AI",
+      "title": "OCR 4 공개",
+      "date": "2026-06-23",
+      "file": "2026-06-23-ocr-4-공개.html"
+    },
+    {
+      "service": "Flowith",
+      "title": "Media History 확장으로 Creative Vault 구축",
+      "date": "2026-06-23",
+      "file": "2026-06-23-media-history-확장으로-creative-vault-구축.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Interactions API GA",
+      "date": "2026-06-23",
+      "file": "2026-06-23-interactions-api-ga.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Claude Tag 출시",
+      "date": "2026-06-23",
+      "file": "2026-06-23-claude-tag-출시.html"
+    },
+    {
+      "service": "ElevenLabs",
+      "title": "ElevenCreative Ads Engine 출시",
+      "date": "2026-06-22",
+      "file": "2026-06-22-elevencreative-ads-engine-출시.html"
+    },
+    {
       "service": "xAI",
       "title": "Word용 Grok add in 출시",
       "date": "2026-06-18",
