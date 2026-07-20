@@ -160,6 +160,192 @@
                              ],
     "news":  [
                  {
+                     "service":  "Mistral AI",
+                     "title":  "Your Prompts and Skills need a system of record",
+                     "date":  "2026-07-09",
+                     "file":  "2026-07-09-your-prompts-and-skills-need-a-system-of.html"
+                 },
+                 {
+                     "service":  "Notion AI",
+                     "title":  "Share Notion Workers across your team",
+                     "date":  "2026-07-09",
+                     "file":  "2026-07-09-share-notion-workers-across-your-team.html"
+                 },
+                 {
+                     "service":  "Flowith",
+                     "title":  "Seedream 5.0 Pro joins flowith",
+                     "date":  "2026-07-09",
+                     "file":  "2026-07-09-seedream-50-pro-joins-flowith.html"
+                 },
+                 {
+                     "service":  "Copilot",
+                     "title":  "OpenAI’s GPT-5.6 Sol, Terra, and Luna are now available in GitHub Copilot",
+                     "date":  "2026-07-09",
+                     "file":  "2026-07-09-openais-gpt-56-sol-terra-and-luna-are-no.html"
+                 },
+                 {
+                     "service":  "ElevenLabs",
+                     "title":  "Introducing ElevenAgents Spotlight",
+                     "date":  "2026-07-09",
+                     "file":  "2026-07-09-introducing-elevenagents-spotlight.html"
+                 },
+                 {
+                     "service":  "Manus",
+                     "title":  "Introducing Branch: One Context, Many Parallel Directions",
+                     "date":  "2026-07-09",
+                     "file":  "2026-07-09-introducing-branch-one-context-many-para.html"
+                 },
+                 {
+                     "service":  "Claude",
+                     "title":  "Introducing a way to reflect on how you use Claude",
+                     "date":  "2026-07-09",
+                     "file":  "2026-07-09-introducing-a-way-to-reflect-on-how-you.html"
+                 },
+                 {
+                     "service":  "Character AI",
+                     "title":  "Introducing (c.ai) series: Studio-Made Microdramas on Character.ai",
+                     "date":  "2026-07-09",
+                     "file":  "2026-07-09-introducing-cai-series-studio-made-micro.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "GPT-5.6: Frontier intelligence that scales with your ambition",
+                     "date":  "2026-07-09",
+                     "file":  "2026-07-09-gpt-56-frontier-intelligence-that-scales.html"
+                 },
+                 {
+                     "service":  "Harvey",
+                     "title":  "GPT-5.6 Sol, Now Live in Harvey",
+                     "date":  "2026-07-09",
+                     "file":  "2026-07-09-gpt-56-sol-now-live-in-harvey.html"
+                 },
+                 {
+                     "service":  "Copilot",
+                     "title":  "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
+                     "date":  "2026-07-09",
+                     "file":  "2026-07-09-gpt-56-is-now-the-preferred-model-in-mic.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "ChatGPT is now a partner for your most ambitious work",
+                     "date":  "2026-07-09",
+                     "file":  "2026-07-09-chatgpt-is-now-a-partner-for-your-most-a.html"
+                 },
+                 {
+                     "service":  "Copilot",
+                     "title":  "Ask Copilot for a repository overview",
+                     "date":  "2026-07-09",
+                     "file":  "2026-07-09-ask-copilot-for-a-repository-overview.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "AlphaEvolve on Cloud is now generally available",
+                     "date":  "2026-07-09",
+                     "file":  "2026-07-09-alphaevolve-on-cloud-is-now-generally-av.html"
+                 },
+                 {
+                     "service":  "HeyGen",
+                     "title":  "What’s new at HeyGen: June 2026",
+                     "date":  "2026-07-08",
+                     "file":  "2026-07-08-whats-new-at-heygen-june-2026.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Video Remix in Google Photos",
+                     "date":  "2026-07-08",
+                     "file":  "2026-07-08-video-remix-in-google-photos.html"
+                 },
+                 {
+                     "service":  "Notion AI",
+                     "title":  "Meet the Notion Agents iOS app",
+                     "date":  "2026-07-08",
+                     "file":  "2026-07-08-meet-the-notion-agents-ios-app.html"
+                 },
+                 {
+                     "service":  "Runway",
+                     "title":  "Introducing Runway Dev",
+                     "date":  "2026-07-08",
+                     "file":  "2026-07-08-introducing-runway-dev.html"
+                 },
+                 {
+                     "service":  "xAI",
+                     "title":  "Introducing Grok 4.5",
+                     "date":  "2026-07-08",
+                     "file":  "2026-07-08-introducing-grok-45.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "Introducing GPT-Live",
+                     "date":  "2026-07-08",
+                     "file":  "2026-07-08-introducing-gpt-live.html"
+                 },
+                 {
+                     "service":  "Copilot",
+                     "title":  "GitHub Mobile Copilot 업데이트: merge conflict 수정 + CLI 세션 알림",
+                     "date":  "2026-07-08",
+                     "file":  "2026-07-08-github-mobile-copilot-업데이트-merge-conflic.html"
+                 },
+                 {
+                     "service":  "Copilot",
+                     "title":  "GitHub Copilot in Visual Studio Code, June 2026 releases",
+                     "date":  "2026-07-08",
+                     "file":  "2026-07-08-github-copilot-in-visual-studio-code-jun.html"
+                 },
+                 {
+                     "service":  "Copilot",
+                     "title":  "Enterprise-managed Copilot settings: OpenTelemetry export + MDM 배포",
+                     "date":  "2026-07-08",
+                     "file":  "2026-07-08-enterprise-managed-copilot-settings-open.html"
+                 },
+                 {
+                     "service":  "Google",
+                     "title":  "Convert Google Slides to videos in 7 additional languages",
+                     "date":  "2026-07-08",
+                     "file":  "2026-07-08-convert-google-slides-to-videos-in-7-add.html"
+                 },
+                 {
+                     "service":  "Copilot",
+                     "title":  "Per-user budgets for cost centers in the billing UI",
+                     "date":  "2026-07-07",
+                     "file":  "2026-07-07-per-user-budgets-for-cost-centers-in-the.html"
+                 },
+                 {
+                     "service":  "Copilot",
+                     "title":  "Kimi K2.7 now available for Copilot Business and Enterprise",
+                     "date":  "2026-07-07",
+                     "file":  "2026-07-07-kimi-k27-now-available-for-copilot-busin.html"
+                 },
+                 {
+                     "service":  "Copilot",
+                     "title":  "GitHub Copilot app available to all",
+                     "date":  "2026-07-07",
+                     "file":  "2026-07-07-github-copilot-app-available-to-all.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Fill with Gemini in Sheets now available in 11 additional languages",
+                     "date":  "2026-07-07",
+                     "file":  "2026-07-07-fill-with-gemini-in-sheets-now-available.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Expanding Managed Agents in Gemini API: background tasks, remote MCP and more",
+                     "date":  "2026-07-07",
+                     "file":  "2026-07-07-expanding-managed-agents-in-gemini-api-b.html"
+                 },
+                 {
+                     "service":  "Claude",
+                     "title":  "Claude Cowork is coming to mobile and web",
+                     "date":  "2026-07-07",
+                     "file":  "2026-07-07-claude-cowork-is-coming-to-mobile-and-we.html"
+                 },
+                 {
+                     "service":  "Claude",
+                     "title":  "Bringing Claude Code and Claude Cowork to government",
+                     "date":  "2026-07-07",
+                     "file":  "2026-07-07-bringing-claude-code-and-claude-cowork-t.html"
+                 },
+                 {
                      "service":  "xAI",
                      "title":  "Grok Voice 신규 플래그십 음성 추가",
                      "date":  "2026-07-06",
