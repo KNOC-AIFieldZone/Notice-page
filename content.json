@@ -160,6 +160,30 @@
                              ],
     "news":  [
                  {
+                     "service":  "xAI",
+                     "title":  "Grok for Excel",
+                     "date":  "2026-07-20",
+                     "file":  "2026-07-20-grok-for-excel.html"
+                 },
+                 {
+                     "service":  "Copilot",
+                     "title":  "GitHub Code Quality is now generally available",
+                     "date":  "2026-07-20",
+                     "file":  "2026-07-20-github-code-quality-is-now-generally-ava.html"
+                 },
+                 {
+                     "service":  "Copilot",
+                     "title":  "Copilot users can now see AI credits used per billing cycle",
+                     "date":  "2026-07-20",
+                     "file":  "2026-07-20-copilot-users-can-now-see-ai-credits-use.html"
+                 },
+                 {
+                     "service":  "Copilot",
+                     "title":  "AI credit pools for cost centers in the billing UI",
+                     "date":  "2026-07-20",
+                     "file":  "2026-07-20-ai-credit-pools-for-cost-centers-in-the.html"
+                 },
+                 {
                      "service":  "Harvey",
                      "title":  "The Brief: July 2026",
                      "date":  "2026-07-17",
