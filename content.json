@@ -178,6 +178,12 @@
                      "file":  "2026-07-20-copilot-users-can-now-see-ai-credits-use.html"
                  },
                  {
+                     "service":  "Genspark",
+                     "title":  "AI Workspace 6.0 공개",
+                     "date":  "2026-07-20",
+                     "file":  "2026-07-20-ai-workspace-60-공개.html"
+                 },
+                 {
                      "service":  "Copilot",
                      "title":  "AI credit pools for cost centers in the billing UI",
                      "date":  "2026-07-20",
