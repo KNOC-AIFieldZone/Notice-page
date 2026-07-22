@@ -161,6 +161,42 @@
     "news":  [
                  {
                      "service":  "xAI",
+                     "title":  "Grok for Outlook 출시",
+                     "date":  "2026-07-21",
+                     "file":  "2026-07-21-grok-for-outlook-출시.html"
+                 },
+                 {
+                     "service":  "Google",
+                     "title":  "Google Meet AI note taking 설정 확대",
+                     "date":  "2026-07-21",
+                     "file":  "2026-07-21-google-meet-ai-note-taking-설정-확대.html"
+                 },
+                 {
+                     "service":  "Copilot",
+                     "title":  "Gemini 3.6 Flash가 GitHub Copilot에 추가",
+                     "date":  "2026-07-21",
+                     "file":  "2026-07-21-gemini-36-flash-github-copilot-추가.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Gemini 3.6 Flash, Flash-Lite, Flash Cyber 공개",
+                     "date":  "2026-07-21",
+                     "file":  "2026-07-21-gemini-36-flash-flash-lite-flash-cyber.html"
+                 },
+                 {
+                     "service":  "Copilot",
+                     "title":  "Dynamics 365 Sales agents MCP 확장",
+                     "date":  "2026-07-21",
+                     "file":  "2026-07-21-dynamics-365-sales-agents-mcp-확장.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "ChatGPT 소상공인 프로그램 공개",
+                     "date":  "2026-07-21",
+                     "file":  "2026-07-21-chatgpt-소상공인-프로그램-공개.html"
+                 },
+                 {
+                     "service":  "xAI",
                      "title":  "Grok for Excel",
                      "date":  "2026-07-20",
                      "file":  "2026-07-20-grok-for-excel.html"
