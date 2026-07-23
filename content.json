@@ -184,12 +184,6 @@
                      "file":  "2026-07-22-cursor-router-공개.html"
                  },
                  {
-                     "service":  "Copilot",
-                     "title":  "Copilot usage metrics impact dashboard 추가",
-                     "date":  "2026-07-22",
-                     "file":  "2026-07-22-copilot-usage-metrics-impact-dashboard-추가.html"
-                 },
-                 {
                      "service":  "Claude",
                      "title":  "Anthropic Economic Index connector 공개",
                      "date":  "2026-07-22",
