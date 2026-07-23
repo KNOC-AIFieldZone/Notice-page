@@ -160,6 +160,42 @@
                              ],
     "news":  [
                  {
+                     "service":  "OpenAI",
+                     "title":  "OpenAI Presence 공개",
+                     "date":  "2026-07-22",
+                     "file":  "2026-07-22-openai-presence-공개.html"
+                 },
+                 {
+                     "service":  "ElevenLabs",
+                     "title":  "Finetunes Music API 공개",
+                     "date":  "2026-07-22",
+                     "file":  "2026-07-22-finetunes-music-api-공개.html"
+                 },
+                 {
+                     "service":  "ElevenLabs",
+                     "title":  "ElevenMusic Vocals 기능 추가",
+                     "date":  "2026-07-22",
+                     "file":  "2026-07-22-elevenmusic-vocals-기능-추가.html"
+                 },
+                 {
+                     "service":  "Cursor",
+                     "title":  "Cursor Router 공개",
+                     "date":  "2026-07-22",
+                     "file":  "2026-07-22-cursor-router-공개.html"
+                 },
+                 {
+                     "service":  "Copilot",
+                     "title":  "Copilot usage metrics impact dashboard 추가",
+                     "date":  "2026-07-22",
+                     "file":  "2026-07-22-copilot-usage-metrics-impact-dashboard-추가.html"
+                 },
+                 {
+                     "service":  "Claude",
+                     "title":  "Anthropic Economic Index connector 공개",
+                     "date":  "2026-07-22",
+                     "file":  "2026-07-22-anthropic-economic-index-connector-공개.html"
+                 },
+                 {
                      "service":  "Gemini",
                      "title":  "Gemini 3.6 Flash, Flash-Lite, Flash Cyber 공개",
                      "date":  "2026-07-21",
