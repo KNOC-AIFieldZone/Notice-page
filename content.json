@@ -160,6 +160,42 @@
                              ],
     "news":  [
                  {
+                     "service":  "xAI",
+                     "title":  "Workflows in Grok Build 공개",
+                     "date":  "2026-07-23",
+                     "file":  "2026-07-23-workflows-in-grok-build-공개.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "Health in ChatGPT 출시",
+                     "date":  "2026-07-23",
+                     "file":  "2026-07-23-health-in-chatgpt-출시.html"
+                 },
+                 {
+                     "service":  "Copilot",
+                     "title":  "GitHub Mobile Actions 실패 Copilot 수정 지원",
+                     "date":  "2026-07-23",
+                     "file":  "2026-07-23-github-mobile-actions-실패-copilot-수정.html"
+                 },
+                 {
+                     "service":  "Copilot",
+                     "title":  "GitHub Issues agent automation controls 공개",
+                     "date":  "2026-07-23",
+                     "file":  "2026-07-23-github-issues-agent-automation-controls-공개.html"
+                 },
+                 {
+                     "service":  "ElevenLabs",
+                     "title":  "ElevenMusic References 기능 추가",
+                     "date":  "2026-07-23",
+                     "file":  "2026-07-23-elevenmusic-references-기능-추가.html"
+                 },
+                 {
+                     "service":  "Copilot",
+                     "title":  "Copilot cloud agent for Linear GA",
+                     "date":  "2026-07-23",
+                     "file":  "2026-07-23-copilot-cloud-agent-for-linear-ga.html"
+                 },
+                 {
                      "service":  "OpenAI",
                      "title":  "OpenAI Presence 공개",
                      "date":  "2026-07-22",
