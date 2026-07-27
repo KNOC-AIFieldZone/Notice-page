@@ -160,6 +160,36 @@
                              ],
     "news":  [
                  {
+                     "service":  "Midjourney",
+                     "title":  "V8.2 기본 모델 전환",
+                     "date":  "2026-07-24",
+                     "file":  "2026-07-24-midjourney-v82-기본-모델-전환.html"
+                 },
+                 {
+                     "service":  "Character AI",
+                     "title":  "Lorebook 베타 출시",
+                     "date":  "2026-07-24",
+                     "file":  "2026-07-24-lorebook-베타-출시.html"
+                 },
+                 {
+                     "service":  "xAI",
+                     "title":  "Grok Google Workspace add-on 출시",
+                     "date":  "2026-07-24",
+                     "file":  "2026-07-24-grok-google-workspace-add-on-출시.html"
+                 },
+                 {
+                     "service":  "Claude",
+                     "title":  "Claude Opus 5 출시",
+                     "date":  "2026-07-24",
+                     "file":  "2026-07-24-claude-opus-5-출시.html"
+                 },
+                 {
+                     "service":  "Copilot",
+                     "title":  "Claude Opus 5 GitHub Copilot 지원",
+                     "date":  "2026-07-24",
+                     "file":  "2026-07-24-claude-opus-5-github-copilot-지원.html"
+                 },
+                 {
                      "service":  "ElevenLabs",
                      "title":  "ElevenMusic References 기능 추가",
                      "date":  "2026-07-23",
