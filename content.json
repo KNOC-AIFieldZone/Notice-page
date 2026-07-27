@@ -184,12 +184,6 @@
                      "file":  "2026-07-24-claude-opus-5-release.html"
                  },
                  {
-                     "service":  "Copilot",
-                     "title":  "Claude Opus 5 GitHub Copilot 지원",
-                     "date":  "2026-07-24",
-                     "file":  "2026-07-24-claude-opus-5-github-copilot.html"
-                 },
-                 {
                      "service":  "ElevenLabs",
                      "title":  "ElevenMusic References 기능 추가",
                      "date":  "2026-07-23",
