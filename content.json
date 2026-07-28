@@ -160,6 +160,24 @@
                              ],
     "news":  [
                  {
+                     "service":  "Cohere",
+                     "title":  "North Automations 공개",
+                     "date":  "2026-07-27",
+                     "file":  "2026-07-27-cohere-north-automations.html"
+                 },
+                 {
+                     "service":  "Moonshot AI",
+                     "title":  "Kimi K3 오픈 웨이트 공개",
+                     "date":  "2026-07-27",
+                     "file":  "2026-07-27-kimi-k3-open-weights.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Google Meet 회의 노트 시각 캡처 설정 공개",
+                     "date":  "2026-07-27",
+                     "file":  "2026-07-27-google-meet-visual-screenshots.html"
+                 },
+                 {
                      "service":  "Midjourney",
                      "title":  "V8.2 기본 모델 전환",
                      "date":  "2026-07-24",
@@ -2258,6 +2276,10 @@
                                {
                                    "name":  "Google",
                                    "color":  "#34a853"
+                               },
+                               {
+                                   "name":  "Cohere",
+                                   "color":  "#256f5b"
                                }
                            ]
 }
