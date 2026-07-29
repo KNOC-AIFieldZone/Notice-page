@@ -22,7 +22,7 @@
                          "name":  "NotebookLM",
                          "url":  "https://notebooklm.google.com/",
                          "domain":  "notebooklm.google",
-                         "note":  "자료 기반 Q\u0026A(근거 중심)\n문서/링크 요약·핵심 추출\n리서치 노트 구조화\n출처 기반 정리·비교\n오디오 오버뷰"
+                         "note":  "자료 기반 Q&A(근거 중심)\n문서/링크 요약·핵심 추출\n리서치 노트 구조화\n출처 기반 정리·비교\n오디오 오버뷰"
                      },
                      {
                          "name":  "Manus",
@@ -160,12 +160,6 @@
                              ],
     "news":  [
                  {
-                     "service":  "xAI",
-                     "title":  "Grok 4.5 GitHub Copilot 지원",
-                     "date":  "2026-07-28",
-                     "file":  "2026-07-28-grok-45-github-copilot.html"
-                 },
-                 {
                      "service":  "Gemini",
                      "title":  "Google Docs Gemini 시각 자료 생성 편집 지원",
                      "date":  "2026-07-28",
@@ -178,22 +172,10 @@
                      "file":  "2026-07-28-google-docs-gemini-comments.html"
                  },
                  {
-                     "service":  "Gemini",
-                     "title":  "Gemini API Managed Agents 3.6 Flash 기본 적용",
-                     "date":  "2026-07-28",
-                     "file":  "2026-07-28-gemini-api-managed-agents-36-flash.html"
-                 },
-                 {
                      "service":  "ElevenLabs",
                      "title":  "ElevenAgents 신규 채널 확장",
                      "date":  "2026-07-28",
                      "file":  "2026-07-28-elevenagents-new-channels.html"
-                 },
-                 {
-                     "service":  "Cursor",
-                     "title":  "Cursor Start 인도 전용 플랜 출시",
-                     "date":  "2026-07-28",
-                     "file":  "2026-07-28-cursor-start-india-plan.html"
                  },
                  {
                      "service":  "xAI",
@@ -1511,7 +1493,7 @@
                  },
                  {
                      "service":  "Notion AI",
-                     "title":  "Mail \u0026 Calendar, now in your settings",
+                     "title":  "Mail & Calendar, now in your settings",
                      "date":  "2026-04-17",
                      "file":  "2026-04-17-mail-calendar-now-in-your-settings.html"
                  },
@@ -1967,7 +1949,7 @@
                  },
                  {
                      "service":  "Midjourney",
-                     "title":  "Personalization \u0026 Web 업데이트",
+                     "title":  "Personalization & Web 업데이트",
                      "date":  "2026-02-26",
                      "file":  "2026-02-26-personalization-web-업데이트.html"
                  },
