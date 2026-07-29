@@ -160,6 +160,48 @@
                              ],
     "news":  [
                  {
+                     "service":  "xAI",
+                     "title":  "Grok 4.5 GitHub Copilot 지원",
+                     "date":  "2026-07-28",
+                     "file":  "2026-07-28-grok-45-github-copilot.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Google Docs Gemini 시각 자료 생성 편집 지원",
+                     "date":  "2026-07-28",
+                     "file":  "2026-07-28-google-docs-gemini-visuals.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Google Docs Gemini 댓글 워크플로 공개",
+                     "date":  "2026-07-28",
+                     "file":  "2026-07-28-google-docs-gemini-comments.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Gemini API Managed Agents 3.6 Flash 기본 적용",
+                     "date":  "2026-07-28",
+                     "file":  "2026-07-28-gemini-api-managed-agents-36-flash.html"
+                 },
+                 {
+                     "service":  "ElevenLabs",
+                     "title":  "ElevenAgents 신규 채널 확장",
+                     "date":  "2026-07-28",
+                     "file":  "2026-07-28-elevenagents-new-channels.html"
+                 },
+                 {
+                     "service":  "Cursor",
+                     "title":  "Cursor Start 인도 전용 플랜 출시",
+                     "date":  "2026-07-28",
+                     "file":  "2026-07-28-cursor-start-india-plan.html"
+                 },
+                 {
+                     "service":  "xAI",
+                     "title":  "Build Mode 베타 공개",
+                     "date":  "2026-07-28",
+                     "file":  "2026-07-28-grok-build-mode-beta.html"
+                 },
+                 {
                      "service":  "Cohere",
                      "title":  "North Automations 공개",
                      "date":  "2026-07-27",
