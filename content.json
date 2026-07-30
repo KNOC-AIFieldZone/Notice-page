@@ -160,6 +160,36 @@
                              ],
     "news":  [
                  {
+                     "service":  "OpenAI",
+                     "title":  "Sign in with ChatGPT 베타 공개",
+                     "date":  "2026-07-29",
+                     "file":  "2026-07-29-sign-in-with-chatgpt-beta.html"
+                 },
+                 {
+                     "service":  "Replit",
+                     "title":  "Replit Design 공개",
+                     "date":  "2026-07-29",
+                     "file":  "2026-07-29-replit-design.html"
+                 },
+                 {
+                     "service":  "xAI",
+                     "title":  "Grok Voice Think Fast 2.0 공개",
+                     "date":  "2026-07-29",
+                     "file":  "2026-07-29-grok-voice-think-fast-20.html"
+                 },
+                 {
+                     "service":  "Cursor",
+                     "title":  "Cursor iPad 앱 정식 지원",
+                     "date":  "2026-07-29",
+                     "file":  "2026-07-29-cursor-ipad.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "ChatGPT for Academic Researchers 공개",
+                     "date":  "2026-07-29",
+                     "file":  "2026-07-29-chatgpt-academic-researchers.html"
+                 },
+                 {
                      "service":  "Gemini",
                      "title":  "Google Docs Gemini 시각 자료 생성 편집 지원",
                      "date":  "2026-07-28",
