@@ -160,24 +160,6 @@
                              ],
     "news":  [
                  {
-                     "service":  "OpenAI",
-                     "title":  "GPT 5.6 가격 성능 업데이트 공개",
-                     "date":  "2026-07-30",
-                     "file":  "2026-07-30-gpt-56-price-performance.html"
-                 },
-                 {
-                     "service":  "Gemini",
-                     "title":  "Google Forms Gemini 퀴즈 생성 지원",
-                     "date":  "2026-07-30",
-                     "file":  "2026-07-30-google-forms-gemini-quiz.html"
-                 },
-                 {
-                     "service":  "ElevenLabs",
-                     "title":  "Character Casting in Audiobooks 공개",
-                     "date":  "2026-07-30",
-                     "file":  "2026-07-30-character-casting-audiobooks.html"
-                 },
-                 {
                      "service":  "xAI",
                      "title":  "Grok Voice Think Fast 2.0 공개",
                      "date":  "2026-07-29",
