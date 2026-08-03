@@ -22,7 +22,7 @@
                          "name":  "NotebookLM",
                          "url":  "https://notebooklm.google.com/",
                          "domain":  "notebooklm.google",
-                         "note":  "자료 기반 Q&A(근거 중심)\n문서/링크 요약·핵심 추출\n리서치 노트 구조화\n출처 기반 정리·비교\n오디오 오버뷰"
+                         "note":  "자료 기반 Q\u0026A(근거 중심)\n문서/링크 요약·핵심 추출\n리서치 노트 구조화\n출처 기반 정리·비교\n오디오 오버뷰"
                      },
                      {
                          "name":  "Manus",
@@ -159,6 +159,30 @@
                                  }
                              ],
     "news":  [
+                 {
+                     "service":  "Replit",
+                     "title":  "Replit Design 및 Agent 모델 선택 공개",
+                     "date":  "2026-07-31",
+                     "file":  "2026-07-31-replit-design-agent-model-selector.html"
+                 },
+                 {
+                     "service":  "xAI",
+                     "title":  "Imagine Video 1.5 References 및 1080p 생성 공개",
+                     "date":  "2026-07-31",
+                     "file":  "2026-07-31-grok-imagine-video-15-references.html"
+                 },
+                 {
+                     "service":  "DeepSeek",
+                     "title":  "DeepSeek V4 Flash API 공개 베타 전환",
+                     "date":  "2026-07-31",
+                     "file":  "2026-07-31-deepseek-v4-flash-api-beta.html"
+                 },
+                 {
+                     "service":  "Notion AI",
+                     "title":  "AI Meeting Notes Custom Agents 트리거 지원",
+                     "date":  "2026-07-31",
+                     "file":  "2026-07-31-notion-ai-meeting-notes-custom-agents.html"
+                 },
                  {
                      "service":  "xAI",
                      "title":  "Grok Voice Think Fast 2.0 공개",
@@ -1499,7 +1523,7 @@
                  },
                  {
                      "service":  "Notion AI",
-                     "title":  "Mail & Calendar, now in your settings",
+                     "title":  "Mail \u0026 Calendar, now in your settings",
                      "date":  "2026-04-17",
                      "file":  "2026-04-17-mail-calendar-now-in-your-settings.html"
                  },
@@ -1955,7 +1979,7 @@
                  },
                  {
                      "service":  "Midjourney",
-                     "title":  "Personalization & Web 업데이트",
+                     "title":  "Personalization \u0026 Web 업데이트",
                      "date":  "2026-02-26",
                      "file":  "2026-02-26-personalization-web-업데이트.html"
                  },
