@@ -160,30 +160,6 @@
                              ],
     "news":  [
                  {
-                     "service":  "Replit",
-                     "title":  "Replit Design 및 Agent 모델 선택 공개",
-                     "date":  "2026-07-31",
-                     "file":  "2026-07-31-replit-design-agent-model-selector.html"
-                 },
-                 {
-                     "service":  "xAI",
-                     "title":  "Imagine Video 1.5 References 및 1080p 생성 공개",
-                     "date":  "2026-07-31",
-                     "file":  "2026-07-31-grok-imagine-video-15-references.html"
-                 },
-                 {
-                     "service":  "DeepSeek",
-                     "title":  "DeepSeek V4 Flash API 공개 베타 전환",
-                     "date":  "2026-07-31",
-                     "file":  "2026-07-31-deepseek-v4-flash-api-beta.html"
-                 },
-                 {
-                     "service":  "Notion AI",
-                     "title":  "AI Meeting Notes Custom Agents 트리거 지원",
-                     "date":  "2026-07-31",
-                     "file":  "2026-07-31-notion-ai-meeting-notes-custom-agents.html"
-                 },
-                 {
                      "service":  "xAI",
                      "title":  "Grok Voice Think Fast 2.0 공개",
                      "date":  "2026-07-29",
