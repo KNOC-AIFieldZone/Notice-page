@@ -160,30 +160,6 @@
                              ],
     "news":  [
                  {
-                     "service":  "OpenAI",
-                     "title":  "GPT-Live 연속 음성 상호작용 시스템 공개",
-                     "date":  "2026-08-03",
-                     "file":  "2026-08-03-openai-gpt-live-continuous-voice-interaction.html"
-                 },
-                 {
-                     "service":  "Cursor",
-                     "title":  "Google Workspace Plugins 공개",
-                     "date":  "2026-08-03",
-                     "file":  "2026-08-03-cursor-google-workspace-plugins.html"
-                 },
-                 {
-                     "service":  "Gemini",
-                     "title":  "Google Meet 회의록에 시각 스크린샷 추가",
-                     "date":  "2026-08-03",
-                     "file":  "2026-08-03-gemini-google-meet-notes-visual-screenshots.html"
-                 },
-                 {
-                     "service":  "Genspark",
-                     "title":  "GenOffice 오픈소스 AI Office Suite 공개",
-                     "date":  "2026-08-03",
-                     "file":  "2026-08-03-genspark-genoffice-open-source-ai-office.html"
-                 },
-                 {
                      "service":  "xAI",
                      "title":  "Grok Voice Think Fast 2.0 공개",
                      "date":  "2026-07-29",
