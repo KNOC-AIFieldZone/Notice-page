@@ -295,9 +295,9 @@
       return [...new Set(items.map(norm).filter(Boolean))].sort((a,b) => a.localeCompare(b, "ko"));
     }
 
-    function fillSelect(select, values, current){
+    function fillSelect(select, values, current, emptyLabel = "전체"){
       const keep = values.includes(current) ? current : "";
-      select.innerHTML = `<option value="">전체</option>` + values.map((v) => `<option value="${esc(v)}">${esc(v)}</option>`).join("");
+      select.innerHTML = `<option value="">${esc(emptyLabel)}</option>` + values.map((v) => `<option value="${esc(v)}">${esc(v)}</option>`).join("");
       select.value = keep;
     }
 
@@ -318,15 +318,16 @@
       const hasCategory = Boolean(category);
       const categoryRows = category ? DATA.filter((it) => it.category === category) : DATA;
       const subs = hasCategory ? uniq(categoryRows.map((it) => it.subCategory)) : [];
-      fillSelect(el.subFilter, subs, sub);
-      el.subFilter.disabled = !hasCategory;
+      fillSelect(el.subFilter, subs, sub, hasCategory && !subs.length ? "없음" : "전체");
+      el.subFilter.disabled = !hasCategory || !subs.length;
 
       const nextSub = el.subFilter.value;
       const hasSub = Boolean(nextSub);
       const subRows = hasSub ? categoryRows.filter((it) => it.subCategory === nextSub) : [];
       const smalls = hasSub ? uniq(subRows.map((it) => it.smallCategory)) : [];
-      fillSelect(el.smallFilter, smalls, el.smallFilter.value);
-      el.smallFilter.disabled = !hasSub;
+      const smallEmptyLabel = (hasCategory && !subs.length) || (hasSub && !smalls.length) ? "없음" : "전체";
+      fillSelect(el.smallFilter, smalls, el.smallFilter.value, smallEmptyLabel);
+      el.smallFilter.disabled = !hasSub || !smalls.length;
     }
 
     function matches(it, q, category, sub, small){
