@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prompt Examples | AI Field</title>
+  <link rel="icon" href="./asset/logo.png" type="image/png" />
+  <meta name="color-scheme" content="light dark" />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.66);
+      --line:rgba(255,255,255,.14);
+      --panel:rgba(255,255,255,.07);
+      --panel2:rgba(255,255,255,.10);
+      --field:rgba(255,255,255,.06);
+      --chip:rgba(255,255,255,.08);
+      --accent:#5eead4;
+      --accent2:rgba(94,234,212,.15);
+      --blue:#60a5fa;
+      --yellow:#fbbf24;
+      --ok:#34d399;
+      --danger:#fb7185;
+      --shadow:0 18px 55px rgba(0,0,0,.35);
+      --font:system-ui,-apple-system,Segoe UI,Roboto,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f2f5fb;
+        --text:rgba(15,23,42,.92);
+        --muted:rgba(51,65,85,.72);
+        --line:rgba(30,41,59,.14);
+        --panel:rgba(255,255,255,.92);
+        --panel2:rgba(255,255,255,.98);
+        --field:rgba(255,255,255,.98);
+        --chip:rgba(15,23,42,.05);
+        --accent:#0ea5e9;
+        --accent2:rgba(14,165,233,.12);
+        --shadow:0 18px 55px rgba(15,23,42,.10);
+      }
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      font-family:var(--font);
+      color:var(--text);
+      background:
+        radial-gradient(1000px 460px at 15% 0%, rgba(94,234,212,.14), transparent 55%),
+        radial-gradient(840px 420px at 95% 8%, rgba(251,191,36,.10), transparent 55%),
+        var(--bg);
+    }
+    button,input,select,textarea{font:inherit;}
+    .wrap{max-width:1240px;margin:0 auto;padding:22px 18px 34px;}
+    header{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;padding:6px 2px 18px;}
+    .brandline{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+    .brandlogo{width:34px;height:34px;object-fit:contain;}
+    h1{margin:0;font-size:20px;font-weight:900;}
+    .sub{margin-top:6px;color:var(--muted);font-size:13px;line-height:1.45;}
+    .actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;}
+    .btn{
+      appearance:none;
+      border:1px solid var(--line);
+      border-radius:8px;
+      background:rgba(255,255,255,.05);
+      color:var(--text);
+      min-height:34px;
+      padding:8px 11px;
+      font-size:13px;
+      font-weight:800;
+      text-decoration:none;
+      cursor:pointer;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:7px;
+    }
+    .btn:hover{background:rgba(255,255,255,.09);}
+    .btn.primary{background:var(--accent2);border-color:rgba(94,234,212,.36);}
+    .btn:disabled{opacity:.45;cursor:not-allowed;}
+    .layout{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:14px;align-items:start;}
+    .panel{
+      border:1px solid var(--line);
+      border-radius:8px;
+      background:linear-gradient(180deg,var(--panel2),var(--panel));
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      backdrop-filter:blur(10px);
+    }
+    .panel-hd{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line);}
+    .panel-title{margin:0;font-size:15px;font-weight:900;}
+    .panel-meta{margin-top:4px;color:var(--muted);font-size:12px;}
+    .panel-bd{padding:14px 16px;}
+    .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-bottom:14px;}
+    .stat{border:1px solid var(--line);border-radius:8px;background:rgba(255,255,255,.04);padding:10px;}
+    .stat .k{color:var(--muted);font-size:11px;font-weight:800;}
+    .stat .v{margin-top:5px;font-size:18px;font-weight:900;}
+    .filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:10px;}
+    .search-row{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:8px;margin-bottom:12px;}
+    label{display:block;color:var(--muted);font-size:11px;font-weight:800;margin-bottom:5px;}
+    select,input[type="search"]{
+      width:100%;
+      min-height:36px;
+      border:1px solid var(--line);
+      border-radius:8px;
+      background:var(--field);
+      color:var(--text);
+      padding:8px 10px;
+      outline:none;
+    }
+    select:focus,input[type="search"]:focus,textarea:focus{border-color:rgba(94,234,212,.55);box-shadow:0 0 0 3px rgba(94,234,212,.16);}
+    .result-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px;}
+    .count{font-size:12px;color:var(--muted);font-weight:800;}
+    .result-list{display:grid;gap:8px;}
+    .result{
+      width:100%;
+      text-align:left;
+      border:1px solid var(--line);
+      border-radius:8px;
+      background:rgba(255,255,255,.04);
+      color:var(--text);
+      padding:11px;
+      cursor:pointer;
+    }
+    .result:hover,.result.active{background:rgba(94,234,212,.10);border-color:rgba(94,234,212,.34);}
+    .result-title{font-size:13px;font-weight:900;line-height:1.35;margin:0 0 8px;}
+    .chips{display:flex;gap:5px;flex-wrap:wrap;}
+    .chip{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;background:var(--chip);padding:4px 8px;font-size:11px;color:var(--muted);font-weight:800;max-width:100%;}
+    .chip strong{color:var(--text);font-weight:900;}
+    mark{background:rgba(251,191,36,.28);color:inherit;border-radius:4px;padding:0 2px;}
+    .pager{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px;}
+    .detail{position:sticky;top:18px;}
+    .empty{border:1px dashed var(--line);border-radius:8px;padding:18px;color:var(--muted);text-align:center;font-size:13px;}
+    .detail-title{margin:0;font-size:16px;font-weight:900;line-height:1.35;}
+    .detail-tools{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;}
+    .field-block{margin-top:14px;}
+    .field-title{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:7px;color:var(--muted);font-size:12px;font-weight:900;}
+    textarea{
+      width:100%;
+      min-height:138px;
+      resize:vertical;
+      border:1px solid var(--line);
+      border-radius:8px;
+      background:var(--field);
+      color:var(--text);
+      padding:11px;
+      line-height:1.55;
+      outline:none;
+    }
+    textarea.example{min-height:168px;}
+    .toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:10;border:1px solid rgba(94,234,212,.34);background:rgba(11,18,32,.92);color:white;border-radius:8px;padding:9px 12px;font-size:13px;font-weight:800;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .18s ease;}
+    .toast.show{opacity:1;}
+    @media (max-width:980px){
+      header{align-items:flex-start;flex-direction:column;}
+      .actions{justify-content:flex-start;}
+      .layout{grid-template-columns:1fr;}
+      .detail{position:static;}
+      .stats{grid-template-columns:repeat(2,minmax(0,1fr));}
+      .filters{grid-template-columns:1fr;}
+      .search-row{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <div class="brandline">
+          <img class="brandlogo" src="./asset/logo.png" alt="KNOC">
+          <h1>프롬프트 예시</h1>
+        </div>
+        <div class="sub">Prompt Guide 데이터 기반 검색 대시보드</div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="./index.html">AI Field</a>
+        <a class="btn" href="./files/Prompt.pdf" target="_blank" rel="noopener">PDF 가이드</a>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="panel" aria-labelledby="searchTitle">
+        <div class="panel-hd">
+          <div>
+            <h2 class="panel-title" id="searchTitle">검색</h2>
+            <div class="panel-meta" id="loadState">데이터 로딩중...</div>
+          </div>
+          <button class="btn" id="randomBtn" type="button" disabled>랜덤</button>
+        </div>
+        <div class="panel-bd">
+          <div class="stats" aria-label="프롬프트 통계">
+            <div class="stat"><div class="k">프롬프트</div><div class="v" id="statTotal">-</div></div>
+            <div class="stat"><div class="k">대분류</div><div class="v" id="statCategory">-</div></div>
+            <div class="stat"><div class="k">중분류</div><div class="v" id="statSub">-</div></div>
+            <div class="stat"><div class="k">소분류</div><div class="v" id="statSmall">-</div></div>
+          </div>
+
+          <div class="filters">
+            <div>
+              <label for="categoryFilter">대분류</label>
+              <select id="categoryFilter" disabled><option value="">전체</option></select>
+            </div>
+            <div>
+              <label for="subFilter">중분류</label>
+              <select id="subFilter" disabled><option value="">전체</option></select>
+            </div>
+            <div>
+              <label for="smallFilter">소분류</label>
+              <select id="smallFilter" disabled><option value="">전체</option></select>
+            </div>
+          </div>
+
+          <div class="search-row">
+            <div>
+              <label for="queryInput">검색어</label>
+              <input id="queryInput" type="search" placeholder="프롬프트, 키워드, 예시 검색" disabled>
+            </div>
+            <button class="btn primary" id="searchBtn" type="button" disabled>검색</button>
+            <button class="btn" id="resetBtn" type="button" disabled>초기화</button>
+          </div>
+
+          <div class="result-head">
+            <div class="count" id="resultCount">-</div>
+            <div class="count" id="pageState">-</div>
+          </div>
+          <div class="result-list" id="resultList"></div>
+          <div class="pager">
+            <button class="btn" id="prevBtn" type="button" disabled>&lt;&lt;</button>
+            <button class="btn" id="nextBtn" type="button" disabled>&gt;&gt;</button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel detail" aria-labelledby="detailTitle">
+        <div class="panel-hd">
+          <div>
+            <h2 class="panel-title" id="detailTitle">상세</h2>
+            <div class="panel-meta" id="detailMeta">항목 선택 대기</div>
+          </div>
+        </div>
+        <div class="panel-bd" id="detailBody">
+          <div class="empty">검색 결과에서 항목을 선택하세요.</div>
+        </div>
+      </aside>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const $ = (sel) => document.querySelector(sel);
+    const PAGE_SIZE = 20;
+    let DATA = [];
+    let FILTERED = [];
+    let page = 1;
+    let selectedId = "";
+    let searchTimer = 0;
+
+    const el = {
+      loadState: $("#loadState"),
+      statTotal: $("#statTotal"),
+      statCategory: $("#statCategory"),
+      statSub: $("#statSub"),
+      statSmall: $("#statSmall"),
+      categoryFilter: $("#categoryFilter"),
+      subFilter: $("#subFilter"),
+      smallFilter: $("#smallFilter"),
+      queryInput: $("#queryInput"),
+      searchBtn: $("#searchBtn"),
+      resetBtn: $("#resetBtn"),
+      randomBtn: $("#randomBtn"),
+      resultCount: $("#resultCount"),
+      pageState: $("#pageState"),
+      resultList: $("#resultList"),
+      prevBtn: $("#prevBtn"),
+      nextBtn: $("#nextBtn"),
+      detailMeta: $("#detailMeta"),
+      detailBody: $("#detailBody"),
+      toast: $("#toast"),
+    };
+
+    function esc(v){
+      return String(v ?? "").replace(/[&<>"']/g, (ch) => ({
+        "&":"&amp;", "<":"&lt;", ">":"&gt;", "\"":"&quot;", "'":"&#39;"
+      }[ch]));
+    }
+
+    function norm(v){
+      return String(v || "").trim();
+    }
+
+    function fmt(n){
+      return Number(n || 0).toLocaleString("ko-KR");
+    }
+
+    function uniq(items){
+      return [...new Set(items.map(norm).filter(Boolean))].sort((a,b) => a.localeCompare(b, "ko"));
+    }
+
+    function fillSelect(select, values, current){
+      const keep = values.includes(current) ? current : "";
+      select.innerHTML = `<option value="">전체</option>` + values.map((v) => `<option value="${esc(v)}">${esc(v)}</option>`).join("");
+      select.value = keep;
+    }
+
+    function buildIndex(item){
+      return [
+        item.category,
+        item.subCategory,
+        item.smallCategory,
+        item.prompt,
+        item.keyword,
+        item.example,
+      ].map((v) => String(v || "").toLowerCase()).join(" ");
+    }
+
+    function updateFilters(){
+      const category = el.categoryFilter.value;
+      const sub = el.subFilter.value;
+      const categoryRows = category ? DATA.filter((it) => it.category === category) : DATA;
+      const subs = uniq(categoryRows.map((it) => it.subCategory));
+      fillSelect(el.subFilter, subs, sub);
+
+      const nextSub = el.subFilter.value;
+      const subRows = nextSub ? categoryRows.filter((it) => it.subCategory === nextSub) : categoryRows;
+      fillSelect(el.smallFilter, uniq(subRows.map((it) => it.smallCategory)), el.smallFilter.value);
+    }
+
+    function matches(it, q, category, sub, small){
+      if(category && it.category !== category) return false;
+      if(sub && it.subCategory !== sub) return false;
+      if(small && it.smallCategory !== small) return false;
+      if(q && !it._search.includes(q)) return false;
+      return true;
+    }
+
+    function applySearch(resetPage = true){
+      if(resetPage) page = 1;
+      const q = el.queryInput.value.trim().toLowerCase();
+      const category = el.categoryFilter.value;
+      const sub = el.subFilter.value;
+      const small = el.smallFilter.value;
+      FILTERED = DATA.filter((it) => matches(it, q, category, sub, small));
+      if(!FILTERED.some((it) => it.id === selectedId)){
+        selectedId = FILTERED[0]?.id || "";
+      }
+      renderResults();
+      renderDetail();
+    }
+
+    function renderResults(){
+      const totalPages = Math.max(1, Math.ceil(FILTERED.length / PAGE_SIZE));
+      page = Math.min(Math.max(1, page), totalPages);
+      const start = (page - 1) * PAGE_SIZE;
+      const rows = FILTERED.slice(start, start + PAGE_SIZE);
+      const q = el.queryInput.value.trim();
+      el.resultCount.textContent = `검색 결과 ${fmt(FILTERED.length)}개`;
+      el.pageState.textContent = `${fmt(page)} / ${fmt(totalPages)}`;
+      el.prevBtn.disabled = page <= 1;
+      el.nextBtn.disabled = page >= totalPages;
+
+      if(!rows.length){
+        el.resultList.innerHTML = `<div class="empty">검색 결과가 없습니다.</div>`;
+        return;
+      }
+      el.resultList.innerHTML = rows.map((it) => {
+        const active = it.id === selectedId ? " active" : "";
+        return `
+          <button class="result${active}" type="button" data-id="${esc(it.id)}">
+            <p class="result-title">${esc(it.prompt)}</p>
+            <div class="chips">
+              ${it.category ? `<span class="chip"><strong>${esc(it.category)}</strong></span>` : ""}
+              ${it.subCategory ? `<span class="chip">${esc(it.subCategory)}</span>` : ""}
+              ${it.smallCategory ? `<span class="chip">${esc(it.smallCategory)}</span>` : ""}
+              ${it.keyword ? `<span class="chip">${esc(it.keyword)}</span>` : ""}
+            </div>
+          </button>
+        `;
+      }).join("");
+      if(q) highlightResults(q);
+    }
+
+    function highlightResults(q){
+      if(!q || q.length < 2) return;
+      const safe = q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const re = new RegExp(safe, "gi");
+      el.resultList.querySelectorAll(".result-title").forEach((node) => {
+        node.innerHTML = node.textContent.replace(re, (m) => `<mark>${esc(m)}</mark>`);
+      });
+    }
+
+    function selectedItem(){
+      return DATA.find((it) => it.id === selectedId) || FILTERED[0] || null;
+    }
+
+    function renderDetail(){
+      const it = selectedItem();
+      if(!it){
+        el.detailMeta.textContent = "항목 선택 대기";
+        el.detailBody.innerHTML = `<div class="empty">검색 결과에서 항목을 선택하세요.</div>`;
+        return;
+      }
+      selectedId = it.id;
+      el.detailMeta.textContent = [it.category, it.subCategory, it.smallCategory].filter(Boolean).join(" / ") || `#${it.id}`;
+      el.detailBody.innerHTML = `
+        <h3 class="detail-title">${esc(it.prompt)}</h3>
+        <div class="chips" style="margin-top:10px;">
+          ${it.category ? `<span class="chip"><strong>${esc(it.category)}</strong></span>` : ""}
+          ${it.subCategory ? `<span class="chip">${esc(it.subCategory)}</span>` : ""}
+          ${it.smallCategory ? `<span class="chip">${esc(it.smallCategory)}</span>` : ""}
+          ${it.keyword ? `<span class="chip">${esc(it.keyword)}</span>` : ""}
+        </div>
+        <div class="detail-tools">
+          <button class="btn primary" type="button" data-copy="prompt">프롬프트 복사</button>
+          <button class="btn" type="button" data-copy="example">예시 복사</button>
+          <button class="btn" type="button" data-copy="both">전체 복사</button>
+        </div>
+        <div class="field-block">
+          <div class="field-title"><span>프롬프트</span><span>#${esc(it.id)}</span></div>
+          <textarea readonly>${esc(it.prompt)}</textarea>
+        </div>
+        <div class="field-block">
+          <div class="field-title"><span>키워드</span></div>
+          <textarea readonly style="min-height:74px;">${esc(it.keyword || "")}</textarea>
+        </div>
+        <div class="field-block">
+          <div class="field-title"><span>예시</span></div>
+          <textarea class="example" readonly>${esc(it.example || "")}</textarea>
+        </div>
+      `;
+      renderResults();
+    }
+
+    async function copyText(text){
+      const value = String(text || "");
+      if(!value) return;
+      if(navigator.clipboard?.writeText){
+        await navigator.clipboard.writeText(value);
+      } else {
+        const ta = document.createElement("textarea");
+        ta.value = value;
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        ta.remove();
+      }
+      showToast("복사했습니다.");
+    }
+
+    function showToast(text){
+      el.toast.textContent = text;
+      el.toast.classList.add("show");
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(() => el.toast.classList.remove("show"), 1400);
+    }
+
+    function setEnabled(enabled){
+      [el.categoryFilter, el.subFilter, el.smallFilter, el.queryInput, el.searchBtn, el.resetBtn, el.randomBtn].forEach((node) => {
+        node.disabled = !enabled;
+      });
+    }
+
+    async function init(){
+      try{
+        const res = await fetch("./prompts-data.json", { cache: "no-store" });
+        if(!res.ok) throw new Error(`prompts-data.json ${res.status}`);
+        const data = await res.json();
+        DATA = (data.prompts || []).map((it) => ({ ...it, _search: buildIndex(it) }));
+        FILTERED = DATA;
+        el.statTotal.textContent = fmt(DATA.length);
+        el.statCategory.textContent = fmt(uniq(DATA.map((it) => it.category)).length);
+        el.statSub.textContent = fmt(uniq(DATA.map((it) => it.subCategory)).length);
+        el.statSmall.textContent = fmt(uniq(DATA.map((it) => it.smallCategory)).length);
+        fillSelect(el.categoryFilter, uniq(DATA.map((it) => it.category)), "");
+        updateFilters();
+        setEnabled(true);
+        selectedId = DATA[0]?.id || "";
+        el.loadState.textContent = `기준 데이터 ${fmt(DATA.length)}개`;
+        renderResults();
+        renderDetail();
+      } catch(err){
+        console.error(err);
+        el.loadState.textContent = "데이터 로드 실패";
+        el.resultList.innerHTML = `<div class="empty">prompts-data.json을 불러오지 못했습니다.</div>`;
+      }
+    }
+
+    el.categoryFilter.addEventListener("change", () => { updateFilters(); applySearch(true); });
+    el.subFilter.addEventListener("change", () => { updateFilters(); applySearch(true); });
+    el.smallFilter.addEventListener("change", () => applySearch(true));
+    el.searchBtn.addEventListener("click", () => applySearch(true));
+    el.queryInput.addEventListener("input", () => {
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(() => applySearch(true), 120);
+    });
+    el.resetBtn.addEventListener("click", () => {
+      el.queryInput.value = "";
+      el.categoryFilter.value = "";
+      el.subFilter.value = "";
+      el.smallFilter.value = "";
+      updateFilters();
+      applySearch(true);
+    });
+    el.randomBtn.addEventListener("click", () => {
+      const list = FILTERED.length ? FILTERED : DATA;
+      const it = list[Math.floor(Math.random() * list.length)];
+      if(!it) return;
+      selectedId = it.id;
+      const idx = FILTERED.findIndex((row) => row.id === it.id);
+      if(idx >= 0) page = Math.floor(idx / PAGE_SIZE) + 1;
+      renderResults();
+      renderDetail();
+    });
+    el.prevBtn.addEventListener("click", () => { page -= 1; renderResults(); });
+    el.nextBtn.addEventListener("click", () => { page += 1; renderResults(); });
+    el.resultList.addEventListener("click", (e) => {
+      const btn = e.target.closest("button[data-id]");
+      if(!btn) return;
+      selectedId = btn.dataset.id || "";
+      renderDetail();
+    });
+    el.detailBody.addEventListener("click", async (e) => {
+      const btn = e.target.closest("button[data-copy]");
+      if(!btn) return;
+      const it = selectedItem();
+      if(!it) return;
+      const mode = btn.dataset.copy;
+      if(mode === "prompt") return copyText(it.prompt);
+      if(mode === "example") return copyText(it.example);
+      return copyText(`프롬프트\n${it.prompt}\n\n키워드\n${it.keyword || ""}\n\n예시\n${it.example || ""}`);
+    });
+
+    init();
+  </script>
+</body>
+</html>
