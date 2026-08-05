@@ -319,14 +319,14 @@
       const categoryRows = category ? DATA.filter((it) => it.category === category) : DATA;
       const subs = hasCategory ? uniq(categoryRows.map((it) => it.subCategory)) : [];
       fillSelect(el.subFilter, subs, sub);
-      el.subFilter.disabled = !hasCategory || !subs.length;
+      el.subFilter.disabled = !hasCategory;
 
       const nextSub = el.subFilter.value;
       const hasSub = Boolean(nextSub);
       const subRows = hasSub ? categoryRows.filter((it) => it.subCategory === nextSub) : [];
       const smalls = hasSub ? uniq(subRows.map((it) => it.smallCategory)) : [];
       fillSelect(el.smallFilter, smalls, el.smallFilter.value);
-      el.smallFilter.disabled = !hasSub || !smalls.length;
+      el.smallFilter.disabled = !hasSub;
     }
 
     function matches(it, q, category, sub, small){
