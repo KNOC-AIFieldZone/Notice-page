@@ -160,18 +160,6 @@
                              ],
     "news":  [
                  {
-                     "service":  "Gemini",
-                     "title":  "Google Classroom Gemini 전 연령 학생으로 확대",
-                     "date":  "2026-08-04",
-                     "file":  "2026-08-04-gemini-google-classroom-all-ages-students.html"
-                 },
-                 {
-                     "service":  "OpenAI",
-                     "title":  "ChatGPT Work와 Codex 교육용 플러그인 공개",
-                     "date":  "2026-08-04",
-                     "file":  "2026-08-04-openai-chatgpt-work-codex-education-plugins.html"
-                 },
-                 {
                      "service":  "xAI",
                      "title":  "Grok Voice Think Fast 2.0 공개",
                      "date":  "2026-07-29",
