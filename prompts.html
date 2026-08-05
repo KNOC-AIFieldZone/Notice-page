@@ -315,13 +315,18 @@
     function updateFilters(){
       const category = el.categoryFilter.value;
       const sub = el.subFilter.value;
+      const hasCategory = Boolean(category);
       const categoryRows = category ? DATA.filter((it) => it.category === category) : DATA;
-      const subs = uniq(categoryRows.map((it) => it.subCategory));
+      const subs = hasCategory ? uniq(categoryRows.map((it) => it.subCategory)) : [];
       fillSelect(el.subFilter, subs, sub);
+      el.subFilter.disabled = !hasCategory || !subs.length;
 
       const nextSub = el.subFilter.value;
-      const subRows = nextSub ? categoryRows.filter((it) => it.subCategory === nextSub) : categoryRows;
-      fillSelect(el.smallFilter, uniq(subRows.map((it) => it.smallCategory)), el.smallFilter.value);
+      const hasSub = Boolean(nextSub);
+      const subRows = hasSub ? categoryRows.filter((it) => it.subCategory === nextSub) : [];
+      const smalls = hasSub ? uniq(subRows.map((it) => it.smallCategory)) : [];
+      fillSelect(el.smallFilter, smalls, el.smallFilter.value);
+      el.smallFilter.disabled = !hasSub || !smalls.length;
     }
 
     function matches(it, q, category, sub, small){
@@ -455,9 +460,15 @@
     }
 
     function setEnabled(enabled){
-      [el.categoryFilter, el.subFilter, el.smallFilter, el.queryInput, el.searchBtn, el.resetBtn, el.randomBtn].forEach((node) => {
+      [el.categoryFilter, el.queryInput, el.searchBtn, el.resetBtn, el.randomBtn].forEach((node) => {
         node.disabled = !enabled;
       });
+      if(enabled){
+        updateFilters();
+      } else {
+        el.subFilter.disabled = true;
+        el.smallFilter.disabled = true;
+      }
     }
 
     async function init(){
