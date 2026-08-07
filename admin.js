@@ -3,12 +3,7 @@ const OWNER = "KNOC-AIFieldZone";
 const REPO = "Notice-page";
 const BRANCH = "main";
 const FILE_PATH = "content.json";
-const FILES_DIR = "files";
 const NEWS_DIR = "News";
-
-// Prompt Guide (고정 PDF: 교체만, 삭제 없음)
-const PROMPT_PDF_NAME = "Prompt.pdf";
-const PROMPT_PDF_PATH = `${FILES_DIR}/${PROMPT_PDF_NAME}`;
 
 // ===== DOM helpers =====
 const $ = (id) => document.getElementById(id);
@@ -49,10 +44,6 @@ function escapeHtml(str) {
     .replaceAll("'", "&#039;");
 }
 function norm(s) { return String(s ?? "").trim(); }
-function pdfNameForService(serviceName) {
-  const n = norm(serviceName);
-  return n ? `${n}.pdf` : "";
-}
 function slugifyForFile(s) {
   return String(s || "")
     .toLowerCase()
@@ -473,20 +464,12 @@ async function createSingleCommit(token, headline, additions, deletions) {
 let loadedSha = null;
 let loadedData = null;
 
-let filesIndex = new Set();
-let filesIndexLoaded = false;
 let newsFilesIndex = new Set();
 let newsFilesIndexLoaded = false;
 
-// 서비스별 PDF 스테이징
-const stagedPdfOps = new Map();
 const stagedNewsFileOps = new Map();
 
-let pendingSvcAddPdf = null;
 let pendingNewsAddBody = null;
-
-// Prompt PDF 스테이징(교체만)
-let stagedPromptPdfOp = null;
 
 // 원본 스냅샷(변경현황 계산용)
 let originalSvcByUid = new Map();
@@ -548,8 +531,6 @@ function serviceCardTemplate(s, idx) {
       <span class="sum-right">
         <span class="sum-actions">
           <button type="button" class="btn sum-btn danger" data-act="delSvcQuick">서비스 삭제</button>
-          <button type="button" class="btn sum-btn success" data-act="attachPdfQuick">PDF 첨부</button>
-          <button type="button" class="btn sum-btn file-danger" data-act="delPdfQuick">PDF 삭제</button>
         </span>
         <span class="chev" aria-hidden="true">›</span>
       </span>
@@ -588,14 +569,6 @@ function serviceCardTemplate(s, idx) {
         <textarea data-k="note">${escapeHtml(s.note || "")}</textarea>
       </div>
 
-      <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--line);display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
-        <div style="flex:1;min-width:240px;font-size:12px;color:var(--muted);">
-          소개 PDF: <span data-k="pdfState">확인중…</span>
-        </div>
-        <input type="file" accept="application/pdf" data-k="pdfInput" style="display:none" />
-        <button class="btn success" data-act="attachPdf">PDF 첨부</button>
-        <button class="btn file-danger" data-act="delPdf">PDF 삭제</button>
-      </div>
     </div>
   `;
   return card;
@@ -852,9 +825,7 @@ function renderAll() {
   pagedNews.pageItems.forEach((it, i) => newsList.appendChild(newsCardTemplate(it, (newsPage - 1) * NEWS_PAGE_SIZE + i)));
   renderNewsPager(pagedNews.totalPages);
 
-  refreshAllCardsPdfUI();
   refreshAllNewsBodyUI();
-  refreshPromptPdfUI();
   updatePendingSummary();
 }
 
@@ -1027,36 +998,8 @@ async function loadContentJson(token) {
 
   originalNewsServiceCatalogJson = JSON.stringify(ensureNewsServiceCatalog(newsServiceCatalog, news));
 
-  stagedPdfOps.clear();
   stagedNewsFileOps.clear();
-  stagedPromptPdfOp = null;
 
-  return true;
-}
-
-async function loadFilesDirIndex(token) {
-  filesIndex = new Set();
-  filesIndexLoaded = false;
-
-  const res = await fetch(REST_GET_CONTENT(FILES_DIR), { headers: ghRestHeaders(token) });
-  if (res.status === 404) {
-    filesIndexLoaded = true;
-    return true;
-  }
-  if (!res.ok) {
-    const t = await res.text().catch(() => "");
-    throw new Error(`불러오기 실패(files/): ${res.status} ${res.statusText}\n${t}`);
-  }
-
-  const arr = await res.json();
-  if (Array.isArray(arr)) {
-    arr.forEach((it) => {
-      if (it?.type === "file" && typeof it?.name === "string" && /\.pdf$/i.test(it.name)) {
-        filesIndex.add(it.name);
-      }
-    });
-  }
-  filesIndexLoaded = true;
   return true;
 }
 
@@ -1085,34 +1028,6 @@ ${t}`);
   }
   newsFilesIndexLoaded = true;
   return true;
-}
-
-// ===== Prompt PDF =====
-function refreshPromptPdfUI() {
-  const statusEl = document.getElementById("promptPdfStatus");
-  const btn = document.getElementById("btnPromptPdfReplace");
-  if (!statusEl && !btn) return;
-
-  const tokenOk = !!norm($("ghToken")?.value);
-  const exists = filesIndexLoaded && filesIndex.has(PROMPT_PDF_NAME);
-
-  if (btn) {
-    btn.disabled = !tokenOk || !filesIndexLoaded;
-    btn.textContent = "PDF 교체";
-    setBtnTone(btn, "replace");
-  }
-
-  if (!statusEl) return;
-  if (!filesIndexLoaded) {
-    statusEl.textContent = "확인중…";
-    return;
-  }
-
-  if (stagedPromptPdfOp?.type === "upsert") {
-    statusEl.textContent = exists ? "저장 대기(교체)" : "저장 대기(업로드)";
-    return;
-  }
-  statusEl.textContent = exists ? `현재 파일: ${PROMPT_PDF_NAME}` : "현재 파일 없음";
 }
 
 function rebuildOriginalSnapshotsFromLoadedData() {
@@ -1160,46 +1075,11 @@ function markLoadedDataAsCleanBaseline() {
   rebuildOriginalSnapshotsFromLoadedData();
 }
 
-function wirePromptPdfControls() {
-  const btn = document.getElementById("btnPromptPdfReplace");
-  const input = document.getElementById("promptPdfInput");
-  if (!btn || !input) return;
-
-  btn.addEventListener("click", (e) => {
-    e.preventDefault();
-    const tokenOk = !!norm($("ghToken")?.value);
-    if (!tokenOk) return setMsg("토큰을 입력하세요.", "err");
-    if (!filesIndexLoaded) return setMsg("files/ 목록을 불러오는 중입니다. 잠시 후 다시 시도하세요.", "err");
-    input.click();
-  });
-
-  input.addEventListener("change", async () => {
-    const file = input.files?.[0];
-    input.value = "";
-    if (!file) return;
-
-    try {
-      setMsg(`Prompt PDF 읽는 중(저장 대기): ${file.name} → ${PROMPT_PDF_NAME}`, "");
-      const b64 = await fileToB64(file);
-
-      stagedPromptPdfOp = { type: "upsert", b64, size: file.size, origName: file.name };
-      refreshPromptPdfUI();
-      updatePendingSummary();
-      setMsg(`Prompt PDF 저장 대기: ${PROMPT_PDF_NAME} (저장 필요)`, "ok");
-    } catch (e) {
-      console.error(e);
-      setMsg(String(e.message || e), "err");
-    }
-  });
-}
-
 // ===== Reset: baseline 복구 =====
 function resetEditsToBaseline() {
   if (!baselineData) return;
 
-  stagedPdfOps.clear();
   stagedNewsFileOps.clear();
-  stagedPromptPdfOp = null;
 
   loadedData = deepClone(baselineData);
 
@@ -1243,125 +1123,15 @@ function resetEditsToBaseline() {
   setMsg("수정 사항이 초기화되었습니다.", "ok");
 }
 
-// ===== PDF UI(서비스별) =====
-function getPdfUiState(uid, serviceName) {
-  const name = norm(serviceName);
-  const fileName = pdfNameForService(name);
-  const repoHas = !!fileName && filesIndex.has(fileName);
-  const staged = stagedPdfOps.get(uid) || null;
-  return { name, fileName, repoHas, staged };
-}
-
-function refreshAllCardsPdfUI() {
+function refreshAllServiceCardUI() {
   const cards = document.querySelectorAll("#svcList .card");
-  cards.forEach((card) => refreshCardPdfUI(card));
+  cards.forEach((card) => refreshServiceCardUI(card));
 }
 
-function refreshCardPdfUI(card) {
-  const uid = card.dataset.uid;
-  const name = card.querySelector('input[data-k="name"]')?.value || "";
+function refreshServiceCardUI(card) {
   const tokenOk = !!norm($("ghToken")?.value);
-
-  const stateEl = card.querySelector('.card-body [data-k="pdfState"]');
-  const bodyAttach = card.querySelector('.card-body button[data-act="attachPdf"]');
-  const bodyDel = card.querySelector('.card-body button[data-act="delPdf"]');
-
   const quickSvcDel = card.querySelector('summary button[data-act="delSvcQuick"]');
-  const quickAttach = card.querySelector('summary button[data-act="attachPdfQuick"]');
-  const quickDel = card.querySelector('summary button[data-act="delPdfQuick"]');
-
-  if (!stateEl || !bodyAttach || !bodyDel || !quickSvcDel || !quickAttach || !quickDel) return;
-
-  quickSvcDel.disabled = !tokenOk;
-
-  if (!norm(name)) {
-    stateEl.textContent = "name을 입력하면 PDF를 첨부할 수 있어요.";
-
-    bodyAttach.textContent = "PDF 첨부";
-    bodyAttach.disabled = true;
-    bodyDel.style.display = "none";
-
-    quickAttach.textContent = "PDF 첨부";
-    quickAttach.disabled = true;
-    quickDel.style.display = "none";
-    setBtnTone(bodyAttach, "success");
-    setBtnTone(quickAttach, "success");
-    return;
-  }
-
-  if (!filesIndexLoaded) {
-    stateEl.textContent = "확인중…";
-
-    bodyAttach.disabled = true;
-    bodyDel.style.display = "none";
-
-    quickAttach.disabled = true;
-    quickDel.style.display = "none";
-    return;
-  }
-
-  const { fileName, repoHas, staged } = getPdfUiState(uid, name);
-
-  const attachLabel = staged?.type === "upsert"
-    ? "PDF 다시 선택(저장 대기)"
-    : (repoHas ? "PDF 교체(덮어쓰기)" : "PDF 첨부");
-  const attachTone = repoHas ? "replace" : "success";
-
-  bodyAttach.textContent = attachLabel;
-  bodyAttach.disabled = !tokenOk;
-  setBtnTone(bodyAttach, attachTone);
-
-  quickAttach.textContent = attachLabel.replace("(덮어쓰기)", "").trim();
-  quickAttach.disabled = !tokenOk;
-  setBtnTone(quickAttach, attachTone);
-
-  if (staged?.type === "delete") {
-    stateEl.textContent = repoHas ? `삭제 예정: ${fileName}` : `삭제 예정(원본 없음): ${fileName}`;
-
-    bodyDel.style.display = "";
-    bodyDel.textContent = "삭제 취소";
-    bodyDel.disabled = !tokenOk;
-    setBtnTone(bodyDel, "");
-
-    quickDel.style.display = "";
-    quickDel.textContent = "삭제 취소";
-    quickDel.disabled = !tokenOk;
-    setBtnTone(quickDel, "");
-    return;
-  }
-
-  if (staged?.type === "upsert") {
-    stateEl.textContent = repoHas ? `저장 대기(교체): ${fileName}` : `저장 대기(첨부): ${fileName}`;
-
-    bodyDel.style.display = "";
-    bodyDel.textContent = "PDF 삭제";
-    bodyDel.disabled = !tokenOk;
-    setBtnTone(bodyDel, "file-danger");
-
-    quickDel.style.display = repoHas ? "" : "none";
-    quickDel.textContent = "PDF 삭제";
-    quickDel.disabled = !tokenOk;
-    setBtnTone(quickDel, "file-danger");
-    return;
-  }
-
-  if (repoHas) {
-    stateEl.textContent = `연결됨: ${fileName}`;
-
-    bodyDel.style.display = "";
-    bodyDel.textContent = "PDF 삭제";
-    bodyDel.disabled = !tokenOk;
-    setBtnTone(bodyDel, "file-danger");
-
-    quickDel.style.display = "";
-    quickDel.textContent = "PDF 삭제";
-    quickDel.disabled = !tokenOk;
-    setBtnTone(quickDel, "file-danger");
-  } else {
-    stateEl.textContent = `없음: ${fileName}`;
-    bodyDel.style.display = "none";
-    quickDel.style.display = "none";
-  }
+  if (quickSvcDel) quickSvcDel.disabled = !tokenOk;
 }
 
 function refreshAllNewsBodyUI() {
@@ -1495,34 +1265,12 @@ async function buildFileChangesForCommit(token, dataWithUids) {
   const additionPaths = new Set([FILE_PATH]);
 
   const curSvcByUid = new Map((dataWithUids.services || []).map((s) => [String(s._uid), s]));
-  const curNameSet = new Set();
-  (dataWithUids.services || []).forEach((s) => { if (norm(s.name)) curNameSet.add(norm(s.name)); });
-
   const curNewsByUid = new Map((dataWithUids.news || []).map((it) => [String(it._uid), it]));
   const curNewsFileSet = new Set();
   (dataWithUids.news || []).forEach((it) => {
     const fn = normalizeNewsFileName(it.file, it.date, it.title, true);
     if (fn) curNewsFileSet.add(fn);
   });
-
-  for (const [uid, op] of stagedPdfOps.entries()) {
-    const svc = curSvcByUid.get(String(uid));
-    const svcName = norm(svc?.name);
-    const fileName = pdfNameForService(svcName);
-    const path = fileName ? `${FILES_DIR}/${fileName}` : "";
-
-    if (op?.type === "upsert") {
-      if (!path) continue;
-      additions.push({ path, contents: op.b64 });
-      additionPaths.add(path);
-      continue;
-    }
-    if (op?.type === "delete") {
-      if (!path) continue;
-      if (filesIndex.has(fileName)) deletionPaths.add(path);
-      continue;
-    }
-  }
 
   for (const [uid, op] of stagedNewsFileOps.entries()) {
     const it = curNewsByUid.get(String(uid));
@@ -1540,25 +1288,6 @@ async function buildFileChangesForCommit(token, dataWithUids) {
       if (newsFilesIndex.has(fileName)) deletionPaths.add(path);
       continue;
     }
-  }
-
-
-  if (stagedPromptPdfOp?.type === "upsert") {
-    additions.push({ path: PROMPT_PDF_PATH, contents: stagedPromptPdfOp.b64 });
-    additionPaths.add(PROMPT_PDF_PATH);
-  }
-
-  for (const [uid, orig] of originalSvcByUid.entries()) {
-    if (curSvcByUid.has(String(uid))) continue;
-
-    const oldName = norm(orig?.name);
-    if (!oldName) continue;
-    if (curNameSet.has(oldName)) continue;
-
-    const oldFile = `${oldName}.pdf`;
-    if (!filesIndex.has(oldFile)) continue;
-
-    deletionPaths.add(`${FILES_DIR}/${oldFile}`);
   }
 
   for (const [uid, orig] of originalNewsByUid.entries()) {
@@ -1643,7 +1372,6 @@ function updatePendingSummary() {
   const legacy = document.getElementById("pendingSummary");
   const editor = document.getElementById("editor");
   if (!editor || editor.classList.contains("hidden") || !loadedData) {
-    setNum("p_pdf_total", 0); setNum("p_pdf_attach", 0); setNum("p_pdf_replace", 0); setNum("p_pdf_delete", 0);
     setNum("p_svc_total", 0); setNum("p_svc_add", 0); setNum("p_svc_mod", 0); setNum("p_svc_del", 0);
     setNum("p_nt_total", 0);  setNum("p_nt_add", 0);  setNum("p_nt_mod", 0);  setNum("p_nt_del", 0);
     setNum("p_news_total", 0); setNum("p_news_add", 0); setNum("p_news_mod", 0); setNum("p_news_del", 0);
@@ -1654,26 +1382,8 @@ function updatePendingSummary() {
 
   const snap = snapshotFromFormWithUids();
 
-  // PDF
-  let pdfAttach = 0, pdfReplace = 0, pdfDelete = 0;
   const curSvcByUid = new Map((snap.services || []).map((s) => [String(s._uid), s]));
-  for (const [uid, op] of stagedPdfOps.entries()) {
-    const svc = curSvcByUid.get(String(uid));
-    const svcName = norm(svc?.name);
-    const fileName = pdfNameForService(svcName);
-
-    if (op?.type === "upsert") {
-      if (fileName && filesIndex.has(fileName)) pdfReplace += 1;
-      else pdfAttach += 1;
-    } else if (op?.type === "delete") {
-      pdfDelete += 1;
-    }
-  }
-  if (stagedPromptPdfOp?.type === "upsert") {
-    if (filesIndex.has(PROMPT_PDF_NAME)) pdfReplace += 1;
-    else pdfAttach += 1;
-  }
-  const pdfTotal = pdfAttach + pdfReplace + pdfDelete;
+  const pdfTotal = 0;
 
   // 서비스
   let svcAdd = 0, svcMod = 0, svcDel = 0;
@@ -1703,11 +1413,6 @@ function updatePendingSummary() {
   const currentNoticeKeywordCatalogJson = JSON.stringify(ensureNoticeKeywordCatalog(snap.noticeKeywordCatalog, snap.notice?.items || []));
   if (currentNoticeKeywordCatalogJson !== originalNoticeKeywordCatalogJson) ntMod += 1;
   const ntTotal = ntAdd + ntMod + ntDel;
-
-  setNum("p_pdf_total", pdfTotal);
-  setNum("p_pdf_attach", pdfAttach);
-  setNum("p_pdf_replace", pdfReplace);
-  setNum("p_pdf_delete", pdfDelete);
 
   setNum("p_svc_total", svcTotal);
   setNum("p_svc_add", svcAdd);
@@ -1749,7 +1454,6 @@ function updatePendingSummary() {
 
   if (legacy) {
     legacy.textContent =
-      `PDF ${pdfTotal}(첨부${pdfAttach}/교체${pdfReplace}/삭제${pdfDelete}) · ` +
       `서비스 ${svcTotal}(추가${svcAdd}/수정${svcMod}/삭제${svcDel}) · ` +
       `공지 ${ntTotal}(추가${ntAdd}/수정${ntMod}/삭제${ntDel}) · ` +
       `뉴스 ${newsTotal}(추가${newsAdd}/수정${newsMod}/삭제${newsDel})`;
@@ -2041,9 +1745,6 @@ document.addEventListener("DOMContentLoaded", () => {
   requireEl("btnCloseSvcAddModal");
   requireEl("btnCancelSvcAdd");
   requireEl("btnApplySvcAdd");
-  requireEl("btnSvcAddPdfPick");
-  requireEl("svcAddPdfInput");
-  requireEl("svcAddPdfState");
   requireEl("noticeAddModal");
   requireEl("noticeAddModalBackdrop");
   requireEl("btnCloseNoticeAddModal");
@@ -2067,14 +1768,11 @@ document.addEventListener("DOMContentLoaded", () => {
   requireEl("btnCloseNewsAddModal");
   requireEl("btnSave");
 
-  wirePromptPdfControls();
-
   $("ghToken").addEventListener("input", () => {
     const v = norm($("ghToken").value);
     $("tokenState").textContent = v ? "입력됨" : "토큰 필요";
-    refreshAllCardsPdfUI();
+    refreshAllServiceCardUI();
     refreshAllNewsBodyUI();
-    refreshPromptPdfUI();
     updatePendingSummary(); // 여기서 reset 버튼 상태도 같이 갱신됨
   });
 
@@ -2088,7 +1786,6 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       setMsg("불러오는 중...", "");
       await loadContentJson(token);
-      await loadFilesDirIndex(token);
       await loadNewsDirIndex(token);
       renderAll();
       syncLoadedDataFromForm();
@@ -2103,8 +1800,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   $("btnAddSvc").addEventListener("click", () => {
     if (!loadedData) loadedData = { services: [], notice: { noticeId: "", items: [] }, news: [], noticeKeywordCatalog: ensureNoticeKeywordCatalog([]), newsServiceCatalog: ensureNewsServiceCatalog([]) };
-    pendingSvcAddPdf = null;
-    $("svcAddPdfState").textContent = "선택된 파일 없음";
     setSvcAddModal(true);
   });
 
@@ -2143,19 +1838,6 @@ document.addEventListener("DOMContentLoaded", () => {
   $("btnCloseSvcAddModal").addEventListener("click", () => setSvcAddModal(false));
   $("btnCancelSvcAdd").addEventListener("click", () => setSvcAddModal(false));
   $("svcAddModalBackdrop").addEventListener("click", () => setSvcAddModal(false));
-  $("btnSvcAddPdfPick").addEventListener("click", () => $("svcAddPdfInput").click());
-  $("svcAddPdfInput").addEventListener("change", async (e) => {
-    const file = e.target.files?.[0];
-    e.target.value = "";
-    if (!file) return;
-    try {
-      const b64 = await fileToB64(file);
-      pendingSvcAddPdf = { b64, size: file.size, origName: file.name };
-      $("svcAddPdfState").textContent = `선택됨: ${file.name}`;
-    } catch (err) {
-      setMsg(String(err.message || err), "err");
-    }
-  });
 
   $("btnApplySvcAdd").addEventListener("click", () => {
     if (!loadedData) return;
@@ -2171,9 +1853,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     const uid = makeUid();
     loadedData.services.push({ _uid: uid, name, url: norm($("svcAddUrl")?.value || ""), domain: norm($("svcAddDomain")?.value || ""), note: $("svcAddNote")?.value || "", disabled: !!$("svcAddDisabled")?.checked });
-    if (pendingSvcAddPdf?.b64) stagedPdfOps.set(uid, { type: "upsert", b64: pendingSvcAddPdf.b64, size: pendingSvcAddPdf.size, origName: pendingSvcAddPdf.origName });
-    pendingSvcAddPdf = null;
-    $("svcAddPdfState").textContent = "선택된 파일 없음";
     renderAll();
     setSvcAddModal(false);
   });
@@ -2415,8 +2094,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!card) return;
 
     const uid = card.dataset.uid;
-    const nameInput = card.querySelector('input[data-k="name"]');
-    const svcName = norm(nameInput?.value);
 
     const delSvcBtn = e.target.closest("button[data-act='delSvc'],button[data-act='delSvcQuick']");
     if (delSvcBtn) {
@@ -2428,94 +2105,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const idx = loadedData.services.findIndex((s) => String(s._uid) === String(uid));
       if (idx >= 0) {
-        stagedPdfOps.delete(uid);
         loadedData.services.splice(idx, 1);
       }
       renderAll();
       return;
-    }
-
-    const attachBtn = e.target.closest("button[data-act='attachPdf'],button[data-act='attachPdfQuick']");
-    if (attachBtn) {
-      if (!token) return setMsg("토큰을 입력하세요.", "err");
-      if (!svcName) return setMsg("먼저 서비스 name을 입력하세요.", "err");
-      const input = card.querySelector('input[type="file"][data-k="pdfInput"]');
-      if (!input) return;
-      input.click();
-      return;
-    }
-
-    const delPdfBtn = e.target.closest("button[data-act='delPdf'],button[data-act='delPdfQuick']");
-    if (delPdfBtn) {
-      if (!token) return setMsg("토큰을 입력하세요.", "err");
-      if (!svcName) return setMsg("먼저 서비스 name을 입력하세요.", "err");
-      if (!filesIndexLoaded) return;
-
-      const cur = stagedPdfOps.get(uid);
-
-      if (cur?.type === "delete") {
-        stagedPdfOps.delete(uid);
-        refreshCardPdfUI(card);
-        updatePendingSummary();
-        setMsg(`PDF 삭제 취소됨: ${pdfNameForService(svcName)}`, "ok");
-        return;
-      }
-
-      if (cur?.type === "upsert") {
-        const fileName = pdfNameForService(svcName);
-        if (filesIndex.has(fileName)) {
-          stagedPdfOps.set(uid, { type: "delete" });
-          refreshCardPdfUI(card);
-          updatePendingSummary();
-          setMsg(`PDF 삭제 예정으로 변경됨: ${fileName} (저장 필요)`, "ok");
-        } else {
-          stagedPdfOps.delete(uid);
-          refreshCardPdfUI(card);
-          updatePendingSummary();
-          setMsg(`PDF 첨부 대기 취소됨: ${fileName}`, "ok");
-        }
-        return;
-      }
-
-      const fileName = pdfNameForService(svcName);
-      if (!filesIndex.has(fileName)) return setMsg(`삭제할 PDF가 없습니다: ${fileName}`, "err");
-
-      stagedPdfOps.set(uid, { type: "delete" });
-      refreshCardPdfUI(card);
-      updatePendingSummary();
-      setMsg(`PDF 삭제 예정: ${fileName} (저장 필요)`, "ok");
-    }
-  });
-
-  // ✅ 서비스 PDF change
-  $("svcList").addEventListener("change", async (e) => {
-    const input = e.target.closest('input[type="file"][data-k="pdfInput"]');
-    if (!input) return;
-
-    const token = norm($("ghToken").value);
-    const card = input.closest(".card");
-    const uid = card?.dataset?.uid;
-    const svcName = norm(card?.querySelector('input[data-k="name"]')?.value);
-
-    const file = input.files?.[0];
-    input.value = "";
-    if (!file) return;
-    if (!token) return setMsg("토큰을 입력하세요.", "err");
-    if (!svcName) return setMsg("먼저 서비스 name을 입력하세요.", "err");
-
-    try {
-      setMsg(`PDF 읽는 중(저장 대기): ${file.name} → ${svcName}.pdf`, "");
-      const b64 = await fileToB64(file);
-
-      stagedPdfOps.set(uid, { type: "upsert", b64, size: file.size, origName: file.name });
-      refreshCardPdfUI(card);
-      updatePendingSummary();
-
-      const fileName = pdfNameForService(svcName);
-      setMsg(`PDF ${filesIndex.has(fileName) ? "교체" : "첨부"} 저장 대기: ${fileName}`, "ok");
-    } catch (e2) {
-      console.error(e2);
-      setMsg(String(e2.message || e2), "err");
     }
   });
 
@@ -2530,7 +2123,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const idx = cards.indexOf(card);
         const sumTitle = card.querySelector(".sum-title");
         if (sumTitle) sumTitle.textContent = serviceSummaryText(idx, e.target.value);
-        refreshCardPdfUI(card);
+        refreshServiceCardUI(card);
       }
     }
   });
@@ -2839,7 +2432,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const commit = await createSingleCommit(token, headline, additions, deletions);
 
       await loadContentJson(token);
-      await loadFilesDirIndex(token);
       await loadNewsDirIndex(token);
       renderAll();
 

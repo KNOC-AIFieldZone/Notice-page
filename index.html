@@ -509,21 +509,7 @@
     .btn.mini{ padding:7px 10px; font-size:12px; }
     .btn.mini:disabled{ opacity:.45; background: rgba(148,163,184,.20); border-color: rgba(148,163,184,.35); color: var(--muted); cursor:not-allowed; }
 
-    .guide-drawer-toggle{ position: fixed; right: 0; top: 50%; transform: translateY(-50%); z-index: 35; border-radius: 14px 0 0 14px; padding: 14px 8px 14px 10px; background: linear-gradient(180deg, var(--panel2), var(--panel)); border: 1px solid var(--line); border-right:none; box-shadow: -10px 14px 28px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.08); display:flex; align-items:center; gap:8px; transition: transform .25s ease, opacity .2s ease; }
-    .guide-drawer-toggle .arrow{ font-size:14px; font-weight:900; color: var(--accent); line-height:1; }
-    .guide-drawer-toggle .label{ display:block; text-align:center; font-size:12px; font-weight:800; line-height:1.05; white-space:normal; }
-    .guide-drawer-toggle.hidden{ transform: translate(110%, -50%); opacity:0; pointer-events:none; }
-
-
-    .guide-drawer-backdrop{ position: fixed; inset: 0; z-index: 28; background: rgba(11,18,32,.22); opacity:0; pointer-events:none; transition: opacity .2s ease; }
-    .guide-drawer-backdrop.show{ opacity:1; pointer-events:auto; }
-
-    .guide-drawer{ position: fixed; right: 0; top: 50%; transform: translate(100%, -50%); width: min(560px, 84vw); max-height: 88vh; overflow: auto; z-index: 30; background: linear-gradient(180deg, var(--panel2), var(--panel)); border:1px solid var(--line); border-right:none; border-radius: 18px 0 0 18px; box-shadow: -24px 20px 50px rgba(0,0,0,.30), inset 0 1px 0 rgba(255,255,255,.08); transition: transform .32s cubic-bezier(.22,.61,.36,1); backdrop-filter: blur(10px); }
-    .guide-drawer.open{ transform: translate(0, -50%); }
-    .guide-drawer-hd{ display:flex; justify-content:space-between; align-items:center; gap:8px; padding:16px 16px 14px; border-bottom:1px solid var(--line); background: rgba(255,255,255,.03); }
-    .guide-drawer .panel-bd{ padding: 16px; }
-    .guide-drawer-close{ padding:7px 10px; font-size:12px; }
-    @media (max-width:980px){ .wrap{padding:20px 18px 28px;} .guide-drawer{ width:min(600px, 96vw); max-height:92vh; } .guide-drawer-toggle{ right:0; padding:12px 7px 12px 9px; gap:6px; } .guide-drawer-toggle .label{ font-size:11px; line-height:1.02; } }
+    @media (max-width:980px){ .wrap{padding:20px 18px 28px;} }
 
 
 
@@ -707,12 +693,13 @@
           <span class="pill" id="nowPill">로딩중…</span>
         </div>
         <div class="sub">
-          좌측은 <b>구독 서비스</b>, 우측은 <b>공지 사항</b>과 <b>AI Update News</b>이며 가이드는 우측 슬라이드로 펼쳐집니다.
+          좌측은 <b>구독 서비스</b>, 우측은 <b>공지 사항</b>과 <b>AI Update News</b>입니다.
         </div>
       </div>
 
       <div class="top-actions">
         <a class="btn" href="./admin.html" target="_blank" rel="noopener">관리자</a>
+        <a class="btn" href="./guidebooks.html">서비스 가이드북</a>
         <a class="btn" href="./prompts.html">프롬프트 예시</a>
         <a class="btn primary" href="https://www.google.com/" target="_blank" rel="noopener">Google</a>
       </div>
@@ -777,15 +764,6 @@
       </div>
     </main>
 
-
-    <button class="btn guide-drawer-toggle" id="guideDrawerToggle"  aria-controls="guideDrawer" aria-expanded="false">
-      <span class="arrow">←</span>
-      <span class="label">AI <br>서<br>비<br>스<br><br>가<br>이<br>드<br><br>보<br>기</span>
-
-    </button>
-
-    <div class="guide-drawer-backdrop" id="guideDrawerBackdrop" aria-hidden="true"></div>
-
     <div class="news-modal-backdrop" id="newsModalBackdrop" aria-hidden="true"></div>
     <section class="news-modal" id="newsModal" aria-hidden="true" aria-label="AI Update News 상세">
       <div class="news-modal-hd">
@@ -801,37 +779,6 @@
         <button class="news-nav-btn" id="newsModalNext" type="button" aria-label="다음 뉴스">다음 뉴스 →</button>
       </div>
     </section>
-
-    <aside class="guide-drawer" id="guideDrawer" aria-hidden="true">
-      <div class="guide-drawer-hd">
-        <h3 class="panel-title" style="margin:0;">AI 서비스 가이드 보기</h3>
-
-        <button class="btn guide-drawer-close" id="guideDrawerClose">닫기 ✕</button>
-      </div>
-      <div class="panel-bd">
-        <a class="btn primary block" href="./files/Prompt.pdf" target="_blank" rel="noopener">
-          <span class="btn-ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-              <path d="M14 2v6h6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-              <path d="M8 13h8M8 17h8M8 9h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </span>
-          Prompt 가이드(PDF)
-        </a>
-        <a class="btn block" href="./prompts.html">
-          <span class="btn-ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M5 5h14v14H5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-              <path d="M8 9h8M8 13h5M8 17h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </span>
-          프롬프트 예시 보러가기
-        </a>
-        <div class="divider-sm"></div>
-        <div class="guide-grid" id="drawerGuideGrid"></div>
-      </div>
-    </aside>
 
     <div class="foot">
       <div>마지막 렌더링: <span class="mono" id="renderAt">-</span></div>
@@ -921,10 +868,6 @@
     const newsPrev = $("#newsPrev");
     const newsNext = $("#newsNext");
     const newsPages = $("#newsPages");
-    const guideDrawer = $("#guideDrawer");
-    const guideDrawerToggle = $("#guideDrawerToggle");
-    const guideDrawerClose = $("#guideDrawerClose");
-    const guideDrawerBackdrop = $("#guideDrawerBackdrop");
     const newsModal = $("#newsModal");
     const newsModalTitle = $("#newsModalTitle");
     const newsModalBackdrop = $("#newsModalBackdrop");
@@ -998,89 +941,6 @@
       // ChatGPT 파비콘이 S2에서 가끔 깨져서 예외 처리(안정적인 소스)
       if (domain === "chatgpt.com") return "https://chatgpt.com/favicon.ico";
       return `https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=128`;
-    }
-
-    function pdfHrefFor(name){
-      const file = `${name}.pdf`;
-      return `./files/${encodeURIComponent(file)}`;
-    }
-
-    async function urlExists(url){
-      try{
-        // 1) HEAD 우선 (가볍게 존재 여부만 확인)
-        const head = await fetch(url, { method: "HEAD", cache: "no-store" });
-        if(head.ok) return true;
-
-        // 2) 일부 환경에서 HEAD가 막힐 수 있어 GET(Range)로 fallback
-        if(head.status === 405 || head.status === 403){
-          const get = await fetch(url, {
-            method: "GET",
-            headers: { "Range": "bytes=0-0" },
-            cache: "no-store",
-          });
-          return get.ok;
-        }
-        return false;
-      }catch(e){
-        return false;
-      }
-    }
-
-    async function renderGuide(){
-      const grid = $("#drawerGuideGrid");
-      if(!grid) return;
-
-      grid.innerHTML = "";
-
-      const checks = await Promise.all((SERVICES || []).map(async (s) => {
-        const name = (s && s.name) ? String(s.name) : "";
-        const href = name ? pdfHrefFor(name) : "";
-        const ok = (name && href) ? await urlExists(href) : false;
-        return { s, href, ok };
-      }));
-
-      for(const it of checks){
-        const s = it.s || {};
-        const enabled = !!it.ok;
-
-        const box = document.createElement(enabled ? "a" : "div");
-        box.className = "gitem" + (enabled ? "" : " gitem--disabled");
-
-        if(enabled){
-          box.href = it.href;
-          box.target = "_blank";
-          box.rel = "noopener";
-        }else{
-          box.setAttribute("aria-disabled", "true");
-          // 서비스명은 '준비중'으로 대체하되, 마우스 올리면 원래 이름이 보이도록 title 제공
-          box.title = `${(s.name || "").trim()} (PDF 준비중)`.trim();
-        }
-
-        const ic = document.createElement("div");
-        ic.className = "gic";
-
-        const img = document.createElement("img");
-        img.alt = "";
-        img.loading = "lazy";
-        img.referrerPolicy = "no-referrer";
-        if(s.domain) img.src = faviconUrl(s.domain);
-
-        img.onerror = () => {
-          img.remove();
-          ic.classList.add("fallback");
-          ic.textContent = (s.name || "?").trim().slice(0,1).toUpperCase();
-        };
-        ic.appendChild(img);
-
-        const label = document.createElement("div");
-        label.className = "glabel";
-        label.textContent = enabled ? (s.name || "-") : "준비중";
-
-        box.appendChild(ic);
-        box.appendChild(label);
-
-        grid.appendChild(box);
-      }
     }
 
     function renderServices(){
@@ -1492,29 +1352,8 @@
     newsModalFrame.addEventListener("load", fitNewsModalHeight);
     window.addEventListener("resize", fitNewsModalHeight);
 
-    function setGuideDrawer(open){
-      guideDrawer.classList.toggle("open", !!open);
-      guideDrawer.setAttribute("aria-hidden", open ? "false" : "true");
-      guideDrawerToggle.setAttribute("aria-expanded", open ? "true" : "false");
-      guideDrawerToggle.classList.toggle("hidden", !!open);
-
-      guideDrawerBackdrop.classList.toggle("show", !!open);
-    }
-
-    guideDrawerToggle.addEventListener("click", () => setGuideDrawer(true));
-    guideDrawerClose.addEventListener("click", () => setGuideDrawer(false));
-    guideDrawerBackdrop.addEventListener("click", () => setGuideDrawer(false));
-
-    document.addEventListener("click", (e) => {
-      if (!guideDrawer.classList.contains("open")) return;
-      const insideDrawer = guideDrawer.contains(e.target);
-      const onToggle = guideDrawerToggle.contains(e.target);
-      if (!insideDrawer && !onToggle) setGuideDrawer(false);
-    });
-
     document.addEventListener("keydown", (e) => {
       if (e.key !== "Escape") return;
-      setGuideDrawer(false);
       setNewsModal(false);
     });
 
@@ -1535,7 +1374,6 @@
 
       renderServices();
       renderNotice();
-      await renderGuide();
       renderNews();
       setModalNavState(-1, []);
 

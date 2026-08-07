@@ -561,34 +561,9 @@
 
       <div class="panel-bd">
         <h3 style="margin:0 0 6px;font-size:14px;">서비스 목록</h3>
-        <div class="small">
-          PDF는 업로드 파일명과 무관하게, <b><span class="mono">저장 시 files/{서비스명}.pdf</span></b>로 자동 저장됩니다.
-          (서비스명은 위 <b>name</b> 기준)
-        </div>
 
         <div id="svcList"></div>
         <button class="btn success" id="btnAddSvc" style="margin-top:10px;">+ 서비스 추가</button>
-
-        <!-- ✅ Prompt 섹션: 서비스 ↔ 공지 사이 -->
-        <div class="divider"></div>
-        <h3 style="margin:0 0 6px;font-size:14px;">Prompt</h3>
-        <div class="small">Prompt Guide는 고정 파일이며, 삭제 없이 <b>교체만</b> 가능합니다.</div>
-
-        <div class="card" id="promptPdfCard">
-          <div class="card-hd">
-            <div class="card-title">Prompt Guide (고정)</div>
-            <div class="row">
-              <button class="btn replace" id="btnPromptPdfReplace">PDF 교체</button>
-            </div>
-          </div>
-
-          <div class="small">
-            업로드 파일명과 무관하게, <b><span class="mono">저장 시 files/Prompt.pdf</span></b>로 자동 저장됩니다. (삭제 기능 없음)
-          </div>
-          <div class="small">상태: <b id="promptPdfStatus">-</b></div>
-
-          <input id="promptPdfInput" type="file" accept="application/pdf" class="hidden" />
-        </div>
 
         <div class="divider"></div>
 
@@ -641,22 +616,6 @@
         <h3 style="margin:0 0 6px;font-size:14px;">변경사항</h3>
 
         <div class="pending-board">
-          <!-- PDF -->
-          <div class="pending-card">
-            <div class="pending-top">
-              <div class="pending-title">
-                <span class="badge">PDF</span>
-                <span>소개 파일</span>
-              </div>
-              <div class="pending-total" id="p_pdf_total">0</div>
-            </div>
-            <div class="pending-sub">
-              <span class="kv">첨부 <b id="p_pdf_attach">0</b></span>
-              <span class="kv">교체 <b id="p_pdf_replace">0</b></span>
-              <span class="kv">삭제 <b id="p_pdf_delete">0</b></span>
-            </div>
-          </div>
-
           <!-- 서비스 -->
           <div class="pending-card">
             <div class="pending-top">
@@ -776,14 +735,6 @@
     <div class="grid2"><div><label>name *</label><input id="svcAddName" type="text" /></div><div><label>domain</label><input id="svcAddDomain" type="text" /></div></div>
     <div class="grid2"><div><label>url</label><input id="svcAddUrl" type="text" /></div><div class="check"><input id="svcAddDisabled" type="checkbox" /><span>disabled</span></div></div>
     <div><label>note</label><textarea id="svcAddNote"></textarea></div>
-    <div style="margin-top:10px;">
-      <label>소개 PDF (선택)</label>
-      <div class="row" style="gap:8px;align-items:center;">
-        <input id="svcAddPdfInput" type="file" accept="application/pdf" class="hidden" />
-        <button class="btn success" id="btnSvcAddPdfPick" type="button">PDF 첨부</button>
-        <span id="svcAddPdfState" class="small">선택된 파일 없음</span>
-      </div>
-    </div>
     <div class="row actions" style="margin-top:10px;justify-content:flex-end;gap:8px;"><button class="btn" id="btnCancelSvcAdd" type="button">취소</button><button class="btn success" id="btnApplySvcAdd" type="button">추가</button></div>
   </section>
 
