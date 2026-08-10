@@ -931,19 +931,19 @@ window.SERVICE_GUIDES = {
                                           {
                                               "title":  "코드",
                                               "image":  "./guidebook-assets/genspark_home.png",
-                                              "location":  "Genspark Code 또는 Hub의 @Genspark Code를 선택해 개발 요청을 입력합니다.",
-                                              "when":  "아이디어를 웹사이트, 앱, 대시보드, 자동화 코드로 빠르게 만들거나 기존 코드 수정을 요청할 때 사용합니다.",
-                                              "how":  "공식 Help Center에는 Genspark Code 항목이 노출되어 있으나 세부 독립 문서 내용은 제한적으로 확인됩니다. 실제 사용 단계는 화면 캡처가 확보되면 보강합니다.",
+                                              "location":  "Genspark Code 또는 Hub의 @Genspark Code를 선택해 만들 앱이나 사이트를 설명합니다.",
+                                              "when":  "코딩 지식이 부족해도 웹사이트, 앱, 자동화 도구, 대시보드처럼 실제로 실행되는 결과물을 만들고 싶을 때 사용합니다.",
+                                              "how":  "공식 문서 기준으로 Genspark Code는 사용자의 요청을 바탕으로 계획, 코딩, 테스트, 배포까지 독립적으로 진행하는 L4 자율 코딩 에이전트입니다.",
                                               "steps":  [
                                                             {
                                                                 "title":  "만들 기능과 조건을 설명합니다",
-                                                                "body":  "사용자 화면, 입력값, 출력값, 저장 방식, 배포 여부를 명확하게 적습니다.",
+                                                                "body":  "사용자 화면, 입력값, 출력값, 저장 방식, 배포 여부, 참고 자료를 명확하게 적습니다.",
                                                                 "image":  "./guidebook-assets/genspark_home.png",
                                                                 "badge":  "요청"
                                                             },
                                                             {
                                                                 "title":  "결과를 실행해 확인합니다",
-                                                                "body":  "생성된 코드나 사이트는 로컬 또는 미리보기에서 직접 열어 동작을 확인합니다.",
+                                                                "body":  "생성된 앱이나 사이트는 미리보기에서 직접 열어 보고, 원하는 동작이 안 맞으면 같은 대화에서 수정 요청을 이어갑니다.",
                                                                 "image":  "./guidebook-assets/genspark_home.png",
                                                                 "badge":  "검토"
                                                             }
@@ -1314,7 +1314,8 @@ window.SERVICE_GUIDES = {
                                          "https://www.genspark.ai/tools/ai-fact-checker",
                                          "https://www.genspark.ai/helpcenter/call-for-me",
                                          "https://www.genspark.ai/tools/pdf-translator",
-                                         "https://www.genspark.ai/blog/genspark-download-agent-and-ai-drive"
+                                         "https://www.genspark.ai/blog/genspark-download-agent-and-ai-drive",
+                                         "https://www.genspark.ai/helpcenter/ai-developer"
                                      ]
                      },
                      {
