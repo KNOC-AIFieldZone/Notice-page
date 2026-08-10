@@ -29,7 +29,7 @@ window.SERVICE_GUIDES = {
                                           "문서 초안·편집",
                                           "맞춤형 챗봇 사용·만들기",
                                           "외부 서비스 연결",
-                                          "스킬로 업무 절차 저장",
+                                          "반복 업무 방식 저장",
                                           "간단 대화 / 업무 처리 모드",
                                           "예약 작업 만들기",
                                           "음성 입력·대화"
@@ -425,11 +425,11 @@ window.SERVICE_GUIDES = {
                                                         ]
                                           },
                                           {
-                                              "title":  "스킬로 업무 절차 저장",
+                                              "title":  "반복 업무 방식 저장",
                                               "image":  "./guidebook-assets/chatgpt_overview.png",
-                                              "location":  "Skills 화면에서 검색하거나 만들기 버튼으로 새 스킬을 작성합니다.",
-                                              "when":  "매번 같은 기준과 순서로 처리하는 업무 절차를 ChatGPT가 다시 참고하도록 저장하고 싶을 때 사용합니다. 실행 시간을 예약하는 기능과는 다릅니다.",
-                                              "how":  "스킬은 반복 업무 매뉴얼을 저장하는 기능에 가깝고, 예약 작업은 특정 시간에 실행되도록 설정하는 기능입니다. 같은 절차를 자주 쓴다면 스킬로 저장하고, 그 절차를 매일·매주 실행해야 한다면 예약 작업에서 스킬이나 자료를 함께 사용합니다.",
+                                              "location":  "플러그인 화면의 스킬 탭에서 확인하거나, 반복해서 쓰는 업무 기준을 저장할 수 있는 화면에서 설정합니다.",
+                                              "when":  "매번 같은 기준과 순서로 처리하는 업무를 ChatGPT가 다시 참고하도록 저장하고 싶을 때 사용합니다. 실행 시간을 예약하는 기능과는 다릅니다.",
+                                              "how":  "공식 문서에서는 이 기능을 Skills라고 부르지만, 초보자에게는 반복 업무 방식이나 업무 템플릿을 저장하는 기능으로 이해하는 것이 쉽습니다. 예약 작업은 특정 시간에 실행되도록 만드는 기능이고, 반복 업무 방식 저장은 ChatGPT가 같은 절차와 기준을 일관되게 따르도록 만드는 기능입니다.",
                                               "steps":  [
                                                             "플러그인 화면 상단 또는 별도 Skills 화면에서 “스킬”을 선택합니다.",
                                                             "기존 스킬을 검색하거나 “만들기”를 눌러 반복 업무의 절차를 작성합니다.",
@@ -517,7 +517,8 @@ window.SERVICE_GUIDES = {
                                          "https://help.openai.com/en/articles/8554397-creating-and-editing-gpts",
                                          "https://learn.chatgpt.com/blog/what-makes-a-great-chatgpt-app",
                                          "https://learn.chatgpt.com/docs/get-started-with-work",
-                                         "https://help.openai.com/en/articles/10291617-tasks-in-chatgpt"
+                                         "https://help.openai.com/en/articles/10291617-tasks-in-chatgpt",
+                                         "https://help.openai.com/en/articles/20001066-skills-in-chatgpt"
                                      ]
                      },
                      {
