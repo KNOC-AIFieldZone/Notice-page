@@ -154,7 +154,6 @@
     .kv-row b{color:var(--text);}
     .kv-row span{color:var(--muted);}
     .tips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;}
-    .feature-detail-layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:12px;align-items:start;}
     .feature-detail-shell{display:grid;gap:12px;}
     .feature-detail-head{
       border:1px solid var(--line);border-radius:8px;background:linear-gradient(135deg,var(--panel2),var(--panel3));padding:16px;
@@ -170,9 +169,9 @@
     .detail-block.full{background:linear-gradient(180deg,var(--card2),var(--card));}
     .detail-block.emphasis{border-color:rgba(14,165,233,.28);background:#f8fafc;}
     .step-list{display:grid;gap:12px;margin:0;padding:0;list-style:none;}
-    .step-card{display:grid;grid-template-columns:minmax(280px,.9fr) minmax(0,1fr);gap:0;border:1px solid rgba(15,23,42,.12);border-radius:8px;background:#fff;overflow:hidden;}
-    .step-shot{position:relative;min-height:220px;background:#eef2f7;border-right:1px solid rgba(15,23,42,.12);}
-    .step-shot img{width:100%;height:100%;min-height:220px;object-fit:cover;display:block;background:#fff;}
+    .step-card{display:block;border:1px solid rgba(15,23,42,.12);border-radius:8px;background:#fff;overflow:hidden;}
+    .step-shot{position:relative;min-height:360px;background:#eef2f7;border-bottom:1px solid rgba(15,23,42,.12);}
+    .step-shot img{width:100%;height:100%;min-height:360px;object-fit:cover;display:block;background:#fff;}
     .step-badge{position:absolute;left:10px;top:10px;display:inline-flex;align-items:center;gap:6px;border-radius:999px;background:#0f172a;color:#fff;padding:6px 10px;font-size:11px;font-weight:950;box-shadow:0 8px 18px rgba(15,23,42,.18);}
     .step-copy{padding:14px;display:grid;align-content:start;gap:8px;}
     .step-title{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:950;color:var(--card-text);}
@@ -187,7 +186,6 @@
     @media (max-width:1040px){
       .guide-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
       .detail-layout{grid-template-columns:1fr;}
-      .feature-detail-layout{grid-template-columns:1fr;}
       .feature-nav{position:static;}
       .side{position:static;}
       .side-list{grid-template-columns:repeat(3,minmax(0,1fr));}
@@ -200,8 +198,8 @@
       .service-card{grid-template-columns:58px minmax(0,1fr);min-height:128px;}
       .service-hero{width:58px;height:58px;}
       .hero{grid-template-columns:1fr;}
-      .step-card{grid-template-columns:1fr;}
-      .step-shot{border-right:none;border-bottom:1px solid rgba(15,23,42,.12);}
+      .step-shot{min-height:260px;}
+      .step-shot img{min-height:260px;}
       .hero h2{font-size:22px;}
       .side-list{grid-template-columns:repeat(2,minmax(0,1fr));}
       .kv-row{grid-template-columns:1fr;}
@@ -465,38 +463,35 @@
           <h3>기능 상세</h3>
           <a class="btn" href="${serviceUrl(service.id)}">기능 목록</a>
         </div>
-        <div class="feature-detail-layout">
-          ${renderFeatureNav(service, idx)}
-          <div class="feature-detail-shell">
-            <section class="feature-detail-head">
-              <div class="crumb">
-                <a href="${serviceUrl(service.id)}">${esc(service.display)}</a>
-                <span>/</span>
-                <span>${esc(feature.title)}</span>
-              </div>
-              <h3>${esc(feature.title)}</h3>
-              <p>${copy(feature.when || service.role)}</p>
-            </section>
-
-            <div class="detail-flow">
-              <section class="detail-block full">
-                <h4>따라하기</h4>
-                <ol class="step-list">
-                  ${steps.map((step, stepIdx) => `
-                    <li class="step-card">
-                      <div class="step-shot">
-                        <img src="${esc(step.image || feature.image || service.hero)}" alt="${esc(feature.title)} - ${esc(step.title || `따라하기 ${stepIdx + 1}`)}">
-                        <span class="step-badge">${esc(step.badge || "확인할 곳")}</span>
-                      </div>
-                      <div class="step-copy">
-                        <span class="step-title"><span class="step-no">${stepIdx + 1}</span>${esc(step.title || `따라하기 ${stepIdx + 1}`)}</span>
-                        <span class="step-body">${copy(step.body || step)}</span>
-                      </div>
-                    </li>
-                  `).join("")}
-                </ol>
-              </section>
+        <div class="feature-detail-shell">
+          <section class="feature-detail-head">
+            <div class="crumb">
+              <a href="${serviceUrl(service.id)}">${esc(service.display)}</a>
+              <span>/</span>
+              <span>${esc(feature.title)}</span>
             </div>
+            <h3>${esc(feature.title)}</h3>
+            <p>${copy(feature.when || service.role)}</p>
+          </section>
+
+          <div class="detail-flow">
+            <section class="detail-block full">
+              <h4>따라하기</h4>
+              <ol class="step-list">
+                ${steps.map((step, stepIdx) => `
+                  <li class="step-card">
+                    <div class="step-shot">
+                      <img src="${esc(step.image || feature.image || service.hero)}" alt="${esc(feature.title)} - ${esc(step.title || `따라하기 ${stepIdx + 1}`)}">
+                      <span class="step-badge">${esc(step.badge || "확인할 곳")}</span>
+                    </div>
+                    <div class="step-copy">
+                      <span class="step-title"><span class="step-no">${stepIdx + 1}</span>${esc(step.title || `따라하기 ${stepIdx + 1}`)}</span>
+                      <span class="step-body">${copy(step.body || step)}</span>
+                    </div>
+                  </li>
+                `).join("")}
+              </ol>
+            </section>
           </div>
         </div>
       `;
@@ -509,7 +504,7 @@
       const selectedFeature = featureIdx === null ? null : features[featureIdx];
       $app.innerHTML = `
         <div class="detail-layout">
-          ${renderSide(service.id)}
+          ${selectedFeature ? renderFeatureNav(service, featureIdx) : renderSide(service.id)}
           <main>
             <section class="hero" style="--accent:${esc(service.tone || "#5eead4")}">
               <div class="hero-copy">
