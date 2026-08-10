@@ -31,7 +31,6 @@ window.SERVICE_GUIDES = {
                                           "외부 서비스 연결",
                                           "반복 업무 방식 저장",
                                           "업무처리 모드",
-                                          "예약 작업 만들기",
                                           "음성 입력·대화"
                                       ],
                          "tips":  [
@@ -476,39 +475,6 @@ window.SERVICE_GUIDES = {
                                                         ]
                                           },
                                           {
-                                              "title":  "예약 작업 만들기",
-                                              "image":  "./guidebook-assets/chatgpt_scheduled_prompt.png",
-                                              "location":  "왼쪽 사이드바의 예약을 클릭해 Scheduled 화면을 열고, Work 입력창에 무엇을 언제 반복할지 작성합니다.",
-                                              "when":  "매일 브리핑, 정기 조사, 알림, 이메일·공지 모니터링처럼 같은 작업을 정해진 시간에 반복하거나 변화가 있을 때 알려 달라고 할 때 사용합니다.",
-                                              "how":  "예약 작업은 Work와 같은 말은 아닙니다. Work는 결과물을 만들거나 여러 단계의 업무를 맡기는 작업 모드이고, 예약 작업은 그런 작업을 특정 시간에 한 번 또는 반복 실행하도록 설정하는 기능입니다. 그래서 예약을 누르면 화면이 Work로 바뀔 수 있습니다. 요청할 때는 실행 시간, 시간대, 찾을 자료 범위, 결과물 형식, 중요한 변화가 없을 때의 처리 방식을 함께 적는 것이 좋습니다.",
-                                              "steps":  [
-                                                            {
-                                                                "title":  "사이드바에서 예약을 클릭합니다",
-                                                                "body":  "왼쪽 사이드바의 예약을 클릭합니다. 화면이 Work 모드로 바뀌는 것은 예약 작업이 결과를 만들거나 반복 확인을 수행하는 Work 흐름 안에서 설정되기 때문입니다. 예약 자체가 Work와 완전히 같은 뜻은 아닙니다.",
-                                                                "image":  "./guidebook-assets/chatgpt_scheduled_sidebar.png",
-                                                                "badge":  "예약 열기"
-                                                            },
-                                                            {
-                                                                "title":  "예약할 작업 내용을 입력합니다",
-                                                                "body":  "예약 작업 화면에서 무엇을 언제 실행할지 자연어로 적습니다. 예를 들어 “AI 서비스 관련 뉴스와 공지를 매일 오전 9시에 알려 주세요. 자료 찾기 시간 범위는 전날 오전 9시부터 오늘 오전 9시까지이고, 시간은 KST 기준입니다.”처럼 주제, 주기, 시간대, 자료 범위, 결과 형식을 함께 씁니다. 필요한 경우 + 버튼으로 파일이나 자료도 첨부할 수 있습니다.",
-                                                                "image":  "./guidebook-assets/chatgpt_scheduled_prompt.png",
-                                                                "badge":  "내용 입력"
-                                                            },
-                                                            {
-                                                                "title":  "설정 결과를 확인합니다",
-                                                                "body":  "ChatGPT가 예약 내용을 해석해 실행 시간, 기준 시간대, 수집 범위, 대상 자료, 제공 내용, 알림 방식, 첫 실행 시점을 정리해 보여줍니다. 이 화면에서 시간이 맞는지, 매일·매주 같은 주기가 정확한지, 결과물이 너무 넓거나 좁지 않은지 확인합니다. 틀린 부분이 있으면 바로 이어서 수정해 달라고 요청합니다.",
-                                                                "image":  "./guidebook-assets/chatgpt_scheduled_result_panel.png",
-                                                                "badge":  "결과 확인"
-                                                            },
-                                                            {
-                                                                "title":  "오른쪽 패널에서 결과물과 소스를 관리합니다",
-                                                                "body":  "오른쪽 패널에서는 예약된 실행 항목을 확인하고, 결과물 영역에서 파일이나 사이트 만들기를 추가할 수 있습니다. 소스 영역에서는 출처를 추가해 예약 작업이 참고할 자료를 보강할 수 있습니다. 오른쪽 위 메뉴를 열면 예약 작업의 추가 설정이나 관리 작업을 이어갈 수 있습니다.",
-                                                                "image":  "./guidebook-assets/chatgpt_scheduled_right_menu.png",
-                                                                "badge":  "관리 패널"
-                                                            }
-                                                        ]
-                                          },
-                                          {
                                               "title":  "음성 입력·대화",
                                               "image":  "./guidebook-assets/chatgpt_overview.png",
                                               "location":  "작성창 오른쪽의 받아쓰기 또는 Voice 버튼을 사용합니다.",
@@ -526,7 +492,6 @@ window.SERVICE_GUIDES = {
                                          "https://learn.chatgpt.com/docs/web",
                                          "https://learn.chatgpt.com/docs/features",
                                          "https://learn.chatgpt.com/docs/projects",
-                                         "https://learn.chatgpt.com/docs/automations",
                                          "https://learn.chatgpt.com/docs/web-search",
                                          "https://learn.chatgpt.com/docs/image-inputs",
                                          "https://learn.chatgpt.com/docs/image-generation",
@@ -544,7 +509,6 @@ window.SERVICE_GUIDES = {
                                          "https://help.openai.com/en/articles/8554397-creating-and-editing-gpts",
                                          "https://learn.chatgpt.com/blog/what-makes-a-great-chatgpt-app",
                                          "https://learn.chatgpt.com/docs/get-started-with-work",
-                                         "https://help.openai.com/en/articles/10291617-tasks-in-chatgpt",
                                          "https://help.openai.com/en/articles/20001066-skills-in-chatgpt",
                                          "https://help.openai.com/en/articles/20001278-creating-and-editing-documents-spreadsheets-and-presentations-with-chatgpt-work",
                                          "https://learn.chatgpt.com/docs/whats-new"
