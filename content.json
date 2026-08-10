@@ -160,6 +160,18 @@
                              ],
     "news":  [
                  {
+                     "service":  "Gemini",
+                     "title":  "Workspace Studio에서 Gemini Notebook 소스 자동 추가",
+                     "date":  "2026-08-07",
+                     "file":  "2026-08-07-gemini-workspace-studio-notebook-source-auto-add.html"
+                 },
+                 {
+                     "service":  "xAI",
+                     "title":  "Imagine Image 2.0 Quality Mode 공개",
+                     "date":  "2026-08-07",
+                     "file":  "2026-08-07-xai-imagine-image-20-quality-mode.html"
+                 },
+                 {
                      "service":  "xAI",
                      "title":  "Grok Voice Think Fast 2.0 공개",
                      "date":  "2026-07-29",
