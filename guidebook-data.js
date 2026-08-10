@@ -31,7 +31,7 @@ window.SERVICE_GUIDES = {
                                           "외부 서비스 연결",
                                           "반복 업무 방식 저장",
                                           "업무처리 모드",
-                                          "음성 입력·대화"
+                                          "음성 입력"
                                       ],
                          "tips":  [
                                       "처음 요청할 때 목표, 참고 자료, 원하는 결과물 형식을 함께 적습니다.",
@@ -475,15 +475,30 @@ window.SERVICE_GUIDES = {
                                                         ]
                                           },
                                           {
-                                              "title":  "음성 입력·대화",
-                                              "image":  "./guidebook-assets/chatgpt_overview.png",
-                                              "location":  "작성창 오른쪽의 받아쓰기 또는 Voice 버튼을 사용합니다.",
-                                              "when":  "키보드 입력이 불편할 때 말로 아이디어를 정리하거나, 음성으로 긴 요청을 입력할 때 사용합니다.",
-                                              "how":  "업무 자료를 음성으로 말할 때는 주변 소음과 민감 정보 노출에 주의해야 합니다.",
+                                              "title":  "음성 입력",
+                                              "image":  "./guidebook-assets/chatgpt_voice_input_mic.png",
+                                              "location":  "채팅 입력창 오른쪽의 마이크 아이콘을 클릭합니다. 화면에 보이는 툴팁처럼 이 버튼은 음성 입력 기능입니다.",
+                                              "when":  "키보드로 긴 요청을 치기 어렵거나, 생각나는 내용을 말로 빠르게 입력문으로 바꾸고 싶을 때 사용합니다. 회의 중 메모, 긴 지시문, 보고서 요청 초안을 말로 넣을 때 편합니다.",
+                                              "how":  "첨부하신 화면은 음성 대화가 아니라 음성 입력입니다. 마이크를 눌러 말하면 ChatGPT가 말을 텍스트 입력문으로 바꾸고, 사용자가 확인한 뒤 전송하는 방식입니다. 공식 문서 기준으로 실시간 음성 대화는 ChatGPT Voice이며, 말하고 들으며 주고받는 기능입니다. 이미 일반 채팅이나 Work로 시작한 화면에서는 음성 대화 대신 음성 입력으로 동작할 수 있습니다.",
                                               "steps":  [
-                                                            "작성창 오른쪽의 “받아쓰기 시작” 또는 “Voice 시작” 버튼을 확인합니다. 마이크 권한이 필요할 수 있습니다.",
-                                                            "말로 요청할 때는 “먼저 요약하고, 그다음 표로 정리해 주세요”처럼 순서를 짧게 끊어 말합니다.",
-                                                            "음성으로 입력된 문장을 보내기 전에 이름, 숫자, 고유명사가 잘못 인식되지 않았는지 확인합니다."
+                                                            {
+                                                                "title":  "입력창 오른쪽의 마이크 아이콘을 클릭합니다",
+                                                                "body":  "채팅 입력창 오른쪽에 있는 마이크 아이콘을 클릭합니다. 화면에 “음성 입력”이라고 표시되며, 단축키가 보이는 경우 단축키로도 시작할 수 있습니다. 브라우저나 앱에서 마이크 권한을 요청하면 허용해야 합니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_voice_input_mic.png",
+                                                                "badge":  "마이크 클릭"
+                                                            },
+                                                            {
+                                                                "title":  "말로 요청 내용을 입력합니다",
+                                                                "body":  "녹음 상태가 되면 요청 내용을 말합니다. 말한 내용은 입력문으로 변환됩니다. 긴 업무 요청을 말할 때는 “목적, 참고 자료, 원하는 결과 형식”을 순서대로 말하면 나중에 수정하기 쉽습니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_voice_input_recording.png",
+                                                                "badge":  "말하기"
+                                                            },
+                                                            {
+                                                                "title":  "내용을 확인한 뒤 전송합니다",
+                                                                "body":  "음성 입력이 끝나면 변환된 문장을 확인합니다. 이름, 숫자, 날짜, 약어는 잘못 인식될 수 있으므로 보내기 전에 한 번 수정합니다. 확인이 끝나면 전송 버튼을 눌러 ChatGPT에 요청합니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_voice_input_recording.png",
+                                                                "badge":  "확인 후 전송"
+                                                            }
                                                         ]
                                           }
                                       ],
@@ -511,7 +526,9 @@ window.SERVICE_GUIDES = {
                                          "https://learn.chatgpt.com/docs/get-started-with-work",
                                          "https://help.openai.com/en/articles/20001066-skills-in-chatgpt",
                                          "https://help.openai.com/en/articles/20001278-creating-and-editing-documents-spreadsheets-and-presentations-with-chatgpt-work",
-                                         "https://learn.chatgpt.com/docs/whats-new"
+                                         "https://learn.chatgpt.com/docs/whats-new",
+                                         "https://learn.chatgpt.com/docs/features/voice",
+                                         "https://help.openai.com/en/articles/20001274"
                                      ]
                      },
                      {
