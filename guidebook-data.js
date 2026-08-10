@@ -311,7 +311,7 @@ window.SERVICE_GUIDES = {
                                                             {
                                                                 "title":  "소스 탭에서 소스 추가를 엽니다",
                                                                 "body":  "프로젝트 화면에서 채팅 탭 옆의 소스를 클릭한 뒤 소스 추가를 선택합니다. 소스는 프로젝트 안의 여러 채팅에서 함께 참고할 파일이나 연결 자료를 넣는 영역입니다. 한 채팅에서만 쓸 자료라면 채팅에 직접 첨부하고, 프로젝트 전체에서 계속 쓸 자료라면 소스에 추가합니다.",
-                                                                "image":  "./guidebook-assets/chatgpt_project_add_source.png",
+                                                                "image":  "./guidebook-assets/chatgpt_project_sources_tab.png",
                                                                 "badge":  "소스 추가"
                                                             },
                                                             {
