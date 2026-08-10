@@ -467,94 +467,854 @@ window.SERVICE_GUIDES = {
                          "domain":  "genspark.ai",
                          "url":  "https://www.genspark.ai/",
                          "tone":  "#eab308",
-                         "role":  "조사, 문서, 슬라이드, 표를 한 번에 묶어 만드는 에이전트형 작업 공간",
-                         "basis":  "2026-08-07",
-                         "overview":  "조사부터 문서, 슬라이드, 표, 이미지, 영상까지 여러 결과물을 한 번에 만들 때 적합하다. 단일 챗봇보다 에이전트형 업무 공간에 가깝다.",
+                         "role":  "조사, 문서, 슬라이드, 표, 이미지, 영상, 업무 자동화를 한 공간에서 처리하는 에이전트형 AI 작업 공간",
+                         "basis":  "공식 Help Center 및 공개 도구 페이지 확인, 2026-08-10",
+                         "overview":  "Genspark는 한 번의 요청으로 여러 에이전트와 도구를 조합해 조사, 자료 작성, 데이터 분석, 콘텐츠 제작, 업무 자동화까지 이어서 처리하는 AI 워크스페이스입니다. 기능별 공식 자료가 확인된 항목은 사용 절차를 작성했고, 독립 공식 자료가 확인되지 않은 항목은 자료 확인 상태를 그대로 표시했습니다.",
                          "hero":  "./guidebook-assets/genspark_home.png",
                          "features":  [
-                                          "Super Agent",
+                                          "AI 채팅 / Super Agent",
+                                          "GenTeam",
+                                          "Claw",
+                                          "SecondBrain",
+                                          "SecondBrain Note",
+                                          "Skills",
+                                          "Hub",
+                                          "Workflows",
                                           "AI Slides",
                                           "AI Sheets",
                                           "AI Docs",
-                                          "AI Image",
-                                          "AI Video",
-                                          "AI Music",
-                                          "Genspark Design",
-                                          "Hub",
-                                          "Custom Agent",
-                                          "GenTeam",
-                                          "SecondBrain"
+                                          "GenMail",
+                                          "Google Workspace 플러그인",
+                                          "PowerPoint 플러그인",
+                                          "Excel 플러그인",
+                                          "Word 플러그인",
+                                          "디자인 / 프로토타입",
+                                          "코드",
+                                          "대시보드 및 CRM",
+                                          "AI 이미지",
+                                          "AI 동영상",
+                                          "AI 음악",
+                                          "AI 오디오",
+                                          "클립 지니어스",
+                                          "AI 팟캐스트",
+                                          "AI 회의록",
+                                          "딥 리서치",
+                                          "팩트 체크",
+                                          "AI 통화비서",
+                                          "번역",
+                                          "다운로드하기 / AI Drive"
                                       ],
                          "tips":  [
-                                      "먼저 업무 목표와 원하는 결과물 형식을 정한다.",
-                                      "입력 자료가 있으면 파일, 링크, 이미지, 오디오 등으로 함께 넣는다.",
-                                      "AI 결과는 초안으로 보고, 사실/숫자/권리/보안은 직접 확인한다."
+                                      "먼저 결과물 형식과 사용할 자료 범위를 같이 적습니다.",
+                                      "파일, 링크, 회의록, 표 데이터가 있으면 처음 요청에 함께 넣습니다.",
+                                      "외부 자료를 수집하거나 자동으로 만든 결과는 출처, 숫자, 개인정보, 회사 보안 기준을 직접 확인합니다.",
+                                      "공식 문서가 확인되지 않은 기능은 실제 화면과 추가 자료가 확인된 뒤 세부 절차를 보강합니다."
                                   ],
                          "sections":  [
                                           {
-                                              "title":  "Super Agent",
+                                              "title":  "AI 채팅 / Super Agent",
                                               "image":  "./guidebook-assets/genspark_home.png",
-                                              "location":  "홈 입력창에 목표와 결과물 형식을 적어 작업을 시작한다.",
-                                              "when":  "리서치, 문서, 표, 슬라이드가 섞인 복합 업무에 쓴다.",
-                                              "how":  "요청에 \u0027출처 포함\u0027, \u0027표로 요약\u0027, \u0027슬라이드까지 생성\u0027처럼 산출물을 명시한다."
+                                              "location":  "홈 화면 중앙 입력창 또는 사이드바 New 메뉴에서 Super Agent를 선택합니다.",
+                                              "when":  "조사, 문서 작성, 데이터 분석, 이미지 제작, 전화, 이메일처럼 여러 도구가 섞인 복합 업무를 한 번에 맡길 때 사용합니다.",
+                                              "how":  "원하는 최종 산출물, 참고 자료, 형식, 제한 조건을 한 문장으로 적으면 Genspark가 적합한 에이전트와 도구를 조합해 작업합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "요청을 구체적으로 작성합니다",
+                                                                "body":  "예: “최근 1년 AI 회의록 도구를 조사하고 비교표와 발표 슬라이드 초안을 만들어 주세요.”처럼 주제, 기간, 결과물 형식을 함께 적습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "요청"
+                                                            },
+                                                            {
+                                                                "title":  "생성된 산출물을 확인합니다",
+                                                                "body":  "보고서, 표, 슬라이드, 이미지 등으로 나뉘어 생성될 수 있으므로 각 결과물의 출처와 내용 정확성을 확인합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "검토"
+                                                            }
+                                                        ]
                                           },
                                           {
-                                              "title":  "AI Slides",
-                                              "image":  "./guidebook-assets/genspark_slides.png",
-                                              "location":  "AI Slides를 선택하고 주제, 자료, 원하는 발표 흐름을 입력한다.",
-                                              "when":  "보고서 발표, 교육자료, 제안서 프레젠테이션 초안에 쓴다.",
-                                              "how":  "생성 후 제목, 메시지, 근거 자료를 반드시 검토한다."
-                                          },
-                                          {
-                                              "title":  "AI Sheets",
-                                              "image":  "./guidebook-assets/genspark_sheets.png",
-                                              "location":  "파일을 올리거나 수집할 데이터 조건을 주고 표 분석을 요청한다.",
-                                              "when":  "데이터 정리, 리드 리스트, 시장 비교표, 차트 생성에 쓴다.",
-                                              "how":  "외부에서 수집된 데이터는 출처와 최신성을 확인한다."
-                                          },
-                                          {
-                                              "title":  "AI Docs",
+                                              "title":  "GenTeam",
                                               "image":  "./guidebook-assets/genspark_home.png",
-                                              "location":  "AI Docs에서 문서 목적, 독자, 형식을 입력한다.",
-                                              "when":  "기획서, 보고서, 브리핑 문서, 회의 후속 문서 작성에 쓴다.",
-                                              "how":  "초안 생성 후 회사 문체와 용어로 다시 다듬는다."
+                                              "location":  "GenTeam 화면에서 채널을 만들고 필요한 AI 팀원을 추가합니다.",
+                                              "when":  "여러 AI 에이전트와 사람이 같은 공간에서 채널, DM, 스레드, 작업을 나누어 협업해야 할 때 사용합니다.",
+                                              "how":  "AI 팀원에게 역할과 모델, 권한, 채널 참여 방식, 실행 환경을 설정한 뒤 멘션이나 DM으로 작업을 맡깁니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "채널과 AI 팀원을 만듭니다",
+                                                                "body":  "프로젝트 목적에 맞는 채널을 만들고 리서치 담당, 문서 담당, 개발 담당처럼 역할이 분명한 AI 팀원을 추가합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "설정"
+                                                            },
+                                                            {
+                                                                "title":  "실행 방식과 권한을 정합니다",
+                                                                "body":  "공식 문서 기준으로 클라우드 컴퓨터, 개인 컴퓨터의 Claude Code/Codex CLI, Claw/OpenClaw 실행 방식을 선택할 수 있으며 이메일, 소셜 게시, 전화처럼 되돌리기 어려운 행동은 승인 절차를 두는 것이 좋습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "권한"
+                                                            },
+                                                            {
+                                                                "title":  "멘션 또는 DM으로 작업을 맡깁니다",
+                                                                "body":  "채널에서 AI 팀원을 멘션하거나 DM을 보내 조사, 문서, 슬라이드, 파일 분석, 반복 작업을 요청합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "사용"
+                                                            }
+                                                        ]
                                           },
                                           {
-                                              "title":  "AI Image/Video/Music",
+                                              "title":  "Claw",
                                               "image":  "./guidebook-assets/genspark_home.png",
-                                              "location":  "원하는 이미지, 영상, 음악의 용도와 분위기를 프롬프트로 설명한다.",
-                                              "when":  "마케팅 시안, 발표 보조 이미지, 숏폼 초안, 배경음악이 필요할 때 쓴다.",
-                                              "how":  "상업적 배포 전 브랜드/저작권 기준을 확인한다."
+                                              "location":  "Genspark Claw를 열고 웹 클라우드 컴퓨터 또는 데스크톱 로컬 실행 방식을 선택합니다.",
+                                              "when":  "메일, 캘린더, 메시지, 파일, 웹 작업을 AI 직원처럼 장시간 처리하거나 모니터링해야 할 때 사용합니다.",
+                                              "how":  "연결할 앱과 작업 범위를 정하고, 필요하면 스케줄이나 백그라운드 모니터링을 설정합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "실행 환경을 선택합니다",
+                                                                "body":  "공식 문서 기준으로 Genspark 전용 클라우드 컴퓨터에서 실행하거나 데스크톱 앱으로 자신의 컴퓨터 작업 폴더를 선택해 실행할 수 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "환경"
+                                                            },
+                                                            {
+                                                                "title":  "앱과 메시징 채널을 연결합니다",
+                                                                "body":  "Slack, Teams, Telegram, LINE, Discord, Google Chat 등 여러 채널과 업무 앱을 연결해 지시를 주고 결과를 받을 수 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "연결"
+                                                            },
+                                                            {
+                                                                "title":  "반복 업무는 일정으로 등록합니다",
+                                                                "body":  "정기 보고, 모니터링, 알림처럼 계속 확인해야 하는 업무는 스케줄 또는 백그라운드 작업으로 설정합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "자동화"
+                                                            }
+                                                        ]
                                           },
                                           {
-                                              "title":  "Genspark Design",
+                                              "title":  "SecondBrain",
                                               "image":  "./guidebook-assets/genspark_home.png",
-                                              "location":  "디자인 목적을 입력해 웹사이트, 포스터, 프로토타입, 마케팅 자산을 만든다.",
-                                              "when":  "디자인 초안과 내부 검토용 시각 자료 제작에 적합하다.",
-                                              "how":  "최종 디자인은 회사 브랜드 가이드에 맞게 조정한다."
+                                              "location":  "사이드바의 Second Brain에서 이메일, 회의, 파일, 앱, Genspark 프로젝트를 연결합니다.",
+                                              "when":  "반복해서 설명해야 하는 개인 업무 맥락, 프로젝트 자료, 과거 대화와 문서를 AI가 참고하게 만들 때 사용합니다.",
+                                              "how":  "연결된 자료를 기억 계층처럼 활용해 사용자의 업무 배경, 연락처, 프로젝트, 이전 산출물을 더 잘 반영하도록 돕습니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "연결할 자료 범위를 정합니다",
+                                                                "body":  "이메일, 회의록, 문서, 앱, 프로젝트 중 AI가 참고해도 되는 범위를 먼저 정합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "범위"
+                                                            },
+                                                            {
+                                                                "title":  "기존 맥락을 활용합니다",
+                                                                "body":  "“지난번 보고서 기준으로”, “우리 프로젝트 자료를 참고해서”처럼 기존 자료를 바탕으로 이어지는 요청을 할 수 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "사용"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "SecondBrain Note",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "SecondBrain Note 기기 또는 연동 화면에서 녹음과 기록 기능을 사용합니다.",
+                                              "when":  "회의, 현장 대화, 전화 후속 메모처럼 말로 오간 내용을 자동으로 기록하고 검색 가능한 메모로 남길 때 사용합니다.",
+                                              "how":  "공식 자료 기준으로 듣고 말한 내용을 캡처, 전사, 요약해 구조화된 노트로 저장하는 기능입니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "대화를 기록합니다",
+                                                                "body":  "회의나 현장 대화가 시작되면 기록을 시작해 나중에 검색할 수 있는 자료로 남깁니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "기록"
+                                                            },
+                                                            {
+                                                                "title":  "전사와 요약을 확인합니다",
+                                                                "body":  "자동 생성된 텍스트와 요약은 발언자, 숫자, 결정 사항이 맞는지 검토합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "검토"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "Skills",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "사이드바의 Skills에서 공개된 Skill을 추가하거나 + New Skill로 직접 만듭니다.",
+                                              "when":  "자주 반복하는 업무 절차를 매번 새로 설명하지 않고 저장해 두고 싶을 때 사용합니다.",
+                                              "how":  "공식 문서 기준으로 Skill은 특정 업무를 처리하는 재사용 가능한 AI 도구 또는 플레이북입니다. 역할, 출력 형식, 게시자 기준으로 찾거나 직접 만들 수 있습니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "필요한 Skill을 찾습니다",
+                                                                "body":  "Community, Team, My Own 영역에서 검색하거나 역할, 출력물 유형, 게시자 필터로 적합한 Skill을 찾습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "탐색"
+                                                            },
+                                                            {
+                                                                "title":  "Skill을 실행합니다",
+                                                                "body":  "SkillBar에서 선택하거나 “/”로 호출하고 필요한 파일을 첨부한 뒤 실행합니다. 실행 중에는 단계 카드와 결과 파일을 확인할 수 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "실행"
+                                                            },
+                                                            {
+                                                                "title":  "나만의 Skill을 만듭니다",
+                                                                "body":  "+ New Skill에서 AI가 안내하는 방식으로 만들거나 .zip, .skill, .md 파일을 업로드해 등록할 수 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "제작"
+                                                            }
+                                                        ]
                                           },
                                           {
                                               "title":  "Hub",
                                               "image":  "./guidebook-assets/genspark_home.png",
-                                              "location":  "관련 파일과 생성물을 프로젝트 단위로 모아 관리한다.",
-                                              "when":  "여러 차례 이어지는 조사/제안/콘텐츠 제작 업무에 쓴다.",
-                                              "how":  "프로젝트별 자료 이름과 버전을 정리해 둔다."
+                                              "location":  "Hub에서 프로젝트를 만들고 파일, 생성물, 지시사항, 팀원을 한곳에 모읍니다.",
+                                              "when":  "하나의 업무가 여러 대화와 산출물로 이어질 때 프로젝트 단위로 맥락을 유지하려고 사용합니다.",
+                                              "how":  "프로젝트별 자료를 올려두고 @로 Super Agent, AI Slides, AI Sheets, AI Docs, Genspark Code, AI Designer, Clip Genius, AI Pods 등을 선택해 작업합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "프로젝트 공간을 만듭니다",
+                                                                "body":  "업무명 기준으로 Hub 프로젝트를 만들고 관련 파일과 링크를 업로드합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "공간"
+                                                            },
+                                                            {
+                                                                "title":  "작업할 에이전트를 선택합니다",
+                                                                "body":  "입력창에서 @를 사용해 필요한 에이전트를 선택하고 작업을 요청합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "선택"
+                                                            },
+                                                            {
+                                                                "title":  "Recent Tasks에서 이어서 작업합니다",
+                                                                "body":  "이전 결과와 진행 이력을 확인하고 이어서 수정하거나 새 산출물을 요청합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "이력"
+                                                            }
+                                                        ]
                                           },
                                           {
-                                              "title":  "Custom Agent",
+                                              "title":  "Workflows",
                                               "image":  "./guidebook-assets/genspark_home.png",
-                                              "location":  "반복 업무 규칙을 입력해 전용 에이전트를 만든다.",
-                                              "when":  "정기 리포트, 같은 형식의 조사, 반복 콘텐츠 제작에 쓴다.",
-                                              "how":  "처음에는 작은 작업으로 테스트한 뒤 팀에 공유한다."
+                                              "location":  "Workflows 메뉴에서 새 Workflow를 만들거나 템플릿을 선택합니다.",
+                                              "when":  "정해진 시간마다 자료를 수집하거나 이메일, 문서, 일정, 메시지 작업을 반복 실행해야 할 때 사용합니다.",
+                                              "how":  "자연어로 반복 업무를 설명하면 트리거와 작업 단계를 구성하고, 테스트 실행 후 켜거나 끌 수 있습니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "반복 업무를 문장으로 설명합니다",
+                                                                "body":  "예: “매주 월요일 오전 9시에 경쟁사 뉴스와 공식 발표를 모아 Slack에 요약해 주세요.”처럼 시간, 자료 범위, 전달 위치를 적습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "작성"
+                                                            },
+                                                            {
+                                                                "title":  "트리거와 연결 앱을 확인합니다",
+                                                                "body":  "공식 문서 기준으로 일정, 이메일 트리거와 Gmail, Outlook, Google Drive, Slack, Teams, Salesforce 등 여러 연결을 사용할 수 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "설정"
+                                                            },
+                                                            {
+                                                                "title":  "테스트 후 활성화합니다",
+                                                                "body":  "Test Run으로 결과를 확인하고 문제가 없으면 Turn On으로 실행합니다. 실행 이력과 설정은 나중에 수정할 수 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "활성화"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "AI Slides",
+                                              "image":  "./guidebook-assets/genspark_slides.png",
+                                              "location":  "AI Slides에서 주제, 목적, 참고 자료, 발표 흐름을 입력합니다.",
+                                              "when":  "보고서 발표, 교육자료, 제안서, 설명회 자료를 빠르게 초안화할 때 사용합니다.",
+                                              "how":  "전문형 또는 창의형 모드, 비율, 모델, 슬라이드 스타일을 선택하고 생성 후 편집, 검증, 발표자 노트, PDF/PPTX/Google Slides 내보내기를 진행합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "발표 목적과 자료를 입력합니다",
+                                                                "body":  "청중, 발표 시간, 핵심 메시지, 참고 파일을 함께 넣어 슬라이드 구조를 만듭니다.",
+                                                                "image":  "./guidebook-assets/genspark_slides.png",
+                                                                "badge":  "입력"
+                                                            },
+                                                            {
+                                                                "title":  "모드와 형식을 조정합니다",
+                                                                "body":  "Professional 또는 Creative 모드, 화면 비율, 이미지 모델, Guide Mode, Standard/Ultra 등 필요한 설정을 선택합니다.",
+                                                                "image":  "./guidebook-assets/genspark_slides.png",
+                                                                "badge":  "설정"
+                                                            },
+                                                            {
+                                                                "title":  "편집 후 내보냅니다",
+                                                                "body":  "제목, 근거, 디자인을 검토하고 PDF, PPTX, Google Slides 형식으로 내보냅니다.",
+                                                                "image":  "./guidebook-assets/genspark_slides.png",
+                                                                "badge":  "내보내기"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "AI Sheets",
+                                              "image":  "./guidebook-assets/genspark_sheets.png",
+                                              "location":  "AI Sheets에서 파일을 업로드하거나 수집할 데이터 조건을 입력합니다.",
+                                              "when":  "표 데이터 정리, 분석, 차트, 리드 목록, 비교표, 대시보드 초안을 만들 때 사용합니다.",
+                                              "how":  "Excel처럼 직접 편집하면서 AI에게 수식 작성, 교차 시트 분석, 차트 생성, 데이터 정리를 요청할 수 있습니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "데이터 파일을 올립니다",
+                                                                "body":  "CSV, Excel 등 분석할 자료를 업로드하고 원하는 분석 기준을 적습니다.",
+                                                                "image":  "./guidebook-assets/genspark_sheets.png",
+                                                                "badge":  "업로드"
+                                                            },
+                                                            {
+                                                                "title":  "분석과 차트를 요청합니다",
+                                                                "body":  "평균, 추세, 이상치, 상관관계, 차트 종류처럼 필요한 결과를 구체적으로 요청합니다.",
+                                                                "image":  "./guidebook-assets/genspark_sheets.png",
+                                                                "badge":  "분석"
+                                                            },
+                                                            {
+                                                                "title":  "원본 데이터와 한계를 확인합니다",
+                                                                "body":  "공식 문서 기준으로 모바일은 보기 중심이고, 매크로/VBA, Power Query, 복잡한 레거시 차트 등은 제한될 수 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_sheets.png",
+                                                                "badge":  "검토"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "AI Docs",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "AI Docs에서 문서 목적, 독자, 형식, 참고 자료를 입력합니다.",
+                                              "when":  "보고서, 기획서, 브리핑, 요약문, 안내문 초안을 만들 때 사용합니다.",
+                                              "how":  "Rich Text 또는 Markdown 형식으로 문서를 만들고, 자동 디자인과 구조화를 적용한 뒤 HTML, Word, PDF로 내보낼 수 있습니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "문서 목적을 입력합니다",
+                                                                "body":  "누가 읽는 문서인지, 어떤 결론을 원하는지, 분량과 형식을 함께 적습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "입력"
+                                                            },
+                                                            {
+                                                                "title":  "내용을 편집합니다",
+                                                                "body":  "문단 흐름, 표, 이미지, 제목 구조를 확인하고 회사 문체에 맞게 수정합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "편집"
+                                                            },
+                                                            {
+                                                                "title":  "필요한 형식으로 내보냅니다",
+                                                                "body":  "완성본은 HTML, Word, PDF 등 업무에 필요한 형식으로 저장합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "내보내기"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "GenMail",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "GenMail 앱에서 Gmail 또는 Outlook 계정을 연결합니다.",
+                                              "when":  "여러 이메일 계정과 캘린더를 한곳에서 보고, 답장 초안, 메일 정리, 일정 확인을 AI와 함께 처리할 때 사용합니다.",
+                                              "how":  "공식 문서 기준으로 Super Agent, Inbox, Calendar, Email Brain 화면을 사용하며 사용자의 문체와 반복 업무 맥락을 반영합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "계정을 연결합니다",
+                                                                "body":  "Mac, Windows, iOS, Android 앱에서 로그인한 뒤 Gmail 또는 Outlook을 연결합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "연결"
+                                                            },
+                                                            {
+                                                                "title":  "메일을 정리하고 답장을 만듭니다",
+                                                                "body":  "Inbox에서 중요한 메일을 확인하고 AI에게 답장 초안, 요약, 후속 조치를 요청합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "메일"
+                                                            },
+                                                            {
+                                                                "title":  "Email Brain을 확인합니다",
+                                                                "body":  "사용자의 문체, 자주 연락하는 사람, 프로젝트 패턴을 학습한 내용을 확인하고 틀린 부분은 수정합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "개인화"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "Google Workspace 플러그인",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "Google Workspace Marketplace에서 Genspark 플러그인을 설치해 Docs, Sheets, Slides에서 사용합니다.",
+                                              "when":  "Google 문서, 스프레드시트, 프레젠테이션 안에서 바로 작성, 편집, 분석, 디자인 도움을 받고 싶을 때 사용합니다.",
+                                              "how":  "공개 마켓플레이스 설명 기준으로 Google Docs, Sheets, Slides 전반에서 채팅 방식으로 작업을 요청할 수 있습니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "플러그인을 설치합니다",
+                                                                "body":  "Google Workspace Marketplace에서 Genspark를 추가하고 필요한 권한을 확인합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "설치"
+                                                            },
+                                                            {
+                                                                "title":  "문서 안에서 AI에게 요청합니다",
+                                                                "body":  "문서 작성, 표 분석, 슬라이드 디자인처럼 현재 열려 있는 파일 기준의 작업을 요청합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "사용"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "PowerPoint 플러그인",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "Microsoft PowerPoint에서 Genspark 플러그인을 실행합니다.",
+                                              "when":  "기존 프레젠테이션 안에서 자료 조사, 슬라이드 생성, 디자인 편집을 이어서 하고 싶을 때 사용합니다.",
+                                              "how":  "공식 블로그 기준으로 Genspark AI Slides Agent가 PowerPoint에 임베드되어 프레젠테이션 생성과 편집을 지원합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "PowerPoint에서 플러그인을 엽니다",
+                                                                "body":  "열려 있는 발표 자료를 기준으로 필요한 새 슬라이드, 요약, 디자인 수정 요청을 입력합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "실행"
+                                                            },
+                                                            {
+                                                                "title":  "결과를 기존 덱에 반영합니다",
+                                                                "body":  "생성된 슬라이드를 회사 템플릿과 메시지에 맞게 확인하고 조정합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "반영"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "Excel 플러그인",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "Microsoft Excel에서 Genspark 플러그인을 실행합니다.",
+                                              "when":  "현재 엑셀 데이터 안에서 정리, 분석, 수식, 표 요약을 빠르게 처리하고 싶을 때 사용합니다.",
+                                              "how":  "공식 블로그와 화면 설명 기준으로 AI Sheets Agent가 Excel 안에서 데이터 분석과 정리를 돕는 형태입니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "분석할 범위와 목적을 말합니다",
+                                                                "body":  "현재 시트에서 정리할 열, 계산할 지표, 만들 표나 차트를 구체적으로 요청합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "요청"
+                                                            },
+                                                            {
+                                                                "title":  "수식과 결과를 검토합니다",
+                                                                "body":  "AI가 만든 계산식과 요약값은 원본 데이터와 비교해 확인합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "검토"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "Word 플러그인",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "Microsoft Word에서 Genspark 플러그인을 실행합니다.",
+                                              "when":  "작성 중인 Word 문서 안에서 초안 작성, 요약, 문체 수정, 구조 개선을 진행할 때 사용합니다.",
+                                              "how":  "공식 블로그와 화면 설명 기준으로 AI Docs Agent가 Word 문서 작성과 편집을 지원합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "문서 목적을 입력합니다",
+                                                                "body":  "현재 문서를 바탕으로 요약, 확장, 문체 수정, 목차 생성 같은 작업을 요청합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "요청"
+                                                            },
+                                                            {
+                                                                "title":  "변경 내용을 검토합니다",
+                                                                "body":  "문체, 사실관계, 회사 용어가 맞는지 확인한 뒤 문서에 반영합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "검토"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "디자인 / 프로토타입",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "Genspark Design에서 웹사이트, 앱 화면, 포스터, 마케팅 자산의 목적을 입력합니다.",
+                                              "when":  "디자인 초안, 프로토타입, 랜딩 페이지, 인터랙션 시안, 마케팅 이미지가 필요할 때 사용합니다.",
+                                              "how":  "Figma 파일, 스크린샷, GitHub 저장소, 디자인 시스템을 참고 자료로 넣고 Canvas, Chat, Tweaks, Build it, Verifier 흐름으로 결과를 다듬습니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "참고 자료를 넣습니다",
+                                                                "body":  "브랜드 가이드, Figma, 화면 캡처, GitHub 링크 등 디자인 기준이 되는 자료를 첨부합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "자료"
+                                                            },
+                                                            {
+                                                                "title":  "원하는 산출물을 설명합니다",
+                                                                "body":  "웹사이트, 앱 화면, 포스터, 발표 자료처럼 결과물 유형과 분위기를 구체적으로 입력합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "입력"
+                                                            },
+                                                            {
+                                                                "title":  "Build it과 검증을 진행합니다",
+                                                                "body":  "필요하면 실행 가능한 코드로 만들고 Verifier로 깨진 화면이나 누락 요소를 확인합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "검증"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "코드",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "Genspark Code 또는 Hub의 @Genspark Code를 선택해 개발 요청을 입력합니다.",
+                                              "when":  "아이디어를 웹사이트, 앱, 대시보드, 자동화 코드로 빠르게 만들거나 기존 코드 수정을 요청할 때 사용합니다.",
+                                              "how":  "공식 Help Center에는 Genspark Code 항목이 노출되어 있으나 세부 독립 문서 내용은 제한적으로 확인됩니다. 실제 사용 단계는 화면 캡처가 확보되면 보강합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "만들 기능과 조건을 설명합니다",
+                                                                "body":  "사용자 화면, 입력값, 출력값, 저장 방식, 배포 여부를 명확하게 적습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "요청"
+                                                            },
+                                                            {
+                                                                "title":  "결과를 실행해 확인합니다",
+                                                                "body":  "생성된 코드나 사이트는 로컬 또는 미리보기에서 직접 열어 동작을 확인합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "검토"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "대시보드 및 CRM",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "AgentBase에서 만들 시스템을 한 문장으로 설명하거나 CSV, Excel, PDF, Word 파일을 올립니다.",
+                                              "when":  "영업 관리, 재고 관리, 콘텐츠 캘린더, 채용 파이프라인, 개인 트래커 같은 데이터 기반 업무 시스템을 만들 때 사용합니다.",
+                                              "how":  "공식 문서 기준으로 데이터베이스, 초기 데이터, 뷰를 자동 구성하고 HubSpot, Salesforce, 데이터베이스 연결 또는 템플릿에서 시작할 수 있습니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "만들 시스템을 설명합니다",
+                                                                "body":  "예: “고객 상담 이력과 후속 연락일을 관리하는 CRM을 만들어 주세요.”처럼 목적과 필드를 적습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "설명"
+                                                            },
+                                                            {
+                                                                "title":  "데이터를 업로드하거나 연결합니다",
+                                                                "body":  "CSV, Excel, PDF, Word 파일을 넣거나 HubSpot, Salesforce, 데이터베이스를 연결할 수 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "연결"
+                                                            },
+                                                            {
+                                                                "title":  "뷰와 입력 항목을 확인합니다",
+                                                                "body":  "생성된 대시보드의 컬럼, 상태값, 필터, 권한이 실제 업무 흐름과 맞는지 확인합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "검토"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "AI 이미지",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "AI Image에서 만들 이미지의 대상, 스타일, 비율, 참고 이미지를 입력합니다.",
+                                              "when":  "발표 보조 이미지, 마케팅 시안, 캐릭터, 제품 콘셉트, 썸네일을 만들 때 사용합니다.",
+                                              "how":  "공개 도구 페이지 기준으로 여러 이미지 모델을 선택할 수 있고 텍스트 기반 생성과 이미지 기반 편집을 지원합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "이미지 설명을 입력합니다",
+                                                                "body":  "대상, 배경, 색감, 스타일, 화면 비율, 금지 요소를 함께 적습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "입력"
+                                                            },
+                                                            {
+                                                                "title":  "모델과 결과를 선택합니다",
+                                                                "body":  "텍스트가 들어가는 이미지인지, 사실적인 이미지인지에 따라 모델과 결과물을 고릅니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "선택"
+                                                            },
+                                                            {
+                                                                "title":  "수정 요청을 이어서 합니다",
+                                                                "body":  "색, 구도, 문구, 오브젝트 위치를 다시 요청해 원하는 방향으로 다듬습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "수정"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "AI 동영상",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "AI Video에서 텍스트 프롬프트 또는 시작/끝 프레임 이미지를 넣습니다.",
+                                              "when":  "홍보 영상, 숏폼 초안, 장면 콘셉트, 이미지 기반 움직임이 필요할 때 사용합니다.",
+                                              "how":  "공개 도구 페이지 기준으로 여러 영상 모델, 첫/마지막 프레임 제어, 확장, 병합, 업스케일, 트림, 립싱크와 아바타 기능을 지원합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "영상 장면을 설명합니다",
+                                                                "body":  "등장 대상, 움직임, 카메라, 길이, 분위기, 화면 비율을 입력합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "입력"
+                                                            },
+                                                            {
+                                                                "title":  "프레임과 모델을 선택합니다",
+                                                                "body":  "일관성이 중요하면 시작 이미지와 끝 이미지를 함께 넣고 적합한 영상 모델을 선택합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "설정"
+                                                            },
+                                                            {
+                                                                "title":  "편집 기능으로 마무리합니다",
+                                                                "body":  "확장, 병합, 트림, 업스케일, 립싱크가 필요한지 확인해 결과를 보정합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "편집"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "AI 음악",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "AI Music에서 원하는 장르, 분위기, 길이, 가사 여부를 입력합니다.",
+                                              "when":  "영상 배경음악, 행사 음악, 짧은 로고 사운드, 노래 초안이 필요할 때 사용합니다.",
+                                              "how":  "공개 도구 페이지 기준으로 텍스트에서 노래를 만들거나, 가사 기반 음악, 보컬, 연주곡을 만들 수 있습니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "음악 목적을 입력합니다",
+                                                                "body":  "사용 장면, 분위기, 장르, 템포, 가사 포함 여부를 적습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "입력"
+                                                            },
+                                                            {
+                                                                "title":  "생성 결과를 듣고 고릅니다",
+                                                                "body":  "보컬, 길이, 분위기, 반복 구간이 용도에 맞는지 확인합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "확인"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "AI 오디오",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "AI Audio 또는 관련 오디오 도구에서 스크립트, 음성, 언어를 선택합니다.",
+                                              "when":  "내레이션, 음성 합성, 음성 복제, 오디오 전사, 번역 요약이 필요할 때 사용합니다.",
+                                              "how":  "공개 도구 페이지 기준으로 텍스트 음성 변환, 음성 복제, 오디오 전사 기능을 각각 사용할 수 있습니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "작업 유형을 선택합니다",
+                                                                "body":  "읽어 줄 음성 만들기, 특정 목소리 복제, 녹음 파일 전사 중 필요한 작업을 선택합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "선택"
+                                                            },
+                                                            {
+                                                                "title":  "파일 또는 스크립트를 넣습니다",
+                                                                "body":  "스크립트를 붙여 넣거나 MP3, WAV, M4A, MP4 같은 오디오/영상 파일을 업로드합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "입력"
+                                                            },
+                                                            {
+                                                                "title":  "결과를 확인합니다",
+                                                                "body":  "전사 결과는 화자와 전문 용어를 확인하고, 합성 음성은 발음과 속도를 검토합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "검토"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "클립 지니어스",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "Clip Genius에서 영상 URL을 넣거나 영상을 업로드하고 원하는 편집 방향을 입력합니다.",
+                                              "when":  "긴 영상에서 하이라이트, 쇼츠, 팟캐스트 요약 클립, 스포츠/게임/브이로그 편집본을 만들 때 사용합니다.",
+                                              "how":  "공식 블로그와 공개 페이지 기준으로 영상 분석, 스토리 구성, 구간 선택, 전환 효과와 조립을 자동으로 처리합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "영상과 편집 목적을 넣습니다",
+                                                                "body":  "원본 영상 URL 또는 파일을 넣고 “핵심 장면 3개로 짧은 홍보 영상”처럼 원하는 결과를 설명합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "입력"
+                                                            },
+                                                            {
+                                                                "title":  "자동 분석 결과를 확인합니다",
+                                                                "body":  "전사, 화자 구분, 주요 장면 선택이 의도와 맞는지 확인합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "검토"
+                                                            },
+                                                            {
+                                                                "title":  "클립 형식을 선택합니다",
+                                                                "body":  "단일 클립, 그리드 레이아웃 등 필요한 출력 형식과 길이를 조정합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "출력"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "AI 팟캐스트",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "AI Pods 또는 AI Podcast에서 주제, 원고, 문서 파일을 넣습니다.",
+                                              "when":  "긴 문서, 강의자료, 뉴스, 보고서를 듣기 쉬운 대화형 오디오로 바꿀 때 사용합니다.",
+                                              "how":  "공식 문서 기준으로 내용 분석, 스크립트 작성, 진행자 생성, 오디오 제작을 거치며 언어, 진행자 수, 스타일을 설정할 수 있습니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "주제나 자료를 넣습니다",
+                                                                "body":  "텍스트, PDF, DOCX, TXT 등 자료를 넣고 어떤 관점의 팟캐스트로 만들지 적습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "입력"
+                                                            },
+                                                            {
+                                                                "title":  "언어와 진행 방식을 정합니다",
+                                                                "body":  "한국어 등 언어, 진행자 수, 대화형/교육형/전문형 같은 스타일을 선택합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "설정"
+                                                            },
+                                                            {
+                                                                "title":  "듣고 공유하거나 내보냅니다",
+                                                                "body":  "결과를 들어 보고 필요하면 커버 이미지를 다시 만들거나 MP3로 내보냅니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "내보내기"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "AI 회의록",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "AI Meeting Notes 앱 또는 웹에서 녹음을 시작하거나 캘린더를 연결합니다.",
+                                              "when":  "회의 내용을 녹음, 전사, 요약하고 후속 할 일을 정리할 때 사용합니다.",
+                                              "how":  "공식 문서 기준으로 Apple Watch, iOS, Android, Web에서 사용할 수 있고 Google Calendar 또는 Outlook을 연결해 Meeting Bot을 회의에 참여시킬 수 있습니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "녹음 또는 Meeting Bot을 시작합니다",
+                                                                "body":  "기기에서 + New를 누르거나 캘린더를 연결해 Zoom, Meet, Teams 등 온라인 회의에 봇을 참여시킵니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "시작"
+                                                            },
+                                                            {
+                                                                "title":  "회의 중 메모를 추가합니다",
+                                                                "body":  "중요한 결정, 할 일, 질문은 실시간 노트로 남길 수 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "기록"
+                                                            },
+                                                            {
+                                                                "title":  "전사와 요약을 확인합니다",
+                                                                "body":  "회의 후 자동 생성된 전사, 요약, 액션 아이템을 확인하고 잘못된 발언자나 용어를 수정합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "검토"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "딥 리서치",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "Super Agent, Realtime Voice, Speakly 등에서 Deep Research 요청이 노출되는 것으로 확인됩니다.",
+                                              "when":  "여러 출처를 오래 조사해 구조화된 보고서로 정리해야 할 때 사용되는 리서치 기능으로 보입니다.",
+                                              "how":  "공식 Help Center에 독립 기능 문서는 확인하지 못했습니다. 공식 문서의 Super Agent, Realtime Voice, Speakly 설명에서 Deep Research 작업 예시가 확인됩니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "자료 확인 상태",
+                                                                "body":  "독립 공식 도움말 문서를 확인하지 못했습니다. 현재는 “Deep Research로 조사해 주세요”처럼 Super Agent 계열 기능에서 호출되는 작업 유형으로만 작성합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "자료 확인"
+                                                            },
+                                                            {
+                                                                "title":  "실제 화면 확인 후 보강합니다",
+                                                                "body":  "정확한 버튼 위치, 설정값, 결과 화면은 사용자가 캡처를 주면 그 화면 기준으로 다시 작성합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "보강"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "팩트 체크",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "AI Fact Checker에서 검증할 주장, 기사, URL, 문장을 입력합니다.",
+                                              "when":  "문서나 발표 자료의 주장, 수치, 인용문이 사실인지 빠르게 확인해야 할 때 사용합니다.",
+                                              "how":  "공개 도구 페이지 기준으로 여러 출처를 비교하고 인용, 스크린샷 증거, 다국어 검증을 지원합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "검증할 내용을 넣습니다",
+                                                                "body":  "확인할 문장, 기사 링크, 자료 일부를 입력합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "입력"
+                                                            },
+                                                            {
+                                                                "title":  "근거와 판정을 확인합니다",
+                                                                "body":  "맞음/틀림 여부만 보지 말고 원문 링크, 인용, 날짜, 맥락을 함께 확인합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "검토"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "AI 통화비서",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "Call For Me에서 전화할 대상과 통화 목적을 입력합니다.",
+                                              "when":  "예약, 문의, 확인 전화처럼 사람이 직접 전화하기 번거로운 일을 대신 처리할 때 사용합니다.",
+                                              "how":  "공식 문서 기준으로 국가 코드와 전화번호를 설정하고, 업체 검색 또는 직접 번호 입력 후 즉시 전화하거나 예약 전화를 설정할 수 있습니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "전화 대상과 목적을 입력합니다",
+                                                                "body":  "업체명, 전화번호, 문의 내용, 반드시 확인해야 할 질문을 적습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "입력"
+                                                            },
+                                                            {
+                                                                "title":  "즉시 통화 또는 예약을 선택합니다",
+                                                                "body":  "바로 전화하거나 원하는 시간에 예약할 수 있으며, 예약 통화는 작업 목록이나 이력에서 취소할 수 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "예약"
+                                                            },
+                                                            {
+                                                                "title":  "음성 설정을 확인합니다",
+                                                                "body":  "공식 문서 기준으로 설정에서 여러 음성 중 하나를 선택할 수 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "설정"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "번역",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "번역 도구 또는 PDF Translator에서 번역할 텍스트나 PDF 파일을 업로드합니다.",
+                                              "when":  "PDF, 문서, 자료를 한국어 또는 다른 언어로 옮기고 원본 구조를 유지하고 싶을 때 사용합니다.",
+                                              "how":  "공개 도구 페이지 기준으로 PDF 번역은 제목, 목록, 표 구조를 최대한 유지하고 PDF 또는 Word로 내보낼 수 있습니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "번역할 자료를 넣습니다",
+                                                                "body":  "텍스트를 붙여 넣거나 PDF 파일을 업로드합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "업로드"
+                                                            },
+                                                            {
+                                                                "title":  "목표 언어를 선택합니다",
+                                                                "body":  "한국어, 영어 등 필요한 언어를 선택하고 번역을 실행합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "설정"
+                                                            },
+                                                            {
+                                                                "title":  "전문 용어를 검토합니다",
+                                                                "body":  "기관명, 제품명, 법률/기술 용어는 원문과 대조해 수정합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "검토"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "다운로드하기 / AI Drive",
+                                              "image":  "./guidebook-assets/genspark_home.png",
+                                              "location":  "Download Agent 또는 AI Drive에서 찾고 싶은 자료와 저장 방식을 입력합니다.",
+                                              "when":  "PDF, 이미지, 영상, 음악, 문서 파일을 찾아 저장하고 정리해야 할 때 사용합니다.",
+                                              "how":  "공식 블로그 기준으로 한 번의 프롬프트로 자료 검색, 다운로드, 이름 지정, 정리를 진행하고 AI Drive에서 관리할 수 있습니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "찾을 자료 조건을 적습니다",
+                                                                "body":  "예: “최근 6개월 공개된 AI 회의록 도구 백서 PDF를 찾아 AI Drive에 저장해 주세요.”처럼 범위와 형식을 적습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "조건"
+                                                            },
+                                                            {
+                                                                "title":  "저장 이름과 폴더를 정합니다",
+                                                                "body":  "파일명 규칙, 폴더명, 중복 처리 기준을 함께 지정하면 나중에 찾기 쉽습니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "정리"
+                                                            },
+                                                            {
+                                                                "title":  "다운로드 자료를 검토합니다",
+                                                                "body":  "저작권, 출처, 최신성, 파일 보안 여부를 확인한 뒤 업무에 사용합니다.",
+                                                                "image":  "./guidebook-assets/genspark_home.png",
+                                                                "badge":  "검토"
+                                                            }
+                                                        ]
                                           }
                                       ],
                          "sources":  [
                                          "https://www.genspark.ai/helpcenter",
                                          "https://www.genspark.ai/helpcenter/super-agent",
+                                         "https://www.genspark.ai/helpcenter/genteam",
+                                         "https://www.genspark.ai/helpcenter/genspark-claw",
+                                         "https://www.genspark.ai/helpcenter/secondbrain",
+                                         "https://www.genspark.ai/helpcenter/secondbrain-note",
+                                         "https://www.genspark.ai/helpcenter/skills",
+                                         "https://www.genspark.ai/helpcenter/hub",
+                                         "https://www.genspark.ai/helpcenter/workflows",
                                          "https://www.genspark.ai/helpcenter/ai-slides",
                                          "https://www.genspark.ai/helpcenter/ai-sheets",
                                          "https://www.genspark.ai/helpcenter/ai-docs",
-                                         "https://www.genspark.ai/helpcenter/genspark-design"
+                                         "https://www.genspark.ai/helpcenter/genmail",
+                                         "https://workspace.google.com/marketplace/app/genspark/592480783716",
+                                         "https://www.genspark.ai/blog/genspark-ai-workspace-4",
+                                         "https://www.genspark.ai/helpcenter/genspark-design",
+                                         "https://www.genspark.ai/helpcenter/agentbase",
+                                         "https://www.genspark.ai/tools/ai-image-generator",
+                                         "https://www.genspark.ai/tools/ai-video-generator",
+                                         "https://www.genspark.ai/tools/ai-music-generator",
+                                         "https://www.genspark.ai/tools/ai-text-to-speech",
+                                         "https://www.genspark.ai/tools/ai-voice-cloning",
+                                         "https://www.genspark.ai/tools/ai-audio-transcription",
+                                         "https://www.genspark.ai/blog/genspark-clip-genius",
+                                         "https://www.genspark.ai/helpcenter/ai-pods",
+                                         "https://www.genspark.ai/helpcenter/ai-meeting-notes",
+                                         "https://www.genspark.ai/helpcenter/realtime-voice",
+                                         "https://www.genspark.ai/tools/ai-fact-checker",
+                                         "https://www.genspark.ai/helpcenter/call-for-me",
+                                         "https://www.genspark.ai/tools/pdf-translator",
+                                         "https://www.genspark.ai/blog/genspark-download-agent-and-ai-drive"
                                      ]
                      },
                      {
