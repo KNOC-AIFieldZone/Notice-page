@@ -2,7 +2,7 @@ window.SERVICE_GUIDES = {
     "generatedAt":  "2026-08-07T16:05:44+09:00",
     "source":  "ai_guidebooks markdown set, 2026-08-07",
     "services":  [
-                                                                                                                                                                                                                                       {
+                                                                                                                                                                                                                                                            {
                          "id": "chatgpt",
                          "name": "ChatGPT",
                          "display": "ChatGPT / GPT",
@@ -204,14 +204,29 @@ window.SERVICE_GUIDES = {
                              },
                              {
                                  "title": "데이터 분석·차트",
-                                 "image": "./guidebook-assets/chatgpt_data_analysis.png",
-                                 "location": "파일을 첨부한 뒤 분석 목표와 기준 열을 알려 줍니다.",
-                                 "when": "CSV, 엑셀, 표 데이터를 요약하고 추세·이상치·상관관계·차트를 확인할 때 사용합니다.",
-                                 "how": "분석 결과의 숫자와 그래프는 원본 데이터와 한 번 대조해야 합니다.",
+                                 "image": "./guidebook-assets/chatgpt_data_analysis_file.png",
+                                 "location": "CSV, 엑셀, 스프레드시트 파일을 첨부한 뒤 분석하거나 차트로 볼 내용을 요청합니다.",
+                                 "when": "월별 추세, 전년 대비 증감률, 이상치 후보, 항목별 비교처럼 표 데이터를 빠르게 이해하고 시각화할 때 사용합니다.",
+                                 "how": "파일을 올린 뒤 분석 기준을 구체적으로 적습니다. 어떤 열을 기준으로 볼지, 어떤 기간을 비교할지, 차트가 필요한지까지 함께 말하면 결과가 더 명확해집니다.",
                                  "steps": [
-                                     "엑셀이나 CSV 파일을 첨부합니다. 데이터가 여러 시트에 있으면 어떤 시트를 볼지 함께 말합니다.",
-                                     "“월별 추세를 그래프로 보여 주세요”, “전년 대비 증감률을 계산해 주세요”, “이상치 후보를 찾아 주세요”처럼 분석 기준을 입력합니다.",
-                                     "답변에 나온 합계, 평균, 비율, 차트 기준을 원본 파일과 비교하고 필요한 경우 계산식을 다시 요청합니다."
+                                     {
+                                         "title": "분석할 데이터 파일을 첨부합니다",
+                                         "body": "CSV나 엑셀 파일을 작성창에 첨부합니다. 파일이 올라가면 스프레드시트 아이콘과 파일명이 표시됩니다. 여러 시트가 있는 파일이라면 어떤 시트를 분석할지도 함께 알려 주는 것이 좋습니다.",
+                                         "image": "./guidebook-assets/chatgpt_data_analysis_file.png",
+                                         "badge": "파일 첨부"
+                                     },
+                                     {
+                                         "title": "원하는 분석 기준을 작성합니다",
+                                         "body": "파일 아래에 원하는 분석 요청을 적습니다. 예시처럼 “월별 추세를 그래프로 보여 주세요”, “전년 대비 증감률을 계산해 주세요”, “이상치 후보를 찾아 주세요”처럼 결과 형태와 판단 기준을 같이 작성합니다.",
+                                         "image": "./guidebook-assets/chatgpt_data_analysis_prompt.png",
+                                         "badge": "요청 작성"
+                                     },
+                                     {
+                                         "title": "차트와 숫자를 원본 기준으로 검토합니다",
+                                         "body": "분석 결과가 나오면 차트의 기간, 단위, 범례, 계산 기준을 확인합니다. 중요한 숫자나 결론은 원본 데이터와 다시 비교하고, 필요한 경우 “계산식도 보여 주세요”, “최근 1년만 다시 그려 주세요”처럼 추가 요청합니다.",
+                                         "image": "./guidebook-assets/chatgpt_data_analysis_chart.png",
+                                         "badge": "결과 확인"
+                                     }
                                  ]
                              },
                              {
