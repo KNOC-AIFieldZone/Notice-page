@@ -125,14 +125,13 @@
     .side-link.active{background:var(--accent2);border-color:rgba(94,234,212,.36);}
     .dot{width:9px;height:9px;border-radius:999px;background:var(--accent);flex:0 0 auto;}
     .hero{
-      display:grid;grid-template-columns:minmax(0,1.08fr) minmax(300px,.92fr);gap:16px;align-items:stretch;
+      display:block;
       border:1px solid var(--line);border-radius:8px;background:linear-gradient(135deg,var(--panel2),var(--panel));overflow:hidden;
     }
     .hero-copy{padding:18px;}
     .eyebrow{color:var(--muted);font-size:12px;font-weight:900;margin-bottom:8px;}
     .hero h2{margin:0;font-size:26px;line-height:1.18;font-weight:950;}
     .hero p{margin:10px 0 0;color:var(--muted);font-size:14px;line-height:1.58;}
-    .hero-img{width:100%;height:100%;min-height:260px;object-fit:cover;background:#fff;}
     .hero .chip{
       border-color:rgba(94,234,212,.38);background:rgba(255,255,255,.94);color:#0f172a;
       box-shadow:0 5px 14px rgba(0,0,0,.16);
@@ -157,28 +156,28 @@
     .tips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;}
     .feature-detail-layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:12px;align-items:start;}
     .feature-detail-shell{display:grid;gap:12px;}
-    .feature-detail-hero{
-      display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.86fr);gap:0;overflow:hidden;
-      border:1px solid var(--line);border-radius:8px;background:linear-gradient(135deg,var(--panel2),var(--panel3));
+    .feature-detail-head{
+      border:1px solid var(--line);border-radius:8px;background:linear-gradient(135deg,var(--panel2),var(--panel3));padding:16px;
     }
-    .feature-detail-copy{padding:16px;}
     .crumb{display:flex;gap:7px;align-items:center;flex-wrap:wrap;color:var(--muted);font-size:12px;font-weight:850;margin-bottom:10px;}
     .crumb a{color:var(--accent);text-decoration:none;}
-    .feature-detail-copy h3{margin:0;font-size:24px;line-height:1.22;font-weight:950;}
-    .feature-detail-copy p{margin:10px 0 0;color:var(--muted);font-size:13px;line-height:1.62;}
-    .feature-detail-img{width:100%;height:100%;min-height:250px;object-fit:cover;background:#fff;}
-    .detail-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;}
+    .feature-detail-head h3{margin:0;font-size:24px;line-height:1.22;font-weight:950;}
+    .feature-detail-head p{margin:10px 0 0;color:var(--muted);font-size:13px;line-height:1.62;}
     .detail-flow{display:grid;gap:10px;}
     .detail-block{border:1px solid rgba(15,23,42,.14);border-radius:8px;background:var(--card);color:var(--card-text);padding:13px;}
     .detail-block h4{margin:0 0 8px;font-size:13px;font-weight:950;}
     .detail-block p{margin:0;color:var(--card-muted);font-size:12px;line-height:1.58;}
     .detail-block.full{background:linear-gradient(180deg,var(--card2),var(--card));}
     .detail-block.emphasis{border-color:rgba(14,165,233,.28);background:#f8fafc;}
-    .step-list{display:grid;gap:8px;margin:0;padding:0;list-style:none;}
-    .step-list li{display:grid;grid-template-columns:32px minmax(0,1fr);gap:10px;align-items:start;border:1px solid rgba(15,23,42,.12);border-radius:8px;background:var(--band);padding:10px;}
-    .step-no{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;background:rgba(14,165,233,.14);color:var(--card-text);font-size:12px;font-weight:950;}
-    .step-title{display:block;font-size:13px;font-weight:950;margin-bottom:3px;}
-    .step-body{display:block;color:var(--card-muted);font-size:12px;line-height:1.5;}
+    .step-list{display:grid;gap:12px;margin:0;padding:0;list-style:none;}
+    .step-card{display:grid;grid-template-columns:minmax(280px,.9fr) minmax(0,1fr);gap:0;border:1px solid rgba(15,23,42,.12);border-radius:8px;background:#fff;overflow:hidden;}
+    .step-shot{position:relative;min-height:220px;background:#eef2f7;border-right:1px solid rgba(15,23,42,.12);}
+    .step-shot img{width:100%;height:100%;min-height:220px;object-fit:cover;display:block;background:#fff;}
+    .step-badge{position:absolute;left:10px;top:10px;display:inline-flex;align-items:center;gap:6px;border-radius:999px;background:#0f172a;color:#fff;padding:6px 10px;font-size:11px;font-weight:950;box-shadow:0 8px 18px rgba(15,23,42,.18);}
+    .step-copy{padding:14px;display:grid;align-content:start;gap:8px;}
+    .step-title{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:950;color:var(--card-text);}
+    .step-no{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:8px;background:rgba(14,165,233,.14);color:var(--card-text);font-size:12px;font-weight:950;flex:0 0 auto;}
+    .step-body{display:block;color:var(--card-muted);font-size:13px;line-height:1.58;}
     .feature-nav{position:sticky;top:18px;}
     .feature-nav-list{display:grid;gap:6px;}
     .feature-nav-link{display:block;border:1px solid rgba(15,23,42,.14);border-radius:8px;background:var(--card);color:var(--card-text);text-decoration:none;padding:9px;font-size:12px;font-weight:850;line-height:1.35;}
@@ -201,10 +200,9 @@
       .service-card{grid-template-columns:58px minmax(0,1fr);min-height:128px;}
       .service-hero{width:58px;height:58px;}
       .hero{grid-template-columns:1fr;}
-      .feature-detail-hero{grid-template-columns:1fr;}
-      .detail-summary{grid-template-columns:1fr;}
+      .step-card{grid-template-columns:1fr;}
+      .step-shot{border-right:none;border-bottom:1px solid rgba(15,23,42,.12);}
       .hero h2{font-size:22px;}
-      .hero-img{min-height:190px;}
       .side-list{grid-template-columns:repeat(2,minmax(0,1fr));}
       .kv-row{grid-template-columns:1fr;}
     }
@@ -333,12 +331,16 @@
 
     function defaultSteps(feature){
       const explicit = asList(feature.steps);
-      if(explicit.length) return explicit.map((body, idx) => ({ title: `단계 ${idx + 1}`, body }));
+      if(explicit.length) return explicit.map((body, idx) => ({
+        title: `따라하기 ${idx + 1}`,
+        body,
+        image: feature.image,
+        badge: idx === 0 ? "클릭할 곳" : "확인할 곳"
+      }));
       return [
-        { title: "기능 위치 확인", body: feature.location || "서비스 화면에서 해당 기능 메뉴를 연다." },
-        { title: "업무 자료 입력", body: feature.when || "처리할 문서, 텍스트, 이미지, 링크 등 필요한 자료를 준비한다." },
-        { title: "요청 실행", body: feature.how || "원하는 결과물과 조건을 적고 실행한다." },
-        { title: "결과 검토", body: "결과의 사실관계, 보안 정보, 저작권, 최종 사용 목적을 확인한 뒤 업무 문서에 반영한다." }
+        { title: "기능 버튼이나 입력창을 찾습니다", body: feature.location || "서비스 화면에서 이 기능을 실행하는 버튼이나 입력창을 찾습니다.", image: feature.image, badge: "클릭할 곳" },
+        { title: "요청 내용을 입력합니다", body: feature.how || "원하는 결과물, 참고 자료, 조건을 입력합니다.", image: feature.image, badge: "입력할 곳" },
+        { title: "결과를 확인하고 수정합니다", body: "생성된 결과를 확인한 뒤 필요한 부분을 다시 요청하거나 업무 문서에 맞게 정리합니다.", image: feature.image, badge: "확인할 곳" }
       ];
     }
 
@@ -458,8 +460,6 @@
     function renderFeatureDetail(service, feature, idx){
       const features = service.sections || [];
       const steps = defaultSteps(feature);
-      const prev = idx > 0 ? featureUrl(service.id, idx - 1) : "";
-      const next = idx < features.length - 1 ? featureUrl(service.id, idx + 1) : "";
       return `
         <div class="section-head">
           <h3>기능 상세</h3>
@@ -468,56 +468,33 @@
         <div class="feature-detail-layout">
           ${renderFeatureNav(service, idx)}
           <div class="feature-detail-shell">
-            <section class="feature-detail-hero">
-              <div class="feature-detail-copy">
-                <div class="crumb">
-                  <a href="${serviceUrl(service.id)}">${esc(service.display)}</a>
-                  <span>/</span>
-                  <span>${idx + 1}번째 기능</span>
-                </div>
-                <h3>${esc(feature.title)}</h3>
-                <p>${copy(feature.when || service.role)}</p>
-                <div class="actions" style="margin-top:14px;justify-content:flex-start;">
-                  ${prev ? `<a class="btn" href="${prev}">이전 기능</a>` : ""}
-                  ${next ? `<a class="btn primary" href="${next}">다음 기능</a>` : ""}
-                </div>
+            <section class="feature-detail-head">
+              <div class="crumb">
+                <a href="${serviceUrl(service.id)}">${esc(service.display)}</a>
+                <span>/</span>
+                <span>${esc(feature.title)}</span>
               </div>
-              <img class="feature-detail-img" src="${esc(feature.image || service.hero)}" alt="${esc(service.display)} - ${esc(feature.title)}">
+              <h3>${esc(feature.title)}</h3>
+              <p>${copy(feature.when || service.role)}</p>
             </section>
-
-            <div class="detail-summary">
-              <section class="detail-block emphasis">
-                <h4>기능 위치</h4>
-                <p>${copy(feature.location || "서비스 화면에서 해당 기능 메뉴를 확인합니다.")}</p>
-              </section>
-              <section class="detail-block emphasis">
-                <h4>사용 상황</h4>
-                <p>${copy(feature.when || "업무 목적에 맞춰 결과물을 빠르게 만들거나 검토할 때 사용합니다.")}</p>
-              </section>
-              <section class="detail-block emphasis">
-                <h4>핵심 방법</h4>
-                <p>${copy(feature.how || "필요한 자료와 원하는 결과 형식을 함께 입력합니다.")}</p>
-              </section>
-            </div>
 
             <div class="detail-flow">
               <section class="detail-block full">
                 <h4>따라하기</h4>
                 <ol class="step-list">
                   ${steps.map((step, stepIdx) => `
-                    <li>
-                      <span class="step-no">${stepIdx + 1}</span>
-                      <span>
-                        <span class="step-title">${esc(step.title || `단계 ${stepIdx + 1}`)}</span>
+                    <li class="step-card">
+                      <div class="step-shot">
+                        <img src="${esc(step.image || feature.image || service.hero)}" alt="${esc(feature.title)} - ${esc(step.title || `따라하기 ${stepIdx + 1}`)}">
+                        <span class="step-badge">${esc(step.badge || "확인할 곳")}</span>
+                      </div>
+                      <div class="step-copy">
+                        <span class="step-title"><span class="step-no">${stepIdx + 1}</span>${esc(step.title || `따라하기 ${stepIdx + 1}`)}</span>
                         <span class="step-body">${copy(step.body || step)}</span>
-                      </span>
+                      </div>
                     </li>
                   `).join("")}
                 </ol>
-              </section>
-              <section class="detail-block full">
-                <h4>검토 기준</h4>
-                <p>${copy(feature.check || "최종 결과를 그대로 사용하지 말고 사실관계, 민감정보, 사내 보안 기준, 표현의 적절성을 확인합니다.")}</p>
               </section>
             </div>
           </div>
@@ -547,7 +524,6 @@
                   <a class="btn" href="${selectedFeature ? serviceUrl(service.id) : "./guidebooks.html"}">목록으로</a>
                 </div>
               </div>
-              <img class="hero-img" src="${esc(service.hero)}" alt="${esc(service.display)} 대표 화면">
             </section>
 
             ${selectedFeature ? renderFeatureDetail(service, selectedFeature, featureIdx) : renderFeatureIndex(service, features)}
