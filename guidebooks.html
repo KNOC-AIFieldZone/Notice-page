@@ -103,10 +103,27 @@
       color:var(--card-text);text-decoration:none;padding:12px;position:relative;overflow:hidden;
     }
     .service-card:hover{border-color:var(--accent);box-shadow:0 12px 30px rgba(14,165,233,.16);}
+    .service-card.is-ready{
+      border-color:color-mix(in srgb, var(--accent) 32%, rgba(15,23,42,.14));
+      background:
+        linear-gradient(135deg,color-mix(in srgb, var(--accent) 18%, transparent),transparent 58%),
+        linear-gradient(180deg,var(--card2),var(--card));
+    }
+    .service-card.is-muted{
+      border-color:rgba(100,116,139,.22);
+      background:
+        linear-gradient(135deg,rgba(100,116,139,.16),rgba(226,232,240,.58)),
+        linear-gradient(180deg,var(--card2),var(--card));
+    }
+    .service-card.is-muted:hover{border-color:rgba(100,116,139,.45);box-shadow:0 12px 30px rgba(100,116,139,.14);}
     .service-hero{
       width:74px;height:74px;border-radius:8px;border:1px solid var(--line);background:#fff;
       object-fit:cover;align-self:start;
     }
+    .service-card.is-muted .service-hero{filter:grayscale(.75) saturate(.62);opacity:.78;}
+    .service-card.is-muted .service-name{color:#334155;}
+    .service-card.is-muted .service-role{color:#64748b;}
+    .service-card.is-muted .chip{background:rgba(241,245,249,.86);color:#64748b;border-color:rgba(100,116,139,.22);}
     .service-name{font-size:15px;font-weight:900;margin:0 0 6px;line-height:1.25;}
     .service-role{margin:0;color:var(--card-muted);font-size:12px;line-height:1.45;}
     .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px;}
@@ -123,10 +140,17 @@
       color:var(--text);text-decoration:none;padding:9px;font-size:12px;font-weight:850;
     }
     .side-link.active{background:var(--accent2);border-color:rgba(94,234,212,.36);}
+    .side-link.is-muted{background:rgba(148,163,184,.16);color:#64748b;border-color:rgba(148,163,184,.18);}
+    .side-link.is-muted .dot{background:#94a3b8 !important;}
+    .side-link.is-muted.active{background:rgba(148,163,184,.24);border-color:rgba(148,163,184,.36);}
     .dot{width:9px;height:9px;border-radius:999px;background:var(--accent);flex:0 0 auto;}
     .hero{
       display:block;
-      border:1px solid var(--line);border-radius:8px;background:linear-gradient(135deg,var(--panel2),var(--panel));overflow:hidden;
+      border:1px solid color-mix(in srgb, var(--accent) 34%, var(--line));border-radius:8px;
+      background:
+        linear-gradient(135deg,color-mix(in srgb, var(--accent) 22%, transparent),transparent 54%),
+        linear-gradient(180deg,var(--panel2),var(--panel));
+      overflow:hidden;
     }
     .hero-copy{padding:18px;}
     .eyebrow{color:var(--muted);font-size:12px;font-weight:900;margin-bottom:8px;}
@@ -145,7 +169,7 @@
     .feature-link{display:flex;flex-direction:column;color:var(--card-text);text-decoration:none;min-height:100%;}
     .feature-link:hover{border-color:var(--accent);box-shadow:0 14px 32px rgba(14,165,233,.16);}
     .feature img{width:100%;height:168px;object-fit:cover;background:#fff;display:block;border-bottom:1px solid var(--line);}
-    .feature-body{padding:12px;}
+    .feature-body{padding:12px;background:linear-gradient(180deg,#eef6ff,#f8fbff);}
     .feature h4{margin:0 0 9px;font-size:14px;font-weight:950;line-height:1.35;}
     .feature-summary{color:var(--card-muted);font-size:12px;line-height:1.5;margin:0 0 12px;}
     .feature-footer{margin-top:auto;display:flex;justify-content:flex-end;align-items:center;gap:8px;color:var(--card-text);font-size:12px;font-weight:950;}
@@ -173,7 +197,7 @@
     .step-shot{position:relative;min-height:360px;background:#eef2f7;border-bottom:1px solid rgba(15,23,42,.12);}
     .step-shot img{width:100%;height:100%;min-height:360px;object-fit:cover;display:block;background:#fff;}
     .step-badge{position:absolute;left:10px;top:10px;display:inline-flex;align-items:center;gap:6px;border-radius:999px;background:#0f172a;color:#fff;padding:6px 10px;font-size:11px;font-weight:950;box-shadow:0 8px 18px rgba(15,23,42,.18);}
-    .step-copy{padding:14px;display:grid;align-content:start;gap:8px;}
+    .step-copy{padding:14px;display:grid;align-content:start;gap:8px;background:linear-gradient(180deg,#eef6ff,#f8fbff);}
     .step-title{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:950;color:var(--card-text);}
     .step-no{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:8px;background:rgba(14,165,233,.14);color:var(--card-text);font-size:12px;font-weight:950;flex:0 0 auto;}
     .step-body{display:block;color:var(--card-muted);font-size:13px;line-height:1.58;}
@@ -232,6 +256,7 @@
     const $app = document.querySelector("#app");
     const state = { q: "" };
     const data = window.SERVICE_GUIDES || { services: [] };
+    const READY_GUIDES = new Set(["chatgpt"]);
 
     function esc(v){
       return String(v ?? "").replace(/[&<>"']/g, (ch) => ({
@@ -312,6 +337,10 @@
       return [service.name, service.display, service.role, service.overview, ...(service.features || [])].join(" ").toLowerCase();
     }
 
+    function serviceCardClass(service){
+      return READY_GUIDES.has(service.id) ? " is-ready" : " is-muted";
+    }
+
     function highlight(text){
       const q = state.q.trim();
       const raw = esc(text);
@@ -370,7 +399,7 @@
           <div class="panel-bd">
             <div class="guide-grid">
               ${services.map((s) => `
-                <a class="service-card" href="${serviceUrl(s.id)}" style="--accent:${esc(s.tone || "#5eead4")}">
+                <a class="service-card${serviceCardClass(s)}" href="${serviceUrl(s.id)}" style="--accent:${esc(s.tone || "#5eead4")}">
                   <img class="service-hero" src="${esc(s.hero)}" alt="${esc(s.display)} 화면">
                   <div>
                     <h3 class="service-name">${highlight(s.display)}</h3>
@@ -408,7 +437,7 @@
           <div class="panel-bd">
             <div class="side-list">
               ${data.services.map((s) => `
-                <a class="side-link${s.id === activeId ? " active" : ""}" href="${serviceUrl(s.id)}">
+                <a class="side-link${s.id === activeId ? " active" : ""}${serviceCardClass(s)}" href="${serviceUrl(s.id)}">
                   <span class="dot" style="background:${esc(s.tone || "#5eead4")}"></span>
                   <span>${esc(s.name)}</span>
                 </a>
@@ -423,7 +452,6 @@
       return `
         <div class="section-head">
           <h3>기능별 사용법</h3>
-          <a class="btn" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">위로</a>
         </div>
         <div class="feature-list">
           ${features.map((f, idx) => `
