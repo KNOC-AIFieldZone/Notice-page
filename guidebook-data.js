@@ -27,7 +27,7 @@ window.SERVICE_GUIDES = {
                                           "업로드 자료 다시 찾기",
                                           "그래프·시각화 만들기",
                                           "문서 초안·편집",
-                                          "맞춤형 챗봇 사용",
+                                          "맞춤형 챗봇 사용·만들기",
                                           "외부 서비스 연결",
                                           "반복 절차 저장",
                                           "간단 대화 / 업무 처리 모드",
@@ -324,14 +324,65 @@ window.SERVICE_GUIDES = {
                                           },
                                           {
                                               "title":  "맞춤형 챗봇 사용·만들기",
-                                              "image":  "./guidebook-assets/chatgpt_overview.png",
-                                              "location":  "GPT 탐색 화면에서 GPT를 선택하거나 내 GPT 화면에서 만들기를 누릅니다.",
-                                              "when":  "특정 목적에 맞게 만들어진 GPT를 사용하거나, 반복 업무용 맞춤 GPT를 만들 때 사용합니다.",
-                                              "how":  "GPTs는 목적별로 설정된 ChatGPT입니다. 번역, 검토, 교육자료 작성처럼 반복되는 업무에 맞춰 쓸 수 있습니다.",
+                                              "image":  "./guidebook-assets/chatgpt_gpts_explore.png",
+                                              "location":  "왼쪽 사이드바의 더 보기 메뉴에서 GPT를 열어 공개 GPT를 탐색하거나, GPT 탐색 화면 오른쪽 위 만들기 버튼으로 나만의 GPT를 만듭니다.",
+                                              "when":  "특정 업무에 맞게 이미 만들어진 챗봇을 사용하거나, 반복해서 쓰는 말투·자료·업무 절차를 담은 전용 챗봇을 직접 만들 때 사용합니다.",
+                                              "how":  "공개 GPT는 검색, 분야 탭, 추천, 인기 목록으로 찾아 바로 채팅할 수 있습니다. 직접 만들 때는 이름, 설명, 지침, 대화 스타터, 지식 파일, 기능을 설정하고 오른쪽 미리 보기에서 테스트한 뒤 공유 범위를 정해 저장합니다. 지침이 막힐 때는 참고 자료나 튜토리얼을 보며 역할, 답변 형식, 금지할 행동, 예시 질문을 더 구체적으로 적으면 품질이 좋아집니다.",
                                               "steps":  [
-                                                            "GPTs 또는 GPT 탐색 화면을 열고 원하는 목적의 GPT를 찾습니다. 예를 들어 문서 검토, 번역, 교육자료 작성용 GPT를 선택할 수 있습니다.",
-                                                            "반복 업무가 있다면 “만들기”를 눌러 역할, 지침, 답변 형식을 설정합니다.",
-                                                            "GPT가 기대와 다르게 답하면 지침을 더 구체화하고, 민감한 자료는 외부 GPT에 넣기 전에 회사 정책을 확인합니다."
+                                                            {
+                                                                "title":  "왼쪽 사이드바에서 GPT를 엽니다",
+                                                                "body":  "왼쪽 사이드바에서 더 보기를 누른 뒤 GPT를 선택합니다. 이 메뉴로 GPT 탐색 화면에 들어가면 공개된 GPT를 찾거나, 직접 만든 GPT를 관리할 수 있습니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_gpts_sidebar_more.png",
+                                                                "badge":  "GPT 열기"
+                                                            },
+                                                            {
+                                                                "title":  "공개된 GPT를 탐색합니다",
+                                                                "body":  "GPT 탐색 화면에서는 검색창에 원하는 업무를 입력해서 찾을 수 있습니다. 분야 탭을 눌러 글쓰기, 프로그래밍, 연구 및 분석, DALL·E, 생산성, 교육 등으로 좁혀 볼 수도 있고, 추천이나 인기 급상승 목록에서 많이 쓰이는 GPT를 살펴볼 수도 있습니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_gpts_explore.png",
+                                                                "badge":  "탐색 화면"
+                                                            },
+                                                            {
+                                                                "title":  "원하는 GPT를 선택하고 채팅을 시작합니다",
+                                                                "body":  "목록에서 원하는 GPT를 클릭하면 상세 창이 열립니다. 설명, 작성자, 평점, 대화 수, 대화 스타터, 제공 기능을 확인한 뒤 채팅 시작을 누릅니다. 업무용으로 쓸 때는 작성자와 기능을 먼저 확인해 목적에 맞는 GPT인지 살펴봅니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_gpts_detail_start.png",
+                                                                "badge":  "상세 확인"
+                                                            },
+                                                            {
+                                                                "title":  "GPT와 채팅하며 사용합니다",
+                                                                "body":  "채팅 화면으로 이동하면 일반 ChatGPT처럼 질문을 입력합니다. 화면에 보이는 대화 스타터를 눌러 시작해도 되고, 직접 원하는 요청을 적어도 됩니다. GPT마다 설정된 지침과 기능이 다르므로 같은 질문이라도 GPT의 목적에 맞춘 답변이 나올 수 있습니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_gpts_chat.png",
+                                                                "badge":  "채팅 사용"
+                                                            },
+                                                            {
+                                                                "title":  "나만의 GPT는 만들기 버튼으로 시작합니다",
+                                                                "body":  "GPT 탐색 화면 오른쪽 위의 + 만들기 버튼을 누릅니다. 공개 GPT를 쓰는 대신 특정 부서 업무, 반복 보고서, 문서 검토, 교육 안내처럼 자주 쓰는 목적이 있으면 직접 GPT를 만드는 것이 좋습니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_gpts_create_button.png",
+                                                                "badge":  "만들기 시작"
+                                                            },
+                                                            {
+                                                                "title":  "구성에서 이름과 작동 방식을 입력합니다",
+                                                                "body":  "구성 화면에서 이름, 설명, 지침, 대화 스타터를 입력합니다. 지식에는 참고 문서나 매뉴얼 파일을 올릴 수 있고, 권장 모델과 웹 검색, 이미지 생성, 코드 인터프리터 및 데이터 분석 같은 기능도 선택할 수 있습니다. 오른쪽 미리 보기 영역에서는 실제 사용자처럼 질문을 넣어 답변이 원하는 방식으로 나오는지 바로 테스트합니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_gpts_configure.png",
+                                                                "badge":  "구성 입력"
+                                                            },
+                                                            {
+                                                                "title":  "만들기를 누르고 공유 범위를 정합니다",
+                                                                "body":  "필수 내용을 입력하면 오른쪽 위 만들기 버튼을 눌러 저장합니다. 공유 창에서는 나만 보기, 링크가 있는 모든 사람, GPT 스토어 중에서 공개 범위를 선택합니다. 내부 자료나 민감한 내용을 넣은 GPT는 기본적으로 나만 보기로 두고, 외부 공유가 필요한 경우에만 범위를 넓힙니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_gpts_share_scope.png",
+                                                                "badge":  "공유 설정"
+                                                            },
+                                                            {
+                                                                "title":  "오른쪽 위 내 GPT를 엽니다",
+                                                                "body":  "만든 GPT를 다시 찾거나 수정하려면 GPT 탐색 화면 오른쪽 위의 내 GPT를 클릭합니다. 이 화면으로 들어가면 내가 만든 GPT 목록과 새 GPT 만들기 진입점을 확인할 수 있습니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_gpts_my_gpt_button.png",
+                                                                "badge":  "내 GPT"
+                                                            },
+                                                            {
+                                                                "title":  "내 GPT 목록에서 관리합니다",
+                                                                "body":  "내 GPT 화면에서는 만든 GPT의 목록, 공개 범위, 채팅 수를 확인할 수 있습니다. 연필 아이콘으로 수정하고, ... 메뉴에서 추가 작업을 할 수 있습니다. 사용하지 않는 GPT나 테스트용 GPT는 이름을 정리해 두면 나중에 찾기 쉽습니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_gpts_my_gpt_list.png",
+                                                                "badge":  "목록 관리"
+                                                            }
                                                         ]
                                           },
                                           {
@@ -414,7 +465,8 @@ window.SERVICE_GUIDES = {
                                          "https://developers.openai.com/api/docs/models/o3",
                                          "https://developers.openai.com/api/docs/guides/reasoning-best-practices",
                                          "https://learn.chatgpt.com/docs/prompting",
-                                         "https://learn.chatgpt.com/docs/deep-research"
+                                         "https://learn.chatgpt.com/docs/deep-research",
+                                         "https://help.openai.com/en/articles/8554397-creating-and-editing-gpts"
                                      ]
                      },
                      {
