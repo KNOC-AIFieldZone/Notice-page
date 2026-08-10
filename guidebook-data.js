@@ -2,7 +2,7 @@ window.SERVICE_GUIDES = {
     "generatedAt":  "2026-08-07T16:05:44+09:00",
     "source":  "ai_guidebooks markdown set, 2026-08-07",
     "services":  [
-                                                                                                                                                                        {
+                                                                                                                                                                                             {
                          "id": "chatgpt",
                          "name": "ChatGPT",
                          "display": "ChatGPT / GPT",
@@ -13,7 +13,7 @@ window.SERVICE_GUIDES = {
                          "role": "질문 답변, 문서 작성, 파일 검토, 조사, 데이터 분석, 이미지 작업, 반복 업무 정리를 돕는 범용 AI 업무 도구",
                          "basis": "2026-08-10",
                          "overview": "ChatGPT는 질문 답변만 하는 도구가 아니라 글쓰기, 파일 검토, 최신 정보 확인, 조사 보고서 작성, 데이터 분석, 이미지 작업, 반복 업무 정리까지 한 화면에서 처리할 수 있는 AI 업무 도구입니다. 처음 쓰는 사람은 “무엇을 하고 싶은지”를 기준으로 기능을 고르면 됩니다.",
-                         "hero": "./guidebook-assets/chatgpt_overview.png",
+                         "hero": "./guidebook-assets/chatgpt_guide_cover.png",
                          "features": [
                              "모델 선택·추론 강도",
                              "질문·글쓰기",
