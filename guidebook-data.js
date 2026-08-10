@@ -2,7 +2,7 @@ window.SERVICE_GUIDES = {
     "generatedAt":  "2026-08-07T16:05:44+09:00",
     "source":  "ai_guidebooks markdown set, 2026-08-07",
     "services":  [
-                                                                                                                                                                                             {
+                                                                                                                                                                                                                  {
                          "id": "chatgpt",
                          "name": "ChatGPT",
                          "display": "ChatGPT / GPT",
@@ -18,7 +18,7 @@ window.SERVICE_GUIDES = {
                              "모델 선택·추론 강도",
                              "질문·글쓰기",
                              "파일 요약·검토",
-                             "최신 정보 확인",
+                             "웹 검색",
                              "조사 보고서 작성",
                              "데이터 분석·차트",
                              "이미지 내용 파악",
@@ -149,15 +149,30 @@ window.SERVICE_GUIDES = {
                                  ]
                              },
                              {
-                                 "title": "빠른 최신 정보 확인",
-                                 "image": "./guidebook-assets/chatgpt_overview.png",
-                                 "location": "작성창의 파일 추가 메뉴에서 웹 검색을 선택하거나, 질문에 최신 정보와 출처 확인을 명시합니다.",
-                                 "when": "최근 뉴스, 정책, 제품 정보, 시장 동향처럼 최신 여부가 중요한 내용을 빠르게 확인할 때 사용합니다.",
-                                 "how": "짧은 확인과 출처 확인에 적합합니다. 깊은 비교 보고서가 필요하면 심층 리서치를 쓰는 편이 낫습니다.",
+                                 "title": "웹 검색",
+                                 "image": "./guidebook-assets/chatgpt_web_search_menu.png",
+                                 "location": "작성창의 + 버튼을 누른 뒤 웹 검색을 선택하거나, 채팅에서 웹 검색이 필요하다고 요청합니다.",
+                                 "when": "최근 뉴스, 정책, 제품 정보, 시장 동향처럼 최신 정보나 출처가 필요한 내용을 확인할 때 사용합니다.",
+                                 "how": "웹 검색은 최신 정보 확인과 출처 확인에 적합합니다. 메뉴에서 켤 수도 있고, “웹 검색해서 찾아줘”, “최신 자료 기준으로 알려줘”처럼 말해도 사용할 수 있습니다.",
                                  "steps": [
-                                     "작성창의 “파일 등 추가” 버튼을 누르고 “웹 검색”을 선택합니다. 또는 질문에 “최신 자료 기준으로 출처와 함께 알려 주세요”라고 적습니다.",
-                                     "조사 범위와 기준을 같이 입력합니다. 예를 들어 “2026년 기준 공공기관 AI 활용 지침 변화를 표로 정리해 주세요.”처럼 적습니다.",
-                                     "답변의 링크나 출처를 열어 게시일, 작성 기관, 원문 문맥이 실제 답변과 맞는지 확인합니다."
+                                     {
+                                         "title": "+ 버튼에서 웹 검색을 선택합니다",
+                                         "body": "작성창 왼쪽의 + 버튼을 누르고 메뉴에서 “웹 검색”을 클릭합니다. 공식 문서 기준으로도 현재 정보가 필요하거나 출처를 확인해야 할 때 ChatGPT에 웹 검색을 사용해 달라고 요청할 수 있습니다.",
+                                         "image": "./guidebook-assets/chatgpt_web_search_menu.png",
+                                         "badge": "클릭할 곳"
+                                     },
+                                     {
+                                         "title": "찾을 내용과 정리 기준을 작성합니다",
+                                         "body": "웹 검색 표시가 붙은 상태에서 찾고 싶은 내용을 작성합니다. 예시처럼 “최근 6개월 내로 새로 나온 AI 서비스들을 찾고 날짜 기준으로 정렬하여 목록화해줘.”처럼 기간, 대상, 정리 방식을 같이 적으면 결과를 검토하기 쉽습니다.",
+                                         "image": "./guidebook-assets/chatgpt_web_search_prompt.png",
+                                         "badge": "요청 작성"
+                                     },
+                                     {
+                                         "title": "검색 결과와 출처를 함께 검토합니다",
+                                         "body": "답변이 나오면 표나 요약만 보지 말고 날짜, 서비스명, 출처 표시를 함께 확인합니다. 최신 정보는 바뀔 수 있으므로 중요한 내용은 출처 링크를 열어 원문 날짜와 맥락을 다시 확인합니다.",
+                                         "image": "./guidebook-assets/chatgpt_web_search_result.png",
+                                         "badge": "확인할 곳"
+                                     }
                                  ]
                              },
                              {
@@ -334,7 +349,8 @@ window.SERVICE_GUIDES = {
                              "https://developers.openai.com/api/docs/models",
                              "https://developers.openai.com/api/docs/guides/reasoning",
                              "https://developers.openai.com/api/docs/models/o3",
-                             "https://developers.openai.com/api/docs/guides/reasoning-best-practices"
+                             "https://developers.openai.com/api/docs/guides/reasoning-best-practices",
+                             "https://learn.chatgpt.com/docs/prompting"
                          ]
                      },
                      {
