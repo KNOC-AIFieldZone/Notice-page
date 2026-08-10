@@ -30,7 +30,7 @@ window.SERVICE_GUIDES = {
                                           "맞춤형 챗봇 사용·만들기",
                                           "외부 서비스 연결",
                                           "반복 업무 방식 저장",
-                                          "간단 대화 / 업무 처리 모드",
+                                          "업무처리 모드",
                                           "예약 작업 만들기",
                                           "음성 입력·대화"
                                       ],
@@ -437,15 +437,42 @@ window.SERVICE_GUIDES = {
                                                         ]
                                           },
                                           {
-                                              "title":  "간단 대화 / 업무 처리 모드",
-                                              "image":  "./guidebook-assets/chatgpt_overview.png",
-                                              "location":  "작성창 위 또는 주변의 Chat / Work 전환 버튼을 사용합니다.",
-                                              "when":  "간단한 질문은 Chat으로, 파일·플러그인·여러 단계가 필요한 결과물 제작은 Work로 나눠 사용할 때 필요합니다.",
-                                              "how":  "Work는 시간이 걸리는 업무와 검토 가능한 산출물에 더 적합합니다.",
+                                              "title":  "업무처리 모드",
+                                              "image":  "./guidebook-assets/chatgpt_work_mode_main.png",
+                                              "location":  "화면 상단의 Chat / Work 전환 버튼에서 Work를 클릭합니다. Work를 선택하면 입력창이 “무엇이든 작업하세요” 형태로 바뀌고, 프로젝트 선택, 플러그인, 파일 첨부 같은 업무용 옵션을 함께 사용할 수 있습니다.",
+                                              "when":  "짧은 답변보다 검토 가능한 결과물이 필요할 때 사용합니다. 문서, 발표자료, 스프레드시트, 보고서, 분석 결과, 사이트, 반복 업데이트처럼 여러 자료와 단계를 거쳐 완성해야 하는 업무에 적합합니다.",
+                                              "how":  "Work는 ChatGPT에게 업무를 위임하는 모드입니다. 파일, 프로젝트, 플러그인, 승인된 도구를 사용해 정보를 모으고, 여러 단계를 진행하며, 사용자가 검토할 수 있는 산출물을 만듭니다. 진행 중에 사용자가 질문에 답하거나 방향을 바꾸거나 중요한 작업을 승인할 수 있습니다. 간단한 질문, 짧은 문장 수정, 빠른 아이디어 정리는 일반 Chat이 더 적합합니다.",
                                               "steps":  [
-                                                            "새 채팅 화면에서 “Chat”과 “Work” 전환 버튼을 확인합니다.",
-                                                            "짧은 설명, 번역, 아이디어 정리는 Chat을 선택합니다. 보고서, 발표자료, 파일 분석, 반복 업무는 Work를 선택합니다.",
-                                                            "Work에서 작업을 맡길 때는 결과물 기준, 참고 자료, 멈춰서 확인받아야 할 지점을 함께 적습니다."
+                                                            {
+                                                                "title":  "상단에서 Work를 클릭합니다",
+                                                                "body":  "화면 상단의 Chat / Work 전환 버튼에서 Work를 선택합니다. Work가 선택되면 업무를 맡기는 입력창으로 바뀌며, 단순 질문보다 결과물을 만드는 작업을 시작하기 좋습니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_work_mode_main.png",
+                                                                "badge":  "Work 선택"
+                                                            },
+                                                            {
+                                                                "title":  "완성해야 할 결과물을 먼저 말합니다",
+                                                                "body":  "“무엇을 해 주세요”보다 “어떤 결과물을 만들어 주세요”라고 쓰는 것이 좋습니다. 예를 들어 8장짜리 발표자료 초안, 비교표가 포함된 스프레드시트, 회의자료 요약 보고서, 데이터 분석 결과, 프로젝트 진행상황 브리핑처럼 최종 산출물을 분명히 적습니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_work_mode_main.png",
+                                                                "badge":  "결과물 지정"
+                                                            },
+                                                            {
+                                                                "title":  "필요한 자료와 도구를 함께 지정합니다",
+                                                                "body":  "입력창 아래의 프로젝트 선택, 플러그인, + 버튼을 활용해 참고할 자료를 붙입니다. 파일을 첨부하거나, 프로젝트 자료를 선택하거나, Google Drive·Slack·Canva 같은 연결 도구를 지정할 수 있습니다. 특정 자료만 참고해야 하면 “이 파일만 기준으로 작성해 주세요”처럼 범위도 같이 적습니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_work_mode_main.png",
+                                                                "badge":  "자료 연결"
+                                                            },
+                                                            {
+                                                                "title":  "검토 기준과 멈출 지점을 적습니다",
+                                                                "body":  "업무 결과가 바로 사용될 수 있도록 대상, 형식, 분량, 말투, 포함할 항목, 제외할 항목, 확인이 필요한 부분을 적습니다. 중요한 작업은 “초안까지만 만들고 최종 공유 전에는 확인을 요청해 주세요”처럼 검토 지점을 정해 두면 안전합니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_work_mode_main.png",
+                                                                "badge":  "검토 기준"
+                                                            },
+                                                            {
+                                                                "title":  "진행 결과를 보며 방향을 조정합니다",
+                                                                "body":  "Work는 작업을 진행하면서 질문하거나 중간 결과를 보여줄 수 있습니다. 결과가 너무 넓으면 범위를 줄이고, 부족한 자료가 있으면 추가로 붙이며, 원하는 형식과 다르면 그 자리에서 수정 요청을 합니다. 최종 결과는 그대로 사용하기 전에 사람이 한 번 검토합니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_work_mode_main.png",
+                                                                "badge":  "진행 관리"
+                                                            }
                                                         ]
                                           },
                                           {
@@ -518,7 +545,9 @@ window.SERVICE_GUIDES = {
                                          "https://learn.chatgpt.com/blog/what-makes-a-great-chatgpt-app",
                                          "https://learn.chatgpt.com/docs/get-started-with-work",
                                          "https://help.openai.com/en/articles/10291617-tasks-in-chatgpt",
-                                         "https://help.openai.com/en/articles/20001066-skills-in-chatgpt"
+                                         "https://help.openai.com/en/articles/20001066-skills-in-chatgpt",
+                                         "https://help.openai.com/en/articles/20001278-creating-and-editing-documents-spreadsheets-and-presentations-with-chatgpt-work",
+                                         "https://learn.chatgpt.com/docs/whats-new"
                                      ]
                      },
                      {
