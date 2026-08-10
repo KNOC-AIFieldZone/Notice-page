@@ -387,14 +387,41 @@ window.SERVICE_GUIDES = {
                                           },
                                           {
                                               "title":  "외부 서비스 연결",
-                                              "image":  "./guidebook-assets/chatgpt_overview.png",
-                                              "location":  "왼쪽 사이드바의 플러그인 메뉴에서 필요한 플러그인을 검색하고 설치 또는 연결합니다.",
-                                              "when":  "Gmail, Google Drive, GitHub, Slack 같은 외부 서비스와 연결해 자료를 읽거나 업무 흐름을 이어갈 때 사용합니다.",
-                                              "how":  "연결 권한은 서비스별로 다르므로 어떤 데이터에 접근하는지 확인해야 합니다.",
+                                              "image":  "./guidebook-assets/chatgpt_plugins_directory.png",
+                                              "location":  "왼쪽 사이드바의 플러그인 메뉴에서 필요한 외부 서비스를 찾고, + 버튼으로 설치하거나 계정을 연결합니다. 연결한 플러그인은 Work 모드의 입력창 + 메뉴에서 선택해 사용할 수 있습니다.",
+                                              "when":  "ChatGPT 안에서 Gmail, Google Drive, Slack, GitHub, Canva 같은 외부 서비스의 자료를 참고하거나, 해당 서비스에서 작업을 이어가야 할 때 사용합니다.",
+                                              "how":  "플러그인은 ChatGPT에 외부 서비스의 정보, 작업, 반복 흐름을 붙이는 기능입니다. 서비스마다 할 수 있는 일이 다르고 권한 범위도 다르므로, 연결 전에는 접근 권한을 확인하고 연결 후에는 어떤 플러그인을 호출하는지 명확하게 지정하는 것이 좋습니다. Canva는 ChatGPT 안에서 디자인을 만들고, 검토하고, 편집하는 작업을 보조하는 용도로 표시되며, 프레젠테이션 초안을 만들고 이후 세부 편집은 Canva 편집기에서 이어갈 수 있습니다.",
                                               "steps":  [
-                                                            "왼쪽 사이드바에서 “플러그인”을 누르고 필요한 서비스를 검색합니다.",
-                                                            "목록에서 플러그인을 열어 설명을 읽고, 필요하면 “연결” 또는 설치 버튼을 누릅니다.",
-                                                            "채팅에서 연결한 도구 이름과 작업을 함께 말합니다. 예를 들어 “연결된 드라이브 자료를 찾아 요약해 주세요”처럼 요청하고 권한 범위를 확인합니다."
+                                                            {
+                                                                "title":  "왼쪽 사이드바에서 플러그인을 엽니다",
+                                                                "body":  "왼쪽 사이드바의 플러그인을 클릭합니다. 이 화면에서 ChatGPT와 연결할 수 있는 외부 서비스를 살펴보고 설치된 플러그인도 확인할 수 있습니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_plugins_sidebar.png",
+                                                                "badge":  "플러그인 열기"
+                                                            },
+                                                            {
+                                                                "title":  "필요한 외부 서비스를 살펴봅니다",
+                                                                "body":  "플러그인 화면에는 추천, 생산성, 창작, 개발자 도구 같은 묶음으로 여러 서비스가 보입니다. 화면 기준으로 Gmail은 메일 읽기와 관리, Google Drive는 Drive·Docs·Sheets·Slides 작업, Slack은 메시지 읽기와 관리, GitHub는 PR·이슈·CI 흐름, Google Calendar는 일정 관리, Notion·Asana·ClickUp·Linear는 업무 관리, Dropbox는 파일 접근과 저장, Canva·Figma·Gamma·Adobe는 디자인이나 문서 제작에 쓰일 수 있습니다. 실제 사용 가능 범위는 계정 권한과 플러그인별 설정에 따라 달라집니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_plugins_directory.png",
+                                                                "badge":  "종류 확인"
+                                                            },
+                                                            {
+                                                                "title":  "Canva를 연결하려면 + 버튼을 누릅니다",
+                                                                "body":  "예를 들어 Canva를 쓰고 싶다면 창작 영역에서 Canva 옆의 + 버튼을 클릭합니다. 화면에 표시된 Canva 설명은 디자인을 만들고, 검토하고, 편집하는 작업을 돕는다는 의미입니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_plugins_canva_install.png",
+                                                                "badge":  "설치 선택"
+                                                            },
+                                                            {
+                                                                "title":  "권한 내용을 확인하고 허용합니다",
+                                                                "body":  "연결 화면에서 ChatGPT가 Canva 계정에 접근해 수행할 수 있는 내용을 확인합니다. 화면에는 프로필과 계정 정보 읽기, 디자인 메타데이터와 콘텐츠 읽기, 디자인 만들기, 폴더 읽기와 수정, 템플릿 정보 읽기, 댓글 읽기와 달기, 자료 업로드와 수정 같은 권한이 표시되어 있습니다. 업무 자료가 포함된 계정이라면 필요한 권한인지 확인한 뒤 허용합니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_plugins_canva_allow.png",
+                                                                "badge":  "권한 허용"
+                                                            },
+                                                            {
+                                                                "title":  "입력창 + 메뉴에서 Canva를 선택해 사용합니다",
+                                                                "body":  "연결 후 새 Work 채팅의 입력창 왼쪽 + 버튼을 누르면 Canva를 선택할 수 있습니다. Canva를 선택한 뒤 “신입사원 교육용 발표자료 초안을 만들어 주세요”, “이 문구에 맞는 포스터 디자인을 제안해 주세요”, “기존 디자인을 검토하고 개선점을 알려 주세요”처럼 디자인 작업을 요청합니다. ChatGPT 안에서 초안을 만들고 방향을 잡은 다음, 정교한 배치나 세부 편집은 Canva 편집기에서 이어가는 방식으로 이해하면 됩니다.",
+                                                                "image":  "./guidebook-assets/chatgpt_plugins_canva_composer.png",
+                                                                "badge":  "채팅에서 사용"
+                                                            }
                                                         ]
                                           },
                                           {
@@ -466,7 +493,8 @@ window.SERVICE_GUIDES = {
                                          "https://developers.openai.com/api/docs/guides/reasoning-best-practices",
                                          "https://learn.chatgpt.com/docs/prompting",
                                          "https://learn.chatgpt.com/docs/deep-research",
-                                         "https://help.openai.com/en/articles/8554397-creating-and-editing-gpts"
+                                         "https://help.openai.com/en/articles/8554397-creating-and-editing-gpts",
+                                         "https://learn.chatgpt.com/blog/what-makes-a-great-chatgpt-app"
                                      ]
                      },
                      {
