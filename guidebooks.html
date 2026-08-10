@@ -321,7 +321,7 @@
     }
 
     function asList(value){
-      if(Array.isArray(value)) return value.filter(Boolean).map(String);
+      if(Array.isArray(value)) return value.filter(Boolean);
       const text = String(value || "").trim();
       if(!text) return [];
       return text.split(/\n+/).map((it) => it.trim()).filter(Boolean);
@@ -329,12 +329,22 @@
 
     function defaultSteps(feature){
       const explicit = asList(feature.steps);
-      if(explicit.length) return explicit.map((body, idx) => ({
-        title: `따라하기 ${idx + 1}`,
-        body,
-        image: feature.image,
-        badge: idx === 0 ? "클릭할 곳" : "확인할 곳"
-      }));
+      if(explicit.length) return explicit.map((step, idx) => {
+        if(typeof step === "object" && step !== null){
+          return {
+            title: step.title || `따라하기 ${idx + 1}`,
+            body: step.body || step.text || "",
+            image: step.image || feature.image,
+            badge: step.badge || (idx === 0 ? "클릭할 곳" : "확인할 곳")
+          };
+        }
+        return {
+          title: `따라하기 ${idx + 1}`,
+          body: step,
+          image: feature.image,
+          badge: idx === 0 ? "클릭할 곳" : "확인할 곳"
+        };
+      });
       return [
         { title: "기능 버튼이나 입력창을 찾습니다", body: feature.location || "서비스 화면에서 이 기능을 실행하는 버튼이나 입력창을 찾습니다.", image: feature.image, badge: "클릭할 곳" },
         { title: "요청 내용을 입력합니다", body: feature.how || "원하는 결과물, 참고 자료, 조건을 입력합니다.", image: feature.image, badge: "입력할 곳" },

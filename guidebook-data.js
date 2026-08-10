@@ -2,7 +2,7 @@ window.SERVICE_GUIDES = {
     "generatedAt":  "2026-08-07T16:05:44+09:00",
     "source":  "ai_guidebooks markdown set, 2026-08-07",
     "services":  [
-                                                               {
+                                                                                    {
                          "id": "chatgpt",
                          "name": "ChatGPT",
                          "display": "ChatGPT / GPT",
@@ -32,7 +32,7 @@ window.SERVICE_GUIDES = {
                              "간단 대화 / 업무 처리 모드",
                              "알림·정기 작업 예약",
                              "음성 입력·대화",
-                             "답변 속도·깊이 조정"
+                             "모델 선택·추론 강도"
                          ],
                          "tips": [
                              "처음 요청할 때 목표, 참고 자료, 원하는 결과물 형식을 함께 적습니다.",
@@ -245,15 +245,30 @@ window.SERVICE_GUIDES = {
                                  ]
                              },
                              {
-                                 "title": "답변 속도·깊이 조정",
-                                 "image": "./guidebook-assets/chatgpt_overview.png",
-                                 "location": "작성창 근처의 모델 버튼에서 모델과 추론 수준, 속도 옵션을 확인합니다.",
-                                 "when": "답변 속도와 깊이를 업무 난이도에 맞게 조절할 때 사용합니다.",
-                                 "how": "간단한 일은 빠른 설정으로, 복잡한 검토나 비교는 깊게 생각하는 설정으로 바꿔 사용합니다.",
+                                 "title": "모델 선택·추론 강도 조절",
+                                 "image": "./guidebook-assets/chatgpt_model_quick_slider.png",
+                                 "location": "작성창 오른쪽의 모델/강도 버튼을 누른 뒤, 빠른 게이지 또는 고급 메뉴에서 모델과 추론 강도를 선택합니다.",
+                                 "when": "답변 속도, 정확도, 문제 해결 깊이를 업무 난이도에 맞게 바꾸고 싶을 때 사용합니다.",
+                                 "how": "대부분의 업무는 기본값으로 시작하고, 복잡한 분석·검토·코딩·여러 자료 비교는 더 강한 모델이나 높은 추론 강도를 선택합니다. 단순 문장 수정이나 빠른 확인은 낮은 강도로 충분합니다.",
                                  "steps": [
-                                     "작성창 근처의 모델 버튼을 누릅니다. 현재 화면에서는 모델명과 Light 같은 추론 수준 표시가 함께 나타났습니다.",
-                                     "간단한 요약이나 문장 수정은 낮은 추론 수준을, 복잡한 비교·검토·보고서 작성은 더 높은 추론 수준을 선택합니다.",
-                                     "결과가 느리거나 과하게 길면 추론 수준을 낮추고, 근거 검토가 부족하면 다시 높여서 요청합니다."
+                                     {
+                                         "title": "빠른 게이지로 속도와 깊이를 조절합니다",
+                                         "body": "작성창 오른쪽의 현재 강도 버튼을 누르면 작은 게이지가 열립니다. 왼쪽은 더 빠른 응답, 오른쪽은 더 깊게 생각하는 응답에 가깝습니다. 간단한 요약·문장 수정은 낮게, 보고서 검토·복잡한 비교는 높게 둡니다.",
+                                         "image": "./guidebook-assets/chatgpt_model_quick_slider.png",
+                                         "badge": "클릭할 곳"
+                                     },
+                                     {
+                                         "title": "고급에서 모델을 선택합니다",
+                                         "body": "고급 메뉴의 모델 항목에서 사용할 모델을 고릅니다. GPT-5.6 Sol은 공식 문서에서 복잡한 추론과 코딩을 위한 대표 모델로 설명됩니다. GPT-5.5는 화면에 선택지로 보이는 이전 세대 추론형 모델이므로 일반 검토나 비교 작업에 사용할 수 있습니다. o3는 공식 문서에서 수학, 과학, 코딩, 시각 추론, 기술 글쓰기와 지시 이행에 강한 모델로 설명되며, 여러 단계의 분석이 필요한 문제에 적합합니다.",
+                                         "image": "./guidebook-assets/chatgpt_model_advanced_models.png",
+                                         "badge": "모델 선택"
+                                     },
+                                     {
+                                         "title": "고급에서 추론 강도를 선택합니다",
+                                         "body": "고급 메뉴의 추론 강도에서 즉시, 중간, 높음을 선택합니다. 즉시는 빠른 확인이나 간단한 문장 작업에, 중간은 일반 업무와 자료 검토에, 높음은 복잡한 분석·계획·보고서·코딩처럼 정확도와 판단이 중요한 작업에 사용합니다. 높은 강도는 더 오래 걸릴 수 있습니다.",
+                                         "image": "./guidebook-assets/chatgpt_model_reasoning_strength.png",
+                                         "badge": "강도 선택"
+                                     }
                                  ]
                              }
                          ],
@@ -270,7 +285,11 @@ window.SERVICE_GUIDES = {
                              "https://learn.chatgpt.com/docs/artifacts-viewer",
                              "https://learn.chatgpt.com/docs/plugins",
                              "https://learn.chatgpt.com/docs/skills-and-plugins",
-                             "https://learn.chatgpt.com/docs/models"
+                             "https://learn.chatgpt.com/docs/models",
+                             "https://developers.openai.com/api/docs/models",
+                             "https://developers.openai.com/api/docs/guides/reasoning",
+                             "https://developers.openai.com/api/docs/models/o3",
+                             "https://developers.openai.com/api/docs/guides/reasoning-best-practices"
                          ]
                      },
                      {
