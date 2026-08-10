@@ -2,7 +2,7 @@ window.SERVICE_GUIDES = {
     "generatedAt":  "2026-08-07T16:05:44+09:00",
     "source":  "ai_guidebooks markdown set, 2026-08-07",
     "services":  [
-                                                                                                                                                                                                                  {
+                                                                                                                                                                                                                                       {
                          "id": "chatgpt",
                          "name": "ChatGPT",
                          "display": "ChatGPT / GPT",
@@ -177,14 +177,29 @@ window.SERVICE_GUIDES = {
                              },
                              {
                                  "title": "깊이 있는 조사 보고서",
-                                 "image": "./guidebook-assets/chatgpt_overview.png",
-                                 "location": "작성창의 파일 추가 메뉴에서 심층 리서치를 선택하거나, 복잡한 조사 과제를 보고서 형식으로 요청합니다.",
-                                 "when": "여러 자료를 읽고 비교·종합해 보고서 형태의 조사 결과가 필요할 때 사용합니다.",
-                                 "how": "웹 검색이 빠른 확인이라면, 심층 리서치는 자료를 모아 구조화된 보고서를 만드는 기능입니다.",
+                                 "image": "./guidebook-assets/chatgpt_deep_research_menu.png",
+                                 "location": "작성창 왼쪽의 + 버튼을 누른 뒤 심층 리서치를 선택합니다.",
+                                 "when": "여러 자료를 찾아 비교하고, 근거가 있는 보고서 형태로 정리해야 할 때 사용합니다.",
+                                 "how": "웹 검색이 빠른 확인용이라면, 심층 리서치는 자료 수집과 분석 과정을 거쳐 보고서 구조로 정리하는 기능입니다. 주제, 참고할 자료 범위, 보고서 형식을 구체적으로 적는 것이 좋습니다.",
                                  "steps": [
-                                     "작성창의 “파일 등 추가” 버튼을 누르고 “심층 리서치”를 선택합니다.",
-                                     "“주제”, “비교 기준”, “포함할 출처 유형”, “최종 형식”을 적습니다. 예를 들어 “정책 변화, 기업 사례, 리스크를 구분한 보고서로 작성해 주세요.”처럼 요청합니다.",
-                                     "완성된 보고서는 결론만 보지 말고 근거 링크, 인용된 수치, 빠진 관점이 있는지 검토한 뒤 업무 자료로 옮깁니다."
+                                     {
+                                         "title": "+ 버튼에서 심층 리서치를 선택합니다",
+                                         "body": "작성창 왼쪽의 + 버튼을 누르고 메뉴에서 “심층 리서치”를 클릭합니다. 단순 검색이 아니라 여러 자료를 찾아 비교하고 보고서 형태로 정리해야 할 때 사용합니다.",
+                                         "image": "./guidebook-assets/chatgpt_deep_research_menu.png",
+                                         "badge": "클릭할 곳"
+                                     },
+                                     {
+                                         "title": "조사 주제와 보고서 조건을 작성합니다",
+                                         "body": "조사할 주제, 참고할 자료 범위, 결과물 형식을 함께 적습니다. 예시처럼 “KNOC가 지금까지 진행한 사업에 대해 모두 찾아 리포트 형식으로 정리해줘. 뉴스와 공식 홈페이지 자료만 참고해줘.”처럼 범위와 출처 기준을 명확히 쓰면 좋습니다.",
+                                         "image": "./guidebook-assets/chatgpt_deep_research_prompt.png",
+                                         "badge": "요청 작성"
+                                     },
+                                     {
+                                         "title": "리서치 진행 과정을 확인합니다",
+                                         "body": "심층 리서치가 시작되면 수집, 분류, 분석, 최종 문서 작성 같은 진행 단계가 표시됩니다. 진행 중에는 필요한 경우 요청을 보완할 수 있고, 완료 후에는 출처와 핵심 근거가 실제 내용과 맞는지 확인합니다.",
+                                         "image": "./guidebook-assets/chatgpt_deep_research_progress.png",
+                                         "badge": "진행 확인"
+                                     }
                                  ]
                              },
                              {
@@ -350,7 +365,8 @@ window.SERVICE_GUIDES = {
                              "https://developers.openai.com/api/docs/guides/reasoning",
                              "https://developers.openai.com/api/docs/models/o3",
                              "https://developers.openai.com/api/docs/guides/reasoning-best-practices",
-                             "https://learn.chatgpt.com/docs/prompting"
+                             "https://learn.chatgpt.com/docs/prompting",
+                             "https://learn.chatgpt.com/docs/deep-research"
                          ]
                      },
                      {
