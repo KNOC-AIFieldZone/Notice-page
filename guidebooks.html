@@ -155,7 +155,7 @@
     .kv-row b{color:var(--text);}
     .kv-row span{color:var(--muted);}
     .tips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;}
-    .feature-detail-layout{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:12px;align-items:start;}
+    .feature-detail-layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:12px;align-items:start;}
     .feature-detail-shell{display:grid;gap:12px;}
     .feature-detail-hero{
       display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.86fr);gap:0;overflow:hidden;
@@ -167,20 +167,22 @@
     .feature-detail-copy h3{margin:0;font-size:24px;line-height:1.22;font-weight:950;}
     .feature-detail-copy p{margin:10px 0 0;color:var(--muted);font-size:13px;line-height:1.62;}
     .feature-detail-img{width:100%;height:100%;min-height:250px;object-fit:cover;background:#fff;}
-    .detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;}
+    .detail-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;}
+    .detail-flow{display:grid;gap:10px;}
     .detail-block{border:1px solid rgba(15,23,42,.14);border-radius:8px;background:var(--card);color:var(--card-text);padding:13px;}
     .detail-block h4{margin:0 0 8px;font-size:13px;font-weight:950;}
     .detail-block p{margin:0;color:var(--card-muted);font-size:12px;line-height:1.58;}
-    .detail-block.full{grid-column:1 / -1;background:linear-gradient(180deg,var(--card2),var(--card));}
+    .detail-block.full{background:linear-gradient(180deg,var(--card2),var(--card));}
+    .detail-block.emphasis{border-color:rgba(14,165,233,.28);background:#f8fafc;}
     .step-list{display:grid;gap:8px;margin:0;padding:0;list-style:none;}
     .step-list li{display:grid;grid-template-columns:32px minmax(0,1fr);gap:10px;align-items:start;border:1px solid rgba(15,23,42,.12);border-radius:8px;background:var(--band);padding:10px;}
-    .step-no{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;background:var(--accent2);color:var(--text);font-size:12px;font-weight:950;}
+    .step-no{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;background:rgba(14,165,233,.14);color:var(--card-text);font-size:12px;font-weight:950;}
     .step-title{display:block;font-size:13px;font-weight:950;margin-bottom:3px;}
     .step-body{display:block;color:var(--card-muted);font-size:12px;line-height:1.5;}
     .feature-nav{position:sticky;top:18px;}
     .feature-nav-list{display:grid;gap:6px;}
-    .feature-nav-link{display:block;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--text);text-decoration:none;padding:9px;font-size:12px;font-weight:850;line-height:1.35;}
-    .feature-nav-link.active{background:var(--accent2);border-color:rgba(94,234,212,.42);}
+    .feature-nav-link{display:block;border:1px solid rgba(15,23,42,.14);border-radius:8px;background:var(--card);color:var(--card-text);text-decoration:none;padding:9px;font-size:12px;font-weight:850;line-height:1.35;}
+    .feature-nav-link.active{background:#0f172a;color:#fff;border-color:rgba(94,234,212,.42);}
     .empty{border:1px dashed var(--line);border-radius:8px;padding:18px;color:var(--muted);text-align:center;font-size:13px;}
     mark{background:rgba(251,191,36,.32);color:inherit;border-radius:4px;padding:0 2px;}
     @media (max-width:1040px){
@@ -200,7 +202,7 @@
       .service-hero{width:58px;height:58px;}
       .hero{grid-template-columns:1fr;}
       .feature-detail-hero{grid-template-columns:1fr;}
-      .detail-grid{grid-template-columns:1fr;}
+      .detail-summary{grid-template-columns:1fr;}
       .hero h2{font-size:22px;}
       .hero-img{min-height:190px;}
       .side-list{grid-template-columns:repeat(2,minmax(0,1fr));}
@@ -464,6 +466,7 @@
           <a class="btn" href="${serviceUrl(service.id)}">기능 목록</a>
         </div>
         <div class="feature-detail-layout">
+          ${renderFeatureNav(service, idx)}
           <div class="feature-detail-shell">
             <section class="feature-detail-hero">
               <div class="feature-detail-copy">
@@ -482,21 +485,24 @@
               <img class="feature-detail-img" src="${esc(feature.image || service.hero)}" alt="${esc(service.display)} - ${esc(feature.title)}">
             </section>
 
-            <div class="detail-grid">
-              <section class="detail-block">
+            <div class="detail-summary">
+              <section class="detail-block emphasis">
                 <h4>기능 위치</h4>
                 <p>${copy(feature.location || "서비스 화면에서 해당 기능 메뉴를 확인합니다.")}</p>
               </section>
-              <section class="detail-block">
+              <section class="detail-block emphasis">
                 <h4>사용 상황</h4>
                 <p>${copy(feature.when || "업무 목적에 맞춰 결과물을 빠르게 만들거나 검토할 때 사용합니다.")}</p>
               </section>
-              <section class="detail-block">
+              <section class="detail-block emphasis">
                 <h4>핵심 방법</h4>
                 <p>${copy(feature.how || "필요한 자료와 원하는 결과 형식을 함께 입력합니다.")}</p>
               </section>
+            </div>
+
+            <div class="detail-flow">
               <section class="detail-block full">
-                <h4>진행 순서</h4>
+                <h4>따라하기</h4>
                 <ol class="step-list">
                   ${steps.map((step, stepIdx) => `
                     <li>
@@ -515,7 +521,6 @@
               </section>
             </div>
           </div>
-          ${renderFeatureNav(service, idx)}
         </div>
       `;
     }
@@ -539,7 +544,7 @@
                 </div>
                 <div class="actions" style="margin-top:14px;justify-content:flex-start;">
                   <a class="btn primary" href="${esc(service.url)}" target="_blank" rel="noopener">서비스 열기</a>
-                  <a class="btn" href="./guidebooks.html">목록으로</a>
+                  <a class="btn" href="${selectedFeature ? serviceUrl(service.id) : "./guidebooks.html"}">목록으로</a>
                 </div>
               </div>
               <img class="hero-img" src="${esc(service.hero)}" alt="${esc(service.display)} 대표 화면">
