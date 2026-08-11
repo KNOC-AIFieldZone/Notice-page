@@ -569,27 +569,39 @@ window.SERVICE_GUIDES = {
                                           {
                                               "title":  "AI Sheets",
                                               "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                              "location":  "AI Sheets에서 파일을 업로드하거나 수집할 데이터 조건을 입력합니다.",
-                                              "when":  "표 데이터 정리, 분석, 차트, 리드 목록, 비교표, 대시보드 초안을 만들 때 사용합니다.",
-                                              "how":  "Excel처럼 직접 편집하면서 AI에게 수식 작성, 교차 시트 분석, 차트 생성, 데이터 정리를 요청할 수 있습니다.",
+                                              "location":  "Genspark 메인 화면 입력칸 아래의 AI 시트를 클릭하거나, 왼쪽 사이드바의 AI 시트 메뉴를 선택합니다.",
+                                              "when":  "CSV·Excel 데이터를 불러와 정리, 결측치 처리, 통계 요약, 수식 작성, 차트 생성, 대시보드 초안을 만들 때 사용합니다.",
+                                              "how":  "파일을 열어 분석하거나, 필요한 표를 자연어로 요청해 새 시트를 만들 수 있습니다. AI는 데이터 수집, 전처리, 통계 분석, 수식 생성, 시각화를 도와주지만 결과 값은 반드시 검토해야 합니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "데이터 파일을 올립니다",
-                                                                "body":  "CSV, Excel 등 분석할 자료를 업로드하고 원하는 분석 기준을 적습니다.",
+                                                                "title":  "AI 시트를 클릭합니다",
+                                                                "body":  "Genspark 메인 화면의 입력칸 아래에서 AI 시트를 클릭합니다. 기존 데이터 파일을 분석하려면 AI 시트 화면에서 파일 열기를 누릅니다.",
                                                                 "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "업로드"
+                                                                "badge":  "시작"
                                                             },
                                                             {
-                                                                "title":  "분석과 차트를 요청합니다",
-                                                                "body":  "평균, 추세, 이상치, 상관관계, 차트 종류처럼 필요한 결과를 구체적으로 요청합니다.",
-                                                                "image":  "./guidebook-assets/genspark_sheets.png",
-                                                                "badge":  "분석"
+                                                                "title":  "파일 열기로 데이터를 불러옵니다",
+                                                                "body":  "파일 열기를 눌러 CSV 또는 Excel 파일을 선택합니다. 공식 도움말 기준으로 AI Sheets는 파일 업로드뿐 아니라 웹 자료, 금융 데이터, 논문 자료, 제품 정보, Google Drive, Supabase 같은 연결 소스에서도 데이터를 가져와 표로 만들 수 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_sheets_open_file.png",
+                                                                "badge":  "파일 열기"
                                                             },
                                                             {
-                                                                "title":  "원본 데이터와 한계를 확인합니다",
-                                                                "body":  "공식 문서 기준으로 모바일은 보기 중심이고, 매크로/VBA, Power Query, 복잡한 레거시 차트 등은 제한될 수 있습니다.",
-                                                                "image":  "./guidebook-assets/genspark_sheets.png",
-                                                                "badge":  "검토"
+                                                                "title":  "불러온 데이터를 확인합니다",
+                                                                "body":  "표가 정상적으로 열렸는지 확인합니다. 날짜, 숫자, 단위, 빈 셀, 열 이름이 잘못 읽히면 바로 수정 요청을 하거나 직접 셀을 편집합니다.",
+                                                                "image":  "./guidebook-assets/genspark_sheets_loaded_data.png",
+                                                                "badge":  "확인"
+                                                            },
+                                                            {
+                                                                "title":  "전처리와 분석을 요청합니다",
+                                                                "body":  "예를 들어 \"중간에 결측치가 있다면 보간하고, 앞뒤로 데이터가 없는 결측행은 제거해 주세요. 각 항목의 통계를 요약하고 시각화해 주세요.\"처럼 요청합니다. 결측치 처리, 중복 제거, 이상치 탐지, 요약 통계, 상관관계, 추세 분석, 예측, 수식 생성, 조건부 분류, 여러 시트 간 비교도 요청할 수 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_sheets_analysis_prompt.png",
+                                                                "badge":  "요청"
+                                                            },
+                                                            {
+                                                                "title":  "시각화 결과와 제한 사항을 검토합니다",
+                                                                "body":  "생성된 표와 차트를 확인하고, 축 단위·범례·계산식·결측치 처리 방식이 맞는지 검토합니다. 필요하면 \"차트 제목을 바꿔 주세요\", \"월별 추세선도 추가해 주세요\"처럼 후속 요청을 합니다. 공식 도움말 기준으로 매크로/VBA 실행, Power Query, Power Pivot, 사용자 정의 함수, 일부 복잡한 레거시 차트는 지원되지 않습니다.",
+                                                                "image":  "./guidebook-assets/genspark_sheets_visual_result.png",
+                                                                "badge":  "결과"
                                                             }
                                                         ]
                                           },
