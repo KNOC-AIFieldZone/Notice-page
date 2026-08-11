@@ -635,27 +635,15 @@ window.SERVICE_GUIDES = {
                                           {
                                               "title":  "GenMail",
                                               "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                              "location":  "GenMail 앱에서 Gmail 또는 Outlook 계정을 연결합니다.",
-                                              "when":  "여러 이메일 계정과 캘린더를 한곳에서 보고, 답장 초안, 메일 정리, 일정 확인을 AI와 함께 처리할 때 사용합니다.",
-                                              "how":  "공식 문서 기준으로 Super Agent, Inbox, Calendar, Email Brain 화면을 사용하며 사용자의 문체와 반복 업무 맥락을 반영합니다.",
+                                              "location":  "GenMail은 별도 앱 설치 후 Gmail 또는 Outlook 계정을 연결해 사용하는 기능입니다.",
+                                              "when":  "개인 환경에서는 메일 확인, 답장 초안, 일정 확인 같은 작업에 사용할 수 있지만, 회사 내부 PC나 보안 정책이 적용되는 환경에서는 설치와 계정 연결이 제한될 수 있습니다.",
+                                              "how":  "현재 회사 내 사용 가이드에서는 설치형 기능으로 분류합니다. 업무 환경에서 사용하려면 사내 보안 정책, 메일 계정 연동 가능 여부, 외부 앱 설치 허용 여부를 먼저 확인해야 합니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "계정을 연결합니다",
-                                                                "body":  "Mac, Windows, iOS, Android 앱에서 로그인한 뒤 Gmail 또는 Outlook을 연결합니다.",
+                                                                "title":  "회사 내 사용 가능 여부를 먼저 확인합니다",
+                                                                "body":  "GenMail은 별도 앱 설치와 메일 계정 연결이 필요한 기능입니다. 회사 PC에서는 외부 앱 설치, Gmail 또는 Outlook 계정 연동, 메일 데이터 접근 권한이 제한될 수 있으므로 일반 사용 기능으로 안내하지 않습니다.",
                                                                 "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "연결"
-                                                            },
-                                                            {
-                                                                "title":  "메일을 정리하고 답장을 만듭니다",
-                                                                "body":  "Inbox에서 중요한 메일을 확인하고 AI에게 답장 초안, 요약, 후속 조치를 요청합니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "메일"
-                                                            },
-                                                            {
-                                                                "title":  "Email Brain을 확인합니다",
-                                                                "body":  "사용자의 문체, 자주 연락하는 사람, 프로젝트 패턴을 학습한 내용을 확인하고 틀린 부분은 수정합니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "개인화"
+                                                                "badge":  "제한"
                                                             }
                                                         ]
                                           },
