@@ -194,8 +194,8 @@
     .detail-block.emphasis{border-color:rgba(14,165,233,.28);background:#f8fafc;}
     .step-list{display:grid;gap:12px;margin:0;padding:0;list-style:none;}
     .step-card{display:block;border:1px solid rgba(15,23,42,.12);border-radius:8px;background:#fff;overflow:hidden;}
-    .step-shot{position:relative;min-height:360px;background:#eef2f7;border-bottom:1px solid rgba(15,23,42,.12);}
-    .step-shot img{width:100%;height:100%;min-height:360px;object-fit:cover;display:block;background:#fff;}
+    .step-shot{position:relative;background:#fff;border-bottom:1px solid rgba(15,23,42,.12);}
+    .step-shot img{width:100%;height:auto;object-fit:contain;display:block;background:#fff;}
     .step-badge{position:absolute;left:10px;top:10px;display:inline-flex;align-items:center;gap:6px;border-radius:999px;background:#0f172a;color:#fff;padding:6px 10px;font-size:11px;font-weight:950;box-shadow:0 8px 18px rgba(15,23,42,.18);}
     .step-copy{padding:14px;display:grid;align-content:start;gap:8px;background:linear-gradient(180deg,#eef6ff,#f8fbff);}
     .step-title{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:950;color:var(--card-text);}
@@ -222,8 +222,6 @@
       .service-card{grid-template-columns:58px minmax(0,1fr);min-height:128px;}
       .service-hero{width:58px;height:58px;}
       .hero{grid-template-columns:1fr;}
-      .step-shot{min-height:260px;}
-      .step-shot img{min-height:260px;}
       .hero h2{font-size:22px;}
       .side-list{grid-template-columns:repeat(2,minmax(0,1fr));}
       .kv-row{grid-template-columns:1fr;}
