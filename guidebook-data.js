@@ -530,27 +530,39 @@ window.SERVICE_GUIDES = {
                                           {
                                               "title":  "AI Slides",
                                               "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                              "location":  "AI Slides에서 주제, 목적, 참고 자료, 발표 흐름을 입력합니다.",
-                                              "when":  "보고서 발표, 교육자료, 제안서, 설명회 자료를 빠르게 초안화할 때 사용합니다.",
-                                              "how":  "전문형 또는 창의형 모드, 비율, 모델, 슬라이드 스타일을 선택하고 생성 후 편집, 검증, 발표자 노트, PDF/PPTX/Google Slides 내보내기를 진행합니다.",
+                                              "location":  "Genspark 메인 화면 입력칸 아래의 AI 슬라이드를 클릭하거나, 왼쪽 사이드바의 AI 슬라이드 메뉴를 선택합니다.",
+                                              "when":  "보고서 발표, 교육자료, 제안서, 설명회 자료를 빠르게 초안화하거나, 이미지 중심의 발표 자료와 카드형 콘텐츠를 만들 때 사용합니다.",
+                                              "how":  "Professional 모드는 깔끔한 업무용 발표에, Creative 모드는 이미지와 색감이 강한 시각형 발표에 적합합니다. 생성 후 검증, AI 편집, 수동 편집, 레이아웃 수정, 다듬기, 공유와 내보내기로 완성도를 높입니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "발표 목적과 자료를 입력합니다",
-                                                                "body":  "청중, 발표 시간, 핵심 메시지, 참고 파일을 함께 넣어 슬라이드 구조를 만듭니다.",
+                                                                "title":  "AI 슬라이드를 클릭합니다",
+                                                                "body":  "Genspark 메인 화면의 입력칸 아래에 있는 AI 슬라이드를 클릭합니다. 새 발표 자료를 만들 때는 여기서 시작하면 됩니다.",
                                                                 "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "입력"
+                                                                "badge":  "시작"
                                                             },
                                                             {
-                                                                "title":  "모드와 형식을 조정합니다",
-                                                                "body":  "Professional 또는 Creative 모드, 화면 비율, 이미지 모델, Guide Mode, Standard/Ultra 등 필요한 설정을 선택합니다.",
-                                                                "image":  "./guidebook-assets/genspark_slides.png",
-                                                                "badge":  "설정"
+                                                                "title":  "Professional 모드에서 업무용 발표를 설정합니다",
+                                                                "body":  "Professional 모드는 공식 문서 기준으로 깔끔하고 구조적인 비즈니스형 발표에 적합합니다. 내부 보고, 제안서, 컨설팅형 자료처럼 정돈된 덱이 필요할 때 사용합니다. 비율은 예를 들어 16:9처럼 발표 환경에 맞게 정하고, Guide Mode는 AI가 질문하며 개요를 확인한 뒤 슬라이드를 만드는 상담형 모드입니다. 아래 Skill 영역은 단순 템플릿이 아니라 전문가의 구성 방식과 디자인 스타일을 재사용하는 기능이며, 기존 PPT/PDF 업로드나 Skill 패키지 선택, 새 Skill 만들기에 사용할 수 있습니다. 자료 업로드는 선택 사항이고, 입력창에는 발표 주제와 요구 사항을 작성합니다.",
+                                                                "image":  "./guidebook-assets/genspark_slides_professional_settings.png",
+                                                                "badge":  "Professional"
                                                             },
                                                             {
-                                                                "title":  "편집 후 내보냅니다",
-                                                                "body":  "제목, 근거, 디자인을 검토하고 PDF, PPTX, Google Slides 형식으로 내보냅니다.",
-                                                                "image":  "./guidebook-assets/genspark_slides.png",
-                                                                "badge":  "내보내기"
+                                                                "title":  "Professional 결과를 검토하고 다듬습니다",
+                                                                "body":  "생성 결과에서 콘텐츠 검증으로 숫자와 주장, 출처를 확인합니다. AI 편집은 특정 요소를 선택하거나 그리기 도구로 영역을 표시한 뒤 수정 요청을 입력해 사용할 수 있습니다. Professional 모드는 공식 문서 기준으로 수동 편집이 가능하며, Fix Layout, Polish Content 같은 AI 편집으로 겹침, 넘침, 정렬, 논리 흐름을 다듬을 수 있습니다. 이후 공유 링크, PDF 저장, PPTX 저장, Google Slides 내보내기로 작업물을 뽑습니다.",
+                                                                "image":  "./guidebook-assets/genspark_slides_professional_result.png",
+                                                                "badge":  "결과 확인"
+                                                            },
+                                                            {
+                                                                "title":  "Creative 모드에서 시각형 발표를 설정합니다",
+                                                                "body":  "Creative 모드는 공식 문서 기준으로 색감과 이미지 표현이 강한 시각 중심 덱에 적합합니다. 브랜드 캠페인, 제품 출시, 마케팅 자료, 카드뉴스형 콘텐츠처럼 한 장 한 장이 포스터처럼 보이는 결과를 만들 때 사용합니다. 화면에서 모델을 선택할 수 있으며 GPT Image 2와 Nano Banana Pro 같은 이미지 생성 모델이 노출됩니다. 사용자가 확인한 화면 기준으로 GPT Image 2는 이미지당 8크레딧, Nano Banana Pro는 이미지당 80크레딧으로 보이지만, 크레딧 정책은 바뀔 수 있으므로 실제 작업 전 화면 표시를 다시 확인해야 합니다. 비율과 Guide Mode를 설정하고, 하단 샘플을 참고하거나 자료를 업로드한 뒤 요구 사항을 작성합니다.",
+                                                                "image":  "./guidebook-assets/genspark_slides_creative_settings.png",
+                                                                "badge":  "Creative"
+                                                            },
+                                                            {
+                                                                "title":  "Creative 결과를 확인하고 내보냅니다",
+                                                                "body":  "Creative 결과는 이미지 중심으로 생성되므로 전체 톤, 글자 가독성, 회사명과 핵심 숫자를 먼저 확인합니다. 콘텐츠 검증, AI 편집, 그리기 또는 선택 영역 기반 수정 요청, AI 레이아웃 재설계, 다듬기 기능으로 품질을 올립니다. 공식 문서 기준으로 Creative 모드는 수동 편집 기능이 아직 준비 중이므로, 세밀한 직접 편집이 필요하면 Professional 모드 또는 PPTX 내보내기 후 PowerPoint 편집을 고려합니다. 완료 후 링크 공유, PDF 저장, PPT 저장 등으로 작업물을 뽑습니다.",
+                                                                "image":  "./guidebook-assets/genspark_slides_creative_result.png",
+                                                                "badge":  "완성"
                                                             }
                                                         ]
                                           },
