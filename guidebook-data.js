@@ -633,69 +633,6 @@ window.SERVICE_GUIDES = {
                                                         ]
                                           },
                                           {
-                                              "title":  "PowerPoint 플러그인",
-                                              "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                              "location":  "Microsoft PowerPoint에서 Genspark 플러그인을 실행합니다.",
-                                              "when":  "기존 프레젠테이션 안에서 자료 조사, 슬라이드 생성, 디자인 편집을 이어서 하고 싶을 때 사용합니다.",
-                                              "how":  "공식 블로그 기준으로 Genspark AI Slides Agent가 PowerPoint에 임베드되어 프레젠테이션 생성과 편집을 지원합니다.",
-                                              "steps":  [
-                                                            {
-                                                                "title":  "PowerPoint에서 플러그인을 엽니다",
-                                                                "body":  "열려 있는 발표 자료를 기준으로 필요한 새 슬라이드, 요약, 디자인 수정 요청을 입력합니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "실행"
-                                                            },
-                                                            {
-                                                                "title":  "결과를 기존 덱에 반영합니다",
-                                                                "body":  "생성된 슬라이드를 회사 템플릿과 메시지에 맞게 확인하고 조정합니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "반영"
-                                                            }
-                                                        ]
-                                          },
-                                          {
-                                              "title":  "Excel 플러그인",
-                                              "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                              "location":  "Microsoft Excel에서 Genspark 플러그인을 실행합니다.",
-                                              "when":  "현재 엑셀 데이터 안에서 정리, 분석, 수식, 표 요약을 빠르게 처리하고 싶을 때 사용합니다.",
-                                              "how":  "공식 블로그와 화면 설명 기준으로 AI Sheets Agent가 Excel 안에서 데이터 분석과 정리를 돕는 형태입니다.",
-                                              "steps":  [
-                                                            {
-                                                                "title":  "분석할 범위와 목적을 말합니다",
-                                                                "body":  "현재 시트에서 정리할 열, 계산할 지표, 만들 표나 차트를 구체적으로 요청합니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "요청"
-                                                            },
-                                                            {
-                                                                "title":  "수식과 결과를 검토합니다",
-                                                                "body":  "AI가 만든 계산식과 요약값은 원본 데이터와 비교해 확인합니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "검토"
-                                                            }
-                                                        ]
-                                          },
-                                          {
-                                              "title":  "Word 플러그인",
-                                              "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                              "location":  "Microsoft Word에서 Genspark 플러그인을 실행합니다.",
-                                              "when":  "작성 중인 Word 문서 안에서 초안 작성, 요약, 문체 수정, 구조 개선을 진행할 때 사용합니다.",
-                                              "how":  "공식 블로그와 화면 설명 기준으로 AI Docs Agent가 Word 문서 작성과 편집을 지원합니다.",
-                                              "steps":  [
-                                                            {
-                                                                "title":  "문서 목적을 입력합니다",
-                                                                "body":  "현재 문서를 바탕으로 요약, 확장, 문체 수정, 목차 생성 같은 작업을 요청합니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "요청"
-                                                            },
-                                                            {
-                                                                "title":  "변경 내용을 검토합니다",
-                                                                "body":  "문체, 사실관계, 회사 용어가 맞는지 확인한 뒤 문서에 반영합니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "검토"
-                                                            }
-                                                        ]
-                                          },
-                                          {
                                               "title":  "디자인 / 프로토타입",
                                               "image":  "./guidebook-assets/genspark_workspace_main.png",
                                               "location":  "Genspark Design에서 웹사이트, 앱 화면, 포스터, 마케팅 자산의 목적을 입력합니다.",
@@ -1269,15 +1206,15 @@ window.SERVICE_GUIDES = {
                                                         ]
                                           },
                                           {
-                                              "title":  "Google Workspace 플러그인",
+                                              "title":  "오피스 플러그인",
                                               "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                              "location":  "Google Workspace 플러그인은 Google Workspace Marketplace 기반의 외부 플러그인입니다.",
-                                              "when":  "비인가 사이트 및 외부 연동 기능으로 분류되어 회사 내부 환경에서는 사용할 수 없습니다.",
-                                              "how":  "회사 가이드에서는 사용 제한 기능으로 안내합니다. Google Docs, Sheets, Slides와 연동되는 기능이지만, 사내 보안 정책상 외부 Marketplace 플러그인 설치와 계정 연동이 허용되지 않으면 사용할 수 없습니다.",
+                                              "location":  "Google Workspace, PowerPoint, Excel, Word용 Genspark 플러그인은 외부 플러그인 또는 추가 기능 설치가 필요한 기능입니다.",
+                                              "when":  "회사 내부 환경에서는 사용할 수 없습니다. 각 플러그인의 세부 사유는 다를 수 있지만, 외부 마켓플레이스, 추가 기능 설치, 계정 연동, 문서 접근 권한이 필요한 기능이므로 사내 보안 정책상 사용 제한 항목으로 안내합니다.",
+                                              "how":  "회사 가이드에서는 Google Workspace 플러그인과 Microsoft Office 계열 플러그인을 하나로 묶어 사용 제한 기능으로 분류합니다. 문서, 스프레드시트, 프레젠테이션 안에서 AI를 직접 호출하는 기능이지만 회사 환경에서는 비인가 외부 연동 또는 설치 제한으로 사용할 수 없습니다.",
                                               "steps":  [
                                                             {
                                                                 "title":  "회사 내 사용 제한 기능으로 확인합니다",
-                                                                "body":  "Google Workspace 플러그인은 외부 Marketplace 설치와 Google 계정 연동이 필요한 기능입니다. 회사에서는 비인가 사이트 및 외부 연동 기능으로 분류되어 사용할 수 없는 항목으로 안내합니다.",
+                                                                "body":  "Google Workspace, PowerPoint, Excel, Word 플러그인은 외부 플러그인 설치와 계정 또는 문서 접근 권한이 필요한 기능입니다. 회사 내부 환경에서는 사용할 수 없는 기능으로 안내합니다.",
                                                                 "image":  "./guidebook-assets/genspark_workspace_main.png",
                                                                 "badge":  "제한"
                                                             }
