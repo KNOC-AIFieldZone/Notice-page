@@ -160,6 +160,18 @@
                              ],
     "news":  [
                  {
+                     "service":  "Meta AI",
+                     "title":  "Muse Glimmer 30B 공개",
+                     "date":  "2026-08-10",
+                     "file":  "2026-08-10-meta-ai-muse-glimmer-30b.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "Daybreak Blue/Red 및 GPT-5.6-Cyber 공개",
+                     "date":  "2026-08-10",
+                     "file":  "2026-08-10-openai-daybreak-blue-red-gpt-56-cyber.html"
+                 },
+                 {
                      "service":  "Gemini",
                      "title":  "Workspace Studio에서 Gemini Notebook 소스 자동 추가",
                      "date":  "2026-08-07",
