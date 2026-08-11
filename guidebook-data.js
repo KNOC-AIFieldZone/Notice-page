@@ -608,27 +608,27 @@ window.SERVICE_GUIDES = {
                                           {
                                               "title":  "AI Docs",
                                               "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                              "location":  "AI Docs에서 문서 목적, 독자, 형식, 참고 자료를 입력합니다.",
-                                              "when":  "보고서, 기획서, 브리핑, 요약문, 안내문 초안을 만들 때 사용합니다.",
-                                              "how":  "Rich Text 또는 Markdown 형식으로 문서를 만들고, 자동 디자인과 구조화를 적용한 뒤 HTML, Word, PDF로 내보낼 수 있습니다.",
+                                              "location":  "Genspark 메인 화면 입력칸 아래의 AI 문서를 클릭하거나, 왼쪽 사이드바의 AI 문서 메뉴를 선택합니다.",
+                                              "when":  "회사 소개 자료, 보고서, 기획서, 안내문, 제안서, 교육자료처럼 형식이 필요한 문서 초안을 만들 때 사용합니다.",
+                                              "how":  "출력 형식을 Word, 웹 문서, Markdown 중에서 고르고, 템플릿 또는 빈 문서로 시작합니다. 생성 후 채팅으로 수정하거나 직접 편집하고, Word, PDF, HTML 등으로 공유·내보내기 할 수 있습니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "문서 목적을 입력합니다",
-                                                                "body":  "누가 읽는 문서인지, 어떤 결론을 원하는지, 분량과 형식을 함께 적습니다.",
+                                                                "title":  "AI 문서를 클릭합니다",
+                                                                "body":  "Genspark 메인 화면의 입력창 아래에서 AI 문서를 클릭합니다. 새 문서를 만들 때는 여기서 시작하면 됩니다.",
                                                                 "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "입력"
+                                                                "badge":  "시작"
                                                             },
                                                             {
-                                                                "title":  "내용을 편집합니다",
-                                                                "body":  "문단 흐름, 표, 이미지, 제목 구조를 확인하고 회사 문체에 맞게 수정합니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "편집"
+                                                                "title":  "문서 형식과 템플릿을 선택합니다",
+                                                                "body":  "AI 문서 화면에서 빈 문서 또는 템플릿을 선택합니다. 화면 하단에서 출력 형식을 Word, 웹 문서, Markdown으로 고를 수 있습니다. 공식 도움말 기준으로 Word/Rich Text 계열은 보고서와 시각적 편집에, Markdown은 기술 문서나 구조화된 텍스트 작성에 적합합니다.",
+                                                                "image":  "./guidebook-assets/genspark_docs_main.png",
+                                                                "badge":  "설정"
                                                             },
                                                             {
-                                                                "title":  "필요한 형식으로 내보냅니다",
-                                                                "body":  "완성본은 HTML, Word, PDF 등 업무에 필요한 형식으로 저장합니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "내보내기"
+                                                                "title":  "요청을 작성하고 결과를 검토합니다",
+                                                                "body":  "예를 들어 \"KNOC 회사 소개 자료를 만들어 주세요. 표와 이미지를 사용하여 가독성 있게 구성해 주세요.\"처럼 목적, 대상, 포함할 내용, 원하는 형식을 함께 적습니다. 생성 후 사실관계, 표의 수치, 이미지 적합성, 문체를 확인하고 채팅이나 직접 편집으로 수정합니다. 완성 후 공유하거나 Word, PDF, HTML 형식으로 내보냅니다.",
+                                                                "image":  "./guidebook-assets/genspark_docs_result.png",
+                                                                "badge":  "결과"
                                                             }
                                                         ]
                                           },
