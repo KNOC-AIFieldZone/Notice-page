@@ -633,42 +633,6 @@ window.SERVICE_GUIDES = {
                                                         ]
                                           },
                                           {
-                                              "title":  "GenMail",
-                                              "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                              "location":  "GenMail은 별도 앱 설치 후 Gmail 또는 Outlook 계정을 연결해 사용하는 기능입니다.",
-                                              "when":  "개인 환경에서는 메일 확인, 답장 초안, 일정 확인 같은 작업에 사용할 수 있지만, 회사 내부 PC나 보안 정책이 적용되는 환경에서는 설치와 계정 연결이 제한될 수 있습니다.",
-                                              "how":  "현재 회사 내 사용 가이드에서는 설치형 기능으로 분류합니다. 업무 환경에서 사용하려면 사내 보안 정책, 메일 계정 연동 가능 여부, 외부 앱 설치 허용 여부를 먼저 확인해야 합니다.",
-                                              "steps":  [
-                                                            {
-                                                                "title":  "회사 내 사용 가능 여부를 먼저 확인합니다",
-                                                                "body":  "GenMail은 별도 앱 설치와 메일 계정 연결이 필요한 기능입니다. 회사 PC에서는 외부 앱 설치, Gmail 또는 Outlook 계정 연동, 메일 데이터 접근 권한이 제한될 수 있으므로 일반 사용 기능으로 안내하지 않습니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "제한"
-                                                            }
-                                                        ]
-                                          },
-                                          {
-                                              "title":  "Google Workspace 플러그인",
-                                              "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                              "location":  "Google Workspace Marketplace에서 Genspark 플러그인을 설치해 Docs, Sheets, Slides에서 사용합니다.",
-                                              "when":  "Google 문서, 스프레드시트, 프레젠테이션 안에서 바로 작성, 편집, 분석, 디자인 도움을 받고 싶을 때 사용합니다.",
-                                              "how":  "공개 마켓플레이스 설명 기준으로 Google Docs, Sheets, Slides 전반에서 채팅 방식으로 작업을 요청할 수 있습니다.",
-                                              "steps":  [
-                                                            {
-                                                                "title":  "플러그인을 설치합니다",
-                                                                "body":  "Google Workspace Marketplace에서 Genspark를 추가하고 필요한 권한을 확인합니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "설치"
-                                                            },
-                                                            {
-                                                                "title":  "문서 안에서 AI에게 요청합니다",
-                                                                "body":  "문서 작성, 표 분석, 슬라이드 디자인처럼 현재 열려 있는 파일 기준의 작업을 요청합니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "사용"
-                                                            }
-                                                        ]
-                                          },
-                                          {
                                               "title":  "PowerPoint 플러그인",
                                               "image":  "./guidebook-assets/genspark_workspace_main.png",
                                               "location":  "Microsoft PowerPoint에서 Genspark 플러그인을 실행합니다.",
@@ -1286,6 +1250,36 @@ window.SERVICE_GUIDES = {
                                                                 "body":  "Test Run으로 결과를 확인하고 문제가 없으면 Turn On으로 실행합니다. 실행 이력과 설정은 나중에 수정할 수 있습니다.",
                                                                 "image":  "./guidebook-assets/genspark_home.png",
                                                                 "badge":  "활성화"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "GenMail",
+                                              "image":  "./guidebook-assets/genspark_workspace_main.png",
+                                              "location":  "GenMail은 별도 앱 설치 후 Gmail 또는 Outlook 계정을 연결해 사용하는 기능입니다.",
+                                              "when":  "개인 환경에서는 메일 확인, 답장 초안, 일정 확인 같은 작업에 사용할 수 있지만, 회사 내부 PC나 보안 정책이 적용되는 환경에서는 설치와 계정 연결이 제한될 수 있습니다.",
+                                              "how":  "현재 회사 내 사용 가이드에서는 설치형 기능으로 분류합니다. 업무 환경에서 사용하려면 사내 보안 정책, 메일 계정 연동 가능 여부, 외부 앱 설치 허용 여부를 먼저 확인해야 합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "회사 내 사용 가능 여부를 먼저 확인합니다",
+                                                                "body":  "GenMail은 별도 앱 설치와 메일 계정 연결이 필요한 기능입니다. 회사 PC에서는 외부 앱 설치, Gmail 또는 Outlook 계정 연동, 메일 데이터 접근 권한이 제한될 수 있으므로 일반 사용 기능으로 안내하지 않습니다.",
+                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
+                                                                "badge":  "제한"
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "Google Workspace 플러그인",
+                                              "image":  "./guidebook-assets/genspark_workspace_main.png",
+                                              "location":  "Google Workspace 플러그인은 Google Workspace Marketplace 기반의 외부 플러그인입니다.",
+                                              "when":  "비인가 사이트 및 외부 연동 기능으로 분류되어 회사 내부 환경에서는 사용할 수 없습니다.",
+                                              "how":  "회사 가이드에서는 사용 제한 기능으로 안내합니다. Google Docs, Sheets, Slides와 연동되는 기능이지만, 사내 보안 정책상 외부 Marketplace 플러그인 설치와 계정 연동이 허용되지 않으면 사용할 수 없습니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "회사 내 사용 제한 기능으로 확인합니다",
+                                                                "body":  "Google Workspace 플러그인은 외부 Marketplace 설치와 Google 계정 연동이 필요한 기능입니다. 회사에서는 비인가 사이트 및 외부 연동 기능으로 분류되어 사용할 수 없는 항목으로 안내합니다.",
+                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
+                                                                "badge":  "제한"
                                                             }
                                                         ]
                                           }
