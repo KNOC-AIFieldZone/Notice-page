@@ -160,6 +160,12 @@
                              ],
     "news":  [
                  {
+                     "service":  "xAI",
+                     "title":  "Grok Bot 베타 공개",
+                     "date":  "2026-08-11",
+                     "file":  "2026-08-11-xai-grok-bot-beta.html"
+                 },
+                 {
                      "service":  "Meta AI",
                      "title":  "Muse Glimmer 30B 공개",
                      "date":  "2026-08-10",
