@@ -750,7 +750,7 @@ window.SERVICE_GUIDES = {
                                                             {
                                                                 "title":  "영상 장면을 설명합니다",
                                                                 "body":  "등장 대상, 움직임, 카메라, 길이, 분위기, 화면 비율을 입력합니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
+                                                                "image":  "./guidebook-assets/genspark_content_creation_menu.png",
                                                                 "badge":  "입력"
                                                             },
                                                             {
@@ -777,7 +777,7 @@ window.SERVICE_GUIDES = {
                                                             {
                                                                 "title":  "음악 목적을 입력합니다",
                                                                 "body":  "사용 장면, 분위기, 장르, 템포, 가사 포함 여부를 적습니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
+                                                                "image":  "./guidebook-assets/genspark_content_creation_menu.png",
                                                                 "badge":  "입력"
                                                             },
                                                             {
@@ -798,7 +798,7 @@ window.SERVICE_GUIDES = {
                                                             {
                                                                 "title":  "작업 유형을 선택합니다",
                                                                 "body":  "읽어 줄 음성 만들기, 특정 목소리 복제, 녹음 파일 전사 중 필요한 작업을 선택합니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
+                                                                "image":  "./guidebook-assets/genspark_content_creation_menu.png",
                                                                 "badge":  "선택"
                                                             },
                                                             {
@@ -825,7 +825,7 @@ window.SERVICE_GUIDES = {
                                                             {
                                                                 "title":  "영상과 편집 목적을 넣습니다",
                                                                 "body":  "원본 영상 URL 또는 파일을 넣고 “핵심 장면 3개로 짧은 홍보 영상”처럼 원하는 결과를 설명합니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
+                                                                "image":  "./guidebook-assets/genspark_content_creation_menu.png",
                                                                 "badge":  "입력"
                                                             },
                                                             {
@@ -852,7 +852,7 @@ window.SERVICE_GUIDES = {
                                                             {
                                                                 "title":  "주제나 자료를 넣습니다",
                                                                 "body":  "텍스트, PDF, DOCX, TXT 등 자료를 넣고 어떤 관점의 팟캐스트로 만들지 적습니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
+                                                                "image":  "./guidebook-assets/genspark_content_creation_menu.png",
                                                                 "badge":  "입력"
                                                             },
                                                             {
