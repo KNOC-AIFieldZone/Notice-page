@@ -689,27 +689,27 @@ window.SERVICE_GUIDES = {
                                           {
                                               "title":  "대시보드 및 CRM",
                                               "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                              "location":  "AgentBase에서 만들 시스템을 한 문장으로 설명하거나 CSV, Excel, PDF, Word 파일을 올립니다.",
-                                              "when":  "영업 관리, 재고 관리, 콘텐츠 캘린더, 채용 파이프라인, 개인 트래커 같은 데이터 기반 업무 시스템을 만들 때 사용합니다.",
-                                              "how":  "공식 문서 기준으로 데이터베이스, 초기 데이터, 뷰를 자동 구성하고 HubSpot, Salesforce, 데이터베이스 연결 또는 템플릿에서 시작할 수 있습니다.",
+                                              "location":  "Genspark 메인 화면 입력칸 아래의 대시보드 및 CRM을 클릭하거나, AgentBase 화면에서 만들 시스템을 설명합니다.",
+                                              "when":  "고객 상담 관리, 후속 연락 관리, 재고 관리, 프로젝트 현황, 콘텐츠 일정, 채용 파이프라인처럼 표와 대시보드로 계속 관리해야 하는 업무에 사용합니다.",
+                                              "how":  "AgentBase는 한 문장으로 데이터베이스, 테이블, 뷰, 대시보드를 만드는 기능입니다. CRM은 고객 관계 관리 시스템을 뜻하며, 고객 정보, 상담 이력, 거래 상태, 후속 연락일, 담당자 메모를 한곳에서 관리할 때 사용합니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "만들 시스템을 설명합니다",
-                                                                "body":  "예: “고객 상담 이력과 후속 연락일을 관리하는 CRM을 만들어 주세요.”처럼 목적과 필드를 적습니다.",
+                                                                "title":  "대시보드 및 CRM을 클릭합니다",
+                                                                "body":  "Genspark 메인 화면의 입력창 아래에서 대시보드 및 CRM을 클릭합니다. 고객, 재고, 프로젝트, 일정처럼 계속 쌓이는 데이터를 관리할 때 적합합니다.",
                                                                 "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "설명"
+                                                                "badge":  "시작"
                                                             },
                                                             {
-                                                                "title":  "데이터를 업로드하거나 연결합니다",
-                                                                "body":  "CSV, Excel, PDF, Word 파일을 넣거나 HubSpot, Salesforce, 데이터베이스를 연결할 수 있습니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "연결"
+                                                                "title":  "시스템을 만드는 방법을 선택합니다",
+                                                                "body":  "AgentBase 화면에서는 받은편지함에서 가져오기, 파일에서 가져오기, 다른 앱에서 가져오기, 직접 설명하기로 시작할 수 있습니다. 화면 상단의 템플릿은 영업 & CRM, 재고, 프로젝트, 마케팅, HR & 채용, 개인 등 업무 유형별 예시를 보여줍니다. 공식 자료 기준으로 AI가 필요한 테이블, 필드, 초기 데이터, 보기 화면을 자동으로 구성합니다.",
+                                                                "image":  "./guidebook-assets/genspark_agentbase_main.png",
+                                                                "badge":  "설정"
                                                             },
                                                             {
-                                                                "title":  "뷰와 입력 항목을 확인합니다",
-                                                                "body":  "생성된 대시보드의 컬럼, 상태값, 필터, 권한이 실제 업무 흐름과 맞는지 확인합니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "검토"
+                                                                "title":  "CRM을 만들고 관리 항목을 확인합니다",
+                                                                "body":  "예를 들어 \"고객 상담 이력과 후속 연락일을 관리하는 CRM을 만들어 주세요.\"라고 요청합니다. 생성 후 contacts, interactions, reminders 같은 테이블이 생기면 고객 목록, 상담 이력, 다음 연락일, 상태값을 확인합니다. 왼쪽 사이드바에서 대시보드와 테이블을 이동하고, + 버튼으로 새 테이블이나 뷰를 추가할 수 있습니다. 화면에서는 공유, 권한 관리, 삭제 버튼이 보이며, 대화창에서 \"오늘 기준 후속 연락 예정 고객을 보여 주세요\"처럼 후속 요청을 이어갈 수 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_agentbase_result.png",
+                                                                "badge":  "관리"
                                                             }
                                                         ]
                                           },
