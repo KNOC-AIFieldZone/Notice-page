@@ -418,8 +418,7 @@
                     <h3 class="service-name">${highlight(s.display)}</h3>
                     <p class="service-role">${highlight(polite(s.role || s.overview))}</p>
                     <div class="chips">
-                      <span class="chip">${(s.sections || []).length}개 기능</span>
-                      ${(s.features || []).slice(0, 2).map((f) => `<span class="chip">${esc(f)}</span>`).join("")}
+                      ${(s.features || []).slice(0, 9).map((f) => `<span class="chip">${esc(f)}</span>`).join("")}
                     </div>
                   </div>
                 </a>
@@ -490,7 +489,7 @@
           <div class="panel-hd">
             <div>
               <h3 class="panel-title">기능 목록</h3>
-              <div class="panel-meta">${features.length}개 기능</div>
+              <div class="panel-meta">세부 기능 목록</div>
             </div>
           </div>
           <div class="panel-bd">
@@ -598,7 +597,7 @@
 
     function renderDetail(service){
       const features = service.sections || [];
-      const keyFeatures = (service.features || []).slice(0, 8);
+      const keyFeatures = (service.features || []).slice(0, 9);
       const featureIdx = currentFeatureIndex(service);
       const selectedFeature = featureIdx === null ? null : features[featureIdx];
       const guideDate = service.guideDate || ((service.basis || "").match(/\d{4}-\d{2}-\d{2}/) || [data.generatedAt || ""])[0];
