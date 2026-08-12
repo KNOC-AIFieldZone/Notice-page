@@ -738,7 +738,13 @@ window.SERVICE_GUIDES = {
                                                                 "image":  "./guidebook-assets/genspark_image_result.png",
                                                                 "badge":  "결과"
                                                             }
-                                                        ]
+                                                        ],
+                                              "imageSamples":  [
+                                                                   {
+                                                                       "title":  "결과물 1",
+                                                                       "src":  "./guidebook-assets/genspark_image_sample_1.png"
+                                                                   }
+                                                               ]
                                           },
                                           {
                                               "title":  "AI 동영상",
