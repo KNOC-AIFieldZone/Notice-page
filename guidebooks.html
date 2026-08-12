@@ -153,7 +153,7 @@
       overflow:hidden;
     }
     .hero-copy{padding:18px;}
-    .eyebrow{color:var(--muted);font-size:12px;font-weight:900;margin-bottom:8px;}
+    .eyebrow{color:var(--muted);font-size:12px;font-weight:900;margin-bottom:8px;text-align:right;}
     .hero h2{margin:0;font-size:26px;line-height:1.18;font-weight:950;}
     .hero p{margin:10px 0 0;color:var(--muted);font-size:14px;line-height:1.58;}
     .hero .chip{
@@ -601,13 +601,14 @@
       const keyFeatures = (service.features || []).slice(0, 8);
       const featureIdx = currentFeatureIndex(service);
       const selectedFeature = featureIdx === null ? null : features[featureIdx];
+      const guideDate = service.guideDate || ((service.basis || "").match(/\d{4}-\d{2}-\d{2}/) || [data.generatedAt || ""])[0];
       $app.innerHTML = `
         <div class="detail-layout">
           ${selectedFeature ? renderFeatureNav(service, featureIdx) : renderSide(service.id)}
           <main>
             <section class="hero" style="--accent:${esc(service.tone || "#5eead4")}">
               <div class="hero-copy">
-                <div class="eyebrow">${esc(service.basis || data.generatedAt || "")}</div>
+                ${guideDate ? `<div class="eyebrow">작성 기준일: ${esc(guideDate)}</div>` : ""}
                 <h2>${esc(service.display)}</h2>
                 <p>${copy(service.overview || service.role)}</p>
                 <div class="chips">
