@@ -206,6 +206,11 @@
     .audio-card-head{display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--card-text);font-size:13px;font-weight:950;}
     .audio-duration{color:var(--card-muted);font-size:12px;font-weight:800;}
     .audio-card audio{width:100%;height:34px;}
+    .video-samples{display:grid;gap:10px;}
+    .video-card{border:1px solid rgba(15,23,42,.12);border-radius:8px;background:#fff;padding:12px;display:grid;gap:10px;}
+    .video-card-head{display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--card-text);font-size:13px;font-weight:950;}
+    .video-duration{color:var(--card-muted);font-size:12px;font-weight:800;}
+    .video-card video{width:100%;height:auto;max-height:560px;background:#000;border-radius:6px;display:block;}
     .feature-nav{position:sticky;top:18px;}
     .feature-nav-list{display:grid;gap:6px;}
     .feature-nav-link{display:block;border:1px solid rgba(15,23,42,.14);border-radius:8px;background:var(--card);color:var(--card-text);text-decoration:none;padding:9px;font-size:12px;font-weight:850;line-height:1.35;}
@@ -501,6 +506,7 @@
       const features = service.sections || [];
       const steps = defaultSteps(feature);
       const audioSamples = asList(feature.audioSamples);
+      const videoSamples = asList(feature.videoSamples);
       return `
         <div class="section-head">
           <h3>기능 상세</h3>
@@ -546,6 +552,22 @@
                         <span class="audio-duration">${esc(sample.duration || "")}</span>
                       </div>
                       <audio controls preload="metadata" src="${esc(sample.src)}"></audio>
+                    </div>
+                  `).join("")}
+                </div>
+              </section>
+            ` : ""}
+            ${videoSamples.length ? `
+              <section class="detail-block full">
+                <h4>결과물 샘플</h4>
+                <div class="video-samples">
+                  ${videoSamples.map((sample, sampleIdx) => `
+                    <div class="video-card">
+                      <div class="video-card-head">
+                        <span>${esc(sample.title || `결과물 ${sampleIdx + 1}`)}</span>
+                        <span class="video-duration">${esc(sample.duration || "")}</span>
+                      </div>
+                      <video controls preload="metadata" src="${esc(sample.src)}"></video>
                     </div>
                   `).join("")}
                 </div>

@@ -765,7 +765,14 @@ window.SERVICE_GUIDES = {
                                                                 "image":  "./guidebook-assets/genspark_video_result.png",
                                                                 "badge":  "결과"
                                                             }
-                                                        ]
+                                                        ],
+                                              "videoSamples":  [
+                                                                   {
+                                                                       "title":  "결과물 1",
+                                                                       "duration":  "재생",
+                                                                       "src":  "./guidebook-assets/genspark_video_sample_1.mp4"
+                                                                   }
+                                                               ]
                                           },
                                           {
                                               "title":  "AI 음악",
