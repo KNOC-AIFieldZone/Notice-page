@@ -770,23 +770,51 @@ window.SERVICE_GUIDES = {
                                           {
                                               "title":  "AI 음악",
                                               "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                              "location":  "AI Music에서 원하는 장르, 분위기, 길이, 가사 여부를 입력합니다.",
-                                              "when":  "영상 배경음악, 행사 음악, 짧은 로고 사운드, 노래 초안이 필요할 때 사용합니다.",
-                                              "how":  "공개 도구 페이지 기준으로 텍스트에서 노래를 만들거나, 가사 기반 음악, 보컬, 연주곡을 만들 수 있습니다.",
+                                              "location":  "Genspark 메인 화면 입력창 아래의 AI 음악을 클릭하거나, 왼쪽 사이드바의 AI 음악 메뉴를 선택합니다.",
+                                              "when":  "영상 배경음악, 행사 음악, 짧은 로고 사운드, 노래 초안, 가사 기반 보컬곡, 악기 연주곡이 필요할 때 사용합니다.",
+                                              "how":  "원하는 음악이나 사운드 효과를 문장으로 설명하고 모델, 장르, 자동 작곡 옵션을 선택합니다. 공식 도구 페이지 기준으로 텍스트 설명만으로 노래나 연주곡을 만들 수 있고, 가사와 분위기를 함께 넣어 보컬곡을 만들 수도 있습니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "음악 목적을 입력합니다",
-                                                                "body":  "사용 장면, 분위기, 장르, 템포, 가사 포함 여부를 적습니다.",
+                                                                "title":  "AI 음악을 클릭합니다",
+                                                                "body":  "Genspark 메인 화면의 콘텐츠 제작 메뉴에서 AI 음악을 클릭합니다. 만들 음악이 배경음악인지, 노래인지, 악기 연주곡인지 먼저 정합니다.",
                                                                 "image":  "./guidebook-assets/genspark_content_creation_menu.png",
-                                                                "badge":  "입력"
+                                                                "badge":  "시작"
                                                             },
                                                             {
-                                                                "title":  "생성 결과를 듣고 고릅니다",
-                                                                "body":  "보컬, 길이, 분위기, 반복 구간이 용도에 맞는지 확인합니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "확인"
+                                                                "title":  "모델과 장르를 선택합니다",
+                                                                "body":  "메인 화면에서 모델을 선택합니다. 화면에는 ElevenLabs Music, MiniMax Music, Mureka, Lyria 같은 여러 모델이 보이며, 모델마다 지원하는 길이, 장르, 가사 처리, 보컬·악기 표현이 다를 수 있습니다. 모델 자동 선택을 켜면 요청에 맞는 모델을 AI가 고릅니다. 장르 선택에서 발라드, 팝, 록, 재즈, 사운드 효과 등 원하는 분위기를 지정할 수 있고, 자동 작곡은 입력한 설명을 바탕으로 멜로디와 편곡 방향을 자동으로 잡는 옵션입니다. 예를 들어 \"한국어 노래로, 3~4분 길이의 남성 발라드 이별 노래를 만들고 싶습니다. 가사를 포함해 주세요.\"처럼 언어, 길이, 보컬, 장르, 분위기를 함께 적습니다.",
+                                                                "image":  "./guidebook-assets/genspark_music_main.png",
+                                                                "badge":  "설정"
+                                                            },
+                                                            {
+                                                                "title":  "결과를 듣고 사용할 버전을 고릅니다",
+                                                                "body":  "결과 화면에서 여러 모델이 만든 음악을 비교해 듣습니다. 재생 버튼으로 들어 보고, 가사와 멜로디가 목적에 맞는지, 보컬 발음이 어색하지 않은지, 길이와 분위기가 사용 장면에 맞는지 확인합니다. 필요하면 같은 요청으로 다시 생성하거나 장르, 템포, 보컬, 가사 내용을 바꿔 후속 요청합니다.",
+                                                                "image":  "./guidebook-assets/genspark_music_result.png",
+                                                                "badge":  "결과"
                                                             }
-                                                        ]
+                                                        ],
+                                              "audioSamples":  [
+                                                                   {
+                                                                       "title":  "결과물 1",
+                                                                       "duration":  "3:08",
+                                                                       "src":  "./guidebook-assets/genspark_music_sample_1.mp3"
+                                                                   },
+                                                                   {
+                                                                       "title":  "결과물 2",
+                                                                       "duration":  "3:14",
+                                                                       "src":  "./guidebook-assets/genspark_music_sample_2.mp3"
+                                                                   },
+                                                                   {
+                                                                       "title":  "결과물 3",
+                                                                       "duration":  "2:57",
+                                                                       "src":  "./guidebook-assets/genspark_music_sample_3.mp3"
+                                                                   },
+                                                                   {
+                                                                       "title":  "결과물 4",
+                                                                       "duration":  "3:40",
+                                                                       "src":  "./guidebook-assets/genspark_music_sample_4.mp3"
+                                                                   }
+                                                               ]
                                           },
                                           {
                                               "title":  "AI 오디오",
