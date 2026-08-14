@@ -1249,7 +1249,7 @@ window.SERVICE_GUIDES = {
                                               "steps":  [
                                                             {
                                                                 "title":  "GenMail을 클릭합니다",
-                                                                "body":  "왼쪽 사이드바의 더보기(…)를 누른 뒤 GenMail을 클릭합니다. 다만 GenMail은 별도 앱 설치와 메일 계정 연결이 필요한 기능이므로, 회사 PC에서는 외부 앱 설치, Gmail 또는 Outlook 계정 연동, 메일 데이터 접근 권한이 제한될 수 있습니다.",
+                                                                "body":  "왼쪽 사이드바의 더보기(…)를 누른 뒤 GenMail을 클릭합니다. GenMail은 별도 앱 설치가 필요한 설치형 기능이므로 회사 내부 PC에서는 사용할 수 없는 기능으로 안내합니다. 또한 Gmail 또는 Outlook 계정 연결과 메일 데이터 접근 권한이 필요해 사내 보안 정책상 제한됩니다.",
                                                                 "image":  "./guidebook-assets/genspark_more_menu.png",
                                                                 "badge":  "진입"
                                                             }
