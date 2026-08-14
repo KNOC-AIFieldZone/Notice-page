@@ -77,6 +77,30 @@
                  ],
     "news":  [
                  {
+                     "service":  "Suno",
+                     "title":  "Studio 2.0 공개",
+                     "date":  "2026-08-13",
+                     "file":  "2026-08-13-suno-studio-20.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "GPT-5.6 Sol Ultrafast 모드 제한 프리뷰 공개",
+                     "date":  "2026-08-13",
+                     "file":  "2026-08-13-openai-gpt-56-sol-ultrafast-preview.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Google Sheets canvas 공개",
+                     "date":  "2026-08-13",
+                     "file":  "2026-08-13-gemini-google-sheets-canvas.html"
+                 },
+                 {
+                     "service":  "DeepSeek",
+                     "title":  "DeepSeek-V4-Pro GA 공개",
+                     "date":  "2026-08-13",
+                     "file":  "2026-08-13-deepseek-v4-pro-ga.html"
+                 },
+                 {
                      "service":  "xAI",
                      "title":  "Grok 4.6 공개",
                      "date":  "2026-08-12",
