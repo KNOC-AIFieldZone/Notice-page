@@ -1218,7 +1218,7 @@ window.SERVICE_GUIDES = {
                                               "image":  "./guidebook-assets/genspark_workspace_main.png",
                                               "location":  "Workflows 메뉴에서 새 Workflow를 만들거나 템플릿을 선택합니다.",
                                               "when":  "정해진 시간마다 자료를 수집하거나 이메일, 문서, 일정, 메시지 작업을 반복 실행해야 할 때 사용합니다.",
-                                              "how":  "자연어로 반복 업무를 설명하면 트리거와 작업 단계를 구성하고, 테스트 실행 후 켜거나 끌 수 있습니다.",
+                                              "how":  "반복 업무를 자연어로 설명하면 실행 조건과 작업 단계를 구성하는 자동화 기능입니다. 템플릿을 고르거나 새 워크플로우를 만들 수 있고, 실행 전 테스트한 뒤 켜고 끄면서 관리합니다.",
                                               "steps":  [
                                                             {
                                                                 "title":  "워크플로우를 클릭합니다",
@@ -1228,15 +1228,15 @@ window.SERVICE_GUIDES = {
                                                             },
                                                             {
                                                                 "title":  "트리거와 연결 앱을 확인합니다",
-                                                                "body":  "공식 문서 기준으로 일정, 이메일 트리거와 Gmail, Outlook, Google Drive, Slack, Teams, Salesforce 등 여러 연결을 사용할 수 있습니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "설정"
+                                                                "body":  "Workflow는 반복 업무를 자동으로 실행하기 위한 기능입니다. 화면의 템플릿처럼 회의 노트를 이메일로 보내기, 안 읽은 메일 요약, AI 뉴스 일일 집계, 주간 보고서 작성, 첨부파일 저장 같은 작업을 정해진 조건에 맞춰 실행할 수 있습니다. 공식 자료 기준으로 이메일, 캘린더, 문서, 파일 저장소 등 외부 앱과 연결해 사용할 수 있으며, 연결 앱은 계정 권한과 사내 보안 정책을 먼저 확인해야 합니다.",
+                                                                "image":  "./guidebook-assets/genspark_workflows_main.png",
+                                                                "badge":  "기능"
                                                             },
                                                             {
-                                                                "title":  "테스트 후 활성화합니다",
-                                                                "body":  "Test Run으로 결과를 확인하고 문제가 없으면 Turn On으로 실행합니다. 실행 이력과 설정은 나중에 수정할 수 있습니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "활성화"
+                                                                "title":  "예시 작업을 정해 새 워크플로우를 만듭니다",
+                                                                "body":  "오른쪽 위 새 워크플로우를 클릭한 뒤 자동화할 일을 자연어로 작성합니다. 예시로는 “매일 오전 9시에 AI 서비스 관련 뉴스와 공식 공지를 찾아 핵심 내용, 원문 링크, 업무 참고 사항을 표로 정리해 주세요.” 또는 “매주 금요일 오후 4시에 이번 주 회의록과 작업 결과를 모아 다음 주 해야 할 일을 정리해 주세요.”처럼 실행 주기, 찾을 자료, 결과 형식을 함께 적으면 좋습니다. 만든 뒤에는 테스트 실행으로 결과를 확인하고, 문제가 없을 때 활성화합니다.",
+                                                                "image":  "./guidebook-assets/genspark_workflows_main.png",
+                                                                "badge":  "예시"
                                                             }
                                                         ]
                                           },
