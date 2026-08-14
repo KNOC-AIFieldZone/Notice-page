@@ -1260,97 +1260,74 @@ window.SERVICE_GUIDES = {
                                      ]
                      },
                      {
-                         "id":  "lilysai",
-                         "name":  "Lilys AI",
-                         "display":  "LilysAI",
-                         "title":  "LilysAI 기능 중심 사용 가이드",
-                         "domain":  "lilys.ai",
-                         "url":  "https://lilys.ai/",
-                         "tone":  "#14b8a6",
-                         "role":  "영상, PDF, 웹페이지, 오디오를 빠르게 읽고 근거 중심으로 요약하는 도구",
-                         "basis":  "2026-08-14",
-                         "overview":  "긴 영상, 웹페이지, PDF, 오디오, 책을 빠르게 이해하고 정리할 때 적합하다. 자료 기반 요약, 인용 확인, 학습자료 생성에 강하다.",
-                         "hero":  "./guidebook-assets/lilysai_help_add_source.png",
-                         "features":  [
-                                          "유튜브 요약",
-                                          "PDF 요약",
-                                          "웹페이지 요약",
-                                          "녹음·영상 정리",
-                                          "여러 자료 비교",
-                                          "리포트 작성",
-                                          "마인드맵",
-                                          "학습자료 만들기",
-                                          "인용 확인"
-                                      ],
-                         "tips":  [
-                                      "먼저 업무 목표와 원하는 결과물 형식을 정한다.",
-                                      "입력 자료가 있으면 파일, 링크, 이미지, 오디오 등으로 함께 넣는다.",
-                                      "AI 결과는 초안으로 보고, 사실/숫자/권리/보안은 직접 확인한다."
-                                  ],
-                         "sections":  [
-                                          {
-                                              "title":  "자료 추가",
-                                              "image":  "./guidebook-assets/lilysai_help_add_source.png",
-                                              "location":  "URL을 붙여넣거나 파일을 업로드해 요약할 소스를 넣는다.",
-                                              "when":  "영상, PDF, 웹페이지, 녹음 파일을 빠르게 이해해야 할 때 첫 단계로 쓴다.",
-                                              "how":  "자료 유형에 따라 처리 시간이 달라질 수 있다."
-                                          },
-                                          {
-                                              "title":  "YouTube 요약",
-                                              "image":  "./guidebook-assets/lilysai_home.png",
-                                              "location":  "YouTube 링크를 입력하면 핵심 요약과 타임라인을 확인한다.",
-                                              "when":  "웨비나, 강의, 제품 데모, 인터뷰 내용을 빠르게 정리할 때 쓴다.",
-                                              "how":  "중요 내용은 타임스탬프를 눌러 원 영상을 확인한다."
-                                          },
-                                          {
-                                              "title":  "웹페이지/PDF 요약",
-                                              "image":  "./guidebook-assets/lilysai_help_add_source.png",
-                                              "location":  "웹 링크나 PDF를 넣고 핵심 요약, 쉬운 요약, 대화 노트를 전환해 본다.",
-                                              "when":  "보고서, 논문, 기사, 매뉴얼을 빠르게 읽을 때 쓴다.",
-                                              "how":  "인용이 있는 부분은 원문과 대조한다."
-                                          },
-                                          {
-                                              "title":  "오디오/영상 요약",
-                                              "image":  "./guidebook-assets/lilysai_home.png",
-                                              "location":  "녹음이나 영상 파일을 업로드해 요약과 주요 구간을 추출한다.",
-                                              "when":  "회의 녹음, 교육 영상, 인터뷰 분석에 적합하다.",
-                                              "how":  "사내 녹음 파일은 업로드 가능 여부를 먼저 확인한다."
-                                          },
-                                          {
-                                              "title":  "Lily 채팅",
-                                              "image":  "./guidebook-assets/lilysai_home.png",
-                                              "location":  "요약 결과 화면에서 자료에 대해 추가 질문한다.",
-                                              "when":  "특정 발언, 숫자, 주장, 실행 항목을 다시 찾을 때 쓴다.",
-                                              "how":  "질문은 \u0027이 자료 안에서만 답해줘\u0027처럼 범위를 좁힌다."
-                                          },
-                                          {
-                                              "title":  "Deep Search",
-                                              "image":  "./guidebook-assets/lilysai_home.png",
-                                              "location":  "자료가 없는 상태에서 조사 질문을 입력해 관련 자료를 찾는다.",
-                                              "when":  "조사 시작 단계에서 참고 자료를 넓게 찾을 때 쓴다.",
-                                              "how":  "찾은 자료의 출처와 날짜를 확인한다."
-                                          },
-                                          {
-                                              "title":  "멀티소스",
-                                              "image":  "./guidebook-assets/lilysai_multisource.png",
-                                              "location":  "여러 자료를 한 프로젝트에 넣고 통합 질문을 한다.",
-                                              "when":  "여러 보고서, 영상, 기사 내용을 비교해 하나의 리포트로 만들 때 쓴다.",
-                                              "how":  "소스별 관점 차이를 따로 기록한다."
-                                          },
-                                          {
-                                              "title":  "리포트/마인드맵/퀴즈",
-                                              "image":  "./guidebook-assets/lilysai_home.png",
-                                              "location":  "요약 결과를 리포트, 마인드맵, 인포그래픽, 퀴즈, 플래시카드로 변환한다.",
-                                              "when":  "교육자료, 온보딩 자료, 발표 준비에 쓴다.",
-                                              "how":  "생성된 학습자료는 원자료와 사실관계를 확인한다."
-                                          }
-                                      ],
-                         "sources":  [
-                                         "https://lilys.ai/en/features/",
-                                         "https://help.lilys.ai/en/",
-                                         "https://help.lilys.ai/en/articles/12469136-deeper-more-accurate-search-with-deep-search"
-                                     ]
-                     },
+    "id":  "lilysai",
+    "name":  "Lilys AI",
+    "display":  "LilysAI",
+    "title":  "LilysAI 자료 요약 사용 가이드",
+    "domain":  "lilys.ai",
+    "url":  "https://lilys.ai/",
+    "tone":  "#14b8a6",
+    "role":  "유튜브, 웹사이트, PDF, 영상·음성 자료를 빠르게 요약하고 필요한 부분을 다시 찾아보는 자료 정리 도구",
+    "basis":  "2026-08-14",
+    "overview":  "LilysAI는 유튜브 영상, 웹사이트, PDF, 영상·음성 파일, 텍스트 자료를 가져와 요약 문서와 스크립트를 함께 확인할 수 있는 자료 정리 서비스입니다. 긴 자료를 빠르게 파악하고, 추가 자료를 붙이거나 AI에게 질문해 보고서 초안으로 정리할 때 사용합니다.",
+    "hero":  "./guidebook-assets/lilysai_main.png",
+    "features":  [
+                     "자료요약",
+                     "유튜브요약",
+                     "PDF요약",
+                     "웹페이지요약",
+                     "음성·영상정리",
+                     "스크립트확인",
+                     "AI질문",
+                     "자료찾기",
+                     "공유·내보내기"
+                 ],
+    "tips":  [
+                 "긴 영상이나 회의 녹음은 먼저 요약으로 전체 흐름을 확인한 뒤, 필요한 구간은 왼쪽 스크립트에서 다시 확인합니다.",
+                 "여러 자료를 함께 넣을 때는 자료별 출처와 목적을 구분해 두면 이후 질문과 보고서 정리가 쉬워집니다.",
+                 "공유 또는 파일 내보내기 전에는 AI 요약의 핵심 사실과 원문 링크를 한 번 더 확인합니다."
+             ],
+    "sections":  [
+                     {
+                         "title":  "자료 요약하기",
+                         "image":  "./guidebook-assets/lilysai_main.png",
+                         "summary":  "가지고 있는 자료나 링크를 넣으면 스크립트, 핵심 요약, 추가 질문, 공유·내보내기까지 한 화면에서 처리할 수 있습니다.",
+                         "steps":  [
+                                       {
+                                           "title":  "LilysAI 메인에서 새 자료를 준비합니다.",
+                                           "image":  "./guidebook-assets/lilysai_main.png",
+                                           "description":  "홈 화면의 라이브러리에서 기존 자료를 확인하고, 오른쪽 위 또는 왼쪽의 새로 추가하기를 눌러 새 자료를 가져올 수 있습니다."
+                                       },
+                                       {
+                                           "title":  "가지고 있는 자료를 추가합니다.",
+                                           "image":  "./guidebook-assets/lilysai_add_source.png",
+                                           "description":  "유튜브 링크, 웹사이트 링크, PDF, 영상·음성 파일, 텍스트 파일을 넣을 수 있고 책 검색, 기존 자료 불러오기도 사용할 수 있습니다. 버튼으로 파일을 선택하거나 화면에 드래그 앤 드롭해 추가할 수 있으며, 여러 자료를 함께 넣어 하나의 자료 묶음으로 정리할 수 있습니다."
+                                       },
+                                       {
+                                           "title":  "요약 화면에서 핵심 내용과 원문을 함께 확인합니다.",
+                                           "image":  "./guidebook-assets/lilysai_summary_view.png",
+                                           "description":  "왼쪽에는 재생 구간과 스크립트가 표시되고, 가운데에는 요약 문서가 생성됩니다. 상단에서 요약과 확장을 전환하고 길이, 템플릿, 글꼴 같은 보기 방식을 조정할 수 있습니다. 오른쪽 LILY 패널에는 자료에 대해 질문하거나 문장 수정, 보충 작성을 요청할 수 있으며, 오른쪽 위 더보기 메뉴에서 직접 편집도 할 수 있습니다."
+                                       },
+                                       {
+                                           "title":  "자료를 더 붙이거나 AI로 찾아옵니다.",
+                                           "image":  "./guidebook-assets/lilysai_source_add_find.png",
+                                           "description":  "새로 만들기 옆 자료 리스트 보기 버튼을 열면 자료 추가와 자료 찾기를 사용할 수 있습니다. 자료 추가는 사용자가 가진 파일이나 링크를 더 넣는 기능이고, 자료 찾기는 검색어를 기반으로 관련 웹 자료를 찾아 요약에 참고 자료로 붙이는 방식입니다."
+                                       },
+                                       {
+                                           "title":  "완성한 요약을 공유하거나 파일로 내보냅니다.",
+                                           "image":  "./guidebook-assets/lilysai_share_export.png",
+                                           "description":  "상단 공유 버튼에서 링크 공유를 할 수 있고, 내보내기에서는 PDF, Notion, DOCX, JSON, Markdown 등 필요한 형식으로 저장할 수 있습니다. 보고서 전달용이면 PDF나 DOCX, 데이터 재사용 목적이면 JSON 또는 Markdown이 적합합니다."
+                                       }
+                                   ]
+                     }
+                 ],
+    "sources":  [
+                    "https://lilys.ai/en/",
+                    "https://lilys.ai/en/features/",
+                    "https://help.lilys.ai/en/"
+                ]
+},
+
                      {
                          "id":  "gemini",
                          "name":  "Gemini",
