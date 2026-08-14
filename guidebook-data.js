@@ -945,10 +945,10 @@ window.SERVICE_GUIDES = {
                                               "how":  "공식 문서 기준으로 Web, 모바일 앱, Apple Watch에서 녹음을 시작할 수 있고, Google Calendar 또는 Outlook을 연결하면 일정에 포함된 Zoom, Google Meet, Microsoft Teams, Webex 등의 회의 링크에 Meeting Bot을 참여시킬 수 있습니다. 회의가 끝나면 전사, 요약, 액션 아이템을 확인하고 필요한 경우 공유 링크, PDF, Notion 저장 등으로 보관합니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "회의 녹음 또는 Meeting Bot을 시작합니다",
-                                                                "body":  "대면 회의는 웹이나 모바일에서 마이크 녹음을 시작합니다. 온라인 회의는 Google Calendar 또는 Outlook을 연결한 뒤, 일정에 회의 링크가 있으면 Meeting Bot이 참여하도록 설정할 수 있습니다. 공식 문서 기준으로 기기 마이크 녹음은 가능하지만 시스템 오디오 녹음은 지원하지 않습니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "시작"
+                                                                "title":  "AI 회의록을 클릭합니다",
+                                                                "body":  "Genspark 메인 화면의 입력창 아래에서 모든 에이전트를 클릭한 뒤 하단으로 스크롤해 AI 회의록을 선택합니다. 이 기능은 회의 녹음 또는 Meeting Bot 참여가 전제이므로, 회사 회의에서는 먼저 녹음 동의와 보안 기준을 확인합니다.",
+                                                                "image":  "./guidebook-assets/genspark_all_agents_tools.png",
+                                                                "badge":  "선택"
                                                             },
                                                             {
                                                                 "title":  "전사와 요약을 확인합니다",
@@ -972,10 +972,10 @@ window.SERVICE_GUIDES = {
                                               "how":  "공식 Help Center에 독립 기능 문서는 확인하지 못했습니다. 공식 문서의 Super Agent, Realtime Voice, Speakly 설명에서 Deep Research 작업 예시가 확인됩니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "자료 확인 상태",
-                                                                "body":  "독립 공식 도움말 문서를 확인하지 못했습니다. 현재는 “Deep Research로 조사해 주세요”처럼 Super Agent 계열 기능에서 호출되는 작업 유형으로만 작성합니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "자료 확인"
+                                                                "title":  "딥 리서치를 클릭합니다",
+                                                                "body":  "Genspark 메인 화면의 입력창 아래에서 모든 에이전트를 클릭한 뒤 하단으로 스크롤해 딥 리서치를 선택합니다. 독립 공식 도움말 문서는 확인하지 못했으므로, 현재는 여러 출처를 깊게 조사해 보고서 형태로 정리할 때 쓰는 리서치 에이전트로 안내합니다.",
+                                                                "image":  "./guidebook-assets/genspark_all_agents_tools.png",
+                                                                "badge":  "선택"
                                                             },
                                                             {
                                                                 "title":  "실제 화면 확인 후 보강합니다",
@@ -993,10 +993,10 @@ window.SERVICE_GUIDES = {
                                               "how":  "공개 도구 페이지 기준으로 여러 출처를 비교하고 인용, 스크린샷 증거, 다국어 검증을 지원합니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "검증할 내용을 넣습니다",
-                                                                "body":  "확인할 문장, 기사 링크, 자료 일부를 입력합니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "입력"
+                                                                "title":  "팩트 체크를 클릭합니다",
+                                                                "body":  "Genspark 메인 화면의 입력창 아래에서 모든 에이전트를 클릭한 뒤 하단으로 스크롤해 팩트 체크를 선택합니다. 이후 확인할 문장, 기사 링크, 자료 일부를 입력합니다.",
+                                                                "image":  "./guidebook-assets/genspark_all_agents_tools.png",
+                                                                "badge":  "선택"
                                                             },
                                                             {
                                                                 "title":  "근거와 판정을 확인합니다",
@@ -1014,10 +1014,10 @@ window.SERVICE_GUIDES = {
                                               "how":  "공식 문서 기준으로 국가 코드와 전화번호를 설정하고, 업체 검색 또는 직접 번호 입력 후 즉시 전화하거나 예약 전화를 설정할 수 있습니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "전화 대상과 목적을 입력합니다",
-                                                                "body":  "업체명, 전화번호, 문의 내용, 반드시 확인해야 할 질문을 적습니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "입력"
+                                                                "title":  "AI 통화비서를 클릭합니다",
+                                                                "body":  "Genspark 메인 화면의 입력창 아래에서 모든 에이전트를 클릭한 뒤 하단으로 스크롤해 AI 통화비서를 선택합니다. 이후 업체명, 전화번호, 문의 내용, 반드시 확인해야 할 질문을 적습니다.",
+                                                                "image":  "./guidebook-assets/genspark_all_agents_tools.png",
+                                                                "badge":  "선택"
                                                             },
                                                             {
                                                                 "title":  "즉시 통화 또는 예약을 선택합니다",
@@ -1041,10 +1041,10 @@ window.SERVICE_GUIDES = {
                                               "how":  "공개 도구 페이지 기준으로 PDF 번역은 제목, 목록, 표 구조를 최대한 유지하고 PDF 또는 Word로 내보낼 수 있습니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "번역할 자료를 넣습니다",
-                                                                "body":  "텍스트를 붙여 넣거나 PDF 파일을 업로드합니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "업로드"
+                                                                "title":  "번역을 클릭합니다",
+                                                                "body":  "Genspark 메인 화면의 입력창 아래에서 모든 에이전트를 클릭한 뒤 하단으로 스크롤해 번역을 선택합니다. 이후 텍스트를 붙여 넣거나 PDF 파일을 업로드합니다.",
+                                                                "image":  "./guidebook-assets/genspark_all_agents_tools.png",
+                                                                "badge":  "선택"
                                                             },
                                                             {
                                                                 "title":  "목표 언어를 선택합니다",
@@ -1068,10 +1068,10 @@ window.SERVICE_GUIDES = {
                                               "how":  "공식 블로그 기준으로 한 번의 프롬프트로 자료 검색, 다운로드, 이름 지정, 정리를 진행하고 AI Drive에서 관리할 수 있습니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "찾을 자료 조건을 적습니다",
-                                                                "body":  "예: “최근 6개월 공개된 AI 회의록 도구 백서 PDF를 찾아 AI Drive에 저장해 주세요.”처럼 범위와 형식을 적습니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "조건"
+                                                                "title":  "다운로드하기를 클릭합니다",
+                                                                "body":  "Genspark 메인 화면의 입력창 아래에서 모든 에이전트를 클릭한 뒤 하단으로 스크롤해 다운로드하기를 선택합니다. 이후 예: “최근 6개월 공개된 AI 회의록 도구 백서 PDF를 찾아 AI Drive에 저장해 주세요.”처럼 찾을 자료의 범위와 형식을 적습니다.",
+                                                                "image":  "./guidebook-assets/genspark_all_agents_tools.png",
+                                                                "badge":  "선택"
                                                             },
                                                             {
                                                                 "title":  "저장 이름과 폴더를 정합니다",
