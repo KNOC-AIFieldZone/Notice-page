@@ -1156,9 +1156,9 @@ window.SERVICE_GUIDES = {
                                           {
                                               "title":  "Skills",
                                               "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                              "location":  "사이드바의 Skills에서 공개된 Skill을 추가하거나 + New Skill로 직접 만듭니다.",
-                                              "when":  "자주 반복하는 업무 절차를 매번 새로 설명하지 않고 저장해 두고 싶을 때 사용합니다.",
-                                              "how":  "공식 문서 기준으로 Skill은 특정 업무를 처리하는 재사용 가능한 AI 도구 또는 플레이북입니다. 역할, 출력 형식, 게시자 기준으로 찾거나 직접 만들 수 있습니다.",
+                                              "location":  "사이드바의 Skills에서 공개 Skill을 추가하거나, 커넥터를 연결하거나, 새 Skill을 직접 만듭니다.",
+                                              "when":  "보고서 검토, 자료 조사, 데이터 시각화, 이메일 분류처럼 반복되는 업무 방식을 저장해 매번 같은 설명을 반복하지 않으려 할 때 사용합니다.",
+                                              "how":  "Skills는 반복 업무의 처리 방식, 출력 형식, 참고 도구를 저장해 필요할 때 채팅에서 불러 쓰는 기능입니다. 공개된 Skill을 추가해 바로 쓰거나, 직접 만든 Skill을 업로드 및 생성할 수 있고, 커넥터를 연결해 외부 자료나 업무 도구와 함께 사용할 수 있습니다. 커넥터 사용은 계정 권한과 사내 보안 정책 확인이 필요합니다.",
                                               "steps":  [
                                                             {
                                                                 "title":  "Skills를 클릭합니다",
@@ -1167,16 +1167,10 @@ window.SERVICE_GUIDES = {
                                                                 "badge":  "진입"
                                                             },
                                                             {
-                                                                "title":  "필요한 Skill을 고르거나 새로 만듭니다",
-                                                                "body":  "Skills는 반복해서 쓰는 업무 절차를 하나의 재사용 도구로 저장하는 기능입니다. 공개 Skill을 찾아 설치하거나, + New Skill에서 직접 만들 수 있습니다. 직접 만들 때는 AI가 이름, 설명, 입력값, 결과물, 사용할 도구 권한을 묻는 방식으로 안내하며, 이미 준비한 Skill 파일이 있으면 .zip, .skill, .md 형식으로 업로드할 수 있습니다. 팀용 Skill은 관리자의 승인 절차를 거쳐 팀 구성원이 함께 사용할 수 있습니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
+                                                                "title":  "Skill 라이브러리에서 선택하거나 직접 만듭니다",
+                                                                "body":  "Skills 화면에서는 커뮤니티 Skills, 팀 Skills, 내 Skills를 나누어 볼 수 있습니다. 게시자, 역할, 출력 형식 필터와 검색으로 필요한 Skill을 찾고, 추가 및 사용 버튼으로 내 작업에 붙입니다. 상단에서는 업로드로 준비된 Skill 파일을 올리거나, Skills 둘러보기로 공개 Skill을 탐색하거나, 커넥터에서 Gmail, Drive, Notion 같은 연결 가능한 도구를 확인할 수 있습니다. + 새 Skill은 반복 업무 절차를 새로 정의하는 버튼입니다.",
+                                                                "image":  "./guidebook-assets/genspark_skills_library.png",
                                                                 "badge":  "선택"
-                                                            },
-                                                            {
-                                                                "title":  "예시 작업을 정해 Skill을 테스트합니다",
-                                                                "body":  "예시로는 “사내 보고서 초안 점검 Skill을 만들어 주세요. 첨부한 문서에서 오탈자, 표현의 공손함, 표·목차 누락, 근거가 부족한 문장을 확인하고 수정 제안 표로 정리해 주세요.”처럼 반복되는 검토 업무를 지정하면 좋습니다. 또는 “회의록을 업무 담당자, 기한, 후속 조치 표로 정리하는 Skill”, “보도자료 초안을 기관 문체에 맞게 다듬는 Skill”처럼 자주 쓰는 절차를 하나 고릅니다. 이후 테스트 결과가 마음에 들면 저장하고, 실제 문서를 첨부해 같은 절차가 반복되는지 확인합니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "예시"
                                                             }
                                                         ]
                                           },
