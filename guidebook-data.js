@@ -906,29 +906,36 @@ window.SERVICE_GUIDES = {
                                           {
                                               "title":  "AI 팟캐스트",
                                               "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                              "location":  "AI Pods 또는 AI Podcast에서 주제, 원고, 문서 파일을 넣습니다.",
-                                              "when":  "긴 문서, 강의자료, 뉴스, 보고서를 듣기 쉬운 대화형 오디오로 바꿀 때 사용합니다.",
-                                              "how":  "공식 문서 기준으로 내용 분석, 스크립트 작성, 진행자 생성, 오디오 제작을 거치며 언어, 진행자 수, 스타일을 설정할 수 있습니다.",
+                                              "location":  "Genspark 메인 화면에서 콘텐츠 제작 메뉴를 열고 AI 팟캐스트를 클릭합니다.",
+                                              "when":  "유튜브 영상, 웹페이지, 보고서, 기사, 긴 문서를 사람이 듣기 쉬운 대화형 오디오 요약으로 바꾸고 싶을 때 사용합니다.",
+                                              "how":  "주제, YouTube 링크, 웹페이지 링크, 파일을 입력하면 내용을 분석해 팟캐스트 대본과 음성을 만듭니다. 기본은 2인 진행자 대화 형식이며, 프롬프트에 한국어, 1인 또는 2인, 전문적인 톤, 재미있는 톤, 분량 같은 조건을 함께 적어 조정합니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "주제나 자료를 넣습니다",
-                                                                "body":  "텍스트, PDF, DOCX, TXT 등 자료를 넣고 어떤 관점의 팟캐스트로 만들지 적습니다.",
+                                                                "title":  "AI 팟캐스트를 클릭합니다",
+                                                                "body":  "Genspark 메인 화면에서 콘텐츠 제작 메뉴를 열고 AI 팟캐스트를 선택합니다. 주제만 입력할 수도 있고, YouTube 링크, 웹페이지 링크, 파일을 자료로 넣어 만들 수도 있습니다.",
                                                                 "image":  "./guidebook-assets/genspark_content_creation_menu.png",
+                                                                "badge":  "선택"
+                                                            },
+                                                            {
+                                                                "title":  "자료와 제작 방향을 입력합니다",
+                                                                "body":  "예시는 YouTube 영상 링크를 넣고 “이 영상을 바탕으로 한국어 팟캐스트를 만들어 주세요. 처음 듣는 사람도 이해할 수 있도록 핵심 사건과 의미를 대화형으로 설명해 주세요.”처럼 적습니다. 화면 안내처럼 주제, YouTube, 링크, 파일을 사용할 수 있고, 전문적인 스타일이나 재미있는 스타일, 1인 또는 2인 진행자 같은 조건도 함께 요청할 수 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_podcast_main.png",
                                                                 "badge":  "입력"
                                                             },
                                                             {
-                                                                "title":  "언어와 진행 방식을 정합니다",
-                                                                "body":  "한국어 등 언어, 진행자 수, 대화형/교육형/전문형 같은 스타일을 선택합니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "설정"
-                                                            },
-                                                            {
-                                                                "title":  "듣고 공유하거나 내보냅니다",
-                                                                "body":  "결과를 들어 보고 필요하면 커버 이미지를 다시 만들거나 MP3로 내보냅니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "내보내기"
+                                                                "title":  "결과를 듣고 내보냅니다",
+                                                                "body":  "결과 화면에서 AI 팟캐스트와 스크립트 탭을 확인합니다. 왼쪽에는 팟캐스트 개요, 주요 내용, 특징, 시각 요소 같은 요약이 나오고, 오른쪽에서는 생성된 오디오를 재생할 수 있습니다. 내용이 맞는지 먼저 듣고 확인한 뒤 게시하거나 오디오 내보내기로 파일을 받을 수 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_podcast_result.png",
+                                                                "badge":  "결과"
                                                             }
-                                                        ]
+                                                        ],
+                                              "audioSamples":  [
+                                                                   {
+                                                                       "title":  "팟캐스트 결과물",
+                                                                       "duration":  "4:45",
+                                                                       "src":  "./guidebook-assets/genspark_podcast_sample_1.mp3"
+                                                                   }
+                                                               ]
                                           },
                                           {
                                               "title":  "AI 회의록",
@@ -1314,6 +1321,7 @@ window.SERVICE_GUIDES = {
                                          "https://www.genspark.ai/tools/ai-audio-transcription",
                                          "https://www.genspark.ai/blog/genspark-clip-genius",
                                          "https://www.genspark.ai/helpcenter/ai-pods",
+                                         "https://www.genspark.ai/tools/ai-podcast-generator",
                                          "https://www.genspark.ai/helpcenter/ai-meeting-notes",
                                          "https://www.genspark.ai/helpcenter/realtime-voice",
                                          "https://www.genspark.ai/tools/ai-fact-checker",
