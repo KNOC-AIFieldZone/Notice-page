@@ -76,7 +76,7 @@
                      }
                  ],
     "notice":  {
-                   "noticeId":  "2026-06-04",
+                   "noticeId":  "2026-09-03",
                    "items":  [
                                  {
                                      "date":  "2026-06-04",
@@ -131,6 +131,13 @@
                                      "date":  "2026-01-03",
                                      "title":  "Perplexity 구독 해지",
                                      "sub":  "2026년 1월 28일부터 Perplexity를 이용하실 수 없습니다. (사유: 사용량 저조)",
+                                     "keyword":  "종료",
+                                     "priority":  5
+                                 },
+                                 {
+                                     "date":  "2026-09-03",
+                                     "title":  "HIX AI 구독 해지",
+                                     "sub":  "2026년 9월 3일부터 HIX AI를 이용하실 수 없습니다. (사유: 사용량 저조)",
                                      "keyword":  "종료",
                                      "priority":  5
                                  }
