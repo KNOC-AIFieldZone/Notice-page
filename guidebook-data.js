@@ -1183,9 +1183,9 @@ window.SERVICE_GUIDES = {
                                           {
                                               "title":  "Hub",
                                               "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                              "location":  "Hub에서 프로젝트를 만들고 파일, 생성물, 지시사항, 팀원을 한곳에 모읍니다.",
-                                              "when":  "하나의 업무가 여러 대화와 산출물로 이어질 때 프로젝트 단위로 맥락을 유지하려고 사용합니다.",
-                                              "how":  "프로젝트별 자료를 올려두고 @로 Super Agent, AI Slides, AI Sheets, AI Docs, Genspark Code, AI Designer, Clip Genius, AI Pods 등을 선택해 작업합니다.",
+                                              "location":  "Hub에서 프로젝트를 만들고 파일, 생성물, 지시사항, 멤버를 한곳에 모읍니다.",
+                                              "when":  "하나의 업무가 여러 대화, 참고 자료, 산출물, 협업자로 이어질 때 프로젝트 단위로 정리하려고 사용합니다.",
+                                              "how":  "프로젝트별 Hub에 관련 파일과 작업 기록을 모아두면, 같은 Hub 안에서 새 작업을 시작해도 기존 자료와 지시사항을 이어서 활용할 수 있습니다. 필요하면 멤버를 초대해 같은 프로젝트 맥락에서 함께 작업합니다.",
                                               "steps":  [
                                                             {
                                                                 "title":  "Hub를 클릭합니다",
@@ -1195,15 +1195,21 @@ window.SERVICE_GUIDES = {
                                                             },
                                                             {
                                                                 "title":  "작업할 에이전트를 선택합니다",
-                                                                "body":  "입력창에서 @를 사용해 필요한 에이전트를 선택하고 작업을 요청합니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "선택"
+                                                                "body":  "내 허브 화면에서는 현재 진행 중인 Hub와 보관된 Hub를 확인할 수 있습니다. Hub는 프로젝트별 전용 공간이므로, 관련 파일, 대화, 작업 결과, 맞춤 지시사항을 한곳에 모아두고 이어서 작업할 때 사용합니다. 새 프로젝트를 시작할 때마다 별도 Hub로 나누면 자료와 결과물이 섞이지 않아 관리하기 쉽습니다.",
+                                                                "image":  "./guidebook-assets/genspark_hub_main.png",
+                                                                "badge":  "확인"
                                                             },
                                                             {
-                                                                "title":  "Recent Tasks에서 이어서 작업합니다",
-                                                                "body":  "이전 결과와 진행 이력을 확인하고 이어서 수정하거나 새 산출물을 요청합니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "이력"
+                                                                "title":  "새 Hub를 만듭니다",
+                                                                "body":  "오른쪽 위 새로 만들기를 클릭한 뒤 Hub 이름, 컬러 테마, 달성하려는 목표를 입력합니다. 목표에는 “월간 AI 교육 자료 제작”, “공공데이터 평가 보고서 작성”처럼 프로젝트의 목적과 관리할 자료 범위를 적어두면 이후 작업 방향을 잡는 데 도움이 됩니다.",
+                                                                "image":  "./guidebook-assets/genspark_hub_create.png",
+                                                                "badge":  "생성"
+                                                            },
+                                                            {
+                                                                "title":  "파일과 멤버를 관리하며 작업합니다",
+                                                                "body":  "Hub 안에서는 입력창으로 새 작업을 요청하고, 파일 영역에 참고 문서나 결과물을 모아둘 수 있습니다. 멤버 영역에서는 함께 볼 사람을 관리하며, 최근 작업 목록에서는 이전에 만든 AI 시트, 슈퍼 에이전트 결과, 가이드 문서 등을 다시 열어 이어서 작업합니다. Hub 멤버는 해당 Hub의 파일과 프로젝트 대화 기록을 볼 수 있으므로, 공유 전에는 자료 범위를 확인하는 것이 좋습니다.",
+                                                                "image":  "./guidebook-assets/genspark_hub_workspace.png",
+                                                                "badge":  "관리"
                                                             }
                                                         ]
                                           },
