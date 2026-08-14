@@ -1054,27 +1054,27 @@ window.SERVICE_GUIDES = {
                                           {
                                               "title":  "다운로드하기 / AI Drive",
                                               "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                              "location":  "Download Agent 또는 AI Drive에서 찾고 싶은 자료와 저장 방식을 입력합니다.",
-                                              "when":  "PDF, 이미지, 영상, 음악, 문서 파일을 찾아 저장하고 정리해야 할 때 사용합니다.",
-                                              "how":  "공식 블로그 기준으로 한 번의 프롬프트로 자료 검색, 다운로드, 이름 지정, 정리를 진행하고 AI Drive에서 관리할 수 있습니다.",
+                                              "location":  "다운로드하기에서 저장할 링크를 붙여 넣거나 다운로드할 내용을 입력합니다.",
+                                              "when":  "업무에 사용할 수 있는 링크의 파일을 AI Drive에 저장하고 나중에 다시 찾아야 할 때 사용합니다.",
+                                              "how":  "링크를 넣으면 다운로드 가능한 파일 후보가 표시되고, 필요한 항목을 선택해 AI Drive에 저장합니다. 영상, 문서, 이미지 등은 권한이 있거나 업무상 저장해도 되는 자료만 사용합니다.",
                                               "steps":  [
                                                             {
                                                                 "title":  "다운로드하기를 클릭합니다",
-                                                                "body":  "Genspark 메인 화면의 입력창 아래에서 모든 에이전트를 클릭한 뒤 하단으로 스크롤해 다운로드하기를 선택합니다. 이후 예: “최근 6개월 공개된 AI 회의록 도구 백서 PDF를 찾아 AI Drive에 저장해 주세요.”처럼 찾을 자료의 범위와 형식을 적습니다.",
+                                                                "body":  "Genspark 메인 화면의 입력창 아래에서 모든 에이전트를 클릭한 뒤 하단으로 스크롤해 다운로드하기를 선택합니다. 링크가 있는 자료를 AI Drive에 저장할 때 사용합니다.",
                                                                 "image":  "./guidebook-assets/genspark_all_agents_tools.png",
                                                                 "badge":  "선택"
                                                             },
                                                             {
-                                                                "title":  "저장 이름과 폴더를 정합니다",
-                                                                "body":  "파일명 규칙, 폴더명, 중복 처리 기준을 함께 지정하면 나중에 찾기 쉽습니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "정리"
+                                                                "title":  "저장할 링크를 입력합니다",
+                                                                "body":  "창이 열리면 HTTP/HTTPS 링크를 붙여 넣고 확인을 누릅니다. 예를 들어 사용 권한이 있는 YouTube 영상, 공개 문서, 이미지, PDF 링크를 넣을 수 있습니다. 링크 대신 “이 자료를 다운로드해 주세요”처럼 다운로드할 내용을 자연어로 적을 수도 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_download_link.png",
+                                                                "badge":  "링크 입력"
                                                             },
                                                             {
-                                                                "title":  "다운로드 자료를 검토합니다",
-                                                                "body":  "저작권, 출처, 최신성, 파일 보안 여부를 확인한 뒤 업무에 사용합니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "검토"
+                                                                "title":  "필요한 파일을 선택해 저장합니다",
+                                                                "body":  "다운로드 가능한 파일 목록이 표시되면 원하는 파일을 선택합니다. 같은 영상도 해상도, 확장자, 오디오 포함 여부가 다를 수 있으므로 업무에 필요한 형식을 고른 뒤 AI 드라이브에 저장합니다. 저장 전 저작권, 이용 권한, 파일 보안 여부를 확인합니다.",
+                                                                "image":  "./guidebook-assets/genspark_download_select.png",
+                                                                "badge":  "파일 선택"
                                                             }
                                                         ]
                                           },
