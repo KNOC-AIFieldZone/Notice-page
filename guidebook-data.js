@@ -817,29 +817,57 @@ window.SERVICE_GUIDES = {
                                           {
                                               "title":  "AI 오디오",
                                               "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                              "location":  "AI Audio 또는 관련 오디오 도구에서 스크립트, 음성, 언어를 선택합니다.",
-                                              "when":  "내레이션, 음성 합성, 음성 복제, 오디오 전사, 번역 요약이 필요할 때 사용합니다.",
-                                              "how":  "공개 도구 페이지 기준으로 텍스트 음성 변환, 음성 복제, 오디오 전사 기능을 각각 사용할 수 있습니다.",
+                                              "location":  "Genspark 메인 화면에서 콘텐츠 제작 메뉴를 열고 AI 오디오를 클릭합니다.",
+                                              "when":  "안내 멘트, 교육 영상 내레이션, 홍보 영상 음성, 사내 방송 원고처럼 텍스트를 자연스러운 음성으로 바꿔야 할 때 사용합니다.",
+                                              "how":  "원고를 입력한 뒤 TTS 모델을 선택하면 음성 결과를 생성합니다. 화면 설명 기준으로 모델마다 지원 언어, 감정 표현, 화자 수, 길이, 음질 특성이 다르므로 목적에 맞는 모델을 고릅니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "작업 유형을 선택합니다",
-                                                                "body":  "읽어 줄 음성 만들기, 특정 목소리 복제, 녹음 파일 전사 중 필요한 작업을 선택합니다.",
+                                                                "title":  "AI 오디오를 클릭합니다",
+                                                                "body":  "Genspark 메인 화면에서 콘텐츠 제작 메뉴를 열고 AI 오디오를 선택합니다. 오디오로 바꿀 원고가 준비되어 있으면 바로 붙여 넣을 수 있습니다.",
                                                                 "image":  "./guidebook-assets/genspark_content_creation_menu.png",
                                                                 "badge":  "선택"
                                                             },
                                                             {
-                                                                "title":  "파일 또는 스크립트를 넣습니다",
-                                                                "body":  "스크립트를 붙여 넣거나 MP3, WAV, M4A, MP4 같은 오디오/영상 파일을 업로드합니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "입력"
+                                                                "title":  "모델을 선택합니다",
+                                                                "body":  "모델 자동 선택을 쓰거나 Gemini 3.1 Flash TTS, ElevenLabs V3 TTS, VibeVoice TTS, Seed-Audio 1.0, Qwen Audio 3 TTS, ElevenLabs TTS V2, MiniMax TTS처럼 화면에 표시되는 모델 중 하나를 고릅니다. 화면 설명 기준으로 모델마다 지원 언어, 감정 표현, 화자 수, 길이, 음질 특성이 다르므로 목적에 맞게 선택합니다.",
+                                                                "image":  "./guidebook-assets/genspark_audio_model_select.png",
+                                                                "badge":  "설정"
                                                             },
                                                             {
-                                                                "title":  "결과를 확인합니다",
-                                                                "body":  "전사 결과는 화자와 전문 용어를 확인하고, 합성 음성은 발음과 속도를 검토합니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "검토"
+                                                                "title":  "원고를 입력하고 생성합니다",
+                                                                "body":  "예시처럼 “아침 8시. 익숙한 하루가 다시 시작됩니다.”와 같이 실제로 읽을 원고를 입력합니다. 필요한 경우 [warmly], [pauses]처럼 분위기와 쉬는 지점을 함께 적어 발화 느낌을 조정합니다.",
+                                                                "image":  "./guidebook-assets/genspark_audio_result.png",
+                                                                "badge":  "생성"
+                                                            },
+                                                            {
+                                                                "title":  "결과를 재생해 검토합니다",
+                                                                "body":  "생성된 여러 버전을 재생해 발음, 속도, 감정, 쉼표 위치를 비교합니다. 마음에 드는 버전을 선택하고 필요하면 원고나 모델을 바꿔 다시 생성합니다.",
+                                                                "image":  "./guidebook-assets/genspark_audio_result.png",
+                                                                "badge":  "확인"
                                                             }
-                                                        ]
+                                                        ],
+                                              "audioSamples":  [
+                                                                   {
+                                                                       "title":  "결과물 1",
+                                                                       "duration":  "0:26",
+                                                                       "src":  "./guidebook-assets/genspark_audio_sample_1.mp3"
+                                                                   },
+                                                                   {
+                                                                       "title":  "결과물 2",
+                                                                       "duration":  "0:31",
+                                                                       "src":  "./guidebook-assets/genspark_audio_sample_2.mp3"
+                                                                   },
+                                                                   {
+                                                                       "title":  "결과물 3",
+                                                                       "duration":  "0:22",
+                                                                       "src":  "./guidebook-assets/genspark_audio_sample_3.mp3"
+                                                                   },
+                                                                   {
+                                                                       "title":  "결과물 4",
+                                                                       "duration":  "0:24",
+                                                                       "src":  "./guidebook-assets/genspark_audio_sample_4.mp3"
+                                                                   }
+                                                               ]
                                           },
                                           {
                                               "title":  "클립 지니어스",
