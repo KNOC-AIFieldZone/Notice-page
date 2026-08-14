@@ -1167,16 +1167,16 @@ window.SERVICE_GUIDES = {
                                                                 "badge":  "진입"
                                                             },
                                                             {
-                                                                "title":  "Skill을 실행합니다",
-                                                                "body":  "SkillBar에서 선택하거나 “/”로 호출하고 필요한 파일을 첨부한 뒤 실행합니다. 실행 중에는 단계 카드와 결과 파일을 확인할 수 있습니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "실행"
+                                                                "title":  "필요한 Skill을 고르거나 새로 만듭니다",
+                                                                "body":  "Skills는 반복해서 쓰는 업무 절차를 하나의 재사용 도구로 저장하는 기능입니다. 공개 Skill을 찾아 설치하거나, + New Skill에서 직접 만들 수 있습니다. 직접 만들 때는 AI가 이름, 설명, 입력값, 결과물, 사용할 도구 권한을 묻는 방식으로 안내하며, 이미 준비한 Skill 파일이 있으면 .zip, .skill, .md 형식으로 업로드할 수 있습니다. 팀용 Skill은 관리자의 승인 절차를 거쳐 팀 구성원이 함께 사용할 수 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
+                                                                "badge":  "선택"
                                                             },
                                                             {
-                                                                "title":  "나만의 Skill을 만듭니다",
-                                                                "body":  "+ New Skill에서 AI가 안내하는 방식으로 만들거나 .zip, .skill, .md 파일을 업로드해 등록할 수 있습니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "제작"
+                                                                "title":  "예시 작업을 정해 Skill을 테스트합니다",
+                                                                "body":  "예시로는 “사내 보고서 초안 점검 Skill을 만들어 주세요. 첨부한 문서에서 오탈자, 표현의 공손함, 표·목차 누락, 근거가 부족한 문장을 확인하고 수정 제안 표로 정리해 주세요.”처럼 반복되는 검토 업무를 지정하면 좋습니다. 또는 “회의록을 업무 담당자, 기한, 후속 조치 표로 정리하는 Skill”, “보도자료 초안을 기관 문체에 맞게 다듬는 Skill”처럼 자주 쓰는 절차를 하나 고릅니다. 이후 테스트 결과가 마음에 들면 저장하고, 실제 문서를 첨부해 같은 절차가 반복되는지 확인합니다.",
+                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
+                                                                "badge":  "예시"
                                                             }
                                                         ]
                                           },
