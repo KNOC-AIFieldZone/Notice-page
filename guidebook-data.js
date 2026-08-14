@@ -1114,7 +1114,7 @@ window.SERVICE_GUIDES = {
                                               "steps":  [
                                                             {
                                                                 "title":  "Claw를 클릭합니다",
-                                                                "body":  "왼쪽 사이드바의 더보기(…)를 누른 뒤 Claw를 클릭합니다. 더보기 메뉴에는 워크플로우, 드라이브, 허브, GenMail, GenTeam, Claw가 함께 표시됩니다.",
+                                                                "body":  "왼쪽 사이드바의 더보기(…)를 누른 뒤 Claw를 클릭합니다. 더보기 메뉴에는 워크플로우, 드라이브, 허브, GenMail, GenTeam, Claw가 함께 표시됩니다. Claw는 별도 설치와 로컬 실행 환경이 필요한 기능이므로 회사 내부 PC에서는 사용할 수 없는 기능으로 안내합니다.",
                                                                 "image":  "./guidebook-assets/genspark_more_menu.png",
                                                                 "badge":  "진입"
                                                             },
