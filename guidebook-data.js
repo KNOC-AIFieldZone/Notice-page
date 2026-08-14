@@ -940,27 +940,27 @@ window.SERVICE_GUIDES = {
                                           {
                                               "title":  "AI 회의록",
                                               "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                              "location":  "AI Meeting Notes 앱 또는 웹에서 녹음을 시작하거나 캘린더를 연결합니다.",
-                                              "when":  "회의 내용을 녹음, 전사, 요약하고 후속 할 일을 정리할 때 사용합니다.",
-                                              "how":  "공식 문서 기준으로 Apple Watch, iOS, Android, Web에서 사용할 수 있고 Google Calendar 또는 Outlook을 연결해 Meeting Bot을 회의에 참여시킬 수 있습니다.",
+                                              "location":  "AI Meeting Notes에서 회의를 녹음하거나 캘린더를 연결해 Meeting Bot을 회의에 참여시킵니다.",
+                                              "when":  "회의 내용을 직접 받아 적기 어렵거나, 회의 후 전사문·요약·결정사항·후속 할 일을 정리해야 할 때 사용합니다. 녹음 또는 회의 참여 봇이 전제인 기능이므로, 회사 회의에서는 녹음 동의와 보안 기준을 먼저 확인해야 합니다.",
+                                              "how":  "공식 문서 기준으로 Web, 모바일 앱, Apple Watch에서 녹음을 시작할 수 있고, Google Calendar 또는 Outlook을 연결하면 일정에 포함된 Zoom, Google Meet, Microsoft Teams, Webex 등의 회의 링크에 Meeting Bot을 참여시킬 수 있습니다. 회의가 끝나면 전사, 요약, 액션 아이템을 확인하고 필요한 경우 공유 링크, PDF, Notion 저장 등으로 보관합니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "녹음 또는 Meeting Bot을 시작합니다",
-                                                                "body":  "기기에서 + New를 누르거나 캘린더를 연결해 Zoom, Meet, Teams 등 온라인 회의에 봇을 참여시킵니다.",
+                                                                "title":  "회의 녹음 또는 Meeting Bot을 시작합니다",
+                                                                "body":  "대면 회의는 웹이나 모바일에서 마이크 녹음을 시작합니다. 온라인 회의는 Google Calendar 또는 Outlook을 연결한 뒤, 일정에 회의 링크가 있으면 Meeting Bot이 참여하도록 설정할 수 있습니다. 공식 문서 기준으로 기기 마이크 녹음은 가능하지만 시스템 오디오 녹음은 지원하지 않습니다.",
                                                                 "image":  "./guidebook-assets/genspark_workspace_main.png",
                                                                 "badge":  "시작"
                                                             },
                                                             {
-                                                                "title":  "회의 중 메모를 추가합니다",
-                                                                "body":  "중요한 결정, 할 일, 질문은 실시간 노트로 남길 수 있습니다.",
+                                                                "title":  "전사와 요약을 확인합니다",
+                                                                "body":  "회의가 끝나면 녹음 내용을 바탕으로 전사문, 회의 요약, 주요 결정사항, 후속 할 일을 확인합니다. 필요한 경우 회의 내용에 대해 AI에게 질문할 수 있고, 중요한 맥락은 회의 중 메모로 남겨 요약에 참고하도록 할 수 있습니다.",
                                                                 "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "기록"
+                                                                "badge":  "정리"
                                                             },
                                                             {
-                                                                "title":  "전사와 요약을 확인합니다",
-                                                                "body":  "회의 후 자동 생성된 전사, 요약, 액션 아이템을 확인하고 잘못된 발언자나 용어를 수정합니다.",
+                                                                "title":  "공유하기 전에 검토합니다",
+                                                                "body":  "회의록은 자동 생성 결과이므로 공유 전에 참석자 이름, 결정사항, 일정, 숫자, 할 일 담당자를 확인합니다. 공식 문서 기준으로 회의록 편집, 전사문 복사, 공유 링크, PDF 저장, Notion 저장 등을 사용할 수 있지만 원본 오디오 파일은 제공되지 않습니다.",
                                                                 "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "검토"
+                                                                "badge":  "공유"
                                                             }
                                                         ]
                                           },
@@ -1323,6 +1323,7 @@ window.SERVICE_GUIDES = {
                                          "https://www.genspark.ai/helpcenter/ai-pods",
                                          "https://www.genspark.ai/tools/ai-podcast-generator",
                                          "https://www.genspark.ai/helpcenter/ai-meeting-notes",
+                                         "https://www.genspark.ai/meetingnotes",
                                          "https://www.genspark.ai/helpcenter/realtime-voice",
                                          "https://www.genspark.ai/tools/ai-fact-checker",
                                          "https://www.genspark.ai/helpcenter/call-for-me",
