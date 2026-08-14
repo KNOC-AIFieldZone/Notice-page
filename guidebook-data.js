@@ -1092,10 +1092,10 @@ window.SERVICE_GUIDES = {
                                                                 "badge":  "진입"
                                                             },
                                                             {
-                                                                "title":  "실행 방식과 권한을 정합니다",
-                                                                "body":  "공식 문서 기준으로 클라우드 컴퓨터, 개인 컴퓨터의 Claude Code/Codex CLI, Claw/OpenClaw 실행 방식을 선택할 수 있으며 이메일, 소셜 게시, 전화처럼 되돌리기 어려운 행동은 승인 절차를 두는 것이 좋습니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "권한"
+                                                                "title":  "GenTeam 화면 구조를 확인합니다",
+                                                                "body":  "GenTeam은 일반 채팅창이 아니라 사람과 AI 직원이 함께 쓰는 팀 협업 공간입니다. 왼쪽에는 채널과 다이렉트 메시지가 있고, 상단에는 채팅, 파일, 작업 탭이 있어 대화 내용과 첨부 파일, 맡긴 일을 한곳에서 관리합니다. 기본 AI 팀원인 Genny처럼 역할이 있는 AI 직원을 채널에 두고 질문, 조사, 문서 작성, 파일 분석, 진행 상황 정리 같은 일을 맡길 수 있습니다. 기존 Genspark 홈 화면이 기능을 하나씩 실행하는 출발점이라면, GenTeam은 같은 업무 맥락을 채널과 작업으로 계속 이어가며 팀원이 함께 결과를 확인하는 공간입니다.",
+                                                                "image":  "./guidebook-assets/genspark_genteam_main.png",
+                                                                "badge":  "구조"
                                                             },
                                                             {
                                                                 "title":  "멘션 또는 DM으로 작업을 맡깁니다",
