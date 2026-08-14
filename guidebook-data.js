@@ -1086,10 +1086,10 @@ window.SERVICE_GUIDES = {
                                               "how":  "AI 팀원에게 역할과 모델, 권한, 채널 참여 방식, 실행 환경을 설정한 뒤 멘션이나 DM으로 작업을 맡깁니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "채널과 AI 팀원을 만듭니다",
-                                                                "body":  "프로젝트 목적에 맞는 채널을 만들고 리서치 담당, 문서 담당, 개발 담당처럼 역할이 분명한 AI 팀원을 추가합니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "설정"
+                                                                "title":  "GenTeam을 클릭합니다",
+                                                                "body":  "왼쪽 사이드바의 더보기(…)를 누른 뒤 GenTeam을 클릭합니다. 더보기 메뉴에는 워크플로우, 드라이브, 허브, GenMail, GenTeam, Claw가 함께 표시됩니다.",
+                                                                "image":  "./guidebook-assets/genspark_more_menu.png",
+                                                                "badge":  "진입"
                                                             },
                                                             {
                                                                 "title":  "실행 방식과 권한을 정합니다",
@@ -1113,10 +1113,10 @@ window.SERVICE_GUIDES = {
                                               "how":  "연결할 앱과 작업 범위를 정하고, 필요하면 스케줄이나 백그라운드 모니터링을 설정합니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "실행 환경을 선택합니다",
-                                                                "body":  "공식 문서 기준으로 Genspark 전용 클라우드 컴퓨터에서 실행하거나 데스크톱 앱으로 자신의 컴퓨터 작업 폴더를 선택해 실행할 수 있습니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "환경"
+                                                                "title":  "Claw를 클릭합니다",
+                                                                "body":  "왼쪽 사이드바의 더보기(…)를 누른 뒤 Claw를 클릭합니다. 더보기 메뉴에는 워크플로우, 드라이브, 허브, GenMail, GenTeam, Claw가 함께 표시됩니다.",
+                                                                "image":  "./guidebook-assets/genspark_more_menu.png",
+                                                                "badge":  "진입"
                                                             },
                                                             {
                                                                 "title":  "앱과 메시징 채널을 연결합니다",
@@ -1140,37 +1140,16 @@ window.SERVICE_GUIDES = {
                                               "how":  "연결된 자료를 기억 계층처럼 활용해 사용자의 업무 배경, 연락처, 프로젝트, 이전 산출물을 더 잘 반영하도록 돕습니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "연결할 자료 범위를 정합니다",
-                                                                "body":  "이메일, 회의록, 문서, 앱, 프로젝트 중 AI가 참고해도 되는 범위를 먼저 정합니다.",
+                                                                "title":  "세컨드 브레인을 클릭합니다",
+                                                                "body":  "왼쪽 사이드바에서 세컨드 브레인을 클릭합니다. 이메일, 회의록, 문서, 앱, 프로젝트 중 AI가 참고해도 되는 범위를 먼저 정합니다.",
                                                                 "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "범위"
+                                                                "badge":  "진입"
                                                             },
                                                             {
                                                                 "title":  "기존 맥락을 활용합니다",
                                                                 "body":  "“지난번 보고서 기준으로”, “우리 프로젝트 자료를 참고해서”처럼 기존 자료를 바탕으로 이어지는 요청을 할 수 있습니다.",
                                                                 "image":  "./guidebook-assets/genspark_home.png",
                                                                 "badge":  "사용"
-                                                            }
-                                                        ]
-                                          },
-                                          {
-                                              "title":  "SecondBrain Note",
-                                              "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                              "location":  "SecondBrain Note 기기 또는 연동 화면에서 녹음과 기록 기능을 사용합니다.",
-                                              "when":  "회의, 현장 대화, 전화 후속 메모처럼 말로 오간 내용을 자동으로 기록하고 검색 가능한 메모로 남길 때 사용합니다.",
-                                              "how":  "공식 자료 기준으로 듣고 말한 내용을 캡처, 전사, 요약해 구조화된 노트로 저장하는 기능입니다.",
-                                              "steps":  [
-                                                            {
-                                                                "title":  "대화를 기록합니다",
-                                                                "body":  "회의나 현장 대화가 시작되면 기록을 시작해 나중에 검색할 수 있는 자료로 남깁니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "기록"
-                                                            },
-                                                            {
-                                                                "title":  "전사와 요약을 확인합니다",
-                                                                "body":  "자동 생성된 텍스트와 요약은 발언자, 숫자, 결정 사항이 맞는지 검토합니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "검토"
                                                             }
                                                         ]
                                           },
@@ -1182,10 +1161,10 @@ window.SERVICE_GUIDES = {
                                               "how":  "공식 문서 기준으로 Skill은 특정 업무를 처리하는 재사용 가능한 AI 도구 또는 플레이북입니다. 역할, 출력 형식, 게시자 기준으로 찾거나 직접 만들 수 있습니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "필요한 Skill을 찾습니다",
-                                                                "body":  "Community, Team, My Own 영역에서 검색하거나 역할, 출력물 유형, 게시자 필터로 적합한 Skill을 찾습니다.",
+                                                                "title":  "Skills를 클릭합니다",
+                                                                "body":  "왼쪽 사이드바에서 Skills를 클릭합니다. Community, Team, My Own 영역에서 검색하거나 역할, 출력물 유형, 게시자 필터로 적합한 Skill을 찾습니다.",
                                                                 "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "탐색"
+                                                                "badge":  "진입"
                                                             },
                                                             {
                                                                 "title":  "Skill을 실행합니다",
@@ -1209,10 +1188,10 @@ window.SERVICE_GUIDES = {
                                               "how":  "프로젝트별 자료를 올려두고 @로 Super Agent, AI Slides, AI Sheets, AI Docs, Genspark Code, AI Designer, Clip Genius, AI Pods 등을 선택해 작업합니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "프로젝트 공간을 만듭니다",
-                                                                "body":  "업무명 기준으로 Hub 프로젝트를 만들고 관련 파일과 링크를 업로드합니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "공간"
+                                                                "title":  "Hub를 클릭합니다",
+                                                                "body":  "왼쪽 사이드바의 더보기(…)를 누른 뒤 허브를 클릭합니다. 더보기 메뉴에는 워크플로우, 드라이브, 허브, GenMail, GenTeam, Claw가 함께 표시됩니다.",
+                                                                "image":  "./guidebook-assets/genspark_more_menu.png",
+                                                                "badge":  "진입"
                                                             },
                                                             {
                                                                 "title":  "작업할 에이전트를 선택합니다",
@@ -1236,10 +1215,10 @@ window.SERVICE_GUIDES = {
                                               "how":  "자연어로 반복 업무를 설명하면 트리거와 작업 단계를 구성하고, 테스트 실행 후 켜거나 끌 수 있습니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "반복 업무를 문장으로 설명합니다",
-                                                                "body":  "예: “매주 월요일 오전 9시에 경쟁사 뉴스와 공식 발표를 모아 Slack에 요약해 주세요.”처럼 시간, 자료 범위, 전달 위치를 적습니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "작성"
+                                                                "title":  "워크플로우를 클릭합니다",
+                                                                "body":  "왼쪽 사이드바의 더보기(…)를 누른 뒤 워크플로우를 클릭합니다. 더보기 메뉴에는 워크플로우, 드라이브, 허브, GenMail, GenTeam, Claw가 함께 표시됩니다.",
+                                                                "image":  "./guidebook-assets/genspark_more_menu.png",
+                                                                "badge":  "진입"
                                                             },
                                                             {
                                                                 "title":  "트리거와 연결 앱을 확인합니다",
@@ -1263,10 +1242,10 @@ window.SERVICE_GUIDES = {
                                               "how":  "현재 회사 내 사용 가이드에서는 설치형 기능으로 분류합니다. 업무 환경에서 사용하려면 사내 보안 정책, 메일 계정 연동 가능 여부, 외부 앱 설치 허용 여부를 먼저 확인해야 합니다.",
                                               "steps":  [
                                                             {
-                                                                "title":  "회사 내 사용 가능 여부를 먼저 확인합니다",
-                                                                "body":  "GenMail은 별도 앱 설치와 메일 계정 연결이 필요한 기능입니다. 회사 PC에서는 외부 앱 설치, Gmail 또는 Outlook 계정 연동, 메일 데이터 접근 권한이 제한될 수 있으므로 일반 사용 기능으로 안내하지 않습니다.",
-                                                                "image":  "./guidebook-assets/genspark_workspace_main.png",
-                                                                "badge":  "제한"
+                                                                "title":  "GenMail을 클릭합니다",
+                                                                "body":  "왼쪽 사이드바의 더보기(…)를 누른 뒤 GenMail을 클릭합니다. 다만 GenMail은 별도 앱 설치와 메일 계정 연결이 필요한 기능이므로, 회사 PC에서는 외부 앱 설치, Gmail 또는 Outlook 계정 연동, 메일 데이터 접근 권한이 제한될 수 있습니다.",
+                                                                "image":  "./guidebook-assets/genspark_more_menu.png",
+                                                                "badge":  "진입"
                                                             }
                                                         ]
                                           },
@@ -1292,7 +1271,6 @@ window.SERVICE_GUIDES = {
                                          "https://www.genspark.ai/helpcenter/genteam",
                                          "https://www.genspark.ai/helpcenter/genspark-claw",
                                          "https://www.genspark.ai/helpcenter/secondbrain",
-                                         "https://www.genspark.ai/helpcenter/secondbrain-note",
                                          "https://www.genspark.ai/helpcenter/skills",
                                          "https://www.genspark.ai/helpcenter/hub",
                                          "https://www.genspark.ai/helpcenter/workflows",
