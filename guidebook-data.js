@@ -1038,10 +1038,10 @@ window.SERVICE_GUIDES = {
                                                                 "badge":  "선택"
                                                             },
                                                             {
-                                                                "title":  "목표 언어를 선택합니다",
-                                                                "body":  "한국어, 영어 등 필요한 언어를 선택하고 번역을 실행합니다.",
-                                                                "image":  "./guidebook-assets/genspark_home.png",
-                                                                "badge":  "설정"
+                                                                "title":  "원문과 목표 언어를 설정합니다",
+                                                                "body":  "입력창에 번역할 내용을 넣고, 하단에서 사용할 모델을 선택한 뒤 원하는 언어를 고릅니다. 화면처럼 원문 언어는 자동 감지로 두고, 오른쪽에서 영어, 한국어, 일본어 등 도착 언어를 선택해 번역을 실행합니다.",
+                                                                "image":  "./guidebook-assets/genspark_translate_input.png",
+                                                                "badge":  "번역 설정"
                                                             },
                                                             {
                                                                 "title":  "전문 용어를 검토합니다",
