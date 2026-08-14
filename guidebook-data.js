@@ -1,6 +1,6 @@
 window.SERVICE_GUIDES = {
-    "generatedAt":  "2026-08-07T16:05:44+09:00",
-    "source":  "ai_guidebooks markdown set, 2026-08-07",
+    "generatedAt":  "2026-08-14T00:00:00+09:00",
+    "source":  "ai_guidebooks markdown set, 2026-08-14",
     "services":  [
                      {
                          "id":  "chatgpt",
@@ -11,7 +11,7 @@ window.SERVICE_GUIDES = {
                          "url":  "https://chatgpt.com/",
                          "tone":  "#10b981",
                          "role":  "질문 답변, 문서 작성, 파일 검토, 조사, 데이터 분석, 이미지 작업, 반복 업무 정리를 돕는 범용 AI 업무 도구",
-                         "basis":  "2026-08-10",
+                         "basis":  "2026-08-14",
                          "overview":  "ChatGPT는 질문 답변만 하는 도구가 아니라 글쓰기, 파일 검토, 최신 정보 확인, 조사 보고서 작성, 데이터 분석, 이미지 작업, 반복 업무 정리까지 한 화면에서 처리할 수 있는 AI 업무 도구입니다. 처음 쓰는 사람은 “무엇을 하고 싶은지”를 기준으로 기능을 고르면 됩니다.",
                          "hero":  "./guidebook-assets/chatgpt_guide_cover.png",
                          "features":  [
@@ -464,7 +464,7 @@ window.SERVICE_GUIDES = {
                          "url":  "https://www.genspark.ai/",
                          "tone":  "#eab308",
                          "role":  "조사, 문서, 슬라이드, 표, 이미지, 영상, 업무 자동화를 한 공간에서 처리하는 에이전트형 AI 작업 공간",
-                         "basis":  "2026-08-12",
+                         "basis":  "2026-08-14",
                          "overview":  "Genspark는 자료 조사, 문서·슬라이드 작성, 데이터 분석, 이미지·영상·음악 제작을 한 화면에서 시작할 수 있는 AI 업무 도구입니다. 이 가이드북은 처음 사용하는 분도 필요한 기능을 고르고 예시 화면을 보며 따라 할 수 있도록 구성했습니다.",
                          "hero":  "./guidebook-assets/genspark_workspace_main.png",
                          "features":  [
@@ -1268,7 +1268,7 @@ window.SERVICE_GUIDES = {
                          "url":  "https://lilys.ai/",
                          "tone":  "#14b8a6",
                          "role":  "영상, PDF, 웹페이지, 오디오를 빠르게 읽고 근거 중심으로 요약하는 도구",
-                         "basis":  "2026-08-07",
+                         "basis":  "2026-08-14",
                          "overview":  "긴 영상, 웹페이지, PDF, 오디오, 책을 빠르게 이해하고 정리할 때 적합하다. 자료 기반 요약, 인용 확인, 학습자료 생성에 강하다.",
                          "hero":  "./guidebook-assets/lilysai_help_add_source.png",
                          "features":  [
@@ -1360,7 +1360,7 @@ window.SERVICE_GUIDES = {
                          "url":  "https://gemini.google.com/",
                          "tone":  "#60a5fa",
                          "role":  "Google Workspace 안에서 메일, 문서, 표, 회의 업무를 보조하는 AI",
-                         "basis":  "2026-08-07",
+                         "basis":  "2026-08-14",
                          "overview":  "Google Workspace와 함께 쓰는 업무 AI가 필요할 때 적합하다. Gmail, Docs, Sheets, Slides, Drive, Meet 등에서 문서/메일/표/회의 업무를 바로 도와준다.",
                          "hero":  "./guidebook-assets/gemini_help.png",
                          "features":  [
@@ -1453,7 +1453,7 @@ window.SERVICE_GUIDES = {
                          "url":  "https://notebooklm.google.com/",
                          "tone":  "#6366f1",
                          "role":  "내가 넣은 자료 묶음을 근거로 질문, 보고서, 학습자료를 만드는 소스 기반 노트북",
-                         "basis":  "2026-08-07",
+                         "basis":  "2026-08-14",
                          "overview":  "특정 자료 묶음을 근거로 질문하고 보고서/학습자료를 만들 때 적합하다. 소스 기반 답변, 인용 확인, 오디오/영상 요약, 마인드맵, 슬라이드 생성에 강하다.",
                          "hero":  "./guidebook-assets/notebooklm_help.png",
                          "features":  [
@@ -1553,7 +1553,7 @@ window.SERVICE_GUIDES = {
                          "url":  "https://claude.ai/new",
                          "tone":  "#f59e0b",
                          "role":  "긴 문서 이해, 글쓰기, 논리 검토, 산출물 구조화에 강한 업무 AI",
-                         "basis":  "2026-08-07",
+                         "basis":  "2026-08-14",
                          "overview":  "긴 문서 이해, 논리적 검토, 글쓰기, 구조화된 업무 산출물 제작에 적합하다. Projects와 Artifacts를 활용하면 업무 맥락과 결과물을 함께 관리하기 좋다.",
                          "hero":  "./guidebook-assets/claude_getting_started.png",
                          "features":  [
@@ -1653,7 +1653,7 @@ window.SERVICE_GUIDES = {
                          "url":  "https://hix.ai/home",
                          "tone":  "#8b5cf6",
                          "role":  "글쓰기, 리서치, 발표자료, 웹 문장 보조를 묶은 올인원 작업 도구",
-                         "basis":  "2026-08-07",
+                         "basis":  "2026-08-14",
                          "overview":  "글쓰기, 리서치, 발표자료, 이미지, 영상, 웹 문장 보조가 필요할 때 적합하다. 브라우저 확장을 통해 Gmail, Google Docs, 웹페이지 위에서도 바로 쓸 수 있다.",
                          "hero":  "./guidebook-assets/hix_home.png",
                          "features":  [
@@ -1747,7 +1747,7 @@ window.SERVICE_GUIDES = {
                          "url":  "https://www.inline-ai.com/",
                          "tone":  "#06b6d4",
                          "role":  "로컬 PC 문서, 표, PDF, 이미지, 폴더를 직접 읽고 정리하는 파일 중심 AI",
-                         "basis":  "2026-08-07",
+                         "basis":  "2026-08-14",
                          "overview":  "로컬 PC 안의 Excel, Word, PowerPoint, PDF, 이미지, 폴더를 AI가 직접 읽고 정리해야 할 때 적합하다. 웹 AI보다 로컬 파일 중심 업무에 특화되어 있다.",
                          "hero":  "./guidebook-assets/inline_home.png",
                          "features":  [
@@ -1832,7 +1832,7 @@ window.SERVICE_GUIDES = {
                          "url":  "https://www.canva.com/",
                          "tone":  "#00c4cc",
                          "role":  "디자인 경험이 적어도 발표자료, 카드뉴스, 문서, 영상 시안을 만드는 제작 도구",
-                         "basis":  "2026-08-07",
+                         "basis":  "2026-08-14",
                          "overview":  "디자인 전문 인력이 아니어도 발표자료, 문서, 포스터, SNS 콘텐츠, 영상, 웹페이지를 빠르게 만들어야 할 때 적합하다. 템플릿과 AI 디자인 보조, 브랜드 관리에 강하다.",
                          "hero":  "./guidebook-assets/canva_features.png",
                          "features":  [
@@ -1940,7 +1940,7 @@ window.SERVICE_GUIDES = {
                          "url":  "https://www.capcut.com/",
                          "tone":  "#111827",
                          "role":  "컷 편집, 자막, 숏폼, 교육 영상 제작에 쓰는 영상 편집 도구",
-                         "basis":  "2026-08-07",
+                         "basis":  "2026-08-14",
                          "overview":  "영상 편집, 자막, 숏폼, 홍보 영상, 교육 영상 제작에 적합하다. 요청 조건상 데스크톱 앱 중심으로 설명하며, 컷 편집과 AI 자막/음성/배경 제거가 강점이다.",
                          "hero":  "./guidebook-assets/capcut_desktop.png",
                          "features":  [
@@ -2048,7 +2048,7 @@ window.SERVICE_GUIDES = {
                          "url":  "https://manus.im/",
                          "tone":  "#fb7185",
                          "role":  "조사부터 슬라이드, 웹 작업까지 실행하는 에이전트형 AI",
-                         "basis":  "2026-08-07",
+                         "basis":  "2026-08-14",
                          "overview":  "단순 답변보다 실제 작업 실행과 결과물 생성이 필요할 때 적합하다. 조사, 슬라이드, 웹사이트, 디자인, 브라우저 작업, 반복 업무 실행에 강한 에이전트형 AI다.",
                          "hero":  "./guidebook-assets/manus_home.png",
                          "features":  [
@@ -2143,7 +2143,7 @@ window.SERVICE_GUIDES = {
                          "url":  "https://elevenlabs.io/",
                          "tone":  "#ec4899",
                          "role":  "내레이션, 더빙, 음성 변환, 오디오 편집을 위한 음성 제작 도구",
-                         "basis":  "2026-08-07",
+                         "basis":  "2026-08-14",
                          "overview":  "음성 생성, 더빙, 오디오 편집, 효과음, 음악, 음성 에이전트 제작에 적합하다. 교육 영상, 홍보 영상, 내레이션, 다국어 콘텐츠 업무에 강하다.",
                          "hero":  "./guidebook-assets/elevenlabs_tts.png",
                          "features":  [
