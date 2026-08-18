@@ -76,7 +76,7 @@
                      }
                  ],
     "notice":  {
-                   "noticeId":  "2026-09-03",
+                   "noticeId":  "2026-06-04",
                    "items":  [
                                  {
                                      "date":  "2026-06-04",
@@ -133,13 +133,6 @@
                                      "sub":  "2026년 1월 28일부터 Perplexity를 이용하실 수 없습니다. (사유: 사용량 저조)",
                                      "keyword":  "종료",
                                      "priority":  5
-                                 },
-                                 {
-                                     "date":  "2026-09-03",
-                                     "title":  "HIX AI 구독 해지",
-                                     "sub":  "2026년 9월 3일부터 HIX AI를 이용하실 수 없습니다. (사유: 사용량 저조)",
-                                     "keyword":  "종료",
-                                     "priority":  5
                                  }
                              ]
                },
@@ -166,66 +159,6 @@
                                  }
                              ],
     "news":  [
-                 {
-                     "service":  "Suno",
-                     "title":  "Studio 2.0 공개",
-                     "date":  "2026-08-13",
-                     "file":  "2026-08-13-suno-studio-20.html"
-                 },
-                 {
-                     "service":  "OpenAI",
-                     "title":  "GPT-5.6 Sol Ultrafast 모드 제한 프리뷰 공개",
-                     "date":  "2026-08-13",
-                     "file":  "2026-08-13-openai-gpt-56-sol-ultrafast-preview.html"
-                 },
-                 {
-                     "service":  "Gemini",
-                     "title":  "Google Sheets canvas 공개",
-                     "date":  "2026-08-13",
-                     "file":  "2026-08-13-gemini-google-sheets-canvas.html"
-                 },
-                 {
-                     "service":  "DeepSeek",
-                     "title":  "DeepSeek-V4-Pro GA 공개",
-                     "date":  "2026-08-13",
-                     "file":  "2026-08-13-deepseek-v4-pro-ga.html"
-                 },
-                 {
-                     "service":  "xAI",
-                     "title":  "Grok 4.6 공개",
-                     "date":  "2026-08-12",
-                     "file":  "2026-08-12-xai-grok-46.html"
-                 },
-                 {
-                     "service":  "xAI",
-                     "title":  "Grok Bot 베타 공개",
-                     "date":  "2026-08-11",
-                     "file":  "2026-08-11-xai-grok-bot-beta.html"
-                 },
-                 {
-                     "service":  "Meta AI",
-                     "title":  "Muse Glimmer 30B 공개",
-                     "date":  "2026-08-10",
-                     "file":  "2026-08-10-meta-ai-muse-glimmer-30b.html"
-                 },
-                 {
-                     "service":  "OpenAI",
-                     "title":  "Daybreak Blue/Red 및 GPT-5.6-Cyber 공개",
-                     "date":  "2026-08-10",
-                     "file":  "2026-08-10-openai-daybreak-blue-red-gpt-56-cyber.html"
-                 },
-                 {
-                     "service":  "Gemini",
-                     "title":  "Workspace Studio에서 Gemini Notebook 소스 자동 추가",
-                     "date":  "2026-08-07",
-                     "file":  "2026-08-07-gemini-workspace-studio-notebook-source-auto-add.html"
-                 },
-                 {
-                     "service":  "xAI",
-                     "title":  "Imagine Image 2.0 Quality Mode 공개",
-                     "date":  "2026-08-07",
-                     "file":  "2026-08-07-xai-imagine-image-20-quality-mode.html"
-                 },
                  {
                      "service":  "xAI",
                      "title":  "Grok Voice Think Fast 2.0 공개",

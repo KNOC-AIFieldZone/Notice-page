@@ -1,6 +1,6 @@
 window.SERVICE_GUIDES = {
-    "generatedAt":  "2026-08-14T00:00:00+09:00",
-    "source":  "ai_guidebooks markdown set, 2026-08-14",
+    "generatedAt":  "2026-08-18T00:00:00+09:00",
+    "source":  "ai_guidebooks markdown set, 2026-08-18",
     "services":  [
                      {
                          "id":  "chatgpt",
@@ -686,7 +686,7 @@ window.SERVICE_GUIDES = {
                                                             },
                                                             {
                                                                 "title":  "시스템을 만드는 방법을 선택합니다",
-                                                                "body":  "AgentBase 화면에서는 받은편지함에서 가져오기, 파일에서 가져오기, 다른 앱에서 가져오기, 직접 설명하기로 시작할 수 있습니다. 화면 상단의 템플릿은 영업 & CRM, 재고, 프로젝트, 마케팅, HR & 채용, 개인 등 업무 유형별 예시를 보여줍니다. 공식 자료 기준으로 AI가 필요한 테이블, 필드, 초기 데이터, 보기 화면을 자동으로 구성합니다.",
+                                                                "body":  "AgentBase 화면에서는 받은편지함에서 가져오기, 파일에서 가져오기, 다른 앱에서 가져오기, 직접 설명하기로 시작할 수 있습니다. 화면 상단의 템플릿은 영업 \u0026 CRM, 재고, 프로젝트, 마케팅, HR \u0026 채용, 개인 등 업무 유형별 예시를 보여줍니다. 공식 자료 기준으로 AI가 필요한 테이블, 필드, 초기 데이터, 보기 화면을 자동으로 구성합니다.",
                                                                 "image":  "./guidebook-assets/genspark_agentbase_main.png",
                                                                 "badge":  "설정"
                                                             },
@@ -1260,74 +1260,92 @@ window.SERVICE_GUIDES = {
                                      ]
                      },
                      {
-    "id":  "lilysai",
-    "name":  "Lilys AI",
-    "display":  "LilysAI",
-    "title":  "LilysAI 자료 요약 사용 가이드",
-    "domain":  "lilys.ai",
-    "url":  "https://lilys.ai/",
-    "tone":  "#14b8a6",
-    "role":  "유튜브, 웹사이트, PDF, 영상·음성 자료를 빠르게 요약하고 필요한 부분을 다시 찾아보는 자료 정리 도구",
-    "basis":  "2026-08-14",
-    "overview":  "LilysAI는 유튜브 영상, 웹사이트, PDF, 영상·음성 파일, 텍스트 자료를 가져와 요약 문서와 스크립트를 함께 확인할 수 있는 자료 정리 서비스입니다. 긴 자료를 빠르게 파악하고, 추가 자료를 붙이거나 AI에게 질문해 보고서 초안으로 정리할 때 사용합니다.",
-    "hero":  "./guidebook-assets/lilysai_main.png",
-    "features":  [
-                     "자료요약",
-                     "유튜브요약",
-                     "PDF요약",
-                     "웹페이지요약",
-                     "음성·영상정리",
-                     "스크립트확인",
-                     "AI질문",
-                     "자료찾기",
-                     "공유·내보내기"
-                 ],
-    "tips":  [
-                 "긴 영상이나 회의 녹음은 먼저 요약으로 전체 흐름을 확인한 뒤, 필요한 구간은 왼쪽 스크립트에서 다시 확인합니다.",
-                 "여러 자료를 함께 넣을 때는 자료별 출처와 목적을 구분해 두면 이후 질문과 보고서 정리가 쉬워집니다.",
-                 "공유 또는 파일 내보내기 전에는 AI 요약의 핵심 사실과 원문 링크를 한 번 더 확인합니다."
-             ],
-    "sections":  [
-                     {
-                         "title":  "자료 요약하기",
-                         "image":  "./guidebook-assets/lilysai_main.png",
-                         "summary":  "가지고 있는 자료나 링크를 넣으면 스크립트, 핵심 요약, 추가 질문, 공유·내보내기까지 한 화면에서 처리할 수 있습니다.",
-                         "steps":  [
-                                       {
-                                           "title":  "LilysAI 메인에서 새 자료를 준비합니다.",
-                                           "image":  "./guidebook-assets/lilysai_main.png",
-                                           "description":  "홈 화면의 라이브러리에서 기존 자료를 확인하고, 오른쪽 위 또는 왼쪽의 새로 추가하기를 눌러 새 자료를 가져올 수 있습니다."
-                                       },
-                                       {
-                                           "title":  "가지고 있는 자료를 추가합니다.",
-                                           "image":  "./guidebook-assets/lilysai_add_source.png",
-                                           "description":  "유튜브 링크, 웹사이트 링크, PDF, 영상·음성 파일, 텍스트 파일을 넣을 수 있고 책 검색, 기존 자료 불러오기도 사용할 수 있습니다. 버튼으로 파일을 선택하거나 화면에 드래그 앤 드롭해 추가할 수 있으며, 여러 자료를 함께 넣어 하나의 자료 묶음으로 정리할 수 있습니다."
-                                       },
-                                       {
-                                           "title":  "요약 화면에서 핵심 내용과 원문을 함께 확인합니다.",
-                                           "image":  "./guidebook-assets/lilysai_summary_view.png",
-                                           "description":  "왼쪽에는 재생 구간과 스크립트가 표시되고, 가운데에는 요약 문서가 생성됩니다. 상단에서 요약과 확장을 전환하고 길이, 템플릿, 글꼴 같은 보기 방식을 조정할 수 있습니다. 오른쪽 LILY 패널에는 자료에 대해 질문하거나 문장 수정, 보충 작성을 요청할 수 있으며, 오른쪽 위 더보기 메뉴에서 직접 편집도 할 수 있습니다."
-                                       },
-                                       {
-                                           "title":  "자료를 더 붙이거나 AI로 찾아옵니다.",
-                                           "image":  "./guidebook-assets/lilysai_source_add_find.png",
-                                           "description":  "새로 만들기 옆 자료 리스트 보기 버튼을 열면 자료 추가와 자료 찾기를 사용할 수 있습니다. 자료 추가는 사용자가 가진 파일이나 링크를 더 넣는 기능이고, 자료 찾기는 검색어를 기반으로 관련 웹 자료를 찾아 요약에 참고 자료로 붙이는 방식입니다."
-                                       },
-                                       {
-                                           "title":  "완성한 요약을 공유하거나 파일로 내보냅니다.",
-                                           "image":  "./guidebook-assets/lilysai_share_export.png",
-                                           "description":  "상단 공유 버튼에서 링크 공유를 할 수 있고, 내보내기에서는 PDF, Notion, DOCX, JSON, Markdown 등 필요한 형식으로 저장할 수 있습니다. 보고서 전달용이면 PDF나 DOCX, 데이터 재사용 목적이면 JSON 또는 Markdown이 적합합니다."
-                                       }
-                                   ]
-                     }
-                 ],
-    "sources":  [
-                    "https://lilys.ai/en/",
-                    "https://lilys.ai/en/features/",
-                    "https://help.lilys.ai/en/"
-                ]
-},
-
+                         "id":  "lilysai",
+                         "name":  "Lilys AI",
+                         "display":  "LilysAI",
+                         "title":  "LilysAI 자료 요약 사용 가이드",
+                         "domain":  "lilys.ai",
+                         "url":  "https://lilys.ai/",
+                         "tone":  "#14b8a6",
+                         "role":  "유튜브, 웹사이트, PDF, 영상·음성 자료를 빠르게 요약하고 필요한 부분을 다시 찾아보는 자료 정리 도구",
+                         "basis":  "2026-08-18",
+                         "overview":  "LilysAI는 유튜브 영상, 웹사이트, PDF, 영상·음성 파일, 텍스트 자료를 가져와 요약 문서와 스크립트를 함께 확인할 수 있는 자료 정리 서비스입니다. 긴 자료를 빠르게 파악하고, 추가 자료를 붙이거나 AI에게 질문해 보고서 초안으로 정리할 때 사용합니다.",
+                         "hero":  "./guidebook-assets/lilysai_main.png",
+                         "features":  [
+                                          "자료 요약",
+                                          "유튜브 요약",
+                                          "PDF 요약",
+                                          "웹페이지 요약",
+                                          "음성·영상 정리",
+                                          "AI 질문",
+                                          "자료 찾기",
+                                          "채널 구독",
+                                          "공유·내보내기"
+                                      ],
+                         "tips":  [
+                                      "긴 영상이나 회의 녹음은 먼저 요약으로 전체 흐름을 확인한 뒤, 필요한 구간은 왼쪽 스크립트에서 다시 확인합니다.",
+                                      "여러 자료를 함께 넣을 때는 자료별 출처와 목적을 구분해 두면 이후 질문과 보고서 정리가 쉬워집니다.",
+                                      "공유 또는 파일 내보내기 전에는 AI 요약의 핵심 사실과 원문 링크를 한 번 더 확인합니다."
+                                  ],
+                         "sections":  [
+                                          {
+                                              "title":  "자료 요약하기",
+                                              "image":  "./guidebook-assets/lilysai_main.png",
+                                              "summary":  "가지고 있는 자료나 링크를 넣으면 스크립트, 핵심 요약, 추가 질문, 공유·내보내기까지 한 화면에서 처리할 수 있습니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "LilysAI 메인에서 새 자료를 준비합니다.",
+                                                                "image":  "./guidebook-assets/lilysai_main.png",
+                                                                "description":  "홈 화면의 라이브러리에서 기존 자료를 확인하고, 오른쪽 위 또는 왼쪽의 새로 추가하기를 눌러 새 자료를 가져올 수 있습니다."
+                                                            },
+                                                            {
+                                                                "title":  "가지고 있는 자료를 추가합니다.",
+                                                                "image":  "./guidebook-assets/lilysai_add_source.png",
+                                                                "description":  "유튜브 링크, 웹사이트 링크, PDF, 영상·음성 파일, 텍스트 파일을 넣을 수 있고 책 검색, 기존 자료 불러오기도 사용할 수 있습니다. 버튼으로 파일을 선택하거나 화면에 드래그 앤 드롭해 추가할 수 있으며, 여러 자료를 함께 넣어 하나의 자료 묶음으로 정리할 수 있습니다."
+                                                            },
+                                                            {
+                                                                "title":  "요약 화면에서 핵심 내용과 원문을 함께 확인합니다.",
+                                                                "image":  "./guidebook-assets/lilysai_summary_view.png",
+                                                                "description":  "왼쪽에는 재생 구간과 스크립트가 표시되고, 가운데에는 요약 문서가 생성됩니다. 상단에서 요약과 확장을 전환하고 길이, 템플릿, 글꼴 같은 보기 방식을 조정할 수 있습니다. 오른쪽 LILY 패널에는 자료에 대해 질문하거나 문장 수정, 보충 작성을 요청할 수 있으며, 오른쪽 위 더보기 메뉴에서 직접 편집도 할 수 있습니다."
+                                                            },
+                                                            {
+                                                                "title":  "자료를 더 붙이거나 AI로 찾아옵니다.",
+                                                                "image":  "./guidebook-assets/lilysai_source_add_find.png",
+                                                                "description":  "새로 만들기 옆 자료 리스트 보기 버튼을 열면 자료 추가와 자료 찾기를 사용할 수 있습니다. 자료 추가는 사용자가 가진 파일이나 링크를 더 넣는 기능이고, 자료 찾기는 검색어를 기반으로 관련 웹 자료를 찾아 요약에 참고 자료로 붙이는 방식입니다."
+                                                            },
+                                                            {
+                                                                "title":  "완성한 요약을 공유하거나 파일로 내보냅니다.",
+                                                                "image":  "./guidebook-assets/lilysai_share_export.png",
+                                                                "description":  "상단 공유 버튼에서 링크 공유를 할 수 있고, 내보내기에서는 PDF, Notion, DOCX, JSON, Markdown 등 필요한 형식으로 저장할 수 있습니다. 보고서 전달용이면 PDF나 DOCX, 데이터 재사용 목적이면 JSON 또는 Markdown이 적합합니다."
+                                                            }
+                                                        ]
+                                          },
+                                          {
+                                              "title":  "구독 자료 모아보기",
+                                              "image":  "./guidebook-assets/lilysai_subscription.png",
+                                              "summary":  "자주 보는 YouTube 채널이나 RSS 피드를 구독해 새 영상과 글을 자동으로 모아보고, 필요한 자료를 바로 요약할 때 사용합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "왼쪽 사이드바에서 구독을 엽니다.",
+                                                                "image":  "./guidebook-assets/lilysai_main.png",
+                                                                "description":  "홈 화면 왼쪽 메뉴의 구독을 클릭합니다. 처음 설정할 때는 오른쪽 위 구독하기에서 YouTube 채널이나 RSS 피드를 추가합니다."
+                                                            },
+                                                            {
+                                                                "title":  "새로 올라온 자료를 확인합니다.",
+                                                                "image":  "./guidebook-assets/lilysai_subscription.png",
+                                                                "description":  "구독한 채널이나 피드에 새 영상이나 글이 올라오면 구독 화면에 자동으로 수집됩니다. 읽지 않음/읽음으로 확인 상태를 구분하고, 전체 필터, 새로고침, 관리 기능으로 구독 자료를 정리합니다. 필요한 항목을 열어 요약하거나 라이브러리에 보관합니다."
+                                                            }
+                                                        ]
+                                          }
+                                      ],
+                         "sources":  [
+                                         "https://lilys.ai/en/",
+                                         "https://lilys.ai/en/features/",
+                                         "https://help.lilys.ai/en/",
+                                         "https://help.lilys.ai/ko/articles/9338696-%EB%82%B4-%EA%B5%AC%EB%8F%85",
+                                         "https://help.lilys.ai/en/articles/11522387-release-note"
+                                     ]
+                     },
                      {
                          "id":  "gemini",
                          "name":  "Gemini",

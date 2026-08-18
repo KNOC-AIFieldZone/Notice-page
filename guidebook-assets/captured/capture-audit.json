@@ -1,0 +1,208 @@
+[
+  {
+    "id": "chatgpt_app",
+    "label": "ChatGPT app",
+    "url": "https://chatgpt.com/",
+    "finalUrl": "https://chatgpt.com/auth/login",
+    "title": "시작하세요 | ChatGPT",
+    "blocked": false,
+    "login": true,
+    "textSample": "로그인 또는 회원가입 Google 계정으로 계속하기 Apple 계정으로 계속하기 휴대 전화 번호로 계속하기 또는 계속 사용해 보기 ChatGPT 이용약관 | 개인정보 보호 정책",
+    "screenshot": "./guidebook-assets/captured/chatgpt_app.png"
+  },
+  {
+    "id": "chatgpt_features",
+    "label": "ChatGPT features",
+    "url": "https://openai.com/chatgpt/overview/",
+    "finalUrl": "https://chatgpt.com/ko-KR/overview/",
+    "title": "ChatGPT | 새로운 발견과 학습, 창작을 위한 AI 어시스턴트",
+    "blocked": true,
+    "login": true,
+    "textSample": "로그인 무료로 회원 가입 소개 기능 활용법 Codex Business 가격 다운로드 대화 , 업무 , 코딩 을 모두 한곳에서 지금 사용하기* 앱 다운로드 Chat 질문, 학습, 일상적인 도움을 위해. 일상적인 질문과 아이디어를 비롯해 개념 이해, 메시지 초안 작성, 웹 검색, 이미지 생성, 여러 선택지 비교, 의사결정까지 다양한 작업을 도와드릴 수 있습니다. Work 시작부터 끝까지 책임지는 업무 ChatGPT Work는 업무에 사용되는 도구와 컨텍스트, 앱을 활용하여 문서, 슬라이드 자료, 스프레드시트, 차트, PDF, 이미지 등 다양한 결과물을 만들고 편집할 수 있습니다. Codex 코딩과 기술적인 업무 처리 강력한 코딩 에이전트를 이제 ChatGPT 안에서 바로 이용하세요. 프로젝트 계획부터 코드 작성, 테스트, 검토, 배포까지 모든 단계에서 활용할 수 있습니다. 업무부터 일상까지, 모든 순간에 ChatGPT를 활용하세요. 글쓰기 메모와 아이디어를 명확하고 완성도 높은 글로 다듬어 보세요. 메시지, 메모, 계획, 이야기, 게시물 등 다양한 글의 초안을 작성하고, 생각이 발전하는 과정에 맞춰 계속 다듬을 수 있습니다. 이미지 프롬프트만으로 이미지를 만들고, 다양한 비주얼 방향을 탐색하거나, 전단지와 브랜딩 등 다양한 그래픽 디자인을 제작하세요. Work 업무 파일과 Gmail, Slack 같은 앱을 연결해 완성도 높은 결과물을 만"
+  },
+  {
+    "id": "genspark_home",
+    "label": "Genspark home",
+    "url": "https://www.genspark.ai/",
+    "finalUrl": "https://www.genspark.ai/",
+    "title": "Genspark(젠스파크) - 누구나 쉽게 쓰는 올인원 AI 워크스페이스",
+    "blocked": false,
+    "login": true,
+    "textSample": "New 홈 Skills 세컨드 브레인 New 더보기 로그인 가입하기 Genspark AI 워크스페이스 6.0 대화 AI 팀 GenTeam New 오피스 스위트 GENSPARK 앱 AI 슬라이드 AI 시트 AI 문서 GenMail GOOGLE WORKSPACE Google Workspace 플러그인 MICROSOFT 365 PowerPoint 플러그인 Excel 플러그인 Word 플러그인 AI 슬라이드 AI 시트 AI 문서 GenMail New 빌드 스위트 디자인 / 프로토타입 New 코드 대시보드 및 CRM New 콘텐츠 제작 GENSPARK 앱 AI 채팅 AI 이미지 AI 동영상 AI 음악 AI 오디오 클립 지니어스 AI 팟캐스트 AI 채팅 AI 이미지 도구 AI 회의록 모든 에이전트 올인원 AI 워크스페이스 제품 Genspark Claw Speakly GenClipboard GenTerminal GENSPARK 글로벌 Genspark Korea Genspark Japan Genspark Brasil Genspark France Genspark Italia Genspark Español 도구 글쓰기 및 콘텐츠 AI 문서작성 도구 AI 소설 생성기 AI 자기소개서 생성기 AI 학습 지도안 생성기 AI 계약서 생성기 AI 채팅 AI 회의록 AI 음성 입력 AI 팩트체커 디자인 및 비주얼 AI 이미지 생성기 AI 사진 편집 AI 아바타 ",
+    "screenshot": "./guidebook-assets/captured/genspark_home.png"
+  },
+  {
+    "id": "genspark_slides",
+    "label": "Genspark slides",
+    "url": "https://www.genspark.ai/ai-slides",
+    "finalUrl": "https://www.genspark.ai/ai-slides",
+    "title": "Genspark",
+    "blocked": false,
+    "login": false,
+    "textSample": "",
+    "screenshot": "./guidebook-assets/captured/genspark_slides.png"
+  },
+  {
+    "id": "lilysai_home",
+    "label": "LilysAI home",
+    "url": "https://lilys.ai/",
+    "finalUrl": "https://lilys.ai/ko/",
+    "title": "LilysAI(릴리스AI) - 유튜브·PDF·웹 무료 요약 & 채팅",
+    "blocked": true,
+    "login": false,
+    "textSample": "시작하기 🇰🇷 한국 1위 요약AI 🌍 120만 사용자 자료를 저장하고 구독하면, 인사이트를 떠먹여 드려요 AI 네이티브를 위한 자료 정리 비서 LilysAI를 만나보세요. 유튜브, 책, PDF, 블로그, 오디오, 비디오를 가져오면 즉시 핵심을 요약하고, 쉽게 해설하며, 더 깊이 확장할 수 있습니다. 무료로 시작하기 두뇌의 한계를 넘어 120만+ 리더, 투자자, 연구자, 학습자가 사랑합니다 여러분이 할 일은 아주 간단합니다. 자료 저장 유튜브, 책, PDF, 블로그, 영상/음성 파일, 녹음까지 — 귀중한 자료를 발견하는 즉시 앱과 확장프로그램으로 모두 저장하세요. 크롬 확장 프로그램 앱 구독 놓치기 싫은 유튜브 채널, RSS 피드는 구독하세요. YouTube RSS 천재 모드 : on ⚡ 1 / 5 드디어, 제대로 된 요약 최고의 동료가 정리한 것처럼 구조적으로, 중요한 뉘앙스를 누락하지 않고, 시각 자료도 적절하게 포함하며, 출처도 꼼꼼히 정리합니다. 원하는 길이와 난이도로 커스텀도 가능합니다. 요약 시작하기 2 / 5 혼자 읽는 것 이상으로 확장하세요 자료를 이해하는데 도움이 되는 배경 지식, 균형잡힌 사고를 위한 반대 시각, 내 상황에 맞는 액션아이템을 리서치한 보고서가 자동으로 작성되며, 마인드맵, 인포그래픽 등 각종 시각자료, 퀴즈, 플래시카드 같은 학습 도구도 제공합니다. 확장 시작하기 3 / 5 어떤 어려운 것도 이해"
+  },
+  {
+    "id": "gemini_app",
+    "label": "Gemini app",
+    "url": "https://gemini.google.com/app",
+    "finalUrl": "https://gemini.google.com/app",
+    "title": "Google Gemini",
+    "blocked": false,
+    "login": false,
+    "textSample": "",
+    "screenshot": "./guidebook-assets/captured/gemini_app.png"
+  },
+  {
+    "id": "notebooklm_home",
+    "label": "NotebookLM",
+    "url": "https://notebooklm.google.com/",
+    "finalUrl": "https://notebook.google.com/?pli=1",
+    "title": "Gemini Notebook",
+    "blocked": false,
+    "login": false,
+    "textSample": "settings 설정 PRO 전체 내 노트북 추천 노트북 공유 문서함 컬렉션 grid_view view_headline add 새로 만들기 add 컬렉션 만들기 more_vert category 가이드북 🎙️ 🛑 🎬 🪄 🤖 노트북 12개 NotebookLM이 이제 Gemini Notebook으로 변경되었습니다. 새로운 이름으로 변함없이 우수한 기능을 제공합니다.자세히 알아보기 시작하기",
+    "screenshot": "./guidebook-assets/captured/notebooklm_home.png"
+  },
+  {
+    "id": "claude_app",
+    "label": "Claude app",
+    "url": "https://claude.ai/new",
+    "finalUrl": "https://claude.ai/login?from=logout",
+    "title": "Sign in - Claude",
+    "blocked": true,
+    "login": true,
+    "textSample": "다음을 질문하세요 원대한 목표를 위한 생각의 파트너 Google로 계속하기 또는 이메일로 계속하기 SSO로 계속하기 데스크톱 앱 다운로드 요금제 살펴보기 개인 Team 및 Enterprise 개인 Team 및 Enterprise Free Claude 사용해 보기 $0 모든 사용자 무료 Claude 체험하기  웹, iOS, Android 및 데스크톱에서 채팅하세요  코드 생성 및 데이터 시각화  콘텐츠 작성, 편집 및 제작  웹 검색 기능  대화 간 메모리  파일 생성 및 코드 실행  데스크톱 확장 프로그램으로 Claude를 더 활용하세요  Slack 및 Google Workspace 서비스 연결  원격 MCP를 통해 커넥터로 모든 컨텍스트 또는 도구 통합  복잡한 작업을 위한 확장 사고 Pro 일상적인 생산성을 위해 $17 연간 구독 할인 적용 시 월 요금 (선불 $200). 월별 결제 시 $20. Claude 체험하기 약정 없음 · 언제든지 취소 가능 Free의 모든 기능에 다음 기능이 추가됩니다.  더 많은 사용량*  Claude Code 포함  Claude Cowork 포함  Claude Design 포함  Claude Science 포함  채팅과 문서를 정리할 수 있는 무제한 프로젝트 이용  Research 액세스  더 많은 Claude 모델 사용 가능  Microsoft 365용 Claude"
+  },
+  {
+    "id": "claude_features",
+    "label": "Claude features",
+    "url": "https://www.anthropic.com/claude",
+    "finalUrl": "https://claude.com/product/overview",
+    "title": "The AI for Problem Solvers | Claude by Anthropic",
+    "blocked": false,
+    "login": true,
+    "textSample": "Contact sales Contact sales Try Claude Try Claude Product Explore here Latest news Next Claude Opus 5 A major leap for Opus in coding and knowledge work Learn more Learn more Meet your thinking partner Tackle any big, bold, bewildering challenge with Claude. Ask Claude Ask Claude Write Button Text Learn Button Text Code Button Text The AI for problem solvers Download the desktop app: macOS macOS Windows Windows Windows (arm64) Windows (arm64) Break down problems together Claude builds on your ideas, expands on your logic, and simplifies complexity one step at a time. Tackle your toughest work Claude provides expert-level collaboration on the things you need to get done—from coding a product ",
+    "screenshot": "./guidebook-assets/captured/claude_features.png"
+  },
+  {
+    "id": "hix_home",
+    "label": "HIX.AI home",
+    "url": "https://hix.ai/",
+    "finalUrl": "https://hix.ai/",
+    "title": "HIX AI: Your Ultimate AI Agent Workspace",
+    "blocked": false,
+    "login": false,
+    "textSample": "",
+    "screenshot": "./guidebook-assets/captured/hix_home.png"
+  },
+  {
+    "id": "hix_writer",
+    "label": "HIX writer",
+    "url": "https://hix.ai/ai-writer",
+    "finalUrl": "https://hix.ai/ai-writer",
+    "title": "Free AI Writer & AI Writing Assistant | HIX AI",
+    "blocked": false,
+    "login": false,
+    "textSample": "Write Marketing Copy, Reports, Blog Posts Instantly With Our AI Writer Describe what you'd like me to write... Docs Rich Text Auto Instant Write a 3,000-word analysis on how remote work transforms management Write a 2,000-word NYT-style feature on AI in healthcare Draft a 5,000-word product proposal for an AI customer service system Write a 4,000-word sci-fi story about human-AI coexistence in 2050 Shanghai Create similar Plano de Estudos para ENEM de 3 Meses Create similar 業務効率化SaaS導入提案書 Create similar 뷰티 브랜드 제안 만들기 Create similar User Research Synthesis for Global Fashion E-commerce Store Create similar Premium Skincare Serum Launch E-Invitation Create similar VR/AR for Immersive Education",
+    "screenshot": "./guidebook-assets/captured/hix_writer.png"
+  },
+  {
+    "id": "canva_home",
+    "label": "Canva home",
+    "url": "https://www.canva.com/",
+    "finalUrl": "https://www.canva.com/ko_kr/",
+    "title": "모두가 사용할 수 있는 Canva 비주얼 스위트",
+    "blocked": false,
+    "login": true,
+    "textSample": "로드 중 먼저, 쿠키에 동의해주세요 🍪 Canva는 웹사이트 실행을 위해 필수 쿠키를 사용합니다. 방문 경험을 개선·개인화하고, Canva와 협력업체 웹사이트에서 맞춤형 광고를 제공하며, 웹사이트의 성능을 분석하는 데 필요한 이외의 다른 쿠키는 사용자의 동의가 있는 경우에만 사용합니다. 선택 가능한 사항에 대한 자세한 내용은 Canva의 쿠키 정책을 살펴보세요. 모든 쿠키 허용 쿠키 관리 주요 콘텐츠로 건너뛰기 Canva 홈 로그인 디자인이 쉬워지는 AI 플랫폼 프레젠테이션, SNS 콘텐츠, 동영상, 바이브 코딩까지 뭐든지 순식간에 무료로 시작하기 직관적인 편집 툴, 무궁무진한 비주얼 재료 AI 프레젠테이션 SNS 동영상 아이디어부터 완성까지 디자인이 쉬워지는 Canva AI Canva AI 알아보기 (새 디자인 탭 또는 창에서 열기) Magic Eraser로 사진 속 불필요한 부분만 깔끔하게 정리 Magic Eraser 알아보기 (새 디자인 탭 또는 창에서 열기) Magic Write와 함께 하는 쉽고 감각적인 글쓰기 Magic Write 알아보기 (새 디자인 탭 또는 창에서 열기) Magic Layers로 평면 이미지를 편집 가능한 레이어로 Magic Layers 알아보기 (새 디자인 탭 또는 창에서 열기) Canva AI로 빠르고 쉽게 작업하는 프레젠테이션 더 알아보기 (새 디자인 탭 또는 창에서 열기) 수만개의 프레젠테이션 ",
+    "screenshot": "./guidebook-assets/captured/canva_home.png"
+  },
+  {
+    "id": "canva_magic_write",
+    "label": "Canva Magic Write",
+    "url": "https://www.canva.com/magic-write/",
+    "finalUrl": "https://www.canva.com/magic-write/",
+    "title": "Magic Write: AI Text Generator & AI Writer | Canva",
+    "blocked": false,
+    "login": true,
+    "textSample": "But first, cookies 🍪 We use essential cookies to make Canva work. We’d like to use other cookies to improve and personalize your visit, tailor ads you see from us on Canva and partner sites, and to analyze our website’s performance, but only if you accept. Learn more about your choices in our cookie policy. Accept all cookies Manage cookies Loading finished Skip to main content Canva home Log in Home Magic Write Your first draft, fast Looking for some words of inspiration to kickstart your creative process? Magic Write, powered by OpenAI, is your very own AI text generator to help you get out a first draft, fast. Simply start with a prompt and watch as copy, blog outlines, lists, bio captio",
+    "screenshot": "./guidebook-assets/captured/canva_magic_write.png"
+  },
+  {
+    "id": "canva_ai_image",
+    "label": "Canva AI image",
+    "url": "https://www.canva.com/ai-image-generator/",
+    "finalUrl": "https://www.canva.com/ai-image-generator/",
+    "title": "AI Image Generator: Online Text to Image App | Canva",
+    "blocked": false,
+    "login": true,
+    "textSample": "But first, cookies 🍪 We use essential cookies to make Canva work. We’d like to use other cookies to improve and personalize your visit, tailor ads you see from us on Canva and partner sites, and to analyze our website’s performance, but only if you accept. Learn more about your choices in our cookie policy. Accept all cookies Manage cookies Loading finished Skip to main content Canva home Log in Home Text to Image Online AI Image Generator Dream it up, then add it to your design. Watch your words and phrases transform into beautiful images with the best AI image generators available at your fingertips. Stand out with an image perfect for your project. Generate AI Images Photo Vibrant Concep",
+    "screenshot": "./guidebook-assets/captured/canva_ai_image.png"
+  },
+  {
+    "id": "manus_home",
+    "label": "Manus home",
+    "url": "https://manus.im/",
+    "finalUrl": "https://manus.im/",
+    "title": "Manus(마누스): 실용적인 Hands On AI",
+    "blocked": false,
+    "login": true,
+    "textSample": "로그인 가입 Manus는 이제 Meta의 일부가 되었습니다 — 전 세계 기업에 AI를 제공합니다 무엇을 도와드릴까요? 슬라이드 제작 웹사이트 구축 디자인 게임 제작 더보기 Less structure, more intelligence. 제품 가격 웹 앱 AI 디자인 AI 슬라이드 AI 이미지 생성기 AI 음악 생성기 Manus 브라우저 운영자 Wide Research Mail Manus Slack 통합 자료 다운로드 블로그 문서 업데이트 도움말 센터 신뢰 센터 API 팀 플랜 스타트업 Playbook 브랜드 자료 커뮤니티 이벤트 Fellows 비교하기 ChatGPT와 비교 Lovable와 비교 Replit와 비교 다운로드 모바일 앱 데스크탑 앱 My Browser 팀 팀 플랜 SSO API 회사 회사 정보 채용 기회 미디어용 서비스 약관 개인정보 보호정책 한국어 © 2026 Meta 저희는 사용자의 경험을 향상시키기 위해 쿠키를 사용합니다. 사용된 모든 쿠키에 대한 전체 개요는 쿠키 정책을 참조하십시오. 사용자 정의 모두 거부 모두 수락",
+    "screenshot": "./guidebook-assets/captured/manus_home.png"
+  },
+  {
+    "id": "elevenlabs_home",
+    "label": "ElevenLabs home",
+    "url": "https://elevenlabs.io/",
+    "finalUrl": "https://elevenlabs.io/",
+    "title": "Free AI Voice Generator & Voice Agents Platform | ElevenLabs",
+    "blocked": false,
+    "login": true,
+    "textSample": "Skip to content Sign up Bringing technology to life Sign up Contact sales Powering the best enterprises, creators, and developers. From ElevenAgents for customer experience, ElevenCreative for content creation, to the leading AI voice generator. ElevenCreative ElevenAgents ElevenAPI AI Voice Generator Text to Speech Music Speech to Text Voice Cloning Dubbing Narration Expressive voices that bring audiobooks and podcasts to life. Sign up Trusted by leading developers and enterprises Read all stories Twilio The Walt Disney Studios KPN TVS Telus Digital Cisco Epic Games Nvidia Revolut Meta Bertelsmann Ukraine deliveroo Chess.com Deutsche Telekom meesho Harvey Salesforce Two platforms built on t",
+    "screenshot": "./guidebook-assets/captured/elevenlabs_home.png"
+  },
+  {
+    "id": "elevenlabs_tts",
+    "label": "ElevenLabs TTS",
+    "url": "https://elevenlabs.io/text-to-speech",
+    "finalUrl": "https://elevenlabs.io/text-to-speech",
+    "title": "Free Text To Speech Online with Lifelike AI Voices",
+    "blocked": false,
+    "login": true,
+    "textSample": "Skip to content Sign up ElevenCreative Menu Text to Speech Text to Speech with high quality, human-like AI voices Log in with Google Convert Text to Speech Trusted by 1M+ users • Free to start Narration Expressive voices that bring audiobooks and podcasts to life. Use Voice Explore all 10,000+ Voices Emotionally & contextually aware AI voices for Text to Speech Our voice AI responds to emotional cues in text and adapts its delivery to suit both the immediate content and the wider context. This lets our AI voices achieve high emotional range and avoid making logical errors when your content is read aloud. Watch video Control the emotion, delivery and direction Create controllable, expressive ",
+    "screenshot": "./guidebook-assets/captured/elevenlabs_tts.png"
+  },
+  {
+    "id": "elevenlabs_studio",
+    "label": "ElevenLabs studio",
+    "url": "https://elevenlabs.io/studio",
+    "finalUrl": "https://elevenlabs.io/studio",
+    "title": "Studio 3.0 - AI audio and video editor for creators",
+    "blocked": false,
+    "login": true,
+    "textSample": "Skip to content Sign up ElevenCreative Menu The best AI audio models in one powerful agentic editor Try Studio for free Built for video creators, podcasters and audiobook authors — bring your stories to life with expressive AI voiceovers, music and sound effects, and real-world recordings. Video Audio Introducing Studio 3.0 Create immersive experiences with Studio 3.0 — from podcasts and audiobooks to videos. Enhance your content with AI voices, music, and captions, all in one editor. Text to Speech Eleven Music AI Sound Effects Captions Voice Changer Transcription Voice Isolator Studio Agent Video support Watch intro Add new voiceovers Bring your script to life with natural-sounding voiceov",
+    "screenshot": "./guidebook-assets/captured/elevenlabs_studio.png"
+  },
+  {
+    "id": "elevenlabs_voice_cloning",
+    "label": "ElevenLabs voice cloning",
+    "url": "https://elevenlabs.io/voice-cloning",
+    "finalUrl": "https://elevenlabs.io/voice-cloning",
+    "title": "AI Voice Cloning: Clone Your Voice in Minutes",
+    "blocked": false,
+    "login": true,
+    "textSample": "Skip to content Sign up ElevenCreative Menu Voice Cloning Create a replica of your voice that sounds like you Sign up Explore the docs Upload a short audio sample and generate natural-sounding speech from text for voiceovers, ads, podcasts, and more - all in your own voice. Examples Clone your voice Original voice Cloned voice Lily Chris Laura Clone your voice for free in seconds • Trusted by 1M+ creators Meet the accurate and advanced ElevenLabs AI Voice cloning Create a digital replica of your voice that sounds just like you. Create instant voice clones with just a few seconds of sample audio, or capture very unique accents and vocal traits using our professional voice cloning. Perfect for",
+    "screenshot": "./guidebook-assets/captured/elevenlabs_voice_cloning.png"
+  }
+]
