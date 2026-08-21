@@ -1,6 +1,6 @@
 window.SERVICE_GUIDES = {
-    "generatedAt":  "2026-08-18T00:00:00+09:00",
-    "source":  "ai_guidebooks markdown set, 2026-08-18",
+    "generatedAt":  "2026-08-21T00:00:00+09:00",
+    "source":  "ai_guidebooks markdown set, 2026-08-21",
     "services":  [
                      {
                          "id":  "chatgpt",
@@ -1439,107 +1439,121 @@ window.SERVICE_GUIDES = {
                                          "https://workspace.google.com/solutions/ai/"
                                      ]
                      },
-                     {
-                         "id":  "notebooklm",
-                         "name":  "NotebookLM",
-                         "display":  "Gemini Notebook / NotebookLM",
-                         "title":  "Gemini Notebook / NotebookLM 기능 중심 사용 가이드",
-                         "domain":  "notebooklm.google",
-                         "url":  "https://notebooklm.google.com/",
-                         "tone":  "#6366f1",
-                         "role":  "내가 넣은 자료 묶음을 근거로 질문, 보고서, 학습자료를 만드는 소스 기반 노트북",
-                         "basis":  "2026-08-14",
-                         "overview":  "특정 자료 묶음을 근거로 질문하고 보고서/학습자료를 만들 때 적합하다. 소스 기반 답변, 인용 확인, 오디오/영상 요약, 마인드맵, 슬라이드 생성에 강하다.",
-                         "hero":  "./guidebook-assets/notebooklm_help.png",
-                         "features":  [
-                                          "자료 묶음 관리",
-                                          "PDF·웹 요약",
-                                          "근거 기반 답변",
-                                          "출처 확인",
-                                          "브리핑 음성",
-                                          "영상 요약",
-                                          "마인드맵",
-                                          "보고서 초안",
-                                          "학습자료 만들기"
-                                      ],
-                         "tips":  [
-                                      "먼저 업무 목표와 원하는 결과물 형식을 정한다.",
-                                      "입력 자료가 있으면 파일, 링크, 이미지, 오디오 등으로 함께 넣는다.",
-                                      "AI 결과는 초안으로 보고, 사실/숫자/권리/보안은 직접 확인한다."
-                                  ],
-                         "sections":  [
-                                          {
-                                              "title":  "노트북 생성",
-                                              "image":  "./guidebook-assets/notebooklm_help.png",
-                                              "location":  "새 노트북을 만들고 프로젝트 이름을 붙인다.",
-                                              "when":  "프로젝트별 자료실을 만들 때 첫 단계로 쓴다.",
-                                              "how":  "노트북 이름은 업무명과 기간을 넣어 찾기 쉽게 만든다."
-                                          },
-                                          {
-                                              "title":  "소스 추가/소스 발견",
-                                              "image":  "./guidebook-assets/notebooklm_add_sources.png",
-                                              "location":  "PDF, 웹사이트, YouTube, Google 문서 등을 소스로 추가하거나 새 소스를 발견한다.",
-                                              "when":  "보고서, 회의자료, 교육자료를 한곳에 모을 때 쓴다.",
-                                              "how":  "소스가 정확히 들어갔는지 목록을 확인한다."
-                                          },
-                                          {
-                                              "title":  "소스 기반 채팅",
-                                              "image":  "./guidebook-assets/notebooklm_help.png",
-                                              "location":  "채팅창에서 추가한 소스에 대해 질문한다.",
-                                              "when":  "여러 자료 속 공통 주장, 차이점, 근거를 찾을 때 쓴다.",
-                                              "how":  "질문에 \u0027소스 안에서만 답해줘\u0027를 붙이면 좋다."
-                                          },
-                                          {
-                                              "title":  "인용 확인",
-                                              "image":  "./guidebook-assets/notebooklm_add_sources.png",
-                                              "location":  "답변에 붙은 인용을 눌러 원문 위치를 확인한다.",
-                                              "when":  "가이드북, 보고서, 교육자료의 근거 확인에 쓴다.",
-                                              "how":  "인용이 없는 답변은 보조 의견으로만 취급한다."
-                                          },
-                                          {
-                                              "title":  "노트",
-                                              "image":  "./guidebook-assets/notebooklm_help.png",
-                                              "location":  "중요 답변이나 아이디어를 노트로 저장한다.",
-                                              "when":  "조사 중 발견한 핵심 내용을 모을 때 쓴다.",
-                                              "how":  "노트 제목과 태그를 일관되게 만든다."
-                                          },
-                                          {
-                                              "title":  "Audio Overview",
-                                              "image":  "./guidebook-assets/notebooklm_audio.png",
-                                              "location":  "Studio에서 Audio Overview를 생성해 자료를 들을 수 있는 요약으로 바꾼다.",
-                                              "when":  "긴 자료를 이동 중에 빠르게 파악하거나 교육용으로 공유할 때 쓴다.",
-                                              "how":  "외부 공유 전 내용과 표현을 검토한다."
-                                          },
-                                          {
-                                              "title":  "Video Overview",
-                                              "image":  "./guidebook-assets/notebooklm_help.png",
-                                              "location":  "자료 내용을 영상형 요약으로 변환한다.",
-                                              "when":  "교육자료나 발표 준비용 개요 영상이 필요할 때 쓴다.",
-                                              "how":  "실제 화면 캡처는 회사 계정에서 기능 메뉴를 열어 교체한다."
-                                          },
-                                          {
-                                              "title":  "Mind Map/Reports",
-                                              "image":  "./guidebook-assets/notebooklm_help.png",
-                                              "location":  "Studio에서 마인드맵이나 리포트를 생성한다.",
-                                              "when":  "복잡한 자료를 구조화하거나 보고서 초안을 만들 때 쓴다.",
-                                              "how":  "핵심 구조는 직접 검토하고 필요하면 재배열한다."
-                                          },
-                                          {
-                                              "title":  "Flashcards/Quizzes/Infographic/Slide Deck",
-                                              "image":  "./guidebook-assets/notebooklm_help.png",
-                                              "location":  "자료를 학습카드, 퀴즈, 인포그래픽, 발표자료로 변환한다.",
-                                              "when":  "사내 교육, 온보딩, 발표 준비에 쓴다.",
-                                              "how":  "시각 산출물은 브랜드 양식에 맞춰 다듬는다."
-                                          }
-                                      ],
-                         "sources":  [
-                                         "https://support.google.com/gemininotebook/?hl=en",
-                                         "https://support.google.com/gemininotebook/answer/16215270?co=GENIE.Platform%3DDesktop\u0026hl=en",
-                                         "https://support.google.com/gemininotebook/answer/16212820?hl=en",
-                                         "https://support.google.com/gemininotebook/answer/16757456?hl=en"
-                                     ]
-                     },
-                     {
+                                         {
+                         "id": "notebooklm",
+                         "name": "Gemini Notebook",
+                         "display": "Gemini Notebook",
+                         "title": "Gemini Notebook 기능 중심 사용 가이드",
+                         "domain": "notebook.google.com",
+                         "url": "https://notebook.google.com/",
+                         "tone": "#6366f1",
+                         "role": "내가 선택한 자료만 근거로 조사하고 질문하며 다양한 업무 산출물을 만드는 AI 노트북",
+                         "basis": "2026-08-21",
+                         "guideDate": "2026-08-21",
+                         "overview": "Gemini Notebook은 문서, 웹사이트, YouTube, 이미지, 음성, Drive 파일과 직접 붙여 넣은 텍스트를 한 노트에 모아 분석하는 자료 기반 AI 서비스입니다. 선택한 소스를 근거로 요약과 질의응답을 진행하고, 같은 자료에서 오디오·동영상·슬라이드·보고서·마인드맵·퀴즈·표 등을 만들 수 있습니다.",
+                         "hero": "./guidebook-assets/gemini_notebook_start.png",
+                         "features": [
+                             "새 노트북 만들기",
+                             "소스 추가·관리",
+                             "근거 기반 채팅",
+                             "스튜디오 산출물"
+                         ],
+                         "tips": [
+                             "한 노트에는 같은 업무 주제와 판단 기준을 공유하는 자료만 모으면 답변의 초점이 선명해집니다.",
+                             "질문하기 전에 사용할 소스의 체크 상태를 확인하고, 답변의 인용 표시를 눌러 원문 문맥을 다시 확인합니다.",
+                             "스튜디오 결과물은 초안으로 활용하고 수치, 시점, 고유명사와 사내 보안 기준을 검토한 뒤 공유합니다."
+                         ],
+                         "sections": [
+                             {
+                                 "id": "gemini_notebook_create",
+                                 "title": "새 노트북 만들기",
+                                 "short": "업무나 조사 주제별로 노트북을 만들고 자료를 담을 준비를 합니다.",
+                                 "detail": "홈 화면에서 새 노트 만들기를 누르면 하나의 주제에 필요한 출처, 채팅, 메모와 스튜디오 결과물을 함께 관리할 수 있습니다.",
+                                 "when": "새로운 조사, 보고서, 회의 준비처럼 여러 자료를 한 맥락에서 검토해야 할 때 사용합니다.",
+                                 "steps": [
+                                     {
+                                         "title": "새 노트 만들기를 선택합니다",
+                                         "body": "홈 화면 오른쪽 위 또는 최근 노트북 영역의 새 노트 만들기를 누릅니다. 업무마다 노트북을 나누고 제목에 주제와 목적을 함께 적어 두면 다시 찾기 쉽습니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_start.png",
+                                         "badge": "새 노트 만들기"
+                                     }
+                                 ],
+                                 "notes": [
+                                     "한 노트북에 서로 무관한 자료를 섞기보다 보고서, 프로젝트, 학습 주제별로 분리합니다."
+                                 ]
+                             },
+                             {
+                                 "id": "gemini_notebook_sources",
+                                 "title": "소스 추가·관리",
+                                 "short": "파일, 웹, Drive, YouTube, 붙여 넣은 텍스트를 추가하고 답변에 사용할 범위를 고릅니다.",
+                                 "detail": "소스 추가 창에서 직접 자료를 넣거나 웹 검색으로 관련 자료를 찾을 수 있습니다. 추가된 소스는 왼쪽 출처 패널에서 선택, 정렬, 자동 라벨 지정하여 질문 범위를 조절합니다.",
+                                 "when": "여러 문서와 웹 자료를 한곳에서 비교하거나 특정 자료만 근거로 답을 받아야 할 때 사용합니다.",
+                                 "steps": [
+                                     {
+                                         "title": "자료를 가져옵니다",
+                                         "body": "소스 추가를 눌러 PDF, 이미지, 문서, 오디오 파일을 업로드하거나 웹사이트·YouTube 주소, Drive 파일, 복사한 텍스트를 추가합니다. 검색창에서는 웹 또는 Fast Research를 선택해 새 소스를 찾을 수 있습니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_add_sources.png",
+                                         "badge": "소스 추가"
+                                     },
+                                     {
+                                         "title": "사용할 소스를 선택합니다",
+                                         "body": "왼쪽 출처 목록에서 현재 질문에 사용할 자료만 체크합니다. 필요하면 자동 라벨과 정렬을 이용해 자료를 묶고, 중앙에 생성된 노트북 개요로 소스가 의도한 주제를 충분히 포함하는지 확인합니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_sources_workspace.png",
+                                         "badge": "출처 선택"
+                                     }
+                                 ],
+                                 "notes": [
+                                     "웹에서 찾은 자료는 발행처, 작성일, 원문 내용을 확인한 뒤 소스로 사용합니다.",
+                                     "사내 비공개 자료를 올리기 전에는 조직의 정보보안 및 외부 AI 사용 기준을 확인합니다."
+                                 ]
+                             },
+                             {
+                                 "id": "gemini_notebook_chat",
+                                 "title": "근거 기반 채팅",
+                                 "short": "선택한 소스를 기준으로 요약, 비교, 근거 확인과 업무 문서 초안을 요청합니다.",
+                                 "detail": "노트북 개요와 추천 질문을 출발점으로 구체적인 업무 요청을 입력합니다. Gemini Notebook은 선택된 소스를 바탕으로 답하고 관련 인용을 제공하므로 원문과 함께 검토할 수 있습니다.",
+                                 "when": "긴 자료를 빠르게 파악하거나 여러 출처의 공통점, 차이점, 근거와 실행 항목을 정리할 때 사용합니다.",
+                                 "steps": [
+                                     {
+                                         "title": "질문과 결과 형식을 함께 입력합니다",
+                                         "body": "하단 입력창에 확인할 주제, 사용할 기간과 기준, 원하는 결과 형식을 구체적으로 적습니다. 예를 들어 ‘선택한 소스만 근거로 탄소중립 사업을 사업명·현재 단계·기대 효과 표로 정리하고 각 항목에 출처를 표시해 줘’처럼 요청합니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_grounded_chat.png",
+                                         "badge": "질문하거나 창작하세요"
+                                     }
+                                 ],
+                                 "notes": [
+                                     "답변의 인용을 열어 해당 문장이 원문 취지와 일치하는지 확인합니다.",
+                                     "근거가 부족하면 추정하지 말고 ‘확인할 수 없음’으로 표시하도록 요청합니다.",
+                                     "생성된 요약이나 문서는 메모에 저장해 다음 질문과 결과물 제작에 활용할 수 있습니다."
+                                 ]
+                             },
+                             {
+                                 "id": "gemini_notebook_studio",
+                                 "title": "스튜디오 산출물",
+                                 "short": "같은 소스에서 오디오, 동영상, 슬라이드, 보고서, 마인드맵, 퀴즈와 표를 만듭니다.",
+                                 "detail": "오른쪽 스튜디오에서 목적에 맞는 결과물 유형을 선택하면 선택된 소스를 바탕으로 공유하거나 학습하기 좋은 형태의 산출물을 만들 수 있습니다.",
+                                 "when": "조사 내용을 발표, 브리핑, 학습 자료, 비교표나 시각 자료로 빠르게 바꿔야 할 때 사용합니다.",
+                                 "steps": [
+                                     {
+                                         "title": "결과물 유형을 선택합니다",
+                                         "body": "스튜디오에서 AI 오디오 오버뷰, 슬라이드 자료, 동영상 개요, 마인드맵, 보고서, 플래시카드, 퀴즈, 인포그래픽 또는 데이터 표를 선택합니다. 생성 전 맞춤설정이 표시되면 대상 독자, 길이, 형식과 집중할 주제를 지정합니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_studio_outputs.png",
+                                         "badge": "스튜디오"
+                                     }
+                                 ],
+                                 "notes": [
+                                     "소스 선택 상태가 바뀌면 결과물에 포함되는 근거도 달라지므로 생성 전에 다시 확인합니다.",
+                                     "오디오와 동영상은 생성 시간이 더 필요할 수 있으며, 완성 후 재생하면서 발음과 사실 관계를 확인합니다.",
+                                     "공유 전에는 결과물의 수치, 날짜, 링크와 사내 공개 가능 범위를 최종 검토합니다."
+                                 ]
+                             }
+                         ],
+                         "sources": [
+                             "https://notebook.google.com/",
+                             "https://support.google.com/notebooklm/"
+                         ]
+                    },
+                    {
                          "id":  "claude",
                          "name":  "Claude",
                          "display":  "Claude",

@@ -269,7 +269,7 @@
     const $app = document.querySelector("#app");
     const state = { q: "" };
     const data = window.SERVICE_GUIDES || { services: [] };
-    const READY_GUIDES = new Set(["chatgpt", "genspark", "lilysai"]);
+    const READY_GUIDES = new Set(["chatgpt", "genspark", "lilysai", "notebooklm"]);
 
     function esc(v){
       return String(v ?? "").replace(/[&<>"']/g, (ch) => ({
