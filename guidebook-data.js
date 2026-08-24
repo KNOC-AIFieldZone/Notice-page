@@ -1601,17 +1601,23 @@ window.SERVICE_GUIDES = {
                                           },
                                           {
                                               "id":  "gemini_feature_08",
-                                              "title":  "기능 8",
+                                              "title":  "개인 인텔리전스로 맞춤형 답변 받기",
                                               "image":  "./guidebook-assets/gemini_guide_step_01.png",
-                                              "short":  "",
-                                              "detail":  "",
-                                              "when":  " ",
+                                              "short":  "연결을 허용한 개인 Google 앱의 맥락을 활용해 현재 사용자에게 맞춘 답변을 받는 실험적 개인화 기능입니다.",
+                                              "detail":  "별도 결과물을 만드는 도구가 아니라 Contacts, Google 포토, Workspace, 검색 서비스와 YouTube 등 연결 앱의 정보를 Gemini가 함께 이해하도록 설정합니다.",
+                                              "when":  "개인 Google 계정에서 일정, 취향, 과거 검색이나 개인 자료를 반영한 추천과 요약이 필요할 때 사용합니다. 현재 업무·학교 계정에서는 지원되지 않습니다.",
                                               "steps":  [
                                                               {
-                                                                  "title":  " ",
-                                                                  "body":  " ",
+                                                                  "title":  "개인 인텔리전스의 사용 조건을 확인합니다",
+                                                                  "body":  "Gemini 첫 화면의 가운데 입력창 왼쪽에 있는 ‘+’ 버튼을 선택합니다. 개인 인텔리전스는 연결된 개인 Google 앱의 정보를 서로 연관 지어 사용자의 취향과 상황에 맞는 답변을 제공하는 선택형 개인화 기능입니다. 만 18세 이상의 개인 Google 계정과 ‘Gemini 앱 활동 유지’ 설정이 필요하며, 기능이 순차적으로 배포되고 있어 계정이나 지역에 따라 표시되지 않을 수 있습니다. 공식 안내상 Workspace 업무·학교·관리 대상 계정에서는 사용할 수 없으므로, 회사 자료를 개인 계정에 연결하거나 붙여 넣는 용도로 사용하지 않습니다.",
                                                                   "image":  "./guidebook-assets/gemini_guide_step_01.png",
-                                                                  "badge":  "1번 이미지"
+                                                                  "badge":  "+ 버튼"
+                                                              },
+                                                              {
+                                                                  "title":  "현재 채팅의 개인화 상태를 확인합니다",
+                                                                  "body":  "‘도구 더보기’를 누르면 ‘개인 인텔리전스’ 오른쪽에 현재 상태가 표시됩니다. 첨부 화면처럼 파란색으로 켜져 있으면 이 채팅에서 연결 앱과 과거 개인화 정보를 활용할 수 있고, 선택해 끄면 해당 채팅은 개인 인텔리전스를 사용하지 않습니다. 이 기능은 별도의 프롬프트를 작성해 실행하는 도구가 아니며, 켜진 상태에서 평소처럼 질문하면 필요한 경우 연결된 Contacts, Google 포토, Google Workspace의 Gmail·Calendar·Drive, 검색 서비스, YouTube 등의 맥락을 조합해 답변합니다. 실제 연결 앱은 화면 아래 ‘설정 및 도움말 → 개인 인텔리전스 → 연결된 앱’에서 각각 켜거나 끕니다. 연결을 끄더라도 이전 채팅에 남은 정보가 사용될 수 있으므로 특정 정보를 제거하려면 관련 채팅 기록을 삭제하고 해당 앱 연결도 해제해야 합니다. 개인화된 답변도 관계, 시점이나 취향을 잘못 추론할 수 있으므로 원본 일정·메일·사진을 직접 확인합니다.",
+                                                                  "image":  "./guidebook-assets/gemini_personal_intelligence_02_tool_menu.png",
+                                                                  "badge":  "개인화 상태"
                                                               }
                                                           ]
                                           },
@@ -1662,6 +1668,7 @@ window.SERVICE_GUIDES = {
                                          "https://support.google.com/gemini/answer/14903178?co=GENIE.Platform%3DDesktop\u0026hl=en",
                                          "https://support.google.com/gemini/answer/15719111?co=GENIE.Platform%3DDesktop\u0026hl=en",
                                          "https://support.google.com/gemini/answer/16448384?hl=ko",
+                                         "https://support.google.com/gemini/answer/16598406?co=GENIE.Platform%3DDesktop\u0026hl=ko",
                                          "https://workspace.google.com/solutions/ai/"
                                      ]
                      },
