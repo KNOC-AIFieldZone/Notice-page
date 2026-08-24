@@ -1461,19 +1461,44 @@ window.SERVICE_GUIDES = {
                                           },
                                           {
                                               "id":  "gemini_feature_04",
-                                              "title":  "기능 4",
+                                              "title":  "음악 생성 및 스타일 설정",
                                               "image":  "./guidebook-assets/gemini_guide_step_01.png",
-                                              "short":  "",
-                                              "detail":  "",
-                                              "when":  " ",
+                                              "short":  "음악 만들기 화면에서 장르 템플릿과 모델을 선택하고, 분위기·악기·템포·구조를 설명해 음악을 생성합니다.",
+                                              "detail":  "Lyria 3를 사용해 텍스트와 선택적으로 첨부한 이미지·영상에서 짧은 음악 시안이나 전체 곡을 만듭니다.",
+                                              "when":  "영상 배경음악, 발표·행사 오프닝, 캠페인 콘셉트 음악, 짧은 노래나 연주곡 시안이 필요할 때 사용합니다.",
                                               "steps":  [
                                                               {
-                                                                  "title":  " ",
-                                                                  "body":  " ",
+                                                                  "title":  "입력창의 추가 메뉴를 엽니다",
+                                                                  "body":  "Gemini 첫 화면의 가운데 입력창 왼쪽에 있는 ‘+’ 버튼을 선택합니다. 음악 만들기는 Lyria 3를 사용해 텍스트와 선택적으로 첨부한 이미지·영상의 분위기를 음악과 가사로 만드는 기능입니다. 이용하려면 만 18세 이상이어야 하며, 지원되는 Google 계정으로 로그인하고 ‘활동 저장’ 설정을 켜야 합니다. 메뉴가 보이지 않으면 계정과 조직의 기능 제공 범위를 확인합니다.",
                                                                   "image":  "./guidebook-assets/gemini_guide_step_01.png",
-                                                                  "badge":  "1번 이미지"
+                                                                  "badge":  "+ 버튼"
+                                                              },
+                                                              {
+                                                                  "title":  "음악 만들기를 선택합니다",
+                                                                  "body":  "펼쳐진 추가 메뉴에서 ‘음악 만들기’를 선택합니다. 선택하면 입력 영역에 ‘음악’ 기능이 활성화되고, 장르·분위기 템플릿을 살펴보거나 직접 트랙을 설명할 수 있는 전용 화면으로 이동합니다.",
+                                                                  "image":  "./guidebook-assets/gemini_music_02_tool_menu.png",
+                                                                  "badge":  "기능 선택"
+                                                              },
+                                                              {
+                                                                  "title":  "템플릿, 모델과 프롬프트를 설정합니다",
+                                                                  "body":  "‘90년대 랩’, ‘라틴 팝’, ‘포크 발라드’, ‘8비트’, ‘R&B 로맨스’ 같은 카드는 장르와 분위기를 빠르게 시작하는 음악 템플릿입니다. 카드의 재생 아이콘으로 예시 분위기를 들어보고 원하는 템플릿을 선택하거나, 템플릿 없이 입력창에 직접 설명합니다. 참고할 이미지나 영상이 있으면 왼쪽 ‘+’ 버튼으로 첨부해 색감·장면·분위기를 음악의 맥락으로 전달할 수 있습니다. 화면의 Flash Extended는 현재 Gemini 모델과 사고 수준 표시이고 실제 음악 생성기는 화면 안내대로 Lyria 3입니다. 공식 안내에 따라 전체 길이의 곡을 만들려면 모델 메뉴에서 Pro를 선택하고, 짧은 시안은 원하는 장르와 길이를 프롬프트에 명시합니다. 프롬프트에는 장르, 사용할 악기, BPM이나 빠르기, 조성, 분위기, 보컬 유무와 언어, 가사 주제, 인트로·벌스·후렴 같은 구조와 원하는 길이를 적습니다.",
+                                                                  "image":  "./guidebook-assets/gemini_music_03_templates.png",
+                                                                  "badge":  "음악 설정"
+                                                              },
+                                                              {
+                                                                  "title":  "프롬프트를 전송하고 결과를 확인합니다",
+                                                                  "body":  "‘애국가를 90년대 랩으로 만들어 줘.’라고 입력하고 전송합니다. 특정 곡을 그대로 재현하는 요청은 제한될 수 있어 화면의 예시처럼 원곡 대신 90년대 붐뱁 스타일을 반영한 오리지널 트랙이 생성될 수 있습니다. 의도를 더 분명히 하려면 ‘애국가의 가사와 멜로디를 직접 재현하지 말고, 나라를 사랑하는 마음과 남산 위 소나무에서 연상되는 굳센 분위기를 주제로 95 BPM의 90년대 붐뱁 랩을 만들어 줘. 묵직한 드럼 브레이크, 재즈 피아노 루프, 굵은 베이스라인과 한국어 랩을 사용해 줘.’처럼 작성합니다. 결과를 재생해 장르, 템포, 악기, 보컬·가사 발음과 부적절한 표현을 확인하고, 마음에 들지 않으면 조건을 수정해 새로 생성합니다. 완료된 트랙은 표지 영상이 포함된 MP4 또는 오디오 전용 MP3로 다운로드하거나 공유 링크를 복사할 수 있으며, 외부 사용 전에는 가사·샘플·브랜드와 이용 권리를 확인합니다.",
+                                                                  "image":  "./guidebook-assets/gemini_music_04_result.png",
+                                                                  "badge":  "결과 확인"
                                                               }
-                                                          ]
+                                                          ],
+                                              "videoSamples":  [
+                                                                   {
+                                                                       "title":  "90년대 붐뱁 스타일 음악 예시",
+                                                                       "duration":  "0:28",
+                                                                       "src":  "./guidebook-assets/gemini_music_sample_namsan_pine.mp4"
+                                                                   }
+                                                               ]
                                           },
                                           {
                                               "id":  "gemini_feature_05",
@@ -1579,6 +1604,8 @@ window.SERVICE_GUIDES = {
                                          "https://support.google.com/gemini/answer/14286560?hl=ko",
                                          "https://support.google.com/gemini/answer/16126339?hl=ko",
                                          "https://ai.google.dev/gemini-api/docs/omni",
+                                         "https://support.google.com/gemini/answer/16901237?hl=ko",
+                                         "https://ai.google.dev/gemini-api/docs/music-generation",
                                          "https://ai.google.dev/gemini-api/docs/models",
                                          "https://support.google.com/gemini/answer/14903178?co=GENIE.Platform%3DDesktop\u0026hl=en",
                                          "https://support.google.com/gemini/answer/15719111?co=GENIE.Platform%3DDesktop\u0026hl=en",
