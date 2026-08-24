@@ -1439,7 +1439,7 @@ window.SERVICE_GUIDES = {
                                          "https://workspace.google.com/solutions/ai/"
                                      ]
                      },
-                                         {
+                     {
                          "id": "notebooklm",
                          "name": "Gemini Notebook",
                          "display": "Gemini Notebook",
@@ -1447,150 +1447,175 @@ window.SERVICE_GUIDES = {
                          "domain": "notebook.google.com",
                          "url": "https://notebook.google.com/",
                          "tone": "#6366f1",
-                         "role": "내가 선택한 자료만 근거로 조사하고 질문하며 다양한 업무 산출물을 만드는 AI 노트북",
-                         "basis": "2026-08-21",
-                         "guideDate": "2026-08-21",
-                         "overview": "Gemini Notebook은 문서, 웹사이트, YouTube, 이미지, 음성, Drive 파일과 직접 붙여 넣은 텍스트를 한 노트에 모아 분석하는 자료 기반 AI 서비스입니다. 선택한 소스를 근거로 요약과 질의응답을 진행하고, 같은 자료에서 오디오·동영상·슬라이드·보고서·마인드맵·퀴즈·표 등을 만들 수 있습니다.",
-                         "hero": "./guidebook-assets/gemini_notebook_start.png",
+                         "role": "업무 자료를 조사하고 출처에 근거해 질문하며 공유 가능한 결과물을 만드는 AI 노트북",
+                         "basis": "2026-08-24",
+                         "guideDate": "2026-08-24",
+                         "overview": "Gemini Notebook에서는 새 노트에 업무 자료를 모아 Fast Research 또는 Deep Research로 조사하고, 선택한 출처를 바탕으로 질의응답과 스튜디오 결과물을 만들 수 있습니다. 출처 기반 답변과 인용도 원문의 취지, 수치, 시점을 직접 검토한 뒤 업무에 활용해 주세요.",
+                         "hero": "./guidebook-assets/gemini_notebook_research_01_home.png",
                          "features": [
-                             "새 노트북 만들기",
-                             "소스 추가·관리",
-                             "근거 기반 채팅",
-                             "스튜디오 산출물"
+                             "출처 기반 조사·질의응답",
+                             "스튜디오 업무 결과물",
+                             "노트북 협업 공유",
+                             "공개 노트북 탐색"
                          ],
                          "tips": [
-                             "한 노트에는 같은 업무 주제와 판단 기준을 공유하는 자료만 모으면 답변의 초점이 선명해집니다.",
-                             "질문하기 전에 사용할 소스의 체크 상태를 확인하고, 답변의 인용 표시를 눌러 원문 문맥을 다시 확인합니다.",
-                             "스튜디오 결과물은 초안으로 활용하고 수치, 시점, 고유명사와 사내 보안 기준을 검토한 뒤 공유합니다."
+                             "질문 전에 사용할 출처의 선택 상태를 확인하고 답변의 인용을 원문과 대조해 주세요.",
+                             "스튜디오 결과물은 선택한 출처와 화면에 표시된 설정을 확인한 뒤 생성해 주세요.",
+                             "공유 전에는 조직의 정보보안 정책과 사용자별 권한을 확인해 주세요."
                          ],
                          "sections": [
                              {
-                                 "id": "gemini_notebook_create",
-                                 "title": "새 노트북 만들기",
-                                 "image": "./guidebook-assets/gemini_notebook_start.png",
-                                 "short": "업무나 조사 주제별로 노트북을 만들고 자료를 담을 준비를 합니다.",
-                                 "detail": "홈 화면에서 새 노트 만들기를 누르면 하나의 주제에 필요한 출처, 채팅, 메모와 스튜디오 결과물을 함께 관리할 수 있습니다.",
-                                 "when": "새로운 조사, 보고서, 회의 준비처럼 여러 자료를 한 맥락에서 검토해야 할 때 사용합니다.",
+                                 "id": "gemini_notebook_research",
+                                 "title": "자료 조사 및 출처 기반 질의응답",
+                                 "image": "./guidebook-assets/gemini_notebook_research_01_home.png",
+                                 "short": "새 노트에 소스를 모으고 조사 결과를 가져온 뒤 선택한 출처를 근거로 질문합니다.",
+                                 "detail": "출처·채팅·스튜디오 영역을 함께 사용해 자료를 조사하고, 답변의 인용을 원문과 비교합니다.",
+                                 "when": "여러 업무 자료를 한곳에서 조사하고 출처별 근거를 확인하며 요약·비교해야 할 때 사용합니다.",
                                  "steps": [
                                      {
                                          "title": "새 노트 만들기를 선택합니다",
-                                         "body": "홈 화면 오른쪽 위 또는 최근 노트북 영역의 새 노트 만들기를 누릅니다. 업무마다 노트북을 나누고 제목에 주제와 목적을 함께 적어 두면 다시 찾기 쉽습니다.",
-                                         "image": "./guidebook-assets/gemini_notebook_start.png",
+                                         "body": "홈 화면의 최근 노트북 영역에서 새 노트 만들기를 누릅니다. 상단의 새로 만들기 버튼으로도 시작할 수 있으며, 업무 주제별로 노트를 나누면 자료와 결과물을 구분하기 쉽습니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_research_01_home.png",
                                          "badge": "새 노트 만들기"
                                      },
                                      {
-                                         "title": "노트북의 주제와 목적을 정합니다",
-                                         "body": "새 노트가 열리면 조사 대상과 최종 결과물을 먼저 정합니다. 예를 들어 ‘한국석유공사 에너지 안보와 탄소중립 경영 전략’처럼 대상, 범위, 목적이 드러나는 제목을 사용하면 노트북 목록에서 구분하기 쉽습니다.",
-                                         "image": "./guidebook-assets/gemini_notebook_sources_workspace.png",
-                                         "badge": "제목 정하기"
+                                         "title": "출처·채팅·스튜디오 영역을 확인합니다",
+                                         "body": "새 노트는 왼쪽 출처, 가운데 채팅, 오른쪽 스튜디오로 나뉩니다. 출처에는 조사 자료를 모으고, 채팅에서는 선택한 소스로 질문하며, 스튜디오에서는 같은 소스로 업무 결과물을 만듭니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_research_02_workspace.png",
+                                         "badge": "화면 구성"
                                      },
                                      {
-                                         "title": "첫 소스를 추가할 준비를 합니다",
-                                         "body": "빈 노트북의 소스 추가 창에서 직접 파일을 올리거나 웹, Drive, YouTube, 복사한 텍스트 중 가져올 방식을 선택합니다. 이후 추가한 자료는 같은 노트북의 출처 패널에서 계속 관리할 수 있습니다.",
-                                         "image": "./guidebook-assets/gemini_notebook_add_sources.png",
-                                         "badge": "소스 준비"
-                                     }
-                                 ],
-                                 "notes": [
-                                     "한 노트북에 서로 무관한 자료를 섞기보다 보고서, 프로젝트, 학습 주제별로 분리합니다."
-                                 ]
-                             },
-                             {
-                                 "id": "gemini_notebook_sources",
-                                 "title": "소스 추가·관리",
-                                 "image": "./guidebook-assets/gemini_notebook_add_sources.png",
-                                 "short": "파일, 웹, Drive, YouTube, 붙여 넣은 텍스트를 추가하고 답변에 사용할 범위를 고릅니다.",
-                                 "detail": "소스 추가 창에서 직접 자료를 넣거나 웹 검색으로 관련 자료를 찾을 수 있습니다. 추가된 소스는 왼쪽 출처 패널에서 선택, 정렬, 자동 라벨 지정하여 질문 범위를 조절합니다.",
-                                 "when": "여러 문서와 웹 자료를 한곳에서 비교하거나 특정 자료만 근거로 답을 받아야 할 때 사용합니다.",
-                                 "steps": [
-                                     {
-                                         "title": "소스 추가 창을 엽니다",
-                                         "body": "왼쪽 출처 패널의 소스 추가를 누릅니다. 새 노트북을 만들었을 때 자동으로 표시되는 소스 추가 창에서도 같은 작업을 시작할 수 있습니다.",
-                                         "image": "./guidebook-assets/gemini_notebook_add_sources.png",
+                                         "title": "소스를 직접 추가하거나 조사 방식을 선택합니다",
+                                         "body": "소스 추가 창에서 PDF·이미지·문서·오디오 파일을 업로드하거나 웹사이트·YouTube, Drive, 복사한 텍스트를 가져옵니다. 웹 검색의 조사 방식에서 빠른 탐색은 Fast Research, 더 폭넓고 깊은 조사는 Deep Research를 선택합니다. 이 화면에는 Fast Research가 선택되어 있습니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_research_03_add_sources.png",
                                          "badge": "소스 추가"
                                      },
                                      {
-                                         "title": "자료를 가져오는 방법을 선택합니다",
-                                         "body": "PDF, 이미지, 문서, 오디오 파일을 업로드하거나 웹사이트·YouTube 주소, Drive 파일, 복사한 텍스트를 추가합니다. 검색창에서는 웹과 Fast Research 중 조사 방식도 선택할 수 있습니다.",
-                                         "image": "./guidebook-assets/gemini_notebook_add_sources.png",
-                                         "badge": "가져오기 방식"
+                                         "title": "검색 결과를 검토하고 가져옵니다",
+                                         "body": "조사가 끝나면 결과 카드에서 발견된 소스와 요약을 검토합니다. 보기를 눌러 전체 결과를 확인하고, 필요한 자료만 선별한 뒤 가져오기를 눌러 노트의 출처로 추가합니다. 발행처, 작성일, 원문 내용을 함께 확인해 주세요.",
+                                         "image": "./guidebook-assets/gemini_notebook_research_04_results.png",
+                                         "badge": "검토·가져오기"
                                      },
                                      {
-                                         "title": "답변에 사용할 소스 범위를 관리합니다",
-                                         "body": "추가가 끝나면 왼쪽 출처 목록에서 현재 질문에 사용할 자료만 체크합니다. 자동 라벨과 정렬로 자료를 묶고, 중앙의 노트북 개요를 읽어 필요한 관점과 근거가 충분히 포함됐는지 확인합니다.",
-                                         "image": "./guidebook-assets/gemini_notebook_sources_workspace.png",
-                                         "badge": "출처 선택"
+                                         "title": "출처를 관리하고 인용 원문을 확인합니다",
+                                         "body": "왼쪽 출처 목록에서 이번 질문에 사용할 자료만 선택한 뒤 가운데 채팅에 요약, 비교, 근거 확인을 요청합니다. 답변의 인용을 눌러 연결된 원문과 문맥을 확인해 주세요. 출처 기반 답변도 내용이 부정확하거나 문맥이 달라질 수 있으므로 수치, 시점, 결론은 반드시 원문과 대조해야 합니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_research_05_grounded_chat.png",
+                                         "badge": "출처·인용 검토"
                                      }
-                                 ],
-                                 "notes": [
-                                     "웹에서 찾은 자료는 발행처, 작성일, 원문 내용을 확인한 뒤 소스로 사용합니다.",
-                                     "사내 비공개 자료를 올리기 전에는 조직의 정보보안 및 외부 AI 사용 기준을 확인합니다."
-                                 ]
-                             },
-                             {
-                                 "id": "gemini_notebook_chat",
-                                 "title": "근거 기반 채팅",
-                                 "image": "./guidebook-assets/gemini_notebook_grounded_chat.png",
-                                 "short": "선택한 소스를 기준으로 요약, 비교, 근거 확인과 업무 문서 초안을 요청합니다.",
-                                 "detail": "노트북 개요와 추천 질문을 출발점으로 구체적인 업무 요청을 입력합니다. Gemini Notebook은 선택된 소스를 바탕으로 답하고 관련 인용을 제공하므로 원문과 함께 검토할 수 있습니다.",
-                                 "when": "긴 자료를 빠르게 파악하거나 여러 출처의 공통점, 차이점, 근거와 실행 항목을 정리할 때 사용합니다.",
-                                 "steps": [
-                                     {
-                                         "title": "질문에 사용할 소스를 선택합니다",
-                                         "body": "왼쪽 출처 목록에서 이번 질문의 근거로 사용할 자료만 체크합니다. 전체 자료를 사용할 필요가 없으면 관련 문서만 선택해 답변 범위를 좁힙니다.",
-                                         "image": "./guidebook-assets/gemini_notebook_sources_workspace.png",
-                                         "badge": "근거 범위"
-                                     },
-                                     {
-                                         "title": "질문과 결과 형식을 함께 입력합니다",
-                                         "body": "하단 입력창에 확인할 주제, 기간, 판단 기준과 원하는 결과 형식을 구체적으로 적습니다. 예를 들어 ‘선택한 소스만 근거로 탄소중립 사업을 사업명·현재 단계·기대 효과 표로 정리하고 각 항목에 출처를 표시해 줘’처럼 요청합니다.",
-                                         "image": "./guidebook-assets/gemini_notebook_grounded_chat.png",
-                                         "badge": "질문하거나 창작하세요"
-                                     },
-                                     {
-                                         "title": "인용을 확인하고 결과를 보완합니다",
-                                         "body": "답변의 인용 표시를 눌러 원문 문맥과 일치하는지 확인합니다. 빠진 기준이나 근거가 있으면 후속 질문으로 보완하고, 확정한 요약과 초안은 메모에 저장해 다음 결과물 제작에 활용합니다.",
-                                         "image": "./guidebook-assets/gemini_notebook_grounded_chat.png",
-                                         "badge": "인용 확인"
-                                     }
-                                 ],
-                                 "notes": [
-                                     "답변의 인용을 열어 해당 문장이 원문 취지와 일치하는지 확인합니다.",
-                                     "근거가 부족하면 추정하지 말고 ‘확인할 수 없음’으로 표시하도록 요청합니다.",
-                                     "생성된 요약이나 문서는 메모에 저장해 다음 질문과 결과물 제작에 활용할 수 있습니다."
                                  ]
                              },
                              {
                                  "id": "gemini_notebook_studio",
-                                 "title": "스튜디오 산출물",
-                                 "image": "./guidebook-assets/gemini_notebook_studio_outputs.png",
-                                 "short": "같은 소스에서 오디오, 동영상, 슬라이드, 보고서, 마인드맵, 퀴즈와 표를 만듭니다.",
-                                 "detail": "오른쪽 스튜디오에서 목적에 맞는 결과물 유형을 선택하면 선택된 소스를 바탕으로 공유하거나 학습하기 좋은 형태의 산출물을 만들 수 있습니다.",
-                                 "when": "조사 내용을 발표, 브리핑, 학습 자료, 비교표나 시각 자료로 빠르게 바꿔야 할 때 사용합니다.",
+                                 "title": "스튜디오 결과물 만들기",
+                                 "image": "./guidebook-assets/gemini_notebook_studio_01_select.png",
+                                 "short": "스튜디오에서 목적에 맞는 결과물과 화면에 표시된 설정을 선택해 생성합니다.",
+                                 "detail": "AI 오디오 오버뷰부터 데이터 표까지 각 결과물의 실제 맞춤설정 항목을 확인합니다.",
+                                 "when": "조사 자료를 브리핑, 발표, 학습, 보고서와 표 형태의 업무 산출물로 바꿀 때 사용합니다.",
                                  "steps": [
                                      {
-                                         "title": "결과물 유형을 선택합니다",
-                                         "body": "스튜디오에서 AI 오디오 오버뷰, 슬라이드 자료, 동영상 개요, 마인드맵, 보고서, 플래시카드, 퀴즈, 인포그래픽 또는 데이터 표 중 업무 목적에 맞는 유형을 선택합니다.",
-                                         "image": "./guidebook-assets/gemini_notebook_studio_outputs.png",
-                                         "badge": "스튜디오"
+                                         "title": "스튜디오에서 결과물 유형을 선택합니다",
+                                         "body": "오른쪽 스튜디오에서 AI 오디오 오버뷰, 슬라이드 자료, 동영상 개요, 마인드맵, 보고서, 플래시카드, 퀴즈, 인포그래픽, 데이터 표 중 만들 결과물을 선택합니다. 이 화면에는 소스 10개가 선택되어 있고 스튜디오의 아홉 가지 결과물 유형이 보입니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_studio_01_select.png",
+                                         "badge": "스튜디오 선택"
                                      },
                                      {
-                                         "title": "대상과 결과 형식을 맞춤설정합니다",
-                                         "body": "생성 전에 맞춤설정 화면이 표시되면 대상 독자, 언어, 길이, 구성 방식과 집중할 주제를 지정합니다. 브리핑용이면 핵심 결론과 실행 항목을, 학습용이면 개념 설명과 확인 문제를 중심으로 요청합니다.",
-                                         "image": "./guidebook-assets/gemini_notebook_studio_outputs.png",
-                                         "badge": "맞춤설정"
+                                         "title": "AI 오디오 오버뷰를 설정합니다",
+                                         "body": "형식은 심층 분석, 요약, 비평, 토론 중에서 선택합니다. 화면에서는 심층 분석, 한국어, 길이 기본값, 소스 10개가 선택되어 있으며, AI 호스트가 집중할 내용을 입력하거나 추천 주제 칩을 추가할 수 있습니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_studio_02_audio.png",
+                                         "badge": "AI 오디오 오버뷰"
                                      },
                                      {
-                                         "title": "생성된 결과물을 검토하고 활용합니다",
-                                         "body": "완성된 결과물은 스튜디오 목록에 저장됩니다. 오디오와 동영상은 직접 재생하고, 슬라이드·보고서·표는 수치와 출처를 확인합니다. 필요한 부분을 다시 생성하거나 보완한 뒤 공유와 발표에 사용합니다.",
-                                         "image": "./guidebook-assets/gemini_notebook_studio_outputs.png",
-                                         "badge": "결과 확인"
+                                         "title": "슬라이드 자료를 설정합니다",
+                                         "body": "형식은 자세한 자료 또는 발표자 슬라이드 중에서 선택합니다. 화면에서는 자세한 자료, 한국어, 길이 기본값, 소스 10개가 선택되어 있으며, 청중·스타일·강조점 등 만들 슬라이드에 대한 설명을 입력할 수 있습니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_studio_03_slides.png",
+                                         "badge": "슬라이드 자료"
+                                     },
+                                     {
+                                         "title": "동영상 개요를 설정합니다",
+                                         "body": "형식은 설명 동영상 또는 요약 중에서 선택합니다. 화면에서는 설명 동영상, 한국어, 소스 10개, 시각적 스타일 자동 선택이 지정되어 있습니다. 맞춤, 기본, 화이트보드, 귀여움 등 화면에 보이는 스타일을 고르고 AI 호스트가 집중할 내용을 입력할 수 있습니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_studio_04_video.png",
+                                         "badge": "동영상 개요"
+                                     },
+                                     {
+                                         "title": "마인드맵을 설정합니다",
+                                         "body": "화면에서 마인드맵에 사용할 소스를 선택하고 ‘주제는 무엇인가요?’ 입력란에 중심 주제를 적습니다. 특정 소스로 제한하거나 포함할 핵심 개념과 학습 목적을 구체적으로 지시한 뒤 생성합니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_studio_05_mindmap.png",
+                                         "badge": "마인드맵"
+                                     },
+                                     {
+                                         "title": "보고서 형식을 선택합니다",
+                                         "body": "직접 만들기, 브리핑 문서, 학습 가이드, 블로그 게시물 중 형식을 고릅니다. 화면의 추천 형식에는 사업 전략 보고서, 사회적 가치 성과 분석서, 에너지 기술 입문서, 기업 문화 안내서가 표시되어 있으며 각 카드의 편집 아이콘으로 형식을 조정할 수 있습니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_studio_06_report.png",
+                                         "badge": "보고서"
+                                     },
+                                     {
+                                         "title": "플래시카드를 설정합니다",
+                                         "body": "카드 수는 간략히 보기, 표준(기본), 더보기 중에서 고르고 난이도는 쉬움, 보통(기본), 어려움 중에서 선택합니다. 화면에서는 소스 10개를 사용하며, 주제를 입력하거나 추천 주제 칩을 추가할 수 있습니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_studio_07_flashcards.png",
+                                         "badge": "플래시카드"
+                                     },
+                                     {
+                                         "title": "퀴즈를 설정합니다",
+                                         "body": "질문 수는 더 적게, 표준(기본값), 더 많이 중에서 고르고 난이도는 쉬움, 중간(기본값), 어려움 중에서 선택합니다. 화면에서는 소스 10개를 사용하며, 출제할 주제를 직접 입력하거나 추천 주제 칩을 추가할 수 있습니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_studio_08_quiz.png",
+                                         "badge": "퀴즈"
+                                     },
+                                     {
+                                         "title": "인포그래픽을 설정합니다",
+                                         "body": "언어와 가로·세로·정사각형 방향을 선택하고 시각적 스타일을 정합니다. 화면에는 자동 선택, 귀여움, 클레이, 스케치 노트, 일본 애니메이션 스타일과 세부정보 수준의 간결하게, 표준, 상세(베타)가 보입니다. 소스를 선택하고 색상이나 강조점 설명도 입력할 수 있습니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_studio_09_infographic.png",
+                                         "badge": "인포그래픽"
+                                     },
+                                     {
+                                         "title": "데이터 표를 설정합니다",
+                                         "body": "언어와 사용할 소스를 선택한 뒤 만들 데이터 표에 대한 설명을 입력합니다. 화면에서는 한국어와 소스 10개가 선택되어 있으며, 열 구성, 추출할 정보, 그룹 기준처럼 원하는 표 구조를 구체적으로 작성할 수 있습니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_studio_10_data_table.png",
+                                         "badge": "데이터 표"
                                      }
-                                 ],
-                                 "notes": [
-                                     "소스 선택 상태가 바뀌면 결과물에 포함되는 근거도 달라지므로 생성 전에 다시 확인합니다.",
-                                     "오디오와 동영상은 생성 시간이 더 필요할 수 있으며, 완성 후 재생하면서 발음과 사실 관계를 확인합니다.",
-                                     "공유 전에는 결과물의 수치, 날짜, 링크와 사내 공개 가능 범위를 최종 검토합니다."
+                                 ]
+                             },
+                             {
+                                 "id": "gemini_notebook_share",
+                                 "title": "노트북 공유",
+                                 "image": "./guidebook-assets/gemini_notebook_share_01_open.png",
+                                 "short": "사용자·그룹과 링크의 접근 범위를 정하고 사용자별 권한과 사본 생성을 관리합니다.",
+                                 "detail": "공유 대화상자에서 초대 대상, 권한, 노트북 액세스 범위와 사본 생성 허용 여부를 설정합니다.",
+                                 "when": "조사 노트와 스튜디오 결과물을 동료에게 전달하거나 함께 검토해야 할 때 사용합니다.",
+                                 "steps": [
+                                     {
+                                         "title": "상단의 공유를 엽니다",
+                                         "body": "노트북 상단의 공유를 누릅니다. 공유 전에는 왼쪽 출처 선택 상태와 오른쪽 스튜디오 결과물 목록을 확인해 공개하면 안 되는 자료나 결과물이 포함되지 않았는지 점검해 주세요.",
+                                         "image": "./guidebook-assets/gemini_notebook_share_01_open.png",
+                                         "badge": "공유"
+                                     },
+                                     {
+                                         "title": "대상·권한·링크 범위를 설정합니다",
+                                         "body": "사용자 및 그룹 추가 입력란에 대상을 넣고, 사용자별 드롭다운에서 소유자나 뷰어 등 부여할 권한을 확인합니다. 노트북 액세스는 제한됨 또는 계정에 허용된 공개 범위를 선택해 링크 공유 범위를 정합니다. 필요하면 사본 생성 허용을 선택한 뒤 링크 복사로 전달하거나 전송을 눌러 초대합니다. 조직 정책에 따라 선택할 수 있는 공유 범위와 공개 여부가 제한될 수 있습니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_share_02_settings.png",
+                                         "badge": "공유 설정"
+                                     }
+                                 ]
+                             },
+                             {
+                                 "id": "gemini_notebook_explore",
+                                 "title": "공개·추천 노트북 탐색 및 활용",
+                                 "image": "./guidebook-assets/gemini_notebook_explore_01_recommended.png",
+                                 "short": "추천 노트북을 둘러보거나 검색으로 공개 노트북을 찾아 채팅과 스튜디오 결과물을 활용합니다.",
+                                 "detail": "공개 노트북의 출처, 채팅과 스튜디오 결과물을 확인하고 부여된 권한 안에서 활용합니다.",
+                                 "when": "검증된 공개 자료 묶음을 빠르게 탐색하거나 기존 노트북의 분석 결과를 참고할 때 사용합니다.",
+                                 "steps": [
+                                     {
+                                         "title": "추천 노트북을 둘러보거나 검색합니다",
+                                         "body": "홈의 추천 노트북 탭에서 카드의 주제, 제공자, 소스 수와 공개 표시를 확인해 원하는 노트북을 엽니다. 특정 주제를 찾을 때는 상단의 검색 아이콘을 눌러 키워드로 검색합니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_explore_01_recommended.png",
+                                         "badge": "추천·검색"
+                                     },
+                                     {
+                                         "title": "공개 노트북을 권한 범위 안에서 활용합니다",
+                                         "body": "공개 노트북에서는 왼쪽의 출처 묶음을 살펴보고 가운데 채팅으로 자료에 질문하며, 오른쪽 스튜디오에 공개된 슬라이드·인포그래픽·데이터 표·오디오·동영상 등의 결과물을 열거나 재생할 수 있습니다. 소스 추가, 편집, 복사, 재공유 가능 여부는 노트북에 부여된 권한에 따라 제한됩니다.",
+                                         "image": "./guidebook-assets/gemini_notebook_explore_02_public.png",
+                                         "badge": "공개 노트북 활용"
+                                     }
                                  ]
                              }
                          ],

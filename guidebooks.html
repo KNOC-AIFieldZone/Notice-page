@@ -120,6 +120,7 @@
       width:74px;height:74px;border-radius:8px;border:1px solid var(--line);background:#fff;
       object-fit:cover;align-self:start;
     }
+    .service-card.service-notebooklm .service-hero{width:100%;height:auto;object-fit:contain;}
     .service-card.is-muted .service-hero{filter:grayscale(.75) saturate(.62);opacity:.78;}
     .service-card.is-muted .service-name{color:#334155;}
     .service-card.is-muted .service-role{color:#64748b;}
@@ -160,6 +161,13 @@
       border-color:rgba(94,234,212,.38);background:rgba(255,255,255,.94);color:#0f172a;
       box-shadow:0 5px 14px rgba(0,0,0,.16);
     }
+    .hero.hero-light{
+      color:#0f172a;
+      background:
+        linear-gradient(135deg,color-mix(in srgb, var(--accent) 22%, #fff),rgba(255,255,255,.96) 62%),
+        #fff;
+    }
+    .hero.hero-light .guide-date,.hero.hero-light p{color:#475569;}
     .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin:18px 0 10px;}
     .section-head h3{margin:0;font-size:16px;font-weight:950;}
     .feature-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}
@@ -169,6 +177,7 @@
     .feature-link{display:flex;flex-direction:column;color:var(--card-text);text-decoration:none;min-height:100%;}
     .feature-link:hover{border-color:var(--accent);box-shadow:0 14px 32px rgba(14,165,233,.16);}
     .feature img{width:100%;height:168px;object-fit:contain;background:#fff;display:block;border-bottom:1px solid var(--line);}
+    main.service-notebooklm .feature img{width:100%;height:auto;object-fit:contain;}
     .feature-body{padding:12px;background:linear-gradient(180deg,#eef6ff,#f8fbff);}
     .feature h4{margin:0 0 9px;font-size:14px;font-weight:950;line-height:1.35;}
     .feature-summary{color:var(--card-muted);font-size:12px;line-height:1.5;margin:0 0 12px;}
@@ -264,7 +273,7 @@
     <div id="app"></div>
   </div>
 
-  <script src="./guidebook-data.js?v=20260821-2"></script>
+  <script src="./guidebook-data.js?v=20260824-1"></script>
   <script>
     const $app = document.querySelector("#app");
     const state = { q: "" };
@@ -412,7 +421,7 @@
           <div class="panel-bd">
             <div class="guide-grid">
               ${services.map((s) => `
-                <a class="service-card${serviceCardClass(s)}" href="${serviceUrl(s.id)}" style="--accent:${esc(s.tone || "#5eead4")}">
+                <a class="service-card${s.id === "notebooklm" ? " service-notebooklm" : ""}${serviceCardClass(s)}" href="${serviceUrl(s.id)}" style="--accent:${esc(s.tone || "#5eead4")}">
                   <img class="service-hero" src="${esc(s.hero)}" alt="${esc(s.display)} 화면">
                   <div>
                     <h3 class="service-name">${highlight(s.display)}</h3>
@@ -514,7 +523,7 @@
       return `
         <div class="section-head">
           <h3>기능 상세</h3>
-          <a class="btn" href="${serviceUrl(service.id)}">기능 목록</a>
+          ${service.id === "notebooklm" ? "" : `<a class="btn" href="${serviceUrl(service.id)}">기능 목록</a>`}
         </div>
         <div class="feature-detail-shell">
           <section class="feature-detail-head">
@@ -603,9 +612,9 @@
       const guideDate = service.guideDate || ((service.basis || "").match(/\d{4}-\d{2}-\d{2}/) || [data.generatedAt || ""])[0];
       $app.innerHTML = `
         <div class="detail-layout">
-          ${selectedFeature ? renderFeatureNav(service, featureIdx) : renderSide(service.id)}
-          <main>
-            <section class="hero" style="--accent:${esc(service.tone || "#5eead4")}">
+          ${selectedFeature || service.id === "notebooklm" ? renderFeatureNav(service, featureIdx ?? -1) : renderSide(service.id)}
+          <main${service.id === "notebooklm" ? ` class="service-notebooklm"` : ""}>
+            <section class="hero${service.id === "notebooklm" ? " hero-light" : ""}" style="--accent:${esc(service.tone || "#5eead4")}">
               <div class="hero-copy">
                 ${guideDate ? `<div class="guide-date">작성 기준일: ${esc(guideDate)}</div>` : ""}
                 <h2>${esc(service.display)}</h2>
