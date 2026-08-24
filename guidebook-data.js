@@ -1364,17 +1364,23 @@ window.SERVICE_GUIDES = {
                          "sections":  [
                                           {
                                               "id":  "gemini_feature_01",
-                                              "title":  "기능 1",
+                                              "title":  "대화 시작 및 모델 선택",
                                               "image":  "./guidebook-assets/gemini_guide_step_01.png",
-                                              "short":  "",
-                                              "detail":  "",
-                                              "when":  " ",
+                                              "short":  "입력창에서 질문이나 작업을 요청하고, 업무 난이도에 맞는 모델과 사고 수준을 선택합니다.",
+                                              "detail":  "질문을 구체적으로 입력하는 기본 방법과 Flash-Lite, Flash, Pro, 확장된 사고 모델의 선택 기준을 안내합니다.",
+                                              "when":  "Gemini에 질문하거나 업무를 지시하고, 작업 난이도와 원하는 응답 속도에 맞춰 모델을 선택할 때 사용합니다.",
                                               "steps":  [
                                                               {
-                                                                  "title":  " ",
-                                                                  "body":  " ",
+                                                                  "title":  "질문이나 작업 지시를 입력합니다",
+                                                                  "body":  "화면 가운데의 ‘Gemini에게 물어보기’ 입력창을 클릭하고 질문이나 시킬 일을 적은 뒤 Enter를 누르거나 전송 아이콘을 선택합니다. 원하는 결과의 형식, 대상, 분량, 반드시 지켜야 할 기준을 함께 적으면 요청 의도를 더 분명하게 전달할 수 있습니다. 새로운 주제로 대화하려면 왼쪽의 ‘새 채팅’을 선택합니다.",
                                                                   "image":  "./guidebook-assets/gemini_guide_step_01.png",
-                                                                  "badge":  "1번 이미지"
+                                                                  "badge":  "입력할 곳"
+                                                              },
+                                                              {
+                                                                  "title":  "작업에 맞는 모델과 사고 수준을 선택합니다",
+                                                                  "body":  "입력창 오른쪽에 표시된 현재 모델 이름(예: Flash)을 클릭한 뒤 작업에 맞는 항목을 선택합니다. 3.5 Flash-Lite는 빠른 요약이나 아이디어 정리 같은 일상 작업에, 3.7 Flash는 속도와 추론의 균형이 필요한 일반 업무와 여러 단계 작업에, 3.1 Pro는 복잡한 수학·코딩이나 긴 자료와 이미지·영상을 함께 이해해야 하는 고난도 작업에 적합합니다. ‘확장된 사고 모델’은 복잡한 문제를 풀 때 답변 전에 더 오래 추론하도록 하는 항목이므로 조건 비교, 원인 분석, 복잡한 계획 수립에 사용합니다. Pro나 확장된 사고는 응답이 더 느리고 사용 한도를 더 많이 소모할 수 있으며, 표시되는 모델과 사용 가능 여부는 계정·요금제·조직 설정에 따라 달라질 수 있습니다.",
+                                                                  "image":  "./guidebook-assets/gemini_chat_02_model_selector.png",
+                                                                  "badge":  "모델 선택"
                                                               }
                                                           ]
                                           },
@@ -1525,6 +1531,9 @@ window.SERVICE_GUIDES = {
                                       ],
                          "sources":  [
                                          "https://support.google.com/gemini/?hl=en",
+                                         "https://support.google.com/gemini/answer/13275745?co=GENIE.Platform%3DDesktop\u0026hl=ko",
+                                         "https://support.google.com/gemini/answer/16275805?hl=ko",
+                                         "https://ai.google.dev/gemini-api/docs/models",
                                          "https://support.google.com/gemini/answer/14903178?co=GENIE.Platform%3DDesktop\u0026hl=en",
                                          "https://support.google.com/gemini/answer/15719111?co=GENIE.Platform%3DDesktop\u0026hl=en",
                                          "https://workspace.google.com/solutions/ai/"
