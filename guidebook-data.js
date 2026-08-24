@@ -1572,17 +1572,30 @@ window.SERVICE_GUIDES = {
                                           },
                                           {
                                               "id":  "gemini_feature_07",
-                                              "title":  "기능 7",
+                                              "title":  "가이드 학습으로 단계별 학습하기",
                                               "image":  "./guidebook-assets/gemini_guide_step_01.png",
-                                              "short":  "",
-                                              "detail":  "",
-                                              "when":  " ",
+                                              "short":  "학습 목표와 현재 수준에 맞춰 개념을 단계별로 배우고 질문과 확인 문제로 이해도를 점검합니다.",
+                                              "detail":  "정답을 한 번에 받기보다 학습 계획, 단계별 설명, 질문, 힌트와 퀴즈를 주고받으며 스스로 이해하도록 안내받습니다.",
+                                              "when":  "새로운 업무 지식이나 기술을 처음 배우거나, 교육자료를 바탕으로 개념을 익히고 시험·자격 학습을 준비할 때 사용합니다.",
                                               "steps":  [
                                                               {
-                                                                  "title":  " ",
-                                                                  "body":  " ",
+                                                                  "title":  "입력창의 추가 메뉴를 엽니다",
+                                                                  "body":  "Gemini 첫 화면의 가운데 입력창 왼쪽에 있는 ‘+’ 버튼을 선택합니다. 가이드 학습은 일반 채팅처럼 답을 바로 제시하는 데 그치지 않고, 학습자의 수준을 확인한 뒤 개념을 작은 단계로 나누어 설명하고 질문과 확인 문제로 이해를 점검하는 학습 모드입니다. 기능을 사용하려면 Gemini에 로그인해야 하며, 모바일 앱에 메뉴가 아직 보이지 않으면 웹의 gemini.google.com에서 확인합니다.",
                                                                   "image":  "./guidebook-assets/gemini_guide_step_01.png",
-                                                                  "badge":  "1번 이미지"
+                                                                  "badge":  "+ 버튼"
+                                                              },
+                                                              {
+                                                                  "title":  "도구 더보기에서 가이드 학습을 선택합니다",
+                                                                  "body":  "추가 메뉴 아래의 ‘도구 더보기’를 누른 뒤 ‘가이드 학습’을 선택합니다. 선택하면 입력창에 가이드 학습 모드가 활성화됩니다. 학습할 교재, 업무 매뉴얼, 문제지나 참고 이미지가 있으면 ‘+’ 버튼의 ‘파일 업로드’로 함께 첨부하고, 프롬프트에서 첨부 자료를 기준으로 설명해 달라고 지정합니다.",
+                                                                  "image":  "./guidebook-assets/gemini_guided_learning_02_tool_menu.png",
+                                                                  "badge":  "기능 선택"
+                                                              },
+                                                              {
+                                                                  "title":  "학습 목표와 진행 방식을 구체적으로 요청합니다",
+                                                                  "body":  "예를 들어 ‘저는 생성형 AI를 처음 사용하는 공공기관 직원입니다. 생성형 AI의 기본 원리, 좋은 프롬프트 구성, 사실 확인 방법, 보안·개인정보 주의사항을 30분 과정으로 단계별로 가르쳐 주세요. 시작하기 전에 제 수준을 확인하는 질문 3개를 하고, 한 번에 한 개념씩 실제 업무 예시로 설명한 뒤 각 단계마다 객관식 또는 단답형 확인 문제를 1개씩 내 주세요. 제가 답하기 전에는 정답을 공개하거나 다음 단계로 넘어가지 말고, 틀리면 힌트를 먼저 주세요. 마지막에는 핵심 요약과 업무 적용 전 체크리스트를 만들어 주세요.’라고 입력하고 전송합니다. Gemini가 학습 계획이나 첫 질문을 제시하면 직접 답하면서 진행하고, 이해가 어려운 부분은 ‘더 쉬운 예시로 다시 설명해 주세요.’, ‘이 내용을 도식으로 보여 주세요.’처럼 요청합니다. 이미지·도표·퀴즈를 요청할 수 있으며, YouTube 영상이 포함되려면 Gemini 앱 활동이 켜져 있어야 합니다. 학습 내용에 포함된 규정, 수치와 기술 정보는 AI 답변만 믿지 말고 최신 공식 자료와 대조합니다.",
+                                                                  "image":  "",
+                                                                  "hideImage":  true,
+                                                                  "badge":  "이미지 추가 예정"
                                                               }
                                                           ]
                                           },
@@ -1648,6 +1661,7 @@ window.SERVICE_GUIDES = {
                                          "https://ai.google.dev/gemini-api/docs/models",
                                          "https://support.google.com/gemini/answer/14903178?co=GENIE.Platform%3DDesktop\u0026hl=en",
                                          "https://support.google.com/gemini/answer/15719111?co=GENIE.Platform%3DDesktop\u0026hl=en",
+                                         "https://support.google.com/gemini/answer/16448384?hl=ko",
                                          "https://workspace.google.com/solutions/ai/"
                                      ]
                      },
