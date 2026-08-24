@@ -1386,17 +1386,35 @@ window.SERVICE_GUIDES = {
                                           },
                                           {
                                               "id":  "gemini_feature_02",
-                                              "title":  "기능 2",
+                                              "title":  "이미지 생성 및 스타일 설정",
                                               "image":  "./guidebook-assets/gemini_guide_step_01.png",
-                                              "short":  "",
-                                              "detail":  "",
-                                              "when":  " ",
+                                              "short":  "이미지 만들기 화면에서 스타일 템플릿, 참고 자료, 모델을 설정하고 프롬프트로 이미지를 생성합니다.",
+                                              "detail":  "빠른 스타일 템플릿을 적용하거나 참고 이미지를 첨부한 뒤, 용도와 원하는 장면을 설명해 새 이미지를 만듭니다.",
+                                              "when":  "보고서·발표자료에 넣을 콘셉트 이미지나 업무 아이디어를 시각화하고, 기존 이미지를 참고해 새로운 시안을 만들 때 사용합니다.",
                                               "steps":  [
                                                               {
-                                                                  "title":  " ",
-                                                                  "body":  " ",
+                                                                  "title":  "입력창의 추가 메뉴를 엽니다",
+                                                                  "body":  "Gemini 첫 화면의 가운데 입력창 왼쪽에 있는 ‘+’ 버튼을 선택합니다. 이 메뉴에서 파일이나 Drive 자료를 첨부하거나 이미지·동영상·음악 생성과 같은 제작 기능을 시작할 수 있습니다. 여기서는 새 이미지를 만들기 위해 추가 메뉴를 엽니다.",
                                                                   "image":  "./guidebook-assets/gemini_guide_step_01.png",
-                                                                  "badge":  "1번 이미지"
+                                                                  "badge":  "+ 버튼"
+                                                              },
+                                                              {
+                                                                  "title":  "이미지 만들기를 선택합니다",
+                                                                  "body":  "펼쳐진 추가 메뉴에서 ‘이미지 만들기’를 선택합니다. 선택하면 일반 채팅 입력창이 이미지 생성 전용 화면으로 바뀌며, 화면 아래 입력 영역에 ‘이미지’ 기능이 활성화됩니다.",
+                                                                  "image":  "./guidebook-assets/gemini_image_02_tool_menu.png",
+                                                                  "badge":  "기능 선택"
+                                                              },
+                                                              {
+                                                                  "title":  "스타일 템플릿과 참고 자료를 설정합니다",
+                                                                  "body":  "가운데의 ‘단색’, ‘색상 블록’, ‘스케치’, ‘시네마틱’ 같은 카드는 결과의 표현 방식을 빠르게 지정하는 스타일 템플릿입니다. 원하는 템플릿을 선택하거나, 템플릿 없이 아래 입력창에 스타일을 직접 설명할 수 있습니다. 참고할 사진이나 시안이 있으면 입력창 왼쪽의 ‘+’ 버튼으로 파일을 첨부한 뒤 유지할 대상, 바꿀 부분, 원하는 구도를 프롬프트에 적습니다. 오른쪽 모델 메뉴에서 Flash-Lite를 선택하면 빠른 기본 시안에 적합한 Nano Banana 2 Lite가 사용되고, Flash 또는 Pro를 선택하면 품질·지식·텍스트 표현과 여러 참고 이미지 활용의 균형을 갖춘 Nano Banana 2가 사용됩니다. 유료 요금제에서는 생성 후 ‘Pro로 다시 만들기’를 통해 더 정교한 결과를 요청할 수 있으며, 제공 모델은 계정과 요금제에 따라 달라질 수 있습니다.",
+                                                                  "image":  "./guidebook-assets/gemini_image_03_templates.png",
+                                                                  "badge":  "스타일 설정"
+                                                              },
+                                                              {
+                                                                  "title":  "프롬프트를 전송하고 결과를 확인합니다",
+                                                                  "body":  "‘스케치’ 템플릿을 선택한 뒤 ‘한국석유공사 본사(울산)를 스케치 이미지로 만들어 줘.’처럼 요청하고 전송합니다. 실제 건물의 외관을 정확히 반영해야 한다면 공식 또는 직접 촬영한 참고 사진을 첨부하고 ‘첨부 사진의 건물 형태와 비율을 유지해 연필 건축 스케치로 표현해 줘.’처럼 기준을 구체적으로 적습니다. 생성 결과의 건물 형태, 로고, 글자와 사실 관계는 원본 자료와 대조해야 합니다. 원하는 결과와 다르면 같은 채팅에서 바꿀 부분만 후속 요청하고, 완료된 이미지는 전체 크기로 다운로드하거나 공유·내보내기 메뉴를 이용합니다.",
+                                                                  "image":  "./guidebook-assets/gemini_image_04_result.png",
+                                                                  "badge":  "결과 확인"
                                                               }
                                                           ]
                                           },
@@ -1533,6 +1551,7 @@ window.SERVICE_GUIDES = {
                                          "https://support.google.com/gemini/?hl=en",
                                          "https://support.google.com/gemini/answer/13275745?co=GENIE.Platform%3DDesktop\u0026hl=ko",
                                          "https://support.google.com/gemini/answer/16275805?hl=ko",
+                                         "https://support.google.com/gemini/answer/14286560?hl=ko",
                                          "https://ai.google.dev/gemini-api/docs/models",
                                          "https://support.google.com/gemini/answer/14903178?co=GENIE.Platform%3DDesktop\u0026hl=en",
                                          "https://support.google.com/gemini/answer/15719111?co=GENIE.Platform%3DDesktop\u0026hl=en",
