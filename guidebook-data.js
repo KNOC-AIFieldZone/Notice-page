@@ -1420,19 +1420,44 @@ window.SERVICE_GUIDES = {
                                           },
                                           {
                                               "id":  "gemini_feature_03",
-                                              "title":  "기능 3",
+                                              "title":  "동영상 생성 및 장면 구성",
                                               "image":  "./guidebook-assets/gemini_guide_step_01.png",
-                                              "short":  "",
-                                              "detail":  "",
-                                              "when":  " ",
+                                              "short":  "동영상 만들기 화면에서 템플릿, 참고 자료, 화면 비율을 설정하고 장면 중심의 프롬프트로 영상을 생성합니다.",
+                                              "detail":  "Gemini Omni를 사용해 텍스트·이미지·영상 참고 자료를 짧은 영상으로 만들고 같은 대화에서 수정합니다.",
+                                              "when":  "업무 아이디어, 제품·공간, 교육·홍보 콘셉트를 짧은 영상으로 시각화하거나 기존 이미지·영상을 바탕으로 새 장면을 만들 때 사용합니다.",
                                               "steps":  [
                                                               {
-                                                                  "title":  " ",
-                                                                  "body":  " ",
+                                                                  "title":  "입력창의 추가 메뉴를 엽니다",
+                                                                  "body":  "Gemini 첫 화면의 가운데 입력창 왼쪽에 있는 ‘+’ 버튼을 선택합니다. 동영상 만들기는 Gemini Omni로 텍스트, 이미지 또는 영상을 바탕으로 새 영상을 생성하고 같은 대화에서 수정하는 기능입니다. 개인 계정은 Google AI 요금제, 업무·학교 계정은 지원되는 Workspace 라이선스가 필요할 수 있으므로 메뉴가 보이지 않으면 계정의 이용 가능 범위를 확인합니다.",
                                                                   "image":  "./guidebook-assets/gemini_guide_step_01.png",
-                                                                  "badge":  "1번 이미지"
+                                                                  "badge":  "+ 버튼"
+                                                              },
+                                                              {
+                                                                  "title":  "동영상 만들기를 선택합니다",
+                                                                  "body":  "펼쳐진 추가 메뉴에서 ‘동영상 만들기’를 선택합니다. 선택하면 입력 영역에 ‘동영상’ 기능이 활성화되고, 동영상 템플릿과 참고 자료·화면 비율 설정을 사용할 수 있는 전용 화면으로 이동합니다.",
+                                                                  "image":  "./guidebook-assets/gemini_video_02_tool_menu.png",
+                                                                  "badge":  "기능 선택"
+                                                              },
+                                                              {
+                                                                  "title":  "템플릿, 참고 자료와 화면 비율을 설정합니다",
+                                                                  "body":  "‘작은 세상’, ‘일본 애니메이션’, ‘제품 쇼케이스’, ‘스토리북’ 같은 카드는 미리 구성된 표현 방식과 아이디어를 적용하는 동영상 템플릿입니다. 템플릿은 선택 사항이므로 원하는 연출과 맞을 때만 사용합니다. 입력창 아래의 참고 자료 버튼으로 권한이 있는 이미지나 영상을 첨부할 수 있으며, 공식 안내 기준으로 영상 1개와 이미지 최대 5개를 사용할 수 있습니다. ‘가로 모드(16:9)’는 발표·PC·가로형 콘텐츠에 적합하며, 메뉴에 세로형 9:16이 표시되면 모바일 숏폼에 맞춰 선택합니다. 텍스트만 입력하면 기본은 가로형이고, 참고 이미지나 영상을 첨부하면 결과 비율이 해당 자료를 따를 수 있습니다. 화면의 Flash 메뉴에서는 대화에 사용할 Gemini 모델을 선택할 수 있지만, 동영상 생성기는 화면 안내대로 Gemini Omni이므로 Flash를 별도의 동영상 생성 모델 이름으로 해석하지 않습니다. 프롬프트에는 장면 순서, 인물 행동, 장소, 카메라 움직임, 조명, 분위기와 필요한 음향을 구체적으로 적습니다.",
+                                                                  "image":  "./guidebook-assets/gemini_video_03_templates_options.png",
+                                                                  "badge":  "생성 설정"
+                                                              },
+                                                              {
+                                                                  "title":  "프롬프트를 전송하고 결과를 확인합니다",
+                                                                  "body":  "‘한국인 직장인의 일상생활을 영상으로 만들고 싶어. 아침에 일어나 준비하고 출근한 뒤, 사무실에서 일하고 점심을 먹고 다시 일한 다음 퇴근해 집에서 휴식하는 모습을 빠른 몽타주로 만들어 줘. 장면마다 자연스럽게 전환하고 현실적인 분위기와 잔잔한 배경음을 사용해 줘. 가로 16:9.’처럼 장면과 연출을 함께 입력하고 전송합니다. 생성에는 몇 분이 걸릴 수 있고, 처리 중에는 같은 대화에서 다른 요청을 할 수 없습니다. 짧은 영상 하나에 장면이 너무 많으면 일부 과정이 생략될 수 있으므로 중요한 장면은 여러 영상으로 나누어 생성하는 것이 좋습니다. 결과를 재생해 인물·손·동작, 장면 순서, 음향, 글자·로고와 직장 생활 표현을 확인하고, 원하는 부분이 다르면 같은 대화에서 카메라 각도·장면·인물 등을 후속 요청으로 수정합니다. 완료 후 공유 메뉴에서 영상을 다운로드하거나 YouTube로 공유할 수 있습니다.",
+                                                                  "image":  "./guidebook-assets/gemini_video_04_result.png",
+                                                                  "badge":  "결과 확인"
                                                               }
-                                                          ]
+                                                          ],
+                                              "videoSamples":  [
+                                                                   {
+                                                                       "title":  "한국인 직장인의 일상생활 예시",
+                                                                       "duration":  "0:10",
+                                                                       "src":  "./guidebook-assets/gemini_video_sample_office_worker_day.mp4"
+                                                                   }
+                                                               ]
                                           },
                                           {
                                               "id":  "gemini_feature_04",
@@ -1552,6 +1577,8 @@ window.SERVICE_GUIDES = {
                                          "https://support.google.com/gemini/answer/13275745?co=GENIE.Platform%3DDesktop\u0026hl=ko",
                                          "https://support.google.com/gemini/answer/16275805?hl=ko",
                                          "https://support.google.com/gemini/answer/14286560?hl=ko",
+                                         "https://support.google.com/gemini/answer/16126339?hl=ko",
+                                         "https://ai.google.dev/gemini-api/docs/omni",
                                          "https://ai.google.dev/gemini-api/docs/models",
                                          "https://support.google.com/gemini/answer/14903178?co=GENIE.Platform%3DDesktop\u0026hl=en",
                                          "https://support.google.com/gemini/answer/15719111?co=GENIE.Platform%3DDesktop\u0026hl=en",
