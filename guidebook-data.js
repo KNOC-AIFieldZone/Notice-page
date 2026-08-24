@@ -1355,81 +1355,172 @@ window.SERVICE_GUIDES = {
                          "url":  "https://gemini.google.com/",
                          "tone":  "#60a5fa",
                          "role":  "Google Workspace 안에서 메일, 문서, 표, 회의 업무를 보조하는 AI",
-                         "basis":  "2026-08-14",
+                         "basis":  "2026-08-24",
+                         "guideDate":  "2026-08-24",
                          "overview":  "Google Workspace와 함께 쓰는 업무 AI가 필요할 때 적합하다. Gmail, Docs, Sheets, Slides, Drive, Meet 등에서 문서/메일/표/회의 업무를 바로 도와준다.",
-                         "hero":  "./guidebook-assets/gemini_help.png",
-                         "features":  [
-                                          "메일 작성",
-                                          "문서 초안",
-                                          "스프레드시트 정리",
-                                          "발표자료 작성",
-                                          "드라이브 자료 찾기",
-                                          "회의 요약",
-                                          "조사 보고서",
-                                          "이미지·영상 생성",
-                                          "Google 업무 연동"
-                                      ],
-                         "tips":  [
-                                      "먼저 업무 목표와 원하는 결과물 형식을 정한다.",
-                                      "입력 자료가 있으면 파일, 링크, 이미지, 오디오 등으로 함께 넣는다.",
-                                      "AI 결과는 초안으로 보고, 사실/숫자/권리/보안은 직접 확인한다."
-                                  ],
+                         "hero":  "./guidebook-assets/gemini_guide_step_01.png",
+                         "features":  [],
+                         "tips":  [],
                          "sections":  [
                                           {
-                                              "title":  "Gemini 앱 채팅",
-                                              "image":  "./guidebook-assets/gemini_help.png",
-                                              "location":  "Gemini 앱 입력창에 질문이나 업무 요청을 입력한다.",
-                                              "when":  "빠른 초안, 요약, 번역, 아이디어 정리에 쓴다.",
-                                              "how":  "원하는 톤과 결과 형식을 같이 적는다."
+                                              "id":  "gemini_feature_01",
+                                              "title":  "기능 1",
+                                              "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                              "short":  "",
+                                              "detail":  "",
+                                              "when":  " ",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  " ",
+                                                                  "body":  " ",
+                                                                  "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                                                  "badge":  "1번 이미지"
+                                                              }
+                                                          ]
                                           },
                                           {
-                                              "title":  "파일 업로드/분석",
-                                              "image":  "./guidebook-assets/gemini_help.png",
-                                              "location":  "파일을 첨부하고 문서 내용에 대해 질문한다.",
-                                              "when":  "Drive 문서, PDF, 표 자료를 읽고 핵심을 파악할 때 쓴다.",
-                                              "how":  "민감 자료는 회사 정책을 확인한다."
+                                              "id":  "gemini_feature_02",
+                                              "title":  "기능 2",
+                                              "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                              "short":  "",
+                                              "detail":  "",
+                                              "when":  " ",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  " ",
+                                                                  "body":  " ",
+                                                                  "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                                                  "badge":  "1번 이미지"
+                                                              }
+                                                          ]
                                           },
                                           {
-                                              "title":  "Deep Research",
-                                              "image":  "./guidebook-assets/gemini_deep_research.png",
-                                              "location":  "조사 주제와 원하는 보고서 형식을 입력한다.",
-                                              "when":  "시장 조사, 경쟁 분석, 정책/기술 변화 정리에 쓴다.",
-                                              "how":  "생성된 출처와 날짜를 확인한다."
+                                              "id":  "gemini_feature_03",
+                                              "title":  "기능 3",
+                                              "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                              "short":  "",
+                                              "detail":  "",
+                                              "when":  " ",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  " ",
+                                                                  "body":  " ",
+                                                                  "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                                                  "badge":  "1번 이미지"
+                                                              }
+                                                          ]
                                           },
                                           {
-                                              "title":  "Canvas",
-                                              "image":  "./guidebook-assets/gemini_canvas.png",
-                                              "location":  "Canvas를 열어 문서나 앱 형태의 결과물을 편집한다.",
-                                              "when":  "긴 문서 초안, 구조화된 글쓰기, 반복 수정이 필요한 작업에 쓴다.",
-                                              "how":  "문단별로 구체적인 수정 요청을 한다."
+                                              "id":  "gemini_feature_04",
+                                              "title":  "기능 4",
+                                              "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                              "short":  "",
+                                              "detail":  "",
+                                              "when":  " ",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  " ",
+                                                                  "body":  " ",
+                                                                  "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                                                  "badge":  "1번 이미지"
+                                                              }
+                                                          ]
                                           },
                                           {
-                                              "title":  "이미지/영상/음악 생성",
-                                              "image":  "./guidebook-assets/gemini_help.png",
-                                              "location":  "만들 콘텐츠의 목적, 스타일, 사용 위치를 설명한다.",
-                                              "when":  "발표 보조 이미지, 캠페인 시안, 영상/음악 초안에 쓴다.",
-                                              "how":  "외부 공개 전 권리와 브랜드 기준을 검토한다."
+                                              "id":  "gemini_feature_05",
+                                              "title":  "기능 5",
+                                              "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                              "short":  "",
+                                              "detail":  "",
+                                              "when":  " ",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  " ",
+                                                                  "body":  " ",
+                                                                  "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                                                  "badge":  "1번 이미지"
+                                                              }
+                                                          ]
                                           },
                                           {
-                                              "title":  "Gmail의 Gemini",
-                                              "image":  "./guidebook-assets/gemini_help.png",
-                                              "location":  "Gmail 사이드패널에서 메일 요약, 초안, 답장을 요청한다.",
-                                              "when":  "긴 메일 스레드 파악과 빠른 답장 작성에 쓴다.",
-                                              "how":  "전송 전 수신자, 첨부, 표현을 직접 확인한다."
+                                              "id":  "gemini_feature_06",
+                                              "title":  "기능 6",
+                                              "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                              "short":  "",
+                                              "detail":  "",
+                                              "when":  " ",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  " ",
+                                                                  "body":  " ",
+                                                                  "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                                                  "badge":  "1번 이미지"
+                                                              }
+                                                          ]
                                           },
                                           {
-                                              "title":  "Docs/Sheets/Slides의 Gemini",
-                                              "image":  "./guidebook-assets/gemini_help.png",
-                                              "location":  "각 앱의 Gemini 사이드패널에서 현재 문서, 표, 슬라이드를 기준으로 요청한다.",
-                                              "when":  "보고서 작성, 데이터 정리, 발표자료 초안 제작에 쓴다.",
-                                              "how":  "AI가 삽입한 내용은 원본 자료와 대조한다."
+                                              "id":  "gemini_feature_07",
+                                              "title":  "기능 7",
+                                              "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                              "short":  "",
+                                              "detail":  "",
+                                              "when":  " ",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  " ",
+                                                                  "body":  " ",
+                                                                  "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                                                  "badge":  "1번 이미지"
+                                                              }
+                                                          ]
                                           },
                                           {
-                                              "title":  "Drive/Meet의 Gemini",
-                                              "image":  "./guidebook-assets/gemini_help.png",
-                                              "location":  "Drive에서는 파일을 찾고 요약하며, Meet에서는 회의 내용을 정리한다.",
-                                              "when":  "문서가 많은 프로젝트와 회의 후속 정리에 쓴다.",
-                                              "how":  "공유 권한과 회의 기록 정책을 확인한다."
+                                              "id":  "gemini_feature_08",
+                                              "title":  "기능 8",
+                                              "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                              "short":  "",
+                                              "detail":  "",
+                                              "when":  " ",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  " ",
+                                                                  "body":  " ",
+                                                                  "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                                                  "badge":  "1번 이미지"
+                                                              }
+                                                          ]
+                                          },
+                                          {
+                                              "id":  "gemini_feature_09",
+                                              "title":  "기능 9",
+                                              "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                              "short":  "",
+                                              "detail":  "",
+                                              "when":  " ",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  " ",
+                                                                  "body":  " ",
+                                                                  "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                                                  "badge":  "1번 이미지"
+                                                              }
+                                                          ]
+                                          },
+                                          {
+                                              "id":  "gemini_feature_10",
+                                              "title":  "기능 10",
+                                              "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                              "short":  "",
+                                              "detail":  "",
+                                              "when":  " ",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  " ",
+                                                                  "body":  " ",
+                                                                  "image":  "./guidebook-assets/gemini_guide_step_01.png",
+                                                                  "badge":  "1번 이미지"
+                                                              }
+                                                          ]
                                           }
                                       ],
                          "sources":  [
