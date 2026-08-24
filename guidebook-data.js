@@ -1502,17 +1502,30 @@ window.SERVICE_GUIDES = {
                                           },
                                           {
                                               "id":  "gemini_feature_05",
-                                              "title":  "기능 5",
+                                              "title":  "Canvas로 문서·앱·슬라이드 만들기",
                                               "image":  "./guidebook-assets/gemini_guide_step_01.png",
-                                              "short":  "",
-                                              "detail":  "",
-                                              "when":  " ",
+                                              "short":  "Canvas에서 문서, 슬라이드, 코드와 간단한 앱을 만들고 대화로 수정한 뒤 공유하거나 내보냅니다.",
+                                              "detail":  "결과물의 형식과 구성, 대상, 디자인 기준을 프롬프트로 지정하고 Canvas 작업 공간에서 내용을 직접 확인·수정합니다.",
+                                              "when":  "보고서·기획안·교육자료 초안, 발표 슬라이드, 웹페이지나 업무용 앱 시제품을 빠르게 만들고 반복해서 다듬을 때 사용합니다.",
                                               "steps":  [
                                                               {
-                                                                  "title":  " ",
-                                                                  "body":  " ",
+                                                                  "title":  "입력창의 추가 메뉴를 엽니다",
+                                                                  "body":  "Gemini 첫 화면의 가운데 입력창 왼쪽에 있는 ‘+’ 버튼을 선택합니다. Canvas는 일반 채팅 답변과 달리 문서, 슬라이드, 코드와 앱을 별도의 작업 공간에서 만들고 직접 수정할 수 있는 기능입니다. Canvas를 사용하려면 Gemini 앱에 로그인해야 합니다.",
                                                                   "image":  "./guidebook-assets/gemini_guide_step_01.png",
-                                                                  "badge":  "1번 이미지"
+                                                                  "badge":  "+ 버튼"
+                                                              },
+                                                              {
+                                                                  "title":  "Canvas를 선택합니다",
+                                                                  "body":  "펼쳐진 추가 메뉴에서 ‘Canvas’를 선택합니다. 선택하면 입력창에 Canvas 기능이 활성화되며, 만들 결과물이 문서인지 슬라이드인지 코드·앱인지 프롬프트에서 구체적으로 지정할 수 있습니다. 필요한 참고 문서나 이미지는 ‘+’ 버튼으로 함께 첨부합니다.",
+                                                                  "image":  "./guidebook-assets/gemini_canvas_02_tool_menu.png",
+                                                                  "badge":  "기능 선택"
+                                                              },
+                                                              {
+                                                                  "title":  "결과물의 형식과 구성을 프롬프트로 지정합니다",
+                                                                  "body":  "예를 들어 ‘임직원 대상 생성형 AI 안전 활용 교육자료를 6장 슬라이드로 만들어 주세요. 1장은 표지, 2장은 활용 가능한 업무, 3장은 좋은 프롬프트 작성법, 4장은 사실 확인 방법, 5장은 보안·개인정보 주의사항, 6장은 업무 적용 전 체크리스트로 구성하고 전문적이고 간결한 디자인을 사용해 주세요.’라고 입력하고 전송합니다. 결과물 종류를 정확히 지정해야 Canvas가 슬라이드·문서·앱 등 원하는 형식으로 구성합니다. 생성된 결과는 Canvas 패널에서 직접 수정하거나, 바꿀 부분을 선택한 뒤 요청하고, 채팅에서 ‘4장의 사례를 석유·에너지 업무에 맞게 바꿔 줘.’처럼 후속 지시로 다듬을 수 있습니다. 코드나 앱은 코드 보기와 콘솔에서 오류를 확인할 수 있고 변경 사항은 자동 저장됩니다. 완성된 문서는 Docs, 슬라이드는 Google Slides 또는 PDF, Python 코드는 Colab으로 내보낼 수 있으며 공유 전에는 내용의 사실성, 민감정보, 링크 공개 범위를 확인합니다.",
+                                                                  "image":  "",
+                                                                  "hideImage":  true,
+                                                                  "badge":  "이미지 추가 예정"
                                                               }
                                                           ]
                                           },
@@ -1606,6 +1619,7 @@ window.SERVICE_GUIDES = {
                                          "https://ai.google.dev/gemini-api/docs/omni",
                                          "https://support.google.com/gemini/answer/16901237?hl=ko",
                                          "https://ai.google.dev/gemini-api/docs/music-generation",
+                                         "https://support.google.com/gemini/answer/16047321?hl=ko",
                                          "https://ai.google.dev/gemini-api/docs/models",
                                          "https://support.google.com/gemini/answer/14903178?co=GENIE.Platform%3DDesktop\u0026hl=en",
                                          "https://support.google.com/gemini/answer/15719111?co=GENIE.Platform%3DDesktop\u0026hl=en",

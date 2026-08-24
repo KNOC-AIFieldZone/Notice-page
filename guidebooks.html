@@ -273,7 +273,7 @@
     <div id="app"></div>
   </div>
 
-  <script src="./guidebook-data.js?v=20260824-7"></script>
+  <script src="./guidebook-data.js?v=20260824-8"></script>
   <script>
     const $app = document.querySelector("#app");
     const state = { q: "" };
@@ -386,6 +386,7 @@
             title: step.title || `따라하기 ${idx + 1}`,
             body: step.body || step.text || "",
             image: step.image || feature.image,
+            hideImage: Boolean(step.hideImage),
             badge: step.badge || (idx === 0 ? "클릭할 곳" : "확인할 곳")
           };
         }
@@ -542,10 +543,12 @@
               <ol class="step-list">
                 ${steps.map((step, stepIdx) => `
                   <li class="step-card">
-                    <div class="step-shot">
-                      <img src="${esc(step.image || feature.image || service.hero)}" alt="${esc(feature.title)} - ${esc(step.title || `따라하기 ${stepIdx + 1}`)}">
-                      <span class="step-badge">${esc(step.badge || "확인할 곳")}</span>
-                    </div>
+                    ${step.hideImage ? "" : `
+                      <div class="step-shot">
+                        <img src="${esc(step.image || feature.image || service.hero)}" alt="${esc(feature.title)} - ${esc(step.title || `따라하기 ${stepIdx + 1}`)}">
+                        <span class="step-badge">${esc(step.badge || "확인할 곳")}</span>
+                      </div>
+                    `}
                     <div class="step-copy">
                       <span class="step-title"><span class="step-no">${stepIdx + 1}</span>${esc(step.title || `따라하기 ${stepIdx + 1}`)}</span>
                       <span class="step-body">${copy(step.body || step)}</span>
