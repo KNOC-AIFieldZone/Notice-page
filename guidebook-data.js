@@ -2559,17 +2559,36 @@ window.SERVICE_GUIDES = {
                                               "id":  "elevenlabs_feature_02",
                                               "title":  "텍스트 음성 변환",
                                               "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                              "short":  "전용 작업 화면에서 텍스트를 자연스러운 음성으로 바꾸고 목소리와 모델을 조정합니다.",
-                                              "detail":  "텍스트의 문맥을 반영해 억양·속도·감정이 담긴 음성을 만드는 Text to Speech 기능입니다.",
-                                              "when":  "교육·홍보 영상의 내레이션, 안내 음성, 팟캐스트 대사처럼 다시 사용할 음성 파일을 만들 때 사용합니다.",
+                                              "short":  "작성한 문장을 선택한 목소리로 읽게 하고 화자·표현·출력 형식을 조정합니다.",
+                                              "detail":  "텍스트의 문맥을 반영해 억양과 감정이 담긴 음성을 생성하는 Text to Speech 기능입니다. 한 작업에서 여러 화자를 나눠 대화형 음성도 만들 수 있습니다.",
+                                              "when":  "교육·홍보 영상 내레이션, 안내 음성, 팟캐스트 대사처럼 저장해 사용할 음성 파일이 필요할 때 사용합니다.",
                                               "steps":  [
                                                               {
-                                                                  "title":  "왼쪽 메뉴에서 텍스트 음성 변환을 엽니다",
-                                                                  "body":  "왼쪽 고정됨 영역의 ‘텍스트 음성 변환’을 선택합니다. 전용 화면에서 읽을 텍스트를 입력하고 목소리와 음성 모델을 고른 뒤 설정을 조정해 생성합니다. 같은 문장도 목소리와 모델에 따라 발음·속도·표현이 달라지므로 미리 듣고 업무에 맞는 결과를 선택합니다.",
+                                                                  "title":  "왼쪽 사이드바에서 텍스트 음성 변환을 엽니다",
+                                                                  "body":  "왼쪽 ‘고정됨’ 영역의 ‘텍스트 음성 변환’을 선택합니다. 이 화면에서는 문장을 입력하고 목소리와 음성 모델을 지정해 내레이션이나 여러 사람의 대화를 음성 파일로 만들 수 있습니다.",
                                                                   "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                                                  "badge":  "기능 위치"
+                                                                  "badge":  "기능 열기"
+                                                              },
+                                                              {
+                                                                  "title":  "텍스트·화자·모델과 출력 설정을 정합니다",
+                                                                  "body":  "중앙에 문장을 입력하고 각 문단 위의 음성 이름을 눌러 ‘내 음성’ 또는 ‘탐색’의 공개 음성을 고릅니다. ‘화자 추가’로 다른 목소리의 대사 블록도 넣을 수 있습니다. 모델은 감정 표현·다중 화자 대화에는 ‘Eleven v3’, 안정적인 장문에는 ‘Eleven Multilingual v2’, 빠른 미리 듣기·실시간 처리·대량 변환에는 ‘Eleven Flash v2.5’를 선택합니다. ‘안정성’은 낮을수록 표현이 다양하고 높을수록 결과가 일관됩니다. ‘언어 재설정’은 짧거나 모호한 문장의 발음 언어가 잘못 감지될 때만 사용하며 번역 기능은 아닙니다. 용도에 맞는 MP3·WAV 등의 출력 형식을 고르되 고음질 형식은 요금제에 따라 제한될 수 있습니다. Eleven v3에서는 `[whispers]`, `[excited]` 같은 오디오 태그를 여러 개 넣어 말투·감정·반응을 지시할 수 있습니다. ‘V3 향상’으로 태그와 문장부호를 정리한 결과를 확인한 뒤 ‘음성 생성’을 누릅니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_tts_02_setup.png",
+                                                                  "badge":  "입력 및 설정"
+                                                              },
+                                                              {
+                                                                  "title":  "생성 결과를 듣고 내려받습니다",
+                                                                  "body":  "생성된 ‘세대 1’, ‘세대 2’를 재생해 화자별 발음, 감정과 태그 반응을 비교합니다. 결과 오른쪽 아이콘으로 음성 파일을 내려받거나 공유할 수 있으며, 다른 결과가 필요하면 ‘음성 다시 생성’을 누릅니다. 여러 화자를 넣은 경우 아래 통합 재생 막대에서도 전체 대화 흐름을 확인합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_tts_03_result.png",
+                                                                  "badge":  "확인 및 저장"
                                                               }
-                                                          ]
+                                                          ],
+                                              "audioSamples":  [
+                                                                   {
+                                                                       "title":  "다중 화자·오디오 태그 음성 예시",
+                                                                       "duration":  "0:14",
+                                                                       "src":  "./guidebook-assets/elevenlabs_tts_sample_intro_v3.mp3"
+                                                                   }
+                                                               ]
                                           },
                                           {
                                               "id":  "elevenlabs_feature_03",
@@ -2751,6 +2770,9 @@ window.SERVICE_GUIDES = {
                          "sources":  [
                                          "https://elevenlabs.io/docs/eleven-creative/quickstart",
                                          "https://elevenlabs.io/docs/overview/capabilities/text-to-speech",
+                                         "https://elevenlabs.io/docs/overview/models",
+                                         "https://elevenlabs.io/docs/eleven-creative/playground/text-to-speech",
+                                         "https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices",
                                          "https://elevenlabs.io/blog/v3-audiotags",
                                          "https://elevenlabs.io/docs/overview/capabilities/sound-effects",
                                          "https://elevenlabs.io/docs/overview/capabilities/image-video",
