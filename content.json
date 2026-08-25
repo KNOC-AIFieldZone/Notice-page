@@ -167,6 +167,18 @@
                              ],
     "news":  [
                  {
+                     "service":  "Gemini",
+                     "title":  "Gemini 앱 인터랙티브 시뮬레이션 및 모델 생성",
+                     "date":  "2026-08-24",
+                     "file":  "2026-08-24-gemini-interactive-simulations-models.html"
+                 },
+                 {
+                     "service":  "ElevenLabs",
+                     "title":  "ElevenLabs CLI v1 공개",
+                     "date":  "2026-08-24",
+                     "file":  "2026-08-24-elevenlabs-cli-v1.html"
+                 },
+                 {
                      "service":  "xAI",
                      "title":  "Grok Bot 지원 플랜 확대",
                      "date":  "2026-08-21",
@@ -201,6 +213,12 @@
                      "title":  "Google Sheets canvas 공개",
                      "date":  "2026-08-13",
                      "file":  "2026-08-13-gemini-google-sheets-canvas.html"
+                 },
+                 {
+                     "service":  "ElevenLabs",
+                     "title":  "ElevenMusic Sounds 라이브러리 공개",
+                     "date":  "2026-08-13",
+                     "file":  "2026-08-13-elevenmusic-sounds-library.html"
                  },
                  {
                      "service":  "DeepSeek",
