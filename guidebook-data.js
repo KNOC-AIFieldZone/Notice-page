@@ -2507,15 +2507,51 @@ window.SERVICE_GUIDES = {
                                               "id":  "elevenlabs_feature_01",
                                               "title":  "음성",
                                               "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                              "short":  "홈의 통합 생성창에서 텍스트와 감정 태그를 입력해 빠르게 음성 시안을 만듭니다.",
-                                              "detail":  "홈 화면에서 모델과 목소리를 고르고 텍스트를 바로 음성으로 생성하는 빠른 시작 기능입니다.",
-                                              "when":  "짧은 내레이션, 안내 문구, 대사처럼 음성 결과를 빠르게 들어보고 싶을 때 사용합니다.",
+                                              "short":  "공개 음성을 찾아 저장하거나 복제·리믹싱·보이스 디자인으로 나만의 음성을 만들어 관리합니다.",
+                                              "detail":  "음성 라이브러리의 목소리를 탐색하고, 직접 만든 음성을 ‘내 음성’에 저장해 텍스트 음성 변환과 음성 제작 기능에서 다시 사용하는 방법을 안내합니다.",
+                                              "when":  "내레이션·교육·광고·캐릭터에 사용할 목소리를 미리 정하고 여러 콘텐츠에서 같은 음색을 일관되게 사용하려고 할 때 활용합니다.",
                                               "steps":  [
                                                               {
-                                                                  "title":  "홈의 음성 생성창에서 시작합니다",
-                                                                  "body":  "왼쪽 ‘홈’을 선택한 뒤 화면 가운데의 ‘음성’ 탭을 누릅니다. 입력창에 읽을 문장을 적고, 필요하면 [속삭임]·[웃음]처럼 화면이 안내하는 감정 태그를 넣습니다. 아래에서 모델과 목소리, 추가 옵션을 확인한 뒤 ‘생성’을 누릅니다. 모델·목소리와 옵션의 제공 범위는 계정과 요금제에 따라 달라질 수 있습니다.",
+                                                                  "title":  "왼쪽 사이드바에서 음성을 엽니다",
+                                                                  "body":  "ElevenLabs 왼쪽 사이드바의 ‘음성’을 선택합니다. 이 영역에서는 공개 음성을 찾아 바로 쓰거나 ‘내 음성’에 저장할 수 있고, ‘음성 생성’에서 직접 사용할 목소리를 만들 수 있습니다. 저장하거나 만든 음성은 이후 텍스트 음성 변환과 음성 선택 메뉴에서 다시 지정해 일관된 목소리로 콘텐츠를 제작할 수 있습니다.",
                                                                   "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                                                  "badge":  "시작 화면"
+                                                                  "badge":  "기능 열기"
+                                                              },
+                                                              {
+                                                                  "title":  "탐색에서 기존 음성을 찾거나 새 음성을 만듭니다",
+                                                                  "body":  "‘탐색’에서는 이름·키워드로 검색하고 언어, 억양, 성별, 나이, 용도와 품질 등의 필터나 추천 카테고리로 공개 음성을 좁힐 수 있습니다. 음성을 눌러 미리 듣고 바로 사용하거나 ‘내 음성’에 저장합니다. 원하는 음성이 없으면 오른쪽 위 ‘음성 생성’을 선택해 직접 만듭니다. 공개 음성은 소유자가 공유를 중단할 수 있으므로 표시된 공지 기간과 이용 조건도 확인합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_voice_02_explore.png",
+                                                                  "badge":  "음성 탐색"
+                                                              },
+                                                              {
+                                                                  "title":  "목적에 맞는 생성 방식을 선택합니다",
+                                                                  "body":  "‘보이스 디자인’은 녹음 없이 텍스트 설명으로 새 음색을 만듭니다. ‘즉시 음성 복제’는 짧고 깨끗한 오디오를 업로드하거나 직접 녹음해 본인 또는 허가받은 음성을 빠르게 모사합니다. ‘프로페셔널 음성 복제’는 충분한 본인 음성과 신원 확인을 거쳐 더 일관된 전용 모델을 학습하며 지원 요금제가 필요합니다. ‘음성 리믹싱’은 사용 권한이 있는 기존 음성의 억양·성별·속도·스타일 등을 프롬프트로 바꾼 새 변형을 만들고 원본은 그대로 보존합니다. 원하는 출발 자료와 품질 수준에 맞는 방식을 선택합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_voice_03_create_methods.png",
+                                                                  "badge":  "방식 선택"
+                                                              },
+                                                              {
+                                                                  "title":  "보이스 디자인 프롬프트와 설정을 조정합니다",
+                                                                  "body":  "원하는 언어·지역 억양, 성별·연령대, 음색, 말하기 속도, 감정, 용도와 음질을 프롬프트에 적습니다. 예: ‘한국어, 30대 여성, 방송 품질. 차분하고 신뢰감 있는 뉴스 아나운서. 맑고 또렷한 음색, 정확한 발음, 일정한 속도와 자연스러운 억양.’ 직접 작성하기 어렵다면 ChatGPT 같은 생성형 AI에 원하는 목소리와 용도를 알려 프롬프트 초안을 받은 뒤 필요한 조건만 다듬습니다. ‘미리보기 텍스트 생성’을 켜면 설명에 맞는 시험 문장을 함께 만들 수 있습니다. ‘음량’은 미리듣기와 저장 음성의 크기, ‘가이드 스케일’은 프롬프트를 따르는 강도를 조절합니다. 값을 높이면 설명에는 더 충실하지만 음질이 부자연스러울 수 있으므로 미리 듣고 조정한 뒤 ‘음성 생성’을 누릅니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_voice_04_design_prompt.png",
+                                                                  "badge":  "보이스 디자인"
+                                                              },
+                                                              {
+                                                                  "title":  "생성된 세 가지 음성을 듣고 선택합니다",
+                                                                  "body":  "보이스 디자인은 한 번에 세 가지 미리듣기 음성을 만듭니다. ‘음성 1·2·3’을 차례로 재생해 발음, 억양, 속도, 음색과 업무 용도에 맞는지 비교합니다. 원하는 결과의 선택 표시를 확인한 뒤 ‘음성 선택’을 누릅니다. 적합한 결과가 없으면 프롬프트나 설정을 바꾸고 다시 생성합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_voice_05_candidates.png",
+                                                                  "badge":  "결과 선택"
+                                                              },
+                                                              {
+                                                                  "title":  "이름과 분류 정보를 입력해 저장합니다",
+                                                                  "body":  "‘이름’에는 이후 음성 선택 메뉴에서 구분할 이름을 입력하고, 언어 라벨을 실제 사용할 언어로 지정합니다. 필요하면 ‘라벨 추가’에서 성별, 억양, 나이, 용도·톤 같은 분류 정보를 더합니다. 설명은 프롬프트를 바탕으로 채워지며 검색과 구분을 위한 메모로 수정할 수 있지만, 이 단계에서 설명을 바꾼다고 이미 선택한 음색이 다시 생성되지는 않습니다. 내용을 확인한 뒤 ‘음성 저장’을 누릅니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_voice_06_save_metadata.png",
+                                                                  "badge":  "음성 저장"
+                                                              },
+                                                              {
+                                                                  "title":  "내 음성에서 저장 결과를 확인하고 사용합니다",
+                                                                  "body":  "상단의 ‘내 음성’을 선택하면 직접 만든 음성과 라이브러리에서 저장한 음성을 함께 확인할 수 있습니다. 저장한 이름, 언어와 설명을 확인하고 오른쪽의 사용 아이콘이나 음성 선택 메뉴에서 해당 목소리를 고르면 텍스트 음성 변환 화면에 적용할 수 있습니다. 직접 디자인하거나 복제한 음성은 요금제별 사용자 음성 슬롯을 사용하며, 라이브러리에서 저장한 공개 음성은 사용자 음성 슬롯을 사용하지 않습니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_voice_07_my_voices.png",
+                                                                  "badge":  "내 음성"
                                                               }
                                                           ]
                                           },
@@ -2726,7 +2762,11 @@ window.SERVICE_GUIDES = {
                                          "https://elevenlabs.io/blog/audio-native",
                                          "https://elevenlabs.io/docs/eleven-creative/services/productions/overview",
                                          "https://elevenlabs.io/docs/eleven-creative/products/audiobooks",
-                                         "https://elevenlabs.io/docs/overview/capabilities/ads-engine"
+                                         "https://elevenlabs.io/docs/overview/capabilities/ads-engine",
+                                         "https://elevenlabs.io/docs/eleven-creative/voices/voice-library",
+                                         "https://elevenlabs.io/docs/eleven-creative/voices/voice-design",
+                                         "https://elevenlabs.io/docs/eleven-creative/voices/voice-cloning",
+                                         "https://elevenlabs.io/docs/overview/capabilities/voice-remixing"
                                      ]
                      }
                  ]
