@@ -2491,108 +2491,242 @@ window.SERVICE_GUIDES = {
                          "id":  "elevenlabs",
                          "name":  "ElevenLabs",
                          "display":  "ElevenLabs",
-                         "title":  "ElevenLabs 기능 중심 사용 가이드",
+                         "title":  "ElevenLabs 기능별 시작 가이드",
                          "domain":  "elevenlabs.io",
                          "url":  "https://elevenlabs.io/",
                          "tone":  "#ec4899",
-                         "role":  "내레이션, 더빙, 음성 변환, 오디오 편집을 위한 음성 제작 도구",
-                         "basis":  "2026-08-14",
-                         "overview":  "음성 생성, 더빙, 오디오 편집, 효과음, 음악, 음성 에이전트 제작에 적합하다. 교육 영상, 홍보 영상, 내레이션, 다국어 콘텐츠 업무에 강하다.",
-                         "hero":  "./guidebook-assets/elevenlabs_tts.png",
-                         "features":  [
-                                          "내레이션 제작",
-                                          "녹음 텍스트화",
-                                          "목소리 변환",
-                                          "음성 복제",
-                                          "효과음 제작",
-                                          "음악 제작",
-                                          "다국어 더빙",
-                                          "오디오 편집",
-                                          "음성 상담봇"
-                                      ],
-                         "tips":  [
-                                      "먼저 업무 목표와 원하는 결과물 형식을 정한다.",
-                                      "입력 자료가 있으면 파일, 링크, 이미지, 오디오 등으로 함께 넣는다.",
-                                      "AI 결과는 초안으로 보고, 사실/숫자/권리/보안은 직접 확인한다."
-                                  ],
+                         "role":  "음성·음악·영상 생성부터 전사·더빙·장문 오디오와 광고 현지화까지 지원하는 AI 콘텐츠 제작 서비스",
+                         "basis":  "2026-08-25",
+                         "guideDate":  "2026-08-25",
+                         "overview":  "음성 합성과 변환을 중심으로 효과음·음악·이미지·영상 제작, 전사, 더빙, 웹 오디오 플레이어와 전문가 제작 서비스까지 제공하는 ElevenLabs의 콘텐츠 제작 플랫폼입니다.",
+                         "hero":  "./guidebook-assets/elevenlabs_guide_start.png",
+                         "features":  [],
+                         "tips":  [],
                          "sections":  [
                                           {
-                                              "title":  "Text to Speech",
-                                              "image":  "./guidebook-assets/elevenlabs_tts.png",
-                                              "location":  "텍스트를 입력하고 음성을 선택해 Generate를 누른다.",
-                                              "when":  "교육 영상, 홍보 영상, 안내 음성, 더미 내레이션 제작에 쓴다.",
-                                              "how":  "발음이 어색한 단어는 문장을 나누거나 표기를 바꿔 다시 생성한다."
+                                              "id":  "elevenlabs_feature_01",
+                                              "title":  "음성",
+                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                              "short":  "홈의 통합 생성창에서 텍스트와 감정 태그를 입력해 빠르게 음성 시안을 만듭니다.",
+                                              "detail":  "홈 화면에서 모델과 목소리를 고르고 텍스트를 바로 음성으로 생성하는 빠른 시작 기능입니다.",
+                                              "when":  "짧은 내레이션, 안내 문구, 대사처럼 음성 결과를 빠르게 들어보고 싶을 때 사용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "홈의 음성 생성창에서 시작합니다",
+                                                                  "body":  "왼쪽 ‘홈’을 선택한 뒤 화면 가운데의 ‘음성’ 탭을 누릅니다. 입력창에 읽을 문장을 적고, 필요하면 [속삭임]·[웃음]처럼 화면이 안내하는 감정 태그를 넣습니다. 아래에서 모델과 목소리, 추가 옵션을 확인한 뒤 ‘생성’을 누릅니다. 모델·목소리와 옵션의 제공 범위는 계정과 요금제에 따라 달라질 수 있습니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                                                  "badge":  "시작 화면"
+                                                              }
+                                                          ]
                                           },
                                           {
-                                              "title":  "Speech to Text",
-                                              "image":  "./guidebook-assets/elevenlabs_tts.png",
-                                              "location":  "오디오를 텍스트로 변환한다.",
-                                              "when":  "녹음 내용 정리, 자막 초안, 스크립트 추출에 쓴다.",
-                                              "how":  "고유명사와 숫자는 원음을 듣고 확인한다."
+                                              "id":  "elevenlabs_feature_02",
+                                              "title":  "텍스트 음성 변환",
+                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                              "short":  "전용 작업 화면에서 텍스트를 자연스러운 음성으로 바꾸고 목소리와 모델을 조정합니다.",
+                                              "detail":  "텍스트의 문맥을 반영해 억양·속도·감정이 담긴 음성을 만드는 Text to Speech 기능입니다.",
+                                              "when":  "교육·홍보 영상의 내레이션, 안내 음성, 팟캐스트 대사처럼 다시 사용할 음성 파일을 만들 때 사용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "왼쪽 메뉴에서 텍스트 음성 변환을 엽니다",
+                                                                  "body":  "왼쪽 고정됨 영역의 ‘텍스트 음성 변환’을 선택합니다. 전용 화면에서 읽을 텍스트를 입력하고 목소리와 음성 모델을 고른 뒤 설정을 조정해 생성합니다. 같은 문장도 목소리와 모델에 따라 발음·속도·표현이 달라지므로 미리 듣고 업무에 맞는 결과를 선택합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                                                  "badge":  "기능 위치"
+                                                              }
+                                                          ]
                                           },
                                           {
-                                              "title":  "Voice Changer",
-                                              "image":  "./guidebook-assets/elevenlabs_tts.png",
-                                              "location":  "기존 음성을 선택한 목소리 스타일로 바꾼다.",
-                                              "when":  "녹음 톤 통일, 캐릭터 음성 초안에 쓴다.",
-                                              "how":  "동의 없는 타인 음성 변환은 사용하지 않는다."
+                                              "id":  "elevenlabs_feature_03",
+                                              "title":  "효과음",
+                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                              "short":  "원하는 소리를 문장으로 설명해 영상·게임·팟캐스트에 넣을 효과음을 생성합니다.",
+                                              "detail":  "사물의 소리, 환경음, 전환음처럼 필요한 효과를 텍스트 프롬프트에서 만드는 Sound Effects 기능입니다.",
+                                              "when":  "직접 녹음하기 어려운 배경음·동작음·분위기음을 콘텐츠에 추가할 때 사용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "왼쪽 메뉴에서 효과음을 엽니다",
+                                                                  "body":  "왼쪽 고정됨 영역의 ‘효과음’을 선택합니다. 만들 소리의 대상, 장소, 세기, 길이와 반복 여부를 구체적으로 설명해 생성하고 여러 결과를 들어본 뒤 선택합니다. 예를 들어 ‘조용한 사무실에서 종이를 넘기는 가까운 소리’처럼 장면이 떠오르도록 적습니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                                                  "badge":  "기능 위치"
+                                                              }
+                                                          ]
                                           },
                                           {
-                                              "title":  "Voice Cloning",
-                                              "image":  "./guidebook-assets/elevenlabs_voice_cloning.png",
-                                              "location":  "허가받은 음성 샘플을 업로드해 목소리를 만든다.",
-                                              "when":  "브랜드 내레이터, 교육 강사, 다국어 음성 제작에 쓴다.",
-                                              "how":  "음성 권리와 동의를 반드시 확보한다."
+                                              "id":  "elevenlabs_feature_04",
+                                              "title":  "이미지 및 비디오",
+                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                              "short":  "텍스트와 참고 이미지를 바탕으로 이미지·영상을 만들고 후속 프롬프트로 수정합니다.",
+                                              "detail":  "여러 생성 모델을 한 화면에서 선택해 이미지와 영상을 제작·보정하고 Studio로 보낼 수 있는 베타 기능입니다.",
+                                              "when":  "콘셉트 이미지, 짧은 영상, 시작·끝 프레임 기반 장면이나 오디오 립싱크 결과가 필요할 때 사용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "왼쪽 메뉴에서 이미지 및 비디오를 엽니다",
+                                                                  "body":  "왼쪽 고정됨 영역의 ‘이미지 및 비디오’를 선택합니다. 이미지 또는 비디오 유형과 생성 모델을 정하고, 프롬프트와 필요한 참고 자료를 넣어 생성합니다. 결과는 후속 프롬프트로 변형하거나 업스케일·립싱크 같은 지원 도구를 적용한 뒤 다운로드하거나 Studio로 보낼 수 있습니다. 이 기능은 베타이며 모델과 입력 방식은 지역·요금제·관리자 설정에 따라 다를 수 있습니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                                                  "badge":  "기능 위치"
+                                                              }
+                                                          ]
                                           },
                                           {
-                                              "title":  "Voice Design/Voice Library",
-                                              "image":  "./guidebook-assets/elevenlabs_tts.png",
-                                              "location":  "목소리 특성을 설명하거나 라이브러리에서 적합한 음성을 고른다.",
-                                              "when":  "콘텐츠 성격에 맞는 톤을 빠르게 찾을 때 쓴다.",
-                                              "how":  "브랜드 이미지와 맞는 음성을 선택한다."
+                                              "id":  "elevenlabs_feature_05",
+                                              "title":  "보이스 아이솔레이터",
+                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                              "short":  "오디오·비디오에서 배경 소음과 음악을 줄여 말소리를 분리합니다.",
+                                              "detail":  "현장 녹음이나 잡음이 섞인 파일에서 음성을 추출해 더 깨끗한 말소리로 만드는 Voice Isolator 기능입니다.",
+                                              "when":  "인터뷰, 회의, 현장 촬영처럼 주변 소음 때문에 사람의 말을 듣기 어려운 파일을 정리할 때 사용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "왼쪽 메뉴에서 보이스 아이솔레이터를 엽니다",
+                                                                  "body":  "왼쪽 고정됨 영역의 ‘보이스 아이솔레이터’를 선택하고 오디오 또는 비디오 파일을 업로드해 분리를 실행합니다. 처리 전후를 들어보고 말소리 손상 여부를 확인하며 원본은 별도로 보관합니다. 이 기능은 일반 대화 음성 정리에 맞춰져 있어 음악에서 보컬만 분리하는 용도로는 최적화되어 있지 않습니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                                                  "badge":  "기능 위치"
+                                                              }
+                                                          ]
                                           },
                                           {
-                                              "title":  "Voice Isolator",
-                                              "image":  "./guidebook-assets/elevenlabs_tts.png",
-                                              "location":  "녹음 파일의 배경 소음과 방해음을 줄인다.",
-                                              "when":  "인터뷰, 회의 녹음, 현장 녹음 품질 개선에 쓴다.",
-                                              "how":  "완전히 복구되지 않을 수 있으므로 원본 보관이 필요하다."
+                                              "id":  "elevenlabs_feature_06",
+                                              "title":  "보이스 체인저",
+                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                              "short":  "녹음의 말투와 감정은 유지하면서 선택한 다른 목소리로 변환합니다.",
+                                              "detail":  "업로드하거나 녹음한 원본의 속삭임·웃음·강세 같은 연기를 살려 목표 음성으로 바꾸는 Voice Changer 기능입니다.",
+                                              "when":  "캐릭터 목소리 제작, 여러 녹음의 화자 통일, 기존 음성의 일부 대사 교체가 필요할 때 사용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "왼쪽 메뉴에서 보이스 체인저를 엽니다",
+                                                                  "body":  "왼쪽 고정됨 영역의 ‘보이스 체인저’를 선택합니다. 원본 음성을 녹음하거나 업로드하고, 변환할 목표 목소리를 고른 뒤 생성합니다. 결과는 원본의 말투와 감정을 반영하므로 깨끗하게 연기한 음원을 사용하는 것이 좋습니다. 본인 또는 사용 허가를 받은 음성만 이용합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                                                  "badge":  "기능 위치"
+                                                              }
+                                                          ]
                                           },
                                           {
-                                              "title":  "Sound Effects/AI Music",
-                                              "image":  "./guidebook-assets/elevenlabs_tts.png",
-                                              "location":  "텍스트로 효과음이나 음악을 생성한다.",
-                                              "when":  "영상, 팟캐스트, 교육 콘텐츠의 분위기 조성에 쓴다.",
-                                              "how":  "배포 전 사용 권리를 확인한다."
+                                              "id":  "elevenlabs_feature_07",
+                                              "title":  "뮤직",
+                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                              "short":  "자연어로 곡을 만들고 가사·구간·길이·스타일을 이어서 수정합니다.",
+                                              "detail":  "장르·분위기·악기·보컬을 설명해 음악을 생성하고 편집하는 Eleven Music 기능입니다.",
+                                              "when":  "영상 배경음악, 캠페인·행사 음악, 노래와 연주곡 시안을 빠르게 만들고 다듬을 때 사용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "왼쪽 메뉴에서 뮤직을 엽니다",
+                                                                  "body":  "왼쪽 고정됨 영역의 ‘뮤직’을 선택합니다. 곡의 장르, 분위기, 악기, 보컬, 빠르기와 길이를 설명하고 생성합니다. 필요하면 짧은 오디오 레퍼런스로 스타일 방향을 전달하고, 결과 화면에서 가사·구간·길이·스타일 키워드를 수정합니다. 오디오 레퍼런스는 원곡을 복제하거나 리믹스하는 기능이 아니라 분위기와 구성의 참고 자료입니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                                                  "badge":  "기능 위치"
+                                                              }
+                                                          ]
                                           },
                                           {
-                                              "title":  "Dubbing",
-                                              "image":  "./guidebook-assets/elevenlabs_tts.png",
-                                              "location":  "영상이나 오디오를 다른 언어 음성으로 변환한다.",
-                                              "when":  "다국어 교육자료, 제품 소개 영상 현지화에 쓴다.",
-                                              "how":  "번역 정확도와 입 모양/타이밍을 확인한다."
+                                              "id":  "elevenlabs_feature_08",
+                                              "title":  "음성 텍스트 변환",
+                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                              "short":  "오디오·비디오의 말을 텍스트로 옮기고 화자·시간·소리 정보를 구분합니다.",
+                                              "detail":  "Scribe 모델로 녹음 내용을 전사하고 화자 분리, 단어별 타임스탬프와 음향 이벤트를 제공하는 Speech to Text 기능입니다.",
+                                              "when":  "회의록, 인터뷰 기록, 자막 초안, 검색 가능한 녹취록을 만들 때 사용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "왼쪽 메뉴에서 음성 텍스트 변환을 엽니다",
+                                                                  "body":  "왼쪽 고정됨 영역의 ‘음성 텍스트 변환’을 선택하고 오디오 또는 비디오를 업로드합니다. 언어와 화자 구분 등 표시되는 옵션을 확인해 전사한 뒤 원음을 들으며 고유명사, 숫자, 전문용어와 화자 구분을 교정합니다. 핵심 용어를 미리 제공할 수 있는 화면에서는 조직명과 업무 용어를 넣어 인식에 참고하도록 합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                                                  "badge":  "기능 위치"
+                                                              }
+                                                          ]
                                           },
                                           {
-                                              "title":  "Studio/Speech Correction",
-                                              "image":  "./guidebook-assets/elevenlabs_studio.png",
-                                              "location":  "스크립트와 타임라인을 편집하고 필요한 부분만 다시 생성한다.",
-                                              "when":  "긴 내레이션, 오디오북, 영상 음성 편집에 쓴다.",
-                                              "how":  "수정 후 전체 흐름을 다시 들어본다."
+                                              "id":  "elevenlabs_feature_09",
+                                              "title":  "더빙",
+                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                              "short":  "오디오·영상의 언어를 바꾸면서 화자의 목소리·감정·타이밍과 배경음을 유지합니다.",
+                                              "detail":  "파일이나 지원되는 링크의 대화를 다른 언어로 번역하고 여러 화자를 구분해 새 음성 트랙을 만드는 Dubbing 기능입니다.",
+                                              "when":  "교육 영상, 인터뷰, 제품 소개, 팟캐스트를 여러 언어로 현지화할 때 사용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "왼쪽 메뉴에서 더빙을 엽니다",
+                                                                  "body":  "왼쪽 고정됨 영역의 ‘더빙’을 선택하고 원본 파일 또는 지원되는 링크를 가져옵니다. 원본 언어와 대상 언어를 확인한 뒤 자동 더빙을 실행합니다. 결과에서는 번역, 화자 구분, 발음, 타이밍과 배경음 보존 상태를 원본과 대조합니다. 세밀한 편집 화면이나 모델은 계정에 표시되는 제공 범위를 따릅니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                                                  "badge":  "기능 위치"
+                                                              }
+                                                          ]
                                           },
                                           {
-                                              "title":  "다운로드/History",
-                                              "image":  "./guidebook-assets/elevenlabs_studio.png",
-                                              "location":  "생성 기록에서 원하는 파일 형식으로 내려받는다.",
-                                              "when":  "최종 영상 편집툴이나 LMS에 넣을 때 사용한다.",
-                                              "how":  "파일명에 프로젝트명, 언어, 버전을 넣어 관리한다."
+                                              "id":  "elevenlabs_feature_10",
+                                              "title":  "오디오 네이티브",
+                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                              "short":  "기사·블로그·뉴스레터에 재생 가능한 AI 음성 플레이어를 삽입합니다.",
+                                              "detail":  "웹문서의 텍스트를 음성으로 들을 수 있도록 사이트에 임베드 코드를 붙이는 Audio Native 기능입니다.",
+                                              "when":  "웹사이트 방문자가 긴 글을 읽는 대신 음성으로 들을 수 있게 제공할 때 사용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "왼쪽 메뉴에서 오디오 네이티브를 엽니다",
+                                                                  "body":  "왼쪽 고정됨 영역의 ‘오디오 네이티브’를 선택합니다. 사용할 웹사이트 도메인과 목소리를 설정하고 플레이어 모양을 확인한 뒤 제공되는 임베드 코드를 사이트에 삽입합니다. 게시 후 실제 페이지에서 글 내용이 올바르게 음성화되는지와 플레이어 작동을 확인합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                                                  "badge":  "기능 위치"
+                                                              }
+                                                          ]
+                                          },
+                                          {
+                                              "id":  "elevenlabs_feature_11",
+                                              "title":  "프로덕션",
+                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                              "short":  "전문가 검수와 편집이 필요한 전사·자막·더빙 작업을 의뢰하고 납품받습니다.",
+                                              "detail":  "ElevenLabs의 자동 생성 도구와 별도로 언어·현지화 전문가가 결과를 다듬어 제공하는 관리형 제작 서비스입니다.",
+                                              "when":  "대량 콘텐츠나 외부 공개물처럼 번역·자막·더빙 품질에 사람의 검수와 일관된 납품 관리가 필요할 때 사용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "왼쪽 메뉴에서 프로덕션을 엽니다",
+                                                                  "body":  "왼쪽 고정됨 영역의 ‘프로덕션’을 선택합니다. 새 원본을 업로드하거나 기존 프로젝트를 고른 뒤 언어, 결과물 유형과 스타일 기준을 제출해 견적을 확인합니다. 주문 후 진행 상태를 추적하고 완성본을 검토·내보냅니다. 자동 생성 기능이 아니라 전문가가 편집·검수하는 유료 의뢰 서비스이며, 주문 가능한 작업과 언어는 화면의 최신 제공 범위를 확인합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                                                  "badge":  "기능 위치"
+                                                              }
+                                                          ]
+                                          },
+                                          {
+                                              "id":  "elevenlabs_feature_12",
+                                              "title":  "오디오북",
+                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                              "short":  "원고를 가져와 장·배역·발음과 음악·효과음을 구성한 장문 오디오를 만듭니다.",
+                                              "detail":  "책과 긴 문서를 단일 또는 다중 배역 음성으로 제작하고 내보내거나 배포하는 Audiobooks 작업 공간입니다.",
+                                              "when":  "책, 교육 교재, 장문 보고서와 스토리를 일관된 목소리의 긴 오디오 콘텐츠로 제작할 때 사용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "왼쪽 메뉴에서 오디오북을 엽니다",
+                                                                  "body":  "왼쪽 고정됨 영역의 ‘오디오북’을 선택하고 원고를 붙여 넣거나 지원되는 문서 파일을 가져옵니다. 장 구성을 확인하고 단일 배역 또는 여러 배역의 목소리를 지정하며 발음 규칙을 설정합니다. 자동으로 감지된 인물과 배역은 원문과 대조하고, 필요하면 타임라인에 음악·효과음을 넣은 뒤 전체 흐름을 들어보고 내보냅니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                                                  "badge":  "기능 위치"
+                                                              }
+                                                          ]
+                                          },
+                                          {
+                                              "id":  "elevenlabs_feature_13",
+                                              "title":  "광고 엔진",
+                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                              "short":  "광고 계정의 기존 소재를 분석해 여러 언어와 시장에 맞는 광고 변형을 만듭니다.",
+                                              "detail":  "광고 문구·이미지·영상의 번역과 현지화를 만들고 검토 후 광고 플랫폼으로 보내는 Ads Engine 알파 기능입니다.",
+                                              "when":  "같은 캠페인의 문구·이미지·영상 더빙을 시장별로 현지화하고 승인 과정을 거쳐 배포할 때 사용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "왼쪽 메뉴에서 광고 엔진을 엽니다",
+                                                                  "body":  "왼쪽 고정됨 영역의 ‘광고 엔진’을 선택합니다. 지원되는 광고 계정을 연결하고 가져올 캠페인과 대상 시장을 고른 뒤 문구·이미지·영상의 현지화 변형을 생성합니다. 결과의 번역, 이미지 문구, 구성과 더빙을 검토·승인한 뒤 지원되는 광고 플랫폼으로 전송합니다. 현재 알파 기능이므로 연결 가능한 플랫폼과 편집·배포 범위는 계정에 표시되는 최신 화면을 기준으로 확인합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                                                  "badge":  "기능 위치"
+                                                              }
+                                                          ]
                                           }
                                       ],
                          "sources":  [
-                                         "https://elevenlabs.io/text-to-speech",
-                                         "https://elevenlabs.io/docs/eleven-creative/playground/text-to-speech",
-                                         "https://elevenlabs.io/voice-cloning",
-                                         "https://elevenlabs.io/studio",
-                                         "https://help.elevenlabs.io/hc/en-us/articles/26020223217297-How-do-I-download-WAV-M4A-and-FLAC-files"
+                                         "https://elevenlabs.io/docs/eleven-creative/quickstart",
+                                         "https://elevenlabs.io/docs/overview/capabilities/text-to-speech",
+                                         "https://elevenlabs.io/blog/v3-audiotags",
+                                         "https://elevenlabs.io/docs/overview/capabilities/sound-effects",
+                                         "https://elevenlabs.io/docs/overview/capabilities/image-video",
+                                         "https://elevenlabs.io/docs/overview/capabilities/voice-isolator",
+                                         "https://elevenlabs.io/docs/overview/capabilities/voice-changer",
+                                         "https://elevenlabs.io/docs/eleven-creative/products/music",
+                                         "https://elevenlabs.io/docs/overview/capabilities/speech-to-text",
+                                         "https://elevenlabs.io/docs/overview/capabilities/dubbing",
+                                         "https://elevenlabs.io/blog/audio-native",
+                                         "https://elevenlabs.io/docs/eleven-creative/services/productions/overview",
+                                         "https://elevenlabs.io/docs/eleven-creative/products/audiobooks",
+                                         "https://elevenlabs.io/docs/overview/capabilities/ads-engine"
                                      ]
                      }
                  ]
