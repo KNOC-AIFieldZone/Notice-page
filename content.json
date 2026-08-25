@@ -76,8 +76,15 @@
                      }
                  ],
     "notice":  {
-                   "noticeId":  "2026-06-04",
+                   "noticeId":  "2026-09-03",
                    "items":  [
+                                 {
+                                     "date":  "2026-09-03",
+                                     "title":  "HIX AI 구독 해지",
+                                     "sub":  "2026년 9월 3일부터 HIX AI를 이용하실 수 없습니다. (사유: 사용량 저조)",
+                                     "keyword":  "종료",
+                                     "priority":  5
+                                 },
                                  {
                                      "date":  "2026-06-04",
                                      "title":  "HIX AI 구독 시작",
@@ -100,20 +107,6 @@
                                      "priority":  5
                                  },
                                  {
-                                     "date":  "2026-01-02",
-                                     "title":  "Google AI Pro 구독 시작",
-                                     "sub":  "2026년 1월 28일부터 Gemini, Gemini Notebook 등 이용하실 수 있습니다.",
-                                     "keyword":  "신규",
-                                     "priority":  5
-                                 },
-                                 {
-                                     "date":  "2026-01-01",
-                                     "title":  "ElevenLabs 플랜 다운그레이드",
-                                     "sub":  "2026년 1월 29일부터 Creator Plan에서 Starter Plan으로 다운그레이드됩니다. (사유: 사용량 저조)",
-                                     "keyword":  "안내",
-                                     "priority":  5
-                                 },
-                                 {
                                      "date":  "2026-03-19",
                                      "title":  "Skywork 구독 해지",
                                      "sub":  "2026년 4월 21일부터 Skywork를 이용하실 수 없습니다. (사유: 사용량 저조)",
@@ -132,6 +125,20 @@
                                      "title":  "Perplexity 구독 해지",
                                      "sub":  "2026년 1월 28일부터 Perplexity를 이용하실 수 없습니다. (사유: 사용량 저조)",
                                      "keyword":  "종료",
+                                     "priority":  5
+                                 },
+                                 {
+                                     "date":  "2026-01-02",
+                                     "title":  "Google AI Pro 구독 시작",
+                                     "sub":  "2026년 1월 28일부터 Gemini, Gemini Notebook 등 이용하실 수 있습니다.",
+                                     "keyword":  "신규",
+                                     "priority":  5
+                                 },
+                                 {
+                                     "date":  "2026-01-01",
+                                     "title":  "ElevenLabs 플랜 다운그레이드",
+                                     "sub":  "2026년 1월 29일부터 Creator Plan에서 Starter Plan으로 다운그레이드됩니다. (사유: 사용량 저조)",
+                                     "keyword":  "안내",
                                      "priority":  5
                                  }
                              ]
@@ -159,6 +166,84 @@
                                  }
                              ],
     "news":  [
+                 {
+                     "service":  "xAI",
+                     "title":  "Grok Bot 지원 플랜 확대",
+                     "date":  "2026-08-21",
+                     "file":  "2026-08-21-xai-grok-bot-more-plans.html"
+                 },
+                 {
+                     "service":  "xAI",
+                     "title":  "Grok 4.6 Google Enterprise Agent Platform 제공",
+                     "date":  "2026-08-21",
+                     "file":  "2026-08-21-xai-grok-46-google-enterprise-agent-platform.html"
+                 },
+                 {
+                     "service":  "DeepSeek",
+                     "title":  "DeepSeek-V4-Flash-Vision-Exp 공개",
+                     "date":  "2026-08-21",
+                     "file":  "2026-08-21-deepseek-v4-flash-vision-exp.html"
+                 },
+                 {
+                     "service":  "Suno",
+                     "title":  "Studio 2.0 공개",
+                     "date":  "2026-08-13",
+                     "file":  "2026-08-13-suno-studio-20.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "GPT-5.6 Sol Ultrafast 모드 제한 프리뷰 공개",
+                     "date":  "2026-08-13",
+                     "file":  "2026-08-13-openai-gpt-56-sol-ultrafast-preview.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Google Sheets canvas 공개",
+                     "date":  "2026-08-13",
+                     "file":  "2026-08-13-gemini-google-sheets-canvas.html"
+                 },
+                 {
+                     "service":  "DeepSeek",
+                     "title":  "DeepSeek-V4-Pro GA 공개",
+                     "date":  "2026-08-13",
+                     "file":  "2026-08-13-deepseek-v4-pro-ga.html"
+                 },
+                 {
+                     "service":  "xAI",
+                     "title":  "Grok 4.6 공개",
+                     "date":  "2026-08-12",
+                     "file":  "2026-08-12-xai-grok-46.html"
+                 },
+                 {
+                     "service":  "xAI",
+                     "title":  "Grok Bot 베타 공개",
+                     "date":  "2026-08-11",
+                     "file":  "2026-08-11-xai-grok-bot-beta.html"
+                 },
+                 {
+                     "service":  "Meta AI",
+                     "title":  "Muse Glimmer 30B 공개",
+                     "date":  "2026-08-10",
+                     "file":  "2026-08-10-meta-ai-muse-glimmer-30b.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "Daybreak Blue/Red 및 GPT-5.6-Cyber 공개",
+                     "date":  "2026-08-10",
+                     "file":  "2026-08-10-openai-daybreak-blue-red-gpt-56-cyber.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Workspace Studio에서 Gemini Notebook 소스 자동 추가",
+                     "date":  "2026-08-07",
+                     "file":  "2026-08-07-gemini-workspace-studio-notebook-source-auto-add.html"
+                 },
+                 {
+                     "service":  "xAI",
+                     "title":  "Imagine Image 2.0 Quality Mode 공개",
+                     "date":  "2026-08-07",
+                     "file":  "2026-08-07-xai-imagine-image-20-quality-mode.html"
+                 },
                  {
                      "service":  "xAI",
                      "title":  "Grok Voice Think Fast 2.0 공개",
@@ -1198,7 +1283,7 @@
                      "file":  "2026-05-27-5월-런치-묶음-업데이트.html"
                  },
                  {
-                     "service": "Gemini Notebook",
+                     "service":  "Gemini Notebook",
                      "title":  "Schoology LMS 소스를 Gemini Notebook에 직접 추가",
                      "date":  "2026-05-26",
                      "file":  "2026-05-26-schoology-lms-소스를-notebooklm에-직접-추가.html"
@@ -1210,7 +1295,7 @@
                      "file":  "2026-05-26-music-v2-출시.html"
                  },
                  {
-                     "service": "Gemini Notebook",
+                     "service":  "Gemini Notebook",
                      "title":  "Google Drive 자동 동기화 지원",
                      "date":  "2026-05-26",
                      "file":  "2026-05-26-google-drive-자동-동기화-지원.html"
@@ -1348,7 +1433,7 @@
                      "file":  "2026-05-12-법률-업계를-위한-claude-확장.html"
                  },
                  {
-                     "service": "Gemini Notebook",
+                     "service":  "Gemini Notebook",
                      "title":  "Workspace Studio에 Ask Gemini Notebook 단계 추가",
                      "date":  "2026-05-12",
                      "file":  "2026-05-12-workspace-studio에-ask-notebooklm-단계-추가.html"
@@ -1744,7 +1829,7 @@
                      "file":  "2026-03-21-v8-alpha에-relax-mode-추가-반영.html"
                  },
                  {
-                     "service": "Gemini Notebook",
+                     "service":  "Gemini Notebook",
                      "title":  "콘텐츠 맞춤화와 상호작용 기능 대폭 확장",
                      "date":  "2026-03-20",
                      "file":  "2026-03-20-콘텐츠-맞춤화와-상호작용-기능-대폭-확장.html"
@@ -1918,7 +2003,7 @@
                      "file":  "2026-03-04-copilot-memory-기본-활성화.html"
                  },
                  {
-                     "service": "Gemini Notebook",
+                     "service":  "Gemini Notebook",
                      "title":  "Cinematic Video Overviews 추가",
                      "date":  "2026-03-04",
                      "file":  "2026-03-04-cinematic-video-overviews-추가.html"
@@ -2104,7 +2189,7 @@
                      "file":  "2026-02-05-프로젝트-검색.html"
                  },
                  {
-                     "service": "Gemini Notebook",
+                     "service":  "Gemini Notebook",
                      "title":  "더 큰 source library와 고가치 출력 확대",
                      "date":  "2026-02-05",
                      "file":  "2026-02-05-더-큰-source-library와-고가치-출력-확대.html"
@@ -2236,7 +2321,7 @@
                                    "color":  "#8596ad"
                                },
                                {
-                                   "name": "Gemini Notebook",
+                                   "name":  "Gemini Notebook",
                                    "color":  "#b7b8f0"
                                },
                                {
