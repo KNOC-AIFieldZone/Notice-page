@@ -2594,17 +2594,36 @@ window.SERVICE_GUIDES = {
                                               "id":  "elevenlabs_feature_03",
                                               "title":  "효과음",
                                               "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                              "short":  "원하는 소리를 문장으로 설명해 영상·게임·팟캐스트에 넣을 효과음을 생성합니다.",
-                                              "detail":  "사물의 소리, 환경음, 전환음처럼 필요한 효과를 텍스트 프롬프트에서 만드는 Sound Effects 기능입니다.",
-                                              "when":  "직접 녹음하기 어려운 배경음·동작음·분위기음을 콘텐츠에 추가할 때 사용합니다.",
+                                              "short":  "공개 효과음을 찾거나 원하는 소리를 문장으로 설명해 새 효과음을 생성합니다.",
+                                              "detail":  "사물 소리, 환경음, 전환음과 짧은 음악 요소를 텍스트 프롬프트로 만드는 Sound Effects 기능입니다. 길이와 반복 재생 방식도 조정할 수 있습니다.",
+                                              "when":  "영상·게임·팟캐스트에 넣을 배경음, 동작음이나 분위기음을 직접 녹음하기 어려울 때 사용합니다.",
                                               "steps":  [
                                                               {
-                                                                  "title":  "왼쪽 메뉴에서 효과음을 엽니다",
-                                                                  "body":  "왼쪽 고정됨 영역의 ‘효과음’을 선택합니다. 만들 소리의 대상, 장소, 세기, 길이와 반복 여부를 구체적으로 설명해 생성하고 여러 결과를 들어본 뒤 선택합니다. 예를 들어 ‘조용한 사무실에서 종이를 넘기는 가까운 소리’처럼 장면이 떠오르도록 적습니다.",
+                                                                  "title":  "왼쪽 사이드바에서 효과음을 엽니다",
+                                                                  "body":  "왼쪽 ‘고정됨’ 영역의 ‘효과음’을 선택합니다. 공개 효과음을 검색해 바로 사용하거나, 원하는 장면과 소리를 직접 설명해 새로운 효과음을 만들 수 있습니다.",
                                                                   "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                                                  "badge":  "기능 위치"
+                                                                  "badge":  "기능 열기"
+                                                              },
+                                                              {
+                                                                  "title":  "공개 효과음을 찾거나 직접 생성합니다",
+                                                                  "body":  "‘탐색’에서 가정·공원·기기·날씨·동물 같은 카테고리나 검색창으로 공개 효과음을 찾고 재생·다운로드·즐겨찾기할 수 있습니다. 새로 만들려면 하단 입력창에 대상, 장소, 움직임과 분위기를 구체적으로 적습니다. 화면 안내에 따라 현재는 영어 프롬프트를 사용하면 더 안정적인 결과를 얻을 수 있습니다. 반복 재생은 시작과 끝이 자연스럽게 이어지는 루프가 필요할 때 켜고, 단발성 소리는 끕니다. 길이는 ‘자동’에 두거나 필요한 초를 지정할 수 있으며 최대 30초입니다. 프롬프트 영향도는 높을수록 요청을 더 엄격하게 따르고 낮을수록 변형이 다양해집니다. 자동 프롬프트 정제를 켜면 입력을 더 구체적인 생성용 설명으로 보완하므로 수정된 내용을 확인합니다. 공개 공유를 원하지 않으면 하단 공유 설정을 비활성화한 뒤 생성 화살표를 누릅니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_sfx_02_explore_create.png",
+                                                                  "badge":  "탐색 및 생성"
+                                                              },
+                                                              {
+                                                                  "title":  "생성 결과를 듣고 저장합니다",
+                                                                  "body":  "한 번 생성하면 네 가지 결과가 표시됩니다. 각 결과를 재생해 길이, 반복 경계와 소리의 질감을 비교한 뒤 내려받기 아이콘으로 저장하거나 별표로 즐겨찾기에 추가합니다. 다른 결과가 필요하면 프롬프트나 설정을 바꿔 다시 생성하고, 이전 결과는 ‘기록’에서 다시 확인합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_sfx_03_results.png",
+                                                                  "badge":  "결과 확인"
                                                               }
-                                                          ]
+                                                          ],
+                                              "audioSamples":  [
+                                                                   {
+                                                                       "title":  "조용한 산속 숲과 시냇물 효과음 예시",
+                                                                       "duration":  "0:20",
+                                                                       "src":  "./guidebook-assets/elevenlabs_sfx_sample_quiet_mountain_forest.mp3"
+                                                                   }
+                                                               ]
                                           },
                                           {
                                               "id":  "elevenlabs_feature_04",
@@ -2775,6 +2794,7 @@ window.SERVICE_GUIDES = {
                                          "https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices",
                                          "https://elevenlabs.io/blog/v3-audiotags",
                                          "https://elevenlabs.io/docs/overview/capabilities/sound-effects",
+                                         "https://elevenlabs.io/docs/eleven-creative/playground/sound-effects",
                                          "https://elevenlabs.io/docs/overview/capabilities/image-video",
                                          "https://elevenlabs.io/docs/overview/capabilities/voice-isolator",
                                          "https://elevenlabs.io/docs/overview/capabilities/voice-changer",
