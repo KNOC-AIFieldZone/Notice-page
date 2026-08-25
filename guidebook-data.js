@@ -1623,33 +1623,49 @@ window.SERVICE_GUIDES = {
                                           },
                                           {
                                               "id":  "gemini_feature_09",
-                                              "title":  "기능 9",
-                                              "image":  "./guidebook-assets/gemini_guide_step_01.png",
-                                              "short":  "",
-                                              "detail":  "",
-                                              "when":  " ",
+                                              "title":  "예약된 작업",
+                                              "image":  "./guidebook-assets/gemini_scheduled_tasks_gems_start.png",
+                                              "short":  "정해진 시간과 주기에 맞춰 Gemini가 요약, 아이디어, 학습 콘텐츠 등을 자동으로 준비하도록 반복 작업을 예약합니다.",
+                                              "detail":  "매일·매주·매월 실행할 요청과 시간을 지정하고, 설정 메뉴의 예약된 작업에서 활성 상태를 확인하거나 수정·삭제할 수 있습니다.",
+                                              "when":  "정기 뉴스 요약, 주간 아이디어, 반복 학습 문제처럼 같은 요청을 일정한 주기로 받아야 할 때 사용합니다.",
                                               "steps":  [
                                                               {
-                                                                  "title":  " ",
-                                                                  "body":  " ",
-                                                                  "image":  "./guidebook-assets/gemini_guide_step_01.png",
-                                                                  "badge":  "1번 이미지"
+                                                                  "title":  "설정 메뉴에서 예약된 작업의 위치를 확인합니다",
+                                                                  "body":  "Gemini 화면 왼쪽 아래의 설정 아이콘을 누른 뒤 ‘예약된 작업’을 선택하면 등록한 일정과 실행 상태를 관리할 수 있습니다. 예약된 작업은 ‘매일 오전 8시에 주요 뉴스를 요약해 줘’처럼 요청 내용, 실행 시각, 반복 주기를 함께 지정해 두는 기능입니다. 예약 결과는 지정된 시간 전에 준비될 수 있으므로 급변하는 뉴스·가격·규정은 최신 원문을 다시 확인해 주세요. 이용 가능한 계정·요금제와 조직 정책에 따라 메뉴가 보이지 않을 수 있으며, Gemini 앱 활동이 사용 설정되어 있어야 합니다. 이번 단계에서는 기능의 위치와 용도까지만 확인하고, 실제 등록·수정 방법은 다음 자료에서 이어서 안내합니다.",
+                                                                  "image":  "./guidebook-assets/gemini_scheduled_tasks_gems_start.png",
+                                                                  "badge":  "기능 위치"
                                                               }
                                                           ]
                                           },
                                           {
                                               "id":  "gemini_feature_10",
-                                              "title":  "기능 10",
-                                              "image":  "./guidebook-assets/gemini_guide_step_01.png",
-                                              "short":  "",
-                                              "detail":  "",
-                                              "when":  " ",
+                                              "title":  "GEMS",
+                                              "image":  "./guidebook-assets/gemini_scheduled_tasks_gems_start.png",
+                                              "short":  "반복 업무에 필요한 역할, 작업 기준, 참고 자료, 출력 형식을 저장해 두고 같은 기준으로 다시 사용하는 맞춤형 Gemini입니다.",
+                                              "detail":  "Google이 제공하는 Gem을 사용하거나 웹에서 직접 이름과 지침을 작성하고 지식 파일을 연결해 업무 목적에 맞는 Gem을 만들 수 있습니다.",
+                                              "when":  "보도자료 첨삭, 회의록 정리, 규정 질의응답처럼 담당 역할과 결과물 형식을 매번 동일하게 적용해야 할 때 사용합니다.",
                                               "steps":  [
                                                               {
-                                                                  "title":  " ",
-                                                                  "body":  " ",
-                                                                  "image":  "./guidebook-assets/gemini_guide_step_01.png",
-                                                                  "badge":  "1번 이미지"
+                                                                  "title":  "설정 메뉴에서 GEMS의 위치를 확인합니다",
+                                                                  "body":  "Gemini 화면 왼쪽 아래의 설정 아이콘을 누른 뒤 ‘Gems’를 선택하면 미리 만들어진 Gem을 살펴보거나 맞춤 Gem 관리 화면으로 이동할 수 있습니다. Gem은 단순히 한 번 질문하는 기능이 아니라 ‘어떤 역할로, 어떤 일을, 어떤 배경을 참고해, 어떤 형식으로 답할지’를 지침으로 저장한 맞춤형 Gemini입니다. 웹에서는 이름과 지침을 작성하고 필요한 경우 기기 또는 Google Drive의 파일을 지식 자료로 추가할 수 있습니다. 직접 만든 Gem은 저장해야 다른 대화에서도 다시 사용할 수 있으며, 민감한 회사 자료를 연결하기 전에는 사내 보안 정책과 공유 범위를 확인해 주세요. 이번 단계에서는 기능의 개념과 진입 위치까지만 안내합니다.",
+                                                                  "image":  "./guidebook-assets/gemini_scheduled_tasks_gems_start.png",
+                                                                  "badge":  "기능 위치"
+                                                              }
+                                                          ]
+                                          },
+                                          {
+                                              "id":  "gemini_feature_11",
+                                              "title":  "SPARK",
+                                              "image":  "./guidebook-assets/gemini_spark_start.png",
+                                              "short":  "연결된 앱과 웹을 활용해 여러 단계의 업무를 실행하고, 진행 중인 작업과 반복 일정을 관리하는 개인용 AI 에이전트입니다.",
+                                              "detail":  "일반 채팅보다 실행과 관리에 초점을 둔 작업 공간으로, 할 일을 요청하고 작업·일정·기능·연결된 앱을 한 화면에서 확인할 수 있습니다.",
+                                              "when":  "이메일 정리, 주제 모니터링, 심층 조사처럼 여러 단계가 필요하거나 연결된 서비스에서 이어서 처리할 개인 업무가 있을 때 사용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "Spark 작업 공간의 구성을 확인합니다",
+                                                                  "body":  "Gemini 화면 왼쪽 위에서 ‘Spark’ 탭을 선택하면 첨부 화면과 같은 작업 공간으로 이동합니다. 가운데 입력창에는 수행할 업무와 완료 기준을 자연어로 적고, 왼쪽 메뉴의 ‘작업’에서는 진행 상황을, ‘일정’에서는 반복 실행을, ‘기능’에서는 Spark가 사용할 수 있는 능력을, ‘연결된 앱’에서는 접근을 허용한 서비스를 확인합니다. 최근 작업과 추천 항목을 선택해 기존 작업을 이어가거나 예시에서 시작할 수도 있습니다. Spark는 개인 Google 계정, 연령, 구독, 지역 등의 이용 조건이 있으며 업무·학교 계정에서는 지원되지 않을 수 있습니다. 연결 앱에서 실제 변경을 수행할 수 있으므로 실행 전 권한과 대상, 결과를 확인하고 회사 자료를 개인 계정에 입력하지 마세요. 이번 단계에서는 화면 구성과 용도까지만 안내합니다.",
+                                                                  "image":  "./guidebook-assets/gemini_spark_start.png",
+                                                                  "badge":  "시작 화면"
                                                               }
                                                           ]
                                           }
@@ -1669,6 +1685,9 @@ window.SERVICE_GUIDES = {
                                          "https://support.google.com/gemini/answer/15719111?co=GENIE.Platform%3DDesktop\u0026hl=en",
                                          "https://support.google.com/gemini/answer/16448384?hl=ko",
                                          "https://support.google.com/gemini/answer/16598406?co=GENIE.Platform%3DDesktop\u0026hl=ko",
+                                         "https://support.google.com/gemini/answer/16316416?co=GENIE.Platform%3DDesktop\u0026hl=ko",
+                                         "https://support.google.com/gemini/answer/15236321?hl=ko",
+                                         "https://support.google.com/gemini/answer/17094507?co=GENIE.Platform%3DDesktop\u0026hl=ko",
                                          "https://workspace.google.com/solutions/ai/"
                                      ]
                      },
