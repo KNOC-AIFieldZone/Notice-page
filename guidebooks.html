@@ -82,12 +82,6 @@
     }
     .btn:hover{filter:brightness(1.08);}
     .btn.primary{background:var(--accent2);border-color:rgba(94,234,212,.36);}
-    .toolbar{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;margin-bottom:14px;}
-    .search{
-      width:100%;min-height:40px;border:1px solid var(--line);border-radius:8px;background:var(--field);
-      color:var(--text);padding:9px 12px;outline:none;
-    }
-    .search:focus{border-color:rgba(94,234,212,.55);box-shadow:0 0 0 3px rgba(94,234,212,.16);}
     .panel{
       border:1px solid var(--line);border-radius:8px;background:linear-gradient(180deg,var(--panel2),var(--panel));
       box-shadow:var(--shadow);overflow:hidden;
@@ -95,6 +89,7 @@
     .panel-hd{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line);background:var(--panel3);}
     .panel-title{margin:0;font-size:15px;font-weight:900;}
     .panel-meta{margin-top:4px;color:var(--muted);font-size:12px;}
+    .panel-count{flex:0 0 auto;color:var(--muted);font-size:12px;font-weight:900;white-space:nowrap;}
     .panel-bd{padding:14px 16px;}
     .guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;}
     .service-card{
@@ -231,7 +226,6 @@
     .feature-nav-link{display:block;border:1px solid rgba(15,23,42,.14);border-radius:8px;background:var(--card);color:var(--card-text);text-decoration:none;padding:9px;font-size:12px;font-weight:850;line-height:1.35;}
     .feature-nav-link.active{background:#0f172a;color:#fff;border-color:rgba(94,234,212,.42);}
     .empty{border:1px dashed var(--line);border-radius:8px;padding:18px;color:var(--muted);text-align:center;font-size:13px;}
-    mark{background:rgba(251,191,36,.32);color:inherit;border-radius:4px;padding:0 2px;}
     @media (max-width:1040px){
       .guide-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
       .detail-layout{grid-template-columns:1fr;}
@@ -242,7 +236,6 @@
     @media (max-width:760px){
       header{align-items:flex-start;flex-direction:column;}
       .actions{justify-content:flex-start;}
-      .toolbar{grid-template-columns:1fr;}
       .guide-grid,.feature-list{grid-template-columns:1fr;}
       .service-card{grid-template-columns:58px minmax(0,1fr);min-height:128px;}
       .service-hero{width:58px;height:58px;}
@@ -275,10 +268,9 @@
     <div id="app"></div>
   </div>
 
-  <script src="./guidebook-data.js?v=20260825-5"></script>
+  <script src="./guidebook-data.js?v=20260825-6"></script>
   <script>
     const $app = document.querySelector("#app");
-    const state = { q: "" };
     const data = window.SERVICE_GUIDES || { services: [] };
     const READY_GUIDES = new Set(["chatgpt", "genspark", "lilysai", "gemini", "notebooklm"]);
 
@@ -357,20 +349,8 @@
       return `https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=64`;
     }
 
-    function matchText(service){
-      return [service.name, service.display, service.role, service.overview, ...(service.features || [])].join(" ").toLowerCase();
-    }
-
     function serviceCardClass(service){
       return READY_GUIDES.has(service.id) ? " is-ready" : " is-muted";
-    }
-
-    function highlight(text){
-      const q = state.q.trim();
-      const raw = esc(text);
-      if(q.length < 2) return raw;
-      const safe = q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-      return raw.replace(new RegExp(safe, "gi"), (m) => `<mark>${esc(m)}</mark>`);
     }
 
     function asList(value){
@@ -407,19 +387,15 @@
     }
 
     function renderList(){
-      const q = state.q.trim().toLowerCase();
-      const services = q ? data.services.filter((s) => matchText(s).includes(q)) : data.services;
+      const services = data.services;
       $app.innerHTML = `
-        <div class="toolbar">
-          <input class="search" id="guideSearch" type="search" placeholder="서비스명, 기능, 업무 상황 검색" value="${esc(state.q)}">
-          <a class="btn primary" href="./guidebooks.html">전체 ${data.services.length}개</a>
-        </div>
         <section class="panel" aria-labelledby="guideListTitle">
           <div class="panel-hd">
             <div>
               <h2 class="panel-title" id="guideListTitle">서비스 선택</h2>
               <div class="panel-meta">기능과 업무 적용 방식만 정리했습니다.</div>
             </div>
+            <div class="panel-count">전체 ${services.length}개</div>
           </div>
           <div class="panel-bd">
             <div class="guide-grid">
@@ -427,26 +403,18 @@
                 <a class="service-card${s.id === "notebooklm" ? " service-notebooklm" : s.id === "gemini" ? " service-gemini" : ""}${serviceCardClass(s)}" href="${serviceUrl(s.id)}" style="--accent:${esc(s.tone || "#5eead4")}">
                   <img class="service-hero" src="${esc(s.hero)}" alt="${esc(s.display)} 화면">
                   <div>
-                    <h3 class="service-name">${highlight(s.display)}</h3>
-                    <p class="service-role">${highlight(polite(s.role || s.overview))}</p>
+                    <h3 class="service-name">${esc(s.display)}</h3>
+                    <p class="service-role">${esc(polite(s.role || s.overview))}</p>
                     <div class="chips">
                       ${(s.features || []).slice(0, 9).map((f) => `<span class="chip">${esc(f)}</span>`).join("")}
                     </div>
                   </div>
                 </a>
-              `).join("") || `<div class="empty">검색 결과가 없습니다.</div>`}
+              `).join("")}
             </div>
           </div>
         </section>
       `;
-      const input = document.querySelector("#guideSearch");
-      input.addEventListener("input", (e) => {
-        state.q = e.target.value;
-        renderList();
-        const next = document.querySelector("#guideSearch");
-        next.focus();
-        next.setSelectionRange(next.value.length, next.value.length);
-      });
     }
 
     function renderSide(activeId){

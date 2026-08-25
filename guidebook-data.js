@@ -1354,21 +1354,21 @@ window.SERVICE_GUIDES = {
                          "domain":  "gemini.google.com",
                          "url":  "https://gemini.google.com/",
                          "tone":  "#60a5fa",
-                         "role":  "Google Workspace 안에서 메일, 문서, 표, 회의 업무를 보조하는 AI",
+                         "role":  "질의응답과 파일 분석부터 이미지·영상·음악 제작, 심층 조사와 반복 업무 자동화까지 지원하는 멀티모달 AI",
                          "basis":  "2026-08-25",
                          "guideDate":  "2026-08-25",
                          "overview":  "질의응답과 자료 분석부터 이미지·영상·음악 제작, 심층 조사와 반복 업무 자동화까지 한곳에서 처리하는 Google의 AI 서비스입니다.",
                          "hero":  "./guidebook-assets/gemini_guide_step_01.png",
                          "features":  [
-                                          "AI 채팅",
-                                          "파일 분석",
-                                          "이미지 생성",
-                                          "동영상·음악 생성",
-                                          "Canvas",
-                                          "Deep Research",
-                                          "가이드 학습",
-                                          "Gems",
-                                          "Spark"
+                                          "질문·문서 초안",
+                                          "파일 요약·분석",
+                                          "이미지 제작",
+                                          "영상·음악 제작",
+                                          "문서·슬라이드 제작",
+                                          "심층 자료 조사",
+                                          "단계별 학습",
+                                          "맞춤 업무 도우미",
+                                          "반복 업무 자동화"
                                       ],
                          "tips":  [],
                          "sections":  [
@@ -2089,100 +2089,6 @@ window.SERVICE_GUIDES = {
                                          "https://support.anthropic.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them",
                                          "https://support.anthropic.com/en/articles/9517075-what-are-projects",
                                          "https://support.anthropic.com/en/articles/12111783-create-and-edit-files-with-claude"
-                                     ]
-                     },
-                     {
-                         "id":  "hixai",
-                         "name":  "HIX AI",
-                         "display":  "HIX.AI",
-                         "title":  "HIX.AI 기능 중심 사용 가이드",
-                         "domain":  "hix.ai",
-                         "url":  "https://hix.ai/home",
-                         "tone":  "#8b5cf6",
-                         "role":  "글쓰기, 리서치, 발표자료, 웹 문장 보조를 묶은 올인원 작업 도구",
-                         "basis":  "2026-08-14",
-                         "overview":  "글쓰기, 리서치, 발표자료, 이미지, 영상, 웹 문장 보조가 필요할 때 적합하다. 브라우저 확장을 통해 Gmail, Google Docs, 웹페이지 위에서도 바로 쓸 수 있다.",
-                         "hero":  "./guidebook-assets/hix_home.png",
-                         "features":  [
-                                          "글쓰기 초안",
-                                          "자료 조사",
-                                          "긴 글 작성",
-                                          "발표자료 초안",
-                                          "이미지·영상 제작",
-                                          "번역",
-                                          "웹페이지 보조",
-                                          "Gmail·Docs 작성",
-                                          "PDF·영상 요약"
-                                      ],
-                         "tips":  [
-                                      "먼저 업무 목표와 원하는 결과물 형식을 정한다.",
-                                      "입력 자료가 있으면 파일, 링크, 이미지, 오디오 등으로 함께 넣는다.",
-                                      "AI 결과는 초안으로 보고, 사실/숫자/권리/보안은 직접 확인한다."
-                                  ],
-                         "sections":  [
-                                          {
-                                              "title":  "AI Chat/Ask AI",
-                                              "image":  "./guidebook-assets/hix_home.png",
-                                              "location":  "홈 입력창이나 Ask AI에서 질문한다.",
-                                              "when":  "빠른 답변, 문장 초안, 아이디어 정리에 쓴다.",
-                                              "how":  "원하는 언어와 형식을 함께 지정한다."
-                                          },
-                                          {
-                                              "title":  "Deep Research",
-                                              "image":  "./guidebook-assets/hix_deep_research.png",
-                                              "location":  "조사 주제와 보고서 구성을 입력한다.",
-                                              "when":  "시장 조사, 경쟁사 비교, 정책/기술 리서치에 쓴다.",
-                                              "how":  "출처와 사실관계를 검토한다."
-                                          },
-                                          {
-                                              "title":  "AI Writer",
-                                              "image":  "./guidebook-assets/hix_home.png",
-                                              "location":  "문서 목적, 독자, 톤, 길이를 입력해 초안을 만든다.",
-                                              "when":  "블로그, 이메일, 보도자료, 안내문, 기획서 초안에 쓴다.",
-                                              "how":  "회사 용어와 문체로 재수정한다."
-                                          },
-                                          {
-                                              "title":  "AI Article Writer",
-                                              "image":  "./guidebook-assets/hix_home.png",
-                                              "location":  "주제와 참고 기준을 입력해 긴 글 초안을 만든다.",
-                                              "when":  "콘텐츠 마케팅, 사내 지식문서, 설명글 작성에 쓴다.",
-                                              "how":  "근거 없는 주장과 과장 표현을 제거한다."
-                                          },
-                                          {
-                                              "title":  "AI Slides",
-                                              "image":  "./guidebook-assets/hix_ai_slides.png",
-                                              "location":  "텍스트, 문서, URL, 이미지에서 발표자료를 만든다.",
-                                              "when":  "보고서 발표, 교육자료, 영업 제안 초안에 쓴다.",
-                                              "how":  "생성된 슬라이드 메시지를 회사 관점으로 정리한다."
-                                          },
-                                          {
-                                              "title":  "AI Image/AI Video",
-                                              "image":  "./guidebook-assets/hix_home.png",
-                                              "location":  "원하는 장면, 스타일, 비율, 목적을 입력한다.",
-                                              "when":  "마케팅 시안, 썸네일, 숏폼 초안 제작에 쓴다.",
-                                              "how":  "브랜드와 저작권 기준을 확인한다."
-                                          },
-                                          {
-                                              "title":  "Browser Extension",
-                                              "image":  "./guidebook-assets/hix_home.png",
-                                              "location":  "확장을 설치한 뒤 웹페이지, PDF, Gmail, Google Docs에서 사이드바를 연다.",
-                                              "when":  "웹 자료 요약, 이메일 작성, 문서 수정에 쓴다.",
-                                              "how":  "확장 설치는 회사 보안 기준에 맞춰 진행한다."
-                                          },
-                                          {
-                                              "title":  "번역/요약/문장 개선 도구",
-                                              "image":  "./guidebook-assets/hix_home.png",
-                                              "location":  "도구 목록에서 번역, 요약, 패러프레이즈, 문법 검사를 선택한다.",
-                                              "when":  "짧은 문장 다듬기와 다국어 업무에 쓴다.",
-                                              "how":  "의미가 바뀌지 않았는지 원문과 비교한다."
-                                          }
-                                      ],
-                         "sources":  [
-                                         "https://hix.ai/",
-                                         "https://hix.ai/deep-research",
-                                         "https://hix.ai/ai-writer",
-                                         "https://hix.ai/ai-slides",
-                                         "https://hix.ai/browser-extension"
                                      ]
                      },
                      {
