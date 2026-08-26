@@ -167,6 +167,12 @@
                              ],
     "news":  [
                  {
+                     "service":  "ElevenLabs",
+                     "title":  "ElevenMusic Composer 공개",
+                     "date":  "2026-08-25",
+                     "file":  "2026-08-25-elevenmusic-composer.html"
+                 },
+                 {
                      "service":  "Gemini",
                      "title":  "Gemini 앱 인터랙티브 시뮬레이션 및 모델 생성",
                      "date":  "2026-08-24",
