@@ -2801,16 +2801,34 @@ window.SERVICE_GUIDES = {
                                           {
                                               "id":  "elevenlabs_feature_08",
                                               "title":  "음성 텍스트 변환",
-                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                              "short":  "오디오·비디오의 말을 텍스트로 옮기고 화자·시간·소리 정보를 구분합니다.",
-                                              "detail":  "Scribe 모델로 녹음 내용을 전사하고 화자 분리, 단어별 타임스탬프와 음향 이벤트를 제공하는 Speech to Text 기능입니다.",
+                                              "image":  "./guidebook-assets/elevenlabs_stt_02_home.png",
+                                              "short":  "오디오·영상의 말을 텍스트로 옮기고 화자·시간·소리 정보를 함께 정리합니다.",
+                                              "detail":  "Scribe v2로 90개 이상 언어의 음성을 전사하고 화자 분리, 단어별 타임스탬프와 웃음·음악 같은 오디오 이벤트까지 편집 가능한 기록으로 만드는 Speech to Text 기능입니다.",
                                               "when":  "회의록, 인터뷰 기록, 자막 초안, 검색 가능한 녹취록을 만들 때 사용합니다.",
                                               "steps":  [
                                                               {
-                                                                  "title":  "왼쪽 메뉴에서 음성 텍스트 변환을 엽니다",
-                                                                  "body":  "왼쪽 고정됨 영역의 ‘음성 텍스트 변환’을 선택하고 오디오 또는 비디오를 업로드합니다. 언어와 화자 구분 등 표시되는 옵션을 확인해 전사한 뒤 원음을 들으며 고유명사, 숫자, 전문용어와 화자 구분을 교정합니다. 핵심 용어를 미리 제공할 수 있는 화면에서는 조직명과 업무 용어를 넣어 인식에 참고하도록 합니다.",
+                                                                  "title":  "왼쪽 사이드바에서 음성 텍스트 변환을 엽니다",
+                                                                  "body":  "왼쪽 ‘고정됨’ 영역의 ‘음성 텍스트 변환’을 선택합니다. 화면에서는 ‘음성 인식’으로 표시될 수 있으며, 녹음된 말소리를 검색·편집·자막 제작에 사용할 수 있는 텍스트로 바꾸는 기능입니다.",
                                                                   "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                                                  "badge":  "기능 위치"
+                                                                  "badge":  "기능 열기"
+                                                              },
+                                                              {
+                                                                  "title":  "메인 화면에서 기존 전사 기록을 확인합니다",
+                                                                  "body":  "‘전사’ 탭에는 이전에 만든 작업이 제목과 생성일로 표시됩니다. 검색창과 작성자 필터로 기록을 찾고 항목을 클릭하면 편집기로 이동합니다. ‘화자들’ 탭에서는 전사에 사용된 화자를 관리할 수 있으며, 새 작업은 오른쪽 위 ‘파일 전사’를 누릅니다. Scribe Realtime v2 체험 영역은 실시간 음성 인식 데모입니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_stt_02_home.png",
+                                                                  "badge":  "전사 목록"
+                                                              },
+                                                              {
+                                                                  "title":  "원본과 전사 옵션을 설정합니다",
+                                                                  "body":  "‘파일 전사’에서 오디오·비디오 파일을 업로드하거나 즉시 녹음하고, YouTube 또는 접근 가능한 URL을 입력할 수 있습니다. 첨부 화면의 업로드 한도는 1000MB로 표시되므로 실제 계정 화면의 제한을 따릅니다. 주 언어를 알면 직접 고르고 모르면 ‘감지’로 둡니다. 오디오 이벤트 태그는 웃음·박수·음악 같은 소리를 기록하며, ‘자막 포함’은 자막 작업을 함께 만듭니다. ‘직역 없음’은 번역이 아니라 군더더기 말·반복·말더듬을 줄이는 정리 모드입니다. 핵심 용어에는 KNOC 같은 조직명·인명·전문용어를 넣어 인식에 참고하게 합니다. 각 옵션 이름에 커서를 올려 현재 화면의 설명을 확인한 뒤 전사를 시작합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_stt_03_transcribe.png",
+                                                                  "badge":  "입력 및 설정"
+                                                              },
+                                                              {
+                                                                  "title":  "전사문과 화자·시간 정보를 교정한 뒤 내보냅니다",
+                                                                  "body":  "편집기에서 문장을 클릭해 맞춤법, 고유명사와 잘못 인식된 내용을 직접 고치고 ‘맞춤법 검사 실행’으로 다시 확인합니다. 구간을 선택하면 오른쪽에서 시작·종료 시간을 정확히 입력하거나 타임라인 손잡이로 조정할 수 있습니다. 필요하면 구간을 추가·삭제·분할·병합하고 화자를 다시 지정한 뒤 ‘단어 정렬’로 단어별 시간을 맞춥니다. 원음을 재생하며 최종 검수하고, ‘내보내기’에서 일반 텍스트·JSON·HTML·SRT·VTT 등 필요한 형식으로 저장합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_stt_04_editor.png",
+                                                                  "badge":  "교정 및 내보내기"
                                                               }
                                                           ]
                                           },
@@ -2917,6 +2935,8 @@ window.SERVICE_GUIDES = {
                                          "https://elevenlabs.io/docs/overview/capabilities/music/marketplace",
                                          "https://elevenlabs.io/docs/api-reference/music/video-to-music",
                                          "https://elevenlabs.io/docs/overview/capabilities/speech-to-text",
+                                         "https://elevenlabs.io/docs/eleven-creative/playground/speech-to-text",
+                                         "https://elevenlabs.io/docs/eleven-creative/products/transcripts",
                                          "https://elevenlabs.io/docs/overview/capabilities/dubbing",
                                          "https://elevenlabs.io/blog/audio-native",
                                          "https://elevenlabs.io/docs/eleven-creative/services/productions/overview",
