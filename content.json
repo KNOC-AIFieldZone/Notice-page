@@ -22,6 +22,7 @@
                          "name":  "Gemini Notebook",
                          "url":  "https://notebook.google.com/",
                          "domain":  "notebook.google.com",
+                         "icon":  "./asset/gemini_notebook_icon.svg",
                          "note":  "자료 기반 Q\u0026A(근거 중심)\n파일·웹·Drive 소스 통합\n출처 기반 요약·비교\n오디오·영상·슬라이드 생성\n보고서·퀴즈·데이터 표 생성"
                      },
                      {
@@ -67,12 +68,6 @@
                          "url":  "https://claude.ai/new",
                          "domain":  "claude.ai/new",
                          "note":  "자연스러운 글쓰기·창작\n방대한 문서 심층 분석\n아티팩트 결과물 시각화\n프로젝트 맞춤 지식 베이스\n고급 코딩·자율 에이전트"
-                     },
-                     {
-                         "name":  "HIX AI",
-                         "url":  "https://hix.ai/home",
-                         "domain":  "hix.ai/home",
-                         "note":  "올인원 AI 에이전트 워크스페이스\n여러 AI 모델 비교·활용\n딥리서치·보고서 초안 작성\nPPT·이미지·영상·문서 생성\n브라우저 기반 글쓰기·메일 보조"
                      }
                  ],
     "notice":  {

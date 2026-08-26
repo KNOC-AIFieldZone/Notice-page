@@ -111,13 +111,12 @@
         linear-gradient(180deg,var(--card2),var(--card));
     }
     .service-card.is-muted:hover{border-color:rgba(100,116,139,.45);box-shadow:0 12px 30px rgba(100,116,139,.14);}
-    .service-hero{
-      width:74px;height:74px;border-radius:8px;border:1px solid var(--line);background:#fff;
-      object-fit:cover;align-self:start;
+    .service-icon{
+      width:74px;height:74px;border-radius:16px;border:1px solid var(--line);background:#fff;
+      padding:17px;object-fit:contain;align-self:start;box-sizing:border-box;
+      box-shadow:0 8px 20px rgba(15,23,42,.08);
     }
-    .service-card.service-notebooklm .service-hero{width:100%;height:auto;object-fit:contain;}
-    .service-card.service-gemini .service-hero{width:100%;height:auto;object-fit:contain;}
-    .service-card.is-muted .service-hero{filter:grayscale(.75) saturate(.62);opacity:.78;}
+    .service-card.is-muted .service-icon{filter:grayscale(.75) saturate(.62);opacity:.78;}
     .service-card.is-muted .service-name{color:#334155;}
     .service-card.is-muted .service-role{color:#64748b;}
     .service-card.is-muted .chip{background:rgba(241,245,249,.86);color:#64748b;border-color:rgba(100,116,139,.22);}
@@ -138,9 +137,12 @@
     }
     .side-link.active{background:var(--accent2);border-color:rgba(94,234,212,.36);}
     .side-link.is-muted{background:rgba(148,163,184,.16);color:#64748b;border-color:rgba(148,163,184,.18);}
-    .side-link.is-muted .dot{background:#94a3b8 !important;}
+    .side-link.is-muted .side-icon{filter:grayscale(.75) saturate(.62);opacity:.72;}
     .side-link.is-muted.active{background:rgba(148,163,184,.24);border-color:rgba(148,163,184,.36);}
-    .dot{width:9px;height:9px;border-radius:999px;background:var(--accent);flex:0 0 auto;}
+    .side-icon{
+      width:26px;height:26px;border-radius:8px;border:1px solid var(--line);background:#fff;
+      padding:5px;object-fit:contain;box-sizing:border-box;flex:0 0 auto;
+    }
     .hero{
       display:block;
       border:1px solid color-mix(in srgb, var(--accent) 34%, var(--line));border-radius:8px;
@@ -307,7 +309,7 @@
       .actions{justify-content:flex-start;}
       .guide-grid,.feature-list{grid-template-columns:1fr;}
       .service-card{grid-template-columns:58px minmax(0,1fr);min-height:128px;}
-      .service-hero{width:58px;height:58px;}
+      .service-icon{width:58px;height:58px;padding:13px;}
       .hero{grid-template-columns:1fr;}
       .hero h2{font-size:22px;}
       .side-list{grid-template-columns:repeat(2,minmax(0,1fr));}
@@ -454,6 +456,12 @@
       return `https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=64`;
     }
 
+    function serviceIconUrl(service){
+      if(service.id === "notebooklm") return "./asset/gemini_notebook_icon.svg";
+      if(service.id === "chatgpt") return "https://chatgpt.com/favicon.ico";
+      return faviconUrl(service.domain);
+    }
+
     function serviceCardClass(service){
       return READY_GUIDES.has(service.id) ? " is-ready" : " is-muted";
     }
@@ -505,8 +513,8 @@
           <div class="panel-bd">
             <div class="guide-grid">
               ${services.map((s) => `
-                <a class="service-card${s.id === "notebooklm" ? " service-notebooklm" : s.id === "gemini" ? " service-gemini" : ""}${serviceCardClass(s)}" href="${serviceUrl(s.id)}" style="--accent:${esc(s.tone || "#5eead4")}">
-                  <img class="service-hero" src="${esc(s.hero)}" alt="${esc(s.display)} 화면">
+                <a class="service-card${serviceCardClass(s)}" href="${serviceUrl(s.id)}" style="--accent:${esc(s.tone || "#5eead4")}">
+                  <img class="service-icon" src="${esc(serviceIconUrl(s))}" alt="${esc(s.display)} 아이콘" loading="lazy" referrerpolicy="no-referrer">
                   <div>
                     <h3 class="service-name">${esc(s.display)}</h3>
                     <p class="service-role">${esc(polite(s.role || s.overview))}</p>
@@ -535,7 +543,7 @@
             <div class="side-list">
               ${data.services.map((s) => `
                 <a class="side-link${s.id === activeId ? " active" : ""}${serviceCardClass(s)}" href="${serviceUrl(s.id)}">
-                  <span class="dot" style="background:${esc(s.tone || "#5eead4")}"></span>
+                  <img class="side-icon" src="${esc(serviceIconUrl(s))}" alt="" loading="lazy" referrerpolicy="no-referrer">
                   <span>${esc(s.name)}</span>
                 </a>
               `).join("")}

@@ -968,7 +968,8 @@
         img.alt = "";
         img.loading = "lazy";
         img.referrerPolicy = "no-referrer";
-        if(s.domain) img.src = faviconUrl(s.domain);
+        if(s.icon) img.src = s.icon;
+        else if(s.domain) img.src = faviconUrl(s.domain);
         img.onerror = () => {
           img.remove();
           ic.classList.add("fallback");
