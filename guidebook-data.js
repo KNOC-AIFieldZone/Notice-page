@@ -2692,16 +2692,28 @@ window.SERVICE_GUIDES = {
                                           {
                                               "id":  "elevenlabs_feature_05",
                                               "title":  "보이스 아이솔레이터",
-                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                              "short":  "오디오·비디오에서 배경 소음과 음악을 줄여 말소리를 분리합니다.",
-                                              "detail":  "현장 녹음이나 잡음이 섞인 파일에서 음성을 추출해 더 깨끗한 말소리로 만드는 Voice Isolator 기능입니다.",
-                                              "when":  "인터뷰, 회의, 현장 촬영처럼 주변 소음 때문에 사람의 말을 듣기 어려운 파일을 정리할 때 사용합니다.",
+                                              "image":  "./guidebook-assets/elevenlabs_voice_isolator_02_upload.png",
+                                              "short":  "오디오·비디오에서 배경 소음과 음악을 줄이고 사람의 말소리를 깨끗하게 추출합니다.",
+                                              "detail":  "인터뷰·회의·현장 녹음에 섞인 바람, 주변 대화, 음악과 환경음을 줄여 음성 중심의 깨끗한 결과 파일을 만드는 Voice Isolator 기능입니다.",
+                                              "when":  "촬영 영상, 팟캐스트, 강의나 회의 녹음에서 목소리가 배경 소음에 묻혀 잘 들리지 않을 때 사용합니다.",
                                               "steps":  [
                                                               {
-                                                                  "title":  "왼쪽 메뉴에서 보이스 아이솔레이터를 엽니다",
-                                                                  "body":  "왼쪽 고정됨 영역의 ‘보이스 아이솔레이터’를 선택하고 오디오 또는 비디오 파일을 업로드해 분리를 실행합니다. 처리 전후를 들어보고 말소리 손상 여부를 확인하며 원본은 별도로 보관합니다. 이 기능은 일반 대화 음성 정리에 맞춰져 있어 음악에서 보컬만 분리하는 용도로는 최적화되어 있지 않습니다.",
+                                                                  "title":  "왼쪽 사이드바에서 보이스 아이솔레이터를 엽니다",
+                                                                  "body":  "왼쪽 ‘고정됨’ 영역의 ‘보이스 아이솔레이터’를 선택합니다. 이 기능은 사람의 말소리를 중심으로 배경 소음·음악·주변 간섭을 줄이는 도구이며, 음악에서 노래 보컬만 정교하게 분리하는 전용 스템 분리 도구는 아닙니다.",
                                                                   "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                                                  "badge":  "기능 위치"
+                                                                  "badge":  "기능 열기"
+                                                              },
+                                                              {
+                                                                  "title":  "파일을 업로드하거나 직접 녹음해 처리를 시작합니다",
+                                                                  "body":  "상단 입력 영역에 오디오·비디오 파일을 끌어 놓거나 업로드 아이콘으로 선택합니다. 마이크 아이콘을 눌러 바로 녹음할 수도 있습니다. 지원되는 파일은 최대 500MB 또는 1시간이며, 화면에 예상 크레딧이 표시되면 내용을 확인한 뒤 오른쪽 화살표를 눌러 음성 분리를 실행합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_voice_isolator_02_upload.png",
+                                                                  "badge":  "파일 입력"
+                                                              },
+                                                              {
+                                                                  "title":  "생성된 결과를 확인하고 내려받습니다",
+                                                                  "body":  "처리가 끝나면 하단 목록에 파일 이름, 길이와 형식이 표시됩니다. 결과를 들어 원본보다 말소리가 선명한지, 말끝이나 작은 음성이 함께 잘리지 않았는지 확인한 뒤 다운로드 아이콘으로 저장합니다. 필요 없는 결과는 휴지통 아이콘으로 정리할 수 있으며 원본 파일은 별도로 보관하는 것이 좋습니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_voice_isolator_03_result.png",
+                                                                  "badge":  "결과 저장"
                                                               }
                                                           ]
                                           },
@@ -2849,6 +2861,7 @@ window.SERVICE_GUIDES = {
                                          "https://elevenlabs.io/docs/eleven-api/guides/how-to/image-and-video/references",
                                          "https://elevenlabs.io/blog/introducing-avatars",
                                          "https://elevenlabs.io/docs/overview/capabilities/voice-isolator",
+                                         "https://elevenlabs.io/docs/eleven-creative/audio-tools/voice-isolator",
                                          "https://elevenlabs.io/docs/overview/capabilities/voice-changer",
                                          "https://elevenlabs.io/docs/eleven-creative/products/music",
                                          "https://elevenlabs.io/docs/overview/capabilities/speech-to-text",
