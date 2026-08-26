@@ -2496,8 +2496,8 @@ window.SERVICE_GUIDES = {
                          "url":  "https://elevenlabs.io/",
                          "tone":  "#ec4899",
                          "role":  "음성·음악·영상 생성부터 전사·더빙·장문 오디오와 광고 현지화까지 지원하는 AI 콘텐츠 제작 서비스",
-                         "basis":  "2026-08-25",
-                         "guideDate":  "2026-08-25",
+                         "basis":  "2026-08-26",
+                         "guideDate":  "2026-08-26",
                          "overview":  "음성 합성과 변환을 중심으로 효과음·음악·이미지·영상 제작, 전사, 더빙, 웹 오디오 플레이어와 전문가 제작 서비스까지 제공하는 ElevenLabs의 콘텐츠 제작 플랫폼입니다.",
                          "hero":  "./guidebook-assets/elevenlabs_guide_start.png",
                          "features":  [],
@@ -2628,18 +2628,66 @@ window.SERVICE_GUIDES = {
                                           {
                                               "id":  "elevenlabs_feature_04",
                                               "title":  "이미지 및 비디오",
-                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                              "short":  "텍스트와 참고 이미지를 바탕으로 이미지·영상을 만들고 후속 프롬프트로 수정합니다.",
-                                              "detail":  "여러 생성 모델을 한 화면에서 선택해 이미지와 영상을 제작·보정하고 Studio로 보낼 수 있는 베타 기능입니다.",
-                                              "when":  "콘셉트 이미지, 짧은 영상, 시작·끝 프레임 기반 장면이나 오디오 립싱크 결과가 필요할 때 사용합니다.",
+                                              "image":  "./guidebook-assets/elevenlabs_image_video_02_home.png",
+                                              "short":  "프롬프트와 참고 자료로 이미지·영상을 만들고 아바타와 입술 동기화 결과까지 제작합니다.",
+                                              "detail":  "여러 이미지·비디오 생성 모델을 한 화면에서 선택하고, 결과를 다시 만들거나 보정·공유·다운로드·Studio 전송할 수 있는 베타 기능입니다. 비디오 생성은 유료 플랜에서 제공되며 이용 가능한 모델은 지역과 워크스페이스 설정에 따라 달라질 수 있습니다.",
+                                              "when":  "콘셉트 이미지, 짧은 영상, 일관된 캐릭터 영상이나 음성에 맞춰 말하는 립싱크 영상이 필요할 때 사용합니다.",
                                               "steps":  [
                                                               {
-                                                                  "title":  "왼쪽 메뉴에서 이미지 및 비디오를 엽니다",
-                                                                  "body":  "왼쪽 고정됨 영역의 ‘이미지 및 비디오’를 선택합니다. 이미지 또는 비디오 유형과 생성 모델을 정하고, 프롬프트와 필요한 참고 자료를 넣어 생성합니다. 결과는 후속 프롬프트로 변형하거나 업스케일·립싱크 같은 지원 도구를 적용한 뒤 다운로드하거나 Studio로 보낼 수 있습니다. 이 기능은 베타이며 모델과 입력 방식은 지역·요금제·관리자 설정에 따라 다를 수 있습니다.",
+                                                                  "title":  "왼쪽 사이드바에서 이미지 및 비디오를 엽니다",
+                                                                  "body":  "왼쪽 ‘고정됨’ 영역의 ‘이미지 및 비디오’를 선택합니다. 이곳에서는 이미지·비디오 생성, 아바타 관리와 입술 동기화를 한 화면에서 진행합니다. 완성 결과는 내려받거나 ElevenCreative Studio로 보낼 수 있습니다.",
                                                                   "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                                                  "badge":  "기능 위치"
+                                                                  "badge":  "기능 열기"
+                                                              },
+                                                              {
+                                                                  "title":  "탐색 화면에서 공개 결과와 아바타를 확인합니다",
+                                                                  "body":  "‘탐색’에는 공개 이미지·영상과 아바타가 표시됩니다. 검색하거나 결과를 열어 프롬프트와 설정을 참고하고, 필요한 항목을 새 생성의 참고 자료로 가져와 재생성·변형할 수 있습니다. 직접 만든 결과는 상단 ‘기록’에서 다시 열어 보정, 공유, 다운로드하거나 Studio로 전송합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_image_video_02_home.png",
+                                                                  "badge":  "탐색 및 기록"
+                                                              },
+                                                              {
+                                                                  "title":  "이미지 모드에서 프롬프트와 생성 옵션을 정합니다",
+                                                                  "body":  "하단 입력창에서 ‘이미지’를 선택하고 필요하면 ‘이미지 참조’를 첨부합니다. 모델을 고른 뒤 화면 비율, 해상도, 품질과 한 번에 만들 개수를 설정하고, 짧은 프롬프트를 보완하려면 자동 프롬프트 다듬기를 켭니다. 모델과 설정에 따라 지원 옵션과 크레딧 비용이 달라지며, 크레딧은 성능 점수가 아니라 이번 생성 비용입니다. 표시된 예상 비용을 확인하고 프롬프트를 입력한 뒤 생성 화살표를 누릅니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_image_video_03_image_generate.png",
+                                                                  "badge":  "이미지 생성"
+                                                              },
+                                                              {
+                                                                  "title":  "비디오 모드에서 모델이 지원하는 참고 자료를 넣습니다",
+                                                                  "body":  "‘비디오’를 선택하고 장면을 설명합니다. 모델이 지원하면 시작 프레임, 종료 프레임, 이미지·비디오·오디오 참조를 넣을 수 있으며 종료 프레임은 시작 프레임과 함께 사용합니다. 모델 선택 후 화면 비율, 해상도, 길이, 소리 켜기·끄기와 생성 개수를 조정합니다. 모든 모델이 같은 입력과 옵션을 지원하지 않고 길이·해상도·소리·개수에 따라 비용도 달라지므로 모델 설명과 생성 버튼 옆 예상 크레딧을 먼저 확인합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_image_video_04_video_generate.png",
+                                                                  "badge":  "비디오 생성"
+                                                              },
+                                                              {
+                                                                  "title":  "반복 사용할 아바타를 만들어 저장합니다",
+                                                                  "body":  "상단 아바타 영역에서 공개 아바타를 선택하거나 ‘새로운’을 눌러 직접 만듭니다. 같은 인물·캐릭터·동물을 여러 영상에서 일관되게 쓰기 위한 시각적 정체성으로, 여러 각도의 참고 이미지 3~5장을 올리거나 텍스트로 모습을 설명할 수 있습니다. 이름을 지정하고 필요하면 기본 음성을 선택해 생성하면 아바타 라이브러리에 저장되며, 이후 각도·의상·배경이 다른 스타일도 추가할 수 있습니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_image_video_05_avatar_create.png",
+                                                                  "badge":  "아바타 생성"
+                                                              },
+                                                              {
+                                                                  "title":  "입술 동기화로 음성에 맞춰 말하는 영상을 만듭니다",
+                                                                  "body":  "‘입술 동기화’를 선택하고 얼굴이 잘 보이는 이미지·아바타 또는 지원되는 영상을 넣은 뒤 말하게 할 음성을 첨부합니다. 모델에 따라 정지 이미지를 말하는 영상으로 만들거나 기존 영상의 입 모양을 새 음성에 맞출 수 있습니다. 모델, 해상도와 생성 개수를 고르고 필요하면 표정·움직임을 설명하는 선택 프롬프트를 넣어 생성합니다. Creatify Aurora 같은 모델은 입 모양뿐 아니라 눈 깜박임, 표정과 자연스러운 몸동작도 음성에 맞춰 표현합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_image_video_06_lip_sync.png",
+                                                                  "badge":  "입술 동기화"
                                                               }
-                                                          ]
+                                                          ],
+                                              "videoSamples":  [
+                                                                   {
+                                                                       "title":  "참고 이미지 기반 영상 생성 예시 · Seedance 2.5",
+                                                                       "duration":  "0:13",
+                                                                       "src":  "./guidebook-assets/elevenlabs_image_video_sample_seedance.mp4"
+                                                                   },
+                                                                   {
+                                                                       "title":  "입술 동기화 영상 예시 · Creatify Aurora",
+                                                                       "duration":  "0:07",
+                                                                       "src":  "./guidebook-assets/elevenlabs_image_video_sample_lipsync.mp4"
+                                                                   }
+                                                               ],
+                                              "imageSamples":  [
+                                                                   {
+                                                                       "title":  "동화풍 수채화 이미지 생성 예시 · GPT Image 2",
+                                                                       "src":  "./guidebook-assets/elevenlabs_image_video_sample_watercolor.png"
+                                                                   }
+                                                               ]
                                           },
                                           {
                                               "id":  "elevenlabs_feature_05",
@@ -2796,6 +2844,10 @@ window.SERVICE_GUIDES = {
                                          "https://elevenlabs.io/docs/overview/capabilities/sound-effects",
                                          "https://elevenlabs.io/docs/eleven-creative/playground/sound-effects",
                                          "https://elevenlabs.io/docs/overview/capabilities/image-video",
+                                         "https://elevenlabs.io/docs/eleven-creative/playground/image-video",
+                                         "https://elevenlabs.io/docs/overview/capabilities/image-video/avatars",
+                                         "https://elevenlabs.io/docs/eleven-api/guides/how-to/image-and-video/references",
+                                         "https://elevenlabs.io/blog/introducing-avatars",
                                          "https://elevenlabs.io/docs/overview/capabilities/voice-isolator",
                                          "https://elevenlabs.io/docs/overview/capabilities/voice-changer",
                                          "https://elevenlabs.io/docs/eleven-creative/products/music",
