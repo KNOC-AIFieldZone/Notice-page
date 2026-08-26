@@ -2720,16 +2720,28 @@ window.SERVICE_GUIDES = {
                                           {
                                               "id":  "elevenlabs_feature_06",
                                               "title":  "보이스 체인저",
-                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                              "short":  "녹음의 말투와 감정은 유지하면서 선택한 다른 목소리로 변환합니다.",
-                                              "detail":  "업로드하거나 녹음한 원본의 속삭임·웃음·강세 같은 연기를 살려 목표 음성으로 바꾸는 Voice Changer 기능입니다.",
-                                              "when":  "캐릭터 목소리 제작, 여러 녹음의 화자 통일, 기존 음성의 일부 대사 교체가 필요할 때 사용합니다.",
+                                              "image":  "./guidebook-assets/elevenlabs_voice_changer_02_upload.png",
+                                              "short":  "원본의 말투와 감정은 살리고 목소리만 선택한 음성으로 바꿉니다.",
+                                              "detail":  "파일이나 실시간 녹음의 속도·억양·감정·강세를 따라가면서 화자의 목소리를 선택한 목표 음성으로 변환하는 Voice Changer 기능입니다.",
+                                              "when":  "직접 연기한 대사를 캐릭터 음성으로 바꾸거나, 녹음마다 다른 화자의 목소리를 하나로 맞출 때 사용합니다.",
                                               "steps":  [
                                                               {
-                                                                  "title":  "왼쪽 메뉴에서 보이스 체인저를 엽니다",
-                                                                  "body":  "왼쪽 고정됨 영역의 ‘보이스 체인저’를 선택합니다. 원본 음성을 녹음하거나 업로드하고, 변환할 목표 목소리를 고른 뒤 생성합니다. 결과는 원본의 말투와 감정을 반영하므로 깨끗하게 연기한 음원을 사용하는 것이 좋습니다. 본인 또는 사용 허가를 받은 음성만 이용합니다.",
+                                                                  "title":  "왼쪽 사이드바에서 보이스 체인저를 엽니다",
+                                                                  "body":  "왼쪽 ‘고정됨’ 영역의 ‘보이스 체인저’를 선택합니다. 텍스트를 새로 읽게 하는 기능과 달리, 원본 녹음의 속도·억양·감정과 웃음·한숨 같은 연기를 유지하면서 목소리만 바꿉니다. 본인 또는 사용 허가를 받은 음성만 이용합니다.",
                                                                   "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                                                  "badge":  "기능 위치"
+                                                                  "badge":  "기능 열기"
+                                                              },
+                                                              {
+                                                                  "title":  "파일을 업로드하거나 오디오를 녹음합니다",
+                                                                  "body":  "중앙 입력 영역을 클릭하거나 파일을 끌어 놓습니다. MP3·M4A·FLAC·OGG·WAV 등의 오디오와 MP4·MOV·WEBM·MKV 영상 파일을 넣을 수 있고, ‘오디오 녹음’을 눌러 마이크로 바로 녹음할 수도 있습니다. 입력은 50MB 미만, 최대 5분입니다. 변환 품질을 위해 한 사람의 목소리가 또렷하고 배경 소음이 적은 원본을 권장합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_voice_changer_02_upload.png",
+                                                                  "badge":  "원본 입력"
+                                                              },
+                                                              {
+                                                                  "title":  "목표 음성과 설정을 정한 뒤 음성을 생성합니다",
+                                                                  "body":  "파일을 넣으면 오른쪽에서 바꿀 ‘음성’과 입력 언어를 지원하는 모델을 선택할 수 있습니다. 안정성은 낮을수록 표현이 다양하고 높을수록 일정해지며, 유사성은 목표 음성을 따르는 정도입니다. 스타일 과장은 목표 음성의 스타일을 강조하지만 높이면 결과가 불안정해질 수 있습니다. 원본이 시끄러우면 배경 소음 제거를 켜고, 화자 증폭은 목표 음성과의 유사성을 조금 더 높일 때 사용합니다. 항목에 커서를 올리면 화면의 상세 설명을 확인할 수 있습니다. 출력 형식을 고르고 ‘음성 생성’을 누른 뒤 결과를 들어보고, 필요하면 값을 조정하거나 ‘기록’에서 다시 내려받습니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_voice_changer_03_settings.png",
+                                                                  "badge":  "설정 및 생성"
                                                               }
                                                           ]
                                           },
@@ -2863,6 +2875,7 @@ window.SERVICE_GUIDES = {
                                          "https://elevenlabs.io/docs/overview/capabilities/voice-isolator",
                                          "https://elevenlabs.io/docs/eleven-creative/audio-tools/voice-isolator",
                                          "https://elevenlabs.io/docs/overview/capabilities/voice-changer",
+                                         "https://elevenlabs.io/docs/eleven-creative/playground/voice-changer",
                                          "https://elevenlabs.io/docs/eleven-creative/products/music",
                                          "https://elevenlabs.io/docs/overview/capabilities/speech-to-text",
                                          "https://elevenlabs.io/docs/overview/capabilities/dubbing",
