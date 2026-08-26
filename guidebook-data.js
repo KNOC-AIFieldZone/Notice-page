@@ -1,6 +1,6 @@
 window.SERVICE_GUIDES = {
-    "generatedAt":  "2026-08-21T00:00:00+09:00",
-    "source":  "ai_guidebooks markdown set, 2026-08-21",
+    "generatedAt":  "2026-08-26T00:00:00+09:00",
+    "source":  "ai_guidebooks markdown set, 2026-08-26",
     "services":  [
                      {
                          "id":  "chatgpt",
@@ -2495,12 +2495,22 @@ window.SERVICE_GUIDES = {
                          "domain":  "elevenlabs.io",
                          "url":  "https://elevenlabs.io/",
                          "tone":  "#ec4899",
-                         "role":  "음성·음악·영상 생성부터 전사·더빙·장문 오디오와 광고 현지화까지 지원하는 AI 콘텐츠 제작 서비스",
+                         "role":  "목소리·내레이션부터 효과음·음악·이미지·영상·전사·더빙까지 한곳에서 만들고 편집하는 AI 콘텐츠 제작 서비스",
                          "basis":  "2026-08-26",
                          "guideDate":  "2026-08-26",
-                         "overview":  "음성 합성과 변환을 중심으로 효과음·음악·이미지·영상 제작, 전사, 더빙, 웹 오디오 플레이어와 전문가 제작 서비스까지 제공하는 ElevenLabs의 콘텐츠 제작 플랫폼입니다.",
+                         "overview":  "음성 합성과 변환을 중심으로 효과음·음악·이미지·영상 제작, 음성 전사, 더빙과 Studio 통합 편집까지 제공하는 ElevenLabs의 콘텐츠 제작 플랫폼입니다.",
                          "hero":  "./guidebook-assets/elevenlabs_guide_start.png",
-                         "features":  [],
+                         "features":  [
+                                          "목소리 만들기",
+                                          "텍스트 음성화",
+                                          "효과음 제작",
+                                          "이미지·영상",
+                                          "음성 정리·변환",
+                                          "음악 제작",
+                                          "음성 전사",
+                                          "더빙",
+                                          "통합 편집"
+                                      ],
                          "tips":  [],
                          "sections":  [
                                           {
@@ -2552,6 +2562,28 @@ window.SERVICE_GUIDES = {
                                                                   "body":  "상단의 ‘내 음성’을 선택하면 직접 만든 음성과 라이브러리에서 저장한 음성을 함께 확인할 수 있습니다. 저장한 이름, 언어와 설명을 확인하고 오른쪽의 사용 아이콘이나 음성 선택 메뉴에서 해당 목소리를 고르면 텍스트 음성 변환 화면에 적용할 수 있습니다. 직접 디자인하거나 복제한 음성은 요금제별 사용자 음성 슬롯을 사용하며, 라이브러리에서 저장한 공개 음성은 사용자 음성 슬롯을 사용하지 않습니다.",
                                                                   "image":  "./guidebook-assets/elevenlabs_voice_07_my_voices.png",
                                                                   "badge":  "내 음성"
+                                                              }
+                                                          ]
+                                          },
+                                          {
+                                              "id":  "elevenlabs_feature_studio",
+                                              "title":  "스튜디오",
+                                              "image":  "./guidebook-assets/elevenlabs_studio_02_home.png",
+                                              "short":  "음성·영상·자막·음악·효과음을 타임라인에서 조합하고 검수해 완성본으로 내보냅니다.",
+                                              "detail":  "ElevenCreative Studio 3.0은 영상, 자막, 내레이션, 음악과 효과음을 여러 트랙의 타임라인에서 만들고 편집하는 통합 제작 공간입니다. 문장 단위 타이밍 조절, 음성 변경, 협업 의견과 오디오·비디오 내보내기를 지원합니다.",
+                                              "when":  "앞선 기능에서 만든 음성·효과음·음악·이미지·영상을 하나의 완성된 오디오나 영상으로 구성하고 세부 타이밍까지 다듬을 때 사용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "왼쪽 사이드바에서 스튜디오를 엽니다",
+                                                                  "body":  "ElevenLabs 왼쪽 사이드바의 ‘스튜디오’를 선택합니다. Studio는 내레이션, 장문 콘텐츠, 팟캐스트, 영상 보이스오버처럼 여러 요소가 필요한 작업을 한 프로젝트에서 구성하는 제작 공간입니다. 텍스트 음성 변환, 이미지 및 비디오, 음악, 효과음, 보이스 아이솔레이터와 보이스 체인저에서 만든 결과를 불러오거나 Studio 안에서 새로 생성해 타임라인에 배치할 수 있습니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                                                  "badge":  "기능 열기"
+                                                              },
+                                                              {
+                                                                  "title":  "파일을 올리거나 빈 프로젝트에서 제작을 시작합니다",
+                                                                  "body":  "오른쪽 위 ‘Upload’로 기존 파일을 가져오면 텍스트·오디오는 오디오 레이아웃, 비디오는 영상·자막 타임라인으로 자동 배치됩니다. ‘새 빈 프로젝트’에서는 오디오 또는 비디오 프로젝트를 고르고 처음부터 음성, 영상, 자막, 음악과 효과음 트랙을 추가합니다. 화면 아래의 템플릿은 얼굴 없는 영상, 자막, 더빙, 보이스오버와 영상 배경음 같은 작업을 단계별로 시작할 때 사용합니다. 편집기에서는 문장 단위 타이밍과 목소리를 조정하고 필요한 클립을 다시 생성할 수 있으며, 공유 링크와 시간 표시 댓글로 검수한 뒤 ‘Export’에서 전체 프로젝트를 오디오 또는 비디오로 내보냅니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_studio_02_home.png",
+                                                                  "badge":  "프로젝트 시작"
                                                               }
                                                           ]
                                           },
@@ -2835,80 +2867,45 @@ window.SERVICE_GUIDES = {
                                           {
                                               "id":  "elevenlabs_feature_09",
                                               "title":  "더빙",
-                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
+                                              "image":  "./guidebook-assets/elevenlabs_dubbing_02_home.png",
                                               "short":  "오디오·영상의 언어를 바꾸면서 화자의 목소리·감정·타이밍과 배경음을 유지합니다.",
-                                              "detail":  "파일이나 지원되는 링크의 대화를 다른 언어로 번역하고 여러 화자를 구분해 새 음성 트랙을 만드는 Dubbing 기능입니다.",
+                                              "detail":  "Dubbing v2 Alpha로 여러 화자를 자동 구분하고 원래의 음색·감정·속도·말투와 배경음·효과음을 살리면서 콘텐츠를 90개 이상 언어로 번역·더빙하는 기능입니다.",
                                               "when":  "교육 영상, 인터뷰, 제품 소개, 팟캐스트를 여러 언어로 현지화할 때 사용합니다.",
                                               "steps":  [
                                                               {
-                                                                  "title":  "왼쪽 메뉴에서 더빙을 엽니다",
-                                                                  "body":  "왼쪽 고정됨 영역의 ‘더빙’을 선택하고 원본 파일 또는 지원되는 링크를 가져옵니다. 원본 언어와 대상 언어를 확인한 뒤 자동 더빙을 실행합니다. 결과에서는 번역, 화자 구분, 발음, 타이밍과 배경음 보존 상태를 원본과 대조합니다. 세밀한 편집 화면이나 모델은 계정에 표시되는 제공 범위를 따릅니다.",
+                                                                  "title":  "왼쪽 사이드바에서 더빙을 엽니다",
+                                                                  "body":  "왼쪽 ‘고정됨’ 영역의 ‘더빙’을 선택합니다. 이 기능은 영상·오디오 속 대화를 다른 언어로 바꾸면서 여러 화자의 목소리와 감정, 말하는 타이밍을 최대한 유지합니다. 실시간 통역이나 입 모양을 바꾸는 립싱크 기능은 아닙니다.",
                                                                   "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                                                  "badge":  "기능 위치"
+                                                                  "badge":  "기능 열기"
+                                                              },
+                                                              {
+                                                                  "title":  "원본과 대상 언어를 정해 더빙을 생성합니다",
+                                                                  "body":  "‘업로드’에서 오디오·비디오 파일을 선택하거나 끌어 놓고, 온라인 영상은 ‘URL 붙여넣기’에 YouTube·TikTok 등의 접근 가능한 링크를 넣습니다. 본인이 사용 권한을 가진 콘텐츠만 이용합니다. 하단 ‘언어 선택’에서 원본 언어와 더빙할 대상 언어를 확인하며, 대상 언어를 여러 개 선택하면 언어별로 비용이 계산됩니다. 필요하면 ‘고급’에서 화자 유사성을 조정하고 화면에 표시되는 예상 비용을 확인한 뒤 생성합니다. Dubbing v2 결과는 자동 생성되므로 완료 후 최근 더빙 목록에서 번역·발음·화자 구분·타이밍과 배경음 보존 상태를 원본과 비교하고 내려받습니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_dubbing_02_home.png",
+                                                                  "badge":  "업로드 및 생성"
                                                               }
-                                                          ]
+                                                          ],
+                                              "videoSamples":  [
+                                                                   {
+                                                                       "title":  "공공데이터 소개 영상 · 한국어에서 영어로 더빙",
+                                                                       "duration":  "0:57",
+                                                                       "src":  "./guidebook-assets/elevenlabs_dubbing_sample_ko_to_en.mp4"
+                                                                   }
+                                                               ]
                                           },
                                           {
                                               "id":  "elevenlabs_feature_10",
                                               "title":  "오디오 네이티브",
                                               "image":  "./guidebook-assets/elevenlabs_guide_start.png",
                                               "short":  "기사·블로그·뉴스레터에 재생 가능한 AI 음성 플레이어를 삽입합니다.",
-                                              "detail":  "웹문서의 텍스트를 음성으로 들을 수 있도록 사이트에 임베드 코드를 붙이는 Audio Native 기능입니다.",
+                                              "detail":  "웹문서의 텍스트를 음성으로 읽어 주는 플레이어를 HTML 코드로 삽입하고 청취 지표도 확인하는 Audio Native 기능입니다. Creator 플랜 이상에서 제공됩니다.",
                                               "when":  "웹사이트 방문자가 긴 글을 읽는 대신 음성으로 들을 수 있게 제공할 때 사용합니다.",
                                               "steps":  [
                                                               {
-                                                                  "title":  "왼쪽 메뉴에서 오디오 네이티브를 엽니다",
-                                                                  "body":  "왼쪽 고정됨 영역의 ‘오디오 네이티브’를 선택합니다. 사용할 웹사이트 도메인과 목소리를 설정하고 플레이어 모양을 확인한 뒤 제공되는 임베드 코드를 사이트에 삽입합니다. 게시 후 실제 페이지에서 글 내용이 올바르게 음성화되는지와 플레이어 작동을 확인합니다.",
+                                                                  "title":  "왼쪽 사이드바에서 오디오 네이티브를 확인합니다",
+                                                                  "body":  "왼쪽 ‘고정됨’ 영역의 ‘오디오 네이티브’를 선택합니다. 기사·블로그·뉴스레터를 음성으로 들을 수 있는 플레이어를 웹페이지에 삽입하는 기능입니다. 현재 계정에서는 지원되지 않고 플랜 업그레이드 안내가 표시되므로 바로 사용할 수 없습니다. 공식 제공 범위는 Creator 플랜 이상이며, 업그레이드 후 목소리와 플레이어 색상, 허용할 페이지·도메인을 설정하고 제공된 HTML 코드를 웹사이트에 붙여 사용합니다.",
                                                                   "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                                                  "badge":  "기능 위치"
-                                                              }
-                                                          ]
-                                          },
-                                          {
-                                              "id":  "elevenlabs_feature_11",
-                                              "title":  "프로덕션",
-                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                              "short":  "전문가 검수와 편집이 필요한 전사·자막·더빙 작업을 의뢰하고 납품받습니다.",
-                                              "detail":  "ElevenLabs의 자동 생성 도구와 별도로 언어·현지화 전문가가 결과를 다듬어 제공하는 관리형 제작 서비스입니다.",
-                                              "when":  "대량 콘텐츠나 외부 공개물처럼 번역·자막·더빙 품질에 사람의 검수와 일관된 납품 관리가 필요할 때 사용합니다.",
-                                              "steps":  [
-                                                              {
-                                                                  "title":  "왼쪽 메뉴에서 프로덕션을 엽니다",
-                                                                  "body":  "왼쪽 고정됨 영역의 ‘프로덕션’을 선택합니다. 새 원본을 업로드하거나 기존 프로젝트를 고른 뒤 언어, 결과물 유형과 스타일 기준을 제출해 견적을 확인합니다. 주문 후 진행 상태를 추적하고 완성본을 검토·내보냅니다. 자동 생성 기능이 아니라 전문가가 편집·검수하는 유료 의뢰 서비스이며, 주문 가능한 작업과 언어는 화면의 최신 제공 범위를 확인합니다.",
-                                                                  "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                                                  "badge":  "기능 위치"
-                                                              }
-                                                          ]
-                                          },
-                                          {
-                                              "id":  "elevenlabs_feature_12",
-                                              "title":  "오디오북",
-                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                              "short":  "원고를 가져와 장·배역·발음과 음악·효과음을 구성한 장문 오디오를 만듭니다.",
-                                              "detail":  "책과 긴 문서를 단일 또는 다중 배역 음성으로 제작하고 내보내거나 배포하는 Audiobooks 작업 공간입니다.",
-                                              "when":  "책, 교육 교재, 장문 보고서와 스토리를 일관된 목소리의 긴 오디오 콘텐츠로 제작할 때 사용합니다.",
-                                              "steps":  [
-                                                              {
-                                                                  "title":  "왼쪽 메뉴에서 오디오북을 엽니다",
-                                                                  "body":  "왼쪽 고정됨 영역의 ‘오디오북’을 선택하고 원고를 붙여 넣거나 지원되는 문서 파일을 가져옵니다. 장 구성을 확인하고 단일 배역 또는 여러 배역의 목소리를 지정하며 발음 규칙을 설정합니다. 자동으로 감지된 인물과 배역은 원문과 대조하고, 필요하면 타임라인에 음악·효과음을 넣은 뒤 전체 흐름을 들어보고 내보냅니다.",
-                                                                  "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                                                  "badge":  "기능 위치"
-                                                              }
-                                                          ]
-                                          },
-                                          {
-                                              "id":  "elevenlabs_feature_13",
-                                              "title":  "광고 엔진",
-                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                              "short":  "광고 계정의 기존 소재를 분석해 여러 언어와 시장에 맞는 광고 변형을 만듭니다.",
-                                              "detail":  "광고 문구·이미지·영상의 번역과 현지화를 만들고 검토 후 광고 플랫폼으로 보내는 Ads Engine 알파 기능입니다.",
-                                              "when":  "같은 캠페인의 문구·이미지·영상 더빙을 시장별로 현지화하고 승인 과정을 거쳐 배포할 때 사용합니다.",
-                                              "steps":  [
-                                                              {
-                                                                  "title":  "왼쪽 메뉴에서 광고 엔진을 엽니다",
-                                                                  "body":  "왼쪽 고정됨 영역의 ‘광고 엔진’을 선택합니다. 지원되는 광고 계정을 연결하고 가져올 캠페인과 대상 시장을 고른 뒤 문구·이미지·영상의 현지화 변형을 생성합니다. 결과의 번역, 이미지 문구, 구성과 더빙을 검토·승인한 뒤 지원되는 광고 플랫폼으로 전송합니다. 현재 알파 기능이므로 연결 가능한 플랫폼과 편집·배포 범위는 계정에 표시되는 최신 화면을 기준으로 확인합니다.",
-                                                                  "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                                                  "badge":  "기능 위치"
+                                                                  "badge":  "플랜 업그레이드 필요"
                                                               }
                                                           ]
                                           }
@@ -2938,10 +2935,11 @@ window.SERVICE_GUIDES = {
                                          "https://elevenlabs.io/docs/eleven-creative/playground/speech-to-text",
                                          "https://elevenlabs.io/docs/eleven-creative/products/transcripts",
                                          "https://elevenlabs.io/docs/overview/capabilities/dubbing",
+                                         "https://elevenlabs.io/docs/eleven-creative/products/dubbing",
+                                         "https://elevenlabs.io/blog/introducing-dubbing-v2",
+                                         "https://elevenlabs.io/docs/eleven-creative/audio-tools/audio-native",
                                          "https://elevenlabs.io/blog/audio-native",
-                                         "https://elevenlabs.io/docs/eleven-creative/services/productions/overview",
-                                         "https://elevenlabs.io/docs/eleven-creative/products/audiobooks",
-                                         "https://elevenlabs.io/docs/overview/capabilities/ads-engine",
+                                         "https://elevenlabs.io/docs/eleven-creative/products/studio",
                                          "https://elevenlabs.io/docs/eleven-creative/voices/voice-library",
                                          "https://elevenlabs.io/docs/eleven-creative/voices/voice-design",
                                          "https://elevenlabs.io/docs/eleven-creative/voices/voice-cloning",
