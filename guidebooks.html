@@ -474,6 +474,7 @@
     }
 
     function defaultSteps(feature){
+      if(feature.placeholder) return [];
       const explicit = asList(feature.steps);
       if(explicit.length) return explicit.map((step, idx) => {
         if(typeof step === "object" && step !== null){
@@ -564,7 +565,7 @@
               <img src="${esc(f.image || service.hero)}" alt="${esc(service.display)} - ${esc(f.title)}">
               <div class="feature-body">
                 <h4>${esc(f.title)}</h4>
-                <p class="feature-summary">${copy(f.when || f.how || f.location)}</p>
+                ${(f.when || f.how || f.location) ? `<p class="feature-summary">${copy(f.when || f.how || f.location)}</p>` : ""}
                 <div class="feature-footer">
                   <span>자세히 보기</span>
                 </div>
@@ -617,29 +618,37 @@
               <span>${esc(feature.title)}</span>
             </div>
             <h3>${esc(feature.title)}</h3>
-            <p>${copy(feature.when || service.role)}</p>
+            ${feature.placeholder ? "" : `<p>${copy(feature.when || service.role)}</p>`}
           </section>
 
           <div class="detail-flow">
-            <section class="detail-block full">
-              <h4>따라하기</h4>
-              <ol class="step-list">
-                ${steps.map((step, stepIdx) => `
-                  <li class="step-card">
-                    ${step.hideImage ? "" : `
-                      <div class="step-shot">
-                        <img class="zoomable-guide-image" tabindex="0" role="button" aria-label="이미지 확대 보기: ${esc(step.title || `따라하기 ${stepIdx + 1}`)}" src="${esc(step.image || feature.image || service.hero)}" alt="${esc(feature.title)} - ${esc(step.title || `따라하기 ${stepIdx + 1}`)}">
-                        <span class="step-badge">${esc(step.badge || "확인할 곳")}</span>
+            ${feature.placeholder ? `
+              <section class="detail-block full">
+                <div class="step-shot">
+                  <img class="zoomable-guide-image" tabindex="0" role="button" aria-label="이미지 확대 보기: ${esc(feature.title)}" src="${esc(feature.image || service.hero)}" alt="${esc(service.display)} - ${esc(feature.title)}">
+                </div>
+              </section>
+            ` : steps.length ? `
+              <section class="detail-block full">
+                <h4>따라하기</h4>
+                <ol class="step-list">
+                  ${steps.map((step, stepIdx) => `
+                    <li class="step-card">
+                      ${step.hideImage ? "" : `
+                        <div class="step-shot">
+                          <img class="zoomable-guide-image" tabindex="0" role="button" aria-label="이미지 확대 보기: ${esc(step.title || `따라하기 ${stepIdx + 1}`)}" src="${esc(step.image || feature.image || service.hero)}" alt="${esc(feature.title)} - ${esc(step.title || `따라하기 ${stepIdx + 1}`)}">
+                          <span class="step-badge">${esc(step.badge || "확인할 곳")}</span>
+                        </div>
+                      `}
+                      <div class="step-copy">
+                        <span class="step-title"><span class="step-no">${stepIdx + 1}</span>${esc(step.title || `따라하기 ${stepIdx + 1}`)}</span>
+                        <span class="step-body">${copy(step.body || step)}</span>
                       </div>
-                    `}
-                    <div class="step-copy">
-                      <span class="step-title"><span class="step-no">${stepIdx + 1}</span>${esc(step.title || `따라하기 ${stepIdx + 1}`)}</span>
-                      <span class="step-body">${copy(step.body || step)}</span>
-                    </div>
-                  </li>
-                `).join("")}
-              </ol>
-            </section>
+                    </li>
+                  `).join("")}
+                </ol>
+              </section>
+            ` : ""}
             ${audioSamples.length ? `
               <section class="detail-block full">
                 <h4>결과물 샘플</h4>

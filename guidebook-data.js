@@ -2000,88 +2000,72 @@ window.SERVICE_GUIDES = {
                          "url":  "https://claude.ai/new",
                          "tone":  "#f59e0b",
                          "role":  "긴 문서 이해, 글쓰기, 논리 검토, 산출물 구조화에 강한 업무 AI",
-                         "basis":  "2026-08-14",
+                         "basis":  "2026-08-27",
+                         "guideDate":  "2026-08-27",
                          "overview":  "긴 문서 이해, 논리적 검토, 글쓰기, 구조화된 업무 산출물 제작에 적합하다. Projects와 Artifacts를 활용하면 업무 맥락과 결과물을 함께 관리하기 좋다.",
-                         "hero":  "./guidebook-assets/claude_getting_started.png",
-                         "features":  [
-                                          "긴 문서 검토",
-                                          "보고서 초안",
-                                          "논리 점검",
-                                          "파일 분석",
-                                          "결과물 편집",
-                                          "프로젝트 지식 관리",
-                                          "웹 조사",
-                                          "심층 사고",
-                                          "협업용 공유"
-                                      ],
-                         "tips":  [
-                                      "먼저 업무 목표와 원하는 결과물 형식을 정한다.",
-                                      "입력 자료가 있으면 파일, 링크, 이미지, 오디오 등으로 함께 넣는다.",
-                                      "AI 결과는 초안으로 보고, 사실/숫자/권리/보안은 직접 확인한다."
-                                  ],
+                         "hero":  "./guidebook-assets/claude_guide_start.png",
+                         "features":  [],
+                         "tips":  [],
                          "sections":  [
                                           {
-                                              "title":  "채팅",
-                                              "image":  "./guidebook-assets/claude_getting_started.png",
-                                              "location":  "새 채팅에서 업무 요청을 입력한다.",
-                                              "when":  "문서 초안, 요약, 번역, 분석, 의사결정 보조에 쓴다.",
-                                              "how":  "긴 답변이 필요하면 목표와 형식을 먼저 말한다."
+                                              "id":  "claude_feature_01",
+                                              "title":  "기능 1",
+                                              "image":  "./guidebook-assets/claude_guide_start.png",
+                                              "placeholder":  true
                                           },
                                           {
-                                              "title":  "파일 업로드",
-                                              "image":  "./guidebook-assets/claude_getting_started.png",
-                                              "location":  "문서나 표 파일을 업로드하고 자료 기반 질문을 한다.",
-                                              "when":  "계약서, 보고서, 회의자료, 스프레드시트 검토에 쓴다.",
-                                              "how":  "민감 자료 업로드 가능 여부를 확인한다."
+                                              "id":  "claude_feature_02",
+                                              "title":  "기능 2",
+                                              "image":  "./guidebook-assets/claude_guide_start.png",
+                                              "placeholder":  true
                                           },
                                           {
-                                              "title":  "파일 생성/편집",
-                                              "image":  "./guidebook-assets/claude_getting_started.png",
-                                              "location":  "원하는 문서, 표, 발표자료, PDF 결과물을 요청한다.",
-                                              "when":  "보고서 파일, 분석표, 발표자료 초안을 만들 때 쓴다.",
-                                              "how":  "다운로드 전 형식과 내용이 맞는지 확인한다."
+                                              "id":  "claude_feature_03",
+                                              "title":  "기능 3",
+                                              "image":  "./guidebook-assets/claude_guide_start.png",
+                                              "placeholder":  true
                                           },
                                           {
-                                              "title":  "Artifacts",
-                                              "image":  "./guidebook-assets/claude_artifacts.png",
-                                              "location":  "문서, 표, 다이어그램, 대시보드 같은 결과물을 별도 창으로 만든다.",
-                                              "when":  "수정이 반복되는 산출물이나 시각화가 필요할 때 쓴다.",
-                                              "how":  "오른쪽 Artifact 영역에서 부분 수정 요청을 이어간다."
+                                              "id":  "claude_feature_04",
+                                              "title":  "기능 4",
+                                              "image":  "./guidebook-assets/claude_guide_start.png",
+                                              "placeholder":  true
                                           },
                                           {
-                                              "title":  "Artifacts 공유",
-                                              "image":  "./guidebook-assets/claude_artifacts.png",
-                                              "location":  "완성된 Artifact를 공유하거나 게시한다.",
-                                              "when":  "팀원이 결과물을 확인하거나 재사용해야 할 때 쓴다.",
-                                              "how":  "외부 공개 전 회사 자료와 개인정보가 없는지 확인한다."
+                                              "id":  "claude_feature_05",
+                                              "title":  "기능 5",
+                                              "image":  "./guidebook-assets/claude_guide_start.png",
+                                              "placeholder":  true
                                           },
                                           {
-                                              "title":  "Projects",
-                                              "image":  "./guidebook-assets/claude_projects.png",
-                                              "location":  "프로젝트를 만들고 관련 채팅, 자료, 지침을 넣는다.",
-                                              "when":  "고객사, 제품, 캠페인처럼 장기 업무를 관리할 때 쓴다.",
-                                              "how":  "프로젝트 지침에 문체와 금지 표현을 넣는다."
+                                              "id":  "claude_feature_06",
+                                              "title":  "기능 6",
+                                              "image":  "./guidebook-assets/claude_guide_start.png",
+                                              "placeholder":  true
                                           },
                                           {
-                                              "title":  "Project knowledge",
-                                              "image":  "./guidebook-assets/claude_projects.png",
-                                              "location":  "프로젝트 자료를 지식 베이스로 추가한다.",
-                                              "when":  "같은 자료를 반복 참조하며 답변해야 할 때 쓴다.",
-                                              "how":  "오래된 자료가 섞이지 않게 정리한다."
+                                              "id":  "claude_feature_07",
+                                              "title":  "기능 7",
+                                              "image":  "./guidebook-assets/claude_guide_start.png",
+                                              "placeholder":  true
                                           },
                                           {
-                                              "title":  "Web Search/Research",
-                                              "image":  "./guidebook-assets/claude_getting_started.png",
-                                              "location":  "최신 자료가 필요한 질문에서 웹 검색이나 조사 작업을 요청한다.",
-                                              "when":  "시장 조사, 경쟁 분석, 정책 변화 확인에 쓴다.",
-                                              "how":  "출처와 날짜를 반드시 확인한다."
+                                              "id":  "claude_feature_08",
+                                              "title":  "기능 8",
+                                              "image":  "./guidebook-assets/claude_guide_start.png",
+                                              "placeholder":  true
                                           },
                                           {
-                                              "title":  "Memory/Incognito/Connectors",
-                                              "image":  "./guidebook-assets/claude_getting_started.png",
-                                              "location":  "기억이 필요한 업무는 일반 대화, 남기지 않을 대화는 Incognito를 사용한다. 연결 기능은 승인된 도구만 연결한다.",
-                                              "when":  "개인화된 반복 업무와 민감한 일회성 검토를 구분할 때 쓴다.",
-                                              "how":  "외부 도구 연결은 회사 보안 기준을 따른다."
+                                              "id":  "claude_feature_09",
+                                              "title":  "기능 9",
+                                              "image":  "./guidebook-assets/claude_guide_start.png",
+                                              "placeholder":  true
+                                          },
+                                          {
+                                              "id":  "claude_feature_10",
+                                              "title":  "기능 10",
+                                              "image":  "./guidebook-assets/claude_guide_start.png",
+                                              "placeholder":  true
                                           }
                                       ],
                          "sources":  [
