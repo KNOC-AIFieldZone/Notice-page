@@ -2748,18 +2748,55 @@ window.SERVICE_GUIDES = {
                                           {
                                               "id":  "elevenlabs_feature_07",
                                               "title":  "뮤직",
-                                              "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                              "short":  "자연어로 곡을 만들고 가사·구간·길이·스타일을 이어서 수정합니다.",
-                                              "detail":  "장르·분위기·악기·보컬을 설명해 음악을 생성하고 편집하는 Eleven Music 기능입니다.",
-                                              "when":  "영상 배경음악, 캠페인·행사 음악, 노래와 연주곡 시안을 빠르게 만들고 다듬을 때 사용합니다.",
+                                              "image":  "./guidebook-assets/elevenlabs_music_02_marketplace.png",
+                                              "short":  "프롬프트나 영상에 맞는 음악을 만들고 가사·구간·스타일까지 편집합니다.",
+                                              "detail":  "Music v2로 보컬곡과 연주곡을 생성하고, 공개 음악 탐색·영상용 배경음 생성·구간별 편집·다운로드까지 이어서 작업하는 Eleven Music 기능입니다.",
+                                              "when":  "홍보 영상 배경음, 캠페인·행사 음악, 노래나 연주곡 시안을 빠르게 만들고 세부 구성을 다듬을 때 사용합니다.",
                                               "steps":  [
                                                               {
-                                                                  "title":  "왼쪽 메뉴에서 뮤직을 엽니다",
-                                                                  "body":  "왼쪽 고정됨 영역의 ‘뮤직’을 선택합니다. 곡의 장르, 분위기, 악기, 보컬, 빠르기와 길이를 설명하고 생성합니다. 필요하면 짧은 오디오 레퍼런스로 스타일 방향을 전달하고, 결과 화면에서 가사·구간·길이·스타일 키워드를 수정합니다. 오디오 레퍼런스는 원곡을 복제하거나 리믹스하는 기능이 아니라 분위기와 구성의 참고 자료입니다.",
+                                                                  "title":  "왼쪽 사이드바에서 뮤직을 엽니다",
+                                                                  "body":  "왼쪽 ‘고정됨’ 영역의 ‘뮤직’을 선택합니다. 자연어로 보컬곡·연주곡을 만들고, 영상에 맞는 배경음 생성과 완성된 노래의 구간별 편집까지 진행할 수 있습니다.",
                                                                   "image":  "./guidebook-assets/elevenlabs_guide_start.png",
-                                                                  "badge":  "기능 위치"
+                                                                  "badge":  "기능 열기"
+                                                              },
+                                                              {
+                                                                  "title":  "마켓플레이스에서 공개 음악을 탐색합니다",
+                                                                  "body":  "‘마켓플레이스’에서는 장르·용도·분위기별로 공개된 곡을 검색하고 미리 들을 수 있습니다. 곡을 열어 리믹스하거나 다운로드하려면 먼저 소셜 미디어·유료 마케팅 등 사용 목적에 맞는 라이선스와 이용 조건을 확인합니다. 상단 생성창의 음악·비디오·편집 버튼으로 새 작업도 바로 시작할 수 있습니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_music_02_marketplace.png",
+                                                                  "badge":  "탐색 및 라이선스"
+                                                              },
+                                                              {
+                                                                  "title":  "원하는 음악과 생성 옵션을 설정합니다",
+                                                                  "body":  "‘생성’을 선택하고 장르, 분위기, 악기, 템포, 보컬과 곡의 용도를 프롬프트에 적습니다. 프롬프트 초안은 GPT에 원하는 곡을 설명해 만든 뒤 실제 의도에 맞게 검토해 붙여 넣을 수 있습니다. Music v2, 생성 개수와 길이를 고르고 가사는 ‘자동’에 두거나 직접 입력합니다. ‘세부 조정’은 클래식·아프로비트 같은 큐레이션 Finetune 또는 직접 만든 Finetune으로 곡의 스타일 정체성을 잡는 선택 옵션입니다. 필요하면 ‘참조’에 약 30초의 권리를 보유한 오디오를 넣어 음색·악기·템포·분위기를 참고하게 할 수 있지만 원곡을 복제하거나 리믹스하는 기능은 아닙니다. 예상 크레딧을 확인한 뒤 생성합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_music_03_generate.png",
+                                                                  "badge":  "음악 생성"
+                                                              },
+                                                              {
+                                                                  "title":  "생성 결과를 듣고 저장하거나 편집합니다",
+                                                                  "body":  "‘생성’ 화면 오른쪽 목록에서 결과를 재생해 곡의 길이, 보컬·가사, 전개와 음질을 확인합니다. 마음에 들면 다운로드 아이콘으로 저장하고, 세부 수정이 필요하면 ‘노래 편집’을 눌러 편집 화면으로 이동합니다. 생성한 작업은 ‘저장됨’에서도 다시 찾을 수 있습니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_music_04_result.png",
+                                                                  "badge":  "결과 확인"
+                                                              },
+                                                              {
+                                                                  "title":  "비디오에 맞는 배경음악을 생성합니다",
+                                                                  "body":  "생성창에서 음악 오른쪽의 비디오 버튼을 누르고 배경음을 입힐 영상을 업로드합니다. 원하는 장르·분위기·속도나 장면의 느낌을 선택 설명란에 적고 ‘다음’을 눌러 미리보기와 생성 단계를 진행합니다. 업로드 오류가 발생하면 파일 형식·크기와 네트워크 상태를 확인한 뒤 다시 시도합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_music_05_video_to_music.png",
+                                                                  "badge":  "비디오 배경음"
+                                                              },
+                                                              {
+                                                                  "title":  "음악 편집기에서 곡의 구조를 세밀하게 다듬습니다",
+                                                                  "body":  "생성창의 편집 버튼 또는 결과의 ‘노래 편집’을 누릅니다. 타임라인에서 Intro·Verse·Chorus·Outro 같은 구간을 추가·삭제하고 길이를 조정하며, 구간별 가사와 포함·제외할 스타일 키워드를 수정할 수 있습니다. 하단 대화 입력창에 ‘후렴을 더 강하게’처럼 변경을 요청할 수도 있습니다. 편집 내용은 바로 원본에 덮어쓰이지 않으므로 ‘생성’을 눌러 새 버전을 만든 뒤 비교하고, 완성본을 다운로드합니다.",
+                                                                  "image":  "./guidebook-assets/elevenlabs_music_06_editor.png",
+                                                                  "badge":  "구간별 편집"
                                                               }
-                                                          ]
+                                                          ],
+                                              "audioSamples":  [
+                                                                   {
+                                                                       "title":  "KNOC, The Power Within · Music v2 생성 예시",
+                                                                       "duration":  "2:00",
+                                                                       "src":  "./guidebook-assets/elevenlabs_music_sample_knoc_power_within.mp3"
+                                                                   }
+                                                               ]
                                           },
                                           {
                                               "id":  "elevenlabs_feature_08",
@@ -2877,6 +2914,8 @@ window.SERVICE_GUIDES = {
                                          "https://elevenlabs.io/docs/overview/capabilities/voice-changer",
                                          "https://elevenlabs.io/docs/eleven-creative/playground/voice-changer",
                                          "https://elevenlabs.io/docs/eleven-creative/products/music",
+                                         "https://elevenlabs.io/docs/overview/capabilities/music/marketplace",
+                                         "https://elevenlabs.io/docs/api-reference/music/video-to-music",
                                          "https://elevenlabs.io/docs/overview/capabilities/speech-to-text",
                                          "https://elevenlabs.io/docs/overview/capabilities/dubbing",
                                          "https://elevenlabs.io/blog/audio-native",
