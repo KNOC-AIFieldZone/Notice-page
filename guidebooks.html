@@ -690,7 +690,7 @@
       const guideDate = service.guideDate || ((service.basis || "").match(/\d{4}-\d{2}-\d{2}/) || [data.generatedAt || ""])[0];
       $app.innerHTML = `
         <div class="detail-layout">
-          ${selectedFeature || service.id === "notebooklm" ? renderFeatureNav(service, featureIdx ?? -1) : renderSide(service.id)}
+          ${selectedFeature ? renderFeatureNav(service, featureIdx) : renderSide(service.id)}
           <main${service.id === "notebooklm" ? ` class="service-notebooklm"` : service.id === "gemini" ? ` class="service-gemini"` : ""}>
             <section class="hero${service.id === "notebooklm" ? " hero-light" : ""}" style="--accent:${esc(service.tone || "#5eead4")}">
               <div class="hero-copy">
