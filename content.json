@@ -162,6 +162,24 @@
                              ],
     "news":  [
                  {
+                     "service":  "Harvey",
+                     "title":  "Harvey Memory 공개",
+                     "date":  "2026-08-26",
+                     "file":  "2026-08-26-harvey-memory.html"
+                 },
+                 {
+                     "service":  "Claude",
+                     "title":  "Claude in Chrome 정식 출시",
+                     "date":  "2026-08-26",
+                     "file":  "2026-08-26-claude-in-chrome-ga.html"
+                 },
+                 {
+                     "service":  "Claude",
+                     "title":  "Claude Cowork 내장 브라우저 공개",
+                     "date":  "2026-08-26",
+                     "file":  "2026-08-26-claude-cowork-built-in-browser.html"
+                 },
+                 {
                      "service":  "ElevenLabs",
                      "title":  "ElevenMusic Composer 공개",
                      "date":  "2026-08-25",
