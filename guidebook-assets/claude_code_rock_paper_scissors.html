@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>가위바위보</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+      max-width: 700px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 8px;
+      background: linear-gradient(90deg, #e94560, #f5a623);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      color: #aaa;
+      margin-bottom: 40px;
+      font-size: 1rem;
+    }
+
+    .scoreboard {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .score-box {
+      background: rgba(255,255,255,0.07);
+      border-radius: 16px;
+      padding: 16px 32px;
+      min-width: 120px;
+    }
+
+    .score-box .label {
+      font-size: 0.8rem;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .score-box .value {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-top: 4px;
+    }
+
+    .score-box.player .value { color: #4fc3f7; }
+    .score-box.draw .value   { color: #f5a623; }
+    .score-box.computer .value { color: #e94560; }
+
+    .ratio-bar {
+      margin: 0 auto 40px;
+      max-width: 500px;
+    }
+
+    .ratio-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: #aaa;
+      margin-bottom: 6px;
+    }
+
+    .ratio-track {
+      height: 14px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 99px;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .ratio-win {
+      background: #4fc3f7;
+      height: 100%;
+      transition: width 0.4s ease;
+    }
+
+    .ratio-draw {
+      background: #f5a623;
+      height: 100%;
+      transition: width 0.4s ease;
+    }
+
+    .ratio-lose {
+      background: #e94560;
+      height: 100%;
+      transition: width 0.4s ease;
+    }
+
+    .ratio-pct {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      margin-top: 6px;
+    }
+
+    .ratio-pct .w { color: #4fc3f7; }
+    .ratio-pct .d { color: #f5a623; }
+    .ratio-pct .l { color: #e94560; }
+
+    .arena {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 40px;
+      min-height: 160px;
+    }
+
+    .combatant {
+      text-align: center;
+    }
+
+    .combatant .name {
+      font-size: 0.85rem;
+      color: #aaa;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .emoji-display {
+      font-size: 5rem;
+      width: 110px;
+      height: 110px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid rgba(255,255,255,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .emoji-display.win {
+      box-shadow: 0 0 24px rgba(79, 195, 247, 0.6);
+      border-color: #4fc3f7;
+    }
+
+    .emoji-display.lose {
+      box-shadow: 0 0 24px rgba(233, 69, 96, 0.6);
+      border-color: #e94560;
+    }
+
+    .vs {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: rgba(255,255,255,0.3);
+    }
+
+    .result-text {
+      font-size: 1.6rem;
+      font-weight: bold;
+      min-height: 40px;
+      margin-bottom: 36px;
+      transition: opacity 0.3s;
+    }
+
+    .result-text.win   { color: #4fc3f7; }
+    .result-text.lose  { color: #e94560; }
+    .result-text.draw  { color: #f5a623; }
+
+    .choices {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+
+    .choice-btn {
+      background: rgba(255,255,255,0.07);
+      border: 2px solid rgba(255,255,255,0.15);
+      border-radius: 18px;
+      padding: 18px 28px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color: #fff;
+      font-size: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      min-width: 110px;
+    }
+
+    .choice-btn .icon { font-size: 2.6rem; }
+    .choice-btn .text { font-size: 0.95rem; font-weight: 600; }
+
+    .choice-btn:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: rgba(255,255,255,0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    .choice-btn:active {
+      transform: translateY(0);
+    }
+
+    .reset-btn {
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.25);
+      border-radius: 10px;
+      color: #aaa;
+      padding: 10px 28px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .reset-btn:hover {
+      border-color: #e94560;
+      color: #e94560;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-8px); }
+      75% { transform: translateX(8px); }
+    }
+
+    .shake { animation: shake 0.35s ease; }
+
+    @keyframes pop {
+      0%   { transform: scale(1); }
+      50%  { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .pop { animation: pop 0.3s ease; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>가위바위보</h1>
+    <p class="subtitle">컴퓨터와 대결하세요!</p>
+
+    <div class="scoreboard">
+      <div class="score-box player">
+        <div class="label">나</div>
+        <div class="value" id="playerScore">0</div>
+      </div>
+      <div class="score-box draw">
+        <div class="label">무승부</div>
+        <div class="value" id="drawScore">0</div>
+      </div>
+      <div class="score-box computer">
+        <div class="label">컴퓨터</div>
+        <div class="value" id="computerScore">0</div>
+      </div>
+    </div>
+
+    <div class="arena">
+      <div class="combatant">
+        <div class="name">나</div>
+        <div class="emoji-display" id="playerDisplay">❓</div>
+      </div>
+      <div class="vs">VS</div>
+      <div class="combatant">
+        <div class="name">컴퓨터</div>
+        <div class="emoji-display" id="computerDisplay">❓</div>
+      </div>
+    </div>
+
+    <div class="ratio-bar" id="ratioBar" style="display:none">
+      <div class="ratio-labels">
+        <span>승률</span>
+        <span id="totalGames">0판</span>
+      </div>
+      <div class="ratio-track">
+        <div class="ratio-win"  id="barWin"  style="width:0%"></div>
+        <div class="ratio-draw" id="barDraw" style="width:0%"></div>
+        <div class="ratio-lose" id="barLose" style="width:0%"></div>
+      </div>
+      <div class="ratio-pct">
+        <span class="w" id="pctWin">승 0%</span>
+        <span class="d" id="pctDraw">무 0%</span>
+        <span class="l" id="pctLose">패 0%</span>
+      </div>
+    </div>
+
+    <div class="result-text" id="resultText">무엇을 낼까요?</div>
+
+    <div class="choices">
+      <button class="choice-btn" onclick="play('scissors')">
+        <span class="icon">✌️</span>
+        <span class="text">가위</span>
+      </button>
+      <button class="choice-btn" onclick="play('rock')">
+        <span class="icon">✊</span>
+        <span class="text">바위</span>
+      </button>
+      <button class="choice-btn" onclick="play('paper')">
+        <span class="icon">🖐️</span>
+        <span class="text">보</span>
+      </button>
+    </div>
+
+    <button class="reset-btn" onclick="resetGame()">점수 초기화</button>
+  </div>
+
+  <script>
+    const CHOICES = {
+      scissors: { emoji: '✌️', label: '가위' },
+      rock:     { emoji: '✊', label: '바위' },
+      paper:    { emoji: '🖐️', label: '보'  },
+    };
+
+    const WINS = { scissors: 'paper', rock: 'scissors', paper: 'rock' };
+
+    let scores = { player: 0, draw: 0, computer: 0 };
+
+    function getRandomChoice() {
+      const keys = Object.keys(CHOICES);
+      return keys[Math.floor(Math.random() * keys.length)];
+    }
+
+    function play(playerChoice) {
+      const computerChoice = getRandomChoice();
+      const playerDisplay   = document.getElementById('playerDisplay');
+      const computerDisplay = document.getElementById('computerDisplay');
+      const resultText      = document.getElementById('resultText');
+
+      playerDisplay.textContent   = CHOICES[playerChoice].emoji;
+      computerDisplay.textContent = CHOICES[computerChoice].emoji;
+
+      playerDisplay.classList.remove('win','lose','shake','pop');
+      computerDisplay.classList.remove('win','lose','shake','pop');
+      resultText.className = 'result-text';
+
+      void playerDisplay.offsetWidth;
+
+      let result, resultClass;
+      if (playerChoice === computerChoice) {
+        result = '무승부! 🤝';
+        resultClass = 'draw';
+        scores.draw++;
+        playerDisplay.classList.add('pop');
+        computerDisplay.classList.add('pop');
+      } else if (WINS[playerChoice] === computerChoice) {
+        result = `승리! 🎉 (${CHOICES[playerChoice].label} > ${CHOICES[computerChoice].label})`;
+        resultClass = 'win';
+        scores.player++;
+        playerDisplay.classList.add('win', 'pop');
+        computerDisplay.classList.add('lose', 'shake');
+      } else {
+        result = `패배... 😢 (${CHOICES[playerChoice].label} < ${CHOICES[computerChoice].label})`;
+        resultClass = 'lose';
+        scores.computer++;
+        playerDisplay.classList.add('lose', 'shake');
+        computerDisplay.classList.add('win', 'pop');
+      }
+
+      resultText.textContent = result;
+      resultText.classList.add(resultClass);
+
+      document.getElementById('playerScore').textContent   = scores.player;
+      document.getElementById('drawScore').textContent     = scores.draw;
+      document.getElementById('computerScore').textContent = scores.computer;
+      updateRatio();
+    }
+
+    function updateRatio() {
+      const total = scores.player + scores.draw + scores.computer;
+      if (total === 0) return;
+      const w = Math.round(scores.player / total * 100);
+      const d = Math.round(scores.draw   / total * 100);
+      const l = 100 - w - d;
+      document.getElementById('ratioBar').style.display = 'block';
+      document.getElementById('barWin').style.width  = w + '%';
+      document.getElementById('barDraw').style.width = d + '%';
+      document.getElementById('barLose').style.width = l + '%';
+      document.getElementById('pctWin').textContent  = `승 ${w}%`;
+      document.getElementById('pctDraw').textContent = `무 ${d}%`;
+      document.getElementById('pctLose').textContent = `패 ${l}%`;
+      document.getElementById('totalGames').textContent = `${total}판`;
+    }
+
+    function resetGame() {
+      scores = { player: 0, draw: 0, computer: 0 };
+      document.getElementById('playerScore').textContent   = 0;
+      document.getElementById('drawScore').textContent     = 0;
+      document.getElementById('computerScore').textContent = 0;
+
+      const playerDisplay   = document.getElementById('playerDisplay');
+      const computerDisplay = document.getElementById('computerDisplay');
+      playerDisplay.textContent   = '❓';
+      computerDisplay.textContent = '❓';
+      playerDisplay.className   = 'emoji-display';
+      computerDisplay.className = 'emoji-display';
+
+      const resultText = document.getElementById('resultText');
+      resultText.textContent = '무엇을 낼까요?';
+      resultText.className   = 'result-text';
+      document.getElementById('ratioBar').style.display = 'none';
+      document.getElementById('barWin').style.width  = '0%';
+      document.getElementById('barDraw').style.width = '0%';
+      document.getElementById('barLose').style.width = '0%';
+    }
+  </script>
+</body>
+</html>

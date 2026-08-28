@@ -2162,7 +2162,7 @@ window.SERVICE_GUIDES = {
                                           {
                                               "id":  "claude_feature_05",
                                               "title":  "사용자 지정",
-                                              "image":  "./guidebook-assets/claude_customize_home.png",
+                                              "image":  "./guidebook-assets/claude_customize_overview.png",
                                               "short":  "스킬로 작업 방식을 가르치고, 커넥터로 외부 서비스에 연결하며, 플러그인으로 직무별 구성을 한꺼번에 추가합니다.",
                                               "detail":  "사용자 지정은 Claude를 자신의 업무에 맞게 확장하는 공간입니다. 스킬은 ‘어떻게 일할지’, 커넥터는 ‘어디의 데이터와 기능을 쓸지’, 플러그인은 ‘특정 업무에 필요한 구성을 어떤 묶음으로 쓸지’를 담당합니다.",
                                               "when":  "같은 작업 기준을 반복해서 설명하거나, Gmail·Drive·Slack 같은 계정 자료가 필요하거나, 특정 직무용 작업 환경을 빠르게 구성하고 싶을 때 사용합니다.",
@@ -2170,13 +2170,13 @@ window.SERVICE_GUIDES = {
                                                             {
                                                                 "title":  "왼쪽 사이드바에서 사용자 지정을 엽니다",
                                                                 "body":  "Claude 웹의 왼쪽 사이드바에서 ‘사용자 지정’을 클릭합니다. ‘스킬’은 보고서 형식·검토 순서·사내 기준처럼 Claude가 따라야 할 전문 지식과 작업 절차입니다. ‘커넥터’는 Gmail·Google Drive·Slack처럼 외부 서비스의 정보와 동작을 Claude에 연결합니다. ‘플러그인’은 특정 직무나 업무 흐름에 필요한 스킬·커넥터·하위 에이전트 등을 묶은 패키지입니다. 간단한 반복 규칙은 스킬, 계정 데이터 조회·작업은 커넥터, 여러 구성을 함께 배포할 때는 플러그인이 적합합니다.",
-                                                                "image":  "./guidebook-assets/claude_customize_home.png",
+                                                                "image":  "./guidebook-assets/claude_customize_overview.png",
                                                                 "badge":  "세 기능 구분"
                                                             },
                                                             {
                                                                 "title":  "내 항목을 관리하거나 디렉터리에서 찾습니다",
                                                                 "body":  "위쪽에서 스킬·커넥터·플러그인 탭을 바꾸고, ‘내 것’에서는 현재 계정에 추가된 항목과 활성 상태를 관리합니다. ‘찾아보기’ 또는 ‘추가’에서 Anthropic이 제공한 항목, 공개 디렉터리의 항목, 조직에서 배포한 항목을 찾아 설치하거나 연결할 수 있습니다. 스킬과 플러그인은 이름만 보지 말고 제작자·설명·포함된 파일과 요구 권한을 확인합니다. 필요하지 않은 항목은 꺼 두면 Claude가 해당 기능을 사용하지 않습니다.",
-                                                                "image":  "./guidebook-assets/claude_customize_home.png",
+                                                                "image":  "./guidebook-assets/claude_customize_overview.png",
                                                                 "badge":  "내 것·찾아보기"
                                                             },
                                                             {
@@ -2194,16 +2194,52 @@ window.SERVICE_GUIDES = {
                                                             {
                                                                 "title":  "플러그인으로 직무별 작업 구성을 한꺼번에 추가합니다",
                                                                 "body":  "플러그인은 유료 요금제에서 영업·재무·법무·마케팅·개발 같은 업무에 맞춘 여러 스킬, 커넥터와 하위 에이전트를 하나로 묶어 설치하는 패키지입니다. 플러그인 탭의 ‘찾아보기’에서 내용을 확인하고 설치하며, 포함된 커넥터는 사용할 계정으로 별도 인증해야 합니다. 직접 만들려면 Plugin Create 플러그인의 안내를 따르거나 Anthropic 템플릿을 수정해 사용자 지정 플러그인을 구성할 수 있습니다. 웹 채팅에서는 플러그인에 포함된 스킬을 사용할 수 있지만, 훅과 하위 에이전트처럼 Cowork 전용 구성은 비활성으로 표시될 수 있습니다. 플러그인은 한 번에 Claude의 작업 범위를 크게 넓히므로 신뢰할 수 있는 제작자의 것만 사용하고, 포함된 스킬·커넥터와 권한을 각각 검토합니다.",
-                                                                "image":  "./guidebook-assets/claude_customize_home.png",
+                                                                "image":  "./guidebook-assets/claude_customize_overview.png",
                                                                 "badge":  "플러그인"
                                                             }
                                                         ]
                                           },
                                           {
                                               "id":  "claude_feature_07",
-                                              "title":  "기능 7",
-                                              "image":  "./guidebook-assets/claude_guide_start.png",
-                                              "placeholder":  true
+                                              "title":  "Claude Code",
+                                              "image":  "./guidebook-assets/claude_code_main.png",
+                                              "short":  "저장소 전체를 이해하고 파일 수정, 명령 실행, 테스트와 Git 작업까지 수행하는 코딩 에이전트입니다.",
+                                              "detail":  "Claude Code는 코드 질문에 답만 하는 도구가 아니라 프로젝트 파일을 탐색하고 여러 파일을 함께 수정한 뒤 명령과 테스트로 결과를 검증합니다. 웹사이트 제작, 오류 수정, 기능 추가, 리팩터링, 테스트·문서 작성과 코드 검토에 활용할 수 있습니다.",
+                                              "when":  "GitHub 저장소나 로컬 프로젝트를 바탕으로 실제 파일을 만들거나 고치고, 실행·검증까지 이어지는 개발 작업이 필요할 때 사용합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "왼쪽 위 제품 전환 버튼에서 Claude Code를 선택합니다",
+                                                                "body":  "Claude 웹 왼쪽 위의 제품 전환 버튼을 눌러 Claude Code로 바꿉니다. 아이콘 모양은 브라우저나 화면 상태에 따라 다르게 보일 수 있으므로 선택 후 상단에 ‘Claude Code’가 표시되는지 확인합니다. Claude Code는 저장소 전체에서 관련 파일을 찾고, 코드를 만들거나 수정하고, 명령·테스트를 실행해 결과를 확인하는 코딩 에이전트입니다. 간단한 웹 페이지부터 버그 수정, 새 기능, 리팩터링, 테스트·문서 작성, 여러 파일에 걸친 변경과 Git 작업까지 처리할 수 있지만 최종 변경과 보안은 사용자가 검토해야 합니다.",
+                                                                "image":  "./guidebook-assets/claude_code_main.png",
+                                                                "badge":  "제품 전환·개요"
+                                                            },
+                                                            {
+                                                                "title":  "실행 위치와 저장소·권한·도구를 설정합니다",
+                                                                "body":  "먼저 실행 위치를 정합니다. 로컬은 자신의 컴퓨터에서 파일·도구를 직접 사용하고, 클라우드는 Anthropic이 관리하는 격리 환경에서 GitHub 저장소를 복제해 브라우저를 닫아도 작업을 계속합니다. 원격 제어는 컴퓨터에서 실행 중인 Claude Code를 웹에서 조작하는 방식이므로 로컬 프로세스와 컴퓨터가 계속 켜져 있어야 합니다. 클라우드 작업은 GitHub 계정을 연결하고 접근 가능한 저장소를 선택합니다. 새 프로젝트라면 GitHub에 빈 저장소를 먼저 만드는 방법이 가장 간단합니다. 권한 모드에서 ‘자동 편집 수락’은 작업 범위 안의 파일 편집과 일부 파일 명령을 묻지 않고 진행하고, ‘계획’은 파일을 읽고 조사해 계획만 제안하며 수정하지 않습니다. ‘자동’ 등 표시되는 추가 모드는 실행 환경과 계정에 따라 다르므로 민감한 저장소에서는 계획부터 시작합니다. 파일·이미지는 요구사항과 화면 참고 자료로 추가하고, 슬래시 명령은 모델·사용량·플러그인·세션 같은 기능을 엽니다. 커넥터는 외부 서비스, 녹음은 요청 받아쓰기, 모델 메뉴는 작업 난이도에 맞는 모델 선택에 사용합니다. Sonnet은 일반 개발, Opus는 어려운 설계·디버깅, Haiku는 빠른 조회와 단순 수정에 적합합니다. 사용량은 Claude의 다른 화면과 같은 계정 한도를 공유합니다.",
+                                                                "image":  "./guidebook-assets/claude_code_main.png",
+                                                                "badge":  "환경·저장소·권한"
+                                                            },
+                                                            {
+                                                                "title":  "만들 결과와 검증 조건을 구체적으로 요청합니다",
+                                                                "body":  "‘가위바위보를 할 수 있는 웹사이트를 만들어 줘’처럼 짧게 요청해도 제작할 수 있으므로 입문 예시로 적절합니다. 재작업을 줄이려면 ‘한국어 단일 index.html, 외부 라이브러리 없음, 모바일 대응, 승·무·패 점수와 승률, 초기화 버튼을 포함하고 완성 후 직접 실행해 기능을 확인해 줘’처럼 파일 형식·필수 기능·디자인·검증 조건을 함께 적습니다. Claude Code가 파일을 만들고 명령을 실행하는 과정을 확인하고, 권한 요청이 나오면 대상 파일과 명령이 의도한 범위인지 검토합니다. 클라우드에서는 완료 후 변경 브랜치나 Pull Request를 검토하며, 푸시가 실패하면 GitHub 연결과 해당 저장소 권한을 확인합니다.",
+                                                                "image":  "./guidebook-assets/claude_code_build_result.png",
+                                                                "badge":  "요청·생성"
+                                                            },
+                                                            {
+                                                                "title":  "생성된 사이트를 실행해 기능과 코드를 검토합니다",
+                                                                "body":  "완성된 HTML을 브라우저에서 열어 가위·바위·보 선택, 컴퓨터의 무작위 선택, 점수와 승률 계산, 초기화 버튼이 정상 동작하는지 확인합니다. 화면 크기를 바꿔 모바일에서도 깨지지 않는지 보고, 외부 전송·추적 코드나 불필요한 의존성이 없는지도 코드를 확인합니다. 수정이 필요하면 ‘작은 화면에서 버튼을 세로로 배치해 줘’, ‘새로고침해도 점수를 유지해 줘’처럼 원하는 동작을 후속 요청합니다. 아래 결과물 파일은 이번 예시에 생성된 독립 실행형 HTML이며 열어서 체험하거나 내려받을 수 있습니다.",
+                                                                "image":  "./guidebook-assets/claude_code_site_example.png",
+                                                                "badge":  "실행·검토"
+                                                            }
+                                                        ],
+                                              "fileSamples":  [
+                                                                  {
+                                                                      "title":  "가위바위보 웹사이트",
+                                                                      "description":  "브라우저에서 바로 실행할 수 있는 단일 HTML 결과물",
+                                                                      "src":  "./guidebook-assets/claude_code_rock_paper_scissors.html",
+                                                                      "fileName":  "claude-code-rock-paper-scissors.html"
+                                                                  }
+                                                              ]
                                           },
                                           {
                                               "id":  "claude_feature_08",
@@ -2228,6 +2264,13 @@ window.SERVICE_GUIDES = {
                                          "https://academy.claude.com/",
                                          "https://academy.claude.com/courses",
                                          "https://academy.claude.com/tutorials",
+                                         "https://code.claude.com/docs/en/how-claude-code-works",
+                                         "https://code.claude.com/docs/en/web-quickstart",
+                                         "https://code.claude.com/docs/en/claude-code-on-the-web",
+                                         "https://code.claude.com/docs/en/remote-control",
+                                         "https://code.claude.com/docs/en/permission-modes",
+                                         "https://code.claude.com/docs/en/commands",
+                                         "https://support.claude.com/en/articles/14552983-models-usage-and-limits-in-claude-code",
                                          "https://support.anthropic.com/en/articles/8114491-getting-started-with-claude",
                                          "https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them",
                                          "https://support.claude.com/en/articles/9547008-publish-and-share-artifacts",
