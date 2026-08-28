@@ -2243,9 +2243,25 @@ window.SERVICE_GUIDES = {
                                           },
                                           {
                                               "id":  "claude_feature_08",
-                                              "title":  "기능 8",
-                                              "image":  "./guidebook-assets/claude_guide_start.png",
-                                              "placeholder":  true
+                                              "title":  "Claude Design",
+                                              "image":  "./guidebook-assets/claude_design_home.png",
+                                              "short":  "대화로 슬라이드, 문서, 와이어프레임, UI 시안과 인터랙티브 프로토타입을 만드는 시각 작업 공간입니다.",
+                                              "detail":  "Claude Design은 원하는 결과를 말로 설명하면 초안을 만들고, 대화·직접 편집·댓글로 다듬을 수 있는 웹 기반 디자인 도구입니다. 브랜드 디자인 시스템을 적용하고 완성물을 PDF·PPTX·HTML 등으로 내보내거나 Claude Code로 넘길 수 있습니다.",
+                                              "when":  "발표자료, 문서, 화면 설계, 제품 시안이나 프로토타입을 빠르게 만들고 여러 디자인 방향을 비교할 때 사용합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "왼쪽 사이드바 아래에서 Design을 엽니다",
+                                                                "body":  "Claude 웹의 왼쪽 사이드바 아래에서 ‘Design’을 선택합니다. Claude Design은 현재 베타 기능이며 Pro·Max·Team·Enterprise 요금제에서 제공됩니다. Enterprise에서는 관리자가 기능을 켜야 하므로 메뉴가 없다면 요금제와 조직 설정을 확인합니다. 슬라이드·문서·와이어프레임·UI 시안·인터랙티브 프로토타입처럼 눈으로 확인하고 수정해야 하는 결과물에 적합합니다.",
+                                                                "image":  "./guidebook-assets/claude_design_home.png",
+                                                                "badge":  "진입·개요"
+                                                            },
+                                                            {
+                                                                "title":  "템플릿과 디자인 기준을 정한 뒤 만들 내용을 입력합니다",
+                                                                "body":  "Blank, Mobile app design, Slides, Document, Wireframe, Animation 등 결과에 맞는 템플릿을 먼저 고릅니다. 입력창 아래 ‘Design system’에서는 저장된 브랜드 색상·글꼴·컴포넌트 기준을 적용하며, 없으면 None으로 시작해도 됩니다. ‘+’는 참고 이미지나 문서 같은 자료를 추가하는 버튼입니다. ‘</>’는 코드 기반 결과나 기존 코드베이스의 구현 맥락을 연결할 때 쓰는 코드 옵션으로, 일반 슬라이드나 문서 작업에서는 선택하지 않아도 됩니다. 베타 화면이라 이 버튼이 여는 세부 항목은 계정에 따라 달라질 수 있습니다. 사용할 모델을 고른 뒤 목표, 대상 사용자, 구성, 반드시 넣을 내용과 원하는 분위기를 적고 생성 버튼을 누릅니다. 아래 Projects에서는 이전 작업을 다시 열고, Design systems와 Templates 탭에서는 재사용할 기준과 템플릿을 관리합니다.",
+                                                                "image":  "./guidebook-assets/claude_design_home.png",
+                                                                "badge":  "템플릿·생성"
+                                                            }
+                                                        ]
                                           },
                                           {
                                               "id":  "claude_feature_09",
@@ -2271,6 +2287,10 @@ window.SERVICE_GUIDES = {
                                          "https://code.claude.com/docs/en/permission-modes",
                                          "https://code.claude.com/docs/en/commands",
                                          "https://support.claude.com/en/articles/14552983-models-usage-and-limits-in-claude-code",
+                                         "https://support.claude.com/en/articles/14604416-get-started-with-claude-design",
+                                         "https://support.claude.com/en/articles/14604397-set-up-your-design-system-in-claude-design",
+                                         "https://claude.com/product/design",
+                                         "https://www.anthropic.com/news/claude-design-anthropic-labs",
                                          "https://support.anthropic.com/en/articles/8114491-getting-started-with-claude",
                                          "https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them",
                                          "https://support.claude.com/en/articles/9547008-publish-and-share-artifacts",
