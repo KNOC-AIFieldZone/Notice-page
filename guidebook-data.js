@@ -2049,9 +2049,25 @@ window.SERVICE_GUIDES = {
                                           },
                                           {
                                               "id":  "claude_feature_02",
-                                              "title":  "기능 2",
-                                              "image":  "./guidebook-assets/claude_guide_start.png",
-                                              "placeholder":  true
+                                              "title":  "프로젝트",
+                                              "image":  "./guidebook-assets/claude_projects_list.png",
+                                              "short":  "관련 대화와 참고 자료, 프로젝트 전용 지침을 한 작업 공간에 모아 같은 업무 맥락을 이어갑니다.",
+                                              "detail":  "업무·고객·주제별 프로젝트를 만들고, 공통 자료와 답변 규칙을 설정해 프로젝트 안의 여러 대화에서 반복 활용하는 방법입니다.",
+                                              "when":  "같은 업무를 여러 대화로 나누어 진행하면서 공통 자료와 작성 기준을 매번 다시 설명하지 않으려 할 때 활용합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "왼쪽 사이드바에서 프로젝트를 엽니다",
+                                                                "body":  "Claude 웹 왼쪽 사이드바의 ‘프로젝트’를 클릭합니다. 프로젝트는 관련 대화, 프로젝트 지식과 전용 지침을 하나의 업무 공간으로 묶는 기능입니다. 프로젝트 지식에 올린 자료와 프로젝트 지침은 그 프로젝트 안의 대화에서 공통으로 활용됩니다. 다만 한 대화의 전체 내용이 다른 대화에 그대로 공유되는 것은 아니며, 메모리를 켠 경우에만 해당 프로젝트의 별도 메모리와 요약이 과거 대화 맥락을 보완합니다.",
+                                                                "image":  "./guidebook-assets/claude_guide_start.png",
+                                                                "badge":  "기능 열기"
+                                                            },
+                                                            {
+                                                                "title":  "새 프로젝트를 만들거나 기존 프로젝트를 엽니다",
+                                                                "body":  "오른쪽 위 ‘새 프로젝트’를 눌러 이름과 설명을 입력하거나, 목록의 기존 프로젝트 카드를 눌러 작업을 이어갑니다. 이름과 설명은 목록을 구분하는 정보이므로 Claude가 실제 업무 배경으로 참고해야 할 내용은 프로젝트 지침이나 프로젝트 지식에 따로 넣습니다. 프로젝트를 만든 뒤 관련 문서·텍스트·코드 자료를 지식에 추가하고, 문체·출력 형식·금지 사항 같은 공통 규칙은 프로젝트 지침으로 저장합니다. 무료 계정도 프로젝트를 사용할 수 있으며 최대 5개까지 만들 수 있습니다. Team·Enterprise에서는 공개 범위와 구성원별 보기·편집 권한을 설정할 수 있습니다. 자료가 많아지면 Claude가 필요한 내용을 찾아 쓰는 RAG 모드가 자동으로 켜질 수 있으므로 별도 설정은 필요하지 않습니다. 민감한 회사 자료는 업로드와 공유 전에 권한을 확인합니다.",
+                                                                "image":  "./guidebook-assets/claude_projects_list.png",
+                                                                "badge":  "프로젝트 선택"
+                                                            }
+                                                        ]
                                           },
                                           {
                                               "id":  "claude_feature_03",
@@ -2105,7 +2121,7 @@ window.SERVICE_GUIDES = {
                          "sources":  [
                                          "https://support.anthropic.com/en/articles/8114491-getting-started-with-claude",
                                          "https://support.anthropic.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them",
-                                         "https://support.anthropic.com/en/articles/9517075-what-are-projects",
+                                         "https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects",
                                          "https://support.anthropic.com/en/articles/12111783-create-and-edit-files-with-claude",
                                          "https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings",
                                          "https://support.claude.com/en/articles/14782391-claude-enterprise-consumption-guide",
@@ -2114,7 +2130,9 @@ window.SERVICE_GUIDES = {
                                          "https://support.claude.com/en/articles/10167454-use-the-github-integration",
                                          "https://support.claude.com/en/articles/11088861-use-research-on-claude",
                                          "https://support.claude.com/en/articles/10684626-enable-and-use-web-search",
-                                         "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork"
+                                         "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork",
+                                         "https://support.claude.com/en/articles/11473015-retrieval-augmented-generation-rag-for-projects",
+                                         "https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context"
                                      ]
                      },
                      {
