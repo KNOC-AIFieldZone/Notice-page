@@ -2260,6 +2260,12 @@ window.SERVICE_GUIDES = {
                                                                 "body":  "Blank, Mobile app design, Slides, Document, Wireframe, Animation 등 결과에 맞는 템플릿을 먼저 고릅니다. 입력창 아래 ‘Design system’에서는 저장된 브랜드 색상·글꼴·컴포넌트 기준을 적용하며, 없으면 None으로 시작해도 됩니다. ‘+’는 참고 이미지나 문서 같은 자료를 추가하는 버튼입니다. ‘</>’는 코드 기반 결과나 기존 코드베이스의 구현 맥락을 연결할 때 쓰는 코드 옵션으로, 일반 슬라이드나 문서 작업에서는 선택하지 않아도 됩니다. 베타 화면이라 이 버튼이 여는 세부 항목은 계정에 따라 달라질 수 있습니다. 사용할 모델을 고른 뒤 목표, 대상 사용자, 구성, 반드시 넣을 내용과 원하는 분위기를 적고 생성 버튼을 누릅니다. 아래 Projects에서는 이전 작업을 다시 열고, Design systems와 Templates 탭에서는 재사용할 기준과 템플릿을 관리합니다.",
                                                                 "image":  "./guidebook-assets/claude_design_home.png",
                                                                 "badge":  "템플릿·생성"
+                                                            },
+                                                            {
+                                                                "title":  "결과를 확인하고 대화 또는 Edit으로 다듬습니다",
+                                                                "body":  "생성된 결과는 오른쪽 캔버스에서 직접 확인합니다. 화면 구성이나 기능처럼 범위가 큰 변경은 왼쪽 입력창에 원하는 수정 내용을 적어 Claude에게 다시 요청합니다. 특정 요소만 고치려면 Comment로 위치를 지정하거나, 오른쪽 위 ‘Edit’을 눌러 캔버스에서 텍스트·크기·배치 등을 직접 수정합니다. 직접 편집할 수 있는 항목은 선택한 템플릿과 결과물 종류에 따라 달라질 수 있습니다. 수정이 끝나면 Present로 동작을 확인하고 Share 또는 내보내기 기능으로 결과물을 전달합니다.",
+                                                                "image":  "./guidebook-assets/claude_design_result.png",
+                                                                "badge":  "결과·수정"
                                                             }
                                                         ]
                                           },
