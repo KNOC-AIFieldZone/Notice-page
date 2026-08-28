@@ -2139,9 +2139,43 @@ window.SERVICE_GUIDES = {
                                           },
                                           {
                                               "id":  "claude_feature_05",
-                                              "title":  "기능 5",
-                                              "image":  "./guidebook-assets/claude_guide_start.png",
-                                              "placeholder":  true
+                                              "title":  "사용자 지정",
+                                              "image":  "./guidebook-assets/claude_customize_home.png",
+                                              "short":  "스킬로 작업 방식을 가르치고, 커넥터로 외부 서비스에 연결하며, 플러그인으로 직무별 구성을 한꺼번에 추가합니다.",
+                                              "detail":  "사용자 지정은 Claude를 자신의 업무에 맞게 확장하는 공간입니다. 스킬은 ‘어떻게 일할지’, 커넥터는 ‘어디의 데이터와 기능을 쓸지’, 플러그인은 ‘특정 업무에 필요한 구성을 어떤 묶음으로 쓸지’를 담당합니다.",
+                                              "when":  "같은 작업 기준을 반복해서 설명하거나, Gmail·Drive·Slack 같은 계정 자료가 필요하거나, 특정 직무용 작업 환경을 빠르게 구성하고 싶을 때 사용합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "왼쪽 사이드바에서 사용자 지정을 엽니다",
+                                                                "body":  "Claude 웹의 왼쪽 사이드바에서 ‘사용자 지정’을 클릭합니다. ‘스킬’은 보고서 형식·검토 순서·사내 기준처럼 Claude가 따라야 할 전문 지식과 작업 절차입니다. ‘커넥터’는 Gmail·Google Drive·Slack처럼 외부 서비스의 정보와 동작을 Claude에 연결합니다. ‘플러그인’은 특정 직무나 업무 흐름에 필요한 스킬·커넥터·하위 에이전트 등을 묶은 패키지입니다. 간단한 반복 규칙은 스킬, 계정 데이터 조회·작업은 커넥터, 여러 구성을 함께 배포할 때는 플러그인이 적합합니다.",
+                                                                "image":  "./guidebook-assets/claude_customize_home.png",
+                                                                "badge":  "세 기능 구분"
+                                                            },
+                                                            {
+                                                                "title":  "내 항목을 관리하거나 디렉터리에서 찾습니다",
+                                                                "body":  "위쪽에서 스킬·커넥터·플러그인 탭을 바꾸고, ‘내 것’에서는 현재 계정에 추가된 항목과 활성 상태를 관리합니다. ‘찾아보기’ 또는 ‘추가’에서 Anthropic이 제공한 항목, 공개 디렉터리의 항목, 조직에서 배포한 항목을 찾아 설치하거나 연결할 수 있습니다. 스킬과 플러그인은 이름만 보지 말고 제작자·설명·포함된 파일과 요구 권한을 확인합니다. 필요하지 않은 항목은 꺼 두면 Claude가 해당 기능을 사용하지 않습니다.",
+                                                                "image":  "./guidebook-assets/claude_customize_home.png",
+                                                                "badge":  "내 것·찾아보기"
+                                                            },
+                                                            {
+                                                                "title":  "스킬로 반복 업무의 방법과 기준을 가르칩니다",
+                                                                "body":  "스킬은 외부 서비스 연결이 아니라 특정 일을 수행하는 절차·기준·참고 자료의 묶음입니다. 활성화해 두면 Claude가 요청과 설명을 보고 관련 스킬을 자동으로 사용하며, 필요하면 ‘내 보고서 검토 스킬을 사용해 줘’처럼 직접 지정할 수 있습니다. ‘추가’에서 받은 ZIP을 ‘스킬 업로드’로 넣거나, ‘스킬 만들기’에서 직접 구성하거나, ‘Claude와 함께 창작하기’에서 질문에 답하며 만들 수 있습니다. ‘찾아보기’에서는 공개 또는 조직 스킬을 설치합니다. 직접 만든 스킬은 최소한 이름·언제 사용할지·수행 절차가 담긴 skill.md가 필요하며, 업로드용 폴더는 ZIP으로 묶습니다. 스킬은 코드 실행 및 파일 생성 기능이 켜져 있어야 작동합니다. 외부 스킬에는 스크립트나 패키지가 포함될 수 있으므로 출처와 파일 내용을 확인한 뒤 활성화합니다.",
+                                                                "image":  "./guidebook-assets/claude_customize_skills_add.png",
+                                                                "badge":  "스킬"
+                                                            },
+                                                            {
+                                                                "title":  "커넥터로 외부 서비스의 자료와 기능을 연결합니다",
+                                                                "body":  "커넥터 탭에서 Gmail·Drive·Slack 등 필요한 서비스를 찾아 ‘연결’을 누르고 해당 서비스 계정으로 인증합니다. 목록의 ‘연결됨·연결되지 않음’ 필터와 상태를 이용해 연결을 관리하고, 인증이 만료되면 ‘다시 연결’을 사용합니다. 웹용 원격 커넥터는 Claude 웹에서도 사용할 수 있으며, 메일 검색·문서 조회처럼 읽기 기능뿐 아니라 서비스가 지원하면 작성·수정 같은 동작도 제공할 수 있습니다. Claude의 도구 권한에서 각 동작을 항상 허용·승인 필요·차단으로 제한할 수 있고, 커넥터가 원래 서비스 계정의 권한보다 더 많은 권한을 새로 얻는 것은 아닙니다. 업무에 필요한 계정만 연결하고 전송·삭제 같은 쓰기 동작은 승인 필요로 두는 것이 안전합니다.",
+                                                                "image":  "./guidebook-assets/claude_customize_connectors.png",
+                                                                "badge":  "커넥터"
+                                                            },
+                                                            {
+                                                                "title":  "플러그인으로 직무별 작업 구성을 한꺼번에 추가합니다",
+                                                                "body":  "플러그인은 유료 요금제에서 영업·재무·법무·마케팅·개발 같은 업무에 맞춘 여러 스킬, 커넥터와 하위 에이전트를 하나로 묶어 설치하는 패키지입니다. 플러그인 탭의 ‘찾아보기’에서 내용을 확인하고 설치하며, 포함된 커넥터는 사용할 계정으로 별도 인증해야 합니다. 직접 만들려면 Plugin Create 플러그인의 안내를 따르거나 Anthropic 템플릿을 수정해 사용자 지정 플러그인을 구성할 수 있습니다. 웹 채팅에서는 플러그인에 포함된 스킬을 사용할 수 있지만, 훅과 하위 에이전트처럼 Cowork 전용 구성은 비활성으로 표시될 수 있습니다. 플러그인은 한 번에 Claude의 작업 범위를 크게 넓히므로 신뢰할 수 있는 제작자의 것만 사용하고, 포함된 스킬·커넥터와 권한을 각각 검토합니다.",
+                                                                "image":  "./guidebook-assets/claude_customize_home.png",
+                                                                "badge":  "플러그인"
+                                                            }
+                                                        ]
                                           },
                                           {
                                               "id":  "claude_feature_06",
@@ -2179,6 +2213,12 @@ window.SERVICE_GUIDES = {
                                          "https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them",
                                          "https://support.claude.com/en/articles/9547008-publish-and-share-artifacts",
                                          "https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities",
+                                         "https://support.claude.com/en/articles/11725091-when-to-use-desktop-and-web-connectors",
+                                         "https://support.claude.com/en/articles/14328846-browse-skills-connectors-and-plugins-in-one-directory",
+                                         "https://support.claude.com/en/articles/12512176-what-are-skills",
+                                         "https://support.claude.com/en/articles/12512180-use-skills-in-claude",
+                                         "https://support.claude.com/en/articles/12512198-how-to-create-custom-skills",
+                                         "https://support.claude.com/en/articles/13837440-use-plugins-in-claude",
                                          "https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects",
                                          "https://support.anthropic.com/en/articles/12111783-create-and-edit-files-with-claude",
                                          "https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings",
