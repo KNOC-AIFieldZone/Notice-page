@@ -2008,6 +2008,28 @@ window.SERVICE_GUIDES = {
                          "tips":  [],
                          "sections":  [
                                           {
+                                              "id":  "claude_feature_06",
+                                              "title":  "Claude Academy",
+                                              "image":  "./guidebook-assets/claude_academy_learning.png",
+                                              "short":  "Claude와 Cowork의 사용법부터 AI 활용 원칙·개발 기능까지 공식 코스와 짧은 튜토리얼로 학습합니다.",
+                                              "detail":  "Claude Academy는 학습 콘텐츠를 만들어 주는 기능이 아니라, 사용자가 Claude 제품을 올바르게 활용하도록 Anthropic이 제공하는 공식 자기주도 학습 공간입니다. 코스·튜토리얼·활용 사례를 목적과 숙련도에 맞게 선택할 수 있습니다.",
+                                              "when":  "Claude를 처음 시작하거나 프로젝트·아티팩트·커넥터·Cowork 같은 특정 기능을 체계적으로 배우고 싶을 때 가장 먼저 활용합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "계정 메뉴에서 Claude Academy를 엽니다",
+                                                                "body":  "Claude 웹 왼쪽 아래의 계정 이름을 클릭한 뒤 ‘Claude Academy’를 선택합니다. Academy는 Claude에게 학습 자료를 만들게 하는 메뉴가 아니라, 사용자가 Claude.ai·Cowork·Claude Code·Claude Platform과 AI 활용 방법을 배우는 공식 학습 사이트입니다. 따라서 다른 기능의 사용법을 익히기 전 출발점으로 활용할 수 있습니다.",
+                                                                "image":  "./guidebook-assets/claude_academy_entry.png",
+                                                                "badge":  "Academy 열기"
+                                                            },
+                                                            {
+                                                                "title":  "목적과 수준에 맞는 학습 자료를 선택합니다",
+                                                                "body":  "추천 코스에서 Claude 전반을 처음 배우려면 ‘Claude 101’, 여러 단계의 업무를 맡기려면 ‘Introduction to Claude Cowork’를 선택합니다. ‘시작하기’의 짧은 튜토리얼은 첫 Cowork 작업, 커넥터 연결처럼 필요한 기능만 빠르게 익힐 때 적합합니다. 전체 자료에서는 코스·튜토리얼·활용 사례를 구분하고 제품이나 역할별로 검색할 수 있습니다. 코스는 여러 강의와 퀴즈로 구성된 체계적인 학습 과정이고, 튜토리얼은 짧은 기능 안내, 활용 사례는 실제 업무 아이디어를 보여주는 자료입니다. 현재 필요한 항목부터 열어 순서대로 학습하면 됩니다.",
+                                                                "image":  "./guidebook-assets/claude_academy_learning.png",
+                                                                "badge":  "코스·튜토리얼"
+                                                            }
+                                                        ]
+                                          },
+                                          {
                                               "id":  "claude_feature_01",
                                               "title":  "기본 기능",
                                               "image":  "./guidebook-assets/claude_guide_start.png",
@@ -2178,12 +2200,6 @@ window.SERVICE_GUIDES = {
                                                         ]
                                           },
                                           {
-                                              "id":  "claude_feature_06",
-                                              "title":  "기능 6",
-                                              "image":  "./guidebook-assets/claude_guide_start.png",
-                                              "placeholder":  true
-                                          },
-                                          {
                                               "id":  "claude_feature_07",
                                               "title":  "기능 7",
                                               "image":  "./guidebook-assets/claude_guide_start.png",
@@ -2209,6 +2225,9 @@ window.SERVICE_GUIDES = {
                                           }
                                       ],
                          "sources":  [
+                                         "https://academy.claude.com/",
+                                         "https://academy.claude.com/courses",
+                                         "https://academy.claude.com/tutorials",
                                          "https://support.anthropic.com/en/articles/8114491-getting-started-with-claude",
                                          "https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them",
                                          "https://support.claude.com/en/articles/9547008-publish-and-share-artifacts",
