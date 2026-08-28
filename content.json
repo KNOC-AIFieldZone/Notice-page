@@ -66,8 +66,8 @@
                      {
                          "name":  "Claude",
                          "url":  "https://claude.ai/new",
-                         "domain":  "claude.ai/new",
-                         "note":  "자연스러운 글쓰기·창작\n방대한 문서 심층 분석\n아티팩트 결과물 시각화\n프로젝트 맞춤 지식 베이스\n고급 코딩·자율 에이전트"
+                         "domain":  "claude.ai",
+                         "note":  "긴 문서·파일 분석\n글쓰기·논리 검토\n프로젝트·아티팩트 제작\n반복 업무·외부 도구 연결\n코딩·디자인 결과물 제작"
                      }
                  ],
     "notice":  {

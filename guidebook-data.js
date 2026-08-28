@@ -1999,12 +1999,21 @@ window.SERVICE_GUIDES = {
                          "domain":  "claude.ai",
                          "url":  "https://claude.ai/new",
                          "tone":  "#f59e0b",
-                         "role":  "긴 문서 이해, 글쓰기, 논리 검토, 산출물 구조화에 강한 업무 AI",
+                         "role":  "문서·파일 분석과 글쓰기부터 지식 관리, 자동화, 코딩·디자인 결과물 제작까지 지원하는 업무 AI",
                          "basis":  "2026-08-28",
                          "guideDate":  "2026-08-28",
-                         "overview":  "긴 문서 이해, 논리적 검토, 글쓰기, 구조화된 업무 산출물 제작에 적합하다. Projects와 Artifacts를 활용하면 업무 맥락과 결과물을 함께 관리하기 좋다.",
+                         "overview":  "Claude는 긴 문서와 여러 파일을 이해해 글·분석·계획을 만들고, Projects와 Artifacts로 맥락과 결과물을 관리합니다. 예약 작업, 스킬·커넥터, Claude Code와 Claude Design을 통해 반복 업무·개발·시각 제작까지 이어갈 수 있습니다.",
                          "hero":  "./guidebook-assets/claude_guide_start.png",
-                         "features":  [],
+                         "features":  [
+                                          "긴 문서·파일 분석",
+                                          "글쓰기·논리 검토",
+                                          "프로젝트 지식 관리",
+                                          "아티팩트·프로토타입",
+                                          "반복 업무 예약",
+                                          "스킬·커넥터 확장",
+                                          "코드 개발·수정",
+                                          "디자인·슬라이드 제작"
+                                      ],
                          "tips":  [],
                          "sections":  [
                                           {
@@ -2268,18 +2277,6 @@ window.SERVICE_GUIDES = {
                                                                 "badge":  "결과·수정"
                                                             }
                                                         ]
-                                          },
-                                          {
-                                              "id":  "claude_feature_09",
-                                              "title":  "기능 9",
-                                              "image":  "./guidebook-assets/claude_guide_start.png",
-                                              "placeholder":  true
-                                          },
-                                          {
-                                              "id":  "claude_feature_10",
-                                              "title":  "기능 10",
-                                              "image":  "./guidebook-assets/claude_guide_start.png",
-                                              "placeholder":  true
                                           }
                                       ],
                          "sources":  [

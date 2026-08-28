@@ -391,7 +391,7 @@
   <script>
     const $app = document.querySelector("#app");
     const data = window.SERVICE_GUIDES || { services: [] };
-    const READY_GUIDES = new Set(["chatgpt", "genspark", "lilysai", "gemini", "notebooklm", "elevenlabs"]);
+    const READY_GUIDES = new Set(["chatgpt", "genspark", "lilysai", "gemini", "notebooklm", "elevenlabs", "claude"]);
 
     function esc(v){
       return String(v ?? "").replace(/[&<>"']/g, (ch) => ({
