@@ -2071,9 +2071,37 @@ window.SERVICE_GUIDES = {
                                           },
                                           {
                                               "id":  "claude_feature_03",
-                                              "title":  "기능 3",
-                                              "image":  "./guidebook-assets/claude_guide_start.png",
-                                              "placeholder":  true
+                                              "title":  "아티팩트",
+                                              "image":  "./guidebook-assets/claude_artifacts_library.png",
+                                              "short":  "대화로 만든 문서·웹 페이지·대시보드·도구를 독립된 결과물로 확인하고 계속 수정·재사용·공유합니다.",
+                                              "detail":  "아티팩트는 일반 답변처럼 채팅 안에서 끝나는 내용이 아니라, 오른쪽 전용 화면에서 실행하거나 편집할 수 있는 독립 결과물입니다. 문서, 코드, 단일 웹 페이지, 도표, 계산기, 트래커 같은 결과를 목적에 맞게 만들 수 있습니다.",
+                                              "when":  "한 번 읽고 끝나는 답변보다 화면을 직접 조작하거나, 여러 차례 고쳐 쓰거나, 나중에 다시 열고 다른 사람과 공유할 결과물이 필요할 때 사용합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "왼쪽 사이드바에서 아티팩트를 엽니다",
+                                                                "body":  "Claude 웹의 왼쪽 사이드바에서 ‘아티팩트’를 클릭합니다. 아티팩트는 대화와 분리된 작업 화면에서 문서·코드·웹 페이지·시각화·대시보드·계산기 같은 완성형 결과물을 만들고 다듬는 기능입니다. 단순 질문이나 한 번만 볼 요약은 일반 채팅이 더 빠르고, 직접 조작하거나 반복 수정·재사용할 결과물이 필요할 때 아티팩트가 알맞습니다. 기능이 보이지 않거나 생성되지 않으면 설정의 ‘기능’에서 코드 실행 및 파일 생성이 허용되어 있는지 확인합니다.",
+                                                                "image":  "./guidebook-assets/claude_guide_start.png",
+                                                                "badge":  "기능 열기"
+                                                            },
+                                                            {
+                                                                "title":  "기존 결과물을 찾거나 새 아티팩트를 만듭니다",
+                                                                "body":  "‘전체’에서는 접근 가능한 아티팩트를 함께 보고, ‘내 것’에서는 직접 만든 항목을, ‘나와 공유됨’에서는 다른 사람이 공유한 항목을 확인합니다. 카드를 누르면 기존 결과물을 열고, 오른쪽 위 ‘새 아티팩트’를 누르면 처음부터 제작을 시작합니다. 일반 채팅에서 생성한 아티팩트는 목록에 자동으로 들어오지 않을 수 있으므로 계속 보관하려면 해당 결과물을 열어 게시합니다.",
+                                                                "image":  "./guidebook-assets/claude_artifacts_library.png",
+                                                                "badge":  "목록·새 아티팩트"
+                                                            },
+                                                            {
+                                                                "title":  "채팅으로 목적을 설명하고 제작 범위를 정합니다",
+                                                                "body":  "가운데 채팅에 ‘무엇을 만들지, 누가 쓰는지, 꼭 필요한 화면과 동작, 사용할 데이터’를 적습니다. Claude가 결과물 종류나 구성에 관해 선택지를 물으면 답하고, 아직 정하지 못한 부분은 추천을 요청합니다. 오른쪽의 ‘진행 상황’은 제작 단계, ‘출력’은 생성된 결과와 파일, ‘컨텍스트’는 작업에 사용된 도구와 참조 파일을 보여줍니다. ‘추천 커넥터’는 Notion·Linear 같은 외부 서비스의 자료나 작업이 꼭 필요할 때만 연결합니다. 커넥터는 연결된 계정의 권한 범위에서 데이터를 읽거나 쓸 수 있으므로 신뢰할 수 있는 서비스와 필요한 권한만 허용합니다. 모델·노력 등 기본 설정은 ‘기본 기능’에서 설명한 방식과 같으므로 여기서는 다시 설정할 필요가 없습니다.",
+                                                                "image":  "./guidebook-assets/claude_artifacts_builder.png",
+                                                                "badge":  "요구사항·제작 화면"
+                                                            },
+                                                            {
+                                                                "title":  "완성된 화면을 시험하고 대화로 수정합니다",
+                                                                "body":  "완성되면 채팅 옆 전용 화면에서 결과를 확인합니다. 예시처럼 버튼·입력값·카드를 직접 눌러 동작을 시험하고, 바꿀 내용은 왼쪽 채팅에서 구체적으로 요청합니다. ‘진행률 계산 방식을 바꿔줘’, ‘카드 삭제 전에 확인창을 띄워줘’처럼 위치와 동작을 함께 말하면 수정이 정확해집니다. 공유 또는 게시 전에는 실제 데이터와 권한을 점검합니다. 개인 요금제의 게시 링크는 누구나 열 수 있는 공개 링크가 될 수 있고, Team·Enterprise 공유는 조직 범위와 관리 설정을 따릅니다. 제작 대화에 넣은 첨부 자료가 결과물에 포함될 수 있으므로 민감한 문서는 반드시 제거한 뒤 공유합니다.",
+                                                                "image":  "./guidebook-assets/claude_artifacts_result.png",
+                                                                "badge":  "검토·수정·공유"
+                                                            }
+                                                        ]
                                           },
                                           {
                                               "id":  "claude_feature_04",
@@ -2120,7 +2148,9 @@ window.SERVICE_GUIDES = {
                                       ],
                          "sources":  [
                                          "https://support.anthropic.com/en/articles/8114491-getting-started-with-claude",
-                                         "https://support.anthropic.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them",
+                                         "https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them",
+                                         "https://support.claude.com/en/articles/9547008-publish-and-share-artifacts",
+                                         "https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities",
                                          "https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects",
                                          "https://support.anthropic.com/en/articles/12111783-create-and-edit-files-with-claude",
                                          "https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings",
