@@ -2170,7 +2170,7 @@ window.SERVICE_GUIDES = {
                                                             {
                                                                 "title":  "왼쪽 사이드바에서 사용자 지정을 엽니다",
                                                                 "body":  "Claude 웹의 왼쪽 사이드바에서 ‘사용자 지정’을 클릭합니다. ‘스킬’은 보고서 형식·검토 순서·사내 기준처럼 Claude가 따라야 할 전문 지식과 작업 절차입니다. ‘커넥터’는 Gmail·Google Drive·Slack처럼 외부 서비스의 정보와 동작을 Claude에 연결합니다. ‘플러그인’은 특정 직무나 업무 흐름에 필요한 스킬·커넥터·하위 에이전트 등을 묶은 패키지입니다. 간단한 반복 규칙은 스킬, 계정 데이터 조회·작업은 커넥터, 여러 구성을 함께 배포할 때는 플러그인이 적합합니다.",
-                                                                "image":  "./guidebook-assets/claude_customize_overview.png",
+                                                                "image":  "./guidebook-assets/claude_guide_start.png",
                                                                 "badge":  "세 기능 구분"
                                                             },
                                                             {
@@ -2210,7 +2210,7 @@ window.SERVICE_GUIDES = {
                                                             {
                                                                 "title":  "왼쪽 위 제품 전환 버튼에서 Claude Code를 선택합니다",
                                                                 "body":  "Claude 웹 왼쪽 위의 제품 전환 버튼을 눌러 Claude Code로 바꿉니다. 아이콘 모양은 브라우저나 화면 상태에 따라 다르게 보일 수 있으므로 선택 후 상단에 ‘Claude Code’가 표시되는지 확인합니다. Claude Code는 저장소 전체에서 관련 파일을 찾고, 코드를 만들거나 수정하고, 명령·테스트를 실행해 결과를 확인하는 코딩 에이전트입니다. 간단한 웹 페이지부터 버그 수정, 새 기능, 리팩터링, 테스트·문서 작성, 여러 파일에 걸친 변경과 Git 작업까지 처리할 수 있지만 최종 변경과 보안은 사용자가 검토해야 합니다.",
-                                                                "image":  "./guidebook-assets/claude_code_main.png",
+                                                                "image":  "./guidebook-assets/claude_guide_start.png",
                                                                 "badge":  "제품 전환·개요"
                                                             },
                                                             {
@@ -2252,7 +2252,7 @@ window.SERVICE_GUIDES = {
                                                             {
                                                                 "title":  "왼쪽 사이드바 아래에서 Design을 엽니다",
                                                                 "body":  "Claude 웹의 왼쪽 사이드바 아래에서 ‘Design’을 선택합니다. Claude Design은 현재 베타 기능이며 Pro·Max·Team·Enterprise 요금제에서 제공됩니다. Enterprise에서는 관리자가 기능을 켜야 하므로 메뉴가 없다면 요금제와 조직 설정을 확인합니다. 슬라이드·문서·와이어프레임·UI 시안·인터랙티브 프로토타입처럼 눈으로 확인하고 수정해야 하는 결과물에 적합합니다.",
-                                                                "image":  "./guidebook-assets/claude_design_home.png",
+                                                                "image":  "./guidebook-assets/claude_guide_start.png",
                                                                 "badge":  "진입·개요"
                                                             },
                                                             {
