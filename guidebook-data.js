@@ -2000,8 +2000,8 @@ window.SERVICE_GUIDES = {
                          "url":  "https://claude.ai/new",
                          "tone":  "#f59e0b",
                          "role":  "긴 문서 이해, 글쓰기, 논리 검토, 산출물 구조화에 강한 업무 AI",
-                         "basis":  "2026-08-27",
-                         "guideDate":  "2026-08-27",
+                         "basis":  "2026-08-28",
+                         "guideDate":  "2026-08-28",
                          "overview":  "긴 문서 이해, 논리적 검토, 글쓰기, 구조화된 업무 산출물 제작에 적합하다. Projects와 Artifacts를 활용하면 업무 맥락과 결과물을 함께 관리하기 좋다.",
                          "hero":  "./guidebook-assets/claude_guide_start.png",
                          "features":  [],
@@ -2009,9 +2009,43 @@ window.SERVICE_GUIDES = {
                          "sections":  [
                                           {
                                               "id":  "claude_feature_01",
-                                              "title":  "기능 1",
+                                              "title":  "기본 기능",
                                               "image":  "./guidebook-assets/claude_guide_start.png",
-                                              "placeholder":  true
+                                              "short":  "Claude 웹의 기본 화면에서 모델과 노력 수준을 고르고, 자료·음성 입력 또는 Cowork 작업을 시작합니다.",
+                                              "detail":  "새 대화 입력창을 중심으로 모델·사고 설정, 음성 메뉴, 자료 추가 메뉴, 일반 채팅과 Cowork의 차이를 익히는 시작 가이드입니다.",
+                                              "when":  "Claude 웹을 처음 사용하거나, 요청의 난이도와 자료 형태에 맞춰 대화 방식을 설정해야 할 때 활용합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "Claude 웹 화면 구성을 확인합니다",
+                                                                "body":  "claude.ai의 왼쪽 사이드바에서는 새 대화, 프로젝트, 아티팩트, 예약 작업과 사용자 지정 메뉴를 열 수 있습니다. 중앙 입력창에 요청을 쓰고, 입력창 아래에서 Chat 또는 Cowork를 고릅니다. 왼쪽 메뉴 버튼은 파일·프로젝트·검색 같은 자료와 도구를 추가하고, 오른쪽에서는 모델·노력 수준과 음성 입력을 설정합니다.",
+                                                                "image":  "./guidebook-assets/claude_guide_start.png",
+                                                                "badge":  "화면 구성"
+                                                            },
+                                                            {
+                                                                "title":  "작업에 맞는 모델과 노력 수준을 선택합니다",
+                                                                "body":  "모델 이름을 누르면 모델과 노력 수준을 바꿀 수 있습니다. Fable 5는 가장 어렵고 오래 걸리는 에이전트형 작업용으로 사용량이 매우 크며 유료 플랜·사용 크레딧 조건을 확인해야 합니다. Opus 5는 복잡한 추론·연구·다단계 작업, Sonnet 5는 글쓰기·분석·질의응답 등 대부분의 일상 업무, Haiku 4.5는 빠른 조회·요약 같은 가벼운 작업에 적합합니다. 노력은 낮음·중간이 일반 업무, 높음이 품질과 속도의 균형, 엑스트라·최대가 장시간 코딩이나 정확성이 중요한 고난도 작업용입니다. 높일수록 더 오래 걸리고 사용량도 빨리 소모됩니다. ‘사고’를 켜면 답변 전에 문제를 더 깊게 분석하며, 모델·노력·사고 설정 변경은 다음 답변부터 적용됩니다.",
+                                                                "image":  "./guidebook-assets/claude_basic_model_effort.png",
+                                                                "badge":  "모델·노력"
+                                                            },
+                                                            {
+                                                                "title":  "음성 입력 방식을 선택합니다",
+                                                                "body":  "입력창 오른쪽의 음성 버튼을 누르면 ‘받아쓰기’, ‘음성 모드’, 사용할 ‘마이크’를 선택할 수 있습니다. 받아쓰기는 말한 내용을 글자로 입력하고 Claude는 글로 답합니다. 음성 모드는 사용자가 말하고 Claude의 음성 답변을 듣는 양방향 대화이며, 웹에서 베타로 제공되고 일반 사용 한도에 포함됩니다. 마이크에서는 브라우저가 인식한 입력 장치를 고릅니다. 처음 사용할 때는 브라우저의 마이크 권한을 허용해야 하며, 주변이 조용한 환경에서 사용하는 것이 좋습니다.",
+                                                                "image":  "./guidebook-assets/claude_basic_voice_menu.png",
+                                                                "badge":  "음성 메뉴"
+                                                            },
+                                                            {
+                                                                "title":  "필요한 자료와 도구를 대화에 추가합니다",
+                                                                "body":  "입력창 왼쪽 메뉴에서 ‘파일 또는 사진 추가’로 문서와 이미지를 현재 대화에 첨부하고, ‘스크린샷 캡처하기’로 화면을 캡처해 질문의 시각 자료로 붙입니다. ‘프로젝트에 추가’는 대화를 프로젝트의 자료·지침·기억과 함께 이어갈 때, ‘GitHub에서 추가’는 연결된 저장소의 파일이나 폴더를 코드 맥락으로 가져올 때 사용합니다. ‘연구’는 여러 웹·연결 자료를 단계적으로 조사해 인용이 포함된 긴 보고서를 만들며 유료 플랜과 웹 검색이 필요합니다. ‘웹 검색’은 최신 사실을 빠르게 찾고 출처 링크를 붙일 때 사용합니다. 스킬·커넥터·플러그인은 별도 기능에서 자세히 설명합니다. 회사 자료는 업로드·연결 전에 보안 등급과 이용 권한을 확인합니다.",
+                                                                "image":  "./guidebook-assets/claude_basic_add_menu.png",
+                                                                "badge":  "자료·도구 추가"
+                                                            },
+                                                            {
+                                                                "title":  "대화는 Chat, 실행이 필요한 작업은 Cowork를 선택합니다",
+                                                                "body":  "Chat은 질문, 요약, 글쓰기처럼 대화를 주고받는 일반 모드입니다. Cowork는 복잡한 요청을 계획하고 여러 단계를 나누어 조사·문서 제작 같은 작업을 대신 수행하는 에이전트형 모드이며, 웹에서는 Pro·Max·Team 플랜에서 사용할 수 있고 Enterprise는 관리자 활성화가 필요합니다. 클라우드 작업은 창을 닫아도 계속될 수 있지만, 웹에서 로컬 PC 파일이나 브라우저를 직접 다루려면 별도의 데스크톱 연결이 필요합니다. 승인 방식은 ‘수동 승인’을 기본으로 권장합니다. ‘자동 승인’은 Claude가 동작을 안전성 검사해 진행하거나 차단하고, ‘모든 승인 건너뛰기’는 자동 검사 없이 진행하므로 신뢰할 수 있는 작업에서만 사용합니다. 중요한 파일·메시지·결제와 관련된 작업은 항상 실행 내용을 확인합니다.",
+                                                                "image":  "./guidebook-assets/claude_basic_cowork.png",
+                                                                "badge":  "Chat·Cowork"
+                                                            }
+                                                        ]
                                           },
                                           {
                                               "id":  "claude_feature_02",
@@ -2072,7 +2106,15 @@ window.SERVICE_GUIDES = {
                                          "https://support.anthropic.com/en/articles/8114491-getting-started-with-claude",
                                          "https://support.anthropic.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them",
                                          "https://support.anthropic.com/en/articles/9517075-what-are-projects",
-                                         "https://support.anthropic.com/en/articles/12111783-create-and-edit-files-with-claude"
+                                         "https://support.anthropic.com/en/articles/12111783-create-and-edit-files-with-claude",
+                                         "https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings",
+                                         "https://support.claude.com/en/articles/14782391-claude-enterprise-consumption-guide",
+                                         "https://support.claude.com/en/articles/11101966-use-voice-mode",
+                                         "https://support.claude.com/en/articles/8241126-upload-files-to-claude",
+                                         "https://support.claude.com/en/articles/10167454-use-the-github-integration",
+                                         "https://support.claude.com/en/articles/11088861-use-research-on-claude",
+                                         "https://support.claude.com/en/articles/10684626-enable-and-use-web-search",
+                                         "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork"
                                      ]
                      },
                      {
