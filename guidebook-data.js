@@ -2105,9 +2105,37 @@ window.SERVICE_GUIDES = {
                                           },
                                           {
                                               "id":  "claude_feature_04",
-                                              "title":  "기능 4",
-                                              "image":  "./guidebook-assets/claude_guide_start.png",
-                                              "placeholder":  true
+                                              "title":  "예정된 작업",
+                                              "image":  "./guidebook-assets/claude_scheduled_list.png",
+                                              "short":  "반복하거나 나중에 실행할 Cowork 작업을 한 번 설정해 두고 정해진 시간 또는 필요할 때 실행합니다.",
+                                              "detail":  "예정된 작업은 저장한 지침을 바탕으로 브리핑·보고서·모니터링·자료 정리 같은 업무를 자동 실행하는 기능입니다. 연결한 도구와 계정 자료를 활용할 수 있고, 실행 결과는 각각 별도의 Cowork 작업으로 남습니다.",
+                                              "when":  "매일 확인하는 메일·일정, 주간 보고서, 정기적인 뉴스·경쟁사 모니터링처럼 같은 목적의 작업을 계속 다시 요청하고 있을 때 사용합니다.",
+                                              "steps":  [
+                                                            {
+                                                                "title":  "왼쪽 사이드바에서 예정된 작업을 엽니다",
+                                                                "body":  "Claude 웹의 왼쪽 사이드바에서 ‘예정됨’을 클릭합니다. 이 기능은 한 번 저장한 Cowork 지침을 매시간·매일·매주·평일마다 실행하거나, 자동 일정 없이 필요할 때 수동 실행하도록 만드는 기능입니다. 클라우드에서 실행되는 작업은 컴퓨터가 꺼져 있어도 일정에 맞춰 진행됩니다. 유료 요금제의 Cowork에서 제공되며, 웹 Cowork가 아직 계정에 배포되지 않았거나 조직 관리자가 비활성화한 경우 메뉴가 보이지 않을 수 있습니다.",
+                                                                "image":  "./guidebook-assets/claude_guide_start.png",
+                                                                "badge":  "기능 열기"
+                                                            },
+                                                            {
+                                                                "title":  "예약 목록과 템플릿을 확인합니다",
+                                                                "body":  "위쪽에는 만든 작업과 실행 상태가 표시되고, 각 작업을 열면 예정된 실행과 지난 결과를 확인하거나 지침·주기를 수정하고 일시중지·재개·삭제·즉시 실행할 수 있습니다. ‘정렬 기준 다음 실행’은 다음 실행 예정 시각이 가까운 작업부터 정렬한다는 뜻입니다. 아래의 일일 브리핑, 받은 편지함 분류, 회의 준비, 주간 리뷰, 콘텐츠 아이디어, 주제 모니터링은 빠르게 시작할 수 있는 템플릿입니다. 그대로 사용하기보다 데이터 출처와 결과 형식을 확인해 수정합니다. 원하는 양식이 없으면 오른쪽 위 ‘새 작업’을 누릅니다.",
+                                                                "image":  "./guidebook-assets/claude_scheduled_list.png",
+                                                                "badge":  "목록·템플릿"
+                                                            },
+                                                            {
+                                                                "title":  "필요한 값을 직접 입력해 만듭니다",
+                                                                "body":  "‘새 작업’에서 직접 만들기를 선택하고 이름과 지침을 입력합니다. 지침에는 무엇을 할지뿐 아니라 확인할 위치, 대상 기간, 결과 형식과 제외 조건까지 적습니다. 각 실행은 별도의 새 Cowork 작업으로 시작하므로 설정할 때 나눈 대화는 기억하지 않는다고 보고 지침만 읽어도 실행할 수 있게 작성합니다. 필요하면 작업할 프로젝트와 모델을 선택하고, 빈도에서 매시간·매일·매주·평일 또는 수동 실행을 정합니다. ‘수동’은 자동 예약 없이 사용자가 실행할 때만 작동합니다. 권한은 민감한 계정이나 쓰기 작업이 있으면 ‘수동 승인’을 권장합니다. 내용을 확인한 뒤 ‘저장’을 누릅니다.",
+                                                                "image":  "./guidebook-assets/claude_scheduled_manual.png",
+                                                                "badge":  "직접 만들기"
+                                                            },
+                                                            {
+                                                                "title":  "Claude의 질문에 답하며 만듭니다",
+                                                                "body":  "‘새 작업’에서 Claude와 만들기를 선택하면 예약 작업용 대화가 열립니다. 반복 보고·모니터링·정기 문서 등 작업 종류, 사용할 자료, 실행 시각, 출력 형태에 관한 질문에 선택지 또는 직접 입력으로 답합니다. Gmail·Notion·Linear처럼 외부 자료가 필요하면 오른쪽에서 해당 커넥터만 연결하고 권한 범위를 확인합니다. 정보가 모이면 Claude가 작업 이름·지침·실행 주기를 정리해 보여주므로 틀린 부분을 고친 뒤 마지막 ‘예약’ 확인을 눌러 등록합니다. 처음에는 요약·조회처럼 되돌리기 쉬운 작업으로 시험하고, 실행 결과를 확인한 뒤 자동 권한을 넓힙니다. 메시지 전송·삭제·결제처럼 영향이 큰 행동은 무인 예약 작업으로 두지 않습니다.",
+                                                                "image":  "./guidebook-assets/claude_scheduled_with_claude.png",
+                                                                "badge":  "Claude와 만들기"
+                                                            }
+                                                        ]
                                           },
                                           {
                                               "id":  "claude_feature_05",
@@ -2161,6 +2189,9 @@ window.SERVICE_GUIDES = {
                                          "https://support.claude.com/en/articles/11088861-use-research-on-claude",
                                          "https://support.claude.com/en/articles/10684626-enable-and-use-web-search",
                                          "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork",
+                                         "https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork",
+                                         "https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile",
+                                         "https://support.claude.com/en/articles/13364135-use-claude-cowork-safely",
                                          "https://support.claude.com/en/articles/11473015-retrieval-augmented-generation-rag-for-projects",
                                          "https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context"
                                      ]
