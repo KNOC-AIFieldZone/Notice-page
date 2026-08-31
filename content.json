@@ -176,6 +176,60 @@
                              ],
     "news":  [
                  {
+                     "service":  "Cloudflare",
+                     "title":  "AI Search에서 GLM-5.3 Flash 지원",
+                     "date":  "2026-08-30",
+                     "file":  "2026-08-30-cloudflare-ai-search-glm-53-flash.html"
+                 },
+                 {
+                     "service":  "xAI",
+                     "title":  "Grok Bot X 연동 공개",
+                     "date":  "2026-08-29",
+                     "file":  "2026-08-29-xai-grok-bot-x-integration.html"
+                 },
+                 {
+                     "service":  "Claude",
+                     "title":  "학교·교육청용 Claude for Teachers 공개",
+                     "date":  "2026-08-28",
+                     "file":  "2026-08-28-claude-for-teachers-schools-districts.html"
+                 },
+                 {
+                     "service":  "Cloudflare",
+                     "title":  "Workers AI에서 GLM-5.3 제공",
+                     "date":  "2026-08-28",
+                     "file":  "2026-08-28-cloudflare-workers-ai-glm-53.html"
+                 },
+                 {
+                     "service":  "Adobe",
+                     "title":  "Photoshop 27.10 AI Assisted 편집 도구 추가",
+                     "date":  "2026-08-28",
+                     "file":  "2026-08-28-adobe-photoshop-ai-assisted-editor.html"
+                 },
+                 {
+                     "service":  "Tencent",
+                     "title":  "Hy4 Preview 공개 및 오픈소스화",
+                     "date":  "2026-08-28",
+                     "file":  "2026-08-28-tencent-hunyuan-hy4-preview-open-source.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Google Drive Gemini 데이터 분류 오픈 베타",
+                     "date":  "2026-08-28",
+                     "file":  "2026-08-28-gemini-drive-data-classification-open-beta.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Gemini Notebook 유연한 사용량 한도 도입",
+                     "date":  "2026-08-28",
+                     "file":  "2026-08-28-gemini-notebook-flexible-usage-limits.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "Cursor 내 OpenAI 모델 지원 종료 예정",
+                     "date":  "2026-08-28",
+                     "file":  "2026-08-28-openai-cursor-model-support-end.html"
+                 },
+                 {
                      "service":  "Harvey",
                      "title":  "Harvey Memory 공개",
                      "date":  "2026-08-26",
@@ -2446,6 +2500,18 @@
                                {
                                    "name":  "Cohere",
                                    "color":  "#256f5b"
+                               },
+                               {
+                                   "name":  "Tencent",
+                                   "color":  "#0052d9"
+                               },
+                               {
+                                   "name":  "Adobe",
+                                   "color":  "#31a8ff"
+                               },
+                               {
+                                   "name":  "Cloudflare",
+                                   "color":  "#f6821f"
                                }
                            ]
 }
