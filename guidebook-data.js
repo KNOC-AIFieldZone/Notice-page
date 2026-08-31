@@ -2630,92 +2630,76 @@ window.SERVICE_GUIDES = {
                          "domain":  "manus.im",
                          "url":  "https://manus.im/",
                          "tone":  "#fb7185",
-                         "role":  "조사부터 슬라이드, 웹 작업까지 실행하는 에이전트형 AI",
-                         "basis":  "2026-08-14",
-                         "overview":  "단순 답변보다 실제 작업 실행과 결과물 생성이 필요할 때 적합하다. 조사, 슬라이드, 웹사이트, 디자인, 브라우저 작업, 반복 업무 실행에 강한 에이전트형 AI다.",
-                         "hero":  "./guidebook-assets/manus_home.png",
-                         "features":  [
-                                          "업무 실행 대행",
-                                          "자료 조사",
-                                          "발표자료 제작",
-                                          "웹사이트 제작",
-                                          "디자인 시안",
-                                          "이미지·음악 제작",
-                                          "브라우저 작업",
-                                          "메일 업무",
-                                          "반복 작업 예약"
-                                      ],
-                         "tips":  [
-                                      "먼저 업무 목표와 원하는 결과물 형식을 정한다.",
-                                      "입력 자료가 있으면 파일, 링크, 이미지, 오디오 등으로 함께 넣는다.",
-                                      "AI 결과는 초안으로 보고, 사실/숫자/권리/보안은 직접 확인한다."
-                                  ],
+                         "role":  "",
+                         "basis":  "2026-08-31",
+                         "guideDate":  "2026-08-31",
+                         "overview":  "",
+                         "hero":  "./guidebook-assets/manus_guide_start.png",
+                         "features":  [],
+                         "tips":  [],
                          "sections":  [
                                           {
-                                              "title":  "Chat Mode",
-                                              "image":  "./guidebook-assets/manus_home.png",
-                                              "location":  "간단한 질문이나 빠른 답변은 Chat Mode에서 입력한다.",
-                                              "when":  "짧은 설명, 아이디어, 문장 정리에 쓴다.",
-                                              "how":  "복합 업무는 Agent Mode로 넘긴다."
+                                              "id":  "manus_feature_01",
+                                              "title":  "기능 1",
+                                              "image":  "./guidebook-assets/manus_guide_start.png",
+                                              "placeholder":  true
                                           },
                                           {
-                                              "title":  "Agent Mode",
-                                              "image":  "./guidebook-assets/manus_home.png",
-                                              "location":  "목표를 입력하면 Manus가 계획을 세우고 실행한다.",
-                                              "when":  "조사, 작성, 디자인, 웹 작업이 섞인 업무에 쓴다.",
-                                              "how":  "실행 전 계획과 중간 결과를 확인한다."
+                                              "id":  "manus_feature_02",
+                                              "title":  "기능 2",
+                                              "image":  "./guidebook-assets/manus_guide_start.png",
+                                              "placeholder":  true
                                           },
                                           {
-                                              "title":  "AI Slides",
-                                              "image":  "./guidebook-assets/manus_slides.png",
-                                              "location":  "주제를 입력하면 조사, 구성, 디자인을 거쳐 슬라이드를 만든다.",
-                                              "when":  "제안서, 교육자료, 발표 초안 제작에 쓴다.",
-                                              "how":  "핵심 메시지와 근거를 검토한다."
+                                              "id":  "manus_feature_03",
+                                              "title":  "기능 3",
+                                              "image":  "./guidebook-assets/manus_guide_start.png",
+                                              "placeholder":  true
                                           },
                                           {
-                                              "title":  "AI Website Generator",
-                                              "image":  "./guidebook-assets/manus_home.png",
-                                              "location":  "웹사이트 목적, 대상, 필요한 섹션을 입력한다.",
-                                              "when":  "내부 공유용 페이지, 캠페인 랜딩 초안, 프로토타입 제작에 쓴다.",
-                                              "how":  "회사 배포 전 보안과 브랜드 검토가 필요하다."
+                                              "id":  "manus_feature_04",
+                                              "title":  "기능 4",
+                                              "image":  "./guidebook-assets/manus_guide_start.png",
+                                              "placeholder":  true
                                           },
                                           {
-                                              "title":  "AI Design/Image/Music",
-                                              "image":  "./guidebook-assets/manus_home.png",
-                                              "location":  "디자인, 이미지, 음악의 용도와 스타일을 입력한다.",
-                                              "when":  "시각 시안, 콘텐츠 초안, 발표 보조 자료에 쓴다.",
-                                              "how":  "외부 공개 전 권리와 품질을 확인한다."
+                                              "id":  "manus_feature_05",
+                                              "title":  "기능 5",
+                                              "image":  "./guidebook-assets/manus_guide_start.png",
+                                              "placeholder":  true
                                           },
                                           {
-                                              "title":  "Browser Operator",
-                                              "image":  "./guidebook-assets/manus_home.png",
-                                              "location":  "브라우저 작업을 맡길 때 목적과 접근할 사이트를 명확히 지정한다.",
-                                              "when":  "반복 조회, 양식 확인, 웹 기반 자료 수집 보조에 쓴다.",
-                                              "how":  "로그인 계정, 개인정보, 외부 제출 작업은 회사 승인 기준을 따른다."
+                                              "id":  "manus_feature_06",
+                                              "title":  "기능 6",
+                                              "image":  "./guidebook-assets/manus_guide_start.png",
+                                              "placeholder":  true
                                           },
                                           {
-                                              "title":  "Wide Research",
-                                              "image":  "./guidebook-assets/manus_home.png",
-                                              "location":  "넓은 범위의 조사 주제와 결과 형식을 지정한다.",
-                                              "when":  "시장/기술/경쟁사 리서치처럼 많은 자료가 필요한 업무에 쓴다.",
-                                              "how":  "출처와 조사 범위를 확인한다."
+                                              "id":  "manus_feature_07",
+                                              "title":  "기능 7",
+                                              "image":  "./guidebook-assets/manus_guide_start.png",
+                                              "placeholder":  true
                                           },
                                           {
-                                              "title":  "Mail/Slack/Desktop",
-                                              "image":  "./guidebook-assets/manus_home.png",
-                                              "location":  "메일, Slack, Desktop/My Computer 연결 기능은 필요한 업무에서만 사용한다.",
-                                              "when":  "팀 협업, 로컬 파일 활용, 반복 업무 지시에 쓴다.",
-                                              "how":  "연결 전에 회사 계정 보안 기준을 확인한다."
+                                              "id":  "manus_feature_08",
+                                              "title":  "기능 8",
+                                              "image":  "./guidebook-assets/manus_guide_start.png",
+                                              "placeholder":  true
+                                          },
+                                          {
+                                              "id":  "manus_feature_09",
+                                              "title":  "기능 9",
+                                              "image":  "./guidebook-assets/manus_guide_start.png",
+                                              "placeholder":  true
+                                          },
+                                          {
+                                              "id":  "manus_feature_10",
+                                              "title":  "기능 10",
+                                              "image":  "./guidebook-assets/manus_guide_start.png",
+                                              "placeholder":  true
                                           }
                                       ],
-                         "sources":  [
-                                         "https://manus.im/",
-                                         "https://manus.im/docs/introduction/welcome",
-                                         "https://help.manus.im/en/articles/11711128-what-are-the-differences-between-chat-mode-and-agent-mode",
-                                         "https://manus.im/playbook/slide-generator",
-                                         "https://manus.im/features/manus-browser-operator",
-                                         "https://manus.im/blog/introducing-wide-research"
-                                     ]
+                         "sources":  []
                      },
                      {
                          "id":  "elevenlabs",
