@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>로그인 가이드 | AI Field</title>
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" type="image/png" href="./asset/ai-field-icon.png" />
+  <link rel="shortcut icon" type="image/png" href="./asset/ai-field-icon.png" />
+  <link rel="apple-touch-icon" href="./asset/ai-field-icon.png" />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:rgba(255,255,255,.06);
+      --panel2:rgba(255,255,255,.09);
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.68);
+      --line:rgba(255,255,255,.14);
+      --field:rgba(2,6,23,.28);
+      --accent:#5eead4;
+      --accent2:rgba(94,234,212,.14);
+      --danger:#fb7185;
+      --danger2:rgba(251,113,133,.13);
+      --warn:#fbbf24;
+      --shadow:0 18px 55px rgba(0,0,0,.35);
+      --radius:18px;
+      --radius2:14px;
+      --font:system-ui,-apple-system,Segoe UI,Roboto,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+    }
+    @media (prefers-color-scheme:light){
+      :root{
+        --bg:#f6f7fb;
+        --panel:rgba(255,255,255,.78);
+        --panel2:#fff;
+        --text:rgba(17,24,39,.92);
+        --muted:rgba(17,24,39,.62);
+        --line:rgba(17,24,39,.12);
+        --field:rgba(248,250,252,.88);
+        --danger2:rgba(225,29,72,.08);
+        --shadow:0 18px 55px rgba(17,24,39,.12);
+      }
+    }
+    *{box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{
+      margin:0;
+      min-height:100vh;
+      color:var(--text);
+      font-family:var(--font);
+      background:
+        radial-gradient(900px 480px at 12% 0%, rgba(94,234,212,.14), transparent 60%),
+        radial-gradient(780px 420px at 90% 5%, rgba(251,191,36,.10), transparent 60%),
+        var(--bg);
+    }
+    a{color:inherit;}
+    button,input{font:inherit;}
+    .wrap{max-width:1240px;margin:0 auto;padding:26px 34px 38px;}
+    header{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:18px;
+      padding:6px 2px 18px;
+    }
+    .brand{min-width:0;}
+    .brandline{display:flex;align-items:center;gap:12px;min-width:0;}
+    .brandlogo{width:252px;height:auto;max-height:48px;object-fit:contain;flex:0 0 auto;}
+    .sub{margin-top:7px;color:var(--muted);font-size:13px;line-height:1.45;}
+    .actions{display:flex;align-items:center;justify-content:flex-end;gap:9px;flex-wrap:wrap;}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:36px;
+      padding:8px 12px;
+      border:1px solid var(--line);
+      border-radius:11px;
+      background:var(--panel);
+      color:var(--text);
+      font-size:13px;
+      font-weight:800;
+      text-decoration:none;
+      cursor:pointer;
+      transition:background .15s ease,border-color .15s ease,transform .05s ease;
+    }
+    .btn:hover{background:var(--panel2);border-color:rgba(94,234,212,.38);}
+    .btn:active{transform:translateY(1px);}
+    .btn.primary{background:var(--accent2);border-color:rgba(94,234,212,.34);}
+    .btn.danger{background:rgba(251,113,133,.16);border-color:rgba(251,113,133,.42);}
+
+    .urgent{
+      display:grid;
+      grid-template-columns:auto 1fr auto;
+      align-items:center;
+      gap:14px;
+      margin-bottom:14px;
+      padding:15px 16px;
+      border:1px solid rgba(251,113,133,.48);
+      border-radius:var(--radius);
+      background:var(--danger2);
+      box-shadow:0 14px 34px rgba(127,29,29,.12);
+    }
+    .urgent-icon{
+      width:42px;height:42px;border-radius:13px;
+      display:grid;place-items:center;
+      color:#fff;background:linear-gradient(145deg,#fb7185,#e11d48);
+      font-size:22px;font-weight:950;
+      box-shadow:0 8px 20px rgba(225,29,72,.24);
+    }
+    .urgent-title{font-size:16px;font-weight:950;letter-spacing:-.02em;}
+    .urgent-copy{margin-top:4px;color:var(--muted);font-size:13px;line-height:1.5;}
+    .urgent-copy strong{color:var(--text);font-weight:950;}
+
+    .quick-guide{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:10px;
+      margin-bottom:14px;
+    }
+    .quick-item{
+      display:flex;align-items:flex-start;gap:10px;
+      padding:12px 13px;
+      border:1px solid var(--line);
+      border-radius:var(--radius2);
+      background:var(--panel);
+    }
+    .quick-num{
+      width:26px;height:26px;border-radius:9px;display:grid;place-items:center;flex:0 0 auto;
+      background:var(--accent2);border:1px solid rgba(94,234,212,.32);font-size:12px;font-weight:950;
+    }
+    .quick-title{font-size:13px;font-weight:900;}
+    .quick-copy{margin-top:3px;color:var(--muted);font-size:12px;line-height:1.45;}
+
+    .panel{
+      overflow:hidden;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:var(--panel);
+      box-shadow:var(--shadow);
+    }
+    .panel-hd{
+      display:flex;align-items:flex-start;justify-content:space-between;gap:12px;
+      padding:16px;
+      border-bottom:1px solid var(--line);
+    }
+    .panel-title{margin:0;font-size:18px;font-weight:950;letter-spacing:-.025em;}
+    .panel-meta{margin-top:5px;color:var(--muted);font-size:12px;line-height:1.45;}
+    .count{
+      flex:0 0 auto;padding:5px 10px;border:1px solid var(--line);border-radius:999px;
+      background:var(--field);font-size:12px;font-weight:900;
+    }
+    .panel-bd{padding:16px;}
+    .service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;}
+    .service-card{
+      position:relative;
+      display:flex;align-items:center;gap:13px;
+      min-height:104px;padding:13px;
+      color:var(--text);text-decoration:none;
+      border:1px solid var(--line);border-radius:16px;background:var(--field);
+      transition:transform .15s ease,border-color .15s ease,background .15s ease,box-shadow .15s ease;
+    }
+    .service-card:hover{
+      transform:translateY(-2px);
+      border-color:rgba(94,234,212,.46);
+      background:var(--panel2);
+      box-shadow:0 16px 30px rgba(0,0,0,.16);
+    }
+    .service-icon{
+      width:66px;height:66px;display:grid;place-items:center;flex:0 0 auto;
+      overflow:hidden;border:1px solid var(--line);border-radius:18px;background:#fff;
+    }
+    .service-icon img{width:46px;height:46px;display:block;object-fit:contain;}
+    .service-icon .fallback{font-size:22px;font-weight:950;color:#0f172a;}
+    .service-copy{min-width:0;}
+    .service-name{display:block;font-size:15px;font-weight:950;letter-spacing:-.01em;}
+    .service-desc{display:block;margin-top:4px;color:var(--muted);font-size:12px;line-height:1.4;}
+    .status{
+      display:inline-flex;margin-top:7px;padding:4px 8px;border-radius:999px;
+      color:var(--text);background:rgba(251,191,36,.13);border:1px solid rgba(251,191,36,.32);
+      font-size:10px;font-weight:900;
+    }
+    .arrow{position:absolute;right:12px;top:12px;color:var(--muted);font-size:17px;font-weight:900;}
+
+    .detail-head{display:flex;align-items:center;gap:14px;min-width:0;}
+    .detail-name{margin:0;font-size:22px;font-weight:950;letter-spacing:-.025em;}
+    .detail-desc{margin-top:5px;color:var(--muted);font-size:13px;}
+    .detail-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;}
+    .detail-body{padding:16px;}
+    .empty{
+      display:grid;place-items:center;text-align:center;min-height:280px;padding:34px 20px;
+      border:1px dashed rgba(148,163,184,.42);border-radius:16px;background:var(--field);
+    }
+    .empty-mark{
+      width:64px;height:64px;display:grid;place-items:center;margin:0 auto 14px;
+      border:1px solid rgba(94,234,212,.34);border-radius:20px;background:var(--accent2);
+      font-size:27px;
+    }
+    .empty-title{font-size:17px;font-weight:950;}
+    .empty-copy{max-width:520px;margin:7px auto 0;color:var(--muted);font-size:13px;line-height:1.6;}
+    .step-list{display:grid;gap:13px;}
+    .step{
+      display:grid;grid-template-columns:minmax(260px,.85fr) minmax(0,1.15fr);gap:15px;
+      padding:14px;border:1px solid var(--line);border-radius:16px;background:var(--field);
+    }
+    .step-shot{
+      min-height:210px;overflow:hidden;display:grid;place-items:center;
+      border:1px solid var(--line);border-radius:13px;background:#fff;
+    }
+    .step-shot img{display:block;width:100%;height:100%;max-height:420px;object-fit:contain;}
+    .step-no{color:var(--accent);font-size:11px;font-weight:950;letter-spacing:.08em;}
+    .step-title{margin:6px 0 0;font-size:17px;font-weight:950;}
+    .step-copy{margin:9px 0 0;color:var(--muted);font-size:13px;line-height:1.65;}
+    .safety-note{
+      margin-top:13px;padding:12px 13px;border-radius:13px;
+      border:1px solid rgba(251,113,133,.34);background:var(--danger2);
+      font-size:12px;font-weight:800;line-height:1.5;
+    }
+    footer{
+      display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;
+      padding:16px 2px 0;color:var(--muted);font-size:12px;
+    }
+
+    @media(max-width:920px){
+      header{align-items:flex-start;flex-direction:column;}
+      .actions{justify-content:flex-start;}
+      .service-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+      .step{grid-template-columns:1fr;}
+    }
+    @media(max-width:640px){
+      .wrap{padding:20px 16px 28px;}
+      .brandlogo{width:min(252px,72vw);}
+      .urgent{grid-template-columns:auto 1fr;}
+      .urgent .btn{grid-column:1 / -1;width:100%;}
+      .quick-guide,.service-grid{grid-template-columns:1fr;}
+      .panel-hd{align-items:flex-start;flex-direction:column;}
+      .detail-actions{justify-content:flex-start;}
+      .service-card{min-height:96px;}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto;}
+      .btn,.service-card{transition:none!important;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="brandline">
+          <img class="brandlogo" src="./asset/ai-field-lockup-v2.png" alt="KNOC AI Field">
+        </div>
+        <div class="sub">AI 서비스별 로그인 복구 방법을 화면 순서대로 안내합니다.</div>
+      </div>
+      <nav class="actions" aria-label="주요 메뉴">
+        <a class="btn" href="./index.html">AI Field</a>
+        <a class="btn" href="./help.html">도움말</a>
+        <a class="btn" href="./guidebooks.html">서비스 가이드북</a>
+        <a class="btn" href="./prompts.html">프롬프트 예시</a>
+        <a class="btn primary" href="./login-guide.html">로그인 안내</a>
+      </nav>
+    </header>
+
+    <section class="urgent" aria-labelledby="passwordHelpTitle">
+      <div class="urgent-icon" aria-hidden="true">!</div>
+      <div>
+        <div class="urgent-title" id="passwordHelpTitle">비밀번호 입력 화면이 나오면 진행을 멈춰 주세요.</div>
+        <div class="urgent-copy">로그인 시도 중 비밀번호를 입력하라는 화면이 나타나면 직접 입력하지 말고 <strong>2526으로 전화해 주세요.</strong></div>
+      </div>
+      <a class="btn danger" href="tel:2526">2526 전화</a>
+    </section>
+
+    <section class="quick-guide" aria-label="로그인 가이드 이용 순서">
+      <div class="quick-item">
+        <span class="quick-num">1</span>
+        <div><div class="quick-title">서비스 선택</div><div class="quick-copy">로그인이 풀린 AI 서비스를 선택합니다.</div></div>
+      </div>
+      <div class="quick-item">
+        <span class="quick-num">2</span>
+        <div><div class="quick-title">화면 순서 확인</div><div class="quick-copy">첨부된 화면과 설명을 위에서부터 따라갑니다.</div></div>
+      </div>
+      <div class="quick-item">
+        <span class="quick-num">3</span>
+        <div><div class="quick-title">비밀번호 화면은 중단</div><div class="quick-copy">비밀번호 입력이 필요하면 2526으로 연락합니다.</div></div>
+      </div>
+    </section>
+
+    <main id="app"></main>
+
+    <footer>
+      <span>AI Field 로그인 가이드</span>
+      <span id="updatedAt"></span>
+    </footer>
+  </div>
+
+  <script src="./login-guide-data.js?v=20260901-1"></script>
+  <script>
+    const data = window.LOGIN_GUIDES || { helpNumber:"2526", services:[] };
+    const app = document.querySelector("#app");
+
+    function esc(value){
+      return String(value ?? "").replace(/[&<>"']/g, (ch) => ({
+        "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
+      }[ch]));
+    }
+
+    function iconUrl(service){
+      if(service.icon) return service.icon;
+      return `https://www.google.com/s2/favicons?domain=${encodeURIComponent(service.domain || "")}&sz=128`;
+    }
+
+    function iconMarkup(service, className = "service-icon"){
+      const initial = String(service.name || "?").trim().slice(0, 1).toUpperCase();
+      return `<span class="${className}"><img src="${esc(iconUrl(service))}" alt="" loading="lazy" referrerpolicy="no-referrer" data-fallback="${esc(initial)}"></span>`;
+    }
+
+    function attachIconFallbacks(){
+      document.querySelectorAll("img[data-fallback]").forEach((img) => {
+        img.addEventListener("error", () => {
+          const holder = img.parentElement;
+          if(!holder) return;
+          holder.innerHTML = `<span class="fallback">${esc(img.dataset.fallback || "?")}</span>`;
+        }, { once:true });
+      });
+    }
+
+    function serviceLink(service){
+      return `./login-guide.html?service=${encodeURIComponent(service.id)}`;
+    }
+
+    function renderList(){
+      const cards = data.services.map((service) => `
+        <a class="service-card" href="${serviceLink(service)}">
+          ${iconMarkup(service)}
+          <span class="service-copy">
+            <span class="service-name">${esc(service.name)}</span>
+            <span class="service-desc">${esc(service.description || "로그인 화면 안내")}</span>
+            <span class="status">사진 추가 예정</span>
+          </span>
+          <span class="arrow" aria-hidden="true">›</span>
+        </a>
+      `).join("");
+
+      app.innerHTML = `
+        <section class="panel" aria-labelledby="serviceListTitle">
+          <div class="panel-hd">
+            <div>
+              <h1 class="panel-title" id="serviceListTitle">로그인할 서비스를 선택하세요</h1>
+              <div class="panel-meta">서비스를 선택하면 해당 서비스의 로그인 화면 안내로 이동합니다.</div>
+            </div>
+            <span class="count">${data.services.length}개</span>
+          </div>
+          <div class="panel-bd"><div class="service-grid">${cards}</div></div>
+        </section>
+      `;
+      attachIconFallbacks();
+    }
+
+    function renderSteps(service){
+      if(!Array.isArray(service.steps) || !service.steps.length){
+        return `
+          <div class="empty">
+            <div>
+              <div class="empty-mark" aria-hidden="true">▧</div>
+              <div class="empty-title">로그인 화면 안내 준비 중</div>
+              <div class="empty-copy">이 서비스의 로그인 화면 사진을 추가하면서 순서별 안내를 완성할 예정입니다. 안내가 등록되기 전 비밀번호 입력 화면이 나타나면 2526으로 전화해 주세요.</div>
+            </div>
+          </div>
+        `;
+      }
+
+      return `<div class="step-list">${service.steps.map((step, index) => `
+        <article class="step">
+          <div class="step-shot">
+            ${step.image ? `<img src="${esc(step.image)}" alt="${esc(service.name)} 로그인 단계 ${index + 1}">` : `<span class="fallback">사진 추가 예정</span>`}
+          </div>
+          <div>
+            <div class="step-no">STEP ${index + 1}</div>
+            <h2 class="step-title">${esc(step.title || `로그인 단계 ${index + 1}`)}</h2>
+            <p class="step-copy">${esc(step.body || "화면 설명을 추가할 예정입니다.")}</p>
+            ${step.warning ? `<div class="safety-note">${esc(step.warning)}</div>` : ""}
+          </div>
+        </article>
+      `).join("")}</div>`;
+    }
+
+    function renderDetail(service){
+      app.innerHTML = `
+        <section class="panel" aria-labelledby="detailTitle">
+          <div class="panel-hd">
+            <div class="detail-head">
+              ${iconMarkup(service)}
+              <div>
+                <h1 class="detail-name" id="detailTitle">${esc(service.name)} 로그인 가이드</h1>
+                <div class="detail-desc">화면을 위에서부터 순서대로 확인해 주세요.</div>
+              </div>
+            </div>
+            <div class="detail-actions">
+              <a class="btn" href="./login-guide.html">목록으로</a>
+              <a class="btn primary" href="${esc(service.url)}" target="_blank" rel="noopener">${esc(service.name)} 열기</a>
+            </div>
+          </div>
+          <div class="detail-body">
+            ${renderSteps(service)}
+            <div class="safety-note">중요: 로그인 과정에서 비밀번호를 입력하라는 화면이 나타나면 직접 입력하지 말고 ${esc(data.helpNumber || "2526")}으로 전화해 주세요.</div>
+          </div>
+        </section>
+      `;
+      attachIconFallbacks();
+    }
+
+    const serviceId = new URLSearchParams(location.search).get("service") || "";
+    const selectedService = data.services.find((service) => service.id === serviceId);
+    if(selectedService) renderDetail(selectedService);
+    else renderList();
+
+    document.querySelector("#updatedAt").textContent = data.updatedAt ? `구성일: ${data.updatedAt}` : "";
+  </script>
+</body>
+</html>

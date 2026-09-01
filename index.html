@@ -111,16 +111,6 @@
       flex: 0 0 auto;
     }
 
-    .pill{
-      font-size: 12px;
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: rgba(94,234,212,.14);
-      border: 1px solid rgba(94,234,212,.28);
-      color: var(--text);
-      font-weight: 700;
-      flex: 0 0 auto;
-    }
     .sub{
       color: var(--muted);
       font-size: 13px;
@@ -690,7 +680,6 @@
       <div class="brand">
         <div class="brandline">
           <img class="brandlogo" src="./asset/ai-field-lockup-v2.png" alt="KNOC AI Field">
-          <span class="pill" id="nowPill">로딩중…</span>
         </div>
         <div class="sub">
           좌측은 <b>구독 서비스</b>, 우측은 <b>공지 사항</b>과 <b>AI Update News</b>입니다.
@@ -699,6 +688,7 @@
 
       <div class="top-actions">
         <a class="btn" href="./admin.html" target="_blank" rel="noopener">관리자</a>
+        <a class="btn" href="./help.html">도움말 <span class="badge beta">beta</span></a>
         <a class="btn" href="./guidebooks.html">서비스 가이드북</a>
         <a class="btn" href="./prompts.html">프롬프트 예시</a>
         <a class="btn primary" href="https://www.google.com/" target="_blank" rel="noopener">Google</a>
@@ -1264,7 +1254,6 @@
     }
 
     function renderHeader(){
-      $("#nowPill").textContent = fmtNow();
       $("#renderAt").textContent = fmtNow();
     }
 
@@ -1378,9 +1367,6 @@
       renderNews();
       setModalNavState(-1, []);
 
-      setInterval(() => {
-        $("#nowPill").textContent = fmtNow();
-      }, 60 * 1000);
     })();
   </script>
 </body>

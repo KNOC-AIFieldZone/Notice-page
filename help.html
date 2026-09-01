@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>도움말 | AI Field</title>
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" type="image/png" href="./asset/ai-field-icon.png" />
+  <link rel="shortcut icon" type="image/png" href="./asset/ai-field-icon.png" />
+  <link rel="apple-touch-icon" href="./asset/ai-field-icon.png" />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:rgba(255,255,255,.06);
+      --panel2:rgba(255,255,255,.09);
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.68);
+      --line:rgba(255,255,255,.14);
+      --field:rgba(2,6,23,.28);
+      --accent:#5eead4;
+      --accent2:rgba(94,234,212,.14);
+      --blue:#60a5fa;
+      --shadow:0 18px 55px rgba(0,0,0,.35);
+      --font:system-ui,-apple-system,Segoe UI,Roboto,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+    }
+    @media(prefers-color-scheme:light){
+      :root{
+        --bg:#f6f7fb;
+        --panel:rgba(255,255,255,.78);
+        --panel2:#fff;
+        --text:rgba(17,24,39,.92);
+        --muted:rgba(17,24,39,.62);
+        --line:rgba(17,24,39,.12);
+        --field:rgba(248,250,252,.88);
+        --shadow:0 18px 55px rgba(17,24,39,.12);
+      }
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;min-height:100vh;color:var(--text);font-family:var(--font);
+      background:
+        radial-gradient(900px 480px at 12% 0%,rgba(94,234,212,.14),transparent 60%),
+        radial-gradient(780px 420px at 90% 5%,rgba(96,165,250,.10),transparent 60%),
+        var(--bg);
+    }
+    .wrap{max-width:1120px;margin:0 auto;padding:26px 34px 38px;}
+    header{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;padding:6px 2px 18px;}
+    .brandlogo{width:252px;height:auto;max-height:48px;display:block;object-fit:contain;}
+    .sub{margin-top:7px;color:var(--muted);font-size:13px;line-height:1.45;}
+    .actions{display:flex;align-items:center;justify-content:flex-end;gap:9px;flex-wrap:wrap;}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:8px 12px;
+      border:1px solid var(--line);border-radius:11px;background:var(--panel);color:var(--text);
+      font-size:13px;font-weight:800;text-decoration:none;
+      transition:background .15s ease,border-color .15s ease,transform .05s ease;
+    }
+    .btn:hover{background:var(--panel2);border-color:rgba(94,234,212,.38);}
+    .btn:active{transform:translateY(1px);}
+    .btn.primary{background:var(--accent2);border-color:rgba(94,234,212,.34);}
+    .panel{
+      overflow:hidden;border:1px solid var(--line);border-radius:18px;background:var(--panel);box-shadow:var(--shadow);
+    }
+    .panel-hd{
+      display:flex;align-items:flex-start;justify-content:space-between;gap:14px;
+      padding:18px;border-bottom:1px solid var(--line);
+    }
+    .titleline{display:flex;align-items:center;gap:9px;flex-wrap:wrap;}
+    h1{margin:0;font-size:20px;font-weight:950;letter-spacing:-.025em;}
+    .beta{
+      display:inline-flex;align-items:center;justify-content:center;min-height:25px;padding:4px 9px;
+      border:1px solid rgba(96,165,250,.45);border-radius:999px;background:rgba(96,165,250,.15);
+      color:var(--text);font-size:11px;font-weight:950;letter-spacing:.02em;
+    }
+    .panel-copy{margin-top:6px;color:var(--muted);font-size:13px;line-height:1.5;}
+    .count{padding:5px 10px;border:1px solid var(--line);border-radius:999px;background:var(--field);font-size:12px;font-weight:900;}
+    .help-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:18px;}
+    .help-card{
+      position:relative;display:flex;align-items:center;gap:15px;min-height:126px;padding:16px;
+      border:1px solid var(--line);border-radius:17px;background:var(--field);color:var(--text);text-decoration:none;
+      transition:transform .15s ease,border-color .15s ease,background .15s ease,box-shadow .15s ease;
+    }
+    .help-card:hover{
+      transform:translateY(-2px);border-color:rgba(94,234,212,.48);background:var(--panel2);box-shadow:0 16px 30px rgba(0,0,0,.16);
+    }
+    .help-icon{
+      width:68px;height:68px;display:grid;place-items:center;flex:0 0 auto;border-radius:19px;
+      border:1px solid rgba(94,234,212,.32);background:var(--accent2);color:var(--accent);
+    }
+    .help-icon svg{width:34px;height:34px;display:block;}
+    .help-title{display:block;font-size:17px;font-weight:950;letter-spacing:-.02em;}
+    .help-copy{display:block;margin-top:6px;max-width:520px;color:var(--muted);font-size:13px;line-height:1.5;}
+    .help-status{
+      display:inline-flex;margin-top:9px;padding:4px 8px;border:1px solid rgba(94,234,212,.32);border-radius:999px;
+      background:var(--accent2);font-size:10px;font-weight:900;
+    }
+    .arrow{position:absolute;right:15px;top:14px;color:var(--muted);font-size:20px;font-weight:900;}
+    footer{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:16px 2px 0;color:var(--muted);font-size:12px;}
+    @media(max-width:800px){
+      header{align-items:flex-start;flex-direction:column;}
+      .actions{justify-content:flex-start;}
+      .help-grid{grid-template-columns:1fr;}
+    }
+    @media(max-width:560px){
+      .wrap{padding:20px 16px 28px;}
+      .brandlogo{width:min(252px,72vw);}
+      .panel-hd{flex-direction:column;}
+      .help-card{align-items:flex-start;}
+      .help-icon{width:58px;height:58px;border-radius:17px;}
+    }
+    @media(prefers-reduced-motion:reduce){.btn,.help-card{transition:none!important;}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <img class="brandlogo" src="./asset/ai-field-lockup-v2.png" alt="KNOC AI Field">
+        <div class="sub">AI Field 이용 중 자주 필요한 안내를 모았습니다.</div>
+      </div>
+      <nav class="actions" aria-label="주요 메뉴">
+        <a class="btn" href="./index.html">AI Field</a>
+        <a class="btn" href="./guidebooks.html">서비스 가이드북</a>
+        <a class="btn" href="./prompts.html">프롬프트 예시</a>
+        <a class="btn primary" href="./help.html">도움말</a>
+      </nav>
+    </header>
+
+    <main class="panel">
+      <div class="panel-hd">
+        <div>
+          <div class="titleline">
+            <h1>도움말</h1>
+            <span class="beta">beta 버전</span>
+          </div>
+          <div class="panel-copy">필요한 항목을 선택하면 화면별 안내로 이동합니다.</div>
+        </div>
+        <span class="count">1개</span>
+      </div>
+
+      <div class="help-grid">
+        <a class="help-card" href="./login-guide.html">
+          <span class="help-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="10" width="14" height="10" rx="2"></rect>
+              <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+              <circle cx="12" cy="15" r="1.2"></circle>
+            </svg>
+          </span>
+          <span>
+            <span class="help-title">로그인이 풀려 있나요?</span>
+            <span class="help-copy">AI 서비스가 로그아웃되었거나 다시 로그인이 필요한 경우 서비스별 화면 안내를 확인하세요.</span>
+            <span class="help-status">안내 보기</span>
+          </span>
+          <span class="arrow" aria-hidden="true">›</span>
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <span>AI Field 도움말</span>
+      <span>beta 버전</span>
+    </footer>
+  </div>
+</body>
+</html>
