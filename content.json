@@ -176,6 +176,30 @@
                              ],
     "news":  [
                  {
+                     "service":  "Runway",
+                     "title":  "인터페이스 월드 모델 Solaris 공개",
+                     "date":  "2026-08-31",
+                     "file":  "2026-08-31-runway-solaris-interface-world-model.html"
+                 },
+                 {
+                     "service":  "Circleback",
+                     "title":  "무료 플랜 및 무제한 AI 회의 노트 제공",
+                     "date":  "2026-08-31",
+                     "file":  "2026-08-31-circleback-free-plan-unlimited-ai-notes.html"
+                 },
+                 {
+                     "service":  "Koder",
+                     "title":  "koder.com 공개 베타",
+                     "date":  "2026-08-31",
+                     "file":  "2026-08-31-koder-public-beta.html"
+                 },
+                 {
+                     "service":  "Google",
+                     "title":  "Data Agent Kit 오케스트레이션 파이프라인 지원",
+                     "date":  "2026-08-31",
+                     "file":  "2026-08-31-google-data-agent-kit-orchestration-pipelines.html"
+                 },
+                 {
                      "service":  "Cloudflare",
                      "title":  "AI Search에서 GLM-5.3 Flash 지원",
                      "date":  "2026-08-30",
@@ -2512,6 +2536,14 @@
                                {
                                    "name":  "Cloudflare",
                                    "color":  "#f6821f"
+                               },
+                               {
+                                   "name":  "Koder",
+                                   "color":  "#e11d48"
+                               },
+                               {
+                                   "name":  "Circleback",
+                                   "color":  "#0369a1"
                                }
                            ]
 }
