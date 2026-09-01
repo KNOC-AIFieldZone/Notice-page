@@ -6,8 +6,10 @@
   <title>AI Field</title>
   <meta name="color-scheme" content="light dark" />
 
-  <!-- 탭 아이콘(파비콘): repo/main/asset/logo.png -->
-  <link rel="icon" type="image/png" href="./asset/logo.png" />
+  <!-- AI Field 심볼: 브라우저 탭/바로가기 아이콘 -->
+  <link rel="icon" type="image/png" href="./asset/ai-field-icon.png" />
+  <link rel="shortcut icon" type="image/png" href="./asset/ai-field-icon.png" />
+  <link rel="apple-touch-icon" href="./asset/ai-field-icon.png" />
 
   <style>
     :root{
@@ -94,10 +96,12 @@
       align-items:center;
       gap:12px;
       min-width: 0;
+      flex-wrap:wrap;
     }
     .brandlogo{
-      width: 80px;
-      height: 40px;
+      width: 252px;
+      height: auto;
+      max-height: 48px;
 
       border: none;
       background: transparent;
@@ -105,15 +109,6 @@
 
       object-fit: contain;
       flex: 0 0 auto;
-    }
-
-    .brandname{
-      font-size: 20px;
-      font-weight: 900;
-      letter-spacing: -0.02em;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
 
     .pill{
@@ -511,6 +506,11 @@
     .btn.mini:disabled{ opacity:.45; background: rgba(148,163,184,.20); border-color: rgba(148,163,184,.35); color: var(--muted); cursor:not-allowed; }
 
     @media (max-width:980px){ .wrap{padding:20px 18px 28px;} }
+    @media (max-width:720px){
+      header{align-items:flex-start;flex-direction:column;}
+      .brandlogo{width:min(252px, 72vw);}
+      .top-actions{justify-content:flex-start;}
+    }
 
 
 
@@ -689,8 +689,7 @@
     <header>
       <div class="brand">
         <div class="brandline">
-          <img class="brandlogo" src="./asset/logo.png" alt="KNOC">
-          <div class="brandname">AI Field</div>
+          <img class="brandlogo" src="./asset/ai-field-lockup.png" alt="KNOC AI Field">
           <span class="pill" id="nowPill">로딩중…</span>
         </div>
         <div class="sub">
