@@ -58,7 +58,8 @@
     .wrap{max-width:1240px;margin:0 auto;padding:22px 18px 34px;}
     header{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;padding:6px 2px 18px;}
     .brandline{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
-    .brandlogo{width:34px;height:34px;object-fit:contain;}
+    .brand-home{display:inline-flex;align-items:center;flex:0 0 auto;text-decoration:none;}
+    .brandlogo{width:252px;height:auto;max-width:72vw;max-height:48px;display:block;object-fit:contain;}
     h1{margin:0;font-size:20px;font-weight:900;}
     .sub{margin-top:6px;color:var(--muted);font-size:13px;line-height:1.45;}
     .actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;}
@@ -170,13 +171,15 @@
     <header>
       <div>
         <div class="brandline">
-          <img class="brandlogo" src="./asset/logo.png" alt="KNOC">
+          <a class="brand-home" href="./index.html" aria-label="Home">
+            <img class="brandlogo" src="./asset/ai-field-lockup-v2.png" alt="KNOC AI Field">
+          </a>
           <h1>프롬프트 예시</h1>
         </div>
         <div class="sub">Prompt Guide 데이터 기반 검색 대시보드</div>
       </div>
       <div class="actions">
-        <a class="btn" href="./index.html">AI Field</a>
+        <a class="btn" href="./index.html">Home</a>
       </div>
     </header>
 

@@ -68,7 +68,8 @@
     .wrap{max-width:1240px;margin:0 auto;padding:22px 18px 38px;}
     header{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;padding:6px 2px 18px;}
     .brandline{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
-    .brandlogo{width:34px;height:34px;object-fit:contain;}
+    .brand-home{display:inline-flex;align-items:center;flex:0 0 auto;text-decoration:none;}
+    .brandlogo{width:252px;height:auto;max-width:72vw;max-height:48px;display:block;object-fit:contain;}
     h1{margin:0;font-size:20px;font-weight:900;}
     .beta-badge{
       display:inline-flex;align-items:center;justify-content:center;min-height:24px;
@@ -348,14 +349,16 @@
     <header>
       <div>
         <div class="brandline">
-          <img class="brandlogo" src="./asset/logo.png" alt="KNOC">
+          <a class="brand-home" href="./index.html" aria-label="Home">
+            <img class="brandlogo" src="./asset/ai-field-lockup-v2.png" alt="KNOC AI Field">
+          </a>
           <h1>AI 서비스 가이드북</h1>
           <span class="beta-badge">beta 버전</span>
         </div>
         <div class="sub">기능 중심으로 정리한 서비스별 사용 안내</div>
       </div>
       <div class="actions">
-        <a class="btn" href="./index.html">AI Field</a>
+        <a class="btn" href="./index.html">Home</a>
         <a class="btn" href="./prompts.html">프롬프트 예시</a>
         <a class="btn primary" href="./guidebooks.html">가이드 목록</a>
       </div>

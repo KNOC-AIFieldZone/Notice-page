@@ -64,7 +64,8 @@
     }
     .brand{min-width:0;}
     .brandline{display:flex;align-items:center;gap:10px;min-width:0;flex-wrap:wrap;}
-    .brandlogo{width:34px;height:34px;object-fit:contain;flex:0 0 auto;}
+    .brand-home{display:inline-flex;align-items:center;flex:0 0 auto;text-decoration:none;}
+    .brandlogo{width:252px;height:auto;max-width:72vw;max-height:48px;display:block;object-fit:contain;}
     .page-title{margin:0;font-size:20px;font-weight:950;letter-spacing:-.025em;}
     .beta{
       display:inline-flex;align-items:center;justify-content:center;min-height:25px;padding:4px 9px;
@@ -96,7 +97,7 @@
 
     .urgent{
       display:grid;
-      grid-template-columns:auto 1fr auto;
+      grid-template-columns:auto 1fr;
       align-items:center;
       gap:14px;
       margin-bottom:14px;
@@ -116,26 +117,6 @@
     .urgent-title{font-size:16px;font-weight:950;letter-spacing:-.02em;}
     .urgent-copy{margin-top:4px;color:var(--muted);font-size:13px;line-height:1.5;}
     .urgent-copy strong{color:var(--text);font-weight:950;}
-
-    .quick-guide{
-      display:grid;
-      grid-template-columns:repeat(3,minmax(0,1fr));
-      gap:10px;
-      margin-bottom:14px;
-    }
-    .quick-item{
-      display:flex;align-items:flex-start;gap:10px;
-      padding:12px 13px;
-      border:1px solid var(--line);
-      border-radius:var(--radius2);
-      background:var(--panel);
-    }
-    .quick-num{
-      width:26px;height:26px;border-radius:9px;display:grid;place-items:center;flex:0 0 auto;
-      background:var(--accent2);border:1px solid rgba(94,234,212,.32);font-size:12px;font-weight:950;
-    }
-    .quick-title{font-size:13px;font-weight:900;}
-    .quick-copy{margin-top:3px;color:var(--muted);font-size:12px;line-height:1.45;}
 
     .panel{
       overflow:hidden;
@@ -235,8 +216,7 @@
     @media(max-width:640px){
       .wrap{padding:20px 16px 28px;}
       .urgent{grid-template-columns:auto 1fr;}
-      .urgent .btn{grid-column:1 / -1;width:100%;}
-      .quick-guide,.service-grid{grid-template-columns:1fr;}
+      .service-grid{grid-template-columns:1fr;}
       .panel-hd{align-items:flex-start;flex-direction:column;}
       .detail-actions{justify-content:flex-start;}
       .service-card{min-height:96px;}
@@ -252,15 +232,17 @@
     <header>
       <div class="brand">
         <div class="brandline">
-          <img class="brandlogo" src="./asset/logo.png" alt="KNOC">
+          <a class="brand-home" href="./index.html" aria-label="Home">
+            <img class="brandlogo" src="./asset/ai-field-lockup-v2.png" alt="KNOC AI Field">
+          </a>
           <h1 class="page-title">로그인 안내</h1>
           <span class="beta">beta 버전</span>
         </div>
         <div class="sub">AI 서비스별 로그인 복구 방법을 화면 순서대로 안내합니다.</div>
       </div>
       <nav class="actions" aria-label="주요 메뉴">
-        <a class="btn" href="./index.html">AI Field</a>
-        <a class="btn" href="./help.html">도움말</a>
+        <a class="btn" href="./help.html">← 뒤로가기</a>
+        <a class="btn" href="./index.html">Home</a>
         <a class="btn" href="./guidebooks.html">서비스 가이드북</a>
         <a class="btn" href="./prompts.html">프롬프트 예시</a>
         <a class="btn primary" href="./login-guide.html">로그인 안내</a>
@@ -272,22 +254,6 @@
       <div>
         <div class="urgent-title" id="passwordHelpTitle">비밀번호 입력 화면이 나오면 진행을 멈춰 주세요.</div>
         <div class="urgent-copy">로그인 시도 중 비밀번호를 입력하라는 화면이 나타나면 직접 입력하지 말고 <strong>2526으로 전화해 주세요.</strong></div>
-      </div>
-      <a class="btn danger" href="tel:2526">2526 전화</a>
-    </section>
-
-    <section class="quick-guide" aria-label="로그인 가이드 이용 순서">
-      <div class="quick-item">
-        <span class="quick-num">1</span>
-        <div><div class="quick-title">서비스 선택</div><div class="quick-copy">로그인이 풀린 AI 서비스를 선택합니다.</div></div>
-      </div>
-      <div class="quick-item">
-        <span class="quick-num">2</span>
-        <div><div class="quick-title">화면 순서 확인</div><div class="quick-copy">첨부된 화면과 설명을 위에서부터 따라갑니다.</div></div>
-      </div>
-      <div class="quick-item">
-        <span class="quick-num">3</span>
-        <div><div class="quick-title">비밀번호 화면은 중단</div><div class="quick-copy">비밀번호 입력이 필요하면 2526으로 연락합니다.</div></div>
       </div>
     </section>
 
@@ -369,7 +335,7 @@
             <div>
               <div class="empty-mark" aria-hidden="true">▧</div>
               <div class="empty-title">로그인 화면 안내 준비 중</div>
-              <div class="empty-copy">이 서비스의 로그인 화면 사진을 추가하면서 순서별 안내를 완성할 예정입니다. 안내가 등록되기 전 비밀번호 입력 화면이 나타나면 2526으로 전화해 주세요.</div>
+              <div class="empty-copy">이 서비스의 로그인 화면 사진을 추가하면서 순서별 안내를 완성할 예정입니다.</div>
             </div>
           </div>
         `;
@@ -408,7 +374,6 @@
           </div>
           <div class="detail-body">
             ${renderSteps(service)}
-            <div class="safety-note">중요: 로그인 과정에서 비밀번호를 입력하라는 화면이 나타나면 직접 입력하지 말고 ${esc(data.helpNumber || "2526")}으로 전화해 주세요.</div>
           </div>
         </section>
       `;

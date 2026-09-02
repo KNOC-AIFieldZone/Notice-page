@@ -46,7 +46,8 @@
     .wrap{max-width:1120px;margin:0 auto;padding:26px 34px 38px;}
     header{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;padding:6px 2px 18px;}
     .brandline{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
-    .brandlogo{width:34px;height:34px;display:block;object-fit:contain;}
+    .brand-home{display:inline-flex;align-items:center;flex:0 0 auto;text-decoration:none;}
+    .brandlogo{width:252px;height:auto;max-width:72vw;max-height:48px;display:block;object-fit:contain;}
     .page-title{margin:0;font-size:20px;font-weight:950;letter-spacing:-.025em;}
     .sub{margin-top:7px;color:var(--muted);font-size:13px;line-height:1.45;}
     .actions{display:flex;align-items:center;justify-content:flex-end;gap:9px;flex-wrap:wrap;}
@@ -115,14 +116,16 @@
     <header>
       <div>
         <div class="brandline">
-          <img class="brandlogo" src="./asset/logo.png" alt="KNOC">
+          <a class="brand-home" href="./index.html" aria-label="Home">
+            <img class="brandlogo" src="./asset/ai-field-lockup-v2.png" alt="KNOC AI Field">
+          </a>
           <h1 class="page-title">도움말</h1>
           <span class="beta">beta 버전</span>
         </div>
         <div class="sub">AI Field 이용 중 자주 필요한 안내를 모았습니다.</div>
       </div>
       <nav class="actions" aria-label="주요 메뉴">
-        <a class="btn" href="./index.html">AI Field</a>
+        <a class="btn" href="./index.html">Home</a>
         <a class="btn" href="./guidebooks.html">서비스 가이드북</a>
         <a class="btn" href="./prompts.html">프롬프트 예시</a>
         <a class="btn primary" href="./help.html">도움말</a>

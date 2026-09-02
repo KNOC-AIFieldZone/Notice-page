@@ -98,6 +98,12 @@
       min-width: 0;
       flex-wrap:wrap;
     }
+    .brand-home{
+      display:inline-flex;
+      align-items:center;
+      flex:0 0 auto;
+      text-decoration:none;
+    }
     .brandlogo{
       width: 252px;
       height: auto;
@@ -679,7 +685,9 @@
     <header>
       <div class="brand">
         <div class="brandline">
-          <img class="brandlogo" src="./asset/ai-field-lockup-v2.png" alt="KNOC AI Field">
+          <a class="brand-home" href="./index.html" aria-label="Home">
+            <img class="brandlogo" src="./asset/ai-field-lockup-v2.png" alt="KNOC AI Field">
+          </a>
         </div>
         <div class="sub">
           좌측은 <b>구독 서비스</b>, 우측은 <b>공지 사항</b>과 <b>AI Update News</b>입니다.

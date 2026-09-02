@@ -74,6 +74,9 @@
 
     .wrap{max-width:1100px;margin:0 auto;padding:22px 18px 32px;}
     header{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding:6px 2px 18px;}
+    .brandline{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+    .brand-home{display:inline-flex;align-items:center;flex:0 0 auto;text-decoration:none;}
+    .brandlogo{width:252px;height:auto;max-width:72vw;max-height:48px;display:block;object-fit:contain;}
     h1{margin:0;font-size:20px;font-weight:900;letter-spacing:-0.02em;}
     .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.45;}
 
@@ -508,6 +511,7 @@
     .news-toolbar{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:8px 0 10px;}
     .news-toolbar .small{margin:0;}
     .news-list-wrap{max-height:68vh;overflow:auto;padding-right:4px;border-radius:12px;}
+    @media (max-width:700px){header{align-items:flex-start;flex-direction:column;}}
   </style>
 </head>
 
@@ -515,7 +519,12 @@
   <div class="wrap">
     <header>
       <div>
-        <h1>AI Field Homepage 관리자</h1>
+        <div class="brandline">
+          <a class="brand-home" href="./index.html" aria-label="Home">
+            <img class="brandlogo" src="./asset/ai-field-lockup-v2.png" alt="KNOC AI Field">
+          </a>
+          <h1>관리자</h1>
+        </div>
         <div class="sub">
           1. 비밀번호(토큰) 입력 <br>
           2. <b>불러오기</b> 클릭 (에러 떠도 계속 시도 - 회사 네트워크 오류) <br>
