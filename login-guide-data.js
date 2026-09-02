@@ -48,29 +48,18 @@ window.LOGIN_GUIDES = {
       ]
     },
     {
-      id: "gemini",
-      name: "Gemini",
-      domain: "gemini.google.com",
-      url: "https://gemini.google.com/",
-      description: "Gemini 로그인 화면 안내",
-      steps: []
-    },
-    {
-      id: "notebooklm",
-      name: "Gemini Notebook",
-      domain: "notebook.google.com",
-      url: "https://notebook.google.com/",
-      icon: "./asset/gemini_notebook_icon.svg",
-      description: "Gemini Notebook 로그인 화면 안내",
-      steps: []
-    },
-    {
       id: "manus",
       name: "Manus",
       domain: "manus.im",
       url: "https://manus.im/",
       description: "Manus 로그인 화면 안내",
-      steps: []
+      steps: [
+        {
+          title: "Google로 계속하기를 선택합니다",
+          body: "로그인 화면에서 [Google로 계속하기]를 클릭하면 로그인이 완료됩니다.",
+          image: "./login-guide-assets/manus/01-google.png"
+        }
+      ]
     },
     {
       id: "canva",
@@ -78,7 +67,34 @@ window.LOGIN_GUIDES = {
       domain: "canva.com",
       url: "https://www.canva.com/",
       description: "Canva 로그인 화면 안내",
-      steps: []
+      steps: [
+        {
+          title: "로그인 버튼을 클릭합니다",
+          body: "Canva 로그인 화면 오른쪽 위의 [로그인]을 클릭합니다.",
+          image: "./login-guide-assets/canva/01-login.png"
+        },
+        {
+          title: "모든 항목에 동의합니다",
+          body: "모든 항목을 선택한 뒤 [동의 및 계속하기]를 클릭합니다.",
+          image: "./login-guide-assets/canva/02-agree.png"
+        },
+        {
+          title: "Google로 계속하기를 선택합니다",
+          body: "로그인 창에서 [Google로 계속하기]를 클릭합니다.",
+          image: "./login-guide-assets/canva/03-google.png"
+        },
+        {
+          title: "6층 AI존 계정을 선택합니다",
+          body: "등록된 계정 중 [6층 AI존 / knocaizone@gmail.com]을 클릭합니다.",
+          image: "./login-guide-assets/canva/04-account.png",
+          warning: "다른 계정이나 [다른 계정 사용]을 선택하지 마세요. 반드시 6층 AI존 계정을 선택해야 합니다."
+        },
+        {
+          title: "계속을 클릭합니다",
+          body: "표시된 계정이 knocaizone@gmail.com인지 확인한 뒤 [계속]을 클릭하면 로그인이 완료됩니다.",
+          image: "./login-guide-assets/canva/05-continue.png"
+        }
+      ]
     },
     {
       id: "lilysai",
