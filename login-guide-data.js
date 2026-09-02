@@ -129,7 +129,18 @@ window.LOGIN_GUIDES = {
       domain: "elevenlabs.io",
       url: "https://elevenlabs.io/",
       description: "ElevenLabs 로그인 화면 안내",
-      steps: []
+      steps: [
+        {
+          title: "Log in을 클릭합니다",
+          body: "ElevenLabs 메인 화면 오른쪽 위의 [Log in]을 클릭합니다.",
+          image: "./login-guide-assets/elevenlabs/01-login.png"
+        },
+        {
+          title: "Sign in with Google을 선택합니다",
+          body: "로그인 화면에서 [Sign in with Google]을 클릭하면 로그인이 완료됩니다.",
+          image: "./login-guide-assets/elevenlabs/02-google.png"
+        }
+      ]
     },
     {
       id: "inlineai",
