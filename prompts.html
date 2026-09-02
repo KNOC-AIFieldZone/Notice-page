@@ -82,6 +82,9 @@
     }
     .btn:hover{background:rgba(255,255,255,.09);}
     .btn.primary{background:var(--accent2);border-color:rgba(94,234,212,.36);}
+    .btn.nav-help{background:rgba(52,211,153,.15);border-color:rgba(52,211,153,.38);}
+    .btn.nav-guide{background:rgba(96,165,250,.16);border-color:rgba(96,165,250,.38);}
+    .btn.nav-prompts{background:rgba(167,139,250,.16);border-color:rgba(167,139,250,.38);}
     .btn:disabled{opacity:.45;cursor:not-allowed;}
     .layout{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:14px;align-items:start;}
     .panel{
@@ -179,6 +182,8 @@
         <div class="sub">Prompt Guide 데이터 기반 검색 대시보드</div>
       </div>
       <div class="actions">
+        <a class="btn nav-guide" href="./guidebooks.html">서비스 가이드북</a>
+        <a class="btn nav-help" href="./help.html">도움말</a>
         <a class="btn" href="./index.html">Home</a>
       </div>
     </header>

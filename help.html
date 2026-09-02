@@ -60,6 +60,9 @@
     .btn:hover{background:var(--panel2);border-color:rgba(94,234,212,.38);}
     .btn:active{transform:translateY(1px);}
     .btn.primary{background:var(--accent2);border-color:rgba(94,234,212,.34);}
+    .btn.nav-help{background:rgba(52,211,153,.15);border-color:rgba(52,211,153,.38);}
+    .btn.nav-guide{background:rgba(96,165,250,.16);border-color:rgba(96,165,250,.38);}
+    .btn.nav-prompts{background:rgba(167,139,250,.16);border-color:rgba(167,139,250,.38);}
     .panel{
       overflow:hidden;border:1px solid var(--line);border-radius:18px;background:var(--panel);box-shadow:var(--shadow);
     }
@@ -125,10 +128,9 @@
         <div class="sub">AI Field 이용 중 자주 필요한 안내를 모았습니다.</div>
       </div>
       <nav class="actions" aria-label="주요 메뉴">
+        <a class="btn nav-guide" href="./guidebooks.html">서비스 가이드북</a>
+        <a class="btn nav-prompts" href="./prompts.html">프롬프트 예시</a>
         <a class="btn" href="./index.html">Home</a>
-        <a class="btn" href="./guidebooks.html">서비스 가이드북</a>
-        <a class="btn" href="./prompts.html">프롬프트 예시</a>
-        <a class="btn primary" href="./help.html">도움말</a>
       </nav>
     </header>
 

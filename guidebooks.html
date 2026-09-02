@@ -85,6 +85,9 @@
     }
     .btn:hover{filter:brightness(1.08);}
     .btn.primary{background:var(--accent2);border-color:rgba(94,234,212,.36);}
+    .btn.nav-help{background:rgba(52,211,153,.15);border-color:rgba(52,211,153,.38);}
+    .btn.nav-guide{background:rgba(96,165,250,.16);border-color:rgba(96,165,250,.38);}
+    .btn.nav-prompts{background:rgba(167,139,250,.16);border-color:rgba(167,139,250,.38);}
     .panel{
       border:1px solid var(--line);border-radius:8px;background:linear-gradient(180deg,var(--panel2),var(--panel));
       box-shadow:var(--shadow);overflow:hidden;
@@ -357,11 +360,7 @@
         </div>
         <div class="sub">기능 중심으로 정리한 서비스별 사용 안내</div>
       </div>
-      <div class="actions">
-        <a class="btn" href="./index.html">Home</a>
-        <a class="btn" href="./prompts.html">프롬프트 예시</a>
-        <a class="btn primary" href="./guidebooks.html">가이드 목록</a>
-      </div>
+      <nav class="actions" id="headerActions" aria-label="주요 메뉴"></nav>
     </header>
 
     <div id="app"></div>
@@ -395,6 +394,7 @@
   <script src="./guidebook-data.js?v=20260825-10"></script>
   <script>
     const $app = document.querySelector("#app");
+    const $headerActions = document.querySelector("#headerActions");
     const data = window.SERVICE_GUIDES || { services: [] };
     const READY_GUIDES = new Set(["chatgpt", "genspark", "lilysai", "gemini", "notebooklm", "elevenlabs", "claude"]);
 
@@ -452,6 +452,15 @@
 
     function featureUrl(serviceId, index){
       return `${serviceUrl(serviceId)}&feature=${encodeURIComponent(index)}`;
+    }
+
+    function renderHeaderActions(showGuideList){
+      $headerActions.innerHTML = `
+        ${showGuideList ? `<a class="btn nav-guide" href="./guidebooks.html">가이드 목록</a>` : ""}
+        <a class="btn nav-prompts" href="./prompts.html">프롬프트 예시</a>
+        <a class="btn nav-help" href="./help.html">도움말</a>
+        <a class="btn" href="./index.html">Home</a>
+      `;
     }
 
     function currentService(){
@@ -625,8 +634,8 @@
       const fileSamples = asList(feature.fileSamples);
       return `
         <div class="section-head">
-          <h3>기능 사용법</h3>
           <a class="btn" href="${serviceUrl(service.id)}" aria-label="${esc(service.display)} 기능 목록으로 돌아가기">← 이전 화면</a>
+          <h3>기능 사용법</h3>
         </div>
         <div class="feature-detail-shell">
           <section class="feature-detail-head">
@@ -913,6 +922,7 @@
     });
 
     const selected = currentService();
+    renderHeaderActions(Boolean(selected));
     if(selected) renderDetail(selected);
     else renderList();
   </script>
