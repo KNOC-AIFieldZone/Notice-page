@@ -172,7 +172,6 @@
     .detail-head{display:flex;align-items:center;gap:14px;min-width:0;}
     .detail-name{margin:0;font-size:22px;font-weight:950;letter-spacing:-.025em;}
     .detail-desc{margin-top:5px;color:var(--muted);font-size:13px;}
-    .detail-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;}
     .detail-body{padding:16px;}
     .empty{
       display:grid;place-items:center;text-align:center;min-height:280px;padding:34px 20px;
@@ -242,11 +241,10 @@
         <div class="sub">AI 서비스별 로그인 복구 방법을 화면 순서대로 안내합니다.</div>
       </div>
       <nav class="actions" aria-label="주요 메뉴">
-        <a class="btn" href="./help.html">← 뒤로가기</a>
+        <a class="btn" id="backButton" href="./help.html">← 뒤로가기</a>
         <a class="btn" href="./index.html">Home</a>
         <a class="btn" href="./guidebooks.html">서비스 가이드북</a>
         <a class="btn" href="./prompts.html">프롬프트 예시</a>
-        <a class="btn primary" href="./login-guide.html">로그인 안내</a>
       </nav>
     </header>
 
@@ -368,10 +366,6 @@
                 <div class="detail-desc">화면을 위에서부터 순서대로 확인해 주세요.</div>
               </div>
             </div>
-            <div class="detail-actions">
-              <a class="btn" href="./login-guide.html">목록으로</a>
-              <a class="btn primary" href="${esc(service.url)}" target="_blank" rel="noopener">${esc(service.name)} 열기</a>
-            </div>
           </div>
           <div class="detail-body">
             ${renderSteps(service)}
@@ -383,8 +377,14 @@
 
     const serviceId = new URLSearchParams(location.search).get("service") || "";
     const selectedService = data.services.find((service) => service.id === serviceId);
-    if(selectedService) renderDetail(selectedService);
-    else renderList();
+    const backButton = document.querySelector("#backButton");
+    if(selectedService){
+      backButton.href = "./login-guide.html";
+      backButton.setAttribute("aria-label", "로그인 서비스 목록으로 뒤로가기");
+      renderDetail(selectedService);
+    } else {
+      renderList();
+    }
 
     document.querySelector("#updatedAt").textContent = data.updatedAt ? `구성일: ${data.updatedAt}` : "";
   </script>
