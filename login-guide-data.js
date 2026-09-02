@@ -97,6 +97,14 @@ window.LOGIN_GUIDES = {
       ]
     },
     {
+      id: "capcut",
+      name: "CapCut",
+      domain: "capcut.com",
+      url: "https://www.capcut.com/",
+      description: "CapCut 로그인 화면 안내",
+      steps: []
+    },
+    {
       id: "lilysai",
       name: "Lilys AI",
       domain: "lilys.ai",
@@ -124,12 +132,37 @@ window.LOGIN_GUIDES = {
       steps: []
     },
     {
+      id: "inlineai",
+      name: "inline AI",
+      domain: "inline-ai.com",
+      url: "https://www.inline-ai.com/",
+      description: "inline AI 로그인 화면 안내",
+      steps: []
+    },
+    {
       id: "claude",
       name: "Claude",
       domain: "claude.ai",
       url: "https://claude.ai/new",
       description: "Claude 로그인 화면 안내",
-      steps: []
+      steps: [
+        {
+          title: "Google로 계속하기를 선택합니다",
+          body: "Claude 로그인 화면에서 [Google로 계속하기]를 클릭합니다.",
+          image: "./login-guide-assets/claude/01-google.png"
+        },
+        {
+          title: "6층 AI존 계정을 선택합니다",
+          body: "등록된 계정 중 [6층 AI존 / knocaizone@gmail.com]을 클릭합니다.",
+          image: "./login-guide-assets/claude/02-account.png",
+          warning: "다른 계정이나 [다른 계정 사용]을 선택하지 마세요. 반드시 6층 AI존 계정을 선택해야 합니다."
+        },
+        {
+          title: "계속을 클릭합니다",
+          body: "표시된 계정이 knocaizone@gmail.com인지 확인한 뒤 [계속]을 클릭하면 로그인이 완료됩니다.",
+          image: "./login-guide-assets/claude/03-continue.png"
+        }
+      ]
     }
   ]
 };
