@@ -63,8 +63,14 @@
       padding:6px 2px 18px;
     }
     .brand{min-width:0;}
-    .brandline{display:flex;align-items:center;gap:12px;min-width:0;}
-    .brandlogo{width:252px;height:auto;max-height:48px;object-fit:contain;flex:0 0 auto;}
+    .brandline{display:flex;align-items:center;gap:10px;min-width:0;flex-wrap:wrap;}
+    .brandlogo{width:34px;height:34px;object-fit:contain;flex:0 0 auto;}
+    .page-title{margin:0;font-size:20px;font-weight:950;letter-spacing:-.025em;}
+    .beta{
+      display:inline-flex;align-items:center;justify-content:center;min-height:25px;padding:4px 9px;
+      border:1px solid rgba(96,165,250,.45);border-radius:999px;background:rgba(96,165,250,.15);
+      color:var(--text);font-size:11px;font-weight:950;letter-spacing:.02em;
+    }
     .sub{margin-top:7px;color:var(--muted);font-size:13px;line-height:1.45;}
     .actions{display:flex;align-items:center;justify-content:flex-end;gap:9px;flex-wrap:wrap;}
     .btn{
@@ -228,7 +234,6 @@
     }
     @media(max-width:640px){
       .wrap{padding:20px 16px 28px;}
-      .brandlogo{width:min(252px,72vw);}
       .urgent{grid-template-columns:auto 1fr;}
       .urgent .btn{grid-column:1 / -1;width:100%;}
       .quick-guide,.service-grid{grid-template-columns:1fr;}
@@ -247,7 +252,9 @@
     <header>
       <div class="brand">
         <div class="brandline">
-          <img class="brandlogo" src="./asset/ai-field-lockup-v2.png" alt="KNOC AI Field">
+          <img class="brandlogo" src="./asset/logo.png" alt="KNOC">
+          <h1 class="page-title">로그인 안내</h1>
+          <span class="beta">beta 버전</span>
         </div>
         <div class="sub">AI 서비스별 로그인 복구 방법을 화면 순서대로 안내합니다.</div>
       </div>

@@ -45,7 +45,9 @@
     }
     .wrap{max-width:1120px;margin:0 auto;padding:26px 34px 38px;}
     header{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;padding:6px 2px 18px;}
-    .brandlogo{width:252px;height:auto;max-height:48px;display:block;object-fit:contain;}
+    .brandline{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+    .brandlogo{width:34px;height:34px;display:block;object-fit:contain;}
+    .page-title{margin:0;font-size:20px;font-weight:950;letter-spacing:-.025em;}
     .sub{margin-top:7px;color:var(--muted);font-size:13px;line-height:1.45;}
     .actions{display:flex;align-items:center;justify-content:flex-end;gap:9px;flex-wrap:wrap;}
     .btn{
@@ -64,8 +66,7 @@
       display:flex;align-items:flex-start;justify-content:space-between;gap:14px;
       padding:18px;border-bottom:1px solid var(--line);
     }
-    .titleline{display:flex;align-items:center;gap:9px;flex-wrap:wrap;}
-    h1{margin:0;font-size:20px;font-weight:950;letter-spacing:-.025em;}
+    .panel-title{margin:0;font-size:18px;font-weight:950;letter-spacing:-.025em;}
     .beta{
       display:inline-flex;align-items:center;justify-content:center;min-height:25px;padding:4px 9px;
       border:1px solid rgba(96,165,250,.45);border-radius:999px;background:rgba(96,165,250,.15);
@@ -102,7 +103,6 @@
     }
     @media(max-width:560px){
       .wrap{padding:20px 16px 28px;}
-      .brandlogo{width:min(252px,72vw);}
       .panel-hd{flex-direction:column;}
       .help-card{align-items:flex-start;}
       .help-icon{width:58px;height:58px;border-radius:17px;}
@@ -114,7 +114,11 @@
   <div class="wrap">
     <header>
       <div>
-        <img class="brandlogo" src="./asset/ai-field-lockup-v2.png" alt="KNOC AI Field">
+        <div class="brandline">
+          <img class="brandlogo" src="./asset/logo.png" alt="KNOC">
+          <h1 class="page-title">도움말</h1>
+          <span class="beta">beta 버전</span>
+        </div>
         <div class="sub">AI Field 이용 중 자주 필요한 안내를 모았습니다.</div>
       </div>
       <nav class="actions" aria-label="주요 메뉴">
@@ -128,10 +132,7 @@
     <main class="panel">
       <div class="panel-hd">
         <div>
-          <div class="titleline">
-            <h1>도움말</h1>
-            <span class="beta">beta 버전</span>
-          </div>
+          <h2 class="panel-title">도움말 항목</h2>
           <div class="panel-copy">필요한 항목을 선택하면 화면별 안내로 이동합니다.</div>
         </div>
         <span class="count">1개</span>
@@ -158,7 +159,7 @@
 
     <footer>
       <span>AI Field 도움말</span>
-      <span>beta 버전</span>
+      <span>작성 기준일: 2026-09-01</span>
     </footer>
   </div>
 </body>
