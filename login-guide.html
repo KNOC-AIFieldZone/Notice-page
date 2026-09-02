@@ -166,6 +166,7 @@
       color:var(--text);background:rgba(251,191,36,.13);border:1px solid rgba(251,191,36,.32);
       font-size:10px;font-weight:900;
     }
+    .status.ready{background:rgba(52,211,153,.14);border-color:rgba(52,211,153,.38);}
     .arrow{position:absolute;right:12px;top:12px;color:var(--muted);font-size:17px;font-weight:900;}
 
     .detail-head{display:flex;align-items:center;gap:14px;min-width:0;}
@@ -265,7 +266,7 @@
     </footer>
   </div>
 
-  <script src="./login-guide-data.js?v=20260901-1"></script>
+  <script src="./login-guide-data.js?v=20260902-1"></script>
   <script>
     const data = window.LOGIN_GUIDES || { helpNumber:"2526", services:[] };
     const app = document.querySelector("#app");
@@ -307,7 +308,7 @@
           <span class="service-copy">
             <span class="service-name">${esc(service.name)}</span>
             <span class="service-desc">${esc(service.description || "로그인 화면 안내")}</span>
-            <span class="status">사진 추가 예정</span>
+            <span class="status${Array.isArray(service.steps) && service.steps.length ? " ready" : ""}">${Array.isArray(service.steps) && service.steps.length ? `${service.steps.length}단계 안내` : "사진 추가 예정"}</span>
           </span>
           <span class="arrow" aria-hidden="true">›</span>
         </a>
