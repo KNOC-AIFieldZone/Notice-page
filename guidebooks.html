@@ -454,9 +454,11 @@
       return `${serviceUrl(serviceId)}&feature=${encodeURIComponent(index)}`;
     }
 
-    function renderHeaderActions(showGuideList){
+    function renderHeaderActions(service, featureIdx){
+      const isFeatureDetail = Boolean(service) && featureIdx !== null;
       $headerActions.innerHTML = `
-        ${showGuideList ? `<a class="btn nav-guide" href="./guidebooks.html">가이드 목록</a>` : ""}
+        ${service ? `<a class="btn" href="${isFeatureDetail ? serviceUrl(service.id) : "./guidebooks.html"}">← 뒤로가기</a>` : ""}
+        ${isFeatureDetail ? `<a class="btn nav-guide" href="./guidebooks.html">가이드 목록</a>` : ""}
         <a class="btn nav-prompts" href="./prompts.html">프롬프트 예시</a>
         <a class="btn nav-help" href="./help.html">도움말</a>
         <a class="btn" href="./index.html">Home</a>
@@ -634,7 +636,6 @@
       const fileSamples = asList(feature.fileSamples);
       return `
         <div class="section-head">
-          <a class="btn" href="${serviceUrl(service.id)}" aria-label="${esc(service.display)} 기능 목록으로 돌아가기">← 이전 화면</a>
           <h3>기능 사용법</h3>
         </div>
         <div class="feature-detail-shell">
@@ -922,7 +923,8 @@
     });
 
     const selected = currentService();
-    renderHeaderActions(Boolean(selected));
+    const selectedFeatureIdx = selected ? currentFeatureIndex(selected) : null;
+    renderHeaderActions(selected, selectedFeatureIdx);
     if(selected) renderDetail(selected);
     else renderList();
   </script>
