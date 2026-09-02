@@ -176,6 +176,42 @@
                              ],
     "news":  [
                  {
+                     "service":  "Gemini",
+                     "title":  "에이전틱 영상 이해 기능 공개",
+                     "date":  "2026-09-01",
+                     "file":  "2026-09-01-gemini-agentic-video-understanding.html"
+                 },
+                 {
+                     "service":  "SurveyMonkey",
+                     "title":  "대화형 AI 설문 생성 및 자동 분석 공개",
+                     "date":  "2026-09-01",
+                     "file":  "2026-09-01-surveymonkey-conversational-ai-surveys.html"
+                 },
+                 {
+                     "service":  "Google",
+                     "title":  "Google Pics 정식 출시",
+                     "date":  "2026-09-01",
+                     "file":  "2026-09-01-google-pics-ga.html"
+                 },
+                 {
+                     "service":  "Lovable",
+                     "title":  "Claude Fable 5.1 적용",
+                     "date":  "2026-09-01",
+                     "file":  "2026-09-01-lovable-fable-51.html"
+                 },
+                 {
+                     "service":  "Claude",
+                     "title":  "Claude Fable 5.1 및 Claude Mythos 5.1 공개",
+                     "date":  "2026-09-01",
+                     "file":  "2026-09-01-claude-fable-51-mythos-51.html"
+                 },
+                 {
+                     "service":  "Amazon",
+                     "title":  "Alexa+ 미국 전면 출시",
+                     "date":  "2026-09-01",
+                     "file":  "2026-09-01-amazon-alexa-plus-us-launch.html"
+                 },
+                 {
                      "service":  "Runway",
                      "title":  "인터페이스 월드 모델 Solaris 공개",
                      "date":  "2026-08-31",
@@ -2544,6 +2580,14 @@
                                {
                                    "name":  "Circleback",
                                    "color":  "#0369a1"
+                               },
+                               {
+                                   "name":  "Amazon",
+                                   "color":  "#146eb4"
+                               },
+                               {
+                                   "name":  "SurveyMonkey",
+                                   "color":  "#00bf6f"
                                }
                            ]
 }
