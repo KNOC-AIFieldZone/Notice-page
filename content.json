@@ -177,6 +177,36 @@
     "news":  [
                  {
                      "service":  "Gemini",
+                     "title":  "Workspace Studio 자동화 단계 확대",
+                     "date":  "2026-09-02",
+                     "file":  "2026-09-02-gemini-workspace-studio-automation-steps.html"
+                 },
+                 {
+                     "service":  "Moonshot AI",
+                     "title":  "Kimi Code 0.40.0 공개",
+                     "date":  "2026-09-02",
+                     "file":  "2026-09-02-kimi-code-040.html"
+                 },
+                 {
+                     "service":  "Google",
+                     "title":  "Google Vids 문서 기반 AI 영상 요약 공개",
+                     "date":  "2026-09-02",
+                     "file":  "2026-09-02-google-vids-document-video-summaries.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Gemini 3.8 Flash 및 Flash Cyber 공개",
+                     "date":  "2026-09-02",
+                     "file":  "2026-09-02-gemini-38-flash-flash-cyber.html"
+                 },
+                 {
+                     "service":  "Claude",
+                     "title":  "Commerce Agent Blueprint 공개",
+                     "date":  "2026-09-02",
+                     "file":  "2026-09-02-claude-commerce-agent-blueprint.html"
+                 },
+                 {
+                     "service":  "Gemini",
                      "title":  "에이전틱 영상 이해 기능 공개",
                      "date":  "2026-09-01",
                      "file":  "2026-09-01-gemini-agentic-video-understanding.html"
