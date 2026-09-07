@@ -176,6 +176,42 @@
                              ],
     "news":  [
                  {
+                     "service":  "Gemini Notebook",
+                     "title":  "Workspace 관리자 감사 로그 공개",
+                     "date":  "2026-09-04",
+                     "file":  "2026-09-04-gemini-notebook-audit-logs.html"
+                 },
+                 {
+                     "service":  "Google",
+                     "title":  "WeatherNext 3 공개",
+                     "date":  "2026-09-04",
+                     "file":  "2026-09-04-google-weathernext-3.html"
+                 },
+                 {
+                     "service":  "Midjourney",
+                     "title":  "V8.2 편집 모델 및 라이트박스 편집기 알파 공개",
+                     "date":  "2026-09-04",
+                     "file":  "2026-09-04-midjourney-v82-edit-model.html"
+                 },
+                 {
+                     "service":  "Vercel",
+                     "title":  "Ling 3.0 Flash Sante 무료 제공",
+                     "date":  "2026-09-04",
+                     "file":  "2026-09-04-vercel-ling-30-flash-sante.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "GPT-6 Astra 공개",
+                     "date":  "2026-09-04",
+                     "file":  "2026-09-04-openai-gpt-6-astra.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Gmail Live·Docs Live·Keep Live 공개",
+                     "date":  "2026-09-04",
+                     "file":  "2026-09-04-gemini-gmail-docs-keep-live.html"
+                 },
+                 {
                      "service":  "Meta AI",
                      "title":  "Muse Spark 1.3 공개",
                      "date":  "2026-09-03",
@@ -2640,6 +2676,10 @@
                                {
                                    "name":  "SurveyMonkey",
                                    "color":  "#00bf6f"
+                               },
+                               {
+                                   "name":  "Vercel",
+                                   "color":  "#4f46e5"
                                }
                            ]
 }
