@@ -176,6 +176,12 @@
                              ],
     "news":  [
                  {
+                     "service":  "Lovable",
+                     "title":  "Drafts 공개",
+                     "date":  "2026-09-07",
+                     "file":  "2026-09-07-lovable-drafts.html"
+                 },
+                 {
                      "service":  "Gemini Notebook",
                      "title":  "Workspace 관리자 감사 로그 공개",
                      "date":  "2026-09-04",
