@@ -2631,8 +2631,8 @@ window.SERVICE_GUIDES = {
                          "url":  "https://manus.im/",
                          "tone":  "#fb7185",
                          "role":  "",
-                         "basis":  "2026-08-31",
-                         "guideDate":  "2026-08-31",
+                         "basis":  "2026-09-09",
+                         "guideDate":  "2026-09-09",
                          "overview":  "",
                          "hero":  "./guidebook-assets/manus_guide_start.png",
                          "features":  [],
@@ -2640,9 +2640,37 @@ window.SERVICE_GUIDES = {
                          "sections":  [
                                           {
                                               "id":  "manus_feature_01",
-                                              "title":  "기능 1",
+                                              "title":  "기본 기능",
                                               "image":  "./guidebook-assets/manus_guide_start.png",
-                                              "placeholder":  true
+                                              "short":  "메인 입력창에서 요청을 시작하고 필요한 자료·이전 작업·외부 서비스를 연결한 뒤 작업에 맞는 에이전트를 선택합니다.",
+                                              "detail":  "Manus의 기본 화면에서 요청을 입력하는 방법과 자료 추가, 모델 선택, 커넥터 연결을 익히는 시작 가이드입니다.",
+                                              "when":  "Manus를 처음 사용하거나 파일·이메일·저장소처럼 여러 자료를 참고시켜 하나의 작업으로 처리할 때 활용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "메인 입력창에 원하는 작업을 적습니다",
+                                                                  "body":  "화면 가운데 입력창에 무엇을 해야 하는지 적고 전송합니다. 단순 질문뿐 아니라 조사, 문서 작성, 데이터 정리, 슬라이드·웹사이트 제작처럼 결과물이 필요한 작업도 요청할 수 있습니다. 목표, 참고할 자료, 반드시 포함할 내용과 원하는 결과 형식을 함께 적으면 재작업을 줄일 수 있습니다. 입력창 아래의 빠른 메뉴로 슬라이드 제작·웹사이트 구축·디자인·게임 제작 등을 바로 시작하거나, ‘/’를 입력해 사용할 수 있는 옵션을 확인할 수 있습니다.",
+                                                                  "image":  "./guidebook-assets/manus_guide_start.png",
+                                                                  "badge":  "요청 입력"
+                                                              },
+                                                              {
+                                                                  "title":  "+ 버튼에서 작업에 필요한 자료를 추가합니다",
+                                                                  "body":  "입력창 왼쪽 아래의 ‘+’를 누릅니다. ‘로컬 파일에서 추가’는 컴퓨터의 문서·이미지 등을 첨부하고, ‘라이브러리에서 추가’는 이전에 Manus에 올린 자료를 다시 사용합니다. ‘최근 작업 추가’는 과거 작업의 대화와 결과를 현재 요청의 맥락으로 가져옵니다. Google Drive·OneDrive·Figma 항목은 해당 계정을 연결한 뒤 파일이나 디자인 자료를 추가할 때 사용합니다. ‘스킬 사용’은 반복 가능한 전문 절차를 불러오는 기능으로 별도 스킬 가이드에서 설명합니다. 화면에 보이는 항목은 계정·요금제·연결 상태에 따라 달라질 수 있으며, 회사 자료는 업로드 전에 이용 권한과 보안 등급을 확인합니다.",
+                                                                  "image":  "./guidebook-assets/manus_basic_add_sources.png",
+                                                                  "badge":  "자료 추가"
+                                                              },
+                                                              {
+                                                                  "title":  "작업 난이도에 맞는 에이전트(모델)를 선택합니다",
+                                                                  "body":  "왼쪽 위의 현재 에이전트(모델) 이름을 눌러 선택 메뉴를 엽니다. Manus 1.6 Max는 복잡한 다단계 추론·정확성이 중요한 조사·고난도 제작에, Manus 1.6은 대부분의 일반 작업에서 속도와 성능의 균형이 필요할 때, Manus 1.6 Lite는 빠른 질문·요약·가벼운 일상 작업에 적합합니다. 복잡할수록 Max가 유리하지만 처리 시간과 크레딧 사용량도 고려해야 합니다. 이용 가능한 에이전트는 요금제에 따라 다르며 무료 사용자는 Agent Mode에서 Lite만 제공될 수 있으므로 실제 선택 메뉴를 기준으로 확인합니다.",
+                                                                  "image":  "./guidebook-assets/manus_basic_models.png",
+                                                                  "badge":  "모델 선택"
+                                                              },
+                                                              {
+                                                                  "title":  "커넥터를 연결해 외부 자료와 기능을 사용합니다",
+                                                                  "body":  "입력창 아래의 연결 아이콘을 누르고 GitHub, Gmail, Google Calendar, Outlook, Google Workspace 등 필요한 서비스를 찾아 ‘연결하기’를 선택합니다. 해당 서비스에서 로그인하고 요청 권한을 승인하면 Manus가 대화 안에서 허용된 자료를 검색·참고할 수 있으며, 커넥터가 지원하는 경우 항목 생성이나 수정 같은 동작도 수행할 수 있습니다. 예를 들어 Gmail을 연결한 뒤 ‘최근 한 달간 받은 업무 메일을 주제별로 요약해 줘’라고 요청할 수 있습니다. 서비스마다 제공 기능과 권한 범위가 다르므로 연결 화면을 확인하고, 메일 발송·일정 변경·저장소 수정처럼 외부 상태를 바꾸는 작업은 실행 전에 대상과 내용을 검토합니다.",
+                                                                  "image":  "./guidebook-assets/manus_basic_connectors.png",
+                                                                  "badge":  "커넥터 연결"
+                                                              }
+                                                          ]
                                           },
                                           {
                                               "id":  "manus_feature_02",
@@ -2699,7 +2727,12 @@ window.SERVICE_GUIDES = {
                                               "placeholder":  true
                                           }
                                       ],
-                         "sources":  []
+                         "sources":  [
+                                         "https://manus.im/en/blog/manus-max-release",
+                                         "https://help.manus.im/en/articles/11711111-what-is-the-current-membership-pricing-for-manus",
+                                         "https://help.manus.im/en/articles/12231777-how-can-i-use-manus-connectors",
+                                         "https://manus.im/docs/integrations/mcp-connectors"
+                                     ]
                      },
                      {
                          "id":  "elevenlabs",
