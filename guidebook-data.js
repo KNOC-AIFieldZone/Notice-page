@@ -2674,9 +2674,25 @@ window.SERVICE_GUIDES = {
                                           },
                                           {
                                               "id":  "manus_feature_02",
-                                              "title":  "기능 2",
+                                              "title":  "회의록",
                                               "image":  "./guidebook-assets/manus_guide_start.png",
-                                              "placeholder":  true
+                                              "short":  "회의·인터뷰·아이디어 기록을 실시간으로 전사하고, 녹음이 끝나면 핵심 내용과 참석자·할 일을 구조화된 회의록으로 자동 정리합니다.",
+                                              "detail":  "메인 입력창의 회의록 아이콘에서 녹음을 시작하고, 종료 후 생성된 요약을 검토해 후속 작업까지 이어 가는 기능입니다.",
+                                              "when":  "대면 회의나 인터뷰의 논의 내용을 놓치지 않고 기록하거나, 혼자 말한 아이디어를 실행 가능한 메모와 할 일로 정리할 때 활용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "입력창 오른쪽 아래의 회의록 아이콘을 엽니다",
+                                                                  "body":  "Manus 메인 입력창 오른쪽 아래에 있는 말풍선 모양의 ‘회의록’ 아이콘을 클릭합니다. 회의록은 대면 회의, 인터뷰 또는 혼잣말을 녹음하면서 음성을 글로 옮기고, 녹음이 끝나면 핵심 내용·참석자·할 일을 구조화된 요약으로 만드는 기능입니다. 생성된 회의록은 같은 작업의 맥락으로 남으므로 후속 메일, 발표 자료, 웹사이트나 업무 초안 제작을 Manus에 바로 이어서 요청할 수 있습니다. 녹음 전에는 반드시 모든 참석자에게 알리고 동의를 받아야 하며, 소속 기관의 보안 규정과 관련 법규도 확인합니다.",
+                                                                  "image":  "./guidebook-assets/manus_guide_start.png",
+                                                                  "badge":  "기능 열기"
+                                                              },
+                                                              {
+                                                                  "title":  "시작을 눌러 녹음하고 종료 후 요약을 확인합니다",
+                                                                  "body":  "마이크 사용 권한을 허용한 뒤 ‘시작’을 누르고 회의를 진행합니다. 말하는 동안 자동 전사가 표시되며, 녹음을 마치고 ‘종료’를 누르면 Manus가 내용을 분석해 핵심 사항, 참석자와 할 일을 포함한 회의록을 자동 생성합니다. 결과가 나오면 이름·전문 용어·결정 사항·담당 업무가 실제 발언과 맞는지 검토하고 필요한 부분을 수정합니다. 녹음 자체는 무료지만 회의록 분석과 생성에는 크레딧이 사용되며, 시작과 요약 생성에는 인터넷 연결이 필요합니다. 브라우저 녹음은 온라인 회의의 시스템 오디오를 캡처하지 못하므로 웹에서는 같은 공간의 대면 대화나 마이크에 들어오는 음성을 기록하는 용도로 사용하고, 온라인 회의 소리까지 담아야 할 때는 화면 안내에 따라 Manus 데스크톱 앱을 이용합니다.",
+                                                                  "image":  "./guidebook-assets/manus_meeting_minutes_record.png",
+                                                                  "badge":  "녹음·자동 요약"
+                                                              }
+                                                          ]
                                           },
                                           {
                                               "id":  "manus_feature_03",
@@ -2731,7 +2747,9 @@ window.SERVICE_GUIDES = {
                                          "https://manus.im/en/blog/manus-max-release",
                                          "https://help.manus.im/en/articles/11711111-what-is-the-current-membership-pricing-for-manus",
                                          "https://help.manus.im/en/articles/12231777-how-can-i-use-manus-connectors",
-                                         "https://manus.im/docs/integrations/mcp-connectors"
+                                         "https://manus.im/docs/integrations/mcp-connectors",
+                                         "https://manus.im/docs/features/meeting-minutes",
+                                         "https://manus.im/blog/manus-meeting-minutes"
                                      ]
                      },
                      {
