@@ -2768,7 +2768,29 @@ window.SERVICE_GUIDES = {
                                               "id":  "manus_feature_09",
                                               "title":  "예약 작업",
                                               "image":  "./guidebook-assets/manus_feature_menu.png",
-                                              "placeholder":  true
+                                              "short":  "원하는 시간이나 반복 주기를 정해 두면 Manus가 사용자가 접속하지 않아도 조사·요약·보고·데이터 갱신 같은 작업을 자동으로 실행합니다.",
+                                              "detail":  "빠른 메뉴의 예약 작업 또는 왼쪽 사이드바의 예약됨 화면에서 정기 작업을 만들고, 실행 시간·프롬프트·승인 방식과 작업 맥락을 설정하는 방법을 안내합니다.",
+                                              "when":  "매일 뉴스 요약, 매주 경쟁사 동향 조사, 월간 보고서, 가격·키워드 변화 확인처럼 정해진 시각에 반복해야 하는 업무를 자동화할 때 활용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "빠른 메뉴 또는 사이드바에서 예약 작업을 엽니다",
+                                                                  "body":  "메인 입력창 아래의 ‘더보기’에서 ‘예약 작업’을 선택하면 Manus와 대화하며 ‘매주 월요일 오전 8시에 지난주 업계 뉴스를 5개로 요약해 줘’처럼 할 일과 시간을 말해 설정할 수 있습니다. 또는 왼쪽 사이드바의 ‘예약됨’을 눌러 예약 목록을 직접 관리할 수 있습니다. 예약 작업은 한 번 정해 두면 지정한 시각에 Manus가 자동 실행하는 기능으로, 일회성 실행과 일·평일·주·월 단위 반복 작업을 만들 수 있습니다. 정해진 시각마다 확인하는 방식이므로 초 단위 실시간 감시보다는 정기 조사·보고·갱신에 적합하며, 시간대는 계정 설정을 기준으로 하므로 저장 전에 확인합니다.",
+                                                                  "image":  "./guidebook-assets/manus_feature_menu.png",
+                                                                  "badge":  "기능 열기"
+                                                              },
+                                                              {
+                                                                  "title":  "예약됨 화면에서 정기 작업 생성을 선택합니다",
+                                                                  "body":  "왼쪽 사이드바의 ‘예약됨’을 열면 현재 예약, 다음 실행과 과거 실행 결과를 확인하고 기존 예약을 관리할 수 있습니다. 아직 예약이 없으면 자동 모니터링, 아침 이메일 요약, 반복 프로세스 자동화 같은 활용 예시가 표시됩니다. 화면 아래의 ‘정기 작업 생성’을 클릭해 새 예약 작업 설정 창을 엽니다. 처음 만드는 작업이라면 같은 요청을 먼저 일반 작업으로 한 번 실행해 결과와 필요한 권한을 확인한 뒤 예약하는 것이 안전합니다.",
+                                                                  "image":  "./guidebook-assets/manus_scheduled_tasks_home.png",
+                                                                  "badge":  "정기 작업 생성"
+                                                              },
+                                                              {
+                                                                  "title":  "실행 조건과 작업에 사용할 맥락을 설정합니다",
+                                                                  "body":  "‘제목’에는 목록에서 알아보기 쉬운 이름을 적고, ‘예약’에서 실행 주기와 시각을 선택합니다. 필요하면 ‘마칠 날짜 설정’으로 종료일을 지정합니다. ‘프롬프트’에는 Manus가 매번 수행할 일, 참고할 자료와 기간, 원하는 결과 형식을 구체적으로 적습니다. ‘자동 승인’을 켜면 메일 전송이나 게시 전에 나타나는 확인 요청을 자동 승인하므로, 대상과 내용이 충분히 검증된 반복 업무에서만 사용하고 처음에는 끈 상태로 시험합니다. ‘고급 설정’의 실행 옵션은 기존 대화·파일·결과를 이어 쓰는 ‘동일 작업’과 매번 독립적으로 시작하는 별도 작업 중에서 고릅니다. ‘에이전트’는 작업 난이도와 크레딧을 고려해 선택하고, ‘커넥터’는 Gmail·Drive 등 연결된 서비스의 자료나 동작이 필요할 때 지정합니다. ‘프로젝트’를 연결하면 그 안의 파일·스킬·지침·출력 기준을 재사용하며, ‘클라우드 컴퓨터’는 지속적으로 보관되는 실행 환경이나 관련 데이터가 필요한 작업에 지정합니다. 설정을 검토한 뒤 ‘저장’을 누릅니다.",
+                                                                  "image":  "./guidebook-assets/manus_scheduled_tasks_create.png",
+                                                                  "badge":  "예약 저장"
+                                                              }
+                                                          ]
                                           },
                                           {
                                               "id":  "manus_feature_10",
@@ -2816,7 +2838,10 @@ window.SERVICE_GUIDES = {
                                          "https://manus.im/blog/manus-meeting-minutes",
                                          "https://help.manus.im/en/articles/14753565-how-to-share-and-use-skills-in-manus",
                                          "https://manus.im/blog/manus-skills",
-                                         "https://manus.im/features/agent-skills"
+                                         "https://manus.im/features/agent-skills",
+                                         "https://manus.im/docs/features/scheduled-tasks",
+                                         "https://manus.im/blog/manus-schedules",
+                                         "https://help.manus.im/en/articles/15392111-what-is-the-cloud-computer"
                                      ]
                      },
                      {
