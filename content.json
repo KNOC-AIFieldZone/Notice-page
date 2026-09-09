@@ -176,6 +176,18 @@
                              ],
     "news":  [
                  {
+                     "service":  "Adobe",
+                     "title":  "Premiere·After Effects 생성형 AI 기능 확장",
+                     "date":  "2026-09-08",
+                     "file":  "2026-09-08-adobe-premiere-after-effects-ai.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "ChatGPT Images 2.5 및 GPT-Image-2.5 공개",
+                     "date":  "2026-09-08",
+                     "file":  "2026-09-08-openai-chatgpt-images-25.html"
+                 },
+                 {
                      "service":  "Lovable",
                      "title":  "Drafts 공개",
                      "date":  "2026-09-07",
