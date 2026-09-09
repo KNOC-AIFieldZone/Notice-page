@@ -2695,6 +2695,34 @@ window.SERVICE_GUIDES = {
                                                           ]
                                           },
                                           {
+                                              "id":  "manus_feature_skills",
+                                              "title":  "스킬",
+                                              "image":  "./guidebook-assets/manus_guide_start.png",
+                                              "short":  "자주 쓰는 전문 지식과 작업 절차를 재사용 가능한 실행 방식으로 저장하고, 공개 스킬을 추가하거나 나만의 스킬을 만들어 반복 업무에 활용합니다.",
+                                              "detail":  "스킬 라이브러리에서 필요한 기능을 찾아 사용하고, 기존 스킬을 가져오거나 Manus와 대화하며 맞춤 스킬을 만드는 방법을 안내합니다.",
+                                              "when":  "같은 형식의 조사·분석·보고서·콘텐츠 제작을 반복하거나, 팀의 업무 기준과 결과물 형식을 매번 다시 설명하지 않고 일관되게 적용할 때 활용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "왼쪽 사이드바에서 스킬을 엽니다",
+                                                                  "body":  "Manus 메인 화면의 왼쪽 사이드바에서 ‘스킬’을 클릭합니다. 스킬은 특정 업무의 전문 지식, 순서, 판단 기준과 결과 형식을 묶어 둔 재사용 가능한 작업 방식입니다. 한 번의 대화에만 쓰는 긴 지시문과 달리 필요할 때 불러와 여러 작업에서 반복 사용할 수 있어, Manus를 보고서 검토·시장 조사·브랜드 콘텐츠 제작처럼 특정 업무에 익숙한 전담 도구처럼 활용할 수 있습니다. 커넥터가 Gmail이나 Google Drive 같은 외부 서비스와 자료를 연결하는 통로라면, 스킬은 그 자료를 어떤 절차와 기준으로 처리할지 알려 주는 실행 지침에 가깝습니다.",
+                                                                  "image":  "./guidebook-assets/manus_guide_start.png",
+                                                                  "badge":  "스킬 열기"
+                                                              },
+                                                              {
+                                                                  "title":  "공개 스킬을 찾거나 내 스킬을 관리합니다",
+                                                                  "body":  "스킬 화면에서 검색창이나 코딩·데이터·자동화·비즈니스·디자인·미디어·콘텐츠 등의 카테고리를 이용해 필요한 공개 스킬을 찾고, 설명과 사용 목적을 확인한 뒤 추가해 사용합니다. 오른쪽 위의 ‘내 스킬’에서는 공개 라이브러리에서 추가한 스킬과 직접 만든 스킬을 한곳에서 확인할 수 있습니다. ‘나만의 스킬 만들기’ 메뉴에서는 ‘Manus(으)로 스킬 만들기’를 선택하거나, 가지고 있는 .skill·.zip 파일 또는 스킬 폴더를 업로드하고, 공개 GitHub 저장소의 주소를 입력해 가져올 수 있습니다. 외부 스킬에는 실행 가능한 스크립트가 포함될 수 있으므로 출처, 권한 요청과 파일 내용을 검토한 뒤 사용합니다.",
+                                                                  "image":  "./guidebook-assets/manus_skills_library.png",
+                                                                  "badge":  "탐색·가져오기"
+                                                              },
+                                                              {
+                                                                  "title":  "Manus와 대화하며 나만의 스킬을 만듭니다",
+                                                                  "body":  "‘나만의 스킬 만들기’에서 ‘Manus(으)로 스킬 만들기’를 누르면 skill-creator가 입력창에 추가됩니다. 만들고 싶은 업무의 목적, 입력 자료, 처리 순서, 판단 기준, 결과 형식과 예외 상황을 설명하고 Manus가 묻는 확인 질문에 답합니다. 예를 들어 ‘업로드한 회의자료와 회의록을 읽고 ① 회의 목적 ② 핵심 결정 ③ 담당자와 기한 ④ 미결 사항 ⑤ 다음 행동 순서의 한국어 업무보고로 정리하는 스킬을 만들어 줘. 시작 전에 입력 파일과 빠진 정보 처리 방법을 질문하고, 근거가 없는 내용은 추측하지 않도록 해줘’라고 요청할 수 있습니다. 생성 후에는 실제 샘플 자료로 시험하고, 빠진 단계나 원하는 출력 형식을 다시 말해 수정한 뒤 내 스킬에 저장해 반복 사용합니다.",
+                                                                  "image":  "./guidebook-assets/manus_skills_create.png",
+                                                                  "badge":  "맞춤 스킬 만들기"
+                                                              }
+                                                          ]
+                                          },
+                                          {
                                               "id":  "manus_feature_03",
                                               "title":  "슬라이드 제작",
                                               "image":  "./guidebook-assets/manus_feature_menu.png",
@@ -2779,7 +2807,10 @@ window.SERVICE_GUIDES = {
                                          "https://help.manus.im/en/articles/12231777-how-can-i-use-manus-connectors",
                                          "https://manus.im/docs/integrations/mcp-connectors",
                                          "https://manus.im/docs/features/meeting-minutes",
-                                         "https://manus.im/blog/manus-meeting-minutes"
+                                         "https://manus.im/blog/manus-meeting-minutes",
+                                         "https://help.manus.im/en/articles/14753565-how-to-share-and-use-skills-in-manus",
+                                         "https://manus.im/blog/manus-skills",
+                                         "https://manus.im/features/agent-skills"
                                      ]
                      },
                      {
