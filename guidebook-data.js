@@ -2696,50 +2696,80 @@ window.SERVICE_GUIDES = {
                                           },
                                           {
                                               "id":  "manus_feature_03",
-                                              "title":  "기능 3",
-                                              "image":  "./guidebook-assets/manus_guide_start.png",
+                                              "title":  "슬라이드 제작",
+                                              "image":  "./guidebook-assets/manus_feature_menu.png",
                                               "placeholder":  true
                                           },
                                           {
                                               "id":  "manus_feature_04",
-                                              "title":  "기능 4",
-                                              "image":  "./guidebook-assets/manus_guide_start.png",
+                                              "title":  "웹사이트 구축",
+                                              "image":  "./guidebook-assets/manus_feature_menu.png",
                                               "placeholder":  true
                                           },
                                           {
                                               "id":  "manus_feature_05",
-                                              "title":  "기능 5",
-                                              "image":  "./guidebook-assets/manus_guide_start.png",
+                                              "title":  "디자인",
+                                              "image":  "./guidebook-assets/manus_feature_menu.png",
                                               "placeholder":  true
                                           },
                                           {
                                               "id":  "manus_feature_06",
-                                              "title":  "기능 6",
-                                              "image":  "./guidebook-assets/manus_guide_start.png",
+                                              "title":  "게임 제작",
+                                              "image":  "./guidebook-assets/manus_feature_menu.png",
                                               "placeholder":  true
                                           },
                                           {
                                               "id":  "manus_feature_07",
-                                              "title":  "기능 7",
-                                              "image":  "./guidebook-assets/manus_guide_start.png",
+                                              "title":  "앱 개발",
+                                              "image":  "./guidebook-assets/manus_feature_menu.png",
                                               "placeholder":  true
                                           },
                                           {
                                               "id":  "manus_feature_08",
-                                              "title":  "기능 8",
-                                              "image":  "./guidebook-assets/manus_guide_start.png",
+                                              "title":  "비디오",
+                                              "image":  "./guidebook-assets/manus_feature_menu.png",
                                               "placeholder":  true
                                           },
                                           {
                                               "id":  "manus_feature_09",
-                                              "title":  "기능 9",
-                                              "image":  "./guidebook-assets/manus_guide_start.png",
+                                              "title":  "예약 작업",
+                                              "image":  "./guidebook-assets/manus_feature_menu.png",
                                               "placeholder":  true
                                           },
                                           {
                                               "id":  "manus_feature_10",
-                                              "title":  "기능 10",
-                                              "image":  "./guidebook-assets/manus_guide_start.png",
+                                              "title":  "Wide Research",
+                                              "image":  "./guidebook-assets/manus_feature_menu.png",
+                                              "placeholder":  true
+                                          },
+                                          {
+                                              "id":  "manus_feature_11",
+                                              "title":  "스프레드시트",
+                                              "image":  "./guidebook-assets/manus_feature_menu.png",
+                                              "placeholder":  true
+                                          },
+                                          {
+                                              "id":  "manus_feature_12",
+                                              "title":  "시각화",
+                                              "image":  "./guidebook-assets/manus_feature_menu.png",
+                                              "placeholder":  true
+                                          },
+                                          {
+                                              "id":  "manus_feature_13",
+                                              "title":  "오디오",
+                                              "image":  "./guidebook-assets/manus_feature_menu.png",
+                                              "placeholder":  true
+                                          },
+                                          {
+                                              "id":  "manus_feature_14",
+                                              "title":  "채팅 모드",
+                                              "image":  "./guidebook-assets/manus_feature_menu.png",
+                                              "placeholder":  true
+                                          },
+                                          {
+                                              "id":  "manus_feature_15",
+                                              "title":  "Playbook",
+                                              "image":  "./guidebook-assets/manus_feature_menu.png",
                                               "placeholder":  true
                                           }
                                       ],
