@@ -2732,7 +2732,65 @@ window.SERVICE_GUIDES = {
                                               "id":  "manus_feature_03",
                                               "title":  "슬라이드 제작",
                                               "image":  "./guidebook-assets/manus_feature_menu.png",
-                                              "placeholder":  true
+                                              "short":  "주제나 기존 자료를 전달하면 Manus가 조사·내용 구성·디자인·시각 자료와 발표자 노트까지 포함한 프레젠테이션을 제작합니다.",
+                                              "detail":  "슬라이드 도구를 활성화하고 제작 방식·템플릿·분량을 정한 뒤, 생성 과정을 확인하고 완성된 발표 자료를 수정·발표·저장하는 방법을 안내합니다.",
+                                              "when":  "보고회·교육·제안·시장 조사처럼 자료 조사부터 이야기 구성과 시각 디자인까지 한 번에 발표 자료로 완성해야 할 때 활용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "메인 화면에서 슬라이드 제작을 엽니다",
+                                                                  "body":  "Manus 메인 입력창 아래의 ‘슬라이드 제작’을 클릭합니다. Manus Slides는 짧은 주제 설명이나 첨부 문서·PDF·표 데이터를 바탕으로 필요한 내용을 조사하고, 발표 흐름을 구성해 슬라이드 디자인·차트·도표·생성 이미지와 발표자 노트까지 만들 수 있는 기능입니다. 단순히 문장을 여러 장으로 나누는 것이 아니라 대상 청중과 목적에 맞는 발표 자료 전체를 만드는 데 사용합니다.",
+                                                                  "image":  "./guidebook-assets/manus_feature_menu.png",
+                                                                  "badge":  "슬라이드 열기"
+                                                              },
+                                                              {
+                                                                  "title":  "제작 방식과 템플릿·페이지 수를 선택합니다",
+                                                                  "body":  "슬라이드가 활성화되면 입력창 아래에 샘플 프롬프트와 템플릿, 생성할 페이지 수가 표시됩니다. ‘템플릿 가져오기’로 보유한 PowerPoint 템플릿을 올리거나 제공된 디자인을 선택할 수 있으며, 템플릿 선택은 생략해도 됩니다. 파란색 ‘슬라이드’ 표시는 현재 슬라이드 도구가 활성화됐다는 뜻입니다. 옆의 방식 메뉴에서는 ‘표준·이미지·PowerPoint’를 고릅니다. ‘표준’은 일반적인 발표 자료를 빠르고 균형 있게 만들 때, ‘이미지’는 각 페이지를 이미지 중심의 강한 시각물로 만들 때 적합합니다. 이미지 방식은 장별 결과가 이미지이므로 요소별 편집보다 완성된 화면의 시각 효과에 초점이 있습니다. ‘PowerPoint’는 차트·표와 레이아웃을 편집할 수 있는 네이티브 .pptx 파일이 필요한 데이터 중심 업무 발표에 적합합니다.",
+                                                                  "image":  "./guidebook-assets/manus_slides_setup.png",
+                                                                  "badge":  "방식·템플릿 설정"
+                                                              },
+                                                              {
+                                                                  "title":  "원하는 발표 내용을 구체적으로 요청합니다",
+                                                                  "body":  "원하는 템플릿과 페이지 수를 정한 뒤 입력창에 주제, 청중, 발표 목적, 언어, 반드시 포함할 내용, 참고 자료와 원하는 분위기를 적고 전송합니다. 예: ‘첨부한 GPT-6 Astra 자료를 바탕으로 비개발자 임직원 대상 5장짜리 영어 소개 자료를 만들어 줘. 핵심 기능·활용처·안전성·가격을 포함하고 손그림 스타일로 통일해 줘.’ Manus는 자료 조사, 개요 작성, 슬라이드별 내용 구성, 이미지·차트와 파일 생성을 순차적으로 수행합니다. 작업 중 ‘Manus의 컴퓨터’나 진행 화면을 열면 현재 단계와 도구 실행을 실시간으로 볼 수 있습니다. 첨부 화면처럼 코드나 도구 인수가 보일 수도 있고, 상황에 따라 웹 조사·이미지 생성·파일 작성 같은 시각적 진행 정보가 표시되므로 작업마다 화면은 달라집니다.",
+                                                                  "image":  "./guidebook-assets/manus_slides_progress.png",
+                                                                  "badge":  "생성 과정 확인"
+                                                              },
+                                                              {
+                                                                  "title":  "결과를 확인하고 수정하거나 저장합니다",
+                                                                  "body":  "완성되면 왼쪽 대화 영역에 결과 카드가 나타나고 오른쪽에서 현재 슬라이드와 아래쪽 페이지 썸네일을 확인할 수 있습니다. ‘이 문장을 짧게’, ‘3페이지에 비교표 추가’, ‘회사 색상으로 바꿔 줘’, ‘발표자 노트를 작성해 줘’처럼 같은 대화에서 추가 수정을 요청할 수 있습니다. 상단의 발표 버튼으로 바로 재생하거나 결과 메뉴에서 PPTX·PDF 다운로드, Google Slides 변환, Google Drive·OneDrive 저장 등을 선택합니다. 제공되는 저장 형식과 편집 범위는 선택한 표준·이미지·PowerPoint 방식 및 연결된 계정에 따라 달라질 수 있으므로 중요한 수치·출처·레이아웃은 내려받기 전에 최종 확인합니다.",
+                                                                  "image":  "./guidebook-assets/manus_slides_result.png",
+                                                                  "badge":  "수정·내보내기"
+                                                              }
+                                                          ],
+                                              "slideDeckSample":  {
+                                                                      "title":  "결과물 샘플 · GPT-6 Astra Overview",
+                                                                      "description":  "좌우 화살표를 눌러 5장의 슬라이드를 한 장씩 확인할 수 있습니다. 이미지를 누르면 확대되며, 원본 PDF도 열거나 내려받을 수 있습니다.",
+                                                                      "file":  {
+                                                                                   "src":  "./guidebook-assets/manus_slides_sample_gpt6_astra.pdf",
+                                                                                   "fileName":  "GPT-6 Astra Overview.pdf"
+                                                                               },
+                                                                      "pages":  [
+                                                                                    {
+                                                                                        "src":  "./guidebook-assets/manus_slides_sample_gpt6_astra_page_01.png",
+                                                                                        "title":  "GPT-6 Astra Overview · 1페이지"
+                                                                                    },
+                                                                                    {
+                                                                                        "src":  "./guidebook-assets/manus_slides_sample_gpt6_astra_page_02.png",
+                                                                                        "title":  "GPT-6 Astra Overview · 2페이지"
+                                                                                    },
+                                                                                    {
+                                                                                        "src":  "./guidebook-assets/manus_slides_sample_gpt6_astra_page_03.png",
+                                                                                        "title":  "GPT-6 Astra Overview · 3페이지"
+                                                                                    },
+                                                                                    {
+                                                                                        "src":  "./guidebook-assets/manus_slides_sample_gpt6_astra_page_04.png",
+                                                                                        "title":  "GPT-6 Astra Overview · 4페이지"
+                                                                                    },
+                                                                                    {
+                                                                                        "src":  "./guidebook-assets/manus_slides_sample_gpt6_astra_page_05.png",
+                                                                                        "title":  "GPT-6 Astra Overview · 5페이지"
+                                                                                    }
+                                                                                ]
+                                                                  }
                                           },
                                           {
                                               "id":  "manus_feature_04",
@@ -2841,7 +2899,10 @@ window.SERVICE_GUIDES = {
                                          "https://manus.im/features/agent-skills",
                                          "https://manus.im/docs/features/scheduled-tasks",
                                          "https://manus.im/blog/manus-schedules",
-                                         "https://help.manus.im/en/articles/15392111-what-is-the-cloud-computer"
+                                         "https://help.manus.im/en/articles/15392111-what-is-the-cloud-computer",
+                                         "https://manus.im/docs/features/slides",
+                                         "https://manus.im/blog/manus-ppt-slides",
+                                         "https://manus.im/tools/slideshow-maker"
                                      ]
                      },
                      {
