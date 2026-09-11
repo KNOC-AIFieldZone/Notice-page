@@ -176,6 +176,48 @@
                              ],
     "news":  [
                  {
+                     "service":  "YuE",
+                     "title":  "YuE2 공개",
+                     "date":  "2026-09-10",
+                     "file":  "2026-09-10-yue2.html"
+                 },
+                 {
+                     "service":  "Qoder",
+                     "title":  "Sonus 모델 공개",
+                     "date":  "2026-09-10",
+                     "file":  "2026-09-10-qoder-sonus.html"
+                 },
+                 {
+                     "service":  "Genspark",
+                     "title":  "Gen-1 Slides 공개",
+                     "date":  "2026-09-10",
+                     "file":  "2026-09-10-genspark-gen-1-slides.html"
+                 },
+                 {
+                     "service":  "DeepSeek",
+                     "title":  "DeepSeek-V4.1-Flash 공개",
+                     "date":  "2026-09-10",
+                     "file":  "2026-09-10-deepseek-v41-flash.html"
+                 },
+                 {
+                     "service":  "Suno",
+                     "title":  "Suno v6 모델군 공개",
+                     "date":  "2026-09-09",
+                     "file":  "2026-09-09-suno-v6-models.html"
+                 },
+                 {
+                     "service":  "Cohere",
+                     "title":  "North Small Translate 공개",
+                     "date":  "2026-09-09",
+                     "file":  "2026-09-09-cohere-north-small-translate.html"
+                 },
+                 {
+                     "service":  "Meta AI",
+                     "title":  "Muse 개인 AI 에이전트 공개",
+                     "date":  "2026-09-09",
+                     "file":  "2026-09-09-meta-ai-muse-personal-agent.html"
+                 },
+                 {
                      "service":  "Adobe",
                      "title":  "Premiere·After Effects 생성형 AI 기능 확장",
                      "date":  "2026-09-08",
@@ -2698,6 +2740,14 @@
                                {
                                    "name":  "Vercel",
                                    "color":  "#4f46e5"
+                               },
+                               {
+                                   "name":  "Qoder",
+                                   "color":  "#6d28d9"
+                               },
+                               {
+                                   "name":  "YuE",
+                                   "color":  "#be123c"
                                }
                            ]
 }
