@@ -176,6 +176,36 @@
                              ],
     "news":  [
                  {
+                     "service":  "Gemini",
+                     "title":  "Windows 데스크톱 앱 공개",
+                     "date":  "2026-09-12",
+                     "file":  "2026-09-12-gemini-windows-desktop-app.html"
+                 },
+                 {
+                     "service":  "ElevenLabs",
+                     "title":  "Music v2.5 공개",
+                     "date":  "2026-09-11",
+                     "file":  "2026-09-11-elevenlabs-music-v25.html"
+                 },
+                 {
+                     "service":  "Kimi",
+                     "title":  "K2.8 Preview 공개",
+                     "date":  "2026-09-11",
+                     "file":  "2026-09-11-kimi-k28-preview.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "GPT-Live-1 API 공개",
+                     "date":  "2026-09-11",
+                     "file":  "2026-09-11-openai-gpt-live-1-api.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "ChatGPT for Financial Services 공개",
+                     "date":  "2026-09-11",
+                     "file":  "2026-09-11-openai-chatgpt-financial-services.html"
+                 },
+                 {
                      "service":  "YuE",
                      "title":  "YuE2 공개",
                      "date":  "2026-09-10",
@@ -2632,6 +2662,10 @@
                                {
                                    "name":  "Moonshot AI",
                                    "color":  "#8596ad"
+                               },
+                               {
+                                   "name":  "Kimi",
+                                   "color":  "#65a30d"
                                },
                                {
                                    "name":  "Gemini Notebook",
