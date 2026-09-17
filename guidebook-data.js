@@ -2631,8 +2631,8 @@ window.SERVICE_GUIDES = {
                          "url":  "https://manus.im/",
                          "tone":  "#fb7185",
                          "role":  "",
-                         "basis":  "2026-09-09",
-                         "guideDate":  "2026-09-09",
+                         "basis":  "2026-09-17",
+                         "guideDate":  "2026-09-17",
                          "overview":  "",
                          "hero":  "./guidebook-assets/manus_guide_start.png",
                          "features":  [],
@@ -2824,7 +2824,35 @@ window.SERVICE_GUIDES = {
                                               "id":  "manus_feature_05",
                                               "title":  "디자인",
                                               "image":  "./guidebook-assets/manus_feature_menu.png",
-                                              "placeholder":  true
+                                              "short":  "원하는 시각물을 말로 설명하거나 참고 이미지를 넣으면 AI가 이미지로 만들고, 완성된 결과를 대화와 표시 도구로 계속 수정합니다.",
+                                              "detail":  "디자인 모드를 활성화해 프롬프트·참고 자료·이미지 모델을 정하고, 생성된 포스터·메뉴판·광고·UI 시안 등을 캔버스에서 수정·추가 생성·저장하는 방법을 안내합니다.",
+                                              "when":  "포스터, 메뉴판, 소셜 미디어 광고, 인포그래픽, 제품 이미지, 책 표지, 패키지, 브랜드 시안, 웹·앱 UI 목업처럼 완성된 이미지 형태의 시각 자료가 필요할 때 활용합니다.",
+                                              "steps":  [
+                                                              {
+                                                                  "title":  "메인 화면에서 디자인을 엽니다",
+                                                                  "body":  "메인 입력창 아래의 ‘디자인’을 누르면 디자인 모드가 활성화됩니다. 핵심은 텍스트 요청이나 참고 자료를 바탕으로 하나의 완성된 이미지를 만들고, 그 이미지를 다시 대화형으로 다듬는 것입니다. 일반 사진이나 일러스트뿐 아니라 글자와 레이아웃이 포함된 포스터·메뉴판·광고 배너·인포그래픽·책 표지·UI 목업 같은 그래픽 결과물도 만들 수 있습니다. 다만 결과는 픽셀 이미지가 중심이므로 PowerPoint나 전문 편집 프로그램처럼 모든 요소가 처음부터 각각의 레이어로 분리된 문서는 아닙니다. 인쇄·광고·가격표에 쓰기 전에는 철자, 숫자, 상표, 저작권과 실제 상품 정보를 반드시 확인합니다.",
+                                                                  "image":  "./guidebook-assets/manus_feature_menu.png",
+                                                                  "badge":  "기능 열기"
+                                                              },
+                                                              {
+                                                                  "title":  "프롬프트·참고 자료·이미지 모델을 설정합니다",
+                                                                  "body":  "입력창에는 무엇을 만들지뿐 아니라 사용 목적, 들어갈 정확한 문구와 숫자, 화면 비율, 색상, 재질, 분위기, 배치와 피하고 싶은 요소까지 적습니다. ‘+’를 눌러 로고·제품 사진·브랜드 색상표·스케치 같은 참고 자료를 올리면 결과의 방향을 더 정확히 잡을 수 있습니다. 모델 메뉴에서는 현재 화면에 표시되는 GPT Image 2.5나 Nano Banana Pro처럼 사용할 이미지 모델을 선택합니다. 화면 설명상 GPT Image 2.5는 품질과 속도의 균형을, Nano Banana Pro는 정교한 멀티모달 작업을 지향하지만, 제공 모델과 설명은 계정·시점에 따라 바뀔 수 있으므로 생성 전에 메뉴를 확인합니다. 아래의 시작 예시는 커피 인포그래픽, 메뉴, 패키지, 소셜 광고, UI/UX, 포스터처럼 자주 쓰는 형식의 요청을 빠르게 시작하는 참고 템플릿입니다. 예: ‘검은 대리석과 금박 테두리를 사용한 세로형 프리미엄 퓨얼 다이닝 메뉴를 만들어 줘. 한글 상품명과 리터당 가격을 정확히 표시하고, 고급 레스토랑 분위기로 구성해 줘.’",
+                                                                  "image":  "./guidebook-assets/manus_design_setup.png",
+                                                                  "badge":  "생성 설정"
+                                                              },
+                                                              {
+                                                                  "title":  "결과를 대화하거나 표시해 수정하고 저장합니다",
+                                                                  "body":  "생성이 끝나면 왼쪽 대화 영역에서 결과와 다운로드 링크를 확인하고, 오른쪽 디자인 캔버스에서 이미지를 크게 볼 수 있습니다. ‘가격 글자를 더 크게’, ‘금색 테두리를 얇게’, ‘같은 분위기의 가로 배너도 추가해 줘’처럼 후속 요청을 보내 전체 디자인을 수정하거나 변형 이미지를 더 만들 수 있습니다. 참고할 로고·사진을 추가로 업로드해 기존 이미지에 합성하도록 요청하는 것도 가능합니다. 캔버스에서는 실행 취소·다시 실행과 확대·축소를 사용할 수 있고, 표시 도구로 바꾸고 싶은 영역을 직접 지정한 뒤 ‘이 부분만 짙은 파란색으로 변경’처럼 지시하면 전체 구도를 다시 만들지 않고 해당 부분을 정밀하게 수정할 수 있습니다. 설명 도구는 수정 의도나 피드백을 남길 때 사용하고, 텍스트 편집이 제공되는 화면에서는 이미지 속 문구를 추출해 고칠 수 있습니다. 완성본은 결과 링크로 내려받되, AI가 만든 한글·가격·단위는 확대해서 한 번 더 대조합니다. 아래에는 이번 예시로 생성한 최종 메뉴판 이미지를 첨부했습니다.",
+                                                                  "image":  "./guidebook-assets/manus_design_result.png",
+                                                                  "badge":  "수정·저장"
+                                                              }
+                                                          ],
+                                              "imageSamples":  [
+                                                                   {
+                                                                       "title":  "결과물 · 프리미엄 퓨얼 다이닝 메뉴",
+                                                                       "src":  "./guidebook-assets/manus_design_sample_fuel_gourmet_menu.png"
+                                                                   }
+                                                               ]
                                           },
                                           {
                                               "id":  "manus_feature_06",
@@ -2930,7 +2958,11 @@ window.SERVICE_GUIDES = {
                                          "https://manus.im/docs/website-builder/editing-and-previewing",
                                          "https://manus.im/docs/website-builder/code-control",
                                          "https://manus.im/docs/website-builder/project-analytics",
-                                         "https://manus.im/docs/website-builder/publishing"
+                                         "https://manus.im/docs/website-builder/publishing",
+                                         "https://manus.im/docs/features/design-view",
+                                         "https://manus.im/en/blog/manus-max-release",
+                                         "https://manus.im/tools/ai-image-editor",
+                                         "https://manus.im/tools/ai-graphic-design"
                                      ]
                      },
                      {

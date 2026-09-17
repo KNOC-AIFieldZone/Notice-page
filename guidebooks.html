@@ -419,7 +419,7 @@
     </section>
   </div>
 
-  <script src="./guidebook-data.js?v=20260909-02"></script>
+  <script src="./guidebook-data.js?v=20260917-01"></script>
   <script>
     const $app = document.querySelector("#app");
     const $headerActions = document.querySelector("#headerActions");
@@ -734,7 +734,7 @@
                   ${imageSamples.map((sample, sampleIdx) => `
                     <div class="image-card">
                       <div class="image-card-head">${esc(sample.title || `결과물 ${sampleIdx + 1}`)}</div>
-                      <img class="zoomable-guide-image" tabindex="0" role="button" aria-label="이미지 확대 보기: ${esc(sample.title || `결과물 ${sampleIdx + 1}`)}" src="${esc(sample.src)}" alt="${esc(sample.title || `결과물 ${sampleIdx + 1}`)}">
+                      <img class="zoomable-guide-image" loading="lazy" decoding="async" tabindex="0" role="button" aria-label="이미지 확대 보기: ${esc(sample.title || `결과물 ${sampleIdx + 1}`)}" src="${esc(sample.src)}" alt="${esc(sample.title || `결과물 ${sampleIdx + 1}`)}">
                     </div>
                   `).join("")}
                 </div>
