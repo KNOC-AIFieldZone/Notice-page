@@ -176,6 +176,42 @@
                              ],
     "news":  [
                  {
+                     "service":  "SoundHound",
+                     "title":  "Human Assisted Resolution 공개",
+                     "date":  "2026-09-16",
+                     "file":  "2026-09-16-soundhound-human-assisted-resolution.html"
+                 },
+                 {
+                     "service":  "xAI",
+                     "title":  "Grok Build 메모리 정식 제공",
+                     "date":  "2026-09-16",
+                     "file":  "2026-09-16-xai-grok-build-memory.html"
+                 },
+                 {
+                     "service":  "Pindrop",
+                     "title":  "BotStopper 공개",
+                     "date":  "2026-09-16",
+                     "file":  "2026-09-16-pindrop-botstopper.html"
+                 },
+                 {
+                     "service":  "Prior Labs",
+                     "title":  "TabPFN-3.5 공개",
+                     "date":  "2026-09-15",
+                     "file":  "2026-09-15-prior-labs-tabpfn-35.html"
+                 },
+                 {
+                     "service":  "Notion AI",
+                     "title":  "Notion 3.7 Agent Skills 및 에이전트 기능 확장",
+                     "date":  "2026-09-15",
+                     "file":  "2026-09-15-notion-37-agent-skills.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Gemini 3.8 Live 및 3.8 Live Extended Thinking 공개",
+                     "date":  "2026-09-15",
+                     "file":  "2026-09-15-gemini-38-live-extended-thinking.html"
+                 },
+                 {
                      "service":  "Gemini",
                      "title":  "Windows 데스크톱 앱 공개",
                      "date":  "2026-09-12",
@@ -2782,6 +2818,18 @@
                                {
                                    "name":  "YuE",
                                    "color":  "#be123c"
+                               },
+                               {
+                                   "name":  "SoundHound",
+                                   "color":  "#c026d3"
+                               },
+                               {
+                                   "name":  "Pindrop",
+                                   "color":  "#0891b2"
+                               },
+                               {
+                                   "name":  "Prior Labs",
+                                   "color":  "#ca8a04"
                                }
                            ]
 }
