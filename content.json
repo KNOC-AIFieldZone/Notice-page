@@ -176,6 +176,36 @@
                              ],
     "news":  [
                  {
+                     "service":  "Hugging Face",
+                     "title":  "Tokenizers v1 릴리스 후보 공개",
+                     "date":  "2026-09-21",
+                     "file":  "2026-09-21-hugging-face-tokenizers-v1-rc.html"
+                 },
+                 {
+                     "service":  "Qwen",
+                     "title":  "Qwen3.8 Omni Flash Realtime 및 Live Harness v1.0 공개",
+                     "date":  "2026-09-21",
+                     "file":  "2026-09-21-qwen-omni-realtime-live-harness.html"
+                 },
+                 {
+                     "service":  "Qwen",
+                     "title":  "Qwen Code 0.24.3 업데이트",
+                     "date":  "2026-09-21",
+                     "file":  "2026-09-21-qwen-code-0243.html"
+                 },
+                 {
+                     "service":  "xAI",
+                     "title":  "Grok 4.7 공개",
+                     "date":  "2026-09-21",
+                     "file":  "2026-09-21-xai-grok-47.html"
+                 },
+                 {
+                     "service":  "ElevenLabs",
+                     "title":  "ElevenCreative Studio 4.0 공개",
+                     "date":  "2026-09-21",
+                     "file":  "2026-09-21-elevenlabs-studio-40.html"
+                 },
+                 {
                      "service":  "Vercel",
                      "title":  "skills CLI Notion 스킬 지원",
                      "date":  "2026-09-17",
@@ -2746,6 +2776,10 @@
                                {
                                    "name":  "HeyGen",
                                    "color":  "#acbfc8"
+                               },
+                               {
+                                   "name":  "Hugging Face",
+                                   "color":  "#ffd21e"
                                },
                                {
                                    "name":  "IFM",
