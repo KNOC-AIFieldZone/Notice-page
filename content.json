@@ -176,6 +176,42 @@
                              ],
     "news":  [
                  {
+                     "service":  "Vercel",
+                     "title":  "skills CLI Notion 스킬 지원",
+                     "date":  "2026-09-17",
+                     "file":  "2026-09-17-vercel-skills-cli-notion.html"
+                 },
+                 {
+                     "service":  "Qwen",
+                     "title":  "Qwen Code 0.24.0 업데이트",
+                     "date":  "2026-09-17",
+                     "file":  "2026-09-17-qwen-code-024.html"
+                 },
+                 {
+                     "service":  "Gemini Notebook",
+                     "title":  "Expert Intelligence 공개",
+                     "date":  "2026-09-17",
+                     "file":  "2026-09-17-gemini-notebook-expert-intelligence.html"
+                 },
+                 {
+                     "service":  "Perplexity",
+                     "title":  "Computer 작업 강도 조절 기능 공개",
+                     "date":  "2026-09-17",
+                     "file":  "2026-09-17-perplexity-computer-effort-control.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "ChatGPT for Word 정식 출시",
+                     "date":  "2026-09-17",
+                     "file":  "2026-09-17-openai-chatgpt-for-word.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "Astra for Law 공개",
+                     "date":  "2026-09-17",
+                     "file":  "2026-09-17-openai-astra-for-law.html"
+                 },
+                 {
                      "service":  "SoundHound",
                      "title":  "Human Assisted Resolution 공개",
                      "date":  "2026-09-16",
@@ -344,16 +380,16 @@
                      "file":  "2026-09-03-meta-ai-muse-spark-13.html"
                  },
                  {
-                     "service":  "Runway",
-                     "title":  "GWM Worlds 2 리서치 프리뷰 공개",
-                     "date":  "2026-09-03",
-                     "file":  "2026-09-03-runway-gwm-worlds-2.html"
-                 },
-                 {
                      "service":  "IFM",
                      "title":  "K2 Horizon 오픈 모델 6종 공개",
                      "date":  "2026-09-03",
                      "file":  "2026-09-03-ifm-k2-horizon.html"
+                 },
+                 {
+                     "service":  "Runway",
+                     "title":  "GWM Worlds 2 리서치 프리뷰 공개",
+                     "date":  "2026-09-03",
+                     "file":  "2026-09-03-runway-gwm-worlds-2.html"
                  },
                  {
                      "service":  "Gemini",
@@ -2620,6 +2656,22 @@
              ],
     "newsServiceCatalog":  [
                                {
+                                   "name":  "Adobe",
+                                   "color":  "#31a8ff"
+                               },
+                               {
+                                   "name":  "Amazon",
+                                   "color":  "#146eb4"
+                               },
+                               {
+                                   "name":  "Apple",
+                                   "color":  "#111827"
+                               },
+                               {
+                                   "name":  "Canva",
+                                   "color":  "#22d3ee"
+                               },
+                               {
                                    "name":  "Canva AI",
                                    "color":  "#22d3ee"
                                },
@@ -2632,8 +2684,20 @@
                                    "color":  "#66e1b8"
                                },
                                {
+                                   "name":  "Circleback",
+                                   "color":  "#0369a1"
+                               },
+                               {
                                    "name":  "Claude",
                                    "color":  "#f59e0b"
+                               },
+                               {
+                                   "name":  "Cloudflare",
+                                   "color":  "#f6821f"
+                               },
+                               {
+                                   "name":  "Cohere",
+                                   "color":  "#256f5b"
                                },
                                {
                                    "name":  "Copilot",
@@ -2664,8 +2728,20 @@
                                    "color":  "#60a5fa"
                                },
                                {
+                                   "name":  "Gemini Notebook",
+                                   "color":  "#b7b8f0"
+                               },
+                               {
                                    "name":  "Genspark",
                                    "color":  "#eab308"
+                               },
+                               {
+                                   "name":  "Google",
+                                   "color":  "#34a853"
+                               },
+                               {
+                                   "name":  "Harvey",
+                                   "color":  "#7c3aed"
                                },
                                {
                                    "name":  "HeyGen",
@@ -2676,8 +2752,20 @@
                                    "color":  "#0f766e"
                                },
                                {
+                                   "name":  "Kimi",
+                                   "color":  "#65a30d"
+                               },
+                               {
+                                   "name":  "Koder",
+                                   "color":  "#e11d48"
+                               },
+                               {
                                    "name":  "Lilys AI",
                                    "color":  "#ace2dc"
+                               },
+                               {
+                                   "name":  "Lovable",
+                                   "color":  "#f472b6"
                                },
                                {
                                    "name":  "Manus",
@@ -2700,14 +2788,6 @@
                                    "color":  "#8596ad"
                                },
                                {
-                                   "name":  "Kimi",
-                                   "color":  "#65a30d"
-                               },
-                               {
-                                   "name":  "Gemini Notebook",
-                                   "color":  "#b7b8f0"
-                               },
-                               {
                                    "name":  "Notion AI",
                                    "color":  "#c1c5cd"
                                },
@@ -2724,8 +2804,24 @@
                                    "color":  "#38bdf8"
                                },
                                {
+                                   "name":  "Pindrop",
+                                   "color":  "#0891b2"
+                               },
+                               {
                                    "name":  "Poe",
                                    "color":  "#e5cbb8"
+                               },
+                               {
+                                   "name":  "Prior Labs",
+                                   "color":  "#ca8a04"
+                               },
+                               {
+                                   "name":  "Qoder",
+                                   "color":  "#6d28d9"
+                               },
+                               {
+                                   "name":  "Qwen",
+                                   "color":  "#a855f7"
                                },
                                {
                                    "name":  "Replit",
@@ -2740,96 +2836,40 @@
                                    "color":  "#daf5b2"
                                },
                                {
-                                   "name":  "Suno",
-                                   "color":  "#b68edc"
-                               },
-                               {
-                                   "name":  "xAI",
-                                   "color":  "#b0a1d3"
-                               },
-                               {
-                                   "name":  "기타",
-                                   "color":  "#94a3b8"
-                               },
-                               {
-                                   "name":  "Canva",
-                                   "color":  "#22d3ee"
-                               },
-                               {
-                                   "name":  "Lovable",
-                                   "color":  "#f472b6"
+                                   "name":  "SoundHound",
+                                   "color":  "#c026d3"
                                },
                                {
                                    "name":  "Stability AI",
                                    "color":  "#8b5cf6"
                                },
                                {
-                                   "name":  "Harvey",
-                                   "color":  "#7c3aed"
-                               },
-                               {
-                                   "name":  "Apple",
-                                   "color":  "#111827"
-                               },
-                               {
-                                   "name":  "Google",
-                                   "color":  "#34a853"
-                               },
-                               {
-                                   "name":  "Cohere",
-                                   "color":  "#256f5b"
-                               },
-                               {
-                                   "name":  "Tencent",
-                                   "color":  "#0052d9"
-                               },
-                               {
-                                   "name":  "Adobe",
-                                   "color":  "#31a8ff"
-                               },
-                               {
-                                   "name":  "Cloudflare",
-                                   "color":  "#f6821f"
-                               },
-                               {
-                                   "name":  "Koder",
-                                   "color":  "#e11d48"
-                               },
-                               {
-                                   "name":  "Circleback",
-                                   "color":  "#0369a1"
-                               },
-                               {
-                                   "name":  "Amazon",
-                                   "color":  "#146eb4"
+                                   "name":  "Suno",
+                                   "color":  "#b68edc"
                                },
                                {
                                    "name":  "SurveyMonkey",
                                    "color":  "#00bf6f"
                                },
                                {
+                                   "name":  "Tencent",
+                                   "color":  "#0052d9"
+                               },
+                               {
                                    "name":  "Vercel",
                                    "color":  "#4f46e5"
                                },
                                {
-                                   "name":  "Qoder",
-                                   "color":  "#6d28d9"
+                                   "name":  "xAI",
+                                   "color":  "#b0a1d3"
                                },
                                {
                                    "name":  "YuE",
                                    "color":  "#be123c"
                                },
                                {
-                                   "name":  "SoundHound",
-                                   "color":  "#c026d3"
-                               },
-                               {
-                                   "name":  "Pindrop",
-                                   "color":  "#0891b2"
-                               },
-                               {
-                                   "name":  "Prior Labs",
-                                   "color":  "#ca8a04"
+                                   "name":  "기타",
+                                   "color":  "#94a3b8"
                                }
                            ]
 }
