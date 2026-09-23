@@ -176,6 +176,48 @@
                              ],
     "news":  [
                  {
+                     "service":  "Sarvam AI",
+                     "title":  "실시간 음성 인식 Keyterm Prompting 지원",
+                     "date":  "2026-09-22",
+                     "file":  "2026-09-22-sarvam-ai-streaming-keyterm-prompting.html"
+                 },
+                 {
+                     "service":  "ElevenLabs",
+                     "title":  "Scribe v2 Medical 전체 공개",
+                     "date":  "2026-09-22",
+                     "file":  "2026-09-22-elevenlabs-scribe-v2-medical.html"
+                 },
+                 {
+                     "service":  "Qwen",
+                     "title":  "Qwen-Audio-3.1-TTS-Next 공개",
+                     "date":  "2026-09-22",
+                     "file":  "2026-09-22-qwen-audio-31-tts-next.html"
+                 },
+                 {
+                     "service":  "Qwen",
+                     "title":  "Qwen3.8-LiveTranslate 공개",
+                     "date":  "2026-09-22",
+                     "file":  "2026-09-22-qwen38-live-translate.html"
+                 },
+                 {
+                     "service":  "Qwen",
+                     "title":  "Qwen Intelligence 공개",
+                     "date":  "2026-09-22",
+                     "file":  "2026-09-22-qwen-intelligence.html"
+                 },
+                 {
+                     "service":  "Kimi",
+                     "title":  "Kimi Work 3.2.12 업데이트",
+                     "date":  "2026-09-22",
+                     "file":  "2026-09-22-kimi-work-3212.html"
+                 },
+                 {
+                     "service":  "NVIDIA",
+                     "title":  "Isaac ROS 5.0 공개",
+                     "date":  "2026-09-22",
+                     "file":  "2026-09-22-nvidia-isaac-ros-50.html"
+                 },
+                 {
                      "service":  "Hugging Face",
                      "title":  "Tokenizers v1 릴리스 후보 공개",
                      "date":  "2026-09-21",
@@ -2826,6 +2868,10 @@
                                    "color":  "#c1c5cd"
                                },
                                {
+                                   "name":  "NVIDIA",
+                                   "color":  "#76b900"
+                               },
+                               {
                                    "name":  "OpenAI",
                                    "color":  "#a6cec1"
                                },
@@ -2864,6 +2910,10 @@
                                {
                                    "name":  "Runway",
                                    "color":  "#92b9a1"
+                               },
+                               {
+                                   "name":  "Sarvam AI",
+                                   "color":  "#e76f51"
                                },
                                {
                                    "name":  "Skywork",
