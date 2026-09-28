@@ -41,7 +41,8 @@
                          "name":  "CapCut",
                          "url":  "https://www.capcut.com/my-edit?start_tab=video",
                          "domain":  "capcut.com",
-                         "note":  "동영상 제작·편집\nAI 영상 생성\n자동 자막·배경 제거\nAI 이미지 생성·편집\n템플릿·효과 활용\n작업표시줄 CapCut 앱 권장"
+                         "note":  "동영상 제작·편집\nAI 영상 생성\n자동 자막·배경 제거\nAI 이미지 생성·편집\n템플릿·효과 활용",
+                         "recommendation":  "작업표시줄 CapCut 앱 사용 권장"
                      },
                      {
                          "name":  "Lilys AI",

@@ -295,6 +295,20 @@
       text-overflow: clip;
       word-break: keep-all;
     }
+    .svc-recommend{
+      display:inline-flex;
+      align-items:center;
+      margin-top:8px;
+      padding:5px 8px;
+      border:1px solid rgba(251,191,36,.48);
+      border-radius:999px;
+      background:rgba(251,191,36,.14);
+      color:var(--text);
+      font-size:11px;
+      font-weight:950;
+      line-height:1.25;
+      word-break:keep-all;
+    }
     .svc-txt{ min-width:0; }
 
     /* Right column: stacked panels */
@@ -1002,6 +1016,12 @@
 
         txt.appendChild(nm);
         txt.appendChild(sub);
+        if(s.recommendation){
+          const recommendation = document.createElement("div");
+          recommendation.className = "svc-recommend";
+          recommendation.textContent = s.recommendation;
+          txt.appendChild(recommendation);
+        }
 
         card.appendChild(ic);
         card.appendChild(txt);
