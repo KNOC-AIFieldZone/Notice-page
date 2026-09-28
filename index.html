@@ -277,6 +277,7 @@
     .svc-name{
       font-weight: 900;
       font-size: 14px;
+      color: rgba(255,255,255,.98);
       line-height: 1.1;
       margin-top: 2px;
       white-space:nowrap;
@@ -287,7 +288,7 @@
     /* 기능(줄바꿈 유지, 안 잘리게) */
     .svc-sub{
       font-size: 12px;
-      color: var(--muted);
+      color: rgba(255,255,255,.84);
       margin-top: 6px;
       line-height: 1.35;
       white-space: pre-line; /* \n 줄바꿈 표시 */
@@ -310,6 +311,11 @@
       white-space:nowrap;
     }
     .svc-txt{ min-width:0; }
+
+    @media (prefers-color-scheme: light){
+      .svc-name{ color: rgba(17,24,39,.98); }
+      .svc-sub{ color: rgba(17,24,39,.78); }
+    }
 
     /* Right column: stacked panels */
     .right-stack{
@@ -557,7 +563,6 @@
     /* ===== 카드(서비스) 3D/클릭 가능 느낌 강화 ===== */
     .svc{
       position: relative;
-      will-change: transform, box-shadow, border-color, background;
       box-shadow:
         0 6px 16px rgba(0,0,0,.18),
         inset 0 1px 0 rgba(255,255,255,.06);
@@ -582,7 +587,7 @@
     }
 
     .svc:hover{
-      transform: translateY(-4px) scale(1.01);
+      transform: translateY(-3px);
       background: rgba(255,255,255,.07);
       border-color: rgba(94,234,212,.60);
       box-shadow:
@@ -593,7 +598,7 @@
 
     /* 눌림(클릭) 느낌 */
     .svc:active{
-      transform: translateY(-1px) scale(0.995);
+      transform: translateY(-1px);
       box-shadow:
         0 12px 28px rgba(0,0,0,.30),
         inset 0 2px 12px rgba(0,0,0,.25);
@@ -633,7 +638,7 @@
        ================================================== */
     .svc--disabled{
       cursor: default;
-      opacity: .82;
+      opacity: .92;
       user-select: none;
     }
     .svc--disabled:hover{
