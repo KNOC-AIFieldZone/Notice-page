@@ -197,28 +197,10 @@
                              ],
     "news":  [
                  {
-                     "service":  "Zoom",
-                     "title":  "Zoom Whiteboard 회의 대화 실시간 시각화 공개",
-                     "date":  "2026-09-28",
-                     "file":  "2026-09-28-zoom-whiteboard-live-visualization.html"
-                 },
-                 {
-                     "service":  "Zoom",
-                     "title":  "Zoom Slides PowerPoint 가져오기 기능 강화",
-                     "date":  "2026-09-28",
-                     "file":  "2026-09-28-zoom-slides-powerpoint-import.html"
-                 },
-                 {
                      "service":  "Atlassian",
                      "title":  "Rovo Agent Connector 정식 출시",
                      "date":  "2026-09-28",
                      "file":  "2026-09-28-atlassian-rovo-agent-connector.html"
-                 },
-                 {
-                     "service":  "NVIDIA",
-                     "title":  "Open Agent Safety Platform 공개",
-                     "date":  "2026-09-28",
-                     "file":  "2026-09-28-nvidia-open-agent-safety-platform.html"
                  },
                  {
                      "service":  "Lovable",
@@ -3043,6 +3025,42 @@
              ],
     "newsServiceCatalog":  [
                                {
+                                   "name":  "Asana",
+                                   "color":  "#f06a6a"
+                               },
+                               {
+                                   "name":  "Atlassian",
+                                   "color":  "#0052cc"
+                               },
+                               {
+                                   "name":  "AWS",
+                                   "color":  "#ff9900"
+                               },
+                               {
+                                   "name":  "H Company",
+                                   "color":  "#10b981"
+                               },
+                               {
+                                   "name":  "Hugging Face",
+                                   "color":  "#ffd21e"
+                               },
+                               {
+                                   "name":  "Microsoft",
+                                   "color":  "#0078d4"
+                               },
+                               {
+                                   "name":  "NVIDIA",
+                                   "color":  "#76b900"
+                               },
+                               {
+                                   "name":  "Sarvam AI",
+                                   "color":  "#e76f51"
+                               },
+                               {
+                                   "name":  "Snowflake",
+                                   "color":  "#29b5e8"
+                               },
+                               {
                                    "name":  "Adobe",
                                    "color":  "#31a8ff"
                                },
@@ -3160,7 +3178,7 @@
                                },
                                {
                                    "name":  "Meta AI",
-                                   "color":  "#e5f0ff"
+                                   "color":  "#0866ff"
                                },
                                {
                                    "name":  "Midjourney",
