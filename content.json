@@ -177,6 +177,372 @@
                              ],
     "news":  [
                  {
+                     "service":  "Zoom",
+                     "title":  "Zoom Whiteboard 회의 대화 실시간 시각화 공개",
+                     "date":  "2026-09-28",
+                     "file":  "2026-09-28-zoom-whiteboard-live-visualization.html"
+                 },
+                 {
+                     "service":  "Zoom",
+                     "title":  "Zoom Slides PowerPoint 가져오기 기능 강화",
+                     "date":  "2026-09-28",
+                     "file":  "2026-09-28-zoom-slides-powerpoint-import.html"
+                 },
+                 {
+                     "service":  "Atlassian",
+                     "title":  "Rovo Agent Connector 정식 출시",
+                     "date":  "2026-09-28",
+                     "file":  "2026-09-28-atlassian-rovo-agent-connector.html"
+                 },
+                 {
+                     "service":  "NVIDIA",
+                     "title":  "Open Agent Safety Platform 공개",
+                     "date":  "2026-09-28",
+                     "file":  "2026-09-28-nvidia-open-agent-safety-platform.html"
+                 },
+                 {
+                     "service":  "Lovable",
+                     "title":  "Microsoft 365 및 Fabric 연동 확대",
+                     "date":  "2026-09-28",
+                     "file":  "2026-09-28-lovable-microsoft-365-fabric.html"
+                 },
+                 {
+                     "service":  "Meta AI",
+                     "title":  "Meta Enterprise Platform 공개",
+                     "date":  "2026-09-28",
+                     "file":  "2026-09-28-meta-enterprise-platform.html"
+                 },
+                 {
+                     "service":  "H Company",
+                     "title":  "Holo4 에이전트 모델군 공개",
+                     "date":  "2026-09-28",
+                     "file":  "2026-09-28-h-company-holo4.html"
+                 },
+                 {
+                     "service":  "Google",
+                     "title":  "Google Earth Engine Ask 공개",
+                     "date":  "2026-09-28",
+                     "file":  "2026-09-28-google-earth-engine-ask.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Gemini Enterprise Agent Platform에 Claude Sonnet 5.5 제공",
+                     "date":  "2026-09-28",
+                     "file":  "2026-09-28-gemini-enterprise-agent-platform-claude-sonnet-55.html"
+                 },
+                 {
+                     "service":  "ElevenLabs",
+                     "title":  "Eleven v4 및 Eleven v4 Turbo 공개",
+                     "date":  "2026-09-28",
+                     "file":  "2026-09-28-elevenlabs-eleven-v4-turbo.html"
+                 },
+                 {
+                     "service":  "Snowflake",
+                     "title":  "Cortex AI에 GPT-6 Sol 및 Luna 제공",
+                     "date":  "2026-09-28",
+                     "file":  "2026-09-28-snowflake-gpt-6-sol-luna.html"
+                 },
+                 {
+                     "service":  "Claude",
+                     "title":  "Claude Sonnet 5.5 공개",
+                     "date":  "2026-09-28",
+                     "file":  "2026-09-28-claude-sonnet-55.html"
+                 },
+                 {
+                     "service":  "Microsoft",
+                     "title":  "Claude Sonnet 5.5 Microsoft Foundry 제공",
+                     "date":  "2026-09-28",
+                     "file":  "2026-09-28-microsoft-foundry-claude-sonnet-55.html"
+                 },
+                 {
+                     "service":  "AWS",
+                     "title":  "Claude Sonnet 5.5 AWS 제공",
+                     "date":  "2026-09-28",
+                     "file":  "2026-09-28-aws-claude-sonnet-55.html"
+                 },
+                 {
+                     "service":  "Vercel",
+                     "title":  "Claude Sonnet 5.5 AI Gateway 제공",
+                     "date":  "2026-09-28",
+                     "file":  "2026-09-28-vercel-claude-sonnet-55.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "ChatGPT Health 맞춤형 요약 기능 추가",
+                     "date":  "2026-09-28",
+                     "file":  "2026-09-28-openai-chatgpt-health-summaries.html"
+                 },
+                 {
+                     "service":  "Cloudflare",
+                     "title":  "Browser Run WebMCP 지원 확대",
+                     "date":  "2026-09-28",
+                     "file":  "2026-09-28-cloudflare-browser-run-webmcp.html"
+                 },
+                 {
+                     "service":  "Asana",
+                     "title":  "Asana Client Management 정식 출시",
+                     "date":  "2026-09-28",
+                     "file":  "2026-09-28-asana-client-management.html"
+                 },
+                 {
+                     "service":  "Replit",
+                     "title":  "채팅 내 인터랙티브 차트 공개",
+                     "date":  "2026-09-26",
+                     "file":  "2026-09-26-replit-interactive-charts.html"
+                 },
+                 {
+                     "service":  "Vercel",
+                     "title":  "Pixel Canary 무료 Stealth 모델 공개",
+                     "date":  "2026-09-25",
+                     "file":  "2026-09-25-vercel-pixel-canary.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Gemini 3.8 Live with Live Avatar 공개",
+                     "date":  "2026-09-25",
+                     "file":  "2026-09-25-gemini-38-live-avatar.html"
+                 },
+                 {
+                     "service":  "Lovable",
+                     "title":  "무료 Chat 기능 공개",
+                     "date":  "2026-09-24",
+                     "file":  "2026-09-24-lovable-free-chat.html"
+                 },
+                 {
+                     "service":  "Midjourney",
+                     "title":  "Style Live Previews 및 기본 파라미터 저장 추가",
+                     "date":  "2026-09-24",
+                     "file":  "2026-09-24-midjourney-style-previews-defaults.html"
+                 },
+                 {
+                     "service":  "Perplexity",
+                     "title":  "Portable Computer AMD 시스템 지원",
+                     "date":  "2026-09-24",
+                     "file":  "2026-09-24-perplexity-portable-computer-amd.html"
+                 },
+                 {
+                     "service":  "NVIDIA",
+                     "title":  "NV-Reason-CT 공개",
+                     "date":  "2026-09-24",
+                     "file":  "2026-09-24-nvidia-nv-reason-ct.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Google Vids에 Gemini Omni 1.1 Flash 적용",
+                     "date":  "2026-09-24",
+                     "file":  "2026-09-24-gemini-vids-omni-11-flash.html"
+                 },
+                 {
+                     "service":  "Google",
+                     "title":  "Google Flow 크리에이티브 도구 6종 공개",
+                     "date":  "2026-09-24",
+                     "file":  "2026-09-24-google-flow-creative-tools.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Google Docs에서 Gemini Notebook 소스 참조 지원",
+                     "date":  "2026-09-24",
+                     "file":  "2026-09-24-gemini-docs-notebook-grounding.html"
+                 },
+                 {
+                     "service":  "Adobe",
+                     "title":  "Gemini 도구 제공 및 Claude 플러그인 확장",
+                     "date":  "2026-09-24",
+                     "file":  "2026-09-24-adobe-gemini-claude-tools.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Gemini Connected Apps 대규모 확장",
+                     "date":  "2026-09-24",
+                     "file":  "2026-09-24-gemini-connected-apps.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Gemini 3.8 Flash TTS 및 Flash-Lite TTS 공개",
+                     "date":  "2026-09-24",
+                     "file":  "2026-09-24-gemini-38-flash-tts.html"
+                 },
+                 {
+                     "service":  "AWS",
+                     "title":  "Bedrock Knowledge Base Salesforce·Zendesk 커넥터 추가",
+                     "date":  "2026-09-24",
+                     "file":  "2026-09-24-aws-bedrock-salesforce-zendesk-connectors.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Study Notebooks Workspace 계정 확대",
+                     "date":  "2026-09-23",
+                     "file":  "2026-09-23-gemini-study-notebooks-workspace.html"
+                 },
+                 {
+                     "service":  "Amazon",
+                     "title":  "Seller Assistant Workflows 및 Claude·Quick 플러그인 공개",
+                     "date":  "2026-09-23",
+                     "file":  "2026-09-23-amazon-seller-assistant-workflows.html"
+                 },
+                 {
+                     "service":  "Vercel",
+                     "title":  "Sandbox Drives 공개 베타",
+                     "date":  "2026-09-23",
+                     "file":  "2026-09-23-vercel-sandbox-drives.html"
+                 },
+                 {
+                     "service":  "Cursor",
+                     "title":  "Rollouts 및 Security Review 공개",
+                     "date":  "2026-09-23",
+                     "file":  "2026-09-23-cursor-rollouts-security-review.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "GPT-6 프롬프트 캐싱 개선",
+                     "date":  "2026-09-23",
+                     "file":  "2026-09-23-openai-gpt-6-prompt-caching.html"
+                 },
+                 {
+                     "service":  "Flowith",
+                     "title":  "GPT-6 Sol 및 Luna 공식 지원 추가",
+                     "date":  "2026-09-23",
+                     "file":  "2026-09-23-flowith-gpt-6-sol-luna.html"
+                 },
+                 {
+                     "service":  "AWS",
+                     "title":  "GPT-6 Sol 및 Luna Amazon Bedrock 제공",
+                     "date":  "2026-09-23",
+                     "file":  "2026-09-23-aws-gpt-6-sol-luna-bedrock.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "GPT-6 Sol 및 GPT-6 Luna 공개",
+                     "date":  "2026-09-23",
+                     "file":  "2026-09-23-openai-gpt-6-sol-luna.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Google Meet Quick Notes 공개",
+                     "date":  "2026-09-23",
+                     "file":  "2026-09-23-gemini-meet-quick-notes.html"
+                 },
+                 {
+                     "service":  "Vercel",
+                     "title":  "Gemini 3.8 TTS 모델 AI Gateway 제공",
+                     "date":  "2026-09-23",
+                     "file":  "2026-09-23-vercel-gemini-38-tts.html"
+                 },
+                 {
+                     "service":  "Lovable",
+                     "title":  "Claude Opus 5.5 적용",
+                     "date":  "2026-09-23",
+                     "file":  "2026-09-23-lovable-claude-opus-55.html"
+                 },
+                 {
+                     "service":  "Flowith",
+                     "title":  "Claude Opus 5.5 공식 지원 추가",
+                     "date":  "2026-09-23",
+                     "file":  "2026-09-23-flowith-claude-opus-55.html"
+                 },
+                 {
+                     "service":  "Claude",
+                     "title":  "Claude Opus 5.5 공개",
+                     "date":  "2026-09-23",
+                     "file":  "2026-09-23-claude-opus-55.html"
+                 },
+                 {
+                     "service":  "AWS",
+                     "title":  "Claude Opus 5.5 AWS 제공",
+                     "date":  "2026-09-23",
+                     "file":  "2026-09-23-aws-claude-opus-55.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "ChatGPT Voice 플러그인 및 Work 지원",
+                     "date":  "2026-09-23",
+                     "file":  "2026-09-23-openai-chatgpt-voice-plugins-work.html"
+                 },
+                 {
+                     "service":  "AWS",
+                     "title":  "Amazon CloudWatch Omni 정식 출시",
+                     "date":  "2026-09-23",
+                     "file":  "2026-09-23-aws-cloudwatch-omni.html"
+                 },
+                 {
+                     "service":  "AWS",
+                     "title":  "AI 에이전트용 TOLAP 오픈소스 공개",
+                     "date":  "2026-09-23",
+                     "file":  "2026-09-23-aws-tolap.html"
+                 },
+                 {
+                     "service":  "Sarvam AI",
+                     "title":  "실시간 음성 인식 Keyterm Prompting 지원",
+                     "date":  "2026-09-22",
+                     "file":  "2026-09-22-sarvam-ai-streaming-keyterm-prompting.html"
+                 },
+                 {
+                     "service":  "ElevenLabs",
+                     "title":  "Scribe v2 Medical 전체 공개",
+                     "date":  "2026-09-22",
+                     "file":  "2026-09-22-elevenlabs-scribe-v2-medical.html"
+                 },
+                 {
+                     "service":  "Qwen",
+                     "title":  "Qwen-Audio-3.1-TTS-Next 공개",
+                     "date":  "2026-09-22",
+                     "file":  "2026-09-22-qwen-audio-31-tts-next.html"
+                 },
+                 {
+                     "service":  "Qwen",
+                     "title":  "Qwen3.8-LiveTranslate 공개",
+                     "date":  "2026-09-22",
+                     "file":  "2026-09-22-qwen38-live-translate.html"
+                 },
+                 {
+                     "service":  "Qwen",
+                     "title":  "Qwen Intelligence 공개",
+                     "date":  "2026-09-22",
+                     "file":  "2026-09-22-qwen-intelligence.html"
+                 },
+                 {
+                     "service":  "Kimi",
+                     "title":  "Kimi Work 3.2.12 업데이트",
+                     "date":  "2026-09-22",
+                     "file":  "2026-09-22-kimi-work-3212.html"
+                 },
+                 {
+                     "service":  "NVIDIA",
+                     "title":  "Isaac ROS 5.0 공개",
+                     "date":  "2026-09-22",
+                     "file":  "2026-09-22-nvidia-isaac-ros-50.html"
+                 },
+                 {
+                     "service":  "Hugging Face",
+                     "title":  "Tokenizers v1 릴리스 후보 공개",
+                     "date":  "2026-09-21",
+                     "file":  "2026-09-21-hugging-face-tokenizers-v1-rc.html"
+                 },
+                 {
+                     "service":  "Qwen",
+                     "title":  "Qwen3.8 Omni Flash Realtime 및 Live Harness v1.0 공개",
+                     "date":  "2026-09-21",
+                     "file":  "2026-09-21-qwen-omni-realtime-live-harness.html"
+                 },
+                 {
+                     "service":  "Qwen",
+                     "title":  "Qwen Code 0.24.3 업데이트",
+                     "date":  "2026-09-21",
+                     "file":  "2026-09-21-qwen-code-0243.html"
+                 },
+                 {
+                     "service":  "xAI",
+                     "title":  "Grok 4.7 공개",
+                     "date":  "2026-09-21",
+                     "file":  "2026-09-21-xai-grok-47.html"
+                 },
+                 {
+                     "service":  "ElevenLabs",
+                     "title":  "ElevenCreative Studio 4.0 공개",
+                     "date":  "2026-09-21",
+                     "file":  "2026-09-21-elevenlabs-studio-40.html"
+                 },
+                 {
                      "service":  "Vercel",
                      "title":  "skills CLI Notion 스킬 지원",
                      "date":  "2026-09-17",
@@ -2669,6 +3035,18 @@
                                    "color":  "#111827"
                                },
                                {
+                                   "name":  "Asana",
+                                   "color":  "#f06a6a"
+                               },
+                               {
+                                   "name":  "Atlassian",
+                                   "color":  "#0052cc"
+                               },
+                               {
+                                   "name":  "AWS",
+                                   "color":  "#ff9900"
+                               },
+                               {
                                    "name":  "Canva",
                                    "color":  "#22d3ee"
                                },
@@ -2741,12 +3119,20 @@
                                    "color":  "#34a853"
                                },
                                {
+                                   "name":  "H Company",
+                                   "color":  "#334155"
+                               },
+                               {
                                    "name":  "Harvey",
                                    "color":  "#7c3aed"
                                },
                                {
                                    "name":  "HeyGen",
                                    "color":  "#acbfc8"
+                               },
+                               {
+                                   "name":  "Hugging Face",
+                                   "color":  "#ffd21e"
                                },
                                {
                                    "name":  "IFM",
@@ -2777,6 +3163,10 @@
                                    "color":  "#e5f0ff"
                                },
                                {
+                                   "name":  "Microsoft",
+                                   "color":  "#0078d4"
+                               },
+                               {
                                    "name":  "Midjourney",
                                    "color":  "#a18ab7"
                                },
@@ -2791,6 +3181,10 @@
                                {
                                    "name":  "Notion AI",
                                    "color":  "#c1c5cd"
+                               },
+                               {
+                                   "name":  "NVIDIA",
+                                   "color":  "#76b900"
                                },
                                {
                                    "name":  "OpenAI",
@@ -2833,8 +3227,16 @@
                                    "color":  "#92b9a1"
                                },
                                {
+                                   "name":  "Sarvam AI",
+                                   "color":  "#e76f51"
+                               },
+                               {
                                    "name":  "Skywork",
                                    "color":  "#daf5b2"
+                               },
+                               {
+                                   "name":  "Snowflake",
+                                   "color":  "#29b5e8"
                                },
                                {
                                    "name":  "SoundHound",
@@ -2867,6 +3269,10 @@
                                {
                                    "name":  "YuE",
                                    "color":  "#be123c"
+                               },
+                               {
+                                   "name":  "Zoom",
+                                   "color":  "#2d8cff"
                                },
                                {
                                    "name":  "기타",
