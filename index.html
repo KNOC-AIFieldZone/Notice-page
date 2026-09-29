@@ -1057,6 +1057,7 @@
       const keywords = ensureNoticeKeywordCatalog(NOTICE_KEYWORD_CATALOG, NOTICE.items || []);
       const keyMap = new Map(keywords.map((it) => [String(it.name || "").toLowerCase(), it]));
       const items = [...(NOTICE.items || [])].sort((a, b) => {
+        if(!!a?.pinned !== !!b?.pinned) return a?.pinned ? -1 : 1;
         const ak = String(a?.keyword || "").toLowerCase();
         const bk = String(b?.keyword || "").toLowerCase();
         // 키워드 우선순위가 1순위, 같은 우선순위 내에서 최신 날짜가 상단

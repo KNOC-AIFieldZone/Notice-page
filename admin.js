@@ -506,7 +506,7 @@ function noticeSummaryText(idx, title) {
   return t ? `공지 #${idx + 1} · ${t}` : `공지 #${idx + 1}`;
 }
 function noticeSummaryTextWithDate(item, idx) {
-  const d = norm(item?.date) || "날짜 미입력";
+  const d = item?.pinned ? "상시 고정" : (norm(item?.date) || "날짜 미입력");
   const t = norm(item?.title);
   return t ? `공지 #${idx + 1} · ${d} · ${t}` : `공지 #${idx + 1} · ${d}`;
 }
@@ -602,6 +602,10 @@ function noticeCardTemplate(it, idx) {
         <div>
           <label>date (YYYY-MM-DD)</label>
           <input type="text" data-k="date" value="${escapeHtml(it.date || "")}" placeholder="예: 2026-03-19" />
+        </div>
+        <div class="check">
+          <input type="checkbox" data-k="pinned" ${it.pinned ? "checked" : ""} />
+          <span>상단에 상시 고정</span>
         </div>
       </div>
       <div class="grid2">
@@ -720,6 +724,7 @@ function getNoticeKeywordPriorityByName(keywordName) {
 
 function sortNoticeLatestFirst(items) {
   return [...(items || [])].sort((a, b) => {
+    if (!!a?.pinned !== !!b?.pinned) return a?.pinned ? -1 : 1;
     const byPriority = getNoticeKeywordPriorityByName(a?.keyword) - getNoticeKeywordPriorityByName(b?.keyword);
     if (byPriority) return byPriority;
     const byKeyword = norm(a?.keyword).localeCompare(norm(b?.keyword), "ko", { sensitivity: "base" });
@@ -860,6 +865,7 @@ function snapshotFromFormWithUids() {
       sub: get("sub")?.value?.trim() || "",
       keyword: get("keyword")?.value?.trim() || "",
       priority: getNoticeKeywordPriorityByName(get("keyword")?.value?.trim() || ""),
+      pinned: !!get("pinned")?.checked,
     });
   });
   const items = sortNoticeLatestFirst(Array.from(noticeByUid.values()));
@@ -917,6 +923,7 @@ function stripInternalFields(dataWithUids) {
         sub: it.sub || "",
         keyword: it.keyword || "",
         priority: normalizeNoticePriority(it.priority, 999),
+        ...(it.pinned ? { pinned: true } : {}),
       })),
     },
     noticeKeywordCatalog: ensureNoticeKeywordCatalog(dataWithUids.noticeKeywordCatalog, dataWithUids.notice?.items || []),
@@ -982,6 +989,7 @@ async function loadContentJson(token) {
       sub: it.sub || "",
       keyword: it.keyword || "",
       priority: normalizeNoticePriority(it.priority, 999),
+      pinned: !!it.pinned,
     });
   });
   originalNoticeKeywordCatalogJson = JSON.stringify(ensureNoticeKeywordCatalog(noticeKeywordCatalog, notice.items));
@@ -1053,6 +1061,7 @@ function rebuildOriginalSnapshotsFromLoadedData() {
       sub: it.sub || "",
       keyword: it.keyword || "",
       priority: normalizeNoticePriority(it.priority, 999),
+      pinned: !!it.pinned,
     });
   });
   originalNoticeKeywordCatalogJson = JSON.stringify(ensureNoticeKeywordCatalog(loadedData.noticeKeywordCatalog, loadedData.notice?.items || []));
@@ -1104,6 +1113,7 @@ function resetEditsToBaseline() {
       sub: it.sub || "",
       keyword: it.keyword || "",
       priority: normalizeNoticePriority(it.priority, 999),
+      pinned: !!it.pinned,
     });
   });
   originalNoticeKeywordCatalogJson = JSON.stringify(ensureNoticeKeywordCatalog(loadedData.noticeKeywordCatalog, loadedData.notice?.items || []));
@@ -1350,7 +1360,8 @@ function isNoticeChanged(orig, cur) {
     a(orig.title) !== a(cur.title) ||
     a(orig.sub) !== a(cur.sub) ||
     a(orig.keyword) !== a(cur.keyword) ||
-    normalizeNoticePriority(orig.priority, 999) !== normalizeNoticePriority(cur.priority, 999)
+    normalizeNoticePriority(orig.priority, 999) !== normalizeNoticePriority(cur.priority, 999) ||
+    !!orig.pinned !== !!cur.pinned
   );
 }
 function isNewsChanged(orig, cur) {
