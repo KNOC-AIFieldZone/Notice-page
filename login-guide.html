@@ -267,6 +267,8 @@
   <script src="./login-guide-data.js?v=20260902-4"></script>
   <script>
     const data = window.LOGIN_GUIDES || { helpNumber:"2526", services:[] };
+    const HIDDEN_SERVICE_IDS = new Set(["lilysai", "manus"]);
+    const visibleServices = (data.services || []).filter((service) => !HIDDEN_SERVICE_IDS.has(service.id));
     const app = document.querySelector("#app");
 
     function esc(value){
@@ -300,7 +302,7 @@
     }
 
     function renderList(){
-      const cards = data.services.map((service) => `
+      const cards = visibleServices.map((service) => `
         <a class="service-card" href="${serviceLink(service)}">
           ${iconMarkup(service)}
           <span class="service-copy">
@@ -319,7 +321,7 @@
               <h1 class="panel-title" id="serviceListTitle">로그인할 서비스를 선택하세요</h1>
               <div class="panel-meta">서비스를 선택하면 해당 서비스의 로그인 화면 안내로 이동합니다.</div>
             </div>
-            <span class="count">${data.services.length}개</span>
+            <span class="count">${visibleServices.length}개</span>
           </div>
           <div class="panel-bd"><div class="service-grid">${cards}</div></div>
         </section>
@@ -376,7 +378,7 @@
     }
 
     const serviceId = new URLSearchParams(location.search).get("service") || "";
-    const selectedService = data.services.find((service) => service.id === serviceId);
+    const selectedService = visibleServices.find((service) => service.id === serviceId);
     const backButton = document.querySelector("#backButton");
     if(selectedService){
       backButton.href = "./login-guide.html";

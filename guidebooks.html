@@ -424,7 +424,9 @@
     const $app = document.querySelector("#app");
     const $headerActions = document.querySelector("#headerActions");
     const data = window.SERVICE_GUIDES || { services: [] };
-    const READY_GUIDES = new Set(["chatgpt", "genspark", "lilysai", "gemini", "notebooklm", "elevenlabs", "claude"]);
+    const HIDDEN_SERVICE_IDS = new Set(["lilysai", "manus"]);
+    const visibleServices = (data.services || []).filter((service) => !HIDDEN_SERVICE_IDS.has(service.id));
+    const READY_GUIDES = new Set(["chatgpt", "genspark", "gemini", "notebooklm", "elevenlabs", "claude"]);
 
     function esc(v){
       return String(v ?? "").replace(/[&<>"']/g, (ch) => ({
@@ -496,7 +498,7 @@
     function currentService(){
       const params = new URLSearchParams(location.search);
       const id = params.get("service") || "";
-      return data.services.find((it) => it.id === id) || null;
+      return visibleServices.find((it) => it.id === id) || null;
     }
 
     function currentFeatureIndex(service){
@@ -557,7 +559,7 @@
     }
 
     function renderList(){
-      const services = data.services;
+      const services = visibleServices;
       $app.innerHTML = `
         <section class="panel" aria-labelledby="guideListTitle">
           <div class="panel-hd">
@@ -593,12 +595,12 @@
           <div class="panel-hd">
             <div>
               <h2 class="panel-title">서비스</h2>
-              <div class="panel-meta">${data.services.length}개 가이드</div>
+              <div class="panel-meta">${visibleServices.length}개 가이드</div>
             </div>
           </div>
           <div class="panel-bd">
             <div class="side-list">
-              ${data.services.map((s) => `
+              ${visibleServices.map((s) => `
                 <a class="side-link${s.id === activeId ? " active" : ""}${serviceCardClass(s)}" href="${serviceUrl(s.id)}">
                   <img class="side-icon" src="${esc(serviceIconUrl(s))}" alt="" loading="lazy" referrerpolicy="no-referrer">
                   <span>${esc(s.name)}</span>

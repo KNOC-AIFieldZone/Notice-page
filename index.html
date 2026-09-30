@@ -120,7 +120,16 @@
     .sub{
       color: var(--muted);
       font-size: 13px;
-      line-height: 1.4;
+      line-height: 1.5;
+    }
+    .sub-line{ display:block; }
+    .contact-phone{
+      display:inline-flex;
+      align-items:center;
+      gap:4px;
+      color:var(--text);
+      font-weight:900;
+      white-space:nowrap;
     }
 
     .top-actions{
@@ -278,11 +287,12 @@
       font-weight: 900;
       font-size: 14px;
       color: rgba(255,255,255,.98);
-      line-height: 1.1;
+      line-height: 1.3;
       margin-top: 2px;
-      white-space:nowrap;
-      overflow:hidden;
-      text-overflow:ellipsis;
+      white-space:normal;
+      overflow:visible;
+      text-overflow:clip;
+      word-break:keep-all;
     }
 
     /* 기능(줄바꿈 유지, 안 잘리게) */
@@ -725,7 +735,8 @@
           </a>
         </div>
         <div class="sub">
-          좌측은 <b>구독 서비스</b>, 우측은 <b>공지 사항</b>과 <b>AI Update News</b>입니다.
+          <span class="sub-line">AI Field는 AI정책팀에서 운영합니다.</span>
+          <span class="sub-line">신규 AI 서비스 도입, 크레딧 충전 및 이용 도움은 AI정책팀 <span class="contact-phone" aria-label="전화 2526">☎ 2526</span>으로 문의해 주시기 바랍니다.</span>
         </div>
       </div>
 

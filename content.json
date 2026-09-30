@@ -4,75 +4,75 @@
                          "name":  "ChatGPT",
                          "url":  "https://chatgpt.com/",
                          "domain":  "chatgpt.com",
-                         "note":  "대화형 문제 해결\n문서/메일/기획안 작성\n요약·정리·리라이트\n코드 작성·디버깅\n이미지 이해·생성"
+                         "note":  "문서·메일·보고서 초안 작성\nPDF·엑셀·이미지 분석\n자료 조사·출처 포함 보고서 작성\n데이터 정리·계산·차트 생성\n이미지 제작·수정"
                      },
                      {
                          "name":  "Genspark",
                          "url":  "https://www.genspark.ai/",
                          "domain":  "genspark.ai",
-                         "note":  "슬라이드 자동 생성\n스프레드시트 자동 생성\n리서치·자료 수집\n보고서 초안 작성\n이미지 생성"
+                         "note":  "발표자료(PPT) 기획·디자인\n엑셀 분석·표·차트 제작\n문서·보고서·이메일 작성\n웹 조사·자료 수집 자동화\n디자인·프로토타입 제작"
+                     },
+                     {
+                         "name":  "Claude",
+                         "url":  "https://claude.ai/new",
+                         "domain":  "claude.ai",
+                         "note":  "긴 문서·계약서·PDF 분석\n보고서·기획안 작성 및 검토\n웹 조사·근거 자료 정리\n웹페이지·업무 도구 제작\n프로젝트별 자료·지침 관리"
                      },
                      {
                          "name":  "Gemini",
                          "url":  "https://gemini.google.com/",
                          "domain":  "gemini.google.com",
-                         "note":  "대화형 질의응답\n요약·정리\n번역·다국어 작업\n아이디어 발상\n이미지 활용"
+                         "note":  "웹·Drive 자료 조사 및 보고서 작성\nGmail 메일 초안·요약\n문서·PDF·이미지 분석\n이미지·영상·음악 제작\n웹페이지·업무 도구 제작"
                      },
                      {
                          "name":  "Gemini Notebook",
                          "url":  "https://notebook.google.com/",
                          "domain":  "notebook.google.com",
                          "icon":  "./asset/gemini_notebook_icon.svg",
-                         "note":  "자료 기반 Q\u0026A(근거 중심)\n파일·웹·Drive 소스 통합\n출처 기반 요약·비교\n오디오·영상·슬라이드 생성\n보고서·퀴즈·데이터 표 생성"
-                     },
-                     {
-                         "name":  "Manus",
-                         "url":  "https://manus.im/",
-                         "domain":  "manus.im",
-                         "note":  "에이전트로 작업 실행\n반복 업무 자동화\n웹 기반 작업 처리\n절차형 워크플로우 구성\n결과 취합·정리"
-                     },
-                     {
-                         "name":  "Canva",
-                         "url":  "https://www.canva.com/",
-                         "domain":  "canva.com",
-                         "note":  "템플릿 기반 디자인\nPPT/포스터 제작\n브랜드 키트·스타일 적용\n간편 편집·공유\n콘텐츠 리사이징"
-                     },
-                     {
-                         "name":  "CapCut",
-                         "url":  "https://www.capcut.com/my-edit?start_tab=video",
-                         "domain":  "capcut.com",
-                         "note":  "동영상 제작·편집\nAI 영상 생성\n자동 자막·배경 제거\nAI 이미지 생성·편집\n템플릿·효과 활용",
-                         "recommendation":  "PC 앱 사용 권장"
-                     },
-                     {
-                         "name":  "Lilys AI",
-                         "url":  "https://lilys.ai/",
-                         "domain":  "lilys.ai",
-                         "note":  "회의/강의 요약\n하이라이트 추출\n챕터·목차 생성\n액션 아이템 정리\n노트화"
+                         "note":  "여러 자료를 근거로 요약·비교\n회의·보고 자료에서 핵심 근거 찾기\n오디오·영상 브리핑 제작\n슬라이드·인포그래픽 제작\n학습용 퀴즈·플래시카드 생성"
                      },
                      {
                          "name":  "ElevenLabs",
                          "url":  "https://elevenlabs.io/",
                          "domain":  "elevenlabs.io",
-                         "note":  "TTS 음성 생성\n보이스 클로닝\n더빙·다국어 음성\n음성 스타일 제어\n오디오 제작"
+                         "note":  "문서를 자연스러운 음성으로 변환\n내 목소리 복제·맞춤 음성 제작\n영상·음성 다국어 더빙\n녹음 파일 전사·화자 분리\n음악·효과음·이미지·영상 제작"
+                     },
+                     {
+                         "name":  "Canva",
+                         "url":  "https://www.canva.com/",
+                         "domain":  "canva.com",
+                         "note":  "발표자료·보고서 디자인\n포스터·카드뉴스·SNS 콘텐츠 제작\n이미지·영상 생성 및 편집\n브랜드 템플릿·디자인 일괄 적용\n문서·표·웹페이지 제작"
+                     },
+                     {
+                         "name":  "CapCut",
+                         "url":  "https://www.capcut.com/my-edit?start_tab=video",
+                         "domain":  "capcut.com",
+                         "note":  "홍보·교육 영상 편집\n텍스트·이미지로 영상 생성\n자동 자막·번역·음성 생성\n배경 제거·화질 개선\n썸네일·포스터·이미지 제작",
+                         "recommendation":  "PC 앱 사용 권장"
                      },
                      {
                          "name":  "inline AI",
                          "url":  "https://www.inline-ai.com/",
                          "domain":  "inline-ai.com",
-                         "note":  "한글/문서 편집 특화\n양식 맞춤 초안 생성\n표·셀·각주 자동 정리\n반복 문서 업무 자동화",
+                         "note":  "한글·Word·Excel·PPT 문서 자동 작성\n견적서·보고서 등 사내 양식 채우기\n표·셀·각주·서식 자동 정리\n문서 변환·데이터 추출\n반복 문서 업무 자동화",
                          "recommendation":  "PC 앱 사용",
                          "disabled":  true
                      },
                      {
-                         "name":  "Claude",
-                         "url":  "https://claude.ai/new",
-                         "domain":  "claude.ai",
-                         "note":  "긴 문서·파일 분석\n글쓰기·논리 검토\n프로젝트·아티팩트 제작\n반복 업무·외부 도구 연결\n코딩·디자인 결과물 제작"
+                         "name":  "Lilys AI (구독 해지 예정)",
+                         "url":  "https://lilys.ai/",
+                         "domain":  "lilys.ai",
+                         "note":  "유튜브·강의·회의 영상 요약\n녹음 파일 전사·화자별 정리\nPDF·보고서 핵심 내용 분석\n여러 자료 비교·통합 보고서 작성\n퀴즈·플래시카드·마인드맵 생성"
+                     },
+                     {
+                         "name":  "Manus (구독 해지 예정)",
+                         "url":  "https://manus.im/",
+                         "domain":  "manus.im",
+                         "note":  "자료 조사부터 보고서까지 자동 수행\n발표자료·차트·디자인 제작\n웹사이트·업무용 앱 제작\n반복 업무 예약 실행\n이미지·영상·음악 제작"
                      }
                  ],
     "notice":  {
-                   "noticeId":  "2026-09-28",
+                   "noticeId":  "2026-09-30",
                    "items":  [
                                  {
                                      "date":  "",
@@ -81,6 +81,20 @@
                                      "keyword":  "중요",
                                      "priority":  1,
                                      "pinned":  true
+                                 },
+                                 {
+                                     "date":  "2026-09-30",
+                                     "title":  "Manus 구독 해지",
+                                     "sub":  "2026년 10월 27일부터 Manus를 이용하실 수 없습니다. (사유: 사용량 저조)",
+                                     "keyword":  "종료",
+                                     "priority":  5
+                                 },
+                                 {
+                                     "date":  "2026-09-30",
+                                     "title":  "Lilys AI 구독 해지",
+                                     "sub":  "2026년 10월 8일부터 Lilys AI를 이용하실 수 없습니다. (사유: 사용량 저조)",
+                                     "keyword":  "종료",
+                                     "priority":  5
                                  },
                                  {
                                      "date":  "2026-09-28",
