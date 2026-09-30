@@ -197,6 +197,36 @@
                              ],
     "news":  [
                  {
+                     "service":  "OpenAI",
+                     "title":  "Pro 500 및 Astra Ultrafast 공개",
+                     "date":  "2026-09-29",
+                     "file":  "2026-09-29-openai-pro-500-astra-ultrafast.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Google Vids AI 음성 품질 강화",
+                     "date":  "2026-09-29",
+                     "file":  "2026-09-29-gemini-google-vids-tts-upgrade.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "GPT-6.1 Sol 공개",
+                     "date":  "2026-09-29",
+                     "file":  "2026-09-29-openai-gpt-61-sol.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "ChatGPT Pages 및 Space 협업 기능 공개",
+                     "date":  "2026-09-29",
+                     "file":  "2026-09-29-openai-pages-space-collaboration.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "ChatGPT Dots 공개",
+                     "date":  "2026-09-29",
+                     "file":  "2026-09-29-openai-dots.html"
+                 },
+                 {
                      "service":  "Atlassian",
                      "title":  "Rovo Agent Connector 정식 출시",
                      "date":  "2026-09-28",
