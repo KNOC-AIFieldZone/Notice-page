@@ -211,6 +211,42 @@
                              ],
     "news":  [
                  {
+                     "service":  "Runway",
+                     "title":  "Runway Ads 공개",
+                     "date":  "2026-09-30",
+                     "file":  "2026-09-30-runway-ads.html"
+                 },
+                 {
+                     "service":  "Cloudflare",
+                     "title":  "Pay Per Use 베타 공개",
+                     "date":  "2026-09-30",
+                     "file":  "2026-09-30-cloudflare-pay-per-use.html"
+                 },
+                 {
+                     "service":  "Cloudflare",
+                     "title":  "Monetization Gateway 베타 공개",
+                     "date":  "2026-09-30",
+                     "file":  "2026-09-30-cloudflare-monetization-gateway.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Gemini Skills 공개 및 Gems 전환 발표",
+                     "date":  "2026-09-30",
+                     "file":  "2026-09-30-gemini-skills-gems-transition.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Gemini 4 Argon 공개",
+                     "date":  "2026-09-30",
+                     "file":  "2026-09-30-gemini-4-argon.html"
+                 },
+                 {
+                     "service":  "Cohere",
+                     "title":  "Embed 5 모델군 공개",
+                     "date":  "2026-09-30",
+                     "file":  "2026-09-30-cohere-embed-5.html"
+                 },
+                 {
                      "service":  "OpenAI",
                      "title":  "Pro 500 및 Astra Ultrafast 공개",
                      "date":  "2026-09-29",
