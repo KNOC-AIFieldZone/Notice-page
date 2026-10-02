@@ -68,10 +68,10 @@
     .wrap{max-width:1240px;margin:0 auto;padding:22px 18px 38px;}
     header{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;padding:6px 2px 18px;}
     .brandline{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
-    .brand-home{display:inline-flex;align-items:center;gap:14px;flex:0 0 auto;text-decoration:none;}
+    .brand-home{display:inline-flex;align-items:center;gap:12px;flex:0 0 auto;text-decoration:none;}
     .brandlogo{width:auto;height:48px;max-width:72vw;display:block;object-fit:contain;}
-    .brand-divider{width:1px;height:32px;background:rgba(148,163,184,.52);flex:0 0 auto;}
-    .brand-product{color:#0e9fa1;font-size:28px;font-weight:850;line-height:1;letter-spacing:-.045em;white-space:nowrap;}
+    .brand-product-art{position:relative;width:100px;height:48px;overflow:hidden;flex:0 0 auto;}
+    .brand-product-image{position:absolute;top:0;right:0;width:auto;height:48px;max-width:none;display:block;}
     h1{margin:0;font-size:20px;font-weight:900;}
     .beta-badge{
       display:inline-flex;align-items:center;justify-content:center;min-height:24px;
@@ -383,9 +383,8 @@
       <div>
         <div class="brandline">
           <a class="brand-home" href="./index.html" aria-label="Home">
-            <img class="brandlogo" src="./asset/knoc-logo-header-v3.png" alt="KNOC">
-            <span class="brand-divider" aria-hidden="true"></span>
-            <span class="brand-product" aria-hidden="true">AI Field</span>
+            <img class="brandlogo" src="./asset/knoc-logo-header-v2.png" alt="KNOC">
+            <span class="brand-product-art" aria-hidden="true"><img class="brand-product-image" src="./asset/ai-field-lockup-v2.png" alt=""></span>
           </a>
           <h1>AI 서비스 가이드북</h1>
           <span class="beta-badge">beta 버전</span>
