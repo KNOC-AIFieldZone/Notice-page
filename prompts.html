@@ -58,8 +58,10 @@
     .wrap{max-width:1240px;margin:0 auto;padding:22px 18px 34px;}
     header{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;padding:6px 2px 18px;}
     .brandline{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
-    .brand-home{display:inline-flex;align-items:center;flex:0 0 auto;text-decoration:none;}
+    .brand-home{display:inline-flex;align-items:center;gap:14px;flex:0 0 auto;text-decoration:none;}
     .brandlogo{width:auto;height:48px;max-width:72vw;display:block;object-fit:contain;}
+    .brand-divider{width:1px;height:32px;background:rgba(148,163,184,.52);flex:0 0 auto;}
+    .brand-product{color:#0e9fa1;font-size:28px;font-weight:850;line-height:1;letter-spacing:-.045em;white-space:nowrap;}
     h1{margin:0;font-size:20px;font-weight:900;}
     .sub{margin-top:6px;color:var(--muted);font-size:13px;line-height:1.45;}
     .actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;}
@@ -175,7 +177,9 @@
       <div>
         <div class="brandline">
           <a class="brand-home" href="./index.html" aria-label="Home">
-            <img class="brandlogo" src="./asset/knoc-logo-header.png" alt="KNOC">
+            <img class="brandlogo" src="./asset/knoc-logo-header-v2.png" alt="KNOC">
+            <span class="brand-divider" aria-hidden="true"></span>
+            <span class="brand-product" aria-hidden="true">AI Field</span>
           </a>
           <h1>프롬프트 예시</h1>
         </div>
