@@ -211,6 +211,36 @@
                              ],
     "news":  [
                  {
+                     "service":  "Gemini",
+                     "title":  "Nano Banana 2.1 정식 출시",
+                     "date":  "2026-10-06",
+                     "file":  "2026-10-06-gemini-nano-banana-21-ga.html"
+                 },
+                 {
+                     "service":  "Mistral AI",
+                     "title":  "Mistral Large 4 공개 프리뷰",
+                     "date":  "2026-10-06",
+                     "file":  "2026-10-06-mistral-large-4-public-preview.html"
+                 },
+                 {
+                     "service":  "Figma",
+                     "title":  "Figma Agent 정식 출시",
+                     "date":  "2026-10-06",
+                     "file":  "2026-10-06-figma-agent-ga.html"
+                 },
+                 {
+                     "service":  "Gemma",
+                     "title":  "EmbeddingGemma 2 공개",
+                     "date":  "2026-10-06",
+                     "file":  "2026-10-06-gemma-embeddinggemma-2.html"
+                 },
+                 {
+                     "service":  "ElevenLabs",
+                     "title":  "ElevenAgents Architect 알파 공개",
+                     "date":  "2026-10-06",
+                     "file":  "2026-10-06-elevenlabs-elevenagents-architect-alpha.html"
+                 },
+                 {
                      "service":  "Runway",
                      "title":  "Runway Ads 공개",
                      "date":  "2026-09-30",
@@ -253,16 +283,16 @@
                      "file":  "2026-09-29-openai-pro-500-astra-ultrafast.html"
                  },
                  {
-                     "service":  "Gemini",
-                     "title":  "Google Vids AI 음성 품질 강화",
-                     "date":  "2026-09-29",
-                     "file":  "2026-09-29-gemini-google-vids-tts-upgrade.html"
-                 },
-                 {
                      "service":  "OpenAI",
                      "title":  "GPT-6.1 Sol 공개",
                      "date":  "2026-09-29",
                      "file":  "2026-09-29-openai-gpt-61-sol.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Google Vids AI 음성 품질 강화",
+                     "date":  "2026-09-29",
+                     "file":  "2026-09-29-gemini-google-vids-tts-upgrade.html"
                  },
                  {
                      "service":  "OpenAI",
@@ -3355,6 +3385,14 @@
                                {
                                    "name":  "기타",
                                    "color":  "#94a3b8"
+                               },
+                               {
+                                   "name":  "Gemma",
+                                   "color":  "#f9ab00"
+                               },
+                               {
+                                   "name":  "Figma",
+                                   "color":  "#f24e1e"
                                }
                            ]
 }
