@@ -218,6 +218,12 @@
                              ],
     "news":  [
                  {
+                     "service":  "Claude",
+                     "title":  "Claude Haiku 5.5 공개",
+                     "date":  "2026-10-07",
+                     "file":  "2026-10-07-claude-haiku-55.html"
+                 },
+                 {
                      "service":  "Gemini",
                      "title":  "Nano Banana 2.1 정식 출시",
                      "date":  "2026-10-06",
@@ -290,16 +296,16 @@
                      "file":  "2026-09-29-openai-pro-500-astra-ultrafast.html"
                  },
                  {
-                     "service":  "Gemini",
-                     "title":  "Google Vids AI 음성 품질 강화",
-                     "date":  "2026-09-29",
-                     "file":  "2026-09-29-gemini-google-vids-tts-upgrade.html"
-                 },
-                 {
                      "service":  "OpenAI",
                      "title":  "GPT-6.1 Sol 공개",
                      "date":  "2026-09-29",
                      "file":  "2026-09-29-openai-gpt-61-sol.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "Google Vids AI 음성 품질 강화",
+                     "date":  "2026-09-29",
+                     "file":  "2026-09-29-gemini-google-vids-tts-upgrade.html"
                  },
                  {
                      "service":  "OpenAI",
