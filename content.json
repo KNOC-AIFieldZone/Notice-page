@@ -218,6 +218,72 @@
                              ],
     "news":  [
                  {
+                     "service":  "Qwen",
+                     "title":  "Qwen-Image-2.1-Turbo 및 API 공개",
+                     "date":  "2026-10-09",
+                     "file":  "2026-10-09-qwen-image-21-turbo.html"
+                 },
+                 {
+                     "service":  "Microsoft",
+                     "title":  "Microsoft-Decision-1 공개",
+                     "date":  "2026-10-09",
+                     "file":  "2026-10-09-microsoft-decision-1.html"
+                 },
+                 {
+                     "service":  "Mistral AI",
+                     "title":  "Managed Deployments 공개 프리뷰",
+                     "date":  "2026-10-09",
+                     "file":  "2026-10-09-mistral-managed-deployments-preview.html"
+                 },
+                 {
+                     "service":  "Vercel",
+                     "title":  "Liquid AI d1 AI Gateway 제공",
+                     "date":  "2026-10-09",
+                     "file":  "2026-10-09-vercel-liquid-ai-d1.html"
+                 },
+                 {
+                     "service":  "OpenAI",
+                     "title":  "Codex Composer Predictions 베타 공개",
+                     "date":  "2026-10-09",
+                     "file":  "2026-10-09-openai-codex-composer-predictions.html"
+                 },
+                 {
+                     "service":  "Midjourney",
+                     "title":  "Thinking Mode 알파 공개",
+                     "date":  "2026-10-08",
+                     "file":  "2026-10-08-midjourney-thinking-mode-alpha.html"
+                 },
+                 {
+                     "service":  "Suno",
+                     "title":  "Studio 클립 스트레칭 및 편집 기능 강화",
+                     "date":  "2026-10-08",
+                     "file":  "2026-10-08-suno-studio-clip-stretching-fade-curves.html"
+                 },
+                 {
+                     "service":  "Midjourney",
+                     "title":  "Shared Folders 알파 공개",
+                     "date":  "2026-10-08",
+                     "file":  "2026-10-08-midjourney-shared-folders-alpha.html"
+                 },
+                 {
+                     "service":  "Vercel",
+                     "title":  "Grok Imagine Video 1.5 Lite AI Gateway 제공",
+                     "date":  "2026-10-08",
+                     "file":  "2026-10-08-vercel-grok-imagine-video-15-lite.html"
+                 },
+                 {
+                     "service":  "Sierra",
+                     "title":  "fleming-1 공개",
+                     "date":  "2026-10-08",
+                     "file":  "2026-10-08-sierra-fleming-1.html"
+                 },
+                 {
+                     "service":  "Gemini",
+                     "title":  "업무용 Gemini Agent 공개",
+                     "date":  "2026-10-08",
+                     "file":  "2026-10-08-gemini-agent-for-work.html"
+                 },
+                 {
                      "service":  "Claude",
                      "title":  "Claude Haiku 5.5 공개",
                      "date":  "2026-10-07",
@@ -3406,6 +3472,10 @@
                                {
                                    "name":  "Figma",
                                    "color":  "#f24e1e"
+                               },
+                               {
+                                   "name":  "Sierra",
+                                   "color":  "#be185d"
                                }
                            ]
 }
