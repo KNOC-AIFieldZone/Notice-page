@@ -212,6 +212,72 @@
   ],
   "news": [
     {
+      "service": "DeepSeek",
+      "title": "DeepSeek-V4.1-Flash-1017 업데이트",
+      "date": "2026-10-17",
+      "file": "2026-10-17-deepseek-v41-flash-1017.html"
+    },
+    {
+      "service": "Gemini Notebook",
+      "title": "학습 기능 3종 추가",
+      "date": "2026-10-16",
+      "file": "2026-10-16-gemini-notebook-study-features.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "GPT-Live Prompt-to-Voice 및 커스텀 음성 API 공개",
+      "date": "2026-10-16",
+      "file": "2026-10-16-openai-gpt-live-prompt-to-voice.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "GPT-6 Pro 성능·도구·멀티에이전트 업데이트",
+      "date": "2026-10-16",
+      "file": "2026-10-16-openai-gpt6-pro-update.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "ChatGPT Slides 공개",
+      "date": "2026-10-16",
+      "file": "2026-10-16-openai-chatgpt-slides.html"
+    },
+    {
+      "service": "Google",
+      "title": "Universal Cart 미국 출시",
+      "date": "2026-10-15",
+      "file": "2026-10-15-google-universal-cart.html"
+    },
+    {
+      "service": "Perplexity",
+      "title": "SPACE 오픈소스 공개",
+      "date": "2026-10-15",
+      "file": "2026-10-15-perplexity-space-open-source.html"
+    },
+    {
+      "service": "ElevenLabs",
+      "title": "Instant Soundtracks 공개",
+      "date": "2026-10-15",
+      "file": "2026-10-15-elevenlabs-instant-soundtracks.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Gmail Live 유료 Workspace 확대",
+      "date": "2026-10-15",
+      "file": "2026-10-15-gemini-gmail-live-workspace.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Gmail AI Inbox 유료 Workspace 확대",
+      "date": "2026-10-15",
+      "file": "2026-10-15-gemini-gmail-ai-inbox-workspace.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "GPT-Live-1.1 및 신규 음성 공개",
+      "date": "2026-10-15",
+      "file": "2026-10-15-openai-gpt-live-11-new-voices.html"
+    },
+    {
       "service": "HeyGen",
       "title": "HeyGen Voice 공개",
       "date": "2026-10-14",
