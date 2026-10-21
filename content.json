@@ -212,16 +212,34 @@
   ],
   "news": [
     {
+      "service": "Mistral AI",
+      "title": "Voxtral 3 공개",
+      "date": "2026-10-20",
+      "file": "2026-10-20-mistral-ai-voxtral-3.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Inference Hooks 정식 출시",
+      "date": "2026-10-20",
+      "file": "2026-10-20-claude-inference-hooks-ga.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Gemini for Government Services 프리뷰 공개",
+      "date": "2026-10-20",
+      "file": "2026-10-20-gemini-government-services-preview.html"
+    },
+    {
+      "service": "ElevenLabs",
+      "title": "Eleven Realtime v1 Mini·Max 공개",
+      "date": "2026-10-20",
+      "file": "2026-10-20-elevenlabs-eleven-realtime-v1.html"
+    },
+    {
       "service": "DeepSeek",
       "title": "DeepSeek-V4.1-Flash-1017 업데이트",
       "date": "2026-10-17",
       "file": "2026-10-17-deepseek-v41-flash-1017.html"
-    },
-    {
-      "service": "Gemini Notebook",
-      "title": "학습 기능 3종 추가",
-      "date": "2026-10-16",
-      "file": "2026-10-16-gemini-notebook-study-features.html"
     },
     {
       "service": "OpenAI",
@@ -242,6 +260,12 @@
       "file": "2026-10-16-openai-chatgpt-slides.html"
     },
     {
+      "service": "Gemini Notebook",
+      "title": "학습 기능 3종 추가",
+      "date": "2026-10-16",
+      "file": "2026-10-16-gemini-notebook-study-features.html"
+    },
+    {
       "service": "Google",
       "title": "Universal Cart 미국 출시",
       "date": "2026-10-15",
@@ -260,6 +284,12 @@
       "file": "2026-10-15-elevenlabs-instant-soundtracks.html"
     },
     {
+      "service": "OpenAI",
+      "title": "GPT-Live-1.1 및 신규 음성 공개",
+      "date": "2026-10-15",
+      "file": "2026-10-15-openai-gpt-live-11-new-voices.html"
+    },
+    {
       "service": "Gemini",
       "title": "Gmail Live 유료 Workspace 확대",
       "date": "2026-10-15",
@@ -270,12 +300,6 @@
       "title": "Gmail AI Inbox 유료 Workspace 확대",
       "date": "2026-10-15",
       "file": "2026-10-15-gemini-gmail-ai-inbox-workspace.html"
-    },
-    {
-      "service": "OpenAI",
-      "title": "GPT-Live-1.1 및 신규 음성 공개",
-      "date": "2026-10-15",
-      "file": "2026-10-15-openai-gpt-live-11-new-voices.html"
     },
     {
       "service": "HeyGen",
@@ -512,12 +536,6 @@
       "file": "2026-09-28-snowflake-gpt-6-sol-luna.html"
     },
     {
-      "service": "Claude",
-      "title": "Claude Sonnet 5.5 공개",
-      "date": "2026-09-28",
-      "file": "2026-09-28-claude-sonnet-55.html"
-    },
-    {
       "service": "Microsoft",
       "title": "Claude Sonnet 5.5 Microsoft Foundry 제공",
       "date": "2026-09-28",
@@ -534,6 +552,12 @@
       "title": "Claude Sonnet 5.5 AI Gateway 제공",
       "date": "2026-09-28",
       "file": "2026-09-28-vercel-claude-sonnet-55.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Claude Sonnet 5.5 공개",
+      "date": "2026-09-28",
+      "file": "2026-09-28-claude-sonnet-55.html"
     },
     {
       "service": "OpenAI",
@@ -572,12 +596,6 @@
       "file": "2026-09-25-gemini-38-live-avatar.html"
     },
     {
-      "service": "Lovable",
-      "title": "무료 Chat 기능 공개",
-      "date": "2026-09-24",
-      "file": "2026-09-24-lovable-free-chat.html"
-    },
-    {
       "service": "Midjourney",
       "title": "Style Live Previews 및 기본 파라미터 저장 추가",
       "date": "2026-09-24",
@@ -614,16 +632,16 @@
       "file": "2026-09-24-gemini-docs-notebook-grounding.html"
     },
     {
-      "service": "Adobe",
-      "title": "Gemini 도구 제공 및 Claude 플러그인 확장",
-      "date": "2026-09-24",
-      "file": "2026-09-24-adobe-gemini-claude-tools.html"
-    },
-    {
       "service": "Gemini",
       "title": "Gemini Connected Apps 대규모 확장",
       "date": "2026-09-24",
       "file": "2026-09-24-gemini-connected-apps.html"
+    },
+    {
+      "service": "Adobe",
+      "title": "Gemini 도구 제공 및 Claude 플러그인 확장",
+      "date": "2026-09-24",
+      "file": "2026-09-24-adobe-gemini-claude-tools.html"
     },
     {
       "service": "Gemini",
@@ -636,6 +654,12 @@
       "title": "Bedrock Knowledge Base Salesforce·Zendesk 커넥터 추가",
       "date": "2026-09-24",
       "file": "2026-09-24-aws-bedrock-salesforce-zendesk-connectors.html"
+    },
+    {
+      "service": "Lovable",
+      "title": "무료 Chat 기능 공개",
+      "date": "2026-09-24",
+      "file": "2026-09-24-lovable-free-chat.html"
     },
     {
       "service": "Gemini",
@@ -662,10 +686,10 @@
       "file": "2026-09-23-cursor-rollouts-security-review.html"
     },
     {
-      "service": "OpenAI",
-      "title": "GPT-6 프롬프트 캐싱 개선",
+      "service": "AWS",
+      "title": "GPT-6 Sol 및 Luna Amazon Bedrock 제공",
       "date": "2026-09-23",
-      "file": "2026-09-23-openai-gpt-6-prompt-caching.html"
+      "file": "2026-09-23-aws-gpt-6-sol-luna-bedrock.html"
     },
     {
       "service": "Flowith",
@@ -674,16 +698,16 @@
       "file": "2026-09-23-flowith-gpt-6-sol-luna.html"
     },
     {
-      "service": "AWS",
-      "title": "GPT-6 Sol 및 Luna Amazon Bedrock 제공",
-      "date": "2026-09-23",
-      "file": "2026-09-23-aws-gpt-6-sol-luna-bedrock.html"
-    },
-    {
       "service": "OpenAI",
       "title": "GPT-6 Sol 및 GPT-6 Luna 공개",
       "date": "2026-09-23",
       "file": "2026-09-23-openai-gpt-6-sol-luna.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "GPT-6 프롬프트 캐싱 개선",
+      "date": "2026-09-23",
+      "file": "2026-09-23-openai-gpt-6-prompt-caching.html"
     },
     {
       "service": "Gemini",
@@ -696,6 +720,12 @@
       "title": "Gemini 3.8 TTS 모델 AI Gateway 제공",
       "date": "2026-09-23",
       "file": "2026-09-23-vercel-gemini-38-tts.html"
+    },
+    {
+      "service": "AWS",
+      "title": "Claude Opus 5.5 AWS 제공",
+      "date": "2026-09-23",
+      "file": "2026-09-23-aws-claude-opus-55.html"
     },
     {
       "service": "Lovable",
@@ -716,12 +746,6 @@
       "file": "2026-09-23-claude-opus-55.html"
     },
     {
-      "service": "AWS",
-      "title": "Claude Opus 5.5 AWS 제공",
-      "date": "2026-09-23",
-      "file": "2026-09-23-aws-claude-opus-55.html"
-    },
-    {
       "service": "OpenAI",
       "title": "ChatGPT Voice 플러그인 및 Work 지원",
       "date": "2026-09-23",
@@ -740,12 +764,6 @@
       "file": "2026-09-23-aws-tolap.html"
     },
     {
-      "service": "Sarvam AI",
-      "title": "실시간 음성 인식 Keyterm Prompting 지원",
-      "date": "2026-09-22",
-      "file": "2026-09-22-sarvam-ai-streaming-keyterm-prompting.html"
-    },
-    {
       "service": "ElevenLabs",
       "title": "Scribe v2 Medical 전체 공개",
       "date": "2026-09-22",
@@ -753,15 +771,15 @@
     },
     {
       "service": "Qwen",
-      "title": "Qwen-Audio-3.1-TTS-Next 공개",
-      "date": "2026-09-22",
-      "file": "2026-09-22-qwen-audio-31-tts-next.html"
-    },
-    {
-      "service": "Qwen",
       "title": "Qwen3.8-LiveTranslate 공개",
       "date": "2026-09-22",
       "file": "2026-09-22-qwen38-live-translate.html"
+    },
+    {
+      "service": "Qwen",
+      "title": "Qwen-Audio-3.1-TTS-Next 공개",
+      "date": "2026-09-22",
+      "file": "2026-09-22-qwen-audio-31-tts-next.html"
     },
     {
       "service": "Qwen",
@@ -780,6 +798,12 @@
       "title": "Isaac ROS 5.0 공개",
       "date": "2026-09-22",
       "file": "2026-09-22-nvidia-isaac-ros-50.html"
+    },
+    {
+      "service": "Sarvam AI",
+      "title": "실시간 음성 인식 Keyterm Prompting 지원",
+      "date": "2026-09-22",
+      "file": "2026-09-22-sarvam-ai-streaming-keyterm-prompting.html"
     },
     {
       "service": "Hugging Face",
@@ -1058,18 +1082,6 @@
       "file": "2026-09-02-claude-commerce-agent-blueprint.html"
     },
     {
-      "service": "Gemini",
-      "title": "에이전틱 영상 이해 기능 공개",
-      "date": "2026-09-01",
-      "file": "2026-09-01-gemini-agentic-video-understanding.html"
-    },
-    {
-      "service": "SurveyMonkey",
-      "title": "대화형 AI 설문 생성 및 자동 분석 공개",
-      "date": "2026-09-01",
-      "file": "2026-09-01-surveymonkey-conversational-ai-surveys.html"
-    },
-    {
       "service": "Google",
       "title": "Google Pics 정식 출시",
       "date": "2026-09-01",
@@ -1094,16 +1106,16 @@
       "file": "2026-09-01-amazon-alexa-plus-us-launch.html"
     },
     {
-      "service": "Runway",
-      "title": "인터페이스 월드 모델 Solaris 공개",
-      "date": "2026-08-31",
-      "file": "2026-08-31-runway-solaris-interface-world-model.html"
+      "service": "Gemini",
+      "title": "에이전틱 영상 이해 기능 공개",
+      "date": "2026-09-01",
+      "file": "2026-09-01-gemini-agentic-video-understanding.html"
     },
     {
-      "service": "Circleback",
-      "title": "무료 플랜 및 무제한 AI 회의 노트 제공",
-      "date": "2026-08-31",
-      "file": "2026-08-31-circleback-free-plan-unlimited-ai-notes.html"
+      "service": "SurveyMonkey",
+      "title": "대화형 AI 설문 생성 및 자동 분석 공개",
+      "date": "2026-09-01",
+      "file": "2026-09-01-surveymonkey-conversational-ai-surveys.html"
     },
     {
       "service": "Koder",
@@ -1118,6 +1130,18 @@
       "file": "2026-08-31-google-data-agent-kit-orchestration-pipelines.html"
     },
     {
+      "service": "Runway",
+      "title": "인터페이스 월드 모델 Solaris 공개",
+      "date": "2026-08-31",
+      "file": "2026-08-31-runway-solaris-interface-world-model.html"
+    },
+    {
+      "service": "Circleback",
+      "title": "무료 플랜 및 무제한 AI 회의 노트 제공",
+      "date": "2026-08-31",
+      "file": "2026-08-31-circleback-free-plan-unlimited-ai-notes.html"
+    },
+    {
       "service": "Cloudflare",
       "title": "AI Search에서 GLM-5.3 Flash 지원",
       "date": "2026-08-30",
@@ -1128,12 +1152,6 @@
       "title": "Grok Bot X 연동 공개",
       "date": "2026-08-29",
       "file": "2026-08-29-xai-grok-bot-x-integration.html"
-    },
-    {
-      "service": "Claude",
-      "title": "학교·교육청용 Claude for Teachers 공개",
-      "date": "2026-08-28",
-      "file": "2026-08-28-claude-for-teachers-schools-districts.html"
     },
     {
       "service": "Cloudflare",
@@ -1170,6 +1188,12 @@
       "title": "Cursor 내 OpenAI 모델 지원 종료 예정",
       "date": "2026-08-28",
       "file": "2026-08-28-openai-cursor-model-support-end.html"
+    },
+    {
+      "service": "Claude",
+      "title": "학교·교육청용 Claude for Teachers 공개",
+      "date": "2026-08-28",
+      "file": "2026-08-28-claude-for-teachers-schools-districts.html"
     },
     {
       "service": "Harvey",
@@ -1851,12 +1875,6 @@
     },
     {
       "service": "Gemini",
-      "title": "편집 가능한 전체 프레젠테이션 생성",
-      "date": "2026-06-30",
-      "file": "2026-06-30-편집-가능한-전체-프레젠테이션-생성.html"
-    },
-    {
-      "service": "Gemini",
       "title": "Nano Banana 2 Lite와 Gemini Omni Flash 공개",
       "date": "2026-06-30",
       "file": "2026-06-30-nano-banana-2-lite와-gemini-omni-flash-공개.html"
@@ -1881,15 +1899,21 @@
     },
     {
       "service": "Gemini",
-      "title": "개인화 이미지 생성 확대",
-      "date": "2026-06-29",
-      "file": "2026-06-29-개인화-이미지-생성-확대.html"
+      "title": "편집 가능한 전체 프레젠테이션 생성",
+      "date": "2026-06-30",
+      "file": "2026-06-30-편집-가능한-전체-프레젠테이션-생성.html"
     },
     {
       "service": "Skywork",
       "title": "Slides Creation 다차원 업그레이드 게시",
       "date": "2026-06-29",
       "file": "2026-06-29-slides-creation-다차원-업그레이드-게시.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "개인화 이미지 생성 확대",
+      "date": "2026-06-29",
+      "file": "2026-06-29-개인화-이미지-생성-확대.html"
     },
     {
       "service": "OpenAI",
@@ -1916,12 +1940,6 @@
       "file": "2026-06-25-agent-20-공개.html"
     },
     {
-      "service": "Skywork",
-      "title": "직접 데이터 시각화용 Interactive Cards 게시",
-      "date": "2026-06-24",
-      "file": "2026-06-24-직접-데이터-시각화용-interactive-cards-게시.html"
-    },
-    {
       "service": "Gemini",
       "title": "Gemini 3.5 Flash computer use 도입",
       "date": "2026-06-24",
@@ -1932,6 +1950,12 @@
       "title": "Canva Grow 2.0 공개",
       "date": "2026-06-24",
       "file": "2026-06-24-canva-grow-20-공개.html"
+    },
+    {
+      "service": "Skywork",
+      "title": "직접 데이터 시각화용 Interactive Cards 게시",
+      "date": "2026-06-24",
+      "file": "2026-06-24-직접-데이터-시각화용-interactive-cards-게시.html"
     },
     {
       "service": "Lovable",
@@ -1970,24 +1994,6 @@
       "file": "2026-06-22-elevencreative-ads-engine-출시.html"
     },
     {
-      "service": "Gemini",
-      "title": "시트 생성 편집 다국어 확대",
-      "date": "2026-06-18",
-      "file": "2026-06-18-시트-생성-편집-다국어-확대.html"
-    },
-    {
-      "service": "Harvey",
-      "title": "법률 데이터 시각화 기능 추가",
-      "date": "2026-06-18",
-      "file": "2026-06-18-법률-데이터-시각화-기능-추가.html"
-    },
-    {
-      "service": "OpenAI",
-      "title": "건강 관련 응답 품질 개선 확대",
-      "date": "2026-06-18",
-      "file": "2026-06-18-건강-관련-응답-품질-개선-확대.html"
-    },
-    {
       "service": "xAI",
       "title": "Word용 Grok add in 출시",
       "date": "2026-06-18",
@@ -2018,16 +2024,22 @@
       "file": "2026-06-18-claude-code-artifacts-지원-시작.html"
     },
     {
-      "service": "Character AI",
-      "title": "크리에이터 생성 분석 발견 기능 확장",
-      "date": "2026-06-17",
-      "file": "2026-06-17-크리에이터-생성-분석-발견-기능-확장.html"
+      "service": "Gemini",
+      "title": "시트 생성 편집 다국어 확대",
+      "date": "2026-06-18",
+      "file": "2026-06-18-시트-생성-편집-다국어-확대.html"
     },
     {
-      "service": "Google",
-      "title": "더 긴 Veo 영상과 동시 다중 생성 지원",
-      "date": "2026-06-17",
-      "file": "2026-06-17-더-긴-veo-영상과-동시-다중-생성-지원.html"
+      "service": "Harvey",
+      "title": "법률 데이터 시각화 기능 추가",
+      "date": "2026-06-18",
+      "file": "2026-06-18-법률-데이터-시각화-기능-추가.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "건강 관련 응답 품질 개선 확대",
+      "date": "2026-06-18",
+      "file": "2026-06-18-건강-관련-응답-품질-개선-확대.html"
     },
     {
       "service": "Skywork",
@@ -2058,6 +2070,18 @@
       "title": "AI avatar 기능 강화",
       "date": "2026-06-17",
       "file": "2026-06-17-ai-avatar-기능-강화.html"
+    },
+    {
+      "service": "Character AI",
+      "title": "크리에이터 생성 분석 발견 기능 확장",
+      "date": "2026-06-17",
+      "file": "2026-06-17-크리에이터-생성-분석-발견-기능-확장.html"
+    },
+    {
+      "service": "Google",
+      "title": "더 긴 Veo 영상과 동시 다중 생성 지원",
+      "date": "2026-06-17",
+      "file": "2026-06-17-더-긴-veo-영상과-동시-다중-생성-지원.html"
     },
     {
       "service": "Midjourney",
@@ -2096,16 +2120,16 @@
       "file": "2026-06-15-agent-dashboard-추가.html"
     },
     {
-      "service": "Gamma",
-      "title": "모바일 웹 편집 정식 지원",
-      "date": "2026-06-12",
-      "file": "2026-06-12-모바일-웹-편집-정식-지원.html"
-    },
-    {
       "service": "Manus",
       "title": "Canva Connector로 디자인 작업 확장",
       "date": "2026-06-12",
       "file": "2026-06-12-canva-connector로-디자인-작업-확장.html"
+    },
+    {
+      "service": "Gamma",
+      "title": "모바일 웹 편집 정식 지원",
+      "date": "2026-06-12",
+      "file": "2026-06-12-모바일-웹-편집-정식-지원.html"
     },
     {
       "service": "Midjourney",
@@ -2168,18 +2192,6 @@
       "file": "2026-06-09-claude-fable-5-and-claude-mythos-5.html"
     },
     {
-      "service": "Apple",
-      "title": "차세대 Apple Intelligence와 Siri AI 공개",
-      "date": "2026-06-08",
-      "file": "2026-06-08-차세대-apple-intelligence와-siri-ai-공개.html"
-    },
-    {
-      "service": "Apple",
-      "title": "새 인텔리전스 프레임워크와 Xcode 27 공개",
-      "date": "2026-06-08",
-      "file": "2026-06-08-새-인텔리전스-프레임워크와-xcode-27-공개.html"
-    },
-    {
       "service": "Skywork",
       "title": "SkyClaw Memory Management Now Fully Supported",
       "date": "2026-06-08",
@@ -2196,6 +2208,18 @@
       "title": "Connector Library 공개",
       "date": "2026-06-08",
       "file": "2026-06-08-connector-library-공개.html"
+    },
+    {
+      "service": "Apple",
+      "title": "차세대 Apple Intelligence와 Siri AI 공개",
+      "date": "2026-06-08",
+      "file": "2026-06-08-차세대-apple-intelligence와-siri-ai-공개.html"
+    },
+    {
+      "service": "Apple",
+      "title": "새 인텔리전스 프레임워크와 Xcode 27 공개",
+      "date": "2026-06-08",
+      "file": "2026-06-08-새-인텔리전스-프레임워크와-xcode-27-공개.html"
     },
     {
       "service": "Skywork",
@@ -2252,16 +2276,16 @@
       "file": "2026-06-02-canva가-perplexity-computer와-공식-연동.html"
     },
     {
-      "service": "Lovable",
-      "title": "앱 자동 보안 보호 기능 공개",
-      "date": "2026-06-01",
-      "file": "2026-06-01-앱-자동-보안-보호-기능-공개.html"
-    },
-    {
       "service": "xAI",
       "title": "Composer 2.5 모델 옵션 추가",
       "date": "2026-06-01",
       "file": "2026-06-01-composer-25-모델-옵션-추가.html"
+    },
+    {
+      "service": "Lovable",
+      "title": "앱 자동 보안 보호 기능 공개",
+      "date": "2026-06-01",
+      "file": "2026-06-01-앱-자동-보안-보호-기능-공개.html"
     },
     {
       "service": "xAI",
@@ -2432,16 +2456,16 @@
       "file": "2026-05-18-grok-skills-정식-도입.html"
     },
     {
-      "service": "OpenAI",
-      "title": "개인 금융 기능 프리뷰 공개",
-      "date": "2026-05-15",
-      "file": "2026-05-15-개인-금융-기능-프리뷰-공개.html"
-    },
-    {
       "service": "xAI",
       "title": "Grok 구독을 외부 에이전트·코딩 워크플로로 확장",
       "date": "2026-05-15",
       "file": "2026-05-15-grok-구독을-외부-에이전트코딩-워크플로로-확장.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "개인 금융 기능 프리뷰 공개",
+      "date": "2026-05-15",
+      "file": "2026-05-15-개인-금융-기능-프리뷰-공개.html"
     },
     {
       "service": "Gamma",
@@ -2474,12 +2498,6 @@
       "file": "2026-05-13-claude-for-small-business와-canva-통합.html"
     },
     {
-      "service": "Claude",
-      "title": "법률 업계를 위한 Claude 확장",
-      "date": "2026-05-12",
-      "file": "2026-05-12-법률-업계를-위한-claude-확장.html"
-    },
-    {
       "service": "Gemini Notebook",
       "title": "Workspace Studio에 Ask Gemini Notebook 단계 추가",
       "date": "2026-05-12",
@@ -2490,6 +2508,12 @@
       "title": "Preferred Browser 기능 추가",
       "date": "2026-05-12",
       "file": "2026-05-12-preferred-browser-기능-추가.html"
+    },
+    {
+      "service": "Claude",
+      "title": "법률 업계를 위한 Claude 확장",
+      "date": "2026-05-12",
+      "file": "2026-05-12-법률-업계를-위한-claude-확장.html"
     },
     {
       "service": "ElevenLabs",
@@ -2583,6 +2607,18 @@
     },
     {
       "service": "OpenAI",
+      "title": "gpt-image-2 API 및 Codex 사용 가능 공지",
+      "date": "2026-04-22",
+      "file": "2026-04-22-gpt-image-2-api-및-codex-사용-가능-공지.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Gemini Embedding 2 정식 출시",
+      "date": "2026-04-22",
+      "file": "2026-04-22-gemini-embedding-2-정식-출시.html"
+    },
+    {
+      "service": "OpenAI",
       "title": "임상용 ChatGPT 무료 제공",
       "date": "2026-04-22",
       "file": "2026-04-22-임상용-chatgpt-무료-제공.html"
@@ -2598,18 +2634,6 @@
       "title": "개인정보 필터 오픈웨이트 공개",
       "date": "2026-04-22",
       "file": "2026-04-22-개인정보-필터-오픈웨이트-공개.html"
-    },
-    {
-      "service": "OpenAI",
-      "title": "gpt-image-2 API 및 Codex 사용 가능 공지",
-      "date": "2026-04-22",
-      "file": "2026-04-22-gpt-image-2-api-및-codex-사용-가능-공지.html"
-    },
-    {
-      "service": "Gemini",
-      "title": "Gemini Embedding 2 정식 출시",
-      "date": "2026-04-22",
-      "file": "2026-04-22-gemini-embedding-2-정식-출시.html"
     },
     {
       "service": "Moonshot AI",
@@ -2696,12 +2720,6 @@
       "file": "2026-04-14-claude-code-routines-프리뷰-추가.html"
     },
     {
-      "service": "ElevenLabs",
-      "title": "로컬 배포형 엔터프라이즈 Voice AI 확장",
-      "date": "2026-04-09",
-      "file": "2026-04-09-로컬-배포형-엔터프라이즈-voice-ai-확장.html"
-    },
-    {
       "service": "Perplexity",
       "title": "Plaid 연동 추가",
       "date": "2026-04-09",
@@ -2724,6 +2742,12 @@
       "title": "advisor strategy 공개",
       "date": "2026-04-09",
       "file": "2026-04-09-advisor-strategy-공개.html"
+    },
+    {
+      "service": "ElevenLabs",
+      "title": "로컬 배포형 엔터프라이즈 Voice AI 확장",
+      "date": "2026-04-09",
+      "file": "2026-04-09-로컬-배포형-엔터프라이즈-voice-ai-확장.html"
     },
     {
       "service": "Gemini",
@@ -2762,12 +2786,6 @@
       "file": "2026-04-08-ai-workspace-40-공개.html"
     },
     {
-      "service": "Lilys AI",
-      "title": "책 요약 기능 출시",
-      "date": "2026-04-07",
-      "file": "2026-04-07-책-요약-기능-출시.html"
-    },
-    {
       "service": "HeyGen",
       "title": "Introducing Seedance 2.0x Hey Gen",
       "date": "2026-04-07",
@@ -2778,6 +2796,12 @@
       "title": "Agent Skills 공개",
       "date": "2026-04-07",
       "file": "2026-04-07-agent-skills-공개.html"
+    },
+    {
+      "service": "Lilys AI",
+      "title": "책 요약 기능 출시",
+      "date": "2026-04-07",
+      "file": "2026-04-07-책-요약-기능-출시.html"
     },
     {
       "service": "Notion AI",
@@ -2936,12 +2960,6 @@
       "file": "2026-03-12-aiworkspace.html"
     },
     {
-      "service": "Lilys AI",
-      "title": "유튜브 채널 모니터링",
-      "date": "2026-03-11",
-      "file": "2026-03-11-유튜브-채널-모니터링.html"
-    },
-    {
       "service": "HeyGen",
       "title": "whats new at hey gen february 2026",
       "date": "2026-03-11",
@@ -2958,6 +2976,12 @@
       "title": "introducing flows in eleven creative",
       "date": "2026-03-11",
       "file": "2026-03-11-introducing-flows-in-eleven-creative.html"
+    },
+    {
+      "service": "Lilys AI",
+      "title": "유튜브 채널 모니터링",
+      "date": "2026-03-11",
+      "file": "2026-03-11-유튜브-채널-모니터링.html"
     },
     {
       "service": "Notion AI",
@@ -3026,16 +3050,16 @@
       "file": "2026-03-05-jira-코딩-에이전트-에이전트형-코드-리뷰.html"
     },
     {
-      "service": "OpenAI",
-      "title": "GPT-5.4 출시",
-      "date": "2026-03-05",
-      "file": "2026-03-05-gpt-54-출시.html"
-    },
-    {
       "service": "Copilot",
       "title": "GPT-5.4 GitHub Copilot 도입",
       "date": "2026-03-05",
       "file": "2026-03-05-gpt-54-github-copilot-도입.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "GPT-5.4 출시",
+      "date": "2026-03-05",
+      "file": "2026-03-05-gpt-54-출시.html"
     },
     {
       "service": "Genspark",
@@ -3056,12 +3080,6 @@
       "file": "2026-03-04-cinematic-video-overviews-추가.html"
     },
     {
-      "service": "Gemini",
-      "title": "앱 안의 멀티스텝 작업 처리 시작",
-      "date": "2026-03-03",
-      "file": "2026-03-03-앱-안의-멀티스텝-작업-처리-시작.html"
-    },
-    {
       "service": "OpenAI",
       "title": "GPT-5.3 Instant 출시",
       "date": "2026-03-03",
@@ -3072,6 +3090,12 @@
       "title": "Custom Agents에 MiniMax M2.5 추가",
       "date": "2026-03-03",
       "file": "2026-03-03-custom-agents에-minimax-m25-추가.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "앱 안의 멀티스텝 작업 처리 시작",
+      "date": "2026-03-03",
+      "file": "2026-03-03-앱-안의-멀티스텝-작업-처리-시작.html"
     },
     {
       "service": "Perplexity",
@@ -3230,18 +3254,6 @@
       "file": "2026-02-06-chatgpt-안에서-canva-디자인-생성편집-지원.html"
     },
     {
-      "service": "Lilys AI",
-      "title": "프로젝트 검색",
-      "date": "2026-02-05",
-      "file": "2026-02-05-프로젝트-검색.html"
-    },
-    {
-      "service": "Gemini Notebook",
-      "title": "더 큰 source library와 고가치 출력 확대",
-      "date": "2026-02-05",
-      "file": "2026-02-05-더-큰-source-library와-고가치-출력-확대.html"
-    },
-    {
       "service": "OpenAI",
       "title": "GPT-5.3-Codex 출시",
       "date": "2026-02-05",
@@ -3252,6 +3264,18 @@
       "title": "Claude Opus 4.6 출시",
       "date": "2026-02-05",
       "file": "2026-02-05-claude-opus-46-출시.html"
+    },
+    {
+      "service": "Lilys AI",
+      "title": "프로젝트 검색",
+      "date": "2026-02-05",
+      "file": "2026-02-05-프로젝트-검색.html"
+    },
+    {
+      "service": "Gemini Notebook",
+      "title": "더 큰 source library와 고가치 출력 확대",
+      "date": "2026-02-05",
+      "file": "2026-02-05-더-큰-source-library와-고가치-출력-확대.html"
     },
     {
       "service": "Skywork",
