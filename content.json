@@ -212,6 +212,42 @@
   ],
   "news": [
     {
+      "service": "Cohere",
+      "title": "Rerank 5 Pro·Fast 공개",
+      "date": "2026-10-21",
+      "file": "2026-10-21-cohere-rerank-5.html"
+    },
+    {
+      "service": "Pulsar",
+      "title": "Pulsar STORY 공개 베타",
+      "date": "2026-10-21",
+      "file": "2026-10-21-pulsar-story-public-beta.html"
+    },
+    {
+      "service": "Gradium",
+      "title": "Phonon 온디바이스 TTS 모델 공개",
+      "date": "2026-10-21",
+      "file": "2026-10-21-gradium-phonon.html"
+    },
+    {
+      "service": "IBM Granite",
+      "title": "Granite Speech 5.0 모델군 공개",
+      "date": "2026-10-21",
+      "file": "2026-10-21-ibm-granite-speech-5.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Claude Duet 연구 프리뷰 공개",
+      "date": "2026-10-21",
+      "file": "2026-10-21-claude-duet-preview.html"
+    },
+    {
+      "service": "Gemini Notebook",
+      "title": "슬라이드·비디오 생성 제어 강화",
+      "date": "2026-10-21",
+      "file": "2026-10-21-gemini-notebook-creative-control.html"
+    },
+    {
       "service": "Mistral AI",
       "title": "Voxtral 3 공개",
       "date": "2026-10-20",
@@ -3578,6 +3614,18 @@
     {
       "name": "Sierra",
       "color": "#be185d"
+    },
+    {
+      "name": "IBM Granite",
+      "color": "#0f62fe"
+    },
+    {
+      "name": "Gradium",
+      "color": "#db2777"
+    },
+    {
+      "name": "Pulsar",
+      "color": "#0d9488"
     }
   ]
 }
