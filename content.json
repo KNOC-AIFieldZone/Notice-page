@@ -212,6 +212,12 @@
   ],
   "news": [
     {
+      "service": "Mistral AI",
+      "title": "GLM-5.3 Flash 지원",
+      "date": "2026-10-22",
+      "file": "2026-10-22-mistral-ai-glm-53-flash-support.html"
+    },
+    {
       "service": "Cohere",
       "title": "Rerank 5 Pro·Fast 공개",
       "date": "2026-10-21",
