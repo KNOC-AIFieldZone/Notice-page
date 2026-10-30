@@ -206,6 +206,12 @@
   ],
   "news": [
     {
+      "service": "Gemini",
+      "title": "Gemini 4 Carbon 공개",
+      "date": "2026-10-29",
+      "file": "2026-10-29-gemini-4-carbon.html"
+    },
+    {
       "service": "Microsoft",
       "title": "MAI Image 2.7 Preview 공개",
       "date": "2026-10-28",
