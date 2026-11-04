@@ -206,6 +206,30 @@
   ],
   "news": [
     {
+      "service": "OpenAI",
+      "title": "Dots에 GPT-6.1 Terra 추가",
+      "date": "2026-11-03",
+      "file": "News/2026-11-03-openai-dots-gpt-61-terra.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Claude Code 2.1.317 공개",
+      "date": "2026-11-03",
+      "file": "News/2026-11-03-claude-code-21317.html"
+    },
+    {
+      "service": "Claude",
+      "title": "주요 모델 텍스트 워터마크 적용 확대",
+      "date": "2026-11-03",
+      "file": "News/2026-11-03-claude-text-watermark-model-expansion.html"
+    },
+    {
+      "service": "Apple",
+      "title": "모든 개발자에게 Siri AI 연동 프리뷰 공개",
+      "date": "2026-11-03",
+      "file": "News/2026-11-03-apple-siri-ai-developer-preview.html"
+    },
+    {
       "service": "Runway",
       "title": "Claude Code·Codex·Cursor용 Runway Dev 플러그인 출시",
       "date": "2026-11-02",
