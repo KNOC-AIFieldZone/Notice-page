@@ -206,6 +206,42 @@
   ],
   "news": [
     {
+      "service": "Claude",
+      "title": "Personal Finance 베타 공개",
+      "date": "2026-11-05",
+      "file": "News/2026-11-05-claude-personal-finance.html"
+    },
+    {
+      "service": "Kling AI",
+      "title": "Kling 4.0 Flash 전면 공개",
+      "date": "2026-11-05",
+      "file": "News/2026-11-05-kling-ai-40-flash.html"
+    },
+    {
+      "service": "Kimi",
+      "title": "Kimi K3.1 Pro 오픈 웨이트 공개",
+      "date": "2026-11-05",
+      "file": "News/2026-11-05-kimi-k31-pro-open-weights.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "GPT-6 Cyber 공개",
+      "date": "2026-11-05",
+      "file": "News/2026-11-05-openai-gpt-6-cyber.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Gemini CLI v0.67.0 공개",
+      "date": "2026-11-05",
+      "file": "News/2026-11-05-gemini-cli-0670.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Enterprise 보안·관리 기능 확대",
+      "date": "2026-11-05",
+      "file": "News/2026-11-05-claude-enterprise-security-admin.html"
+    },
+    {
       "service": "Gemini",
       "title": "monday.com 연동 지원",
       "date": "2026-11-04",
@@ -3768,6 +3804,10 @@
     {
       "name": "Liquid AI",
       "color": "#ea580c"
+    },
+    {
+      "name": "Kling AI",
+      "color": "#7f1d1d"
     }
   ]
 }
