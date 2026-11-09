@@ -206,6 +206,72 @@
   ],
   "news": [
     {
+      "service": "Vercel",
+      "title": "DeepSeek Search 및 Fetch 도구 추가",
+      "date": "2026-11-07",
+      "file": "News/2026-11-07-vercel-deepseek-search-fetch.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Claude Code 2.1.319 공개",
+      "date": "2026-11-07",
+      "file": "News/2026-11-07-claude-code-21319.html"
+    },
+    {
+      "service": "Nous Research",
+      "title": "Arete-27B 오픈 모델 공개",
+      "date": "2026-11-07",
+      "file": "News/2026-11-07-nous-research-arete-27b.html"
+    },
+    {
+      "service": "Google",
+      "title": "ADK 2.14.0 공개",
+      "date": "2026-11-07",
+      "file": "News/2026-11-07-google-adk-2140.html"
+    },
+    {
+      "service": "Ant Ling",
+      "title": "Ling-3.2-flash 공개",
+      "date": "2026-11-06",
+      "file": "News/2026-11-06-ant-ling-32-flash.html"
+    },
+    {
+      "service": "Kiro",
+      "title": "Kiro Crew Bots 정식 공개",
+      "date": "2026-11-06",
+      "file": "News/2026-11-06-kiro-crew-bots-ga.html"
+    },
+    {
+      "service": "Thinking Machines",
+      "title": "Inkling 2 Small 공개",
+      "date": "2026-11-06",
+      "file": "News/2026-11-06-thinking-machines-inkling-2-small.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Gemini Omni 1.2 Flash GA 및 Google Vids 적용",
+      "date": "2026-11-06",
+      "file": "News/2026-11-06-gemini-omni-12-flash-ga.html"
+    },
+    {
+      "service": "Flowith",
+      "title": "Gemini Omni 1.2 Flash 공식 지원 추가",
+      "date": "2026-11-06",
+      "file": "News/2026-11-06-flowith-gemini-omni-12-flash.html"
+    },
+    {
+      "service": "ElevenLabs",
+      "title": "ElevenMusic SoundCloud 직접 업로드 지원",
+      "date": "2026-11-06",
+      "file": "News/2026-11-06-elevenlabs-elevenmusic-soundcloud.html"
+    },
+    {
+      "service": "ElevenLabs",
+      "title": "Ads Engine 전문가 검토 기능 추가",
+      "date": "2026-11-06",
+      "file": "News/2026-11-06-elevenlabs-ads-engine-human-review.html"
+    },
+    {
       "service": "Claude",
       "title": "Personal Finance 베타 공개",
       "date": "2026-11-05",
@@ -3808,6 +3874,22 @@
     {
       "name": "Kling AI",
       "color": "#7f1d1d"
+    },
+    {
+      "name": "Ant Ling",
+      "color": "#c2410c"
+    },
+    {
+      "name": "Kiro",
+      "color": "#5b21b6"
+    },
+    {
+      "name": "Thinking Machines",
+      "color": "#704214"
+    },
+    {
+      "name": "Nous Research",
+      "color": "#3f6212"
     }
   ]
 }
