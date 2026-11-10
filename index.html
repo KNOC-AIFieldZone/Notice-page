@@ -715,6 +715,142 @@
       letter-spacing: .02em;
     }
 
+    /* 메인페이지 접속 시 항상 표시되는 이용 유의사항 */
+    body.usage-modal-open{ overflow:hidden; }
+    .usage-modal-backdrop{
+      position:fixed;
+      inset:0;
+      z-index:1000;
+      display:grid;
+      place-items:center;
+      padding:16px 20px;
+      background:rgba(2,6,23,.82);
+      -webkit-backdrop-filter:blur(9px);
+      backdrop-filter:blur(9px);
+    }
+    .usage-modal-backdrop[hidden]{ display:none; }
+    .usage-modal{
+      width:min(940px, calc(100vw - 40px));
+      max-height:calc(100dvh - 32px);
+      border:1px solid rgba(94,234,212,.30);
+      border-radius:26px;
+      overflow:hidden;
+      color:rgba(248,250,252,.96);
+      background:
+        radial-gradient(700px 240px at 10% 0%, rgba(94,234,212,.16), transparent 58%),
+        radial-gradient(620px 260px at 100% 100%, rgba(96,165,250,.13), transparent 62%),
+        rgba(11,18,32,.98);
+      box-shadow:0 42px 110px rgba(0,0,0,.68), 0 0 0 1px rgba(255,255,255,.04) inset;
+    }
+    .usage-modal-head{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      padding:20px 26px 17px;
+      border-bottom:1px solid rgba(255,255,255,.11);
+      background:rgba(255,255,255,.025);
+    }
+    .usage-modal-symbol{
+      width:44px;
+      height:44px;
+      display:grid;
+      place-items:center;
+      flex:0 0 auto;
+      border:1px solid rgba(251,191,36,.42);
+      border-radius:14px;
+      color:#fde68a;
+      background:rgba(251,191,36,.12);
+      font-size:23px;
+      box-shadow:0 10px 28px rgba(0,0,0,.22);
+    }
+    .usage-modal-title{ margin:0; color:rgba(248,250,252,.98); font-size:24px; font-weight:950; letter-spacing:-.035em; }
+    .usage-modal-intro{ margin:4px 0 0; color:rgba(255,255,255,.66); font-size:13px; line-height:1.45; }
+    .usage-modal-body{ display:grid; gap:12px; padding:16px 20px 14px; }
+    .usage-rule{
+      display:grid;
+      grid-template-columns:42px minmax(0,1fr);
+      gap:13px;
+      padding:15px 16px;
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:17px;
+      background:rgba(255,255,255,.045);
+    }
+    .usage-rule--primary{
+      border-color:rgba(251,191,36,.40);
+      background:linear-gradient(135deg, rgba(251,191,36,.115), rgba(255,255,255,.035));
+      box-shadow:0 14px 34px rgba(0,0,0,.18);
+    }
+    .usage-rule-number{
+      width:34px;
+      height:34px;
+      display:grid;
+      place-items:center;
+      border-radius:11px;
+      color:#99f6e4;
+      background:rgba(94,234,212,.13);
+      border:1px solid rgba(94,234,212,.29);
+      font-size:14px;
+      font-weight:950;
+    }
+    .usage-rule--primary .usage-rule-number{
+      color:#fde68a;
+      background:rgba(251,191,36,.13);
+      border-color:rgba(251,191,36,.34);
+    }
+    .usage-rule-title{ margin:1px 0 5px; color:rgba(248,250,252,.96); font-size:16px; line-height:1.32; font-weight:950; letter-spacing:-.02em; }
+    .usage-rule--primary .usage-rule-title{ color:#fef3c7; font-size:18px; }
+    .usage-rule-text{ margin:0; color:rgba(255,255,255,.77); font-size:13px; line-height:1.55; word-break:keep-all; }
+    .usage-rule-text strong{ color:rgba(255,255,255,.98); }
+    .usage-profile-guide{
+      margin-top:11px;
+      padding:10px 12px;
+      border-left:3px solid rgba(94,234,212,.72);
+      border-radius:0 11px 11px 0;
+      background:rgba(94,234,212,.075);
+    }
+    .usage-profile-label{ display:block; margin-bottom:7px; color:#99f6e4; font-size:12px; font-weight:900; }
+    .usage-profile-steps{ display:flex; align-items:center; gap:7px; flex-wrap:wrap; color:rgba(255,255,255,.94); font-size:13px; font-weight:850; }
+    .usage-profile-steps .arrow{ color:rgba(94,234,212,.72); }
+    .usage-profile-note{ margin:7px 0 0; color:rgba(255,255,255,.62); font-size:11.5px; line-height:1.45; }
+    .usage-secondary{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .usage-modal-foot{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:10px;
+      padding:13px 20px 17px;
+      border-top:1px solid rgba(255,255,255,.10);
+      background:rgba(2,6,23,.28);
+    }
+    .usage-modal-reminder{ margin:0; color:rgba(255,255,255,.66); font-size:12px; text-align:center; }
+    .usage-confirm{
+      min-width:180px;
+      height:43px;
+      border:1px solid rgba(94,234,212,.50);
+      border-radius:13px;
+      color:#052e2b;
+      background:linear-gradient(135deg, #99f6e4, #5eead4);
+      box-shadow:0 12px 30px rgba(45,212,191,.20);
+      font:900 14px var(--font);
+      cursor:pointer;
+      transition:transform .12s ease, filter .12s ease, box-shadow .12s ease;
+    }
+    .usage-confirm:hover{ filter:brightness(1.04); box-shadow:0 15px 36px rgba(45,212,191,.28); transform:translateY(-1px); }
+    .usage-confirm:active{ transform:translateY(0); }
+    .usage-confirm:focus-visible{ outline:3px solid rgba(255,255,255,.82); outline-offset:3px; }
+    @media (max-width:720px){
+      .usage-modal-backdrop{ padding:10px; align-items:start; overflow:auto; }
+      .usage-modal{ width:100%; max-height:none; margin:8px 0; border-radius:20px; }
+      .usage-modal-head{ padding:16px 17px 14px; align-items:flex-start; }
+      .usage-modal-title{ font-size:20px; }
+      .usage-modal-body{ padding:12px; }
+      .usage-secondary{ grid-template-columns:1fr; }
+      .usage-rule{ grid-template-columns:34px minmax(0,1fr); gap:10px; padding:13px; }
+      .usage-rule-number{ width:30px; height:30px; }
+      .usage-profile-steps{ gap:5px; font-size:12px; }
+      .usage-modal-foot{ padding:12px 14px 15px; }
+    }
+
     .news-modal-backdrop{ position:fixed; inset:0; z-index:40; background:rgba(2,6,23,.72); opacity:0; pointer-events:none; transition:opacity .24s ease; }
     .news-modal-backdrop.show{ opacity:1; pointer-events:auto; }
     .news-modal{ position:fixed; left:50%; top:50%; transform:translate(-50%,-46%); width:min(980px,94vw); max-height:90vh; border:1px solid var(--modal-line); border-radius:22px; overflow:hidden; z-index:41; background:var(--modal-bg); color: var(--modal-text); box-shadow:0 36px 80px rgba(2,6,23,.55); opacity:0; pointer-events:none; transition:opacity .24s ease, transform .24s ease; }
@@ -731,8 +867,63 @@
   </style>
 </head>
 
-<body>
-  <div class="wrap">
+<body class="usage-modal-open">
+  <div class="usage-modal-backdrop" id="usageModalBackdrop">
+    <section class="usage-modal" role="dialog" aria-modal="true" aria-labelledby="usageModalTitle" aria-describedby="usageModalIntro">
+      <div class="usage-modal-head">
+        <div class="usage-modal-symbol" aria-hidden="true">!</div>
+        <div>
+          <h1 class="usage-modal-title" id="usageModalTitle">AI 서비스 이용 시 유의사항</h1>
+          <p class="usage-modal-intro" id="usageModalIntro">모든 사용자가 서비스를 이어서 이용할 수 있도록 아래 내용을 반드시 확인해 주세요.</p>
+        </div>
+      </div>
+
+      <div class="usage-modal-body">
+        <article class="usage-rule usage-rule--primary">
+          <div class="usage-rule-number">1</div>
+          <div>
+            <h2 class="usage-rule-title">기존 계정은 절대 로그아웃하거나 삭제하지 마세요</h2>
+            <p class="usage-rule-text">Chrome과 각 AI 서비스에 로그인된 계정은 모두가 함께 사용하는 <strong>AI Field 이용 계정</strong>입니다. 기존 계정을 로그아웃하거나 삭제하면 다음 사용자가 AI 서비스를 이용할 수 없습니다.</p>
+            <div class="usage-profile-guide">
+              <span class="usage-profile-label">개인 계정을 사용해야 할 때</span>
+              <div class="usage-profile-steps" aria-label="개인 Chrome 프로필 추가 순서">
+                <span>Chrome 오른쪽 상단 프로필</span><span class="arrow">›</span>
+                <span>프로필 추가</span><span class="arrow">›</span>
+                <span>추가</span><span class="arrow">›</span>
+                <span>개인 계정 로그인</span>
+              </div>
+              <p class="usage-profile-note">컴퓨터를 꺼도 개인 계정의 로그인 상태가 유지될 수 있으므로, 사용 후에는 개인 Chrome 프로필 삭제를 권장합니다. 이때 기존 AI Field 계정은 절대 로그아웃·삭제하지 마세요.</p>
+            </div>
+          </div>
+        </article>
+
+        <div class="usage-secondary">
+          <article class="usage-rule">
+            <div class="usage-rule-number">2</div>
+            <div>
+              <h2 class="usage-rule-title">로그인 화면이 보이면 도움말을 확인하세요</h2>
+              <p class="usage-rule-text">메인페이지 상단의 <strong>도움말</strong>에서 서비스별 로그인 방법을 확인해 주세요. 아이디 또는 비밀번호 입력 화면이 나오면 직접 입력하지 말고 <strong>AI정책팀(☎ 2526)</strong>으로 연락해 주세요.</p>
+            </div>
+          </article>
+
+          <article class="usage-rule">
+            <div class="usage-rule-number">3</div>
+            <div>
+              <h2 class="usage-rule-title">AI Field 이용 전 예약은 필수입니다</h2>
+              <p class="usage-rule-text">그룹웨어의 <strong>회의실 관리</strong>에서 목록 하단에 있는 <strong>AI 체험공간 #1, #2, #3</strong> 중 한 곳을 예약한 후 이용해 주세요.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="usage-modal-foot">
+        <p class="usage-modal-reminder">다음 사용자를 위해 계정과 로그인 상태를 그대로 유지해 주세요.</p>
+        <button class="usage-confirm" id="usageModalConfirm" type="button">확인</button>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap" id="pageRoot" inert>
     <header>
       <div class="brand">
         <div class="brandline">
@@ -838,6 +1029,28 @@
   </div>
 
   <script>
+    const usageModalBackdrop = document.getElementById("usageModalBackdrop");
+    const usageModalConfirm = document.getElementById("usageModalConfirm");
+    const pageRoot = document.getElementById("pageRoot");
+
+    function confirmUsageNotice(){
+      usageModalBackdrop.hidden = true;
+      usageModalBackdrop.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("usage-modal-open");
+      pageRoot.removeAttribute("inert");
+    }
+
+    usageModalConfirm.addEventListener("click", confirmUsageNotice);
+    document.addEventListener("keydown", (event) => {
+      if(usageModalBackdrop.hidden) return;
+      if(event.key === "Escape") event.preventDefault();
+      if(event.key === "Tab"){
+        event.preventDefault();
+        usageModalConfirm.focus({ preventScroll:true });
+      }
+    });
+    requestAnimationFrame(() => usageModalConfirm.focus({ preventScroll:true }));
+
     /**
      * =========================
      * 1) 앞으로는 content.json만 수정
