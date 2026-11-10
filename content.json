@@ -206,6 +206,24 @@
   ],
   "news": [
     {
+      "service": "Meta AI",
+      "title": "Muse Ember 공개",
+      "date": "2026-11-09",
+      "file": "News/2026-11-09-meta-ai-muse-ember.html"
+    },
+    {
+      "service": "LG AI Research",
+      "title": "K-EXAONE 2.5 API 무료 공개",
+      "date": "2026-11-09",
+      "file": "News/2026-11-09-lg-ai-research-k-exaone-25-api.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Claude Fable 5.2 및 Claude Mythos 5.2 공개",
+      "date": "2026-11-09",
+      "file": "News/2026-11-09-claude-fable-52-mythos-52.html"
+    },
+    {
       "service": "Vercel",
       "title": "DeepSeek Search 및 Fetch 도구 추가",
       "date": "2026-11-07",
@@ -3890,6 +3908,10 @@
     {
       "name": "Nous Research",
       "color": "#3f6212"
+    },
+    {
+      "name": "LG AI Research",
+      "color": "#a50034"
     }
   ]
 }
