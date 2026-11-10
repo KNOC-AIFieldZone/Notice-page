@@ -723,130 +723,102 @@
       z-index:1000;
       display:grid;
       place-items:center;
-      padding:16px 20px;
-      background:rgba(2,6,23,.82);
-      -webkit-backdrop-filter:blur(9px);
-      backdrop-filter:blur(9px);
+      padding:20px;
+      background:rgba(15,23,42,.64);
+      -webkit-backdrop-filter:blur(4px);
+      backdrop-filter:blur(4px);
     }
     .usage-modal-backdrop[hidden]{ display:none; }
     .usage-modal{
-      width:min(940px, calc(100vw - 40px));
-      max-height:calc(100dvh - 32px);
-      border:1px solid rgba(94,234,212,.30);
-      border-radius:26px;
+      width:min(820px, calc(100vw - 40px));
+      max-height:calc(100dvh - 40px);
       overflow:hidden;
-      color:rgba(248,250,252,.96);
-      background:
-        radial-gradient(700px 240px at 10% 0%, rgba(94,234,212,.16), transparent 58%),
-        radial-gradient(620px 260px at 100% 100%, rgba(96,165,250,.13), transparent 62%),
-        rgba(11,18,32,.98);
-      box-shadow:0 42px 110px rgba(0,0,0,.68), 0 0 0 1px rgba(255,255,255,.04) inset;
+      color:var(--text);
+      background:var(--bg);
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:0 24px 70px rgba(0,0,0,.34);
     }
     .usage-modal-head{
-      display:flex;
-      align-items:center;
-      gap:14px;
-      padding:20px 26px 17px;
-      border-bottom:1px solid rgba(255,255,255,.11);
-      background:rgba(255,255,255,.025);
+      padding:22px 26px 18px;
+      border-bottom:1px solid var(--line);
     }
-    .usage-modal-symbol{
-      width:44px;
-      height:44px;
-      display:grid;
-      place-items:center;
-      flex:0 0 auto;
-      border:1px solid rgba(251,191,36,.42);
-      border-radius:14px;
-      color:#fde68a;
-      background:rgba(251,191,36,.12);
-      font-size:23px;
-      box-shadow:0 10px 28px rgba(0,0,0,.22);
-    }
-    .usage-modal-title{ margin:0; color:rgba(248,250,252,.98); font-size:24px; font-weight:950; letter-spacing:-.035em; }
-    .usage-modal-intro{ margin:4px 0 0; color:rgba(255,255,255,.66); font-size:13px; line-height:1.45; }
-    .usage-modal-body{ display:grid; gap:12px; padding:16px 20px 14px; }
+    .usage-modal-symbol{ display:none; }
+    .usage-modal-title{ margin:0; color:var(--text); font-size:22px; font-weight:900; letter-spacing:-.03em; }
+    .usage-modal-intro{ margin:6px 0 0; color:var(--muted); font-size:13px; line-height:1.5; }
+    .usage-modal-body{ padding:8px 26px 5px; }
     .usage-rule{
       display:grid;
-      grid-template-columns:42px minmax(0,1fr);
-      gap:13px;
-      padding:15px 16px;
-      border:1px solid rgba(255,255,255,.12);
-      border-radius:17px;
-      background:rgba(255,255,255,.045);
+      grid-template-columns:34px minmax(0,1fr);
+      gap:10px;
+      padding:15px 2px;
+      border:0;
+      border-bottom:1px solid var(--line);
+      border-radius:0;
+      background:transparent;
     }
     .usage-rule--primary{
-      border-color:rgba(251,191,36,.40);
-      background:linear-gradient(135deg, rgba(251,191,36,.115), rgba(255,255,255,.035));
-      box-shadow:0 14px 34px rgba(0,0,0,.18);
+      margin:10px 0 2px;
+      padding:16px 16px;
+      border:1px solid rgba(94,234,212,.32);
+      border-radius:13px;
+      background:rgba(94,234,212,.065);
     }
     .usage-rule-number{
-      width:34px;
-      height:34px;
-      display:grid;
-      place-items:center;
-      border-radius:11px;
-      color:#99f6e4;
-      background:rgba(94,234,212,.13);
-      border:1px solid rgba(94,234,212,.29);
-      font-size:14px;
-      font-weight:950;
+      padding-top:2px;
+      color:var(--accent);
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:.04em;
     }
-    .usage-rule--primary .usage-rule-number{
-      color:#fde68a;
-      background:rgba(251,191,36,.13);
-      border-color:rgba(251,191,36,.34);
-    }
-    .usage-rule-title{ margin:1px 0 5px; color:rgba(248,250,252,.96); font-size:16px; line-height:1.32; font-weight:950; letter-spacing:-.02em; }
-    .usage-rule--primary .usage-rule-title{ color:#fef3c7; font-size:18px; }
-    .usage-rule-text{ margin:0; color:rgba(255,255,255,.77); font-size:13px; line-height:1.55; word-break:keep-all; }
-    .usage-rule-text strong{ color:rgba(255,255,255,.98); }
+    .usage-rule-number::before{ content:"0"; }
+    .usage-rule-title{ margin:0 0 5px; color:var(--text); font-size:15px; line-height:1.35; font-weight:900; letter-spacing:-.015em; }
+    .usage-rule--primary .usage-rule-title{ color:var(--text); font-size:17px; }
+    .usage-rule-text{ margin:0; color:var(--muted); font-size:13px; line-height:1.55; word-break:keep-all; }
+    .usage-rule-text strong{ color:var(--text); }
     .usage-profile-guide{
       margin-top:11px;
       padding:10px 12px;
-      border-left:3px solid rgba(94,234,212,.72);
-      border-radius:0 11px 11px 0;
-      background:rgba(94,234,212,.075);
+      border-radius:10px;
+      background:var(--panel);
     }
-    .usage-profile-label{ display:block; margin-bottom:7px; color:#99f6e4; font-size:12px; font-weight:900; }
-    .usage-profile-steps{ display:flex; align-items:center; gap:7px; flex-wrap:wrap; color:rgba(255,255,255,.94); font-size:13px; font-weight:850; }
-    .usage-profile-steps .arrow{ color:rgba(94,234,212,.72); }
-    .usage-profile-note{ margin:7px 0 0; color:rgba(255,255,255,.62); font-size:11.5px; line-height:1.45; }
-    .usage-secondary{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .usage-profile-label{ display:block; margin-bottom:6px; color:var(--accent); font-size:12px; font-weight:900; }
+    .usage-profile-steps{ display:flex; align-items:center; gap:6px; flex-wrap:wrap; color:var(--text); font-size:12.5px; font-weight:800; }
+    .usage-profile-steps .arrow{ color:var(--accent); }
+    .usage-profile-note{ margin:7px 0 0; color:var(--muted); font-size:11.5px; line-height:1.45; }
+    .usage-secondary{ display:block; }
+    .usage-secondary .usage-rule:last-child{ border-bottom:0; }
     .usage-modal-foot{
       display:flex;
       flex-direction:column;
       align-items:center;
-      gap:10px;
+      gap:9px;
       padding:13px 20px 17px;
-      border-top:1px solid rgba(255,255,255,.10);
-      background:rgba(2,6,23,.28);
+      border-top:1px solid var(--line);
+      background:var(--panel);
     }
-    .usage-modal-reminder{ margin:0; color:rgba(255,255,255,.66); font-size:12px; text-align:center; }
+    .usage-modal-reminder{ margin:0; color:var(--muted); font-size:12px; text-align:center; }
     .usage-confirm{
-      min-width:180px;
-      height:43px;
-      border:1px solid rgba(94,234,212,.50);
-      border-radius:13px;
-      color:#052e2b;
-      background:linear-gradient(135deg, #99f6e4, #5eead4);
-      box-shadow:0 12px 30px rgba(45,212,191,.20);
+      min-width:170px;
+      height:41px;
+      border:1px solid rgba(94,234,212,.48);
+      border-radius:11px;
+      color:#062b27;
+      background:var(--accent);
       font:900 14px var(--font);
       cursor:pointer;
-      transition:transform .12s ease, filter .12s ease, box-shadow .12s ease;
+      transition:filter .12s ease;
     }
-    .usage-confirm:hover{ filter:brightness(1.04); box-shadow:0 15px 36px rgba(45,212,191,.28); transform:translateY(-1px); }
-    .usage-confirm:active{ transform:translateY(0); }
-    .usage-confirm:focus-visible{ outline:3px solid rgba(255,255,255,.82); outline-offset:3px; }
+    .usage-confirm:hover{ filter:brightness(1.04); }
+    .usage-confirm:focus-visible{ outline:2px solid rgba(94,234,212,.45); outline-offset:2px; }
     @media (max-width:720px){
       .usage-modal-backdrop{ padding:10px; align-items:start; overflow:auto; }
-      .usage-modal{ width:100%; max-height:none; margin:8px 0; border-radius:20px; }
-      .usage-modal-head{ padding:16px 17px 14px; align-items:flex-start; }
-      .usage-modal-title{ font-size:20px; }
-      .usage-modal-body{ padding:12px; }
-      .usage-secondary{ grid-template-columns:1fr; }
-      .usage-rule{ grid-template-columns:34px minmax(0,1fr); gap:10px; padding:13px; }
-      .usage-rule-number{ width:30px; height:30px; }
+      .usage-modal{ width:100%; max-height:none; margin:8px 0; border-radius:15px; }
+      .usage-modal-head{ padding:18px 18px 15px; }
+      .usage-modal-title{ font-size:19px; }
+      .usage-modal-body{ padding:6px 14px 3px; }
+      .usage-rule{ grid-template-columns:28px minmax(0,1fr); padding:13px 2px; }
+      .usage-rule--primary{ padding:14px; }
       .usage-profile-steps{ gap:5px; font-size:12px; }
       .usage-modal-foot{ padding:12px 14px 15px; }
     }
