@@ -199,6 +199,30 @@
   "news": [
     {
       "service": "Gemini",
+      "title": "Gemini 4 Hydrogen 공개",
+      "date": "2026-11-12",
+      "file": "News/2026-11-12-gemini-4-hydrogen.html"
+    },
+    {
+      "service": "xAI",
+      "title": "Grok Bot v1.0.1 공개",
+      "date": "2026-11-11",
+      "file": "News/2026-11-11-xai-grok-bot-101.html"
+    },
+    {
+      "service": "Databricks",
+      "title": "Genie One Windows 데스크톱 앱 베타 공개",
+      "date": "2026-11-11",
+      "file": "News/2026-11-11-databricks-genie-one-windows-beta.html"
+    },
+    {
+      "service": "Gemini",
+      "title": "Gemini Decisions API 및 Gemini Decision 1 공개",
+      "date": "2026-11-11",
+      "file": "News/2026-11-11-gemini-decisions-api.html"
+    },
+    {
+      "service": "Gemini",
       "title": "Google Antigravity /swarm 멀티에이전트 프리뷰 공개",
       "date": "2026-11-10",
       "file": "News/2026-11-10-google-antigravity-swarm-preview.html"
@@ -3706,6 +3730,10 @@
     {
       "name": "Cursor",
       "color": "#95c7d0"
+    },
+    {
+      "name": "Databricks",
+      "color": "#ff3621"
     },
     {
       "name": "DeepSeek",
