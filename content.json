@@ -198,6 +198,48 @@
   ],
   "news": [
     {
+      "service": "Claude",
+      "title": "아티팩트 Mac 및 Windows 앱 설치 베타",
+      "date": "2026-11-24",
+      "file": "News/2026-11-24-claude-artifacts-install-as-app.html"
+    },
+    {
+      "service": "Meta AI",
+      "title": "Muse 영국 서비스 출시",
+      "date": "2026-11-23",
+      "file": "News/2026-11-23-meta-ai-muse-uk-launch.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "GPT-6.2 Chat 탭 제공 시작",
+      "date": "2026-11-23",
+      "file": "News/2026-11-23-openai-gpt-62-chat.html"
+    },
+    {
+      "service": "ElevenLabs",
+      "title": "ElevenAgents 신규 LLM 4종 추가",
+      "date": "2026-11-23",
+      "file": "News/2026-11-23-elevenlabs-elevenagents-four-llms.html"
+    },
+    {
+      "service": "Claude",
+      "title": "Claude Ship 베타 공개",
+      "date": "2026-11-23",
+      "file": "News/2026-11-23-claude-ship-beta.html"
+    },
+    {
+      "service": "OpenAI",
+      "title": "ChatGPT Space Plus 사용자 확대",
+      "date": "2026-11-20",
+      "file": "News/2026-11-20-openai-chatgpt-space-plus.html"
+    },
+    {
+      "service": "Claude",
+      "title": "컴퓨터 사용 기능 Team 및 Enterprise 베타 확대",
+      "date": "2026-11-20",
+      "file": "News/2026-11-20-claude-computer-use-team-enterprise.html"
+    },
+    {
       "service": "Lara",
       "title": "Lara Mini 공개",
       "date": "2026-11-12",
